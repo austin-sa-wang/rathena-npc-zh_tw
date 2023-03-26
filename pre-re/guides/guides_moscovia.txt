@@ -62,7 +62,7 @@ moscovia,161,76,4	script	Moscovia Guide#mosk	959,{
 					end;
 				case 4:
 					mes "[Moscovia Guide]";
-					mes "The Inn 'Sticky Herb Tree' is just";
+					mes "The Inn '" + mesitemlink(7763) + " Tree' is just";
 					mes "north from the center of town.";
 					mes "If you need to rest, there is no";
 					mes "better place to stay.";

@@ -50,7 +50,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					mes "What a good choice!";
 					mes "I must say this song";
 					mes "represents the";
-					mes "heart of a poet!";
+					mes "" + mesitemlink(7855) + " of a poet!";
 					soundeffect "bragis_poem.wav",1;
 					close2;
 					break;
@@ -198,7 +198,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					next;
 					mes "[Nelliorde]";
 					cutin "god_nelluad02",2;
-					mes "I'm talking about the Assassin Guild. Supposedly, it's hidden behind a sandstorm in the Morocc Desert!";
+					mes "I'm talking about the Assassin Guild. Supposedly, it's hidden behind a " + mesitemlink(13035) + " in the Morocc Desert!";
 					if (Class == Job_Assassin || Class == Job_Assassin_Cross) {
 						mes "But you should know what I am talking about! So when are you gonna take me to the guild, eh?";
 					}
@@ -233,7 +233,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					next;
 					mes "[Nelliorde]";
 					cutin "god_nelluad01",2;
-					mes "It's said that a piece of Ymir's Heart generates enough power";
+					mes "It's said that a piece of Ymir's " + mesitemlink(7855) + " generates enough power";
 					mes "to keep the entire city aloft in the sky. Isn't that amazing?";
 					next;
 					mes "[Nelliorde]";
@@ -282,10 +282,10 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 				next;
 				cutin "god_nelluad03",2;
 				mes "[Nelliorde]";
-				mes "What I was really afraid of was this type of strawberry colored... tongue thing. Phreeoni!";
+				mes "What I was really afraid of was this type of " + mesitemlink(578) + " colored... " + mesitemlink(1015) + " thing. Phreeoni!";
 				next;
 				mes "[Nelliorde]";
-				mes "Fortunately, I survived the whole incident, although I still have nightmares of that man-sized tongue.";
+				mes "Fortunately, I survived the whole incident, although I still have nightmares of that man-sized " + mesitemlink(1015) + ".";
 				next;
 				mes "[Nelliorde]";
 				mes "Once I got out of there, I craved human companionship to restore my sense of normalcy. The closest place that I knew was Paros Lighthouse.";
@@ -308,7 +308,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 				mes "well as the ruins.";
 				next;
 				mes "[Nelliorde]";
-				mes "And of course I forgot Serutero's warning about all the monsters. Argh! It was a nightmare! Instead of enjoying the scenary, I ended up running for my life.";
+				mes "And of course I forgot Serutero's warning about all the monsters. Argh! It was a " + mesitemlink(7102) + "! Instead of enjoying the scenary, I ended up running for my life.";
 				next;
 				mes "[Nelliorde]";
 				mes "I was still trying to escape those monsters when I stumbled upon";
@@ -489,10 +489,10 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					next;
 					cutin "god_nelluad03",2;
 					mes "[Nelliorde]";
-					mes "What I was really afraid of was this type of strawberry colored... tongue thing. Phreeoni!";
+					mes "What I was really afraid of was this type of " + mesitemlink(578) + " colored... " + mesitemlink(1015) + " thing. Phreeoni!";
 					next;
 					mes "[Nelliorde]";
-					mes "Fortunately, I survived the whole incident, although I still have nightmares of that man-sized tongue.";
+					mes "Fortunately, I survived the whole incident, although I still have nightmares of that man-sized " + mesitemlink(1015) + ".";
 					next;
 					mes "[Nelliorde]";
 					mes "Once I got out of there, I craved human companionship to restore my sense of normalcy. The closest place that I knew was Paros Lighthouse.";
@@ -515,7 +515,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					mes "well as the ruins.";
 					next;
 					mes "[Nelliorde]";
-					mes "And of course I forgot Serutero's warning about all the monsters. Argh! It was a nightmare! Instead of enjoying the scenary, I ended up running for my life.";
+					mes "And of course I forgot Serutero's warning about all the monsters. Argh! It was a " + mesitemlink(7102) + "! Instead of enjoying the scenary, I ended up running for my life.";
 					next;
 					mes "[Nelliorde]";
 					mes "I was still trying to escape those monsters when I stumbled upon";
@@ -726,7 +726,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 				mes "to see in the desert.";
 				next;
 				mes "[Nelliorde]";
-				mes "I'm talking about the Assassin Guild. Supposedly, it's hidden behind a sandstorm in the Morocc";
+				mes "I'm talking about the Assassin Guild. Supposedly, it's hidden behind a " + mesitemlink(13035) + " in the Morocc";
 				if ((Class == Job_Assassin) || (Class == Job_Assassin_Cross)) {
 					mes "Desert! But you should know what I am talking about! So when are you gonna take me to the guild, eh?";
 				}
@@ -761,7 +761,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 				next;
 				cutin "god_nelluad01",2;
 				mes "[Nelliorde]";
-				mes "It's said that a piece of Ymir's Heart generates enough power";
+				mes "It's said that a piece of Ymir's " + mesitemlink(7855) + " generates enough power";
 				mes "to keep the entire city aloft in the sky. Isn't that amazing?";
 				next;
 				mes "[Nelliorde]";
@@ -785,7 +785,7 @@ prt_fild08,175,374,3	script	Bard#brising	51,{
 					mes "What a good choice!";
 					mes "I must say this song";
 					mes "represents the";
-					mes "heart of a poet!";
+					mes "" + mesitemlink(7855) + " of a poet!";
 					soundeffect "bragis_poem.wav",1;
 					set Zeny,Zeny-500;
 					close2;
@@ -851,7 +851,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 	if ($God3 == $@god_check2) {
 		mes "[Studying Scholar]";
 		mes "Hmmm...";
-		mes "The highest quality Red Potion ever...";
+		mes "The highest quality " + mesitemlink(501) + " ever...";
 		next;
 		mes "[Studying Scholar]";
 		mes "If only I could figure a way to balance the consistency of the ground Red Herbs mixed with the water. That part is most crucial...";
@@ -864,7 +864,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			mes "you've returned.";
 			next;
 			mes "[Enrico Kaili]";
-			mes "Learning about Brisingamen was truly fascinating. But since we've hit a plateau for now, I've started a new research project.";
+			mes "Learning about " + mesitemlink(2630) + " was truly fascinating. But since we've hit a plateau for now, I've started a new research project.";
 			next;
 			mes "[Enrico Kaili]";
 			mes "Hahahaha~";
@@ -873,7 +873,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 		}
 		else if (god_brising == 49) {
 			mes "[Enrico Kaili]";
-			mes "Ah, I see. So it's true that Berling sealed himself in the ripple where the goddess' tear";
+			mes "Ah, I see. So it's true that Berling sealed himself in the " + mesitemlink(7090) + " where the goddess' tear";
 			mes "fell into the waters.";
 			next;
 			mes "[Enrico Kaili]";
@@ -922,22 +922,22 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			mes "[Enrico Kaili]";
 			mes "I guess it's true that";
 			mes "the four Dwarves have been";
-			mes "awakened. Does this mean that Brisingamen can now be created?";
+			mes "awakened. Does this mean that " + mesitemlink(2630) + " can now be created?";
 			next;
 			mes "[Enrico Kaili]";
 			mes "If such a thing is possible, what do we need in order to create it? Let's review the information you've gathered...";
 			next;
 			mes "[Enrico Kaili]";
-			mes "There's Freya's Tear Drop Crystal, Freya's Jewel, the Never-Melting Snow Crystal found where Alfrik";
-			mes "used to stay, the Drifting Air from the path where Dvalin slept. Hmm.";
+			mes "There's Freya's Tear Drop Crystal, " + mesitemlink(7073) + ", the Never-Melting " + mesitemlink(7088) + " found where Alfrik";
+			mes "used to stay, the " + mesitemlink(7092) + " from the path where Dvalin slept. Hmm.";
 			next;
 			mes "[Enrico Kaili]";
-			mes "Perhaps we could find something from the pond of Freya's Gold Tears where Berling is sleeping,";
+			mes "Perhaps we could find something from the pond of Freya's " + mesitemlink(969) + " Tears where Berling is sleeping,";
 			mes "though I am unsure.";
 			next;
 			mes "[Enrico Kaili]";
-			mes "I also assume that the splendid Silver Ornament constructed by";
-			mes "Gher is also needed to create Brisingamen.";
+			mes "I also assume that the splendid " + mesitemlink(7077) + " constructed by";
+			mes "Gher is also needed to create " + mesitemlink(2630) + ".";
 			next;
 			mes "[Enrico Kaili]";
 			mes "So what";
@@ -1046,7 +1046,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			next;
 			mes "[Enrico Kaili]";
 			mes "In any case, it's about time that you investigated Berling. There's";
-			mes "a stream that begins northwest of Prontera and passes through a mine in Mount Mjolnir.";
+			mes "a stream that begins northwest of Prontera and passes through a mine in Mount " + mesitemlink(1530) + ".";
 			next;
 			mes "[Enrico Kaili]";
 			mes "It may be wise to";
@@ -1059,12 +1059,12 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			mes "Are you sure?!";
 			mes "Those items were";
 			mes "intended to create";
-			mes "Freya's necklace,";
-			mes "Brisingamen?";
+			mes "Freya's " + mesitemlink(2603) + ",";
+			mes "" + mesitemlink(2630) + "?";
 			next;
 			mes "[Enrico Kaili]";
 			mes "If the four Dwarves";
-			mes "awaken, Brisingamen may";
+			mes "awaken, " + mesitemlink(2630) + " may";
 			mes "appear before human eyes?";
 			mes "Fascinating. Just fascinating.";
 			next;
@@ -1094,7 +1094,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			mes "is still alive...";
 			next;
 			mes "[Enrico Kaili]";
-			mes "Alfrik is one of the four Dwarves who created Brisingamen, the world's most beautiful necklace, for the goddess Freya.";
+			mes "Alfrik is one of the four Dwarves who created " + mesitemlink(2630) + ", the world's most beautiful " + mesitemlink(2603) + ", for the goddess Freya.";
 			next;
 			mes "[Enrico Kaili]";
 			mes "Now I realize...";
@@ -1126,7 +1126,7 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 			mes "^4d4dffThe beauty of the stars";
 			mes "Wanes in comparison.";
 			mes "We lost our hearts";
-			mes "To that golden hair";
+			mes "To that " + mesitemlink(1060) + "";
 			mes "And those dazzling eyes.^000000";
 			next;
 			mes "[Enrico Kaili]";
@@ -1282,11 +1282,11 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 				mes "Really?";
 				mes "If you could help me, that would be great! Before we start, would you take a look at this?";
 				next;
-				mes "^3355FFEnrico Kaili showed you a small white crystallization inside a box. It looked very fragile, but emanated an intensely";
+				mes "^3355FFEnrico Kaili showed you a small white crystallization inside a " + mesitemlink(7948) + ". It looked very fragile, but emanated an intensely";
 				mes "cold aura.^000000";
 				next;
 				mes "[Enrico Kaili]";
-				mes "I call this the Snow Crystal.";
+				mes "I call this the " + mesitemlink(7088) + ".";
 				mes "It looks just like a snowflake, doesn't it? Strangely enough,";
 				mes "it's never melted.";
 				next;
@@ -1339,11 +1339,11 @@ yuno_in04,47,113,1	script	Studying Scholar#1	749,{
 				mes "Really?";
 				mes "If you could help me, that would be great! Before we start, would you take a look at this?";
 				next;
-				mes "^3355FFEnrico Kaili showed you a small white crystallization inside a box. It looked very fragile, but emanated an intensely";
+				mes "^3355FFEnrico Kaili showed you a small white crystallization inside a " + mesitemlink(7948) + ". It looked very fragile, but emanated an intensely";
 				mes "cold aura.^000000";
 				next;
 				mes "[Enrico Kaili]";
-				mes "I call this the Snow Crystal.";
+				mes "I call this the " + mesitemlink(7088) + ".";
 				mes "It looks just like a snowflake, doesn't it? Strangely enough,";
 				mes "it's never melted.";
 				next;
@@ -1406,7 +1406,7 @@ prt_church,113,103,1	script	Praying Man	798,{
 		next;
 		mes "[Praying Man]";
 		mes "May I hit it rich with this";
-		mes "Old Blue Box that I spend this";
+		mes "" + mesitemlink(603) + " that I spend this";
 		mes "month's paycheck on...";
 		close;
 	}
@@ -1433,7 +1433,7 @@ prt_church,113,103,1	script	Praying Man	798,{
 		mes "be so happy.";
 		mes "I guess in the end,";
 		mes "I never really had";
-		mes "any place in her heart.";
+		mes "any place in " + mesitemlink(659) + ".";
 		mes "Lowen...";
 		next;
 		mes "[Hermite Charles]";
@@ -1458,7 +1458,7 @@ prt_church,113,103,1	script	Praying Man	798,{
 		next;
 		mes "[Hermite Charles]";
 		mes "I wasn't powerful enough to";
-		mes "earn it. Frankly, I stole it. But soon I began to fear its presense and my heart would pound with trepidation when I saw it.";
+		mes "earn it. Frankly, I stole it. But soon I began to fear its presense and my " + mesitemlink(7855) + " would pound with trepidation when I saw it.";
 		next;
 		mes "[Hermite Charles]";
 		mes "One day, I think it actually possessed me and I ended up";
@@ -2325,7 +2325,7 @@ prontera,260,354,4	script	Woman#Rosa Ellenen	101,{
 		mes "For a while things were great, but then she suddenly disappeared while on a mission to Geffen Dungeon.";
 		next;
 		mes "[Rosa Ellenen]";
-		mes "Two years later, she was buried in this grave after her body was found by some adventurers. I was given the broken shards of armor and a blood stained ribbon she left behind.";
+		mes "Two years later, she was buried in this grave after her body was found by some adventurers. I was given the broken shards of armor and a blood stained " + mesitemlink(2208) + " she left behind.";
 		next;
 		mes "[Rosa Ellenen]";
 		mes "I never really learned what exactly happened. And Hermite was always following her like she was his real sister. Ever since she died, he's changed. I hope he doesn't hurt himself...";
@@ -2413,12 +2413,12 @@ prontera,262,353,0	script	Gravestone	111,{
 gef_dun01,89,192,0	script	#lowentrace	111,3,3,{
 	if ($God2 < $@god_check1) {
 		mes "^3355FFIt's just an old,";
-		mes "dry piece of wood.^000000";
+		mes "dry piece of " + mesitemlink(6008) + ".^000000";
 		close;
 	}
 	if ($God3 >= $@god_check2) {
 		mes "^3355FFIt's just an old,";
-		mes "dry piece of wood.^000000";
+		mes "dry piece of " + mesitemlink(6008) + ".^000000";
 		close;
 	}
 	if ((god_brising > 20) && (god_brising < 34)) {
@@ -2522,7 +2522,7 @@ gef_dun01,89,192,0	script	#lowentrace	111,3,3,{
 		}
 	}
 	else {
-		mes "^3355FFYou find a piece of twisted, dry wood. Looking at it seems to bring out a feeling of sadness within you for some reason.^000000";
+		mes "^3355FFYou find a piece of twisted, dry " + mesitemlink(6008) + ". Looking at it seems to bring out a feeling of sadness within you for some reason.^000000";
 		close;
 	}
 
@@ -2536,12 +2536,12 @@ OnTouch_:
 gef_dun01,203,48,0	script	#lowentrace1	111,3,3,{
 	if ($God2 < $@god_check1) {
 		mes "^3355FFIt's just an old,";
-		mes "dry piece of wood.^000000";
+		mes "dry piece of " + mesitemlink(6008) + ".^000000";
 		close;
 	}
 	if ($God3 >= $@god_check2) {
 		mes "^3355FFIt's just an old,";
-		mes "dry piece of wood.^000000";
+		mes "dry piece of " + mesitemlink(6008) + ".^000000";
 		close;
 	}
 	if ((god_brising > 20) && (god_brising < 34)) {
@@ -2654,7 +2654,7 @@ gef_dun01,203,48,0	script	#lowentrace1	111,3,3,{
 		}
 	}
 	else {
-		mes "^3355FFYou find a piece of twisted, dry wood. Looking at it seems to bring out a feeling of sadness within you for some reason.^000000";
+		mes "^3355FFYou find a piece of twisted, dry " + mesitemlink(6008) + ". Looking at it seems to bring out a feeling of sadness within you for some reason.^000000";
 		close;
 	}
 
@@ -3031,7 +3031,7 @@ OnTouch_:
 	next;
 	mes "^4E2F2F[Crusader Commander]";
 	mes "Go, Lowen!";
-	mes "Cast Grand Cross, now!^000000";
+	mes "Cast " + mesitemlink(1528) + ", now!^000000";
 	next;
 	specialeffect EF_BEGINSPELL7,AREA,"#lowen";
 	mapannounce "que_god02","Mwahaha! Mortals are such fools...",0,0xA8A8A8;
@@ -3075,7 +3075,7 @@ OnTouch_:
 	mes "He's gonna kill you!";
 	next;
 	mes "[Hermite Charles]";
-	mes "Grand Cross?!";
+	mes "" + mesitemlink(1528) + "?!";
 	mes "Using that's";
 	mes "committing suicide!";
 	mes "Lowen, don't do it!";
@@ -3183,7 +3183,7 @@ que_god02,178,127,3	script	Valkyrie#1	811,{
 			mes ""+ strcharinfo(0) +",";
 			mes "Your exploits are known to me. But I am curious as to what has brought you here?";
 			next;
-			mes "^3355FFYou explained what happened to the Valkyrie, starting from the Snow Crystal which never melts.^000000";
+			mes "^3355FFYou explained what happened to the Valkyrie, starting from the " + mesitemlink(7088) + " which never melts.^000000";
 			next;
 			mes "[Valkyrie]";
 			mes "I understand.";
@@ -3214,7 +3214,7 @@ que_god02,178,127,3	script	Valkyrie#1	811,{
 			mes "^4d4dffThe beauty of the stars";
 			mes "Wanes in comparison.";
 			mes "We lost our hearts";
-			mes "To that golden hair";
+			mes "To that " + mesitemlink(1060) + "";
 			mes "And those dazzling eyes.^000000";
 			next;
 			mes "[Valkyrie]";
@@ -3268,7 +3268,7 @@ que_god02,178,127,3	script	Valkyrie#1	811,{
 			mes ""+ strcharinfo(0) +",";
 			mes "Your exploits are known to me. But I am curious as to what has brought you here?";
 			next;
-			mes "^3355FFYou explained what happened to the Valkyrie, starting from the Snow Crystal which never melts.^000000";
+			mes "^3355FFYou explained what happened to the Valkyrie, starting from the " + mesitemlink(7088) + " which never melts.^000000";
 			next;
 			mes "[Valkyrie]";
 			mes "I understand.";
@@ -3298,7 +3298,7 @@ que_god02,178,127,3	script	Valkyrie#1	811,{
 			mes "^4d4dffThe beauty of the stars";
 			mes "Wanes in comparison.";
 			mes "We lost our hearts";
-			mes "To that golden hair";
+			mes "To that " + mesitemlink(1060) + "";
 			mes "And those dazzling eyes.^000000";
 			next;
 			mes "[Valkyrie]";
@@ -3420,7 +3420,7 @@ xmas,38,105,0	script	#brisindwarf1	111,3,3,{
 				}
 				switch(select("To that golden hair:To that beautiful hair:All of our hearts in:To the steps in:To those dazzling eyes")) {
 				case 1:
-					mes "To that golden hair";
+					mes "To that " + mesitemlink(1060) + "";
 					set .@point,.@point + 10;
 					break;
 				case 2:
@@ -3480,7 +3480,7 @@ xmas,38,105,0	script	#brisindwarf1	111,3,3,{
 			mes "just dropped in the snow!";
 			close;
 		case 3:
-			mes "^3355FFYou use your finger to poke the pile of snow. However, you hurt your finger a little bit after hitting something really solid.^000000";
+			mes "^3355FFYou use your " + mesitemlink(1811) + " to poke the pile of snow. However, you hurt your " + mesitemlink(1811) + " a little bit after hitting something really solid.^000000";
 			emotion ET_ANGER, playerattached();
 			percentheal -20,0;
 			close;
@@ -3528,31 +3528,31 @@ xmas,36,103,4	script	Alfrik#1	826,{
 			end;
 		case 2:
 			mes "[Alfrik]";
-			mes "Materials for Brisingamen? For the human imitation, the materials are pretty easy to gather...";
+			mes "Materials for " + mesitemlink(2630) + "? For the human imitation, the materials are pretty easy to gather...";
 			next;
 			mes "[Alfrik]";
-			mes "The power of weapons used by gods, when they battled demons a thousand years ago, and everything detached from Brisingamen. That's basically what you need.";
+			mes "The power of weapons used by gods, when they battled demons a thousand years ago, and everything detached from " + mesitemlink(2630) + ". That's basically what you need.";
 			next;
 			mes "[Alfrik]";
 			mes "If you want to";
-			mes "create a Brisingamen,";
+			mes "create a " + mesitemlink(2630) + ",";
 			mes "you will need.....";
 			next;
 			mes "[Alfrik]";
 			mes "^4d4dffFreya's Jewel";
-			mes "Silver Ornament";
-			mes "Snow Crystal";
-			mes "Ripple";
-			mes "Drifting Air^000000";
+			mes "" + mesitemlink(7077) + "";
+			mes "" + mesitemlink(7088) + "";
+			mes "" + mesitemlink(7090) + "";
+			mes "" + mesitemlink(7092) + "^000000";
 			next;
 			mes "[Alfrik]";
-			mes "You might need some gems, like Saphire, Peal, Opal, Curse Ruby, and maybe even some Gold to decorate the necklace.";
+			mes "You might need some gems, like Saphire, Peal, " + mesitemlink(727) + ", Curse " + mesitemlink(723) + ", and maybe even some " + mesitemlink(969) + " to decorate the " + mesitemlink(2603) + ".";
 			next;
 			mes "[Alfrik]";
 			mes "Although I give freely of my advice, we four Dwarves will no longer do smithing work unless it be Freya's command.";
 			next;
 			mes "[Alfrik]";
-			mes "But I can promise you one thing. Since the four of us have awakened, humans will obtain the Brisingamen for sure.";
+			mes "But I can promise you one thing. Since the four of us have awakened, humans will obtain the " + mesitemlink(2630) + " for sure.";
 			next;
 			mes "[Alfrik]";
 			mes "Now...";
@@ -3609,7 +3609,7 @@ xmas,36,103,4	script	Alfrik#1	826,{
 				mes "Now...";
 				mes "Understand that";
 				mes "there can only be";
-				mes "one true Brisingamen.";
+				mes "one true " + mesitemlink(2630) + ".";
 				mes "After all, it's our";
 				mes "masterpiece.";
 				next;
@@ -3617,12 +3617,12 @@ xmas,36,103,4	script	Alfrik#1	826,{
 				mes "However, that doesn't mean an imitation, with the same power as that godly item, can't be made. Isn't it tempting, the power of a god?";
 				next;
 				mes "[Alfrik]";
-				mes "First things first. If you want to make the necklace, you must";
+				mes "First things first. If you want to make the " + mesitemlink(2603) + ", you must";
 				mes "awaken all four of us. Because of Loki's threat, we all hid ourselves in different places.";
 				next;
 				mes "[Alfrik]";
 				mes "Go wake all my brothers!";
-				mes "Let's see if the Brisingamen can be made once again! First, go and wake Dvalin before the gods and giants find out!";
+				mes "Let's see if the " + mesitemlink(2630) + " can be made once again! First, go and wake Dvalin before the gods and giants find out!";
 				set god_brising,41;
 				close2;
 				hideonnpc "Alfrik#1";
@@ -3663,7 +3663,7 @@ xmas,36,103,4	script	Alfrik#1	826,{
 			mes "Now...";
 			mes "Understand that";
 			mes "there can only be";
-			mes "one true Brisingamen.";
+			mes "one true " + mesitemlink(2630) + ".";
 			mes "After all, it's our";
 			mes "masterpiece.";
 			next;
@@ -3671,12 +3671,12 @@ xmas,36,103,4	script	Alfrik#1	826,{
 			mes "However, that doesn't mean an imitation, with the same power as that godly item, can't be made. Isn't it tempting, the power of a god?";
 			next;
 			mes "[Alfrik]";
-			mes "First things first. If you want to make the necklace, you must";
+			mes "First things first. If you want to make the " + mesitemlink(2603) + ", you must";
 			mes "awaken all four of us. Because of Loki's threat, we all hid ourselves in different places.";
 			next;
 			mes "[Alfrik]";
 			mes "Go wake all my brothers!";
-			mes "Let's see if the Brisingamen can be made once again! First, go and wake Dvalin before the gods and giants find out!";
+			mes "Let's see if the " + mesitemlink(2630) + " can be made once again! First, go and wake Dvalin before the gods and giants find out!";
 			set god_brising,41;
 			close2;
 			hideonnpc "Alfrik#1";
@@ -3721,25 +3721,25 @@ xmas,36,103,4	script	Alfrik#1	826,{
 			end;
 		case 2:
 			mes "[Alfrik]";
-			mes "Brisingamen is our masterpiece, a necklace we forged for Freya. Even if we tried making it again, I doubt it would be as good.";
+			mes "" + mesitemlink(2630) + " is our masterpiece, a " + mesitemlink(2603) + " we forged for Freya. Even if we tried making it again, I doubt it would be as good.";
 			next;
 			mes "[Alfrik]";
 			mes "It looked perfect on Freya. Very difficult to create jewelry that actually enhances the attractiveness of the goddess of beauty.";
 			next;
 			mes "[Alfrik]";
-			mes "Perhaps our greatest reward was that beautiful smile of satisfaction she gave us when that we gave her that necklace. We loved her so.";
+			mes "Perhaps our greatest reward was that beautiful smile of satisfaction she gave us when that we gave her that " + mesitemlink(2603) + ". We loved her so.";
 			next;
 			mes "[Alfrik]";
 			mes "Is it that wrong for dwarves to love a goddess? Perhaps we were punished because the gods, even Odin, loved her as well.";
 			next;
 			mes "[Alfrik]";
-			mes "In any case, we've never seen the true Brisingamen again. But something very similar to it can be created...";
+			mes "In any case, we've never seen the true " + mesitemlink(2630) + " again. But something very similar to it can be created...";
 			next;
 			mes "[Alfrik]";
 			mes "You'll need materials that have been graced by the goddess' presense. Traces of the goddess in the earth, water and the wind.";
 			next;
 			mes "[Alfrik]";
-			mes "And if the Brisingamen is recreated, the power of a god will be in the hands of a human. That human could be you!";
+			mes "And if the " + mesitemlink(2630) + " is recreated, the power of a god will be in the hands of a human. That human could be you!";
 			next;
 			mes "[Alfrik]";
 			mes "Poor Dvalin is sleeping under the path in the East. Once there, you'll feel the scent the goddess.";
@@ -3831,7 +3831,7 @@ prt_fild02,185,269,0	script	#brisindwarf2	111,3,3,{
 			mes "["+ strcharinfo(0) +"]";
 			mes "This rock had";
 			mes "better be one of";
-			mes "those secret rocks!";
+			mes "those secret " + mesitemlink(2796) + "!";
 			mes "Or else...!";
 			close;
 		case 3:
@@ -3980,10 +3980,10 @@ prt_fild02,185,270,3	script	Dvalin#1	826,{
 		mes "And you'd be acting pretty pushy right about now if you were acting on behalf of a god. What could you want...?";
 		next;
 		mes "[Dvalin]";
-		mes "It makes sense that you want a replica of Brisingamen for its power. But remember, we originally made Brisingamen as a necklace fit for a goddess.";
+		mes "It makes sense that you want a replica of " + mesitemlink(2630) + " for its power. But remember, we originally made " + mesitemlink(2630) + " as a " + mesitemlink(2603) + " fit for a goddess.";
 		next;
 		mes "[Dvalin]";
-		mes "Some might say that we seduced Freya with the necklace, but we really loved her with all of our hearts.";
+		mes "Some might say that we seduced Freya with the " + mesitemlink(2603) + ", but we really loved her with all of our hearts.";
 		close2;
 		hideonnpc "Dvalin#1";
 		end;
@@ -4010,7 +4010,7 @@ prt_fild02,185,270,3	script	Dvalin#1	826,{
 			mes "Did you just say Alfrik sent you? How do you know my brother?!";
 			next;
 			mes "[Dvalin]";
-			mes "Brisingamen?!";
+			mes "" + mesitemlink(2630) + "?!";
 			mes "Then, that means";
 			mes "we can meet Freya again?!";
 			next;
@@ -4029,7 +4029,7 @@ prt_fild02,185,270,3	script	Dvalin#1	826,{
 			next;
 			mes "[Dvalin]";
 			mes "So, an imitation";
-			mes "of Brisingamen...";
+			mes "of " + mesitemlink(2630) + "...";
 			mes "Even if it's not the original, I'm sure it can possess power comparable to the real thing. Yes...";
 			next;
 			mes "[Dvalin]";
@@ -4049,7 +4049,7 @@ prt_fild02,185,270,3	script	Dvalin#1	826,{
 			mes "no special love for the gods or giants. But I am intrigued by you humans. Your race is one of both love and hatred, life and destruction.";
 			next;
 			mes "[Dvalin]";
-			mes "Go now and seek Berling. He is sleeping near a river linked to Mount Mjolnir. Travel West to find the river were Freya's Teardrops have fallen.";
+			mes "Go now and seek Berling. He is sleeping near a river linked to Mount " + mesitemlink(1530) + ". Travel West to find the river were Freya's Teardrops have fallen.";
 			next;
 			mes "[Dvalin]";
 			mes "If the phantom of water gives you a question, answer it. The answer is the punishment that Odin gave to our goddess.";
@@ -4197,15 +4197,15 @@ mjolnir_09,87,129,3	script	Berling#1	826,{
 			mes ".........";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "...So I guess I need to wake up all four of you dwarves so that Brisingamen, which holds Freya's power, can be made again.";
+			mes "...So I guess I need to wake up all four of you dwarves so that " + mesitemlink(2630) + ", which holds Freya's power, can be made again.";
 			next;
 			mes "[Berling]";
-			mes "Oh! Say that name once again! Freya, the goddess who took my body and soul! Did you just say you want to make her necklace?";
+			mes "Oh! Say that name once again! Freya, the goddess who took my body and soul! Did you just say you want to make her " + mesitemlink(2603) + "?";
 			next;
 			mes "[Berling]";
 			mes "Hahahaha!";
 			mes "Stop joking around.";
-			mes "The Brisingamen is";
+			mes "The " + mesitemlink(2630) + " is";
 			mes "a one of a kind";
 			mes "masterpiece!";
 			next;
@@ -4213,7 +4213,7 @@ mjolnir_09,87,129,3	script	Berling#1	826,{
 			case 1:
 				mes "[Berling]";
 				mes "Ah, now I see! You want a replica that has roughly the same power.";
-				mes "A Brisingamen used by humans!";
+				mes "A " + mesitemlink(2630) + " used by humans!";
 				mes "Very clever!";
 				next;
 				mes "[Berling]";
@@ -4221,7 +4221,7 @@ mjolnir_09,87,129,3	script	Berling#1	826,{
 				next;
 				mes "[Berling]";
 				mes "Oh Freya...";
-				mes "The more of her beauty exists in this world, the happier I'll be. I'm more than willing to help you recreate this memento of Freya.";
+				mes "The more of her beauty exists in this world, the happier I'll be. I'm more than willing to help you recreate this " + mesitemlink(934) + " of Freya.";
 				next;
 				mes "[Berling]";
 				mes "Now, please go and find the last one of my brothers! Poor Grer, perhaps he is still digging silver in that mine for her...";
@@ -4240,7 +4240,7 @@ mjolnir_09,87,129,3	script	Berling#1	826,{
 				mes "^4d4dffOur masterpiece made from love.^000000";
 				next;
 				mes "[Berling]";
-				mes "^4d4dffShe wanted the dazzling necklace.^000000";
+				mes "^4d4dffShe wanted the dazzling " + mesitemlink(2603) + ".^000000";
 				next;
 				mes "[Berling]";
 				mes "^4d4dffWe wanted the goddess of beauty.^000000";
@@ -4290,7 +4290,7 @@ mjolnir_09,87,129,3	script	Berling#1	826,{
 		mes "^4d4dffOur masterpiece made from love.^000000";
 		next;
 		mes "[Berling]";
-		mes "^4d4dffShe wanted the dazzling necklace.^000000";
+		mes "^4d4dffShe wanted the dazzling " + mesitemlink(2603) + ".^000000";
 		next;
 		mes "[Berling]";
 		mes "^4d4dffWe wanted the goddess of beauty.^000000";
@@ -4392,7 +4392,7 @@ mjo_dun02,126,36,0	script	#brisindwarf4	111,3,3,{
 		}
 	}
 	else {
-		mes "^3355FFYou found a hole filled with some clod and a lump of coal.^000000";
+		mes "^3355FFYou found a hole filled with some clod and a lump of " + mesitemlink(1003) + ".^000000";
 		close;
 	}
 
@@ -4469,7 +4469,7 @@ mjo_dun02,126,34,1	script	Grer#1	826,{
 	if (god_brising > 47) {
 		mes "[Grer]";
 		mes "As we promised,";
-		mes "Brisingamen will appear in front of human's eyes. But until then, I shall make jewelry of silver. Mwahahaha~";
+		mes "" + mesitemlink(2630) + " will appear in front of human's eyes. But until then, I shall make jewelry of silver. Mwahahaha~";
 		close2;
 		hideonnpc "Grer#1";
 		end;
@@ -4481,7 +4481,7 @@ mjo_dun02,126,34,1	script	Grer#1	826,{
 		mes "the last one to be awakened. Now I see that I haven't mined as much silver as I may need.";
 		next;
 		mes "[Grer]";
-		mes "You might think gold would better suit a goddess, but no. Silver is what makes her golden hair more beautiful.";
+		mes "You might think " + mesitemlink(969) + " would better suit a goddess, but no. Silver is what makes her " + mesitemlink(1060) + " more beautiful.";
 		next;
 		mes "[Grer]";
 		mes "Now that we're revived, there's a good chance that we may see her again. I don't really mind anything else.";
@@ -4501,7 +4501,7 @@ mjo_dun02,126,34,1	script	Grer#1	826,{
 		mes "[Grer]";
 		mes "Now, I need to";
 		mes "get back to my work.";
-		mes "You'll need a silver ornament for the necklace, so I'll continue to mine silver.";
+		mes "You'll need a " + mesitemlink(7077) + " for the " + mesitemlink(2603) + ", so I'll continue to mine silver.";
 		next;
 		mes "[Grer]";
 		mes "I will be working";

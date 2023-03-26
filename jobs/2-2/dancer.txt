@@ -237,16 +237,16 @@ job_duncer,43,93,4	script	Aile#da	724,{
 			set DANC_Q,2;
 			changequest 7000,7001;
 			mes "[Aile]";
-			mes "First, there's the tuition fee of ^CD688910,000 Zeny^000000. Then, you'll about ^CD688920 Sticky Mucus^000000 for shoe polish.";
+			mes "First, there's the tuition fee of ^CD688910,000 Zeny^000000. Then, you'll about ^CD688920 " + mesitemlink(938) + "^000000 for shoe polish.";
 			next;
 			mes "[Aile]";
-			mes "Then, bring ^CD68893 Jellopy^000000 and ^CD68895 Red Potions^000000 to use as ointment. And of course, you'll need a pair of ^CD6889Shoes^000000.";
+			mes "Then, bring ^CD68893 " + mesitemlink(909) + "^000000 and ^CD68895 Red Potions^000000 to use as ointment. And of course, you'll need a pair of ^CD6889Shoes^000000.";
 			next;
 			mes "[Aile]";
 			mes "Once again, that's";
 			mes "^CD688910,000 Zeny^000000,";
-			mes "^CD688920 Sticky Mucus^000000,";
-			mes "^CD68893 Jellopy^000000,";
+			mes "^CD688920 " + mesitemlink(938) + "^000000,";
+			mes "^CD68893 " + mesitemlink(909) + "^000000,";
 			mes "^CD68895 Red Potions^000000 and";
 			mes "^CD68891 Shoes^000000.";
 		}
@@ -260,13 +260,13 @@ job_duncer,43,93,4	script	Aile#da	724,{
 			mes "Once again that's";
 			mes "^CD688910,000 Zeny^000000,";
 			mes "^CD68895 Earthworm Peelings^000000 and ";
-			mes "^CD68891 Boots^000000.";
+			mes "^CD68891 " + mesitemlink(2405) + "^000000.";
 		}
 		else {
 			set DANC_Q,4;
 			changequest 7000,7003;
 			mes "[Aile]";
-			mes "First, there's the tuition fee of ^CD688910,000 Zeny^000000. Then, bring ^CD68892 Clam Shells^000000 for your costume, ^CD68895 Yellow Potions^000000 and ^CD688920 Jellopy^000000 to treat foot injuries.";
+			mes "First, there's the tuition fee of ^CD688910,000 Zeny^000000. Then, bring ^CD68892 Clam Shells^000000 for your costume, ^CD68895 Yellow Potions^000000 and ^CD688920 " + mesitemlink(909) + "^000000 to treat foot injuries.";
 			next;
 			mes "[Aile]";
 			mes "You'll also need to bring ^CD688910 Black Hairs^000000 to make wigs for the performances and, of course, a pair of ^CD6889Sandals^000000. Once again, that's...";
@@ -275,7 +275,7 @@ job_duncer,43,93,4	script	Aile#da	724,{
 			mes "^CD688910,000 Zeny^000000,";
 			mes "^CD68892 Clam Shells^000000,";
 			mes "^CD68895 Yellow Potions^000000,";
-			mes "^CD688920 Jellopy^000000,";
+			mes "^CD688920 " + mesitemlink(909) + "^000000,";
 			mes "^CD688910 Black Hairs^000000 and";
 			mes "^CD6889Sandals^000000.";
 		}
@@ -925,7 +925,7 @@ job_duncer,32,154,1	script	Waiting Room#click	66,{
 	mes "Please wait in";
 	mes "the waiting room.";
 	mes "Click the Chatroom";
-	mes "box to enter.";
+	mes "" + mesitemlink(7948) + " to enter.";
 	next;
 	mes "[Pyorgin]";
 	mes "Also, those who";

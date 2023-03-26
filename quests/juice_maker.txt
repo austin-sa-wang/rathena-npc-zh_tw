@@ -22,13 +22,13 @@ prt_in,49,172,3	script	Marianne#juice	53,{
 	if ((MISC_QUEST&1) || morison_meat == 15) {
 		mes "[Housewife Marianne]";
 		mes "Whew...!";
-		mes "Still, he won't eat anything unless it's Meat. But maybe he will eat fruit if it was cut so that it was easy to eat. Like, if it was blended into juice...";
+		mes "Still, he won't eat anything unless it's " + mesitemlink(517) + ". But maybe he will eat fruit if it was cut so that it was easy to eat. Like, if it was blended into juice...";
 		next;
 		set mother_marienu,0;
 		set morison_meat,0;
 		set MISC_QUEST,MISC_QUEST | 1;
 		mes "[Housewife Marianne]";
-		mes "Ah! Come to think of it, I heard they were making fruit juice somewhere. Now where was it... Payon Village, or Morocc?";
+		mes "Ah! Come to think of it, I heard they were making " + mesitemlink(12332) + " somewhere. Now where was it... Payon Village, or Morocc?";
 		close;
 	}
 	if (mother_marienu == 1) {
@@ -38,7 +38,7 @@ prt_in,49,172,3	script	Marianne#juice	53,{
 		if (select("Talk:Cancel") == 1) {
 			mes "[Housewife Marianne]";
 			mes "Hm? ...You!";
-			mes "You're the one who gave, my little Morrison that Meat?! Did you come here thinking I wouldn't know about it?!";
+			mes "You're the one who gave, my little Morrison that " + mesitemlink(517) + "?! Did you come here thinking I wouldn't know about it?!";
 			next;
 			mes "[Housewife Marianne]";
 			mes "Go away, get out of my house NOW!!";
@@ -71,7 +71,7 @@ prt_in,49,172,3	script	Marianne#juice	53,{
 		mes "My one and only son.";
 		next;
 		mes "[Housewife Marianne]";
-		mes "But these days, he just won't eat fruits. His face is so dull because he refuses to eat healthy. He just wants to eat Meat. I need to find a way to feed him fruits or vegetables....";
+		mes "But these days, he just won't eat fruits. His face is so dull because he refuses to eat healthy. He just wants to eat " + mesitemlink(517) + ". I need to find a way to feed him fruits or vegetables....";
 		close;
 	}
 	mes "[Housewife Marianne]";
@@ -90,7 +90,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 		mes "[Little Morrison]";
 		mes "Ah... so full~";
 		mes "I think I can live now.";
-		mes "You don't have to give me any more Meat. I feel like I'm going to explode if I eat any more.";
+		mes "You don't have to give me any more " + mesitemlink(517) + ". I feel like I'm going to explode if I eat any more.";
 		if (morison_meat == 10) {
 			next;
 			set morison_meat,morison_meat+1;
@@ -99,7 +99,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 			mes "Take this.";
 			next;
 			mes "[Little Morrison]";
-			mes "It's a little something I've been saving to eat for later, but since you gave me Meat, I think I can pass on the sweets.";
+			mes "It's a little something I've been saving to eat for later, but since you gave me " + mesitemlink(517) + ", I think I can pass on the sweets.";
 			close;
 			getitem 529,3; //Candy
 			getitem 530,1; //Candy_Striper
@@ -117,13 +117,13 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 			mes "Aaaagh!! Once or twice is enough!! I refuse to eat any more fruits! You have to peel them and there's so much juice that it makes you feel icky...";
 			next;
 			mes "[Little Morrison]";
-			mes "And they're all slippery and sour... Even if I eat it, I still feel hungry. Aaaah~! Give me Meat!";
+			mes "And they're all slippery and sour... Even if I eat it, I still feel hungry. Aaaah~! Give me " + mesitemlink(517) + "!";
 			close;
 		case 2:
 			mes "[Little Morrison]";
 			mes "Ooh! M-Meaaat~";
 			mes "Ah... hu...hungry...";
-			mes "The scent of Meat...";
+			mes "The scent of " + mesitemlink(517) + "...";
 			mes "Excuse me...";
 			mes "C-can I please have one?";
 			next;
@@ -131,7 +131,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 				delitem 517,1; //Meat
 				set morison_meat,morison_meat+1;
 				mes "[Little Morrison]";
-				mes "Wow~!!! Meat!!";
+				mes "Wow~!!! " + mesitemlink(517) + "!!";
 				mes "So yummy!";
 				mes "Thank you,";
 				mes "I think I can";
@@ -161,7 +161,7 @@ prt_in,47,173,3	script	Morrison#juice	97,{
 		mes "[Little Morrison]";
 		mes "And they're all slippery and sour... Even if I eat it, I still feel hungry.";
 		mes "Aaaah~!";
-		mes "Give me Meat!";
+		mes "Give me " + mesitemlink(517) + "!";
 		close;
 	}
 	mes "[Little Morrison]";
@@ -187,7 +187,7 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 		switch(select("Make Juice.:Talk and get information about fruit processing.:Cancel.")) {
 		case 1:
 			mes "[Merchant Marx Hansen]";
-			mes "What kind of fruit juice would you like to make?";
+			mes "What kind of " + mesitemlink(12332) + " would you like to make?";
 			next;
 			switch(select("Apple Juice:Banana Juice:Carrot Juice:Grape Juice:Cancel")) {
 			case 1:
@@ -215,7 +215,7 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 			if (countitem(.@fruit) == 0 || countitem(713) == 0 || Zeny < 3) {
 				mes "[Merchant Marx Hansen]";
 				mes "Oh no...";
-				mes "You don't have all the necessary materials. To make "+getitemname(.@juice)+", I need 1 "+getitemname(.@fruit)+" and 1 Empty Bottle. I will also need a 3 zeny fee.";
+				mes "You don't have all the necessary materials. To make "+getitemname(.@juice)+", I need 1 "+getitemname(.@fruit)+" and 1 " + mesitemlink(713) + ". I will also need a 3 zeny fee.";
 				next;
 				mes "[Merchant Marx Hansen]";
 				mes "When you have prepared everything, I will blend the fruit to give you delicious juice.";
@@ -289,17 +289,17 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 			mes "Since life became so prosperous, the younger generation seems not to eat fruit any more. So, I started thinking of ways to make fruit easier to eat.";
 			next;
 			mes "[Merchant Marx Hansen]";
-			mes "I realized that when you make fruit juice, it's more convenient to eat and has a much better taste.";
+			mes "I realized that when you make " + mesitemlink(12332) + ", it's more convenient to eat and has a much better taste.";
 			next;
-			mes "# Fruit Juice Information #";
-			mes "^CC4E5C- Apple Juice -^000000";
-			mes "Apple x 1 ea, Empty Bottle x 1 ea, 3 zeny.";
-			mes "^E3CF57- Banana Juice -^000000";
-			mes "Banana x 1 ea, Empty Bottle x 1 ea, 3 zeny.";
-			mes "^ED9121- Carrot Juice -^000000";
-			mes "Carrot x 1 ea, Empty Bottle x 1 ea, 3 zeny.";
-			mes "^CC00FF- Grape Juice -^000000";
-			mes "Grape x 1 ea, Empty Bottle x 1 ea, 3 zeny.";
+			mes "# " + mesitemlink(12332) + " Information #";
+			mes "^CC4E5C- " + mesitemlink(531) + " -^000000";
+			mes "" + mesitemlink(512) + " x 1 ea, " + mesitemlink(713) + " x 1 ea, 3 zeny.";
+			mes "^E3CF57- " + mesitemlink(532) + " -^000000";
+			mes "" + mesitemlink(513) + " x 1 ea, " + mesitemlink(713) + " x 1 ea, 3 zeny.";
+			mes "^ED9121- " + mesitemlink(534) + " -^000000";
+			mes "" + mesitemlink(515) + " x 1 ea, " + mesitemlink(713) + " x 1 ea, 3 zeny.";
+			mes "^CC00FF- " + mesitemlink(533) + " -^000000";
+			mes "Grape x 1 ea, " + mesitemlink(713) + " x 1 ea, 3 zeny.";
 			close;
 		case 3:
 			mes "[Merchant Marx Hansen]";
@@ -322,7 +322,7 @@ payon_in03,188,146,5	script	Marx Hansen#juice	86,{
 			mes "Since life became so prosperous, the younger generation seems not to eat fruit any more. So, I started thinking of ways to make fruit easier to eat.";
 			next;
 			mes "[Merchant Marx Hansen]";
-			mes "I realized that when you make fruit juice, it's more convenient to eat and has a much better taste.";
+			mes "I realized that when you make " + mesitemlink(12332) + ", it's more convenient to eat and has a much better taste.";
 			close;
 		}
 		mes "[Merchant Marx Hansen]";

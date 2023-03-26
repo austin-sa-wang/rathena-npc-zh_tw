@@ -81,7 +81,7 @@ cmd_in02,64,43,4	script	Roberto#cmd	709,{
 cmd_in02,89,72,4	script	Deniroz#cmd	89,{
 	mes "[Deniroz]";
 	mes "All I need is for this";
-	mes "little steel bead to fall";
+	mes "little " + mesitemlink(999) + " bead to fall";
 	mes "into the right hole. Then,";
 	mes "I'll win the jackpot. Alright.";
 	mes "Here goes. One last time...";

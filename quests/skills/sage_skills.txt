@@ -190,7 +190,7 @@ yuno_in03,176,24,3	script	Mischna	755,{
 		next;
 		mes "[Mishuna]";
 		mes "The second is called";
-		mes "Elemental Converter Creation,";
+		mes "" + mesitemlink(12114) + " Creation,";
 		mes "which enables you to create";
 		mes "converter items that are required to use the Elemental Change skill.";
 		next;
@@ -263,7 +263,7 @@ yuno_in03,176,24,3	script	Mischna	755,{
 			mes "Don't forget that we need";
 			mes "all of these items to create";
 			mes "a converter so that you can";
-			mes "learn the Elemental Converter";
+			mes "learn the " + mesitemlink(12114) + "";
 			mes "Creation skill by watching";
 			mes "me demonstrate it for you.";
 			close;
@@ -306,7 +306,7 @@ yuno_in03,176,24,3	script	Mischna	755,{
 			mes "Converter Creation skill.";
 			next;
 			mes "^3355FFYou have learned the";
-			mes "Elemental Converter";
+			mes "" + mesitemlink(12114) + "";
 			mes "Creation skill by reviewing";
 			mes "your copy of Barmundt's scroll.^000000";
 			specialeffect2 EF_ABSORBSPIRITS;
@@ -378,8 +378,8 @@ yuno_in03,176,24,3	script	Mischna	755,{
 				next;
 				mes "[Mishuna]";
 				mes "^FF000020 "+.@ReqItem$[.@i]+"^000000,";
-				mes "^FF00001 Payon Solution^000000 and";
-				mes "^FF00001 Morocc Solution^000000. Please";
+				mes "^FF00001 " + mesitemlink(1089) + "^000000 and";
+				mes "^FF00001 " + mesitemlink(1088) + "^000000. Please";
 				mes "return to me once you have";
 				mes "all the materials ready.";
 				set SAG_SK, 10 * (.@i+1); //10,20,30,40
@@ -409,8 +409,8 @@ yuno_in03,176,24,3	script	Mischna	755,{
 			next;
 			mes "[Mishuna]";
 			mes "^ff000020 "+.@ReqItem$[.@i]+"^000000,";
-			mes "^ff00001 Payon Solution^000000 and";
-			mes "^ff00001 Morocc Solution^000000. Please";
+			mes "^ff00001 " + mesitemlink(1089) + "^000000 and";
+			mes "^ff00001 " + mesitemlink(1088) + "^000000. Please";
 			mes "don't forget and have the";
 			mes "materials ready for the next";
 			mes "time you see me, alright?";
@@ -426,9 +426,9 @@ yuno_in03,176,24,3	script	Mischna	755,{
 		next;
 		mes "[Mishuna]";
 		mes "Remember that you must";
-		mes "use an elemental converter to";
+		mes "use an " + mesitemlink(12114) + " to";
 		mes "cast this skill, and that it has a success rate, similarly to the";
-		mes "Elemental Converter Creation";
+		mes "" + mesitemlink(12114) + " Creation";
 		mes "skill. So be aware of that.";
 		next;
 		mes "[Mishuna]";

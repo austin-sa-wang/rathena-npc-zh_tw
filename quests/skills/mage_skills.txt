@@ -61,7 +61,7 @@ geffen_in,151,119,4	script	Great Wizard	64,{
 		mes "three ^3355FFGlass Bead^000000 ";
 		mes "one ^3355FF1 carat Diamond^000000 ";
 		mes "five ^3355FFShell^000000 ";
-		mes "one ^3355FFSolid Shell^000000 ";
+		mes "one ^3355FFSolid " + mesitemlink(935) + "^000000 ";
 		mes "Bring me these items.";
 		next;
 		mes "[BLIZZARDRISS]";
@@ -87,7 +87,7 @@ geffen_in,151,119,4	script	Great Wizard	64,{
 			mes "[BLIZZARDRISS]";
 			mes "It seems that you have ";
 			mes "already mastered this skill.";
-			mes "Your skill in 'Energy Coat' ";
+			mes "Your skill in 'Energy " + mesitemlink(2309) + "' ";
 			mes "is evident.";
 			mes "I am sorry, ";
 			mes "I have nothing more to teach you ...";
@@ -113,7 +113,7 @@ geffen_in,151,119,4	script	Great Wizard	64,{
 			mes "Release your spirit";
 			mes "Mana Shield! Metal Armor!";
 			mes ". . . . . . . . . . . .";
-			mes "ENERGY COAT! ! !";
+			mes "ENERGY " + mesitemlink(2309) + "! ! !";
 			next;
 			delitem 746,3; //Glass_Bead
 			delitem 730,1; //Crystal_Jewel
@@ -124,7 +124,7 @@ geffen_in,151,119,4	script	Great Wizard	64,{
 			mes ". . . . .";
 			mes "It is done. . .";
 			mes "You know have the ";
-			mes "elite skill of ^3355FF' Energy Coat '^000000 .";
+			mes "elite skill of ^3355FF' Energy " + mesitemlink(2309) + " '^000000 .";
 			mes "Use it well.";
 			next;
 			mes "[BLIZZARDRISS]";

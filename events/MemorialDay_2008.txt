@@ -63,7 +63,7 @@ prontera,182,214,4	script	Lauds#Memorial	58,{
 		next;
 		mes "[Mad Sago Lauds]";
 		mes "Listen closely.";
-		mes "Bring me ^FF000030 Fabric and 20 Fluffs^000000.";
+		mes "Bring me ^FF000030 " + mesitemlink(1059) + " and 20 Fluffs^000000.";
 		set Memorial08,1;
 		close;
 	}
@@ -73,17 +73,17 @@ prontera,182,214,4	script	Lauds#Memorial	58,{
 			mes "[Mad Sago Lauds]";
 			mes "What are these? They aren't enough?!";
 			mes "*Sigh* Do I really have to tell you again?!";
-			mes "Bring me ^FF000030 Fabric and 20 Fluffs^000000.";
+			mes "Bring me ^FF000030 " + mesitemlink(1059) + " and 20 Fluffs^000000.";
 			close;
 		} else {
-			mes "***Mad Sago Lauds appears to be muttering to himself***";
+			mes "***Mad " + mesitemlink(7746) + " Lauds appears to be muttering to himself***";
 			next;
 			mes "[Mad Sago Lauds]";
 			mes "So, did you bring the towel materials?";
 			next;
 			mes "[Mad Sago Lauds]";
 			mes "Excellent; you've brought them all.";
-			mes "Then I shall make you a Towel of Memory as I promised.";
+			mes "Then I shall make you a " + mesitemlink(6025) + " as I promised.";
 			mes "Give me a moment.";
 			next;
 			mes "[Mad Sago Lauds]";
@@ -262,7 +262,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 	
 	else if (Memorial08 == 3) {
 		mes "[Grast]";
-		mes "Oh, isn't that a Towel of Memory?";
+		mes "Oh, isn't that a " + mesitemlink(6025) + "?";
 		mes "I'm so glad to meet someone who understands the meaning of Memorial Day.";
 		next;
 		mes "[Grast]";
@@ -272,7 +272,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 		mes "If you like to go on a journey to pay a tribute to Memorial Day, you should bring me some materials I ask.";
 		next;
 		mes "[Grast]";
-		mes "Please bring me ^FF0000one of each Red Potion, Green Potion, Awakening Potion, and Butterfly Wing^000000.";
+		mes "Please bring me ^FF0000one of each " + mesitemlink(501) + ", " + mesitemlink(506) + ", " + mesitemlink(656) + ", and " + mesitemlink(602) + "^000000.";
 		mes "I'll be waiting for your return.";
 		set Memorial08,4;
 		close;
@@ -283,7 +283,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 			mes "[Grast]";
 			mes "Oops, you haven't brought all materials.";
 			mes "Please make sure you need to bring me";
-			mes "^FF0000one of each Red Potion, Green Potion, Awakening Potion, and Butteryfly Wing^000000.";
+			mes "^FF0000one of each " + mesitemlink(501) + ", " + mesitemlink(506) + ", " + mesitemlink(656) + ", and Butteryfly Wing^000000.";
 			next;
 			mes "[Grast]";
 			mes "You'll have to bring me more materials afterwards.";
@@ -302,7 +302,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 			mes "Hmm, you will need some more things still...";
 			next;
 			mes "[Grast]";
-			mes "Please bring me ^FF0000one of each Trap, Yggdrasil Leaf, Blue Gemstone, Crystal Mirror, Meat, and Carrot.^000000";
+			mes "Please bring me ^FF0000one of each " + mesitemlink(1065) + ", " + mesitemlink(610) + ", " + mesitemlink(717) + ", " + mesitemlink(747) + ", " + mesitemlink(517) + ", and " + mesitemlink(515) + ".^000000";
 			mes "I'll be waiting for your return.";
 			set Memorial08,5;
 			close;
@@ -314,7 +314,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 			mes "[Grast]";
 			mes "Oops, you haven't brought all materials.";
 			mes "Please make sure you'll have to bring me";
-			mes "^FF0000one of each Trap, Yggdrasil Leaf, Blue Gemstone, Crystal Mirror, Meat, and Carrot^000000.";
+			mes "^FF0000one of each " + mesitemlink(1065) + ", " + mesitemlink(610) + ", " + mesitemlink(717) + ", " + mesitemlink(747) + ", " + mesitemlink(517) + ", and " + mesitemlink(515) + "^000000.";
 			next;
 			mes "[Grast]";
 			mes "You'll have to bring me more materials afterwards.";
@@ -330,7 +330,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 			mes "Hmm, I think you need just a little bit more.";
 			next;
 			mes "[Grast]";
-			mes "Please bring me ^FF0000one of each Pet Incubator, Firecracker, Poring Doll, and Bouquet^000000.";
+			mes "Please bring me ^FF0000one of each " + mesitemlink(643) + ", " + mesitemlink(12018) + ", " + mesitemlink(741) + ", and " + mesitemlink(744) + "^000000.";
 			set Memorial08,6;
 			close;
 		}
@@ -341,7 +341,7 @@ prontera,150,270,4	script	Grast#Memorial	900,{
 			mes "[Grast]";
 			mes "Oops, you haven't brought all materials.";
 			mes "Please make sure you need to bring me";
-			mes "^FF0000one of each Pet Incubator, Firecracker, Poring Doll and Bouquet";
+			mes "^FF0000one of each " + mesitemlink(643) + ", " + mesitemlink(12018) + ", " + mesitemlink(741) + " and " + mesitemlink(744) + "";
 			next;
 			mes "[Grast]";
 			mes "They are the last batch of materials.";

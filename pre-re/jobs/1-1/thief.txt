@@ -183,7 +183,7 @@ moc_prydb1,39,129,2	script	Thief Guide	69,{
 			mes "When you come back here after gathering Mushrooms, you'll be graded on the Mushrooms you've collected.";
 			next;
 			mes "[Thief Guide]";
-			mes "Each Orange Net Mushroom gets you 3 points, and you get 1 point for each Orange Gooey Mushroom. You need a total of 25 points to pass the test.";
+			mes "Each " + mesitemlink(1069) + " gets you 3 points, and you get 1 point for each " + mesitemlink(1070) + ". You need a total of 25 points to pass the test.";
 			next;
 			mes "[Thief Guide]";
 			mes "Go outside and keep going ahead toward the Eastern Field of the Pyramids. Then you will see one of our comrades between two columns.";
@@ -192,7 +192,7 @@ moc_prydb1,39,129,2	script	Thief Guide	69,{
 			mes "Speak to that guy, and he'll take you to the farm through the backdoor.";
 			next;
 			mes "[Thief Guide]";
-			mes "On that field, I think his coordinates are '^FF0000141, 125^000000.' Just type ^3355FF/where^000000 in the right side of your chat box to check your present coordinates.";
+			mes "On that field, I think his coordinates are '^FF0000141, 125^000000.' Just type ^3355FF/where^000000 in the right side of your chat " + mesitemlink(7948) + " to check your present coordinates.";
 			close;
 		}
 		mes "[Thief Guide]";
@@ -329,7 +329,7 @@ moc_prydb1,39,129,2	script	Thief Guide	69,{
 			mes "When you come back here after gathering Mushrooms, you'll be graded on the Mushrooms you've collected.";
 			next;
 			mes "[Thief Guide]";
-			mes "Each Orange Net Mushroom gets you 3 points, and you get 1 point for each Orange Gooey Mushroom. You need a total of 25 points to pass the test.";
+			mes "Each " + mesitemlink(1069) + " gets you 3 points, and you get 1 point for each " + mesitemlink(1070) + ". You need a total of 25 points to pass the test.";
 			next;
 			mes "[Thief Guide]";
 			mes "Go outside and keep going ahead toward the Eastern Field of the Pyramids. Then you will see one of our comrades between two columns.";
@@ -338,7 +338,7 @@ moc_prydb1,39,129,2	script	Thief Guide	69,{
 			mes "Speak to that guy, and he'll take you to the farm through the backdoor.";
 			next;
 			mes "[Thief Guide]";
-			mes "On that field, I think his coordinates are '^FF0000141, 125^000000.' Just type ^3355FF/where^000000 in the right side of your chat box to check your present coordinates.";
+			mes "On that field, I think his coordinates are '^FF0000141, 125^000000.' Just type ^3355FF/where^000000 in the right side of your chat " + mesitemlink(7948) + " to check your present coordinates.";
 		}
 		next;
 		mes "[Thief Guide]";

@@ -21,7 +21,7 @@
 //============================================================
 geffen_in,144,166,4	script	Blacksmith	63,{
 	mes "[Blacksmith]";
-	mes "You've never heard of me? Why, I'm the Veteran Blacksmith of this land. I've spent 30 years in this hot and bloody hellfire, bending steel to my iron will!";
+	mes "You've never heard of me? Why, I'm the Veteran Blacksmith of this land. I've spent 30 years in this hot and bloody " + mesitemlink(1471) + ", bending " + mesitemlink(999) + " to my " + mesitemlink(998) + " will!";
 	next;
 	mes "[Blacksmith]";
 	mes "But...";
@@ -30,7 +30,7 @@ geffen_in,144,166,4	script	Blacksmith	63,{
 	switch(select("What is it?:...")) {
 	case 1:
 		mes "[Blacksmith]";
-		mes "We Blacksmiths must always manipulate steel under extreme heat, and the hot air and melted metals are more than most people can stand.";
+		mes "We Blacksmiths must always manipulate " + mesitemlink(999) + " under extreme heat, and the hot air and melted metals are more than most people can stand.";
 		next;
 		mes "[Blacksmith]";
 		mes "For the sake of our craft, our beautiful, yet masculine faces are put at risk...";
@@ -42,7 +42,7 @@ geffen_in,144,166,4	script	Blacksmith	63,{
 		mes "It works by covering your face with a fat metal plate. Truly, it's an item that everyone should want! If not yourself, it'd be a good idea to give this to a friend who is studying smithing.";
 		next;
 		mes "[Blacksmith]";
-		mes "So how about it ? If you give me ^2244FF50 Steel^000000 and ^4422FFonly 2000 Zeny^000000, I will make it for you right away~!!";
+		mes "So how about it ? If you give me ^2244FF50 " + mesitemlink(999) + "^000000 and ^4422FFonly 2000 Zeny^000000, I will make it for you right away~!!";
 		next;
 		switch(select("Hm... Not bad. Alright.:How does it work again?")) {
 		case 1:
@@ -68,7 +68,7 @@ geffen_in,144,166,4	script	Blacksmith	63,{
 			}
 		case 2:
 			mes "[Blacksmith]";
-			mes "The ^3355FFWelding Mask^000000 protects your face by covering it with a fat metal plate. This invention is the result of 30 years of endless toil at the hammer and anvil.";
+			mes "The ^3355FFWelding Mask^000000 protects your face by covering it with a fat metal plate. This invention is the result of 30 years of endless toil at the " + mesitemlink(1354) + " and " + mesitemlink(986) + ".";
 			close;
 		}
 	case 2:
@@ -108,7 +108,7 @@ geffen_in,30,71,4	script	Eric	83,{
 		mes "As usual, I went to the Library and discovered an interesting schematic.";
 		next;
 		mes "[Eric]";
-		mes "It showed some instrument which looked like Ear Muffs that, when worn on the head, could transmit music or whispers to the ears through a thin wire.";
+		mes "It showed some instrument which looked like " + mesitemlink(2283) + " that, when worn on the head, could transmit music or whispers to the ears through a thin wire.";
 		next;
 		mes "[Eric]";
 		mes "I guess...";

@@ -23,15 +23,15 @@ alberta,26,243,4	script	Stephen	58,{
 	mes "A tasty treat not easily found in Midgard....";
 	next;
 	mes "[Stephen]";
-	mes "Chocolate!";
-	mes "That's right, don't you love chocolate.... I do.";
+	mes "" + mesitemlink(558) + "!";
+	mes "That's right, don't you love " + mesitemlink(558) + ".... I do.";
 	mes "And you are in luck, because I'm selling them for only 5,000 zeny a piece!";
 	next;
 	if(select("I want some chocolate!:No thanks.")==2) {
 		mes "[Stephen]";
-		mes "You don't want any chocolate?";
+		mes "You don't want any " + mesitemlink(558) + "?";
 		mes "I'm telling you! You'll regret it!";
-		mes "You better get some now... you won't come across Chocolate like this ever again!";
+		mes "You better get some now... you won't come across " + mesitemlink(558) + " like this ever again!";
 		mes "Think it over and visit me again sometime.";
 		close; }
 	mes "[Stephen]";
@@ -54,7 +54,7 @@ alberta,26,243,4	script	Stephen	58,{
 	getitem 558,.@i;
 	mes "There you go!";
 	mes "You can give that to someone as a gift, or enjoy it yourself!";
-	mes "Mmm... sweet chocolate...";
+	mes "Mmm... sweet " + mesitemlink(558) + "...";
 	mes "Visit me anytime...!";
 	close;
 }
@@ -63,7 +63,7 @@ alberta,26,243,4	script	Stephen	58,{
 //============================================================
 alberta,29,243,4	script	Jainie	53,{
 	mes "[Jainie]";
-	mes "You know what? The chocolate that my boyfriend sells are from me!";
+	mes "You know what? The " + mesitemlink(558) + " that my boyfriend sells are from me!";
 	mes "I made them by myself.";
 	next;
 	mes "[Jainie]";
@@ -71,7 +71,7 @@ alberta,29,243,4	script	Jainie	53,{
 	mes "They call it, ^3355FFValentine's Day^000000.";
 	next;
 	mes "[Jainie]";
-	mes "So I gave him my delicious chocolate...";
+	mes "So I gave him my delicious " + mesitemlink(558) + "...";
 	mes "And then he made me cook a lot more...";
 	mes "And now he is selling them to everyone.";
 	mes "I guess he really enjoyed it.";
@@ -91,7 +91,7 @@ prt_castle,54,34,4	script	Carl Orleans	47,{
 	next;
 	if(select("I want some hand made chocolate...:I'm lost, sorry to bother you.")==2) {
 		mes "[Carl Orleans]";
-		mes "Oh... well, if you want me to make some of my special Hand Made Chocolate....";
+		mes "Oh... well, if you want me to make some of my special Hand Made " + mesitemlink(558) + "....";
 		mes "You will need to give me at least ^0000FF 3 Chocolates^000000.";
 		next;
 		mes "[Carl Orleans]";
@@ -106,10 +106,10 @@ prt_castle,54,34,4	script	Carl Orleans	47,{
 	next;
 	mes "[Carl Orleans]";
 	if (countitem(558) < 3) {
-		mes "I'm sorry, you don't have enough Chocolate Bars to do this.";
+		mes "I'm sorry, you don't have enough " + mesitemlink(558) + " Bars to do this.";
 		close; }
 	delitem 558,3;
-	mes "You got 3 pieces of pure chocolate, I see.";
+	mes "You got 3 pieces of pure " + mesitemlink(558) + ", I see.";
 	mes "Give them to me...";
 	next;
 	mes "[Carl Orleans]";
@@ -122,7 +122,7 @@ prt_castle,54,34,4	script	Carl Orleans	47,{
 	mes "[Carl Orleans]";
 	getitem 559,1;
 	mes "Here.";
-	mes "I hope you give it to someone special, because its a special chocolate.";
+	mes "I hope you give it to someone special, because its a special " + mesitemlink(558) + ".";
 	mes "As you know... only I can create this.";
 	next;
 	mes "[Carl Orleans]";

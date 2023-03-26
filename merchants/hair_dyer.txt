@@ -135,7 +135,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Scarlet Dyestuffs with you...";
+							mes "" + mesitemlink(975) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;
@@ -145,7 +145,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Lemon Dyestuffs with you...";
+							mes "" + mesitemlink(976) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;
@@ -155,7 +155,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Violet Dyestuffs with you...";
+							mes "" + mesitemlink(981) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;
@@ -165,7 +165,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Orange Dyestuffs with you...";
+							mes "" + mesitemlink(980) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;
@@ -175,7 +175,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Darkgreen Dyestuffs";
+							mes "" + mesitemlink(979) + "";
 							mes "with you. Would you come";
 							mes "back after you get some?";
 							close2;
@@ -187,7 +187,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Cobaltblue Dyestuffs";
+							mes "" + mesitemlink(978) + "";
 							mes "with you. Would you come";
 							mes "back after you get some?";
 							close2;
@@ -199,7 +199,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "White Dyestuffs with you...";
+							mes "" + mesitemlink(982) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;
@@ -209,7 +209,7 @@ lhz_in02,100,134,3	script	Hair Dyer#lich	850,{
 							mes "Oh, I'm sorry dear,";
 							mes "but I can't dye your";
 							mes "hair if you didn't bring";
-							mes "Black Dyestuffs with you...";
+							mes "" + mesitemlink(983) + " with you...";
 							close2;
 							set .@choose_success,2;
 							break;

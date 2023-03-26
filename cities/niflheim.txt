@@ -47,8 +47,8 @@ niflheim,195,211,6	script	Gigantia#nif	796,3,3,{
 		mes "I must do for you.";
 		next;
 		mes "[Gigantia]";
-		mes "Your horn is crooked.";
-		mes "Always make sure your horn";
+		mes "Your " + mesitemlink(947) + " is crooked.";
+		mes "Always make sure your " + mesitemlink(947) + "";
 		mes "is worn straight and neat.";
 		mes "The Lord of Death is always";
 		mes "looking at you.";

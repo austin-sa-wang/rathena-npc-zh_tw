@@ -510,7 +510,7 @@ schg_que01,100,81,3	script	Pierrot Pier#sch_gd	715,{
 				setnpcdisplay "Pierrot Pier#sch_gd",715;
 				mes "A lonely clown is juggling.";
 				next;
-				mes "When looked at closely, the clown is just a puppet that looks like a human.";
+				mes "When looked at closely, the clown is just a " + mesitemlink(740) + " that looks like a human.";
 				next;
 				mes "The clown stops, then starts moving in accordance to your movements, noises start to emit from it's mouth.";
 				next;
@@ -719,7 +719,7 @@ schg_que01,100,81,3	script	Pierrot Pier#sch_gd	715,{
 				break;
 			case 2:
 				mes "[Pierrot Pier]";
-				mes "Aaah~! Time is gold.";
+				mes "Aaah~! Time is " + mesitemlink(969) + ".";
 				mes "Precious time goes by so fast.";
 				next;
 				break;
@@ -849,7 +849,7 @@ schg_que01,100,81,3	script	Pierrot Pier#sch_gd	715,{
 			setnpcdisplay "Pierrot Pier#sch_gd",715;
 			mes "A lonely clown is juggling.";
 			next;
-			mes "When looked at closely, the clown is just a puppet that looks like a human.";
+			mes "When looked at closely, the clown is just a " + mesitemlink(740) + " that looks like a human.";
 			next;
 			mes "The clown stops, then starts moving in accordance to your movements, noises start to emit from it's mouth.";
 			next;

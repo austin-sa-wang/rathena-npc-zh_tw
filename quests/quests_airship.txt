@@ -63,7 +63,7 @@ airplane,47,61,7	script	Crewman	4_M_ZONDAOYAJI,{
 		next;
 		setquest 2079;
 		kain_ticket = 5;
-		mes "^3355FFKain Himere has given you a small box.^000000";
+		mes "^3355FFKain Himere has given you a small " + mesitemlink(7948) + ".^000000";
 		close;
 	}
 	mes "Welcome to the Airship~";
@@ -86,7 +86,7 @@ airplane,47,61,7	script	Crewman	4_M_ZONDAOYAJI,{
 				mes "I hear from the scholars";
 				mes "who developed the Airship";
 				mes "technology that just a little";
-				mes "piece of the heart of Ymir";
+				mes "piece of the " + mesitemlink(7855) + " of Ymir";
 				mes "generates the power for";
 				mes "this ship to fly. Incredible...";
 				next;
@@ -323,10 +323,10 @@ airplane,47,61,7	script	Crewman	4_M_ZONDAOYAJI,{
 		mes "you right now...^000000";
 	} else if (kain_ticket == 10) {
 		mes "[Kain Himere]";
-		mes "Welcome back to the Airship. So did you deliver that little box safely?";
+		mes "Welcome back to the Airship. So did you deliver that little " + mesitemlink(7948) + " safely?";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "No, unfortunately. He was away when I got there. Let me give this box back to you.";
+		mes "No, unfortunately. He was away when I got there. Let me give this " + mesitemlink(7948) + " back to you.";
 		next;
 		mes "[Kain Himere]";
 		mes "Oh...";
@@ -634,7 +634,7 @@ OnTouch_:
 		mes "for me, pleeeeeease?";
 		next;
 		mes "^3355FFElle put a big";
-		mes "doodled message";
+		mes "" + mesitemlink(7276) + "";
 		mes "into your hands.^000000";
 		changequest 2084,2085;
 		kain_ticket = 14;
@@ -1306,7 +1306,7 @@ L_Diary:
 	mes "<Date : OX OX>";
 	mes "^856363Kain got into an accident";
 	mes "at the mine. While they were";
-	mes "digging ores, toxic gas was";
+	mes "digging ores, " + mesitemlink(7322) + " was";
 	mes "released somehow. It wasn't";
 	mes "lethal, but Kain's arm has";
 	mes "been partly paralyzed...^000000";
@@ -2005,7 +2005,7 @@ airplane_01,238,154,3	script	Airship Captain#01	4_M_REINDEER,{
 			select("Uh? What's a Rune Mechanism?");
 			mes "[Tarlock]";
 			mes "It's a device that uses a";
-			mes "magic stone as power source.";
+			mes "" + mesitemlink(7597) + " as power source.";
 			mes "However, I don't know how";
 			mes "this work...";
 			mes "I forgot the details probably";
@@ -2143,7 +2143,7 @@ airplane,236,163,5	script	Airship Captain#03	4_M_REINDEER,{
 		mes "Ah, thank you for coming.";
 		mes "Now, I wanted to ask you";
 		mes "why you were investigating";
-		mes "Ymir's Heart Piece. Are you";
+		mes "" + mesitemlink(7346) + ". Are you";
 		mes "merely curious, or did you";
 		mes "have some special reason?";
 		next;
@@ -2170,20 +2170,20 @@ airplane,236,163,5	script	Airship Captain#03	4_M_REINDEER,{
 			mes "never tell what I reveal to";
 			mes "you, then I suppose I can";
 			mes "tell you know about the Rune";
-			mes "Stone and Ymir's Heart Piece.";
+			mes "Stone and " + mesitemlink(7346) + ".";
 			next;
 			select("I promise...");
 			mes "[Ferlock]";
 			mes "Alright, then. I expect you";
 			mes "to keep your word. Now, you";
 			mes "already know that the Airships";
-			mes "are powered by Rune Stones, imitations of Ymir's Heart pieces.";
+			mes "are powered by Rune Stones, imitations of Ymir's " + mesitemlink(7855) + " pieces.";
 			next;
 			mes "[Ferlock]";
 			mes "Although Rune Stones are";
-			mes "inferior to true Ymir Heart";
+			mes "inferior to true Ymir " + mesitemlink(7855) + "";
 			mes "pieces, we can make as many";
-			mes "as want. As for true Ymir Heart";
+			mes "as want. As for true Ymir " + mesitemlink(7855) + "";
 			mes "Pieces, they're difficult to find or effectively reproduce.";
 			next;
 			mes "[Ferlock]";
@@ -2231,7 +2231,7 @@ airplane,236,163,5	script	Airship Captain#03	4_M_REINDEER,{
 			mes "become useless after a while.";
 			mes "The Varmunt Project aims to";
 			mes "correct these flaws and perfect";
-			mes "the Ymir Heart replication...";
+			mes "the Ymir " + mesitemlink(7855) + " replication...";
 			next;
 			mes "[Ferlock]";
 			mes "Er, anyway, that's why";
@@ -2414,8 +2414,8 @@ airplane,236,163,5	script	Airship Captain#03	4_M_REINDEER,{
 				mes "[Ferlock]";
 				mes "Well, if you're willing to";
 				mes "help me, would you get my";
-				mes "^ff00002 Will of the Darkness^000000 and";
-				mes "^ff00002 Prickly Fruit^000000 back for me?";
+				mes "^ff00002 " + mesitemlink(7340) + "^000000 and";
+				mes "^ff00002 " + mesitemlink(576) + "^000000 back for me?";
 				next;
 				mes "[Ferlock]";
 				mes "The monsters that attack";
@@ -2453,8 +2453,8 @@ airplane,236,163,5	script	Airship Captain#03	4_M_REINDEER,{
 					mes "Oh, I'm sorry, but it looks";
 					mes "like you're missing something.";
 					mes "Would you please go and find";
-					mes "^ff00002 Will of the Darkness^000000 and";
-					mes "^ff00002 Prickly Fruit^000000? Thanks,";
+					mes "^ff00002 " + mesitemlink(7340) + "^000000 and";
+					mes "^ff00002 " + mesitemlink(576) + "^000000? Thanks,";
 					mes "brave adventurer~";
 				}
 			}
@@ -2543,7 +2543,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 		mes "Heh, there's one guy that";
 		mes "won so many Apples from Kaci";
 		mes "that he was able to become";
-		mes "an Apple Merchant. Can you";
+		mes "an " + mesitemlink(512) + " Merchant. Can you";
 		mes "believe that? Yeah... Kaci";
 		mes "doesn't like him so much...";
 		close2;
@@ -2760,7 +2760,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 			mes "that you've learned from";
 			mes "Captain Tarlock, but you're";
 			mes "careful not to make any";
-			mes "mention of Ymir's Heart Piece.^000000";
+			mes "mention of " + mesitemlink(7346) + ".^000000";
 			next;
 			mes "[Hallen]";
 			mes "So... The propellers are";
@@ -2772,7 +2772,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 			select("Actually, there's another power source.");
 			mes "^3355FFYou reveal what you";
 			mes "learn about the Rune Stone,";
-			mes "an imitation of Ymir's Heart";
+			mes "an imitation of Ymir's " + mesitemlink(7855) + "";
 			mes "Piece: Hallen is a well meaning";
 			mes "kid who probably won't use this";
 			mes "knowledge for evil purposes.";
@@ -2787,7 +2787,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 			next;
 			mes "[Hallen]";
 			mes "An imitation of Ymir's";
-			mes "Heart Piece. Now where";
+			mes "" + mesitemlink(7855) + " Piece. Now where";
 			mes "have I heard about that";
 			mes "before? Mm, let me think...";
 			changequest 8039,8040;
@@ -2812,7 +2812,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 	} else if (lhz_heart == 7) {
 		mes "So the Rune Stone";
 		mes "is an imitation of just";
-		mes "a piece of Ymir's Heart.";
+		mes "a piece of Ymir's " + mesitemlink(7855) + ".";
 		mes "But where have I heard";
 		mes "about that before...?";
 		next;
@@ -2821,7 +2821,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 		mes "Oh, that's right!";
 		mes "Kaci told me about a";
 		mes "drunkard that always";
-		mes "mentions Ymir's Heart";
+		mes "mentions Ymir's " + mesitemlink(7855) + "";
 		mes "when he plays the Dice";
 		mes "game for Apples!";
 		next;
@@ -2831,7 +2831,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 			mes "I was helping Shinokas. He";
 			mes "was one of the directors of";
 			mes "the Einbroch Laboratory that";
-			mes "had a piece of Ymir's Heart.";
+			mes "had a piece of Ymir's " + mesitemlink(7855) + ".";
 			mes "It's worth investigating...^000000)";
 			next;
 		}
@@ -2873,7 +2873,7 @@ airplane,236,63,4	script	Hallen	4_M_KID1,{
 		mes "drunkard that's always";
 		mes "playing her Dice game?";
 		mes "You might learn more about";
-		mes "Ymir's Heart Piece, you know?";
+		mes "" + mesitemlink(7346) + ", you know?";
 	} else {
 		mes "Thanks for helping me";
 		mes "out that last time. I guess";
@@ -2907,7 +2907,7 @@ airplane,33,69,4	script	Kaci	1_F_MERCHANT_01,{
 		next;
 		mes "[Kaci]";
 		mes "- She suddenly called out the name several times,  -";
-		mes "- so you were startled and dropped your half eaten apple. -";
+		mes "- so you were startled and dropped your half eaten " + mesitemlink(512) + ". -";
 		next;
 		mes "[Kaci]";
 		mes "Oops, sorry, if I startled you. I could not remember the name because it has been a while since I heard of his name the last time.";
@@ -3097,7 +3097,7 @@ airplane,33,69,4	script	Kaci	1_F_MERCHANT_01,{
 		mes "[Kaci]";
 		mes "In fact, his losses make up";
 		mes "for all the Apples I lost when";
-		mes "that Apple Merchant played here. Now, it's a legendary tale that";
+		mes "that " + mesitemlink(512) + " Merchant played here. Now, it's a legendary tale that";
 		mes "we all think fondly of, but at";
 		mes "the time, it nearly broke me.";
 		next;
@@ -3112,7 +3112,7 @@ airplane,33,69,4	script	Kaci	1_F_MERCHANT_01,{
 		mes "(^333333Einbroch Laboratory...";
 		mes "It's so suspicious. That";
 		mes "director knows about Ymir's";
-		mes "Heart Piece, so they must be";
+		mes "" + mesitemlink(7855) + " Piece, so they must be";
 		mes "keeping something really";
 		mes "important over there.^000000)";
 		next;
@@ -3265,7 +3265,7 @@ OnTouch_:
 				mes "Security Level : Grade 1-C";
 				mes " ";
 				mes "Caution: Only project members";
-				mes "of the Ymir Heart Synthesization project are authorized to view";
+				mes "of the Ymir " + mesitemlink(7855) + " Synthesization project are authorized to view";
 				mes "this classified document.";
 				next;
 				mes "Varmunt Project No. 3";

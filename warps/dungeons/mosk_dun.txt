@@ -111,7 +111,7 @@ mosk_dun01,170,164,3	script	Milestone#1	HIDDEN_NPC,{
 mosk_dun01,207,276,3	script	Milestone#1-2	HIDDEN_NPC,{
 	mes "- There is writing on a big rock. -";
 	next;
-	mes "^3131FF- Those who advance may get hurt but are courageous of heart and those who move back will remain safe.";
+	mes "^3131FF- Those who advance may get hurt but are courageous of " + mesitemlink(7855) + " and those who move back will remain safe.";
 	mes "If you have courage, step forward. Otherwise, step backward. -^000000";
 	next;
 	if(select("Step forward.:Stay.") == 1) {
@@ -127,7 +127,7 @@ mosk_dun01,207,276,3	script	Milestone#1-2	HIDDEN_NPC,{
 mosk_dun01,264,191,3	script	Milestone#1-3	HIDDEN_NPC,{
 	mes "- There is writing on a big rock. -";
 	next;
-	mes "^3131FF- Those who advance may get hurt but are brave of heart and those who move back will remain safe.";
+	mes "^3131FF- Those who advance may get hurt but are brave of " + mesitemlink(7855) + " and those who move back will remain safe.";
 	mes "If you are brave, then take a step forward. Otherwise, step back. -^000000";
 	next;
 	if(select("Step forward.:Stay.") == 1) {
@@ -143,7 +143,7 @@ mosk_dun01,264,191,3	script	Milestone#1-3	HIDDEN_NPC,{
 mosk_dun02,168,28,3	script	Milestone#2-1	HIDDEN_NPC,{
 	mes "- There is writing on a big rock. -";
 	next;
-	mes "^3131FF- Those who advance may get hurt but are valorous of heart and those who move back will remain safe.";
+	mes "^3131FF- Those who advance may get hurt but are valorous of " + mesitemlink(7855) + " and those who move back will remain safe.";
 	mes "If you valorous, then take a step forward. Otherwise, step back. -^000000";
 	next;
 	if(select("Go back.:Stay.") == 1) {

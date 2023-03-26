@@ -53,7 +53,7 @@ prt_castle,80,52,0	script	Personnel Record#book1	HIDDEN_NPC,{
 			mes "Did they want to sentence her to death or what? That's almost too cruel. She must have been humiliated...";
 			next;
 			mes "[Personnel Record]";
-			mes "^6633002 years later after the incident, an expedition team found rusty armor shards, a broken sword";
+			mes "^6633002 years later after the incident, an expedition team found rusty armor shards, a " + mesitemlink(6071) + "";
 			mes "and some effects belonging to";
 			mes "Lowen Ellenen.^000000";
 			next;
@@ -138,7 +138,7 @@ prt_castle,80,52,0	script	Personnel Record#book1	HIDDEN_NPC,{
 			mes "Did they want to sentence her to death or what? That's almost too cruel. She must have been humiliated...";
 			next;
 			mes "[Personnel Record]";
-			mes "^6633002 years later after the incident, an expedition team found rusty armor shards, a broken sword";
+			mes "^6633002 years later after the incident, an expedition team found rusty armor shards, a " + mesitemlink(6071) + "";
 			mes "and some effects belonging to";
 			mes "Lowen Ellenen.^000000";
 			next;

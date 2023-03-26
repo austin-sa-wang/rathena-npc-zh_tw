@@ -421,7 +421,7 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 		mes "immobilizing it and making it";
 		mes "^5C4033Earth^000000 property. However, each";
 		mes "attempt to cast Stone Curse";
-		mes "requires 1 Red Gemstone.";
+		mes "requires 1 " + mesitemlink(716) + ".";
 		next;
 		mes "[Mana]";
 		mes "Increase SP Recovery is";
@@ -447,7 +447,7 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 		mes "[Mana]";
 		mes "Hunt these Pupa";
 		mes "until you've collected";
-		mes "10 Chrysalis from them.";
+		mes "10 " + mesitemlink(915) + " from them.";
 		mes "Then bring them to me, okay?";
 		tu_magician01 = 3;
 		getexp 400,200;
@@ -458,13 +458,13 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 		if (tu_magician01 == 3) {
 			mes "Ah, you're back?";
 			mes "Let's see if you gathered";
-			mes "all 10 Chrysalis from hunting";
+			mes "all 10 " + mesitemlink(915) + " from hunting";
 			mes "all of those Pupa. Hmmmm...";
 		}
 		else {
 			mes "So...";
 			mes "Did you get";
-			mes "10 Chrysalis";
+			mes "10 " + mesitemlink(915) + "";
 			mes "from hunting Pupa";
 			mes "like I asked? I hope so...";
 			mes "Because I'm going to check~";
@@ -477,7 +477,7 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 				mes "have enough of";
 				mes "them yet. Head west";
 				mes "from here and hunt Pupa";
-				mes "to get more Chrysalis, okay?";
+				mes "to get more " + mesitemlink(915) + ", okay?";
 				mes "For now, I'll just heal you up.";
 				tu_magician01 = 4;
 				percentheal 100,100;
@@ -636,7 +636,7 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 				break;
 			case 7:
 				mes "[Mana]";
-				mes "Energy Coat is, well,";
+				mes "Energy " + mesitemlink(2309) + " is, well,";
 				mes "a unique skill that you";
 				mes "can't just learn on your own.";
 				mes "You'll have to ask Blizardis";
@@ -647,7 +647,7 @@ geffen,67,180,4	script	New Mage Manager#M	8_F,{
 				next;
 				mes "[Mana]";
 				mes "If you do decide to";
-				mes "learn Energy Coat, I'm";
+				mes "learn Energy " + mesitemlink(2309) + ", I'm";
 				mes "sure Blizardis will tell";
 				mes "you all you need to know.";
 				.@skill_e7 = 1;

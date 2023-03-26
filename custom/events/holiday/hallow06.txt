@@ -76,7 +76,7 @@ L_Treat:
 		mes "But with all things made, some items are required first.";
 		mes "The list:";
 		mes "1 Hat,";
-		mes "30 Pumpkin, and";
+		mes "30 " + mesitemlink(535) + ", and";
 		mes "20 Black Piece of Cloth";
 		next;
 		mes "[Hallows' Eve Event]";
@@ -118,7 +118,7 @@ L_List:
 	mes "[Hallows' Eve Event]";
 	mes "I require the following items:";
 	mes "1 Hat,";
-	mes "30 Pumpkin, and";
+	mes "30 " + mesitemlink(535) + ", and";
 	mes "20 Black Piece of Cloth.";
 	close;
 }

@@ -234,15 +234,15 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		next;
 		mes "[Metz]";
 		mes "By now, you must have";
-		mes "six Sobbing Starlight pieces.";
+		mes "six " + mesitemlink(7178) + " pieces.";
 		mes "I'm sure that you want to know";
 		mes "more about these fragments.";
 		next;
 		mes "[Metz]";
 		mes "I remember last summer,";
 		mes "I found the wholly formed";
-		mes "Sobbing Starlight north";
-		mes "of Mount Mjolnir during";
+		mes "" + mesitemlink(7178) + " north";
+		mes "of Mount " + mesitemlink(1530) + " during";
 		mes "one of my expeditions...";
 		next;
 		mes "[Metz]";
@@ -254,13 +254,13 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		next;
 		mes "[Metz]";
 		mes "Now, an ordinary artisan";
-		mes "can't put the Sobbing Starlight";
+		mes "can't put the " + mesitemlink(7178) + "";
 		mes "back together. This mysterious stone has some strange properties. But it's imperative for me to get this stone reassembled.";
 		next;
 		mes "[Metz]";
 		mes "Once restored, a strange";
 		mes "pattern can be seen within";
-		mes "the Sobbing Starlight. I guess";
+		mes "the " + mesitemlink(7178) + ". I guess";
 		mes "that the pattern is a message";
 		mes "written in an ancient language.";
 		next;
@@ -271,7 +271,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		mes "quite interesting...";
 		next;
 		mes "^3355FFOnce you hand the pieces";
-		mes "of the Sobbing Starlight to";
+		mes "of the " + mesitemlink(7178) + " to";
 		mes "Metz, he pulls out a seventh";
 		mes "piece. Once gathered, they";
 		mes "begin to emit a strange light.^000000";
@@ -281,7 +281,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		mes "Since the pieces still";
 		mes "respond to each other,";
 		mes "I believe that it's possible";
-		mes "for the Sobbing Starlight";
+		mes "for the " + mesitemlink(7178) + "";
 		mes "to be restored to its";
 		mes "original form.";
 		next;
@@ -300,7 +300,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 			mes "just in the nick of time!";
 			mes "I just found someone who";
 			mes "may be capable of restoring";
-			mes "the Sobbing Starlight.";
+			mes "the " + mesitemlink(7178) + ".";
 			next;
 			mes "[Metz]";
 			mes "His name is";
@@ -322,7 +322,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 			mes "some progress, I still";
 			mes "haven't found an artisan";
 			mes "capable of restoring the";
-			mes "Sobbing Starlight. Please";
+			mes "" + mesitemlink(7178) + ". Please";
 			mes "give me a little more time.";
 		}
 	}
@@ -339,12 +339,12 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		mes "out with Engel Howard";
 		mes "and his family in Geffen,";
 		mes "I'll continue my research";
-		mes "on the Sobbing Starlight.";
+		mes "on the " + mesitemlink(7178) + ".";
 	}
 	else if (sign_q == 71) {
 		mes "Amazing...! You've";
 		mes "managed to restore";
-		mes "the Sobbing Starlight!";
+		mes "the " + mesitemlink(7178) + "!";
 		mes "Now, I recently learned that";
 		mes "this stone can lead you to";
 		mes "an ancient place...";
@@ -352,7 +352,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		mes "[Metz]";
 		mes "That's why we need to";
 		mes "know what the message in";
-		mes "the Sobbing Starlight means.";
+		mes "the " + mesitemlink(7178) + " means.";
 		mes "First, we need a Wizard that";
 		mes "is skilled in unlocking the";
 		mes "messages stored in gems...";
@@ -368,7 +368,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 	}
 	else if (sign_q == 72) {
 		mes "Now that the";
-		mes "Sobbing Starlight";
+		mes "" + mesitemlink(7178) + "";
 		mes "is restored, we need";
 		mes "to find someone who can";
 		mes "break the seal on the";
@@ -392,7 +392,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 		mes "Great...!";
 		mes "You were able to get the";
 		mes "text in the gem printed on a";
-		mes "Record of Ancient Language?";
+		mes "" + mesitemlink(7275) + "?";
 		next;
 		mes "[Metz]";
 		mes "Just as I thought.";
@@ -549,7 +549,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 	else if (sign_q == 137) {
 		mes "This is it...!";
 		mes "You've brought me,";
-		mes "'The Sign!' I've finally";
+		mes "'" + mesitemlink(2644) + "!' I've finally";
 		mes "proven its existence!";
 		mes "Please let me handle";
 		mes "this and come back later~";
@@ -688,13 +688,13 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 			mes "[Metz]";
 			mes "Thanks to you, my wish";
 			mes "of proving the existence";
-			mes "of the Sign has finally been";
+			mes "of " + mesitemlink(2644) + " has finally been";
 			mes "fulfilled. Its power is now";
 			mes "yours to do as you wish.";
 			next;
 			mes "[Metz]";
 			mes "You may have had your doubts,";
-			mes "but I'm happy enough to confirm that the Sign really exists. Thanks again, and I hope you stop by and chat from time to time.";
+			mes "but I'm happy enough to confirm that " + mesitemlink(2644) + " really exists. Thanks again, and I hope you stop by and chat from time to time.";
 			set sign_q,142;
 			getexp (checkre(3))?200000:2000000,0;
 		}
@@ -703,7 +703,7 @@ prt_in,227,45,0	script	Archeologist#sign	804,{
 			mes "Engel Howard yet?";
 			mes "He's the only one";
 			mes "who can unlock the";
-			mes "the Sign's power for you...";
+			mes "" + mesitemlink(2644) + "'s power for you...";
 		}
 	}
 	else if (sign_q == 201) {
@@ -874,7 +874,7 @@ prt_in,228,26,5	script	Steward#sign	55,{
 		mes "Many travellers have";
 		mes "begun to visit the master";
 		mes "lastly. Apparently, they've";
-		mes "been led here by the sign";
+		mes "been led here by " + mesitemlink(2644) + "";
 		mes "boards we've posted.";
 		next;
 		mes "[Vandez]";
@@ -904,7 +904,7 @@ prt_in,228,26,5	script	Steward#sign	55,{
 		mes "Winning or losing, some";
 		mes "gamblers always seem to find";
 		mes "some reason to continue when";
-		mes "it's smarter to stop. Then again, the mind usually doesn't take precedence over the heart...";
+		mes "it's smarter to stop. Then again, the mind usually doesn't take precedence over the " + mesitemlink(7855) + "...";
 		close;
 	}
 	else if (sign_q < 54) {
@@ -987,7 +987,7 @@ prt_in,248,23,0	script	Maid#sign2	111,{
 			case 1:
 				mes "[Elle]";
 				mes "...?";
-				mes "*Blush~*";
+				mes "*" + mesitemlink(5040) + "~*";
 				mes "Oh~ A-are you";
 				mes "asking me out";
 				mes "on a date?";
@@ -1259,7 +1259,7 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 			next;
 			mes "[Arian]";
 			mes "The first item?";
-			mes "Gimme ^FF0000100 Fluff^000000.";
+			mes "Gimme ^FF0000100 " + mesitemlink(914) + "^000000.";
 			mes "Bring that and I'll";
 			mes "tell you what to";
 			mes "bring next.";
@@ -1307,11 +1307,11 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 			else {
 				mes "Hey. What the hell's wrong";
 				mes "with you? Hurry and get me";
-				mes "^FF0000100 Fluff^000000, ya slacker.";
+				mes "^FF0000100 " + mesitemlink(914) + "^000000, ya slacker.";
 				close;
 			}
 			mes "Alright, that looks like";
-			mes "enough Fluff. Now, go and";
+			mes "enough " + mesitemlink(914) + ". Now, go and";
 			mes "get me ^FF000050 Poison Spores^000000.";
 			set sign_q,5;
 			close;
@@ -1395,7 +1395,7 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 			}
 			mes "You brought the bandages.";
 			mes "Okay short stuff, go and get";
-			mes "me ^FF000015 Little Evil Horn^000000. What";
+			mes "me ^FF000015 " + mesitemlink(1038) + "^000000. What";
 			mes "are you waiting for, a memo?";
 			mes "Get outta here~!";
 			set sign_q,8;
@@ -1412,7 +1412,7 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 			else {
 				mes "I don't get it.";
 				mes "You don't have the";
-				mes "^FF000015 Little Evil Horn^000000";
+				mes "^FF000015 " + mesitemlink(1038) + "^000000";
 				mes "I told you to get.";
 				next;
 				mes "[Arian]";
@@ -1424,7 +1424,7 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 				close;
 			}
 			mes "My grandma coulda grown";
-			mes "out her beard in the time";
+			mes "out her " + mesitemlink(2240) + " in the time";
 			mes "it tookyou to come back.";
 			mes "Now hurry it up and get";
 			mes "me ^FF000010 Coral Reefs^000000!";
@@ -1474,7 +1474,7 @@ morocc_in,115,154,5	script	Rogue#sign	810,{
 			mes "alone now and gimme";
 			mes "a little personal space?!";
 			mes "I need a break from looking";
-			mes "at your ugly mug, you know?";
+			mes "at your ugly " + mesitemlink(7891) + ", you know?";
 			close;
 		case 12:
 			mes "[Arian]";
@@ -1766,7 +1766,7 @@ payon,154,170,3	script	Hagin#sign	78,{
 		mes "Freaking you out?";
 		mes "Excuuuuse me~!";
 		mes "I'll have you know that";
-		mes "a flower's life is brief.";
+		mes "a " + mesitemlink(712) + "'s life is brief.";
 		mes "I better snag Daewoon";
 		mes "while I still can~";
 		emotion ET_FRET;
@@ -1990,7 +1990,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 			mes "Metz has asked me and";
 			mes "some other friends who";
 			mes "hold the fragments of the";
-			mes "Sobbing Starlight to entrust";
+			mes "" + mesitemlink(7178) + " to entrust";
 			mes "them to someone worthy of";
 			mes "finding the power it leads to.";
 			next;
@@ -2194,7 +2194,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 			}
 			mes "[Daewoon]";
 			mes "Anyway, I'm sure you're";
-			mes "aware of the War of Emperium";
+			mes "aware of the War of " + mesitemlink(714) + "";
 			mes "in which mighty guilds all across Midgard battle for guild castle dominion. It's actually quite popular, really.";
 			next;
 			mes "[Daewoon]";
@@ -2205,11 +2205,11 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 			mes "[Daewoon]";
 			mes "Finally, through incredible";
 			mes "good fortune, we manage to";
-			mes "infiltrate the enemy guild castle and reach their Emperium. If we destroy that Emperium, that castle will belong to our guild.";
+			mes "infiltrate the enemy guild castle and reach their " + mesitemlink(714) + ". If we destroy that " + mesitemlink(714) + ", that castle will belong to our guild.";
 			next;
 			mes "[Daewoon]";
 			mes "However...! This is";
-			mes "no ordinary Emperium!";
+			mes "no ordinary " + mesitemlink(714) + "!";
 			mes "It is a masterful sculpture";
 			mes "of a gorgeous Priestess!";
 			mes "Answer me, adventurer!";
@@ -2224,7 +2224,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 				if (Sex == SEX_MALE) {
 					mes "perhaps you lack a true";
 					mes "appreciation for beauty.";
-					mes "Even in Emperium form, how";
+					mes "Even in " + mesitemlink(714) + " form, how";
 					mes "could you harm a Priestess?";
 				}
 				else {
@@ -2254,7 +2254,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 			mes "[Daewoon]";
 			mes "But yes, if it were";
 			mes "me, I would protect that";
-			mes "Priestess shaped Emperium";
+			mes "Priestess shaped " + mesitemlink(714) + "";
 			mes "until the end of the guild war.";
 			mes "Mwah ah hah~!";
 			next;
@@ -2402,8 +2402,8 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 				mes "[Daewoon]";
 				mes "It pains me to say this,";
 				mes "but I do not think you're";
-				mes "worthy of holding my fragment";
-				mes "of the Sobbing Starlight. But";
+				mes "worthy of holding my " + mesitemlink(7094) + "";
+				mes "of the " + mesitemlink(7178) + ". But";
 				mes "I am willing to give you";
 				mes "another chance~";
 				close;
@@ -2426,7 +2426,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 				}
 				mes "[Daewoon]";
 				mes "You know, after talking with";
-				mes "you for a while, I now feel fairly comfortable with leaving you this piece of the Sobbing Starlight. Somehow, I think you're strong enough to get all the pieces.";
+				mes "you for a while, I now feel fairly comfortable with leaving you this piece of the " + mesitemlink(7178) + ". Somehow, I think you're strong enough to get all the pieces.";
 				next;
 				mes "[Daewoon]";
 				mes "I hope you will pass the rest of the test";
@@ -2447,8 +2447,8 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 				mes "[Daewoon]";
 				mes "It pains me to say this,";
 				mes "but I do not think you're";
-				mes "worthy of holding my fragment";
-				mes "of the Sobbing Starlight. But";
+				mes "worthy of holding my " + mesitemlink(7094) + "";
+				mes "of the " + mesitemlink(7178) + ". But";
 				mes "I am willing to give you";
 				mes "another chance~";
 				close;
@@ -2490,7 +2490,7 @@ payon_in03,11,31,4	script	Daewoon#sign	808,{
 		mes "It has been a while since";
 		mes "we last conversed. Now that";
 		mes "you've accessed the power";
-		mes "behind the Sobbing Starlight,";
+		mes "behind the " + mesitemlink(7178) + ",";
 		mes "do you like it?";
 		next;
 		switch(select("Yes:No")) {
@@ -2613,7 +2613,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 				mes "That's right.";
 				mes "You're here to be";
 				mes "tested for the piece";
-				mes "of the Sobbing Starlight.";
+				mes "of the " + mesitemlink(7178) + ".";
 				next;
 				emotion ET_PROFUSELY_SWEAT;
 				mes "[Sir Jore]";
@@ -2708,7 +2708,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 				mes "Now I can continue my";
 				mes "research. Oh, and see if";
 				mes "you're worthy of obtaining";
-				mes "the Sobbing Starlight.";
+				mes "the " + mesitemlink(7178) + ".";
 				next;
 				mes "[Sir Jore]";
 				mes "Now, for your assignment.";
@@ -2726,7 +2726,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 				set sign_q,17;
 				mes "[Sir Jore]";
 				mes "I need you to investigate";
-				mes "this Stone of Sage by finding";
+				mes "this " + mesitemlink(7224) + " by finding";
 				mes "a father and daughter who were";
 				mes "famous for being great Alchemists. They vanished deep into a forest, but I believe they know something.";
 				close;
@@ -2734,8 +2734,8 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 			else {
 				mes "[Sir Jore]";
 				mes "Please bring m-me";
-				mes "10 Empty Test Tube,";
-				mes "10 Green Herb and";
+				mes "10 " + mesitemlink(1092) + ",";
+				mes "10 " + mesitemlink(511) + " and";
 				mes "2 Leaf of Yggdrasil";
 				mes "so that I can make a";
 				mes "new research sample.";
@@ -2749,7 +2749,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 			mes "daughter, who have gone into";
 			mes "seclusion deep in some forest";
 			mes "so that I can learn more about";
-			mes "the Stone of Sage.";
+			mes "the " + mesitemlink(7224) + ".";
 			next;
 			mes "[Sir Jore]";
 			mes "Of course, this will";
@@ -2757,7 +2757,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 			mes "research, but it's also";
 			mes "how I'll judge whether or";
 			mes "not you're qualified for my";
-			mes "piece of the Sobbing Starlight.";
+			mes "piece of the " + mesitemlink(7178) + ".";
 			close;
 		}
 		else if (sign_q < 15) {
@@ -2784,7 +2784,7 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 			mes "[Sir Jore]";
 			mes "Ah, you've returned.";
 			mes "So, did you learn what";
-			mes "exactly is the Stone of Sage?";
+			mes "exactly is the " + mesitemlink(7224) + "?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "Well, I'm not sure,";
@@ -2822,14 +2822,14 @@ aldeba_in,155,101,3	script	Sir Jore#sign	805,7,7,{
 				next;
 				mes "[Sir Jore]";
 				mes "W-well, you've earned this";
-				mes "piece of the Sobbing Starlight.";
+				mes "piece of the " + mesitemlink(7178) + ".";
 				mes "For the next piece, you must visit ^0063FFLady Jesqurienne^000000 in Geffen, the city of magic. Since she travels often, she's probably in the Inn.";
 				next;
 				mes "[Sir Jore]";
 				mes "O-o-okay then.";
 				mes "Good luck getting";
 				mes "all the pieces of ";
-				mes "Sobbing Starlight,";
+				mes "" + mesitemlink(7178) + ",";
 				mes ""+ strcharinfo(0) +". Farewell~";
 				close;
 			}
@@ -3127,7 +3127,7 @@ prt_maze02,16,183,3	script	Pleur#sign	91,{
 	}
 	else {
 		mes "Hmmm...?";
-		mes "The Stone of Sage...";
+		mes "The " + mesitemlink(7224) + "...";
 	}
 	close;
 
@@ -3223,7 +3223,7 @@ prt_maze02,14,183,4	script	Gordon#sign	51,{
 				case 1:
 					set sign_q,19;
 					mes "[Gordon]";
-					mes "Stone of Sage?";
+					mes "" + mesitemlink(7224) + "?";
 					mes "Huh. To be honest,";
 					mes "I don't know anything";
 					mes "about it at all. I guess";
@@ -3232,9 +3232,9 @@ prt_maze02,14,183,4	script	Gordon#sign	51,{
 					next;
 					mes "[Gordon]";
 					mes "All I've heard is that";
-					mes "the Stone of Sage might";
+					mes "the " + mesitemlink(7224) + " might";
 					mes "be a catylst to transmute";
-					mes "materials into gold. If it";
+					mes "materials into " + mesitemlink(969) + ". If it";
 					mes "really existed, it would be";
 					mes "the ultimate alchemic item.";
 					next;
@@ -3329,7 +3329,7 @@ prt_maze02,14,183,4	script	Gordon#sign	51,{
 		case 1:
 			set sign_q,19;
 			mes "[Gordon]";
-			mes "Stone of Sage?";
+			mes "" + mesitemlink(7224) + "?";
 			mes "Huh. To be honest,";
 			mes "I don't know anything";
 			mes "about it at all. I guess";
@@ -3338,9 +3338,9 @@ prt_maze02,14,183,4	script	Gordon#sign	51,{
 			next;
 			mes "[Gordon]";
 			mes "All I've heard is that";
-			mes "the Stone of Sage might";
+			mes "the " + mesitemlink(7224) + " might";
 			mes "be a catylst to transmute";
-			mes "materials into gold. If it";
+			mes "materials into " + mesitemlink(969) + ". If it";
 			mes "really existed, it would be";
 			mes "the ultimate alchemic item.";
 			next;
@@ -3537,7 +3537,7 @@ geffen_in,59,74,4	script	Jesqurienne#sign	803,{
 				emotion ET_ANGER;
 				mes "[Jesqurienne]";
 				mes "Prove that you can";
-				mes "hold a candle to my";
+				mes "hold a " + mesitemlink(5028) + " to my";
 				mes "superior intellect and";
 				mes "I'll be willing to accept";
 				mes "your little insult! It's time";
@@ -3675,7 +3675,7 @@ geffen_in,59,74,4	script	Jesqurienne#sign	803,{
 		mes "you're its true owner...";
 		next;
 		mes "[Jesqurienne]";
-		mes "If you want to know more about the Sobbing Starlight, find a man named ^3131CEDearles^000000. It may be hard to find him since he wanders from place to place, but it might help to know that he loves gambling...";
+		mes "If you want to know more about the " + mesitemlink(7178) + ", find a man named ^3131CEDearles^000000. It may be hard to find him since he wanders from place to place, but it might help to know that he loves gambling...";
 		next;
 		mes "[Jesqurienne]";
 		mes "Good luck finding";
@@ -3755,7 +3755,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 		case 2:
 			mes "1. Which item is not";
 			mes "relevant to the creation";
-			mes "of a Counteragent?";
+			mes "of a " + mesitemlink(973) + "?";
 			next;
 			if (select("Karvodailnirol:Detrimindexta:Alcohol") != 1) set .@user_p,.@user_p+1;
 			break;
@@ -3798,7 +3798,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "[Aaron]";
 			mes "2. Choose the material that";
 			mes "is not related to the creation";
-			mes "of a Condensed White Potion.";
+			mes "of a " + mesitemlink(547) + ".";
 			next;
 			if (select("Medicine Bowl:Witch Starsand:Empty Bottle:Empty Potion Bottle") == 3) set .@user_p,.@user_p+1;
 			break;
@@ -3806,7 +3806,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "[Aaron]";
 			mes "2. Choose the item that is";
 			mes "necessary for a Blacksmith";
-			mes "to create a Gladius.";
+			mes "to create a " + mesitemlink(1219) + ".";
 			next;
 			if (select("Sapphire:Zircon:Topaz:Cursed Ruby") == 1) set .@user_p,.@user_p+1;
 			break;
@@ -3842,7 +3842,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 		case 2:
 			mes "[Aaron]";
 			mes "3. What is the";
-			mes "Bunny Band's DEF";
+			mes "" + mesitemlink(2214) + "'s DEF";
 			mes "and its added ability?";
 			next;
 			if (select("1 / LUK +2:1 / LUK +5:2 / LUK +2:2 / LUK +5") == 3) set .@user_p,.@user_p+1;
@@ -3972,14 +3972,14 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "[Aaron]";
 			mes "5. Choose the monster";
 			mes "which does not drop the";
-			mes "'Yggdrasil Leaf' item.";
+			mes "'" + mesitemlink(610) + "' item.";
 			next;
 			if (select("Marduk:Baphomet Jr.:Angeling:Wanderer") == 1) set .@user_p,.@user_p+1;
 			break;
 		case 2:
 			mes "[Aaron]";
 			mes "5. Choose the job class";
-			mes "that cannot equip Silk Robe.";
+			mes "that cannot equip " + mesitemlink(2321) + ".";
 			next;
 			if (select("Swordman:Merchant:Hunter:Mage") == 3) set .@user_p,.@user_p+1;
 			break;
@@ -4041,7 +4041,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "[Aaron]";
 			mes "6. What is the";
 			mes "correct weight";
-			mes "for 1 Empty Bottle?";
+			mes "for 1 " + mesitemlink(713) + "?";
 			next;
 			if (select("1:2:3") == 2) set .@user_p,.@user_p+1;
 			break;
@@ -4186,7 +4186,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 		case 2:
 			mes "[Aaron]";
 			mes "8. Choose the Hunter's";
-			mes "Trap skill which does not";
+			mes "" + mesitemlink(1065) + " skill which does not";
 			mes "inflict Property Damage.";
 			next;
 			if (select("Claymore Trap:Freezing Trap:Shockwave Trap:Land Mine") == 3) set .@user_p,.@user_p+1;
@@ -4197,7 +4197,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "[Jesqurienne]";
 			mes "Hah hah~!";
 			mes "That was a";
-			mes "piece of cake!";
+			mes "" + mesitemlink(539) + "!";
 			set .@npc_p,.@npc_p+1;
 		}
 		else {
@@ -4379,7 +4379,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 		emotion ET_HUK;
 		mes "Goodness...!";
 		mes "Either these beer";
-		mes "goggles are on too tight,";
+		mes "" + mesitemlink(2224) + " are on too tight,";
 		mes "or you're the most gorgeous";
 		mes "woman I've seen in my life!";
 		next;
@@ -4390,7 +4390,7 @@ geffen_in,61,72,7	script	Aaron#sign	754,{
 			mes "N-no...!";
 			mes "M-maybe I should";
 			mes "take it easy on the";
-			mes "alcohol. I do have classes";
+			mes "" + mesitemlink(970) + ". I do have classes";
 			mes "to teach tomorrow anyway...";
 		}
 		else {
@@ -4478,7 +4478,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 			case 2:
 				mes "[Dearles]";
 				mes "Oh. You're here for";
-				mes "the Sobbing Starlight, huh? If you wanna take my test, there's *ahem* a fee of 30,000 zeny. So take it or leave it, capish?";
+				mes "the " + mesitemlink(7178) + ", huh? If you wanna take my test, there's *ahem* a fee of 30,000 zeny. So take it or leave it, capish?";
 				next;
 				mes "[Dearles]";
 				mes "I'll have nothing";
@@ -4566,7 +4566,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 		mes "Yeah, I know, you're a real";
 		mes "pro at this, but let me set";
 		mes "you straight before you blow";
-		mes "this off as a piece of cake...";
+		mes "this off as a " + mesitemlink(539) + "...";
 		next;
 		mes "[Dearles]";
 		mes "I'm not gonna give you an";
@@ -4729,7 +4729,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 			next;
 			mes "[Dearles]";
 			mes "Alright, take this chunk";
-			mes "of Sobbing Starlight and";
+			mes "of " + mesitemlink(7178) + " and";
 			mes "go find someone named,";
 			mes "um, ''Bakerlan'' in Alberta.";
 			set sign_q,35;
@@ -4754,7 +4754,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 			mes "for you to ever see";
 			mes "me again. But yeah,";
 			mes "good luck with that";
-			mes "Sobbing Starlight business.";
+			mes "" + mesitemlink(7178) + " business.";
 			close;
 		case 34:
 			mes "Lamadin tells me";
@@ -4766,7 +4766,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 			next;
 			mes "[Dearles]";
 			mes "Alright, take this chunk";
-			mes "of Sobbing Starlight and";
+			mes "of " + mesitemlink(7178) + " and";
 			mes "go find someone named,";
 			mes "um, ''Bakerlan'' in Alberta.";
 			set sign_q,35;
@@ -4792,7 +4792,7 @@ cmd_in02,88,51,4	script	Strange Guy#sign	806,{
 			mes "for you to ever see";
 			mes "me again. But yeah,";
 			mes "good luck with that";
-			mes "Sobbing Starlight business.";
+			mes "" + mesitemlink(7178) + " business.";
 			close;
 		}
 	}
@@ -5547,7 +5547,7 @@ alberta_in,125,101,5	script	Wealthy-looking Merchant	807,{
 		mes "tests up until Dearle's";
 		mes "challenge? Prove it to me";
 		mes "with your pieces of the";
-		mes "Sobbing Starlight...";
+		mes "" + mesitemlink(7178) + "...";
 		next;
 		switch(select("Give me a minute...:Here...")) {
 		case 1:
@@ -5583,7 +5583,7 @@ alberta_in,125,101,5	script	Wealthy-looking Merchant	807,{
 				mes "[Bakerlan]";
 				mes "Hm? It's not possible for";
 				mes "you to have this many pieces";
-				mes "of the Sobbing Starlight!";
+				mes "of the " + mesitemlink(7178) + "!";
 				mes "These must be fakes. How";
 				mes "dare you! Leave me!";
 				close;
@@ -5702,7 +5702,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 		mes "a regular customer who";
 		mes "orders the strangest things.";
 		mes "Last I heard, he was traveling";
-		mes "near Mount Mjolnir.";
+		mes "near Mount " + mesitemlink(1530) + ".";
 		next;
 		mes "[Seylin]";
 		mes "Yes, that was where";
@@ -5813,7 +5813,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 						mes "[Seylin]";
 						mes "Oh, thank you so much!";
 						mes "Now, I remember hearing";
-						mes "that you can find Vigorgra";
+						mes "that you can find " + mesitemlink(7044) + "";
 						mes "somewhere in Al de Baran.";
 						mes "Somebody in the Alchemist";
 						mes "Guild makes it, I think.";
@@ -5852,7 +5852,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 				mes "[Seylin]";
 				mes "Oh, thank you so much!";
 				mes "Now, I remember hearing";
-				mes "that you can find Vigorgra";
+				mes "that you can find " + mesitemlink(7044) + "";
 				mes "somewhere in Al de Baran.";
 				mes "Somebody in the Alchemist";
 				mes "Guild makes it, I think.";
@@ -5886,7 +5886,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 				mes "[Seylin]";
 				mes "Oh, thank you so much!";
 				mes "Now, I remember hearing";
-				mes "that you can find Vigorgra";
+				mes "that you can find " + mesitemlink(7044) + "";
 				mes "somewhere in Al de Baran.";
 				mes "Somebody in the Alchemist";
 				mes "Guild makes it, I think.";
@@ -5904,7 +5904,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 		case 46:
 		case 47:
 			mes "I know that you might";
-			mes "be able to find Vigorgra";
+			mes "be able to find " + mesitemlink(7044) + "";
 			mes "in the Alchemist's Guild";
 			mes "in Al de Baran. Aside from";
 			mes "that, I don't know much...";
@@ -5912,12 +5912,12 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 			mes "[Seylin]";
 			mes "Once you get it,";
 			mes "would you bring";
-			mes "the Vigorgra to me?";
+			mes "the " + mesitemlink(7044) + " to me?";
 			close;
 		case 48:
 			if (countitem(7044) < 1) {
 				mes "Oh, you know where";
-				mes "you can get Vigorgra?";
+				mes "you can get " + mesitemlink(7044) + "?";
 				mes "That's great news!";
 				mes "Oh, when you have it,";
 				mes "bring to me, okay?";
@@ -5926,13 +5926,13 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 			else {
 				mes "Hurray~!";
 				mes "You brought the";
-				mes "Vigorgra! I hope";
+				mes "" + mesitemlink(7044) + "! I hope";
 				mes "my brother will";
 				mes "be happy with this!";
 				next;
 				mes "[Seylin]";
 				mes "Oh! Would you please";
-				mes "bring this Vigorgra to my";
+				mes "bring this " + mesitemlink(7044) + " to my";
 				mes "brother? His name is Maruin";
 				mes "and he's working over at";
 				mes "the Prontera Castle.";
@@ -5949,7 +5949,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 			}
 		case 49:
 			mes "Would you please";
-			mes "deliver the Vigorgra";
+			mes "deliver the " + mesitemlink(7044) + "";
 			mes "and my letter to my brother";
 			mes "Maruin in the Prontera Castle?";
 			mes "And wish him 'Happy Birthday~'";
@@ -6066,7 +6066,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 			mes "She's been worried about";
 			mes "me being tired lately. But";
 			mes "does she even know what";
-			mes "Vigorgra is supposed to...?";
+			mes "" + mesitemlink(7044) + " is supposed to...?";
 			next;
 			mes "[Maruin]";
 			mes "Never mind. It's the";
@@ -6124,7 +6124,7 @@ alberta_in,154,171,5	script	Maid#s10	758,{
 				mes "[Maruin]";
 				mes "Oh...";
 				mes "And just between you";
-				mes "and me, that Vigorgra";
+				mes "and me, that " + mesitemlink(7044) + "";
 				mes "really came in handy!";
 				mes "That stuff's amazing!";
 			}
@@ -6138,14 +6138,14 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 	mes "[Melkaba]";
 	if (sign_q < 46) {
 		mes "Most Alchemists seek out the";
-		mes "Stone of Sage, but in my opinion, their goals are too short sighted. There are more important studies";
+		mes "" + mesitemlink(7224) + ", but in my opinion, their goals are too short sighted. There are more important studies";
 		mes "to be conducted in the name of science for the good of mankind...";
 		next;
 		switch(select("...:So what are you studying?")) {
 		case 1:
 			mes "[Melkaba]";
 			mes "In the end, the ";
-			mes "Stone of Sage may";
+			mes "" + mesitemlink(7224) + " may";
 			mes "just be a simple rumor.";
 			mes "After all, thousands of";
 			mes "Alchemists have already";
@@ -6201,21 +6201,21 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 				mes "I'll do you a favor so long as";
 				mes "you don't tell anyone else!";
 				mes "Of course, I can't just give";
-				mes "you Vigorgra for free...";
+				mes "you " + mesitemlink(7044) + " for free...";
 				next;
 				mes "[Melkaba]";
 				mes "Now, write this";
 				mes "down. These are the";
 				mes "ingredients I need to";
-				mes "make a bottle of Vigorgra.";
+				mes "make a bottle of " + mesitemlink(7044) + ".";
 				next;
 				mes "[Melkaba]";
-				mes "^ff00001 Ment";
+				mes "^ff00001 " + mesitemlink(708) + "";
 				mes "20 Honey";
-				mes "10 Royal Jelly";
-				mes "30 Bear's Footskin";
-				mes "1 Hinalle Leaflet";
-				mes "1 Empty Bottle.^000000";
+				mes "10 " + mesitemlink(526) + "";
+				mes "30 " + mesitemlink(948) + "";
+				mes "1 " + mesitemlink(520) + "";
+				mes "1 " + mesitemlink(713) + ".^000000";
 				next;
 				mes "[Melkaba]";
 				mes "Alright.";
@@ -6241,7 +6241,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 		mes "So did you";
 		mes "bring everything";
 		mes "you need for the";
-		mes "Vigorgra...?";
+		mes "" + mesitemlink(7044) + "...?";
 		next;
 		switch(select("Not yet...:Yes.")) {
 		case 1:
@@ -6253,12 +6253,12 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 			mes "you forgot already...";
 			next;
 			mes "[Melkaba]";
-			mes "^ff00001 Ment";
+			mes "^ff00001 " + mesitemlink(708) + "";
 			mes "20 Honey";
-			mes "10 Royal Jelly";
-			mes "30 Bear's Footskin";
-			mes "1 Hinalle Leaflet";
-			mes "1 Empty Bottle.^000000";
+			mes "10 " + mesitemlink(526) + "";
+			mes "30 " + mesitemlink(948) + "";
+			mes "1 " + mesitemlink(520) + "";
+			mes "1 " + mesitemlink(713) + ".^000000";
 			next;
 			mes "[Melkaba]";
 			mes "Take your time...";
@@ -6281,12 +6281,12 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 				mes "carefully. I need you to get...";
 				next;
 				mes "[Melkaba]";
-				mes "^ff00001 Ment";
+				mes "^ff00001 " + mesitemlink(708) + "";
 				mes "20 Honey";
-				mes "10 Royal Jelly";
-				mes "30 Bear's Footskin";
-				mes "1 Hinalle Leaflet";
-				mes "1 Empty Bottle.^000000";
+				mes "10 " + mesitemlink(526) + "";
+				mes "30 " + mesitemlink(948) + "";
+				mes "1 " + mesitemlink(520) + "";
+				mes "1 " + mesitemlink(713) + ".^000000";
 				close;
 			}
 			else {
@@ -6294,7 +6294,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 				mes "Everything's here.";
 				mes "Alright, just this once";
 				mes "I'll make you a bottle";
-				mes "of Vigorgra.";
+				mes "of " + mesitemlink(7044) + ".";
 				next;
 				mes "[Melkaba]";
 				mes "If you ask me again,";
@@ -6316,7 +6316,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 					mes "taking my fee from";
 					mes "you now. It's not that";
 					mes "expensive when you";
-					mes "consider Vigorgra's";
+					mes "consider " + mesitemlink(7044) + "'s";
 					mes "numerous benefits.";
 					next;
 					mes "^3355FFMelkaba placed";
@@ -6338,7 +6338,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 						specialeffect EF_PHARMACY_OK;
 						mes "Ah! Success!";
 						mes "A lifetime's supply";
-						mes "of Vigorgra! I know it's";
+						mes "of " + mesitemlink(7044) + "! I know it's";
 						mes "just one bottle, but this";
 						mes "stuff is extremely potent!";
 						next;
@@ -6368,11 +6368,11 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 						delitem 708,1; //Ment
 						delitem 713,1; //Empty_Bottle
 						mes "It failed?!";
-						mes "Of course, the mixture";
+						mes "Of course, the " + mesitemlink(974) + "";
 						mes "was too vigorous, even";
 						mes "for the machinery! I'm sorry,";
 						mes "but would you bring the things";
-						mes "we need to make Vigorgra again?";
+						mes "we need to make " + mesitemlink(7044) + " again?";
 						close;
 					}
 				}
@@ -6381,14 +6381,14 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 	}
 	else if (sign_q == 97) {
 		mes "Most Alchemists seek out the";
-		mes "Stone of Sage, but in my opinion, their goals are too short sighted. There are more important studies";
+		mes "" + mesitemlink(7224) + ", but in my opinion, their goals are too short sighted. There are more important studies";
 		mes "to be conducted in the name of science for the good of mankind...";
 		next;
 		switch(select("...:So what are you studying?")) {
 		case 1:
 			mes "[Melkaba]";
 			mes "In the end, the";
-			mes "Stone of Sage may";
+			mes "" + mesitemlink(7224) + " may";
 			mes "just be a simple rumor.";
 			mes "After all, thousands of";
 			mes "Alchemists have already";
@@ -6407,14 +6407,14 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 	}
 	else if (sign_q == 98) {
 		mes "Most Alchemists seek out the";
-		mes "Stone of Sage, but in my opinion, their goals are too short sighted. There are more important studies";
+		mes "" + mesitemlink(7224) + ", but in my opinion, their goals are too short sighted. There are more important studies";
 		mes "to be conducted in the name of science for the good of mankind...";
 		next;
 		switch(select("...:So what are you studying?")) {
 		case 1:
 			mes "[Melkaba]";
 			mes "In the end, the";
-			mes "Stone of Sage may";
+			mes "" + mesitemlink(7224) + " may";
 			mes "just be a simple rumor.";
 			mes "After all, thousands of";
 			mes "Alchemists have already";
@@ -6432,7 +6432,7 @@ alde_alche,169,162,7	script	Alchemist#sign	749,{
 		}
 	}
 	else {
-		mes "Vigorgra is";
+		mes "" + mesitemlink(7044) + " is";
 		mes "a miracle of";
 		mes "modern science,";
 		mes "but it can do more";
@@ -6849,7 +6849,7 @@ yuno,330,100,4	script	Knight#ss	734,{
 				next;
 				mes "[Leibech]";
 				mes "Well, here's your";
-				mes "receipt. Please take";
+				mes "" + mesitemlink(6271) + ". Please take";
 				mes "this to Mister Bakerlan";
 				mes "so he knows you did";
 				mes "a good job for me.";
@@ -7164,7 +7164,7 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 			next;
 			mes "[Engel]";
 			mes "Oh great! I see that you're";
-			mes "carrying some Iron Ores with you. Would you be so kind as to lend me 1 Iron Ore? Please, I beg of you...";
+			mes "carrying some " + mesitemlink(998) + " Ores with you. Would you be so kind as to lend me 1 " + mesitemlink(1002) + "? Please, I beg of you...";
 			next;
 			switch(select("Sure, why not?:Sorry, I can't.")) {
 			case 1:
@@ -7244,7 +7244,7 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 					mes "Long ago, my old master told me that there are these strange ores that have fallen from the sky. The most beautiful and mysterious is the one shines just like a star.";
 					next;
 					mes "[Engel]";
-					mes "Most people may know it as Sobbing Starlight, but my master used to call it God's Tear Drop.";
+					mes "Most people may know it as " + mesitemlink(7178) + ", but my master used to call it God's Tear Drop.";
 					next;
 					mes "[Engel]";
 					mes "However, this ore has been shattered into pieces. Judging from the smoothness of the edges, its inner power must have caused it to break apart. So you want me to put this back together, don't you?";
@@ -7255,14 +7255,14 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 					mes "special tools and materials to repair this kind of ore. Now, I want you to bring me the following things...";
 					next;
 					mes "[Engel]";
-					mes "^FF00005 Mini Furnace^000000,";
-					mes "^FF00002 Oridecon Hammer^000000,";
-					mes "and ^ff00001 good quality Anvil^000000.";
+					mes "^FF00005 " + mesitemlink(612) + "^000000,";
+					mes "^FF00002 " + mesitemlink(615) + "^000000,";
+					mes "and ^ff00001 good quality " + mesitemlink(986) + "^000000.";
 					mes "Now keep in mind that ordinary anvils won't be good enough for";
 					mes "this kind of work.";
 					next;
 					mes "[Engel]";
-					mes "Now, an Emperium Anvil would be ideal for this job. I used to have one, but a while back I ended up giving it to someone. Anyway, I'll wait here for you while you gather everything you need.";
+					mes "Now, an " + mesitemlink(989) + " would be ideal for this job. I used to have one, but a while back I ended up giving it to someone. Anyway, I'll wait here for you while you gather everything you need.";
 					next;
 					mes "[Engel]";
 					mes "Right. Let me guide you to a shortcut to the exit of these mines, just in case you don't know your way out of here. Good luck~";
@@ -7296,20 +7296,20 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 		}
 	}
 	else if (sign_q == 57) {
-		mes "As I've told you before, I'm more likely to succeed in my work if I'm able to use a higher quality anvil. Let's me see what you've brought...";
+		mes "As I've told you before, I'm more likely to succeed in my work if I'm able to use a higher quality " + mesitemlink(986) + ". Let's me see what you've brought...";
 		next;
 		if ((countitem(612) > 4) && (countitem(615) > 1) && ((countitem(986) > 0) || (countitem(987) > 0) || (countitem(988) > 0) || (countitem(989) > 0))) {
 			mes "[Engel]";
 			if (countitem(986) > 0) {
 				mes "A...";
-				mes "Regular Anvil?";
+				mes "Regular " + mesitemlink(986) + "?";
 				mes "Alright, I guess I'll try it.";
 				mes "But I can't guarantee success.";
 				set .@anvil,0;
 			}
 			else if (countitem(987) > 0) {
 				mes "Ah...";
-				mes "An Oridecon Avil.";
+				mes "An " + mesitemlink(984) + " Avil.";
 				mes "This isn't too bad,";
 				mes "but there's a good risk";
 				mes "that this might not work.";
@@ -7317,18 +7317,18 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 			}
 			else if (countitem(988) > 0) {
 				mes "Ah...";
-				mes "A Golden Anvil.";
+				mes "A " + mesitemlink(988) + ".";
 				mes "This just might be able to do the job. This might take a while, so I have something to ask of you.";
 				set .@anvil,2;
 			}
 			else if (countitem(989) > 0) {
-				mes "Oh wow, an Emperium Anvil!";
+				mes "Oh wow, an " + mesitemlink(989) + "!";
 				mes "And this looks like one I might have actually made. Great, I should be able to do this so long as I don't make any critical mistakes~";
 				set .@anvil,3;
 			}
 			next;
 			mes "[Engel]";
-			mes "While I'm working on this, would you deliver a letter to my family for me? I'm sorry, but please consider that I'm waiving the fee for restoring this Sobbing Starlight.";
+			mes "While I'm working on this, would you deliver a letter to my family for me? I'm sorry, but please consider that I'm waiving the fee for restoring this " + mesitemlink(7178) + ".";
 			next;
 			mes "[Engel]";
 			mes "Well then...";
@@ -7347,13 +7347,13 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 				mes "Oh, you don't have everything ready yet? Take your time, so long as you didn't forget what you needed to bring. You do remember, right?";
 				next;
 				mes "[Engel]";
-				mes "^FF00005 Mini Furnace^000000,";
-				mes "^FF00002 Oridecon Hammer^000000,";
-				mes "and ^ff00001 good quality Anvil^000000.";
+				mes "^FF00005 " + mesitemlink(612) + "^000000,";
+				mes "^FF00002 " + mesitemlink(615) + "^000000,";
+				mes "and ^ff00001 good quality " + mesitemlink(986) + "^000000.";
 				mes "That's all you need!";
 				next;
 				mes "[Engel]";
-				mes "Remember that I have a greater chance of repairing the Sobbing Starlight if I have access to a higher quality Anvil. Otherwise...";
+				mes "Remember that I have a greater chance of repairing the " + mesitemlink(7178) + " if I have access to a higher quality " + mesitemlink(986) + ". Otherwise...";
 				close;
 			}
 			else {
@@ -7371,7 +7371,7 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 	else if (sign_q < 70) {
 		if ((sign_q == 66 && rand(1,100) < 38) || (sign_q == 67 && rand(1,100) < 67) || (sign_q == 68 && rand(1,100) < 91) || (sign_q== 69)) {
 			mes "Are you back already?";
-			mes "While you were gone, I managed to restore this Sobbing Starlight. Why don't you go ahead and take a look?";
+			mes "While you were gone, I managed to restore this " + mesitemlink(7178) + ". Why don't you go ahead and take a look?";
 			next;
 			set sign_q,71;
 			getitem 7178,1; //Star's_Sob
@@ -7393,7 +7393,7 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 				next;
 				mes "[Engel]";
 				mes "^333333*Ahem*^000000";
-				mes "Just as I've warned you, this attempt to restore the Sobbling Starlight failed because the anvil you gave me wasn't up to the job. I'm sorry about that.";
+				mes "Just as I've warned you, this attempt to restore the Sobbling Starlight failed because the " + mesitemlink(986) + " you gave me wasn't up to the job. I'm sorry about that.";
 				next;
 				mes "[Engel]";
 				mes "However, I only";
@@ -7404,14 +7404,14 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 				mes "Since I'm a bit more familiar with this material, I won't take so much time. Once again, let me tell you which things you need to bring...";
 				next;
 				mes "[Engel]";
-				mes "^FF00005 Mini Furnace^000000,";
-				mes "^FF00002 Oridecon Hammer^000000,";
-				mes "and ^ff00001 good quality Anvil^000000.";
+				mes "^FF00005 " + mesitemlink(612) + "^000000,";
+				mes "^FF00002 " + mesitemlink(615) + "^000000,";
+				mes "and ^ff00001 good quality " + mesitemlink(986) + "^000000.";
 				mes "And this time, bring";
-				mes "me a better anvil, huh?";
+				mes "me a better " + mesitemlink(986) + ", huh?";
 				next;
 				mes "[Engel]";
-				mes "Although it'd be perfect if I had an Emperium Anvil, I'm pretty sure it'll be alright if we used a Golden Anvil.";
+				mes "Although it'd be perfect if I had an " + mesitemlink(989) + ", I'm pretty sure it'll be alright if we used a " + mesitemlink(988) + ".";
 				set sign_q,70;
 				close;
 			case 68:
@@ -7432,9 +7432,9 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 				mes "Please understand that I get very deeply engrossed in my smithing work. If you don't mind, I'll try this again you'll bring all the tools just like the last time.";
 				next;
 				mes "[Engel]";
-				mes "^FF00005 Mini Furnace^000000 and";
-				mes "^FF00002 Oridecon Hammer^000000.";
-				mes "Don't forget the ^FF0000Golden Anvil^000000! But if you can get your hands on one, an ^FF0000Emperium Anvil^000000 would be better.";
+				mes "^FF00005 " + mesitemlink(612) + "^000000 and";
+				mes "^FF00002 " + mesitemlink(615) + "^000000.";
+				mes "Don't forget the ^FF0000Golden " + mesitemlink(986) + "^000000! But if you can get your hands on one, an ^FF0000Emperium " + mesitemlink(986) + "^000000 would be better.";
 				set sign_q,70;
 				close;
 		}
@@ -7442,19 +7442,19 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 	else if (sign_q == 70) {
 		if ((countitem(612) > 4) && (countitem(615) > 1) && ((countitem(986) > 0) || (countitem(987) > 0) || (countitem(988) > 0) || (countitem(989) > 0))) {
 			if ((countitem(986) > 0) || (countitem(987) > 0)) {
-				mes "Didn't I tell you to bring me a Golden Anvil or an Emperium Anvil? Anything less isn't good enough to do any restoration work on this Sobbing Starlight.";
+				mes "Didn't I tell you to bring me a " + mesitemlink(988) + " or an " + mesitemlink(989) + "? Anything less isn't good enough to do any restoration work on this " + mesitemlink(7178) + ".";
 				next;
 				mes "[Engel]";
 				mes "Next time you come";
-				mes "here, bring a Golden or Emperium Anvil and make sure to leave all of your other anvils in Kafra Storage or something, okay?";
+				mes "here, bring a Golden or " + mesitemlink(989) + " and make sure to leave all of your other anvils in Kafra Storage or something, okay?";
 				close;
 			}
 			else if (countitem(988) > 0) {
 				mes "Good, good.";
-				mes "I see that you've brought a Golden Anvil. Now I can get started right away! Still, I'm a little about those monsters showing up again, so would you keep a lookout?";
+				mes "I see that you've brought a " + mesitemlink(988) + ". Now I can get started right away! Still, I'm a little about those monsters showing up again, so would you keep a lookout?";
 			}
 			else if (countitem(989) > 0) {
-				mes "Excellent! You've brought an Emperium Anvil! Now, keep a lookout for monsters while I repair these ore fragments. We can't have those beasts ruin my work again, right? Thank you.";
+				mes "Excellent! You've brought an " + mesitemlink(989) + "! Now, keep a lookout for monsters while I repair these ore fragments. We can't have those beasts ruin my work again, right? Thank you.";
 			}
 			next;
 			mes "^3355FF*Clink*";
@@ -7487,10 +7487,10 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 			next;
 			mes "[Engel]";
 			mes "Finally... Completed.";
-			mes "^333333*Phew!*^000000 That was one of the toughest jobs I've ever done, but this was well worth all of our efforts. Just look at the dazzling beauty of this Sobbing Starlight!";
+			mes "^333333*Phew!*^000000 That was one of the toughest jobs I've ever done, but this was well worth all of our efforts. Just look at the dazzling beauty of this " + mesitemlink(7178) + "!";
 			next;
 			mes "[Engel]";
-			mes "We've both gone through a lot of trouble to make this, so I hope you treasure your Sobbing Starlight. Good luck on your adventures...";
+			mes "We've both gone through a lot of trouble to make this, so I hope you treasure your " + mesitemlink(7178) + ". Good luck on your adventures...";
 			if (countitem(988) > 0) delitem 988,1; //Golden_Anvil
 			else if (countitem(989) > 0) delitem 989,1; //Emperium_Anvil
 			set sign_q,71;
@@ -7503,13 +7503,13 @@ mjo_dun02,88,295,4	script	Flaming Spirit Man	85,{
 				mes "Oh, you don't have everything ready yet? Take your time, so long as you didn't forget what you needed to bring. You do remember, right?";
 				next;
 				mes "[Engel]";
-				mes "^FF00005 Mini Furnace^000000,";
-				mes "^FF00002 Oridecon Hammer^000000,";
-				mes "and ^ff00001 good quality Anvil^000000.";
+				mes "^FF00005 " + mesitemlink(612) + "^000000,";
+				mes "^FF00002 " + mesitemlink(615) + "^000000,";
+				mes "and ^ff00001 good quality " + mesitemlink(986) + "^000000.";
 				mes "That's all you need!";
 				next;
 				mes "[Engel]";
-				mes "Remember that I have a greater chance of repairing the Sobbing Starlight if I have access to a higher quality Anvil. Otherwise...";
+				mes "Remember that I have a greater chance of repairing the " + mesitemlink(7178) + " if I have access to a higher quality " + mesitemlink(986) + ". Otherwise...";
 				close;
 			}
 			else {
@@ -7698,7 +7698,7 @@ gef_tower,118,36,4	script	Annoyed Man	64,{
 				mes "here for Metz Brayde?";
 			}
 			if (.@input$ == "Sobbing Starlight") {
-				mes "For that Sobbing Starlight, is that right?";
+				mes "For that " + mesitemlink(7178) + ", is that right?";
 			}
 			next;
 			mes "[Dhota]";
@@ -7754,11 +7754,11 @@ umbala,163,256,3	script	Native#_s	781,{
 		mes "[Laotan]";
 		if (sign_q < 73) {
 			mes "Oh, I wish I had";
-			mes "a Mr. Smile mask!";
+			mes "a " + mesitemlink(2278) + " mask!";
 			mes "But where can I get";
 			mes "one of those? Well, I'd";
 			mes "be happy if I had some";
-			mes "Meat to eat, I guess!";
+			mes "" + mesitemlink(517) + " to eat, I guess!";
 			emotion ET_DELIGHT;
 			close;
 		}
@@ -7770,7 +7770,7 @@ umbala,163,256,3	script	Native#_s	781,{
 			mes "[Laotan]";
 			if (countitem(2278) > 0) {
 				mes "Oh my gosh!";
-				mes "You've got a Mr. Smile mask!";
+				mes "You've got a " + mesitemlink(2278) + " mask!";
 				mes "Would you give that to me?";
 				mes "Pretty please...?";
 				next;
@@ -7801,12 +7801,12 @@ umbala,163,256,3	script	Native#_s	781,{
 				mes "Waaaait.";
 				mes "I knooow~!";
 				mes "I know if you get";
-				mes "me a Mr. Smile, okay?";
+				mes "me a " + mesitemlink(2278) + ", okay?";
 				close;
 			}
 		}
 		else {
-			mes "I love my Mr. Smile mask";
+			mes "I love my " + mesitemlink(2278) + " mask";
 			mes "soooo much! I'm gonna show";
 			mes "it to all my friends! Thank you";
 			mes "so much again! You're really";
@@ -7903,12 +7903,12 @@ um_in,27,23,3	script	Fastidious-Looking Guy	121,{
 			mes "[Cyon]";
 			mes "^333333*Giggle*^000000";
 			mes "Well, since he's kept his promise, I suppose that I should keep mine";
-			mes "as well. Now, within this Sobbing Starlight are these tiny letters... ^FFFFFFcobo^000000";
+			mes "as well. Now, within this " + mesitemlink(7178) + " are these tiny letters... ^FFFFFFcobo^000000";
 			next;
 			mes "[Cyon]";
 			mes "The text is so small that even Hunters skilled in Vulture's Eye are unable to read them. However, I've read that this Sobbing";
 			mes "Starlight will respond";
-			mes "to really old papers...";
+			mes "to really " + mesitemlink(7052) + "...";
 			next;
 			mes "[Cyon]";
 			mes "Now, if we want to figure out";
@@ -7942,7 +7942,7 @@ um_in,27,23,3	script	Fastidious-Looking Guy	121,{
 			mes "[Cyon]";
 			mes "How did you find these";
 			mes "Worn Out Pages? This is great,";
-			mes "I'm sure the Sobbing Starlight";
+			mes "I'm sure the " + mesitemlink(7178) + "";
 			mes "will respond to these!";
 			next;
 			mes "[Cyon]";
@@ -7956,7 +7956,7 @@ um_in,27,23,3	script	Fastidious-Looking Guy	121,{
 			next;
 			mes "[Cyon]";
 			mes "Just as I thought!";
-			mes "The Sobbing Starlight is responding to these Worn Out Pages! Excellent! I've finally fulfilled my promise to Metz! Now he can leave";
+			mes "The " + mesitemlink(7178) + " is responding to these Worn Out Pages! Excellent! I've finally fulfilled my promise to Metz! Now he can leave";
 			mes "me alone!";
 			delitem 1097,10; //Worn_Out_Page
 			set sign_q,76;
@@ -7967,7 +7967,7 @@ um_in,27,23,3	script	Fastidious-Looking Guy	121,{
 			mes "[Cyon]";
 			mes "How did you find these";
 			mes "^FF0000Worn Out Pages^000000? This is great,";
-			mes "I'm sure the Sobbing Starlight";
+			mes "I'm sure the " + mesitemlink(7178) + "";
 			mes "will respond to these!";
 			next;
 			mes "[Cyon]";
@@ -7982,7 +7982,7 @@ um_in,27,23,3	script	Fastidious-Looking Guy	121,{
 			mes "[Cyon]";
 			mes "You haven't found anything?";
 			mes "What kind of scientist are you?";
-			mes "Now go out and find some old and ancient papers so that we can learn what's written in the Sobbing Starlight! Go!";
+			mes "Now go out and find some old and ancient papers so that we can learn what's written in the " + mesitemlink(7178) + "! Go!";
 			next;
 			mes "[Cyon]";
 			mes "...?";
@@ -8051,7 +8051,7 @@ alberta,165,83,4	script	Fastidious Old Man	755,{
 			case 1:
 				mes "[Frank]";
 				mes "Oh, you've brought me";
-				mes "these Glasses? Thanks";
+				mes "these " + mesitemlink(2203) + "? Thanks";
 				mes "so much, youngster. Now that";
 				mes "I can see better, what can";
 				mes "I do for you in return?";
@@ -8073,11 +8073,11 @@ alberta,165,83,4	script	Fastidious Old Man	755,{
 						break;
 					case 2:
 						mes "[Frank]";
-						mes "The Sobbing Starlight?";
+						mes "The " + mesitemlink(7178) + "?";
 						mes "To the experts, it's known as God's Tear Drop. Now, some believe it was created from the voice of God.";
 						next;
 						mes "[Frank]";
-						mes "Of course, it probably isn't made from God's voice or tear drops, but who knows? In any case, it's said that something's written in the Sobbing Starlight. What ever it is, it must be something important...";
+						mes "Of course, it probably isn't made from God's voice or tear drops, but who knows? In any case, it's said that something's written in the " + mesitemlink(7178) + ". What ever it is, it must be something important...";
 						next;
 						break;
 					case 3:
@@ -8143,7 +8143,7 @@ gef_fild07,182,241,0	script	#Valkyrie Warp	111,1,1,{
 		mes "^6B8E23It seems that";
 		mes "something in the";
 		mes "vicinity is reacting";
-		mes "with the Sobbing Starlight";
+		mes "with the " + mesitemlink(7178) + "";
 		mes "in your possession. Perhaps";
 		mes "you can find it nearby...^000000";
 		close;
@@ -8158,8 +8158,8 @@ OnTouch_:
 		next;
 		mes "^3355FFFor some reason, in";
 		mes "this particular spot, the";
-		mes "Sobbing Starlight is reacting";
-		mes "with the Resin, Stone Hearts";
+		mes "" + mesitemlink(7178) + " is reacting";
+		mes "with the " + mesitemlink(907) + ", Stone Hearts";
 		mes "and Coral Reefs that you're";
 		mes "holding. All the objects are";
 		mes "violently resonating...^000000";
@@ -8207,7 +8207,7 @@ himinn,48,86,5	script	Valkyrie#sign	811,{
 	else if (sign_q == 81) {
 		mes "Welcome, "+strcharinfo(0)+",";
 		mes "to this realm of holiness.";
-		mes "You have endured great difficulty and tested your courage to obtain the Sobbing Starlight, which will be the certificate for your test.";
+		mes "You have endured great difficulty and tested your courage to obtain the " + mesitemlink(7178) + ", which will be the " + mesitemlink(2713) + " for your test.";
 		next;
 		select("Test...?");
 		mes "[Valkyrie Sandra]";
@@ -8215,7 +8215,7 @@ himinn,48,86,5	script	Valkyrie#sign	811,{
 		mes "you are worthy of undergoing";
 		mes "a special test that will judge";
 		mes "your merits. If you are a true";
-		mes "hero who is pure of heart,";
+		mes "hero who is pure of " + mesitemlink(7855) + ",";
 		mes "you will certainly succeed...";
 		next;
 		mes "[Valkyrie Sandra]";
@@ -8309,7 +8309,7 @@ himinn,48,86,5	script	Valkyrie#sign	811,{
 		mes "I'm pleased to announce that the gods have been watching you and decided to invite you to Valhalla. However, Midgard still has great need of you.";
 		next;
 		mes "[Valkyrie Sandra]";
-		mes "As a symbol of this promise to invite you to Valhalla, you shall be rewarded with 'The Sign' which will show all others that you are a great warrior whose courage was tested by the gods themselves.";
+		mes "As a symbol of this promise to invite you to Valhalla, you shall be rewarded with '" + mesitemlink(2644) + "' which will show all others that you are a great warrior whose courage was tested by the gods themselves.";
 		next;
 		mes "[Valkyrie Sandra]";
 		mes "Congratulations,";
@@ -8986,13 +8986,13 @@ que_sign01,197,195,4	script	Serin#witch	90,{
 				mes "come here anymore...";
 				next;
 				mes "^3355FFSerin took";
-				mes "1 Witch's Tonic";
+				mes "1 " + mesitemlink(7308) + "";
 				mes "from you.^000000";
 				next;
 				mes "[Serin]";
 				mes "I'm sorry...";
 				mes "But I'm taking";
-				mes "your Witch's Tonic";
+				mes "your " + mesitemlink(7308) + "";
 				mes "to help me summon";
 				mes "Dark Lord. Farewell...";
 				close2;
@@ -9033,13 +9033,13 @@ que_sign01,197,195,4	script	Serin#witch	90,{
 				mes "come here anymore...";
 				next;
 				mes "^3355FFSerin took";
-				mes "1 Witch's Tonic";
+				mes "1 " + mesitemlink(7308) + "";
 				mes "from you.^000000";
 				next;
 				mes "[Serin]";
 				mes "I'm sorry...";
 				mes "But I'm taking";
-				mes "your Witch's Tonic";
+				mes "your " + mesitemlink(7308) + "";
 				mes "to help me summon";
 				mes "Dark Lord. Farewell...";
 				close2;
@@ -9395,7 +9395,7 @@ niflheim,313,70,4	script	Pleasant-Featured Lady#s	90,{
 		next;
 		mes "[Serin]";
 		mes "Also, why would you want";
-		mes "the Symbol of the Nine Realms?";
+		mes "the " + mesitemlink(7305) + "?";
 		mes "It's a very dangerous object that could cause a lot of trouble if it fell into the wrong hands...";
 		next;
 		switch(select("What do you mean??:Don't worry, it won't.")) {
@@ -9553,7 +9553,7 @@ niflheim,313,70,4	script	Pleasant-Featured Lady#s	90,{
 				mes "^3355FFBut Serin has also been able";
 				mes "to forget her sadness. The tears streaked across her cheeks and";
 				mes "the faint smile on her lips tell you that her memories of you";
-				mes "will always remain in her heart.^000000";
+				mes "will always remain in " + mesitemlink(659) + ".^000000";
 				delitem 2643,1; //Serin's_Gold_Ring_
 				getexp (checkre(3))?50000:500000,0;
 				close;
@@ -9723,7 +9723,7 @@ niflheim,313,70,4	script	Pleasant-Featured Lady#s	90,{
 		if (countitem(2642) > 0) {
 			next;
 			mes "^33555FFSuddenly, Serin's";
-			mes "gold ring sparkled";
+			mes "" + mesitemlink(2610) + " sparkled";
 			mes "with a soft glow and";
 			mes "faded away.^000000";
 			delitem 2642,1; //Serin's_Gold_Ring
@@ -9739,7 +9739,7 @@ niflheim,313,70,4	script	Pleasant-Featured Lady#s	90,{
 			delitem 2642,1; //Serin's_Gold_Ring
 			next;
 			mes "^3355FFYou returned";
-			mes "Serin's gold ring.^000000";
+			mes "" + mesitemlink(2642) + ".^000000";
 			close;
 		}
 		mes "[Serin]";
@@ -9762,7 +9762,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 	}
 	mes "[Kirkena]";
 	if ((countitem(7313) == 1) && ((sign_q != 124) || (sign_q != 125) || (sign_q != 126))) {
-		mes "That Witch's Medal...";
+		mes "That " + mesitemlink(7313) + "...";
 		mes "You must be here to";
 		mes "help your friend take";
 		mes "care of Serin. Are you";
@@ -10015,7 +10015,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 	}
 	else if (sign_q == 119) {
 		if (countitem(2642) > 0) {
-			mes "This is Serin's gold ring?";
+			mes "This is " + mesitemlink(2642) + "?";
 			mes "Excellent, this has been";
 			mes "strongly infused with her";
 			mes "vibes. It's really tough to find something like this that resonates so strongly with its owner.";
@@ -10091,7 +10091,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 				mes "I believe Serin is going to";
 				mes "summon the Dark Lord. Since";
 				mes "she used to be a great wizard,";
-				mes "it's entirely possible. However, she might need the Symbol of the Nine Realms in order to do it.";
+				mes "it's entirely possible. However, she might need the " + mesitemlink(7305) + " in order to do it.";
 				next;
 				mes "[Kirkena]";
 				mes "Now, you may believe that";
@@ -10178,7 +10178,7 @@ que_sign01,122,141,4	script	Witch#s	792,{
 		mes "[Kirkena]";
 		if (sign_q == 122) {
 			mes "Luckily, I was able to";
-			mes "use Serin's gold ring to";
+			mes "use " + mesitemlink(2642) + " to";
 			mes "trace her location. I'm going";
 			mes "to send you there, so please";
 			mes "do whatever it takes to stop her.";
@@ -10797,7 +10797,7 @@ que_sign01,45,227,4	script	Queen of the Dead	856,{
 		mes "in my mansion, brave hero.^000000";
 		next;
 		mes "^3355FFYou received the";
-		mes "Symbol of the Nine Realms.^000000";
+		mes "" + mesitemlink(7305) + ".^000000";
 		delitem 7307,1; //Whisper_Of_Soul
 		set sign_q,118;
 		getitem 7305,1; //Authority_Of_Nine_World
@@ -10845,7 +10845,7 @@ que_sign01,45,227,4	script	Queen of the Dead	856,{
 			mes "[Lady Hell]";
 			mes "^8C1717As queen of Niflheim,";
 			mes "I command you to lend the";
-			mes "Sobbing Starlight to me! Fear";
+			mes "" + mesitemlink(7178) + " to me! Fear";
 			mes "not, I shall quickly return it. For a mortal, it must have";
 			mes "taken great pains to obtain this...^000000";
 			next;
@@ -10901,7 +10901,7 @@ que_sign01,45,227,4	script	Queen of the Dead	856,{
 		mes "This is the true";
 		mes "form of the object";
 		mes "you humans call the";
-		mes "Sobbing Starlight.^000000";
+		mes "" + mesitemlink(7178) + ".^000000";
 		next;
 		set sign_q,144;
 		getitem 7025,1; //Lucifer's_Lament
@@ -11601,7 +11601,7 @@ niflheim,102,54,4	script	Mad Man#s	739,{
 		}
 	}
 	else if (sign_q < 150) {
-		mes "Dude, Niflheim rocks.";
+		mes "Dude, Niflheim " + mesitemlink(2796) + ".";
 		mes "It's like, a million times";
 		mes "better than that boring";
 		mes "old Asgard. Hell yeah!";
@@ -11774,7 +11774,7 @@ OnTouch_:
 	else if (sign_q < 82) {
 		mes "[Crayu]";
 		mes "Mountain sunset to the west";
-		mes "Where the purple dusk falls ";
+		mes "Where the purple " + mesitemlink(13153) + " falls ";
 		mes "Surrounded by beautiful melody";
 		mes "^You become the key that ignores its master";
 		close;
@@ -11782,7 +11782,7 @@ OnTouch_:
 	else if (sign_q == 86) {
 		mes "[Crayu]";
 		mes "Mountain sunset to the west";
-		mes "Where the purple dusk falls ";
+		mes "Where the purple " + mesitemlink(13153) + " falls ";
 		mes "Surrounded by beautiful melody";
 		mes "You become the key that ignores its master";
 		next;
@@ -12020,7 +12020,7 @@ function	script	F_SignSeal	{
 		mes "down to your waiting";
 		mes "hands, and you hear its";
 		mes "voice speak directly into";
-		mes "the depths of your heart...^000000";
+		mes "the depths of your " + mesitemlink(7855) + "...^000000";
 		next;
 		mes "[Agrboda's Soul]";
 		mes "^333333I'm...";
@@ -12037,7 +12037,7 @@ function	script	F_SignSeal	{
 		next;
 		mes "^3355FFYou have";
 		mes "obtained a^6E7B8B";
-		mes "Piece of Spirit^3355FF.^000000";
+		mes "" + mesitemlink(7306) + "^3355FF.^000000";
 		getitem 7306,1; //Fragment_Of_Soul
 	}
 	return;
@@ -12278,7 +12278,7 @@ geffen,119,48,0	script	Fountain#s	111,{
 	callfunc "F_UpdateSignVars";
 	if (countitem(7025) > 0) {
 		mes "^3355FFAs you approach the fountain,";
-		mes "a strange light begins to emit from the Lucifer's Lament in your pocket and from something deep within";
+		mes "a strange light begins to emit from the " + mesitemlink(7025) + " in your pocket and from something deep within";
 		mes "the fountain's water.^000000";
 		specialeffect EF_LEVEL99;
 		specialeffect2 EF_LEVEL99;
@@ -12286,7 +12286,7 @@ geffen,119,48,0	script	Fountain#s	111,{
 		switch(select("Throw Lucifer's Lament into the fountain.:Ignore the light.")) {
 		case 1:
 			mapannounce "geffen","With a flash of light from Geffen Fountain, the door to Geffenia has opened.",bc_map,"0x9CFF00";
-			mes "^3355FFOnce the Lucifer's Lament";
+			mes "^3355FFOnce the " + mesitemlink(7025) + "";
 			mes "splashes into the water, the";
 			mes "light reveals a peculiar warp";
 			mes "in front of the fountain...^000000";
@@ -12579,7 +12579,7 @@ function	script	F_UpdateSignVars	{
 
 		// Same BS as above, unable to save pickup time for 'The Sign' from Engel.
 		if (signengelhour) { 
-			mes "^FF0000You see that Engel has forgotten to look at 'The Sign', how you got it back is a mystery too you, but you should remind Engel that he needs to look at it.^000000";
+			mes "^FF0000You see that Engel has forgotten to look at '" + mesitemlink(2644) + "', how you got it back is a mystery too you, but you should remind Engel that he needs to look at it.^000000";
 			getitem 7314,1; //The_Sign
 			set sign_q,139;
 		}
@@ -12604,7 +12604,7 @@ function	script	F_UpdateSignVars	{
 
 		// Unable to save when the Sign should be picked up from Metz
 		if (signmetzhour) { 
-			mes "^FF0000You see that Metz has forgotten to look at 'The Sign', how you got it back is a mystery too you, but you should remind Metz that he needs to look at it.^000000";
+			mes "^FF0000You see that Metz has forgotten to look at '" + mesitemlink(2644) + "', how you got it back is a mystery too you, but you should remind Metz that he needs to look at it.^000000";
 			getitem 7314,1; //The_Sign
 			set sign_q,138;
 		}

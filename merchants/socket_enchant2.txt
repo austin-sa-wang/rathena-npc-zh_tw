@@ -222,8 +222,8 @@
 			next;
 			mes "[Leablem]";
 			mes "This special service has a 90% success chance,";
-			mes "but requires 2 Gold and 2 hundred million zeny:";
-			mes "I can add slots to the Hat of the Sun God.";
+			mes "but requires 2 " + mesitemlink(969) + " and 2 hundred million zeny:";
+			mes "I can add slots to the " + mesitemlink(5022) + ".";
 			next;
 			mes "[Leablem]";
 			mes "My brother said that, even since ancient times, it's forbidden to modify that hat.";
@@ -268,8 +268,8 @@
 					next;
 					mes "[Leablem]";
 					mes "Okay then, please bring me";
-					mes "^FF00002 Gold, 2 hundred million zeny -- the service charge --,";
-					mes "^FF0000and a Hat of the Sun God.";
+					mes "^FF00002 " + mesitemlink(969) + ", 2 hundred million zeny -- the service charge --,";
+					mes "^FF0000and a " + mesitemlink(5022) + ".";
 					mes "^FF0000You know your chance of success is 90% with this, don't you?^000000";
 					mes "We don't have time to waste,";
 					mes "so let's get down to business right away.";

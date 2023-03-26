@@ -553,7 +553,7 @@ ve_in,78,314,5	script	Magistrate#Aru	945,{
 		mes "That's a place in the southwest";
 		mes "part of Rune-Midgarts. Anyway,";
 		mes "the smugglers thought he'd be";
-		mes "wealthy, so they set a trap.";
+		mes "wealthy, so they set a " + mesitemlink(1065) + ".";
 		next;
 		mes "[Al Hamad]";
 		mes "They lured him away from his";
@@ -1429,7 +1429,7 @@ abbey03,232,232,4	script	Dead Man#King	956,{
 		mes "^3355FFYou have no idea why";
 		mes "this dead man is moving";
 		mes "around, so you decided to";
-		mes "examine him. In his jacket,";
+		mes "examine him. In his " + mesitemlink(2303) + ",";
 		mes "you find a shining medal...^000000";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -2228,7 +2228,7 @@ ra_temple,168,54,3	script	Sippie#ss	917,{
 		mes "I don't understand why";
 		mes "High Priestess Niren wants";
 		mes "to go to war. I actually think";
-		mes "that in her heart, she doesn't";
+		mes "that in " + mesitemlink(659) + ", she doesn't";
 		mes "want it. She's sweet and kind";
 		mes "once you get to know her.";
 		next;
@@ -2716,7 +2716,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 				mes "[Ishmael]";
 				mes "Let's see... She wants";
 				mes "me to forge a copy of this";
-				mes "file? Piece of cake, I'm an";
+				mes "file? " + mesitemlink(539) + ", I'm an";
 				mes "expert at forging writing!";
 				mes "Just give me a moment and--";
 				next;
@@ -2729,9 +2729,9 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 				emotion ET_CRY;
 				mes "[Ishmael]";
 				mes "My pen was made of a very";
-				mes "rare gemstone called ^FF0000Sardonyx^000000.";
+				mes "rare " + mesitemlink(7300) + " called ^FF0000Sardonyx^000000.";
 				mes "*Sob* I don't think anyone";
-				mes "sells Sardonyx in Arunafeltz.";
+				mes "sells " + mesitemlink(725) + " in Arunafeltz.";
 				mes "You can only get that in the";
 				mes "countries next to us...";
 				next;
@@ -2764,11 +2764,11 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 			mes "Would you be able to forge";
 			mes "a copy of High Priestess";
 			mes "Niren's file if you had";
-			mes "this gemstone?";
+			mes "this " + mesitemlink(7300) + "?";
 			next;
 			mes "[Ishmael]";
 			mes "Oh, you found";
-			mes "a Sardonyx for me?";
+			mes "a " + mesitemlink(725) + " for me?";
 			mes "It looks perfect!";
 			next;
 			mes "[Ishmael]";
@@ -2782,7 +2782,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 			next;
 			mes "[Ishmael]";
 			mes "If you just toss the";
-			mes "Sardonyx over here,";
+			mes "" + mesitemlink(725) + " over here,";
 			mes "I'll be able to forge";
 			mes "your copy right away.";
 			next;
@@ -2792,7 +2792,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 				mes "Huh? I thought you";
 				mes "needed my help? I can't";
 				mes "do anything unless you";
-				mes "give me that gemstone.";
+				mes "give me that " + mesitemlink(7300) + ".";
 				close;
 			case 2:
 				mes "[Ishmael]";
@@ -2839,7 +2839,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 			mes "[Ishmael]";
 			mes "If only I only had";
 			mes "my precious pen made";
-			mes "of Sardonyx! Waaaah~!";
+			mes "of " + mesitemlink(725) + "! Waaaah~!";
 			close;
 		}
 	}
@@ -2990,11 +2990,11 @@ OnTouch:
 		mes "You found me in the holy";
 		mes "ground, and safely led me";
 		mes "out. But while I was there,";
-		mes "I saw ^3131FFYmir's Heart^000000.";
+		mes "I saw ^3131FFYmir's " + mesitemlink(7855) + "^000000.";
 		next;
 		mes "[Zhed]";
 		mes "How... How did you know";
-		mes "that was Ymir's Heart?";
+		mes "that was Ymir's " + mesitemlink(7855) + "?";
 		next;
 		mes "[Pope]";
 		mes "The priests in the Sky";
@@ -3831,17 +3831,17 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 				mes "[Dorian]";
 				mes "Allow me to explain how";
 				mes "the Mystic Dryer de Elegance";
-				mes "works. A glamourous ruby";
+				mes "works. A glamourous " + mesitemlink(723) + "";
 				mes "engine whose design was born";
 				mes "of my genius, generates a";
 				mes "powerful magnetic field.";
 				next;
 				mes "[Dorian]";
-				mes "The ruby engine's";
+				mes "The " + mesitemlink(723) + " engine's";
 				mes "magnetic field operates";
 				mes "according to the ^FF00003 Centrifuge";
 				mes "Wavelength Theory^000000. Now,";
-				mes "pearl inset sensors detect";
+				mes "" + mesitemlink(722) + " inset sensors detect";
 				mes "the amount of calibration...";
 				next;
 				mes "[Dorian]";
@@ -3888,7 +3888,7 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 						mes "However, there is a problem.";
 						next;
 						mes "[Dorian]";
-						mes "The ruby engine is broken,";
+						mes "The " + mesitemlink(723) + " engine is broken,";
 						mes "and I've been too busy with";
 						mes "other projects as ordered by";
 						mes "the Rune-Midgarts Kingdom.";
@@ -3906,8 +3906,8 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 						mes "[Dorian]";
 						mes "Please procure";
 						mes "^FF000020 Rusty Screws^000000,";
-						mes "^FF000010 Iron Ores^000000,";
-						mes "^FF00005 Steel^000000,";
+						mes "^FF000010 " + mesitemlink(998) + " Ores^000000,";
+						mes "^FF00005 " + mesitemlink(999) + "^000000,";
 						mes "^FF00002 Rubies^000000, and";
 						mes "^FF000010 Red Gemstones^000000.";
 						next;
@@ -3958,17 +3958,17 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 				mes "[Dorian]";
 				mes "Allow me to explain how";
 				mes "the Mystic Dryer de Elegance";
-				mes "works. A glamourous ruby";
+				mes "works. A glamourous " + mesitemlink(723) + "";
 				mes "engine whose design was born";
 				mes "of my genius, generates a";
 				mes "powerful magnetic field.";
 				next;
 				mes "[Dorian]";
-				mes "The ruby engine's";
+				mes "The " + mesitemlink(723) + " engine's";
 				mes "magnetic field operates";
 				mes "according to the ^FF00003 Centrifuge";
 				mes "Wavelength Theory^000000. Now,";
-				mes "pearl inset sensors detect";
+				mes "" + mesitemlink(722) + " inset sensors detect";
 				mes "the amount of calibration...";
 				next;
 				mes "[Dorian]";
@@ -4084,7 +4084,7 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 			next;
 			mes "[Dorian]";
 			mes "First, insert a new rough";
-			mes "ruby into the ruby engine,";
+			mes "" + mesitemlink(723) + " into the " + mesitemlink(723) + " engine,";
 			mes "and tighten the screw on";
 			mes "the joint until you hear";
 			mes "a ^0000FFclick^000000. You'll break it";
@@ -4139,8 +4139,8 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 			mes "[Dorian]";
 			mes "Please procure";
 			mes "^FF000020 Rusty Screws^000000,";
-			mes "^FF000010 Iron Ores^000000,";
-			mes "^FF00005 Steel^000000,";
+			mes "^FF000010 " + mesitemlink(998) + " Ores^000000,";
+			mes "^FF00005 " + mesitemlink(999) + "^000000,";
 			mes "^FF00002 Rubies^000000, and";
 			mes "^FF000010 Red Gemstones^000000.";
 			close;
@@ -4158,7 +4158,7 @@ cmd_fild01,55,160,0	script	Heap of Earth	844,{
 		case 1:
 			mes "[Dorian]";
 			mes "First, insert a new rough";
-			mes "ruby into the ruby engine,";
+			mes "" + mesitemlink(723) + " into the " + mesitemlink(723) + " engine,";
 			mes "and tighten the screw on";
 			mes "the joint until you hear";
 			mes "a ^0000FFclick^000000. You'll break it";
@@ -4307,15 +4307,15 @@ OnTouch:
 			case 2:
 				if (.@engine == 0) {
 					mes "^3355FFYou replace the rough";
-					mes "ruby in the ruby engine";
-					mes "with a new rough ruby.";
+					mes "" + mesitemlink(723) + " in the " + mesitemlink(723) + " engine";
+					mes "with a new rough " + mesitemlink(723) + ".";
 					mes "It clicks into place";
 					mes "inside the engine core.^000000";
 					next;
 					set .@engine,.@engine+1;
 				}
 				else if (.@engine > 0) {
-					mes "^3355FFThe ruby in the";
+					mes "^3355FFThe " + mesitemlink(723) + " in the";
 					mes "engine has already";
 					mes "been replaced.^000000";
 					next;
@@ -4324,7 +4324,7 @@ OnTouch:
 			case 3:
 				if (.@engine <  1) {
 					mes "^3355FFYou probably need";
-					mes "to replace the ruby";
+					mes "to replace the " + mesitemlink(723) + "";
 					mes "in the engine first.^000000";
 					next;
 				}
@@ -4365,7 +4365,7 @@ OnTouch:
 			case 4:
 				if ((.@engine <  1) && (.@bolt_suc < 1)) {
 					mes "^3355FFYou need to replace";
-					mes "the engine's ruby and";
+					mes "the engine's " + mesitemlink(723) + " and";
 					mes "tighten the main screw";
 					mes "before you mess with";
 					mes "these switches.^000000";
@@ -4767,7 +4767,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					mes "a lot of trouble to find";
 					mes "you, but... I understand.";
 					mes "If you have a change of";
-					mes "heart, I'll be willing to";
+					mes "" + mesitemlink(7855) + ", I'll be willing to";
 					mes "hire you for your expertise.";
 					close;
 				}
@@ -4977,7 +4977,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 				mes "[Ibrahim]";
 				mes "Ah, I hear from a friend";
 				mes "in Morocc that you happened";
-				mes "to obtain the Unlucky Emerald.";
+				mes "to obtain the " + mesitemlink(7725) + ".";
 				mes "I'm sure it's one of the Four";
 				mes "Cursed Jewels. You wouldn't";
 				mes "mind if I look at it, do you?";
@@ -5000,7 +5000,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 						mes "[Ibrahim]";
 						mes "Yes, judging from its";
 						mes "characteristic shape, this";
-						mes "is the cursed emerald.";
+						mes "is the cursed " + mesitemlink(721) + ".";
 						mes "Like me, you now possess";
 						mes "one of the Four Cursed Jewels.";
 						next;
@@ -5008,7 +5008,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					else {
 						mes "[Ibrahim]";
 						mes "Hm? Did you happen to";
-						mes "misplace your emerald?";
+						mes "misplace your " + mesitemlink(721) + "?";
 						mes "I mean, it's not with you...";
 						close;
 					}
@@ -5016,7 +5016,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 				mes "[Ibrahim]";
 				mes "Tell me, what were";
 				mes "you planning to do with";
-				mes "the Unlucky Emerald?";
+				mes "the " + mesitemlink(7725) + "?";
 				next;
 				switch(select("I'm going to sell it.:I'm going to study it.")) {
 				case 1:
@@ -5034,7 +5034,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					mes "you were looking for the";
 					mes "dimaond. Why don't you ask";
 					mes "them if they'll buy that";
-					mes "Unlucky Emerald from you?";
+					mes "" + mesitemlink(7725) + " from you?";
 					set jewel_nd,1;
 					close;
 				case 2:
@@ -5043,7 +5043,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					mes "thirst for knowledge,";
 					mes "your quest to seek truth.";
 					mes "If you really want an expert";
-					mes "to look at the emerald, talk";
+					mes "to look at the " + mesitemlink(721) + ", talk";
 					mes "to this scholar in Comodo.";
 					next;
 					mes "[Ibrahim]";
@@ -5060,7 +5060,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			else if ((treasure_nd > 10) && (BaseLevel < 66)) {
 				mes "[Ibrahim]";
 				mes "I heard that you obtained";
-				mes "the Unlucky Emerald from";
+				mes "the " + mesitemlink(7725) + " from";
 				mes "a friend in Morocc. Let me";
 				mes "warn you that you might not";
 				mes "be strong enough to handle";
@@ -5086,7 +5086,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		else if (jewel_nd == 1) {
 			mes "[Ibrahim]";
 			mes "I don't have the funds";
-			mes "to buy your emerald at";
+			mes "to buy your " + mesitemlink(721) + " at";
 			mes "a fair price, but why don't";
 			mes "you ask the other jewelers?";
 			mes "They might be interested";
@@ -5097,7 +5097,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			mes "[Ibrahim]";
 			mes "Ah, you're back~";
 			mes "So were you able to";
-			mes "sell the Unlucky Emerald?";
+			mes "sell the " + mesitemlink(7725) + "?";
 			next;
 			select("Everyone seems scared!");
 			mes "[Ibrahim]";
@@ -5115,7 +5115,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			next;
 			mes "[Ibrahim]";
 			mes "You just dug up the";
-			mes "emerald? I suppose it";
+			mes "" + mesitemlink(721) + "? I suppose it";
 			mes "might be too soon to sell it.";
 			mes "Not too many people will";
 			mes "test their luck with that gem,";
@@ -5127,7 +5127,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			mes "scholar friend in Comodo";
 			mes "to examine it? Maybe you";
 			mes "can learn more about the";
-			mes "emerald's so-called curse.";
+			mes "" + mesitemlink(721) + "'s so-called curse.";
 			next;
 			mes "[Ibrahim]";
 			mes "I'll go ahead and send";
@@ -5142,7 +5142,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			mes "Why don't you visit my";
 			mes "scholar friend in Comodo,";
 			mes "and ask him to examine your";
-			mes "Unlucky Emerald? The more";
+			mes "" + mesitemlink(7725) + "? The more";
 			mes "you learn about that so-called";
 			mes "curse, the better. Good luck!";
 			close;
@@ -5151,7 +5151,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			mes "[Ibrahim]";
 			mes "Oh, so what have you";
 			mes "learned about the Unlucky";
-			mes "Emerald so far? Hmmm. Yes,";
+			mes "" + mesitemlink(721) + " so far? Hmmm. Yes,";
 			mes "very intriguing. Good luck";
 			mes "with your research efforts~";
 			close;
@@ -5193,7 +5193,7 @@ alberta,102,80,3	script	Jhonnita	86,{
 		case 1:
 			mes "[Jhonnita]";
 			mes "Ah, take a look at this";
-			mes "lustrous ruby. Isn't it";
+			mes "lustrous " + mesitemlink(723) + ". Isn't it";
 			mes "just breathtaking? It can";
 			mes "be yours for the specially";
 			mes "discounted price of just";
@@ -5271,9 +5271,9 @@ alberta,102,80,3	script	Jhonnita	86,{
 			case 2:
 				if (countitem(7725) > 0) {
 					mes "[Jhonnita]";
-					mes "Rare emerald, eh?";
+					mes "Rare " + mesitemlink(721) + ", eh?";
 					mes "It better not be something";
-					mes "like a Garlet or a Zargon!";
+					mes "like a " + mesitemlink(910) + " or a " + mesitemlink(912) + "!";
 					mes "Sometimes you guys make";
 					mes "that kind of mistake.";
 					mes "Okay, let's see...";
@@ -5285,7 +5285,7 @@ alberta,102,80,3	script	Jhonnita	86,{
 					mes "[Jhonnita]";
 					mes "...........................Um.";
 					mes "It's an incredibly nice";
-					mes "emerald, but I can't take";
+					mes "" + mesitemlink(721) + ", but I can't take";
 					mes "this off your hands. Er,";
 					mes "would you be on your way?";
 					next;
@@ -5323,7 +5323,7 @@ alberta,102,80,3	script	Jhonnita	86,{
 			mes "[Jhonnita]";
 			mes "I don't want anything";
 			mes "to do with your weird";
-			mes "emerald or with you.";
+			mes "" + mesitemlink(721) + " or with you.";
 			mes "Aren't you leaving";
 			mes "already? Go away!";
 			close;
@@ -5420,7 +5420,7 @@ payon,69,65,5	script	Kimeunbang	89,{
 					next;
 					mes "[Kimeunbang]";
 					mes "I'm sorry, but I just";
-					mes "can't buy this emerald.";
+					mes "can't buy this " + mesitemlink(721) + ".";
 					mes "It's... It's too big of";
 					mes "a risk. The rumors I keep";
 					mes "hearing, they're just horrible.";
@@ -5448,7 +5448,7 @@ payon,69,65,5	script	Kimeunbang	89,{
 		else if (jewel_nd == 2) {
 			mes "[Kimeunbang]";
 			mes "No jeweler around will";
-			mes "buy that cursed emerald.";
+			mes "buy that cursed " + mesitemlink(721) + ".";
 			mes "I'm really sorry. You can";
 			mes "try talking to Ibrahim, though.";
 			mes "He's the one that got that";
@@ -5721,8 +5721,8 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		mes "[Wola]";
 		mes "I'm Doctor Wola!";
 		mes "And look! You made me";
-		mes "drop the herbal medicine";
-		mes "I was brewing! The pot";
+		mes "drop the " + mesitemlink(7252) + "";
+		mes "I was brewing! The " + mesitemlink(7482) + "";
 		mes "is all broken now...";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -5733,17 +5733,17 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		mes "That's... That's";
 		mes "quite alright. It's";
 		mes "my fault, really.";
-		mes "Waaah~! My pot!";
+		mes "Waaah~! My " + mesitemlink(7482) + "!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "I'm sorry, I don't know";
 		mes "what's going on exactly.";
-		mes "Was that pot expensive?";
+		mes "Was that " + mesitemlink(7482) + " expensive?";
 		next;
 		mes "[Wola]";
 		mes "Oh, I'm acting stupid";
 		mes "again! I don't have time";
-		mes "to cry over a broken pot!";
+		mes "to cry over a broken " + mesitemlink(7482) + "!";
 		mes "I need to check my hands";
 		mes "for any cuts! If they're";
 		mes "hurt, I can't help anyone!";
@@ -5759,7 +5759,7 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		mes "They're fine, thank goodness.";
 		mes "What's important now is that";
 		mes "you help me fix my herbal";
-		mes "medicine pot. You're partly";
+		mes "medicine " + mesitemlink(7482) + ". You're partly";
 		mes "responsible, you know.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -5772,9 +5772,9 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		mes "[Wola]";
 		mes "Perfect! All the more";
 		mes "reason you should help";
-		mes "me fix this pot! I can't";
+		mes "me fix this " + mesitemlink(7482) + "! I can't";
 		mes "make any medicine without";
-		mes "this pot now, can I? Let's";
+		mes "this " + mesitemlink(7482) + " now, can I? Let's";
 		mes "see... I'll need glue, glue...";
 		next;
 		mes "[Wola]";
@@ -5795,7 +5795,7 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		mes "[Wola]";
 		mes "Good, you're back.";
 		mes "So you brought everything";
-		mes "I need to glue my pot";
+		mes "I need to glue my " + mesitemlink(7482) + "";
 		mes "back together again?";
 		next;
 		if ((countitem(7043) > 19) && (countitem(7054) > 9) && (countitem(7194) > 9) && (countitem(713) > 4)) {
@@ -5849,7 +5849,7 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 			case 1:
 				if (Sex == SEX_MALE) {
 					mes "[Wola]";
-					mes "^666666*Blush*^000000 But it's too";
+					mes "^666666*" + mesitemlink(5040) + "*^000000 But it's too";
 					mes "early for us to just go";
 					mes "on a date. I'm sorry, it's...";
 					mes "I have someone in mind.";
@@ -5937,7 +5937,7 @@ payon_in03,167,149,3	script	Wola	75,2,2,{
 		switch(select("Will you go out with me?:Leblo's back medicine?")) {
 		case 1:
 			if (Sex == SEX_MALE) {
-				mes "^666666*Blush*^000000 But it's too";
+				mes "^666666*" + mesitemlink(5040) + "*^000000 But it's too";
 				mes "early for us to just go";
 				mes "on a date. I'm sorry, it's...";
 				mes "I have someone in mind.";
@@ -6841,7 +6841,7 @@ prt_in,168,18,1	script	Valdes	65,2,2,{
 			mes "You stinkface!";
 			mes "Where's my wine?!";
 			mes "My ^0000FF5 bottles of";
-			mes "Morocc Fruit Wine^000000?!";
+			mes "" + mesitemlink(12049) + "^000000?!";
 			mes "I'm not gonna talk";
 			mes "to you without it!";
 			close;
@@ -7573,7 +7573,7 @@ payon,244,62,3	script	Moonho Ahn	897,{
 					mes "wrist mean?";
 					next;
 					mes "[Moonho Ahn]";
-					mes "That is the sign of";
+					mes "That is " + mesitemlink(2644) + " of";
 					mes "the White Meteor.";
 					mes "Everyone that knows";
 					mes "me will recognize it";
@@ -7710,7 +7710,7 @@ payon,244,62,3	script	Moonho Ahn	897,{
 						mes "wrist mean?";
 						next;
 						mes "[Moonho Ahn]";
-						mes "That is the sign of";
+						mes "That is " + mesitemlink(2644) + " of";
 						mes "the White Meteor.";
 						mes "Everyone that knows";
 						mes "me will recognize it";
@@ -7873,8 +7873,8 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "[Gooho Ahn]";
 			mes "I need";
 			mes "^0000FF20 Live Coals^000000,";
-			mes "^0000FF1 Matchstick^000000,";
-			mes "^0000FF2 Alcohol^000000, and";
+			mes "^0000FF1 " + mesitemlink(7035) + "^000000,";
+			mes "^0000FF2 " + mesitemlink(970) + "^000000, and";
 			mes "^0000FF10 Burning Hearts^000000.";
 			next;
 			mes "[Gooho Ahn]";
@@ -8001,8 +8001,8 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "[Gooho Ahn] ";
 			mes "I need";
 			mes "^0000FF20 Live Coals^000000,";
-			mes "^0000FF1 Matchstick^000000,";
-			mes "^0000FF2 Alcohol^000000, and";
+			mes "^0000FF1 " + mesitemlink(7035) + "^000000,";
+			mes "^0000FF2 " + mesitemlink(970) + "^000000, and";
 			mes "^0000FF10 Burning Hearts^000000.";
 			next;
 			mes "[Gooho Ahn]";
@@ -8120,7 +8120,7 @@ moc_ruins,90,67,3	script	Suspicious Man#1	4W_M_03,4,4,{
 			mes "I... I really don't";
 			mes "know where to find them.";
 			mes "I'm at the bottom of the";
-			mes "food chain, I just follow";
+			mes "food " + mesitemlink(1519) + ", I just follow";
 			mes "their written instructions.";
 			next;
 			mes "[" + strcharinfo(0) + "]";
@@ -8689,7 +8689,7 @@ z_agit,97,101,3	script	Louis	931,{
 		mes "our defeat! The Z Gang";
 		mes "won't go down so easily!";
 		mes "Come forth, my demon";
-		mes "spawn minions of doom!";
+		mes "" + mesitemlink(908) + " minions of doom!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "I don't think";
@@ -8812,7 +8812,7 @@ z_agit,99,101,3	script	Martha	101,{
 		mes "our defeat! The Z Gang";
 		mes "won't go down so easily!";
 		mes "Come forth, my demon";
-		mes "spawn minions of doom!";
+		mes "" + mesitemlink(908) + " minions of doom!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "I don't think";
@@ -8932,7 +8932,7 @@ z_agit,95,101,3	script	Catfoii	876,{
 		mes "our defeat! The Z Gang";
 		mes "won't go down so easily!";
 		mes "Come forth, my demon";
-		mes "spawn minions of doom!";
+		mes "" + mesitemlink(908) + " minions of doom!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "I don't think";
@@ -9933,7 +9933,7 @@ moc_fild18,108,116,0	script	#treasure	844,{
 				next;
 				mes "[" + strcharinfo(0) + "]";
 				mes "N-no! What's going on?";
-				mes "This Emerald... It must";
+				mes "This " + mesitemlink(721) + "... It must";
 				mes "be cursed by evil magic!";
 				close;
 			}
@@ -9983,7 +9983,7 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		mes "Oooh. You must be the";
 		mes "one sent by Ibrahim, right?";
 		mes "You're the one that found";
-		mes "that rare emerald, one of";
+		mes "that rare " + mesitemlink(721) + ", one of";
 		mes "the accursed jewels?";
 		next;
 		mes "[Scholar]";
@@ -9992,7 +9992,7 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		mes "researching them. You came";
 		mes "to just the right person if you";
 		mes "wanted to learn more about";
-		mes "the emerald that you found.";
+		mes "the " + mesitemlink(721) + " that you found.";
 		set jewel_nd,11;
 		close;
 	}
@@ -10013,7 +10013,7 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		next;
 		select("No, it's the Unlucky Emerald.");
 		mes "[Scholar]";
-		mes "Ah, the Unlucky Emerald?";
+		mes "Ah, the " + mesitemlink(7725) + "?";
 		mes "Yes, that was the most recent";
 		mes "Cursed Jewel to be discovered.";
 		mes "Let's see, where did I put all";
@@ -10055,19 +10055,19 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		mes "jewel came into a rich man's";
 		mes "possession. However, he lost";
 		mes "his fortune and was completely";
-		mes "ruined after obtaining it. Hence the moniker, ''Unlucky Emerald.''";
+		mes "ruined after obtaining it. Hence the moniker, ''" + mesitemlink(7725) + ".''";
 		next;
 		mes "[Scholar]";
-		mes "Then the emerald came into";
+		mes "Then the " + mesitemlink(721) + " came into";
 		mes "the hands of a noble lady";
 		mes "who mysteriously died at";
-		mes "a young age. The emerald's";
+		mes "a young age. The " + mesitemlink(721) + "'s";
 		mes "had thousands of owners";
 		mes "who just... Died.";
 		next;
 		mes "[Scholar]";
 		mes "What's disturbing is that";
-		mes "the emerald's curse seems";
+		mes "the " + mesitemlink(721) + "'s curse seems";
 		mes "to grow stronger with each";
 		mes "life it takes away. Um, and";
 		mes "your jewel perfectly matches";
@@ -10075,7 +10075,7 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		next;
 		mes "[Scholar]";
 		mes "You are the new owner";
-		mes "of the Unlucky Emerald.";
+		mes "of the " + mesitemlink(7725) + ".";
 		mes "No one will buy that from";
 		mes "you while it's still cursed.";
 		mes "For the sake of your life,";
@@ -10092,10 +10092,10 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		mes "[Scholar]";
 		mes "The idea is for you to talk";
 		mes "to the spirits killed by this";
-		mes "emerald through that shaman.";
+		mes "" + mesitemlink(721) + " through that shaman.";
 		mes "And I'm sure he'll be pretty";
 		mes "excited to see that you have";
-		mes "the Unlucky Emerald with you.";
+		mes "the " + mesitemlink(7725) + " with you.";
 		set jewel_nd,12;
 		close;
 	}
@@ -10104,13 +10104,13 @@ comodo,139,184,3	script	Scholar#zgang	742,{
 		mes "Please find that shaman";
 		mes "in Alberta, and ask if he can";
 		mes "help you break the curse";
-		mes "on that Unlucky Emerald.";
+		mes "on that " + mesitemlink(7725) + ".";
 		close;
 	}
 	else if (jewel_nd > 28) {
 		mes "[Scholar]";
 		mes "Wait, you're telling me";
-		mes "that the emerald was cursed";
+		mes "that the " + mesitemlink(721) + " was cursed";
 		mes "by the vindictive spirit of";
 		mes "some warrior? Interesting...";
 		mes "I should record this in my";
@@ -10175,7 +10175,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 			emotion ET_THINK;
 			mes "[Shaman]";
 			mes "So this bauble's the";
-			mes "Unlucky Emerald? Yes,";
+			mes "" + mesitemlink(7725) + "? Yes,";
 			mes "it's definitely cursed.";
 			mes "If you don't break the";
 			mes "curse soon, it'll consume";
@@ -10306,7 +10306,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 		mes ".....?";
 		next;
 		mes "[Shaman]";
-		mes "Th-this emerald!";
+		mes "Th-this " + mesitemlink(721) + "!";
 		mes "So many lives! Money";
 		mes "alone won't break this";
 		mes "curse! It's time to get";
@@ -10323,11 +10323,11 @@ alberta_in,70,109,5	script	Shaman	788,{
 		next;
 		mes "[Shaman]";
 		mes "Bring me";
-		mes "^FF00001 Holy Water^000000,";
-		mes "^FF00001 Red Blood^000000,";
-		mes "^FF00001 Witherless Rose^000000,";
-		mes "^FF00001 Crystal Blue^000000, and";
-		mes "^FF00001 Wind of Verdure^000000.";
+		mes "^FF00001 " + mesitemlink(523) + "^000000,";
+		mes "^FF00001 " + mesitemlink(990) + "^000000,";
+		mes "^FF00001 " + mesitemlink(748) + "^000000,";
+		mes "^FF00001 " + mesitemlink(991) + "^000000, and";
+		mes "^FF00001 " + mesitemlink(992) + "^000000.";
 		next;
 		mes "[Shaman]";
 		mes "Hurry! Although the spirits";
@@ -10398,11 +10398,11 @@ alberta_in,70,109,5	script	Shaman	788,{
 			next;
 			mes "[Shaman]";
 			mes "Bring me";
-			mes "^FF00001 Holy Water^000000,";
-			mes "^FF00001 Red Blood^000000,";
-			mes "^FF00001 Witherless Rose^000000,";
-			mes "^FF00001 Crystal Blue^000000, and";
-			mes "^FF00001 Wind of Verdure^000000!";
+			mes "^FF00001 " + mesitemlink(523) + "^000000,";
+			mes "^FF00001 " + mesitemlink(990) + "^000000,";
+			mes "^FF00001 " + mesitemlink(748) + "^000000,";
+			mes "^FF00001 " + mesitemlink(991) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(992) + "^000000!";
 			close;
 		}
 	}
@@ -10421,7 +10421,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 		mes "Ah, you're back.";
 		mes "So did you learn";
 		mes "anything new about";
-		mes "the Unlucky Emerald?";
+		mes "the " + mesitemlink(7725) + "?";
 		next;
 		select("The archaeologist said...");
 		mes "["+ strcharinfo(0) +"]";
@@ -10435,7 +10435,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 		mes "Is he calling me a liar?";
 		mes "There was a vindictive";
 		mes "warrior's soul inside";
-		mes "that very emerald!";
+		mes "that very " + mesitemlink(721) + "!";
 		next;
 		mes "[Shaman]";
 		mes "Then again, there's no";
@@ -10449,7 +10449,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 		mes "[Shaman]";
 		mes "In fact, I'll prove it to you";
 		mes "by reading the message";
-		mes "inside this emerald. Bring";
+		mes "inside this " + mesitemlink(721) + ". Bring";
 		mes "me the jewel, and I'll summon";
 		mes "the warrior spirit inside it.";
 		mes "Just let me rest a bit first.";
@@ -10490,7 +10490,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 			mes "Trust me. You'll find";
 			mes "something there that will";
 			mes "react to the power of that";
-			mes "emerald you possess.";
+			mes "" + mesitemlink(721) + " you possess.";
 			next;
 			mes "[Shaman]";
 			mes "Hmpf! That arrogant";
@@ -10502,7 +10502,7 @@ alberta_in,70,109,5	script	Shaman	788,{
 		else {
 			mes "[Shaman]";
 			mes "You don't have the";
-			mes "emerald with you?";
+			mes "" + mesitemlink(721) + " with you?";
 			mes "I hope you didn't";
 			mes "lose it somewhere.";
 			close;
@@ -10521,9 +10521,9 @@ alberta_in,70,109,5	script	Shaman	788,{
 		mes "Trust me. You'll find";
 		mes "something there that will";
 		mes "react to the power of that";
-		mes "emerald you possess.";
+		mes "" + mesitemlink(721) + " you possess.";
 		mes "Don't forget to bring";
-		mes "that emerald with you!";
+		mes "that " + mesitemlink(721) + " with you!";
 		close;
 	}
 	else if ((jewel_nd == 22) || (jewel_nd == 23)) {
@@ -10562,14 +10562,14 @@ yuno_in04,38,48,3	script	Archeologist	55,{
 		mes "from that antique appraiser";
 		mes "in Comodo... You're the one";
 		mes "that dig up the Unlucky";
-		mes "Emerald, right? Would";
+		mes "" + mesitemlink(721) + ", right? Would";
 		mes "you mind if I take a look?";
 		next;
 		if (countitem(7725) > 0) {
 			mes "[Archeologist]";
 			mes "Ah, it's no wonder so";
 			mes "many people want it.";
-			mes "This emerald is so huge";
+			mes "This " + mesitemlink(721) + " is so huge";
 			mes "and... It's beautiful! So...";
 			mes "I'm guessing you needed";
 			mes "my help with something?";
@@ -10721,7 +10721,7 @@ yuno_in04,38,48,3	script	Archeologist	55,{
 		mes "[Archeologist]";
 		mes "Ah, that's... That's";
 		mes "very profound. That one";
-		mes "warrior went berserk when";
+		mes "warrior went " + mesitemlink(1814) + " when";
 		mes "he realized he was too weak";
 		mes "to protect his comrades?";
 		mes "He lost total control...";
@@ -11025,7 +11025,7 @@ prontera,140,304,5	script	Old Soldier	901,{
 		mes "[Retired Soldier]";
 		mes "Well, you learned all there";
 		mes "is to know about the Unlucky";
-		mes "Emerald. It's time you forget";
+		mes "" + mesitemlink(721) + ". It's time you forget";
 		mes "about the curse or whatever,";
 		mes "and find new adventures.";
 		mes "Ah, to be young again...";
@@ -11055,7 +11055,7 @@ gef_fild08,182,185,0	script	The Wanderer	739,{
 		if (countitem(7725) > 0) {
 			mes "[The Wanderer]";
 			mes "That... That looks";
-			mes "just like the emerald";
+			mes "just like the " + mesitemlink(721) + "";
 			mes "I used to own. Hmmm...";
 			mes "Did you come looking for me?";
 			next;
@@ -11070,7 +11070,7 @@ gef_fild08,182,185,0	script	The Wanderer	739,{
 			mes "I was just a simple man,";
 			mes "dreaming of becoming the";
 			mes "world's greatest warrior.";
-			mes "I had that emerald on me";
+			mes "I had that " + mesitemlink(721) + " on me";
 			mes "when we encountered a huge";
 			mes "group of vicious Cobolds.";
 			next;
@@ -11190,7 +11190,7 @@ gef_fild08,182,185,0	script	The Wanderer	739,{
 		mes "the Cobolds. Then, some";
 		mes "coward killed me from";
 		mes "behind, and stole my";
-		mes "emerald. That must be it!";
+		mes "" + mesitemlink(721) + ". That must be it!";
 		next;
 		select("How did your comrades die?");
 		mes "[The Wanderer]";
@@ -11272,7 +11272,7 @@ gef_fild08,182,185,0	script	The Wanderer	739,{
 		mes "the Cobolds. Then, some";
 		mes "coward killed me from";
 		mes "behind, and stole my";
-		mes "emerald. That must be it!";
+		mes "" + mesitemlink(721) + ". That must be it!";
 		next;
 		select("How did your comrades die?");
 		mes "[The Wanderer]";
@@ -11394,7 +11394,7 @@ OnTouch:
 			mes "This must be the place";
 			mes "that shaman was talking";
 			mes "about. Let's see now...";
-			mes "Wait. I need that emerald...";
+			mes "Wait. I need that " + mesitemlink(721) + "...";
 			close;
 		}
 	}
@@ -11850,11 +11850,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 			mes "coming out. Yeah, bring...";
 			next;
 			mes "[Rogue Guild Agent]";
-			mes "^FF00001 Fabric^000000,";
-			mes "^FF00001 Golden Hair^000000,";
-			mes "^FF00001 Little Evil Horn^000000,";
-			mes "^FF00001 Horseshoe^000000, and";
-			mes "^FF00001 Jack O' Pumpkin^000000.";
+			mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+			mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 			mes "That oughta do it.";
 			next;
 			mes "[Rogue Guild Agent]";
@@ -11906,7 +11906,7 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 				mes "They've been leavin'";
 				mes "horseprints that look like";
 				mes "they belong to Nightmares,";
-				mes "dressing up in Fabric and";
+				mes "dressing up in " + mesitemlink(1059) + " and";
 				mes "pretending they're Whispers...";
 				mes "They're freakin' hooligans.";
 				next;
@@ -11929,11 +11929,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 			}
 		case 2:
 			mes "[Agent]";
-			mes "^FF00001 Fabric^000000,";
-			mes "^FF00001 Golden Hair^000000,";
-			mes "^FF00001 Little Evil Horn^000000,";
-			mes "^FF00001 Horseshoe^000000, and";
-			mes "^FF00001 Jack O' Pumpkin^000000.";
+			mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+			mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 			mes "Don't forget this time!";
 			close;
 		}
@@ -11975,11 +11975,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 			mes "coming out. Yeah, bring...";
 			next;
 			mes "[Rogue Guild Agent]";
-			mes "^FF00001 Fabric^000000,";
-			mes "^FF00001 Golden Hair^000000,";
-			mes "^FF00001 Little Evil Horn^000000,";
-			mes "^FF00001 Horseshoe^000000, and";
-			mes "^FF00001 Jack O' Pumpkin^000000.";
+			mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+			mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 			mes "That oughta do it.";
 			next;
 			mes "[Rogue Guild Agent]";
@@ -12010,11 +12010,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 			mes "coming out. Yeah, bring...";
 			next;
 			mes "[Rogue Guild Agent]";
-			mes "^FF00001 Fabric^000000,";
-			mes "^FF00001 Golden Hair^000000,";
-			mes "^FF00001 Little Evil Horn^000000,";
-			mes "^FF00001 Horseshoe^000000, and";
-			mes "^FF00001 Jack O' Pumpkin^000000.";
+			mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+			mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+			mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 			mes "That oughta do it.";
 			next;
 			mes "[Rogue Guild Agent]";
@@ -12065,7 +12065,7 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 					mes "They've been leavin'";
 					mes "horseprints that look like";
 					mes "they belong to Nightmares,";
-					mes "dressing up in Fabric and";
+					mes "dressing up in " + mesitemlink(1059) + " and";
 					mes "pretending they're Whispers...";
 					mes "They're freakin' hooligans.";
 					next;
@@ -12088,11 +12088,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 				}
 			case 2:
 				mes "[Rogue Guild Agent]";
-				mes "^FF00001 Fabric^000000,";
-				mes "^FF00001 Golden Hair^000000,";
-				mes "^FF00001 Little Evil Horn^000000,";
-				mes "^FF00001 Horseshoe^000000, and";
-				mes "^FF00001 Jack O' Pumpkin^000000.";
+				mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+				mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+				mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+				mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+				mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 				mes "Don't forget this time!";
 				close;
 			}
@@ -12126,7 +12126,7 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 					mes "They've been leavin'";
 					mes "horseprints that look like";
 					mes "they belong to Nightmares,";
-					mes "dressing up in Fabric and";
+					mes "dressing up in " + mesitemlink(1059) + " and";
 					mes "pretending they're Whispers...";
 					mes "They're freakin' hooligans.";
 					next;
@@ -12149,11 +12149,11 @@ geffen,91,36,5	script	Rogue Guild Agent#nd1	828,{
 				}
 			case 2:
 				mes "[Agent]";
-				mes "^FF00001 Fabric^000000,";
-				mes "^FF00001 Golden Hair^000000,";
-				mes "^FF00001 Little Evil Horn^000000,";
-				mes "^FF00001 Horseshoe^000000, and";
-				mes "^FF00001 Jack O' Pumpkin^000000.";
+				mes "^FF00001 " + mesitemlink(1059) + "^000000,";
+				mes "^FF00001 " + mesitemlink(1060) + "^000000,";
+				mes "^FF00001 " + mesitemlink(1038) + "^000000,";
+				mes "^FF00001 " + mesitemlink(944) + "^000000, and";
+				mes "^FF00001 " + mesitemlink(1062) + "^000000.";
 				mes "Don't forget this time!";
 			}
 		}
@@ -12354,7 +12354,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			mes "Red Herbs? I'm sorry,";
 			mes "I meant to say ^0000FFGreen";
 			mes "Herbs^000000. Bring me ^0000FF1 Green";
-			mes "Herb^000000, okay? *Phew~*";
+			mes "" + mesitemlink(7872) + "^000000, okay? *Phew~*";
 			set rumour_nd,9;
 			close;
 		}
@@ -12364,7 +12364,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			mes "Payon's well water...";
 			mes "It's all black and";
 			mes "deadly now. I want you";
-			mes "to bring me a ^FF0000Red Herb^000000";
+			mes "to bring me a ^FF0000Red " + mesitemlink(7872) + "^000000";
 			mes "so that we can fix this!";
 			set rumour_nd,10;
 			close;
@@ -12392,7 +12392,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			mes "[Agent]";
 			mes "Err?";
 			mes "Where's that";
-			mes "Green Herb?";
+			mes "" + mesitemlink(511) + "?";
 			close;
 		}
 	}
@@ -12405,7 +12405,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 		if (countitem(507) > 0) {
 			if (countitem(511) > 0) {
 				mes "[Agent]";
-				mes "Ah, a Green Herb!";
+				mes "Ah, a " + mesitemlink(511) + "!";
 				mes "Is that what I told";
 				mes "you to bring? 'Cause";
 				mes "I'm sure this is the";
@@ -12425,14 +12425,14 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			else {
 				mes "[Agent]";
 				mes "Hey, what are you";
-				mes "doin' with the Red Herb?";
+				mes "doin' with the " + mesitemlink(507) + "?";
 				next;
 				select("You said a Red Herb...");
 				mes "[Agent]";
 				mes "Oh, what?! Huh...";
 				mes "I guess I did. Eh, no";
 				mes "biggie. Hey, bring me";
-				mes "a Green Herb, will you?";
+				mes "a " + mesitemlink(511) + ", will you?";
 				mes "That's the one I wanted.";
 				set rumour_nd,9;
 				close;
@@ -12455,7 +12455,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 				mes "[Agent]";
 				mes "Err?";
 				mes "Where's that";
-				mes "Green Herb?";
+				mes "" + mesitemlink(511) + "?";
 				close;
 			}
 		}
@@ -12465,51 +12465,51 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 		mes "Hey, you know what?";
 		mes "The well water is still";
 		mes "black. That means...";
-		mes "If the herb we used is";
+		mes "If the " + mesitemlink(7872) + " we used is";
 		mes "good... Then it's just";
 		mes "dyed black to scare people.";
 		next;
 		mes "[Agent]";
 		mes "So to clean up the";
 		mes "water, we gotta use";
-		mes "a Counteragent, right?";
+		mes "a " + mesitemlink(973) + ", right?";
 		mes "Will you help me out?";
-		mes "I got a Karvodailnirol...";
+		mes "I got a " + mesitemlink(972) + "...";
 		next;
 		mes "[Agent]";
 		mes "So if you bring me";
-		mes "^0000FF1 Alcohol^000000, we should";
+		mes "^0000FF1 " + mesitemlink(970) + "^000000, we should";
 		mes "be totally good to";
-		mes "make a Counteragent.";
+		mes "make a " + mesitemlink(973) + ".";
 		next;
 		if (BaseJob == Job_Alchemist) {
 			select("Wait, Karvodailnirol?!");
 			mes "[Agent]";
-			mes "Yeah. Karvodailnirol.";
+			mes "Yeah. " + mesitemlink(972) + ".";
 			mes "What about it?";
 			next;
 			mes "[" + strcharinfo(0) + "]";
-			mes "You need Detrimindexta";
-			mes "to make a Counteragent,";
-			mes "not Karvodailnirol.";
+			mes "You need " + mesitemlink(971) + "";
+			mes "to make a " + mesitemlink(973) + ",";
+			mes "not " + mesitemlink(972) + ".";
 			next;
 			mes "[Agent]";
 			mes "Oh, really? Heh!";
 			mes "You're a lifesaver!";
-			mes "Detrimindexta, huh?";
+			mes "" + mesitemlink(971) + ", huh?";
 			next;
 			emotion ET_KIK;
 			mes "[Agent]";
 			mes "Don't worry, I got";
 			mes "that one too! All you";
-			mes "gotta do is bring Alcohol~";
+			mes "gotta do is bring " + mesitemlink(970) + "~";
 			set rumour_nd,12;
 			close;
 		}
 		else {
 			mes "[Agent]";
 			mes "Alright, just bring";
-			mes "me an Alcohol, and";
+			mes "me an " + mesitemlink(970) + ", and";
 			mes "I'll take care of the rest.";
 			set rumour_nd,13;
 			close;
@@ -12518,7 +12518,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 	else if (rumour_nd == 12) {
 		mes "[Agent]";
 		mes "Everything's ready";
-		mes "except for the Alcohol.";
+		mes "except for the " + mesitemlink(970) + ".";
 		mes "Did you bring it?";
 		next;
 		if (countitem(970) > 0) {
@@ -12534,14 +12534,14 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			mes "[Agent]";
 			mes "You don't have it?";
 			mes "You didn't drink";
-			mes "the alcohol, did you?";
+			mes "the " + mesitemlink(970) + ", did you?";
 			close;
 		}
 	}
 	else if (rumour_nd == 13) {
 		mes "[Agent]";
 		mes "Everything's ready";
-		mes "except for the Alcohol.";
+		mes "except for the " + mesitemlink(970) + ".";
 		mes "Did you bring it?";
 		next;
 		if (countitem(970) > 0) {
@@ -12557,18 +12557,18 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 			mes "[Agent]";
 			mes "You don't have it?";
 			mes "You didn't drink";
-			mes "the alcohol, did you?";
+			mes "the " + mesitemlink(970) + ", did you?";
 			close;
 		}
 	}
 	else if (rumour_nd == 14) {
 		mes "[Agent]";
 		mes "Um, I made a mistake";
-		mes "making the Counteragent...";
+		mes "making the " + mesitemlink(973) + "...";
 		mes "I was supposed to use this";
-		mes "Detrimindexta, not the other";
-		mes "thing, Karvodailnirol, to";
-		mes "make the Counteragent.";
+		mes "" + mesitemlink(971) + ", not the other";
+		mes "thing, " + mesitemlink(972) + ", to";
+		mes "make the " + mesitemlink(973) + ".";
 		next;
 		mes "[Agent]";
 		mes "Sorry, they both look";
@@ -12576,7 +12576,7 @@ payon,209,44,5	script	Rogue Guild Agent#nd2	828,{
 		mes "so do all the letters of";
 		mes "the alphabet. You mind";
 		mes "trying this out again?";
-		mes "Just 1 more Alcohol...";
+		mes "Just 1 more " + mesitemlink(970) + "...";
 		next;
 		mes "[Agent]";
 		mes "Hey, I promise!";

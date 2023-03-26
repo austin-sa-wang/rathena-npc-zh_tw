@@ -131,8 +131,8 @@ S_Volunteer:
 	mes "I would like to thank you for volunteering to do your part for our great kingdom. Here, take these provisions for your battles against the forces of darkness.";
 	next;
 	mes "[Recruiter]";
-	mes "3 Red Potions, 1 Milk,";
-	mes "and 1 Orange Potion";
+	mes "3 Red Potions, 1 " + mesitemlink(519) + ",";
+	mes "and 1 " + mesitemlink(502) + "";
 	mes "...to give you hope.";
 	getitem 501,3; //Red_Potion
 	getitem 519,1; //Milk
@@ -222,10 +222,10 @@ prt_in,38,108,4	script	Teacher	53,{
 			mes "I was sad and sometimes lonely. Whenever the studying got too hard, I needed someone who would listen to me. Finally, one day, I met my best friend.";
 			next;
 			mes "[Teacher]";
-			mes "When I saw a Pretty Flower blooming in the abandoned Garden, I realized It was my friend which shared my fate.";
+			mes "When I saw a Pretty " + mesitemlink(712) + " blooming in the abandoned Garden, I realized It was my friend which shared my fate.";
 			next;
 			mes "[Teacher]";
-			mes "Although it is a Common and Normal Flower to others, she gave me the reason to study again. I could achieve my goals because of her.";
+			mes "Although it is a Common and Normal " + mesitemlink(712) + " to others, she gave me the reason to study again. I could achieve my goals because of her.";
 			next;
 			mes "[Teacher]";
 			mes "So recently...";
@@ -236,7 +236,7 @@ prt_in,38,108,4	script	Teacher	53,{
 			mes "I need bunches of flowers. But for someone who rarely goes outside, it is really hard to find all the flowers I need.";
 			next;
 			mes "[Teacher]";
-			mes "I need 1 ^3355FFIllusion Flower^000000 ,1 ^3355FFHinalle^000000,1 ^3355FFAloe^000000 and 1 ^3355FFMent^000000. If you can bring them to me, I'd give you my treasure...";
+			mes "I need 1 ^3355FFIllusion " + mesitemlink(712) + "^000000 ,1 ^3355FFHinalle^000000,1 ^3355FFAloe^000000 and 1 ^3355FFMent^000000. If you can bring them to me, I'd give you my treasure...";
 			close;
 		case 2:
 			mes "[Teacher]";
@@ -340,7 +340,7 @@ prontera,248,212,3	script	Busy Boy#prt	706,3,3,{
 			mes "Here, let me help you";
 			mes "arrange these nicely";
 			mes "out of the bottom of";
-			mes "my freakin' heart.";
+			mes "my freakin' " + mesitemlink(7855) + ".";
 			emotion ET_THROB, playerattached();
 			next;
 			mes "[Busy-Looking Boy]";
@@ -1167,7 +1167,7 @@ morocc_in,45,126,3	script	Historian#prt02	702,{
 	else if (prt_curse > 7 && prt_curse < 30) {
 		mes "[Historian Rodafrian]";
 		mes "As I recall, Mondo should";
-		mes "be at Mount Mjolnir, located";
+		mes "be at Mount " + mesitemlink(1530) + ", located";
 		mes "in the northern region of the";
 		mes "Rune-Midgarts Kingdom. Ask";
 		mes "him for the lyrics of the song that I can't seem to remember...";
@@ -1351,7 +1351,7 @@ S_GiveName:
 	mes "colleague Mondo and ask him";
 	mes "for this song's lyrics? You can";
 	mes "find him in the ancient ruins";
-	mes "in Mount Mjolnir, north in the";
+	mes "in Mount " + mesitemlink(1530) + ", north in the";
 	mes "Rune-Midgarts Kingdom.";
 	next;
 	mes "[Historian Rodafrian]";
@@ -1951,7 +1951,7 @@ mjolnir_01,316,268,3	script	Exhausted-Looking Woman	879,{
 		mes "[Exhausted-Looking Woman]";
 		mes "Father Bamph has helped";
 		mes "me so much. Please bring";
-		mes "that herb pouch to him in";
+		mes "that " + mesitemlink(7872) + " pouch to him in";
 		mes "Prontera Church, and give";
 		mes "him my warmest regards.";
 		close;
@@ -2008,8 +2008,8 @@ mjolnir_01,316,268,3	script	Exhausted-Looking Woman	879,{
 		mes "You know, now that I think";
 		mes "about it, I do remember hearing";
 		mes "that after the exorcism failed,";
-		mes "a maid found a fragment of a";
-		mes "Red Gemstone while cleaning";
+		mes "a maid found a " + mesitemlink(7094) + " of a";
+		mes "" + mesitemlink(716) + " while cleaning";
 		mes "the secret ceremonial grounds.";
 		emotion ET_SURPRISE, playerattached();
 		next;
@@ -2022,8 +2022,8 @@ mjolnir_01,316,268,3	script	Exhausted-Looking Woman	879,{
 		mes "after my failure...";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "A fragment from";
-		mes "a Red Gemstone?";
+		mes "A " + mesitemlink(7094) + " from";
+		mes "a " + mesitemlink(716) + "?";
 		mes "Maybe... maybe it's";
 		mes "evidence that someone";
 		mes "sabotaged the exorcism!";
@@ -2149,7 +2149,7 @@ mjolnir_01,316,268,3	script	Exhausted-Looking Woman	879,{
 		mes "I guess we've gotten";
 		mes "too used to the peace";
 		mes "and serenity of Mount";
-		mes "Mjolnir. It won't be easy";
+		mes "" + mesitemlink(1530) + ". It won't be easy";
 		mes "to leave, even if we're welcome to return to Prontera...";
 		close;
 	}
@@ -2200,7 +2200,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Well, there was this";
 		mes "lady living on Mount";
-		mes "Mjolnir who wanted me";
+		mes "" + mesitemlink(1530) + " who wanted me";
 		mes "to give this to you. Um, she";
 		mes "has a son named Kaanu?";
 		next;
@@ -2463,7 +2463,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 	else if (prt_curse == 16) {
 		mes "[Father Bamph]";
 		mes "Please visit Bonnie";
-		mes "Imbullea in Mount Mjolnir";
+		mes "Imbullea in Mount " + mesitemlink(1530) + "";
 		mes "to see if you can learn more";
 		mes "about that song, or about what";
 		mes "happened after the attempted exorcism of the Jormungand curse.";
@@ -2479,11 +2479,11 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "^3355FFYou related everything";
 		mes "that Bonnie Imbullea spoke";
 		mes "about, including the discovery";
-		mes "of a fragment of Red Gemstone";
+		mes "of a " + mesitemlink(7094) + " of " + mesitemlink(716) + "";
 		mes "in the secret ceremonial grounds. ";
 		next;
 		mes "[Father Bamph]";
-		mes "Red Gemstone? There's";
+		mes "" + mesitemlink(716) + "? There's";
 		mes "no reason for that to be in";
 		mes "a holy place. Hmm. There's";
 		mes "more to this case than meets";
@@ -2565,7 +2565,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "[Father Bamph]";
 		mes "Ah, I see. Then, would";
 		mes "you please bring 1 Yellow";
-		mes "Gemstone and 1 Green Potion";
+		mes "" + mesitemlink(7300) + " and 1 " + mesitemlink(506) + "";
 		mes "to the secret ceremonial grounds as soon as you can? I will wait";
 		mes "over there for you once again.";
 		set prt_curse,32;
@@ -2578,7 +2578,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "switch in the bookshelf to";
 		mes "enter the secret ceremonial";
 		mes "grounds. Don't forget that we";
-		mes "need^3131FF 1 Yellow Gemstone^000000 and ^3131FF1 Green Potion^000000 to test for poison.";
+		mes "need^3131FF 1 " + mesitemlink(715) + "^000000 and ^3131FF1 " + mesitemlink(506) + "^000000 to test for poison.";
 		close;
 	}
 	else if (prt_curse == 34) {
@@ -2639,7 +2639,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "[Father Bamph]";
 		mes "Ah, I see. Then, would";
 		mes "you please bring^3131FF 1 Yellow";
-		mes "Gemstone^000000 and ^3131FF1 Green Potion^000000";
+		mes "" + mesitemlink(7300) + "^000000 and ^3131FF1 " + mesitemlink(506) + "^000000";
 		mes "to the secret ceremonial grounds as soon as you can? I will wait";
 		mes "over there for you once again.";
 		set prt_curse,41;
@@ -2717,7 +2717,7 @@ prt_church,185,106,3	script	Father Bamph	60,{
 		mes "[Father Bamph]";
 		mes "Ah, I see. Then, would";
 		mes "you please bring ^3131FF1 Yellow";
-		mes "Gemstone^000000 and ^3131FF1 Green Potion^000000";
+		mes "" + mesitemlink(7300) + "^000000 and ^3131FF1 " + mesitemlink(506) + "^000000";
 		mes "to the secret ceremonial grounds as soon as you can? I will wait";
 		mes "over there for you once again.";
 		set prt_curse,51;
@@ -3118,7 +3118,7 @@ prt_church,16,114,4	script	Father Bamph#tomb	60,{
 	else if (prt_curse == 32 || prt_curse == 41 || prt_curse == 51) {
 		mes "[Father Bamph]";
 		mes "Do you have a ^3131FFYellow";
-		mes "Gemstone^000000 and ^3131FFGreen Potion^000000";
+		mes "" + mesitemlink(7300) + "^000000 and ^3131FFGreen Potion^000000";
 		mes "ready? If so, you should begin";
 		mes "testing on the body of the third prince before the others.";
 		close;
@@ -3158,7 +3158,7 @@ prt_church,19,111,5	script	#prince1	887,{
 		mes "[Father Bamph]";
 		mes "This is the body of";
 		mes "the king's first son, the";
-		mes "crown prince. Just as it has";
+		mes "" + mesitemlink(2235) + " prince. Just as it has";
 		mes "happened for generations,";
 		mes "the curse took the life of";
 		mes "the first born prince...";
@@ -3176,7 +3176,7 @@ prt_church,19,111,5	script	#prince1	887,{
 	else if (prt_curse == 33 || prt_curse > 41 && prt_curse < 51 || prt_curse == 52) {
 		mes "^3355FFYou poured a little bit";
 		mes "of the solution made from";
-		mes "Yellow Gemstone and Green";
+		mes "" + mesitemlink(715) + " and Green";
 		mes "Potion on the mark on the skin.";
 		mes "You waited a while, but there was no reaction from the solution.^000000";
 		close;
@@ -3240,7 +3240,7 @@ prt_church,21,111,5	script	#prince2	887,{
 		specialeffect EF_BUBBLE;
 		mes "^3355FFYou poured a little of the";
 		mes "solution made from Green";
-		mes "Potion and Yellow Gemstone";
+		mes "Potion and " + mesitemlink(715) + "";
 		mes "on the body's scale marks. The";
 		mes "scale marks grow fainter and";
 		mes "the solution bubbles on contact. ";
@@ -3321,8 +3321,8 @@ prt_church,24,111,5	script	#prince3	887,{
 	else if (prt_curse == 32 || prt_curse == 41 || prt_curse == 51) {
 		if (countitem(506) > 0 && countitem(715) > 0) {
 			mes "^3355FFYou open a bottle of";
-			mes "Green Potion and insert a";
-			mes "Yellow Gemstone. The gem";
+			mes "" + mesitemlink(506) + " and insert a";
+			mes "" + mesitemlink(715) + ". The gem";
 			mes "quickly dissolves, conveniently";
 			mes "forming a solution to test for the presense of poison. You pour";
 			mes "it on the prince's scale marks.^000000";
@@ -3346,8 +3346,8 @@ prt_church,24,111,5	script	#prince3	887,{
 			close;
 		}
 		mes "^3355FFYou'll need to have";
-		mes "a Green Potion and";
-		mes "a Yellow Gemstone in";
+		mes "a " + mesitemlink(506) + " and";
+		mes "a " + mesitemlink(715) + " in";
 		mes "order to test and confirm";
 		mes "whether poison killed the";
 		mes "second and third princes.^000000";
@@ -3357,8 +3357,8 @@ prt_church,24,111,5	script	#prince3	887,{
 		mes "^3355FFThe serpent scale marks";
 		mes "on this prince's body have";
 		mes "vanished after you applied";
-		mes "the Green Potion and Yellow";
-		mes "Gemstone solution to the skin.^000000";
+		mes "the " + mesitemlink(506) + " and Yellow";
+		mes "" + mesitemlink(7300) + " solution to the skin.^000000";
 		close;
 	}
 	else {
@@ -3506,7 +3506,7 @@ que_job01,10,16,5	script	Marjana#poison	885,{
 		mes "[Marjana]";
 		mes "Yeah...";
 		mes "The materials used to";
-		mes "make those snake scale";
+		mes "make those " + mesitemlink(926) + "";
 		mes "marks... Some of them can't";
 		mes "even be found here on the";
 		mes "Midgard continent.";
@@ -3515,7 +3515,7 @@ que_job01,10,16,5	script	Marjana#poison	885,{
 		mes "We're running out of time.";
 		mes "Listen, you can confirm whether";
 		mes "poison was used to kill someone";
-		mes "by mixing a Yellow Gemstone with a Green Potion, and sprinkling";
+		mes "by mixing a " + mesitemlink(715) + " with a " + mesitemlink(506) + ", and sprinkling";
 		mes "the solution on the body.";
 		next;
 		mes "[Marjana]";

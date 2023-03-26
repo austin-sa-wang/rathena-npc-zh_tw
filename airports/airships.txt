@@ -466,14 +466,14 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 	mes "Welcome to Fruitz's";
 	mes "Shop where you can";
 	mes "purchase Apples or grind";
-	mes "them to make Apple Juice.";
+	mes "them to make " + mesitemlink(531) + ".";
 	next;
 	switch (select("Buy Apples.:Make Apple Juice.:Why are you here?:Cancel.")) {
 	case 1:
 		mes "[Fruitz]";
 		mes "Please enter the amount";
 		mes "of Apples that you wish to";
-		mes "buy. Each Apple is 15 zeny";
+		mes "buy. Each " + mesitemlink(512) + " is 15 zeny";
 		mes "and you can buy a maximum";
 		mes "of 500 at a time. Please enter";
 		mes " '0' to cancel your order.";
@@ -487,7 +487,7 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 				mes "by my shop. Farewell!";
 				mes "Come by anytime when";
 				mes "you feel like having an";
-				mes "Apple to snack on~";
+				mes "" + mesitemlink(512) + " to snack on~";
 				close;
 			}
 			else if (.@input < 1 || .@input > 500) {
@@ -511,7 +511,7 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 					mes "by my shop. Farewell!";
 					mes "Come by anytime when";
 					mes "you feel like having an";
-					mes "Apple to snack on~";
+					mes "" + mesitemlink(512) + " to snack on~";
 					close;
 				}
 				break;
@@ -546,8 +546,8 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 	case 2:
 		mes "[Fruitz]";
 		mes "Okay, I'll need";
-		mes "^FF00003 Apples and 1 Empty Bottle^000000";
-		mes "to make 1 Apple Juice for you.";
+		mes "^FF00003 Apples and 1 " + mesitemlink(713) + "^000000";
+		mes "to make 1 " + mesitemlink(531) + " for you.";
 		mes "Would you like to proceed?";
 		next;
 		switch (select("Yes:No")) {
@@ -556,9 +556,9 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 				mes "[Fruitz]";
 				mes "I'm sorry, but you don't";
 				mes "have enough materials to";
-				mes "create a bottle of Apple Juice.";
+				mes "create a bottle of " + mesitemlink(531) + ".";
 				mes "Remember, I need 3 Apples";
-				mes "and 1 Empty Bottle to do it.";
+				mes "and 1 " + mesitemlink(713) + " to do it.";
 				close;
 			}
 			else {
@@ -578,8 +578,8 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 				mes "There you go~";
 				mes "I hope you enjoy!";
 				mes "Please feel free to";
-				mes "stop by for your Apple";
-				mes "and Apple Juice needs";
+				mes "stop by for your " + mesitemlink(512) + "";
+				mes "and " + mesitemlink(531) + " needs";
 				mes "at anytime, adventurer~";
 				close;
 			}
@@ -589,7 +589,7 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 			mes "by my shop. Farewell!";
 			mes "Come by anytime when";
 			mes "you feel like having an";
-			mes "Apple to snack on~";
+			mes "" + mesitemlink(512) + " to snack on~";
 			close;
 		}
 	case 3:
@@ -602,11 +602,11 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 		next;
 		mes "[Fruitz]";
 		mes "It turns out that I was";
-		mes "sleeping beneath an apple";
-		mes "tree and that an apple fell";
+		mes "sleeping beneath an " + mesitemlink(512) + "";
+		mes "tree and that an " + mesitemlink(512) + " fell";
 		mes "and hit me on the head.";
 		mes "I was dying of hunger and";
-		mes "was about to eat that Apple...";
+		mes "was about to eat that " + mesitemlink(512) + "...";
 		next;
 		mes "[Fruitz]";
 		mes "But suddenly, Kain, my old";
@@ -619,15 +619,15 @@ airplane,50,66,5	script	Apple Merchant#airplane	86,{
 		mes "[Fruitz]";
 		mes "I was bored and curious";
 		mes "and ended up wagering that";
-		mes "single Apple in a game of";
+		mes "single " + mesitemlink(512) + " in a game of";
 		mes "dice. But for some reason,";
 		mes "I had this incredible lucky";
-		mes "streak. One apple became two... ";
+		mes "streak. One " + mesitemlink(512) + " became two... ";
 		next;
 		mes "[Fruitz]";
 		mes "Two became four and";
 		mes "before I knew it, I had";
-		mes "cornered the Apple market!";
+		mes "cornered the " + mesitemlink(512) + " market!";
 		mes "I won so many Apples, I just";
 		mes "started my own business here";
 		mes "on the Airship. Weird, huh?";
@@ -830,14 +830,14 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 	mes "Welcome to Meltz's";
 	mes "Shop where you can";
 	mes "purchase Apples or grind";
-	mes "them to make Apple Juice.";
+	mes "them to make " + mesitemlink(531) + ".";
 	next;
 	switch (select("Buy Apples.:Make Apple Juice.:Cancel.")) {
 	case 1:
 		mes "[Meltz]";
 		mes "Please enter the amount";
 		mes "of Apples that you wish to";
-		mes "buy. Each Apple is 15 zeny";
+		mes "buy. Each " + mesitemlink(512) + " is 15 zeny";
 		mes "and you can buy a maximum";
 		mes "of 500 at a time. Please enter";
 		mes "'0' to cancel your order.";
@@ -851,7 +851,7 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 				mes "by my shop. Farewell!";
 				mes "Come by anytime when";
 				mes "you feel like having an";
-				mes "Apple to snack on~";
+				mes "" + mesitemlink(512) + " to snack on~";
 				close;
 			}
 			else if (.@input < 1 || .@input > 500) {
@@ -875,7 +875,7 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 					mes "by my shop. Farewell!";
 					mes "Come by anytime when";
 					mes "you feel like having an";
-					mes "Apple to snack on~";
+					mes "" + mesitemlink(512) + " to snack on~";
 					close;
 				}
 				break;
@@ -910,8 +910,8 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 	case 2:
 		mes "[Meltz]";
 		mes "Okay, I'll need";
-		mes "^FF00003 Apples and 1 Empty Bottle^000000";
-		mes "to make 1 Apple Juice for you.";
+		mes "^FF00003 Apples and 1 " + mesitemlink(713) + "^000000";
+		mes "to make 1 " + mesitemlink(531) + " for you.";
 		mes "Would you like to proceed?";
 		next;
 		switch (select("Yes:No")) {
@@ -920,9 +920,9 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 				mes "[Meltz]";
 				mes "I'm sorry, but you don't";
 				mes "have enough materials to";
-				mes "create a bottle of Apple Juice.";
+				mes "create a bottle of " + mesitemlink(531) + ".";
 				mes "Remember, I need 3 Apples";
-				mes "and 1 Empty Bottle to do it.";
+				mes "and 1 " + mesitemlink(713) + " to do it.";
 				close;
 			}
 			else {
@@ -947,7 +947,7 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 			mes "by my shop. Farewell!";
 			mes "Come by anytime when";
 			mes "you feel like having an";
-			mes "Apple to snack on~";
+			mes "" + mesitemlink(512) + " to snack on~";
 			close;
 		}
 	case 3:
@@ -956,7 +956,7 @@ airplane_01,50,66,5	script	Apple Merchant#air01	86,{
 		mes "by my shop. Farewell!";
 		mes "Come by anytime when";
 		mes "you feel like having an";
-		mes "Apple to snack on~";
+		mes "" + mesitemlink(512) + " to snack on~";
 		close;
 	}
 }
@@ -1473,7 +1473,7 @@ function	script	applegamble	{
 		end;
 	}
 	else if (.@playertotal == .@tabletotal) {
-		mes "I got ^0000FF" + .@table3 + "^000000 and the total is now ^0000FF" + .@tabletotal + "^000000. With total ^FF0000" + .@playertotal + "^000000 this game came out even, ^FF0000" + strcharinfo(0) + "^000000. Let me give you your apple back. It was a great game and I hope we will play again some other time.";
+		mes "I got ^0000FF" + .@table3 + "^000000 and the total is now ^0000FF" + .@tabletotal + "^000000. With total ^FF0000" + .@playertotal + "^000000 this game came out even, ^FF0000" + strcharinfo(0) + "^000000. Let me give you your " + mesitemlink(512) + " back. It was a great game and I hope we will play again some other time.";
 		close2;
 		getitem 512,.@amount; //Apple
 		end;

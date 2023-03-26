@@ -49,7 +49,7 @@
 	mes "There's this guy I know pretty well, Phelix, who lives in Alberta. That guy is really stingy... He charges for everything!";
 	next;
 	mes "[Edgar]";
-	mes "But he's really a nice guy and likes helping other people. He has a good heart and will give you his support if you meet his price.";
+	mes "But he's really a nice guy and likes helping other people. He has a good " + mesitemlink(7855) + " and will give you his support if you meet his price.";
 	next;
 	mes "[Edgar]";
 	mes "Lately, people in Alberta say that he is really trying to help folks and that his demand for Jellopies is just a coverup.  Well, you should take a look at what he has to offer.";

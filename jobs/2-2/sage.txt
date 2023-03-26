@@ -717,7 +717,7 @@ L_AskQuestions:
 			next;
 			if (select("China:Red Frame:Bouquet:Glass Bead") == 3)
 				set .@sage_t,.@sage_t+5;
-			mes "2. Choose a city where you cannot purchase a Stiletto.";
+			mes "2. Choose a city where you cannot purchase a " + mesitemlink(1216) + ".";
 			next;
 			if (select("Prontera:Morocc:Geffen:Lutie") == 1)
 				set .@sage_t,.@sage_t+5;
@@ -737,7 +737,7 @@ L_AskQuestions:
 			next;
 			if (select("Raydric:Raydric Archer:Wanderer:Dark Frame") == 1)
 				set .@sage_t,.@sage_t+5;
-			mes "7. Choose the monster which doesn't drop 'Alcohol'.";
+			mes "7. Choose the monster which doesn't drop '" + mesitemlink(970) + "'.";
 			next;
 			if (select("Horong:Plankton:Poison Spore:Toad") == 3)
 				set .@sage_t,.@sage_t+5;
@@ -749,7 +749,7 @@ L_AskQuestions:
 			next;
 			if (select("Tono:Pina:YuPi:Hollgrehenn") == 2)
 				set .@sage_t,.@sage_t+5;
-			mes "10. Choose the right name for the Kafra lady who wears glasses.";
+			mes "10. Choose the right name for the Kafra lady who wears " + mesitemlink(2203) + ".";
 			next;
 			if (select("Pavianne:Roxie:Leilah:Curly Sue") == 3)
 				set .@sage_t,.@sage_t+5;
@@ -757,7 +757,7 @@ L_AskQuestions:
 			next;
 			if (select("49:59:69:74") == 2)
 				set .@sage_t,.@sage_t+5;
-			mes "12. Choose the right amount of damage reduction and SP consumption of the Energy Coat skill when the caster's remaining SP is 50%.";
+			mes "12. Choose the right amount of damage reduction and SP consumption of the Energy " + mesitemlink(2309) + " skill when the caster's remaining SP is 50%.";
 			next;
 			if (select("Damage -24% SP1.5%:Damage -24% SP2%:Damage -18% SP1.5%:Damage -18% SP2%") == 4)
 				set .@sage_t,.@sage_t+5;
@@ -773,11 +773,11 @@ L_AskQuestions:
 			next;
 			if (select("Divine Protection:Heal:Ruwach:Aqua Benedicta") == 1)
 				set .@sage_t,.@sage_t+5;
-			mes "16. Choose the correct defense and ability of the Bunny Band.";
+			mes "16. Choose the correct defense and ability of the " + mesitemlink(2214) + ".";
 			next;
 			if (select("1 / LUK +2:1 / LUK +5:2 / LUK +2:2 / LUK +5") == 3)
 				set .@sage_t,.@sage_t+5;
-			mes "17. Choose the class that cannot equip Padded Armor.";
+			mes "17. Choose the class that cannot equip " + mesitemlink(2312) + ".";
 			next;
 			if (select("Swordman:Merchant:Thief:Archer") == 4)
 				set .@sage_t,.@sage_t+5;
@@ -799,7 +799,7 @@ L_AskQuestions:
 			next;
 			if (select("Topaz:Garnet:Diamond:Sapphire") == 2)
 				set .@sage_t,.@sage_t+5;
-			mes "2. Choose the city where users cannot purchase Monster's Feed from an NPC.";
+			mes "2. Choose the city where users cannot purchase " + mesitemlink(528) + " from an NPC.";
 			next;
 			if (select("Prontera:Morocc:Al De Baran:Alberta") == 3)
 				set .@sage_t,.@sage_t+5;
@@ -819,7 +819,7 @@ L_AskQuestions:
 			next;
 			if (select("Thiefbug (Aggressive):Horn:Metaller:Argos") == 4)
 				set .@sage_t,.@sage_t+5;
-			mes "7. Choose the monster which does not drop 'Yggdrasil Leaf'.";
+			mes "7. Choose the monster which does not drop '" + mesitemlink(610) + "'.";
 			next;
 			if (select("Marduk:Baphomet Jr.:Angeling:Wanderer") == 1)
 				set .@sage_t,.@sage_t+5;
@@ -831,7 +831,7 @@ L_AskQuestions:
 			next;
 			if (select("Syvia:Akira:Antonio:Dmitrii") == 3)
 				set .@sage_t,.@sage_t+5;
-			mes "10. Choose the Kafra lady who has gorgeous blue hair.";
+			mes "10. Choose the Kafra lady who has gorgeous " + mesitemlink(1034) + ".";
 			next;
 			if (select("Pavianne:Roxie:Leilah:Curly Sue") == 1)
 				set .@sage_t,.@sage_t+5;
@@ -855,7 +855,7 @@ L_AskQuestions:
 			next;
 			if (select("Hilt Binding:Skin Tempering:Hammer Fall:Weapon Perfection") == 2)
 				set .@sage_t,.@sage_t+5;
-			mes "16. What is the correct defense rate and ability of Cute Ribbon?";
+			mes "16. What is the correct defense rate and ability of " + mesitemlink(2250) + "?";
 			next;
 			if (select("0 / SP +20:0 / SP +30:1 / SP +20:1 / SP +30") == 3)
 				set .@sage_t,.@sage_t+5;
@@ -863,7 +863,7 @@ L_AskQuestions:
 			next;
 			if (select("Swordman:Merchant:Thief:Acolyte") == 3)
 				set .@sage_t,.@sage_t+5;
-			mes "18. Choose the abnormal status that cannot be cured by Green Potion.";
+			mes "18. Choose the abnormal status that cannot be cured by " + mesitemlink(506) + ".";
 			next;
 			if (select("Silence:Chaos:Blind:Curse") == 4)
 				set .@sage_t,.@sage_t+5;
@@ -901,7 +901,7 @@ L_AskQuestions:
 			next;
 			if (select("Drake:Wraith:Evil Druid:Khalitzburg") == 1)
 				set .@sage_t,.@sage_t+5;
-			mes "7. Choose the monster that does not drop 'Phracon'.";
+			mes "7. Choose the monster that does not drop '" + mesitemlink(1010) + "'.";
 			next;
 			if (select("Pupa:Peco Peco Egg:Savage Bebe:Baby Desert Wolf") == 2)
 				set .@sage_t,.@sage_t+5;
@@ -933,15 +933,15 @@ L_AskQuestions:
 			next;
 			if (select("250% / 8:280% / 8:280% / 15:310% / 15") == 3)
 				set .@sage_t,.@sage_t+5;
-			mes "15. Choose the skill that is irrelevant to learning Claymore Trap, the Hunter skill.";
+			mes "15. Choose the skill that is irrelevant to learning " + mesitemlink(1163) + " " + mesitemlink(1065) + ", the Hunter skill.";
 			next;
 			if (select("Remove Trap:Land Mine:Ankle Snare:Flasher") == 1)
 				set .@sage_t,.@sage_t+5;
-			mes "16. Choose the correct defense and ability of Wedding Veil.";
+			mes "16. Choose the correct defense and ability of " + mesitemlink(2206) + ".";
 			next;
 			if (select("0 / MDEF +3:0 / MDEF +5:1 / MDEF +3:1 / MDEF +5") == 2)
 				set .@sage_t,.@sage_t+5;
-			mes "17. Choose the class that cannot equip Coat.";
+			mes "17. Choose the class that cannot equip " + mesitemlink(2309) + ".";
 			next;
 			if (select("Swordman:Merchant:Thief:Novice") == 4)
 				set .@sage_t,.@sage_t+5;
@@ -1369,7 +1369,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			else if (countitem(608) > 0) {
 				mes "[Saphien Layless]";
 				mes "Hmm, did you prepare for class? Let's see...";
-				mes "Oh! So you brought me the Yggdrasil Seed?";
+				mes "Oh! So you brought me the " + mesitemlink(608) + "?";
 				next;
 				mes "[Saphien Layless]";
 				mes "Very well. Now I am starting the class..";
@@ -1379,7 +1379,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			else if (countitem(610) > 0) {
 				mes "[Saphien Layless]";
 				mes "Hmm, did you prepare for class? Let's see...";
-				mes "Yggdrasil Leaf...";
+				mes "" + mesitemlink(610) + "...";
 				next;
 				mes "[Saphien Layless]";
 				mes "You can purchase this item from the town of Al De Baran! You didn't show any effort.";
@@ -1419,7 +1419,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			mes "An ash tree taking root in the middle of the Rune-Midgarts continent, that is Yggdrasil.";
 			next;
 			mes "[Saphien Layless]";
-			mes "This continent was born from the heart of Ymir, and Yggdrasil holds the continent together by grasping it with its 3 roots.";
+			mes "This continent was born from the " + mesitemlink(7855) + " of Ymir, and Yggdrasil holds the continent together by grasping it with its 3 roots.";
 			mes "These roots stretch into 3 different places.";
 			next;
 			mes "[Saphien Layless]";
@@ -1443,7 +1443,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			mes "restore full HP and SP at once.";
 			next;
 			mes "[Saphien Layless]";
-			mes "The seed of Yggdrasil which has the fragrance of a blooming flower and the flavor of nut is rumored to";
+			mes "The seed of Yggdrasil which has the fragrance of a blooming " + mesitemlink(712) + " and the flavor of nut is rumored to";
 			mes "restore half of HP and SP at once.";
 			next;
 			mes "[Saphien Layless]";
@@ -1467,11 +1467,11 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			mes "Please bring the following items to prepare for class.";
 			next;
 			mes "[Saphien Layless]";
-			mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-			mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-			mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-			mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-			mes "^3355FF1 Empty Bottle^000000 which will be used for holding the squid ink.";
+			mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+			mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+			mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+			mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+			mes "^3355FF1 " + mesitemlink(713) + "^000000 which will be used for holding the " + mesitemlink(1024) + ".";
 			next;
 			set SAGE_Q2,0;
 			set SAGE_Q,10;
@@ -1521,7 +1521,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			switch(select("Mt.Mjolnir, where spiders live,:Uranos, where titans live,:Utgard, where titans live,:Lutie, the winter land,")) {
 			case 1:
 				set .@w_point,.@w_point+1;
-				mes "Mt.Mjolnir where spiders live,";
+				mes "Mt." + mesitemlink(1530) + " where spiders live,";
 				break;
 			case 2:
 				set .@w_point,.@w_point+1;
@@ -1597,7 +1597,7 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 				break;
 			case 4:
 				set .@w_point,.@w_point+1;
-				mes "A giant dead branch.";
+				mes "A giant " + mesitemlink(604) + ".";
 				break;
 			}
 			mes "The root of Yggdrasil is divided into 3 parts. Those parts reach to 3 places...";
@@ -1670,11 +1670,11 @@ yuno_in03,62,176,2	script	History Professor#sa	109,{
 			mes "I am afraid to say I already informed you of what you need.";
 			next;
 			mes "[Saphien Layless]";
-			mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-			mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-			mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-			mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-			mes "^3355FF1 Empty Bottle^000000 which will be used for holding squid ink.";
+			mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+			mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+			mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+			mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+			mes "^3355FF1 " + mesitemlink(713) + "^000000 which will be used for holding " + mesitemlink(1024) + ".";
 			next;
 			mes "[Saphien Layless]";
 			mes "I will assist you in writing your thesis.";
@@ -1908,7 +1908,7 @@ yuno_in03,32,102,1	script	Biology Professor#sa	755,{
 						changequest 2055,2057;
 					}
 					mes "5 ^3355FFHorn^000000,";
-					mes "5 ^3355FFSnail's Shell^000000,";
+					mes "5 ^3355FFSnail's " + mesitemlink(935) + "^000000,";
 					mes "5 ^3355FFMoth Dust^000000.";
 					break;
 				case 3:
@@ -1924,7 +1924,7 @@ yuno_in03,32,102,1	script	Biology Professor#sa	755,{
 					}
 					mes "5 ^3355FFMantis Scythe^000000,";
 					mes "5 ^3355FFWorm Peeling^000000,";
-					mes "5 ^3355FFRainbow Shell^000000.";
+					mes "5 ^3355FFRainbow " + mesitemlink(935) + "^000000.";
 					break;
 				case 4:
 					set SAGE_Q2,7;
@@ -1939,7 +1939,7 @@ yuno_in03,32,102,1	script	Biology Professor#sa	755,{
 					}
 					mes "5 ^3355FFCobweb^000000,";
 					mes "5 ^3355FFMantis Scythe^000000,";
-					mes "5 ^3355FFSolid Shell^000000.";
+					mes "5 ^3355FFSolid " + mesitemlink(935) + "^000000.";
 				}
 				next;
 				mes "[Lucius Celsus]";
@@ -1996,11 +1996,11 @@ yuno_in03,32,102,1	script	Biology Professor#sa	755,{
 				mes "Bring me following items for writing the thesis.";
 				next;
 				mes "[Lucius Celsus]";
-				mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-				mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-				mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-				mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-				mes "^3355FF1 Empty Bottle^000000 which will be used for holding squid ink.";
+				mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+				mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+				mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+				mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+				mes "^3355FF1 " + mesitemlink(713) + "^000000 which will be used for holding " + mesitemlink(1024) + ".";
 				next;
 				set SAGE_Q2,0;
 				set SAGE_Q,12;
@@ -2093,11 +2093,11 @@ yuno_in03,32,102,1	script	Biology Professor#sa	755,{
 			mes "Oh well... listen carefully this time.";
 			next;
 			mes "[Lucius Celsus]";
-			mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-			mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-			mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-			mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-			mes "^3355FF1 Empty Bottle^000000 which will be used for holding squid ink.";
+			mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+			mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+			mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+			mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+			mes "^3355FF1 " + mesitemlink(713) + "^000000 which will be used for holding " + mesitemlink(1024) + ".";
 			next;
 			mes "[Lucius Celsus]";
 			mes "You have been doing fine, I guess you can do this without a problem.";
@@ -2145,7 +2145,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 			next;
 			mes "[Aebecee George]";
 			mes "What are you doing here, sweetcakes? Do you just come over to see what's in here?";
-			mes "Do you want some candy? Candy, my precious? Tee hee.";
+			mes "Do you want some " + mesitemlink(529) + "? " + mesitemlink(529) + ", my precious? Tee hee.";
 			next;
 			mes "[Aebecee George]";
 			mes "Oh gosh...Sorry, I thought I had some...";
@@ -2264,7 +2264,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				next;
 				mes "[Aebecee George]";
 				mes "Magic with fire property is strong against earth property! Tee hee~";
-				mes "Just think of burning wood, sprung from the earth, in a cozy fireplace. On the bearskin, in the dark~";
+				mes "Just think of burning " + mesitemlink(6008) + ", sprung from the earth, in a cozy fireplace. On the bearskin, in the dark~";
 				next;
 				mes "[Aebecee George]";
 				mes "...Oh my gosh! Time flies sooo fast!";
@@ -2274,7 +2274,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				delitem 1756,50; //Stone_Arrow
 				delitem 1755,50; //Arrow_Of_Wind
 				mes "[Aebecee George]";
-				mes "When you come to the next class, bring ^3355FF1 Holy Water^000000~";
+				mes "When you come to the next class, bring ^3355FF1 " + mesitemlink(523) + "^000000~";
 				mes "I hope you have at least one Priest friend. Oh, you don't? Well, it couldn't hurt to get friendly with one.";
 				set SAGE_Q2,3;
 				changequest 2061,2062;
@@ -2294,7 +2294,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 		}
 		else if (SAGE_Q2 == 3) {
 			if (countitem(523) > 0) {
-				mes "Oh~ how sweet! You brought some Holy Water~ thanks honey~";
+				mes "Oh~ how sweet! You brought some " + mesitemlink(523) + "~ thanks honey~";
 				mes "Oh righty, we should start class. Tee hee~";
 				next;
 				mes "[Aebecee George]";
@@ -2311,7 +2311,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				next;
 				mes "[Aebecee George]";
 				mes "Magic with earth property is weak against fire property! Tee hee~";
-				mes "Just think of burning wood, sprung from the earth, in a cozy fireplace. On the be--oh? I said that already? Oh poopy.";
+				mes "Just think of burning " + mesitemlink(6008) + ", sprung from the earth, in a cozy fireplace. On the be--oh? I said that already? Oh poopy.";
 				next;
 				mes "[Aebecee George]";
 				mes "Magic with fire property is weak against water property! Yes~";
@@ -2331,11 +2331,11 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				next;
 				mes "[Aebecee George]";
 				mes "Okay, please gather these items so you can write the thesis, dear~ Tee hee~";
-				mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-				mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-				mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-				mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-				mes "^3355FF1 Empty Bottle^000000 to keep that Squid Ink from splashing.";
+				mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+				mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+				mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+				mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+				mes "^3355FF1 " + mesitemlink(713) + "^000000 to keep that " + mesitemlink(1024) + " from splashing.";
 				next;
 				mes "[Aebecee George]";
 				mes "So get on out there cowboy and hurry back~ Tee hee~";
@@ -2346,7 +2346,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				mes "Oh, poor dear. Did you already forget what I told you? Do you want me to remind you? Tee hee~";
 				next;
 				mes "[Aebecee George]";
-				mes "^3355FF1 Holy Water^000000,";
+				mes "^3355FF1 " + mesitemlink(523) + "^000000,";
 				mes "It couldn't hurt to get friendly with an Aco or Priest...tee hee.";
 				close;
 			}
@@ -2416,7 +2416,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				mes "You must apply different types of property by the situation or place.";
 				break;
 			case 3:
-				mes "Red Potion is rumored to taste like strawberries.";
+				mes "" + mesitemlink(501) + " is rumored to taste like strawberries.";
 				break;
 			}
 			next;
@@ -2425,7 +2425,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				mes "The most adorable NPC is YuPi in Prontera";
 				break;
 			case 2:
-				mes "Red Potion is rumored to be made out of Porings";
+				mes "" + mesitemlink(501) + " is rumored to be made out of Porings";
 				break;
 			case 3:
 				mes "You never know the limits of magic";
@@ -2436,7 +2436,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 				mes "Merchant Lady in Morocc is also as cute as YuPi.";
 				break;
 			case 2:
-				mes "Nobody knows why Red Potion tastes like strawberries.";
+				mes "Nobody knows why " + mesitemlink(501) + " tastes like strawberries.";
 				break;
 			case 3:
 				mes "It is not suggested to be too addicted to magic spells.";
@@ -2444,10 +2444,10 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 			}
 			switch(select("If I had a Bunny Band,:If so, what about the taste of White Potion?:Only pertinent uses of magic, as well as rest")) {
 			case 1:
-				mes "If I had a Bunny Band,";
+				mes "If I had a " + mesitemlink(2214) + ",";
 				break;
 			case 2:
-				mes "If so, what about the taste of White Potion?";
+				mes "If so, what about the taste of " + mesitemlink(504) + "?";
 				break;
 			case 3:
 				mes "Only pertinent uses of magic, as well as rest";
@@ -2466,7 +2466,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 			}
 			switch(select("Although the Bunny Band best fits the Acolyte class:I love this thrilling feeling:Forming a party with people of different classes")) {
 			case 1:
-				mes "Although the Bunny Band best fits the Acolyte class";
+				mes "Although the " + mesitemlink(2214) + " best fits the Acolyte class";
 				break;
 			case 2:
 				mes "I love this thrilling feeling";
@@ -2477,7 +2477,7 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 			}
 			switch(select("I still wonder if the Bunny Band would be perfect for GOD-POING.:I won't be able to drink it even if my HP is less than 1.:is considered the best way to ready for battle.")) {
 			case 1:
-				mes "I still wonder if the Bunny Band would be perfect for GOD-POING.";
+				mes "I still wonder if the " + mesitemlink(2214) + " would be perfect for GOD-POING.";
 				break;
 			case 2:
 				mes "I won't be able to drink it even if my HP is less than 1.";
@@ -2510,11 +2510,11 @@ yuno_in03,244,31,3	script	Physics Professor#sa	120,{
 			mes "Oh, poor dear. Did you already forget what I told you? Do you want me to remind you? Not a problem, tee hee.";
 			next;
 			mes "[Aebecee George]";
-			mes "^3355FF1 Feather of Birds^000000 which will be used as a pen,";
-			mes "^3355FF1 Animal Skin^000000 which will be used as paper,";
-			mes "^3355FF1 Trunk^000000 which will be used to bind a book,";
-			mes "^3355FF1 Squid Ink^000000 which will be used as ink,";
-			mes "^3355FF1 Empty Bottle^000000 which will be used for holding squid ink.";
+			mes "^3355FF1 " + mesitemlink(916) + "^000000 which will be used as a pen,";
+			mes "^3355FF1 " + mesitemlink(919) + "^000000 which will be used as paper,";
+			mes "^3355FF1 " + mesitemlink(1019) + "^000000 which will be used to bind a book,";
+			mes "^3355FF1 " + mesitemlink(1024) + "^000000 which will be used as ink,";
+			mes "^3355FF1 " + mesitemlink(713) + "^000000 which will be used for holding " + mesitemlink(1024) + ".";
 			next;
 			mes "[Aebecee George]";
 			mes "You are supposed to prepare all of those items, aren't you?";
@@ -2555,7 +2555,7 @@ job_sage,50,165,4	script	Test Helper#talk	700,{
 	next;
 	mes "[Test Helper]";
 	mes "The Test takes 5 ~ 10 minutes per each person.";
-	mes "If you wish to leave the arena, please log out from the game.";
+	mes "If you wish to leave the arena, please " + mesitemlink(7201) + " out from the game.";
 	close;
 }
 

@@ -55,8 +55,8 @@ prt_in,234,133,4	script	Nami	66,{
 					mes "First aid does require";
 					mes "some small preparations. . .";
 					mes "Some simple items you should have on hand are";
-					mes "^3355FF' 3 Red Herb '^000000 ";
-					mes "^3355FF' 3 Clover '^000000 ";
+					mes "^3355FF' 3 " + mesitemlink(507) + " '^000000 ";
+					mes "^3355FF' 3 " + mesitemlink(705) + " '^000000 ";
 					mes "^3355FF' 1 Sterilized Bandages '^000000 ";
 					next;
 					mes "[Nami]";
@@ -85,8 +85,8 @@ prt_in,234,133,4	script	Nami	66,{
 					mes "First aid does require";
 					mes "some small preparations. . .";
 					mes "Some simple items you should have on hand are";
-					mes "^3355FF' 3 Red Herb '^000000 ";
-					mes "^3355FF' 3 Clover '^000000 ";
+					mes "^3355FF' 3 " + mesitemlink(507) + " '^000000 ";
+					mes "^3355FF' 3 " + mesitemlink(705) + " '^000000 ";
 					mes "^3355FF' 1 Sterilized Bandages '^000000 ";
 					next;
 					mes "[Nami]";
@@ -152,7 +152,7 @@ prt_in,234,133,4	script	Nami	66,{
 					mes "some small preparations. . .";
 					mes "Some simple items you should have on hand are";
 					mes "^3355FF' 3 Red_Herb '^000000 ";
-					mes "^3355FF' 3 Clover '^000000 ";
+					mes "^3355FF' 3 " + mesitemlink(705) + " '^000000 ";
 					mes "^3355FF' 1 Sterilized Bandages '^000000 ";
 					close;
 				}
@@ -259,22 +259,22 @@ prt_in,73,87,4	script	Chivalry Member	65,{
 			mes "I can tell by the look in your eyes";
 			mes "that you are ready for your training.";
 			mes "Lets not delay!";
-			mes "Ok, take this pill first. . .";
+			mes "Ok, take this " + mesitemlink(14523) + " first. . .";
 			mes "Let's see how this goes. . .";
 			next;
 			mes "[Bulma]";
 			mes "Within in 10 minutes, you must";
 			mes "go to the 2nd floor of the Prontera Castle's";
-			mes "East wing. ^3355FF' Newbie Tag '^000000 is";
+			mes "East wing. ^3355FF' " + mesitemlink(7039) + " '^000000 is";
 			mes "the item you are seeking. ! . .";
 			next;
-			mes "^3355FF- *Gulp* (You have swallowed the pill) -^000000";
+			mes "^3355FF- *Gulp* (You have swallowed the " + mesitemlink(14523) + ") -^000000";
 			next;
 			mes "[Bulma]";
-			mes "The pill that you have just taken";
+			mes "The " + mesitemlink(14523) + " that you have just taken";
 			mes "will make it difficult for you to breathe. . .";
 			mes "Kekekk . .AH HA - Just joking !";
-			mes "It is actually a pill to gives you";
+			mes "It is actually a " + mesitemlink(14523) + " to gives you";
 			mes "a mental calm so you can be patient.";
 			mes "I think that nothing is better";
 			next;
@@ -442,7 +442,7 @@ prt_castle,175,146,4	script	Nursing Instructor	50,{
 				mes " *Arhg* Here take it !";
 				mes "-woosh - *storms away*";
 				next;
-				mes "^3355FF- Got 1 Newbie Tag -^000000";
+				mes "^3355FF- Got 1 " + mesitemlink(7039) + " -^000000";
 				set skill_nov,5;
 				getitem 7039,1; //Novice_Nametag
 				close;

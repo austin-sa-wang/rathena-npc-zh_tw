@@ -44,9 +44,9 @@ L_NoMake:
 L_Bl: 
 	mes "[Elven Ears Quest]";
 	mes "Ok all you have to do is collect:"; 
-	mes "^362ED61 Kitty Band^000000"; 
+	mes "^362ED61 " + mesitemlink(2213) + "^000000"; 
 	mes "^362ED620 Elder Pixie Mustaches^000000"; 
-	mes "and ^362ED620 Animal Skin^000000";
+	mes "and ^362ED620 " + mesitemlink(919) + "^000000";
 	next;
 	menu "Accept",-, "Leave",L_Leave;
 

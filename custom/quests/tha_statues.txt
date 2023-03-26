@@ -240,7 +240,7 @@ tha_t12,128,88,4	script	Sox	111,{
 	mes "You have just passed the test successfully.";
 	next;
 	mes "[Sox]";
-	mes "You have to give me Red Magic Stone, Yellow Magic Stone, Blue Magic Stone & Green Magic Stone.";
+	mes "You have to give me Red " + mesitemlink(7597) + ", Yellow " + mesitemlink(7597) + ", Blue " + mesitemlink(7597) + " & Green " + mesitemlink(7597) + ".";
 	next;
 	if(countitem(7426) < 1 || countitem(7427) < 1 || countitem(7428) < 1 || countitem(7429) < 1) goto nostone;
 	delitem 7426,1;

@@ -466,7 +466,7 @@ in_rogue,355,179,0	script	Haijara Greg#rogueguild	46,{
 					mes "[Haijara Greg]";
 					mes "Enemies affected by";
 					mes "Close Confine can escape";
-					mes "by using Fly Wing, Butterfly";
+					mes "by using " + mesitemlink(601) + ", Butterfly";
 					mes "Wings, or the Teleport or";
 					mes "Hiding skills. However, only";
 					mes "Hiding is active during WoE.";
@@ -922,7 +922,7 @@ in_rogue,181,114,3	script	Jay Greg#rogueguild	85,{
 			mes "[Jay Greg]";
 			mes "You're looking for";
 			mes "Louis, my little brother?";
-			mes "He's here in the Rouge Guild,";
+			mes "He's here in the " + mesitemlink(739) + " Guild,";
 			mes "so it shouldn't be too hard to";
 			mes "find him. He's probably just";
 			mes "standing near Hollgrehen Jr.";

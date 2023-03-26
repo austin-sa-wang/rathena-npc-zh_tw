@@ -153,7 +153,7 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 			mes "[Gregor]";
 			mes "You see I've been uh, ''researching''";
 			mes "these animals by collecting their";
-			mes "Bill of Birds but lately they seem";
+			mes "" + mesitemlink(925) + " but lately they seem";
 			mes "to have become hostile towards me.";
 			next;
 			mes "[Gregor]";
@@ -192,12 +192,12 @@ moc_fild02,74,329,3	script	Gregor#PecoPeco_Hunt	97,{
 							mes "It doesn't look like you have enough.";
 							next;
 							mes "[Gregor]";
-							mes "Can you help me out and bring me ^FF000025 Bill of Birds^000000?";
+							mes "Can you help me out and bring me ^FF000025 " + mesitemlink(925) + "^000000?";
 							close;
 						}
 					case 2:
 						mes "[Gregor]";
-						mes "Can you help me out and bring me ^FF000025 Bill of Birds^000000?";
+						mes "Can you help me out and bring me ^FF000025 " + mesitemlink(925) + "^000000?";
 						close;
 					}
 				case 2:

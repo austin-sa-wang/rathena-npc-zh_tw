@@ -94,7 +94,7 @@ in_moc_16,19,33,1	script	Guildsman#asn	55,{
 		mes "Take a break? Oh alright, have it your way. When you feel like you're ready to become an Assassin, come back.";
 		next;
 		mes "[Ferocious-looking guy]";
-		mes "You'll have to walk if you want to get back to town. Oh, and don't forget to save your spawn point, alright?";
+		mes "You'll have to walk if you want to get back to town. Oh, and don't forget to save your " + mesitemlink(908) + " point, alright?";
 		close2;
 		set ASSIN_Q,0;
 		set ASSIN_Q2,0;
@@ -119,7 +119,7 @@ in_moc_16,19,33,1	script	Guildsman#asn	55,{
 		mes "Well well well, you got it. Congratulations! But since it's been clearly scratched, I can't accept it. You'll never become an Assassin!";
 		next;
 		mes "[Assassin Expert 'Huey']";
-		mes "Hahahah~! I'm just joking, don't take it seriously. But I do need to check this necklace with the guildmaster first.";
+		mes "Hahahah~! I'm just joking, don't take it seriously. But I do need to check this " + mesitemlink(2603) + " with the guildmaster first.";
 		next;
 		mes "[Assassin Expert 'Huey']";
 		mes "...";
@@ -435,13 +435,13 @@ OnTouch_:
 				switch(rand(1,3)) {
 				case 1:
 					mes "[Assassin 'Khai']";
-					mes "First of all, Grimtooth is ...A skill specifically for the Katar. Therefore, it doesn't require any skills related to Dagger weapons.";
+					mes "First of all, " + mesitemlink(1237) + " is ...A skill specifically for the Katar. Therefore, it doesn't require any skills related to Dagger weapons.";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "Double attack ...Haven't you tried it? It allows you to attack an enemy twice at a time.";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "Red Blood is an elemental stone, Blue Gemstone doesn't have to do the Assassin job at all!";
+					mes "" + mesitemlink(990) + " is an elemental stone, " + mesitemlink(717) + " doesn't have to do the Assassin job at all!";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "Have you ever seen Mages hunt Elder willow using the Cold Bolt skill? Water overpowers Fire. Water puts Fire under control, and Wind puts water under control.";
@@ -452,23 +452,23 @@ OnTouch_:
 					break;
 				case 2:
 					mes "[Assassin 'Khai']";
-					mes "'Sharpened Legbone of Ghoul' possesses the Undead property.";
+					mes "'" + mesitemlink(1260) + "' possesses the Undead property.";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "What kind of weapon have you used so far? Damascus? Gladius? Stiletto? Or Main Gauche? What is that you're carrying now?";
+					mes "What kind of weapon have you used so far? " + mesitemlink(1222) + "? " + mesitemlink(1219) + "? " + mesitemlink(1216) + "? Or " + mesitemlink(1207) + "? What is that you're carrying now?";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "It's possible to get a slotted Katar from Desert Wolf. Well, just keep that in mind. You will need this information someday.";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "You can gain a slotted Jur from a buddy living in a dark and damp place under the ground. Well, I have no idea why that dude has that weapon... Maybe he needs it to dig a hole?";
+					mes "You can gain a slotted " + mesitemlink(1250) + " from a buddy living in a dark and damp place under the ground. Well, I have no idea why that dude has that weapon... Maybe he needs it to dig a hole?";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "And...";
 					mes "I've always wanted a frog as a pet. But it's impossible!";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "As far as I know, a Goblin carrying a hammer possesses the Earth property. Keep in mind that Fire overcomes the Earth property.";
+					mes "As far as I know, a Goblin carrying a " + mesitemlink(1354) + " possesses the Earth property. Keep in mind that Fire overcomes the Earth property.";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "You know elemental weapons? The names of Blacksmiths are engraved on them usually...";
@@ -476,16 +476,16 @@ OnTouch_:
 					break;
 				case 3:
 					mes "[Assassin 'Khai']";
-					mes "Sell an Elder Willow Card to a Mage as soon as you can. They are mad about the card for some reason. Doesn't it increase the INT of a character? Hmmm...";
+					mes "Sell an " + mesitemlink(4052) + " to a Mage as soon as you can. They are mad about the card for some reason. Doesn't it increase the INT of a character? Hmmm...";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "For us, Dodge and Attack is more important than defense. Don't ever think about wearing a helm. It's heavy, uncomfortable and will even block your sight.";
+					mes "For us, Dodge and Attack is more important than defense. Don't ever think about wearing a " + mesitemlink(2228) + ". It's heavy, uncomfortable and will even block your sight.";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "'Increase Dodge' allows you to have +3% flee rate per skill lvl.";
 					next;
 					mes "[Assassin 'Khai']";
-					mes "As I have told you repeatedly: Katar class weapons (Jamadhar/Jur/Katar etc) are two-handed!";
+					mes "As I have told you repeatedly: Katar class weapons (" + mesitemlink(1254) + "/" + mesitemlink(1250) + "/Katar etc) are two-handed!";
 					next;
 					mes "[Assassin 'Khai']";
 					mes "City of desert... I miss my hometown, Morocc. I haven't been there for a long time. I feel like I became a Thief a few days ago. Time flies so fast...";
@@ -744,7 +744,7 @@ OnTouch_:
 					mes "Since it's a ranged attack, it can be very useful when you're surrounded by enemies.";
 					next;
 					mes "[The Anonymous One]";
-					mes "Because you're required to perfectly hide yourself to use this skill, you must first learn Level 2 Cloaking before you can learn Grimtooth.";
+					mes "Because you're required to perfectly hide yourself to use this skill, you must first learn Level 2 Cloaking before you can learn " + mesitemlink(1237) + ".";
 					next;
 					mes "[The Anonymous One]";
 					mes "To learn ^3355FFCloaking^000000, you must learn Level 2 Hiding. Then you will be able to move while hiding if you are close to a wall.";
@@ -759,7 +759,7 @@ OnTouch_:
 					mes "^3355FFPoison React^000000 shields the user from attacks with the Poison property, and can be used on other people as well. However, you must learn Level 3 Enchant Poison first.";
 					next;
 					mes "[The Anonymous One]";
-					mes "^3355FFVenom Dust^000000 consumes a Red Gemstone to contaminate an area with poison. The duration of contamination increases with the level of this skill.";
+					mes "^3355FFVenom Dust^000000 consumes a " + mesitemlink(716) + " to contaminate an area with poison. The duration of contamination increases with the level of this skill.";
 					next;
 					mes "[The Anonymous One]";
 					mes "You can learn the Venom Dust skill after you learn Level 5 Enchant Poison.";
@@ -844,7 +844,7 @@ OnTouch_:
 		switch(rand(1,3)) {
 		case 1:
 			mes "[The Anonymous One]";
-			mes "1. Choose skill that is not required to learn Grimtooth.";
+			mes "1. Choose skill that is not required to learn " + mesitemlink(1237) + ".";
 			next;
 			if (select("Cloaking level 2:Sonic Blow level 5:Katar Mastery level 4:Right hand Mastery level 2") == 4)
 				set .@assassin_t,.@assassin_t+10;
@@ -879,7 +879,7 @@ OnTouch_:
 			if (select("Poisoned target.:Red Gemstone.:Remaing HP of Target.") == 2)
 				set .@assassin_t,.@assassin_t+10;
 			mes "[The Anonymous One]";
-			mes "8. Which monster is weak to a weapon with Vadon card (adds 20% damage on Fire property monster)?";
+			mes "8. Which monster is weak to a weapon with " + mesitemlink(4049) + " (adds 20% damage on Fire property monster)?";
 			next;
 			if (select("Steel Chonchon:Deviruchi:Elder Willow:Baphomet") == 3)
 				set .@assassin_t,.@assassin_t+10;
@@ -890,7 +890,7 @@ OnTouch_:
 			if (select("15:It's a passive skill, so SP use is 0.:It's passive skill, so SP use is 10.:54") == 2)
 				set .@assassin_t,.@assassin_t+10;
 			mes "[The Anonymous One]";
-			mes "10. What is the best elemental Main Gauche weapon for hunting in Izlude dungeon?";
+			mes "10. What is the best elemental " + mesitemlink(1207) + " weapon for hunting in Izlude dungeon?";
 			next;
 			if (select("Wind Main Gauche:Ice Main Gauche:Earth Main Gauche:Fire Main Gauche") == 1)
 				set .@assassin_t,.@assassin_t+10;
@@ -904,7 +904,7 @@ OnTouch_:
 				set .@assassin_t,.@assassin_t+10;
 			mes "[The Anonymous One]";
 			mes "2. Which monster";
-			mes "drops a slotted Jur?";
+			mes "drops a slotted " + mesitemlink(1250) + "?";
 			next;
 			if (select("Martin:Desert Wolf:Marionette:Myst") == 1)
 				set .@assassin_t,.@assassin_t+10;
@@ -2069,12 +2069,12 @@ OnTouch_:
 			mes "Well, I've said too much. Please choose a weapon as a present.";
 			next;
 			mes "[Guildmaster]";
-			mes "You can choose a Jur, Katar, Main Gauche, or a Gladius. As a master, I love them all.";
+			mes "You can choose a " + mesitemlink(1250) + ", Katar, " + mesitemlink(1207) + ", or a " + mesitemlink(1219) + ". As a master, I love them all.";
 			next;
 			switch(select("Jur:Katar:Main Gauche:Gladius")) {
 			case 1:
 				mes "[Guildmaster]";
-				mes "A Jur...";
+				mes "A " + mesitemlink(1250) + "...";
 				mes "Good choice. There you are. I hope it will serve you well.";
 				getitem 1251,1; //Jur_
 				break;
@@ -2089,13 +2089,13 @@ OnTouch_:
 				break;
 			case 3:
 				mes "[Guildmaster]";
-				mes "I see. You want to use both hands. Here, take your Main Gauche.";
+				mes "I see. You want to use both hands. Here, take your " + mesitemlink(1207) + ".";
 				getitem 1208,1; //Main_Gauche_
 				break;
 			case 4:
 				mes "[Guildmaster]";
-				mes "A Gladius...";
-				mes "It used to rule over the Assassin weapon market. Please take care of my gladius.";
+				mes "A " + mesitemlink(1219) + "...";
+				mes "It used to rule over the Assassin weapon market. Please take care of my " + mesitemlink(1219) + ".";
 				getitem 1220,1; //Gladius_
 			}
 			ASSIN_Q3 = 2;
