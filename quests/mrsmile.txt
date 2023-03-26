@@ -33,13 +33,13 @@
 		mes "[Smile Girl]";
 		mes "With simple and easy-to-get items,";
 		mes "I can provide you";
-		mes "^3355FF' Mr. Smile '^000000.";
+		mes "10" + mesitemlink( 2278 ) + ";
 		mes "The requirements are followings.";
 		next;
 		mes "[Smile Girl]";
-		mes "^3355FF10 Jellopy^000000";
-		mes "^3355FF10 Fluff^000000";
-		mes "^3355FF10 Clover^000000";
+		mes "10" + mesitemlink( 909 ) + ";
+		mes "10" + mesitemlink( 914 ) + ";
+		mes "10" + mesitemlink( 705 ) + ";
 		next;
 		mes "[Smile Girl]";
 		mes "With this event";
