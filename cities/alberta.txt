@@ -51,7 +51,7 @@ alberta,53,39,0	script	Steiner	100,{
 
 alberta_in,20,183,0	script	Chad	1_M_03,{
 	mes "[Chad]";
-	mes "People say the legendary weapon " + mesitemlink(1413) + " never misses its target. I wonder if it's possibly true...";
+	mes "People say the legendary weapon Gungnir never misses its target. I wonder if it's possibly true...";
 	next;
 	mes "[Chad]";
 	mes "People also say that babies are assembled by the storks before delivery, girls dig guys who act like jerks, and that Santa Claus exists! But only in Lutie.";
@@ -84,11 +84,11 @@ alberta,131,139,2	script	Drunken Old Man	1_M_JOBGUIDER,{
 			mes "Ah~ The ol'days. If only... If only we hadn't run into that STORM...^666666*hiccup*^000000";
 			next;
 			mes "[Deagle]";
-			mes "AH~ Captain. I miss our " + mesitemlink(2226) + "'n more than anything... No foe survived before " + mesitemlink(2226) + "'n's sword.";
+			mes "AH~ Captain. I miss our cap'n more than anything... No foe survived before cap'n's sword.";
 			close;
 		case 2:
 			mes "[Deagle]";
-			mes "That's right! NOBODY meshes with the crew of the 'Going Mary!' And nobody can beat out " + mesitemlink(2226) + "'n in a sword fight!";
+			mes "That's right! NOBODY meshes with the crew of the 'Going Mary!' And nobody can beat out cap'n in a sword fight!";
 			next;
 			mes "[Deagle]";
 			mes "CAPTAIN~!!! ^666666*HICCUP~*^000000 He would swing his sword like this, then... THEN!!";
@@ -142,13 +142,13 @@ alberta,62,156,2	script	Sonya	102,{
 	mes "[Sonya]";
 	switch(rand(3)){
 	case 0:
-		mes "Hey, you know, this one time I was walking through the forest and I saw this little green " + mesitemlink(905) + " moving around.";
+		mes "Hey, you know, this one time I was walking through the forest and I saw this little green stem moving around.";
 		next;
 		mes "[Sonya]";
-		mes "I went to see what it was and when I went to touch it. The " + mesitemlink(905) + " actually slapped my hand!";
+		mes "I went to see what it was and when I went to touch it. The stem actually slapped my hand!";
 		next;
 		mes "[Sonya]";
-		mes "It startled me, so I jumped back a bit and then I realized it wasn't a " + mesitemlink(905) + ", but a very small animal.";
+		mes "It startled me, so I jumped back a bit and then I realized it wasn't a stem, but a very small animal.";
 		next;
 		mes "[Sonya]";
 		mes "I was lucky I didn't upset it. Even the smallest animal can be dangerous if angered.";
@@ -160,7 +160,7 @@ alberta,62,156,2	script	Sonya	102,{
 		mes "Just for fun, I threw a rock at it and all of sudden it rushed at me! I was sooooo scared, I started to run away, then BAM!!!";
 		next;
 		mes "[Sonya]";
-		mes "It ran into a low tree " + mesitemlink(13150) + " and knocked itself out! I swear, I'll never provoke an animal for fun again!";
+		mes "It ran into a low tree branch and knocked itself out! I swear, I'll never provoke an animal for fun again!";
 		close;
 	case 2:
 		mes "I once saw a pack of wolves take on one of those huge, lazy bears!";
@@ -294,7 +294,7 @@ alberta,190,173,4	script	Phelix	4_M_03,{
 		next;
 		mes "[Phelix]";
 		mes "Hmm, so why don't you bring me 10 jellopies and I will give 1 potion. How's that sound?";
-		mes "Or if that's too hard for your pansy ass, 3 jellopies for 1 " + mesitemlink(515) + ".";
+		mes "Or if that's too hard for your pansy ass, 3 jellopies for 1 Carrot.";
 		next;
 		mes "[Phelix]";
 		mes "If you're interested in my offer, get me the stuff I mentioned.";
@@ -312,7 +312,7 @@ alberta,190,173,4	script	Phelix	4_M_03,{
 		next;
 		mes "[Phelix]";
 		if (countitem(909) < 10) {
-			mes "Hey! Weren't you listening?. I said 10 jellopies for 1 " + mesitemlink(501) + ".. are ya deaf?";
+			mes "Hey! Weren't you listening?. I said 10 jellopies for 1 Red Potion.. are ya deaf?";
 			close;
 		} else {
 			.@max = countitem(909)/10;
@@ -363,7 +363,7 @@ alberta,190,173,4	script	Phelix	4_M_03,{
 		next;
 		mes "[Phelix]";
 		if (countitem(909) < 3) {
-			mes "Hmm, look pansy ass, I said 3 jellopies for 1 " + mesitemlink(515) + ".. got it?";
+			mes "Hmm, look pansy ass, I said 3 jellopies for 1 Carrot.. got it?";
 			close;
 		}
 		.@max = countitem(909)/3;

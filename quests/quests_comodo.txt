@@ -45,13 +45,13 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 	}
 	next;
 	mes "[Hair Ornament Girl]";
-	mes "If you give me a few simple items then I can make a gorgeous " + mesitemlink(2210) + ". If you have any questions, go ahead and have a look.";
+	mes "If you give me a few simple items then I can make a gorgeous Hair Band. If you have any questions, go ahead and have a look.";
 	next;
 	switch(select("Cross Hat:Bulb Band:Stripe Hairband:Blue Hairband")) {
 	case 1:
 		if ((countitem(2608) > 0) && (countitem(7069) > 499)) {
 			mes "[Hair Ornament Girl]";
-			mes "You've chosen the " + mesitemlink(5036) + "?";
+			mes "You've chosen the Cross Hat?";
 			mes "If you brought all the required items, I will make it for you~";
 			next;
 			mes "[Hair Ornament Girl]";
@@ -81,13 +81,13 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 		}
 		else {
 			mes "[Hair Ornament Girl]";
-			mes "Oh, you've chosen " + mesitemlink(5036) + "?";
+			mes "Oh, you've chosen Cross Hat?";
 			mes "There are some items needed to make this headband.";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "I'll need...";
-			mes "^3355FF1 " + mesitemlink(2608) + "^000000";
-			mes "^3355FF500 " + mesitemlink(7069) + "^000000";
+			mes "^3355FF1 Rosary^000000";
+			mes "^3355FF500 Destroyed Armor^000000";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "If you bring all the items then I will make it for you right away.";
@@ -97,7 +97,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 	case 2:
 		if ((countitem(2233) > 0) && (countitem(746) > 19)) {
 			mes "[Hair Ornament Girl]";
-			mes "You've chosen " + mesitemlink(5034) + "?";
+			mes "You've chosen Bulb band?";
 			mes "If you brought all the required items, I will make it for you~";
 			next;
 			mes "[Hair Ornament Girl]";
@@ -126,13 +126,13 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 		}
 		else {
 			mes "[Hair Ornament Girl]";
-			mes "Oh, you've chosen " + mesitemlink(5034) + "?";
+			mes "Oh, you've chosen Bulb Band?";
 			mes "There are some required items needed to make this headband.";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "I'll need...";
-			mes "^3355FF1 Slotted " + mesitemlink(2232) + "^000000";
-			mes "^3355FF20 " + mesitemlink(746) + "^000000";
+			mes "^3355FF1 Slotted Circlet^000000";
+			mes "^3355FF20 Glass Bead^000000";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "If you bring all the items then I will make it for you right away.";
@@ -170,7 +170,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "I'll need...";
-			mes "^3355FF1500 " + mesitemlink(1099) + "^000000";
+			mes "^3355FF1500 Worn-out Prison Uniform^000000";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "If you bring all the items then I will make it for you right away.";
@@ -180,7 +180,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 	case 4:
 		if ((countitem(2211) > 0) && (countitem(978) > 0) && (countitem(7003) > 299)) {
 			mes "[Hair Ornament Girl]";
-			mes "You've chosen " + mesitemlink(5052) + "?";
+			mes "You've chosen Blue Hairband?";
 			mes "If you brought all the required items, I will make it for you~";
 			next;
 			mes "[Hair Ornament Girl]";
@@ -210,14 +210,14 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 		}
 		else {
 			mes "[Hair Ornament Girl]";
-			mes "Oh, you've chosen " + mesitemlink(5052) + "?";
+			mes "Oh, you've chosen Blue Hairband?";
 			mes "There are some required items needed to make this headband.";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "I'll need...";
-			mes "^3355FF1 " + mesitemlink(2211) + "^000000";
-			mes "^3355FF1 " + mesitemlink(978) + "^000000";
-			mes "^3355FF300 " + mesitemlink(7003) + "^000000";
+			mes "^3355FF1 Bandana^000000";
+			mes "^3355FF1 Cobaltblue Dyestuffs^000000";
+			mes "^3355FF300 Anolian Skin^000000";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "If you bring all the items then I will make it for you right away.";
@@ -241,13 +241,13 @@ comodo,273,137,4	script	Traveler#head	702,{
 	case 1:
 		if ((countitem(5009) > 0) && (countitem(5028) > 0) && (countitem(999) > 24) && (countitem(747) > 0)) {
 			mes "[Isac Mari]";
-			mes "Mine Helmet was designed for the miners in the " + mesitemlink(1003) + " mines to have light in the dark. If you brought all the required items, I will go ahead and make it for you~";
+			mes "Mine Helmet was designed for the miners in the coal mines to have light in the dark. If you brought all the required items, I will go ahead and make it for you~";
 			next;
 			mes "[Isac Mari]";
-			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the " + mesitemlink(5031) + ".";
+			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the Mine Hat.";
 			next;
 			mes "[Isac Mari]";
-			mes "It's better to keep only the items used to make the " + mesitemlink(5031) + " in your inventory. Did you check? If so, let's get started.";
+			mes "It's better to keep only the items used to make the Mine Hat in your inventory. Did you check? If so, let's get started.";
 			next;
 			switch(select("Give me a minute~!:Let's make the Mine Hat.")) {
 			case 1:
@@ -276,14 +276,14 @@ comodo,273,137,4	script	Traveler#head	702,{
 			mes "I hear Mine Helmets are used in the mines near Geffen. As you know, it's not possible to work without light, even though it attracts monsters in the caves.";
 			next;
 			mes "[Isac Mari]";
-			mes "One day, a miner remodeled his own " + mesitemlink(5009) + " so that he could work with both hands. Since then, it's been called the Mine " + mesitemlink(2228) + ".";
+			mes "One day, a miner remodeled his own Safety Helmet so that he could work with both hands. Since then, it's been called the Mine Helm.";
 			next;
 			mes "[Isac Mari]";
 			mes "If you want to make Mine Helmet,";
-			mes "^3355FF1 " + mesitemlink(5009) + "^000000";
-			mes "^3355FF1 " + mesitemlink(5028) + "^000000 ";
-			mes "^3355FF1 " + mesitemlink(747) + "^000000";
-			mes "^3355FF25 " + mesitemlink(999) + "^000000";
+			mes "^3355FF1 Safety Helmet^000000";
+			mes "^3355FF1 Candle^000000 ";
+			mes "^3355FF1 Crystal Mirror^000000";
+			mes "^3355FF25 Steel^000000";
 			mes "is needed to create it.";
 			next;
 			mes "[Isac Mari]";
@@ -293,14 +293,14 @@ comodo,273,137,4	script	Traveler#head	702,{
 	case 2:
 		if ((countitem(1059) > 149) && (countitem(907) > 99) && (countitem(978) > 0)) {
 			mes "[Isac Mari]";
-			mes "" + mesitemlink(5023) + " seems to be useful for business people to carry around their products. If you brought everything I need, I will make it for you.";
+			mes "Parcel Hat seems to be useful for business people to carry around their products. If you brought everything I need, I will make it for you.";
 			mes "If you brought all the required items, I will make it for you~";
 			next;
 			mes "[Isac Mari]";
-			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the " + mesitemlink(5023) + ".";
+			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the Parcel Hat.";
 			next;
 			mes "[Isac Mari]";
-			mes "It's better to keep only the items used to make the " + mesitemlink(5023) + " in your inventory. Did you check? If so, let's get started.";
+			mes "It's better to keep only the items used to make the Parcel Hat in your inventory. Did you check? If so, let's get started.";
 			next;
 			switch(select("Give me a minute~!:Let's make the Parcel Hat.")) {
 			case 1:
@@ -321,7 +321,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 				delitem 978,1;  //Cobaltblue_Dyestuffs
 				mes "[Isac Mari]";
 				mes "Well...";
-				mes "Um, it looks like a " + mesitemlink(5023) + ". So that's good enough for me! Ha ha~";
+				mes "Um, it looks like a Parcel Hat. So that's good enough for me! Ha ha~";
 				getitem 5023,1; // Hat_Of_Bundle
 				close;
 			}
@@ -338,10 +338,10 @@ comodo,273,137,4	script	Traveler#head	702,{
 			next;
 			mes "[Isac Mari]";
 			mes "I'll need...";
-			mes "^3355FF150 " + mesitemlink(1059) + "^000000";
-			mes "^3355FF100 " + mesitemlink(907) + "^000000 and";
-			mes "^3355FF1 " + mesitemlink(978) + "^000000";
-			mes "to make a " + mesitemlink(5023) + ".";
+			mes "^3355FF150 Fabric^000000";
+			mes "^3355FF100 Resin^000000 and";
+			mes "^3355FF1 Cobaltblue Dyestuffs^000000";
+			mes "to make a Parcel Hat.";
 			next;
 			mes "[Isac Mari]";
 			mes "If you bring all the items then I will make it for you right away. See you later~!";
@@ -350,14 +350,14 @@ comodo,273,137,4	script	Traveler#head	702,{
 	case 3:
 		if ((countitem(2233) > 0) && (countitem(969) > 0) && (countitem(949) > 79) && (countitem(999) > 19) && (countitem(938) > 799)) {
 			mes "[Isac Mari]";
-			mes "" + mesitemlink(5021) + "...";
+			mes "Grief for Greed...";
 			mes "If you brought all the required items, I'll go ahead and make it for you~";
 			next;
 			mes "[Isac Mari]";
 			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the Money Loser's Grief.";
 			next;
 			mes "[Isac Mari]";
-			mes "It's better to keep only the items used to make the " + mesitemlink(5021) + " in your inventory. Did you check? If so, let's get started.";
+			mes "It's better to keep only the items used to make the Grief for Greed in your inventory. Did you check? If so, let's get started.";
 			next;
 			switch(select("Give me a minute~!:Let's make the Grief for Greed.")) {
 			case 1:
@@ -377,32 +377,32 @@ comodo,273,137,4	script	Traveler#head	702,{
 				delitem 999,20;  //Steel
 				delitem 938,800;  //Sticky_Mucus
 				mes "[Isac Mari]";
-				mes "I might have made a few mistakes, but it looks good enough. Here you go, your own " + mesitemlink(5021) + " hat!";
+				mes "I might have made a few mistakes, but it looks good enough. Here you go, your own Grief for Greed hat!";
 				getitem 5021,1; // Bankruptcy_Of_Heart
 				close;
 			}
 		}
 		else {
 			mes "[Isac Mari]";
-			mes "" + mesitemlink(5021) + "...";
+			mes "Grief for Greed...";
 			mes "There's a tale of an honest Merchant that lived in Morocc long ago who had a quarrel with a bad guild.";
 			next;
 			mes "[Isac Mari]";
 			mes "Because the honest Merchant was not cheating people by his prices, his street stall was attacked by the bad guild and all his goods were taken.";
 			next;
 			mes "[Isac Mari]";
-			mes "So, the honest Merchant lost everything except some broken items. To express his sadness, he took these broken items and created this magnificent hat, the " + mesitemlink(5021) + ".";
+			mes "So, the honest Merchant lost everything except some broken items. To express his sadness, he took these broken items and created this magnificent hat, the Grief for Greed.";
 			next;
 			mes "[Isac Mari]";
 			mes "This special hat appeals to people's sympathies, making them buy more goods to support the inner goodness of honest Merchants.";
 			next;
 			mes "[Isac Mari]";
 			mes "For this hat, I'll need...";
-			mes "^3355FF1 Slotted " + mesitemlink(2232) + "^000000";
-			mes "^3355FF1 " + mesitemlink(969) + "^000000";
-			mes "^3355FF20 " + mesitemlink(999) + "^000000";
-			mes "^3355FF80 " + mesitemlink(949) + "^000000";
-			mes "^3355FF800 " + mesitemlink(938) + "^000000";
+			mes "^3355FF1 Slotted Circlet^000000";
+			mes "^3355FF1 Gold^000000";
+			mes "^3355FF20 Steel^000000";
+			mes "^3355FF80 Feather^000000";
+			mes "^3355FF800 Sticky Mucus^000000";
 			next;
 			mes "[Isac Mari]";
 			mes "If you bring all the items then I will make it for you right away. See you later~";
@@ -411,11 +411,11 @@ comodo,273,137,4	script	Traveler#head	702,{
 	case 4:
 		if ((countitem(2281) > 0) && (countitem(1048) > 49)) {
 			mes "[Isac Mari]";
-			mes "" + mesitemlink(5043) + "...";
+			mes "Opera Phantom Mask...";
 			mes "Frightening, but also tragic and romantic. If you brought all the required items, I will make it for you~";
 			next;
 			mes "[Isac Mari]";
-			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the " + mesitemlink(2281) + ".";
+			mes "But can you check that the items in your inventory aren't upgraded or have cards compounded into them? If any of the required items have forged upgrades or cards, those will be lost once I create the Opera Masque.";
 			next;
 			mes "[Isac Mari]";
 			mes "It's better to keep only the items used to make the Opera Mask in your inventory. Did you check? If so, let's get started.";
@@ -443,7 +443,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 		}
 		else {
 			mes "[Isac Mari]";
-			mes "" + mesitemlink(5043) + "...";
+			mes "Opera Phantom Mask...";
 			mes "Behind this mask is a story about a man's love and personal tragedy.";
 			next;
 			mes "[Isac Mari]";
@@ -461,8 +461,8 @@ comodo,273,137,4	script	Traveler#head	702,{
 			next;
 			mes "[Isac Mari]";
 			mes "If you want to make Phantom of Opera. You will need:";
-			mes "^3355FF1 " + mesitemlink(2281) + "^000000";
-			mes "^3355FF50 " + mesitemlink(1048) + "^000000";
+			mes "^3355FF1 Opera Masque^000000";
+			mes "^3355FF50 Horrendous Hair^000000";
 			next;
 			mes "[Isac Mari]";
 			mes "If you bring all the items then I will make it for you right away. See you later~";
@@ -477,23 +477,23 @@ comodo,206,310,4	script	Campground Boy#cmd	704,{
 	switch (dmdswrd_Q) {
 	case 0:
 		mes "[Rochito]";
-		mes "" + mesitemlink(580) + ", fruits, vegetables...";
+		mes "Bread, fruits, vegetables...";
 		mes "Bleh. All that other food is";
 		mes "nothing compared to the ";
-		mes "hearty flavor of " + mesitemlink(517) + ". Yeap,";
+		mes "hearty flavor of meat. Yeap,";
 		mes "BBQ camping in Comodo is";
-		mes "heaven to a " + mesitemlink(517) + " lover like me~";
+		mes "heaven to a meat lover like me~";
 		next;
 		if (select("BBQ Camping...?:Cancel") == 1) {
 			mes "[Rochito]";
 			mes "Yeah man... You can eat";
-			mes "Komodoru " + mesitemlink(517) + " all day when";
+			mes "Komodoru meat all day when";
 			mes "you go BBQ camping. Komodoru";
 			mes "is an animal native to Comodo";
 			mes "and every part of it is delicious. Every. Single. Morsel.";
 			next;
 			mes "[Rochito]";
-			mes "What makes this " + mesitemlink(517) + " even";
+			mes "What makes this meat even";
 			mes "more delicious is the special";
 			mes "Koserahserah seasoning they";
 			mes "use. That stuff is almost...";
@@ -539,7 +539,7 @@ comodo,206,310,4	script	Campground Boy#cmd	704,{
 		break;
 	case 1:
 		mes "[Rochito]";
-		mes "Komodoru " + mesitemlink(517) + " is especially";
+		mes "Komodoru meat is especially";
 		mes "great when it's seasoned with";
 		mes "Koserahserah. That flavoring";
 		mes "is one of Comodo's claims to";
@@ -703,7 +703,7 @@ comodo,204,310,4	script	Camping Youth#cmd	65,{
 		next;
 		mes "[Rockha]";
 		mes "But before that, let's";
-		mes "make a " + mesitemlink(5391) + "... to Tausupa!";
+		mes "make a toast... to Tausupa!";
 		mes "Guardian of Comodo, and";
 		mes "one of the best friends that";
 		mes "a guy can have! Cheers!";
@@ -714,7 +714,7 @@ comodo,204,310,4	script	Camping Youth#cmd	65,{
 		mes "Ahh, you know what would";
 		mes "make this meal perfect?";
 		mes "Some of that legendary";
-		mes "^3355FFComodo " + mesitemlink(548) + "^000000 that I heard";
+		mes "^3355FFComodo Cheese^000000 that I heard";
 		mes "about from ^3355FFToruna^000000. Sure, it";
 		mes "might not exist, but still...!";
 		break;
@@ -732,7 +732,7 @@ comodo,204,310,4	script	Camping Youth#cmd	65,{
 		mes "would make our barbeque";
 		mes "absolutely perfect--having";
 		mes "the Village Chief here, and";
-		mes "some of that legendary Comodo " + mesitemlink(548) + " that ^3355FFToruna^000000 told me about.";
+		mes "some of that legendary Comodo Cheese that ^3355FFToruna^000000 told me about.";
 		break;
 	}
 	close;
@@ -830,7 +830,7 @@ comodo,209,314,4	script	Campground Lad#cmd	706,{
 		mes "[Rotute]";
 		mes "Hey, isn't that Koserahserah?";
 		mes "That's the best seasoning that";
-		mes "you can have for " + mesitemlink(517) + " dishes!";
+		mes "you can have for meat dishes!";
 		mes "Oh, you got that from the Chief";
 		mes "to give to Rochito? Wow, they";
 		mes "must be really good friends...";
@@ -1030,7 +1030,7 @@ cmd_in02,32,140,4	script	Chief#cmd	49,{
 			case 1:
 				mes "[Tausupa]";
 				mes "Ah, judging from the scent";
-				mes "of BBQ " + mesitemlink(517) + " on your clothes,";
+				mes "of BBQ meat on your clothes,";
 				mes "I'm guessing that you ran into";
 				mes "Rochito in the campgrounds, ";
 				mes "right? He must have told you that old story about the witch...";
@@ -1142,14 +1142,14 @@ comodo,88,97,4	script	Toruna#cmd	109,{
 			mes "Yes, that is rather";
 			mes "peculiar. What's also";
 			mes "strange is this rumor I've";
-			mes "been hearing about. Now, are you familiar with Comodo " + mesitemlink(548) + "?";
+			mes "been hearing about. Now, are you familiar with Comodo Cheese?";
 			next;
 			mes "[Toruna]";
 			mes "It's this urban legend";
-			mes "about this magnificent " + mesitemlink(548) + "";
+			mes "about this magnificent cheese";
 			mes "that you can only find in Comodo. Now, not too many people believe";
 			mes "it. I mean, you need goats or cows";
-			mes "in order to make any " + mesitemlink(548) + ".";
+			mes "in order to make any cheese.";
 			next;
 			mes "[Toruna]";
 			mes "However, there's this";
@@ -1180,7 +1180,7 @@ comodo,88,97,4	script	Toruna#cmd	109,{
 			mes "[Toruna]";
 			mes "He keeps insisting";
 			mes "that there is a special";
-			mes "kind of " + mesitemlink(548) + " in Comodo";
+			mes "kind of cheese in Comodo";
 			mes "that you cannot get anywhere";
 			mes "else. It sounds crazy, but his";
 			mes "claim may be worth verifying...";
@@ -1235,15 +1235,15 @@ comodo,164,291,4	script	Rakusa#cmd	73,{
 		mes "[Rakusa]";
 		mes "See that guy sitting";
 		mes "over there? All he does";
-		mes "is talk about Comodo " + mesitemlink(548) + ",";
+		mes "is talk about Comodo Cheese,";
 		mes "just mumbling nonsense about";
 		mes "its incredible flavors all day";
 		mes "long. He's nuts, I tell you.";
 		next;
 		mes "[Rakusa]";
 		mes "First of all, you need";
-		mes "freakin' " + mesitemlink(519) + " to make any";
-		mes "" + mesitemlink(548) + ". You see any cows";
+		mes "freakin' milk to make any";
+		mes "cheese. You see any cows";
 		mes "around here? Nope, I thought";
 		mes "so! Still, I think he really";
 		mes "believes that it exists...";
@@ -1253,7 +1253,7 @@ comodo,164,291,4	script	Rakusa#cmd	73,{
 		mes "[Rakusa]";
 		mes "Damn it! I know for a fact";
 		mes "that the idea of Comodo even";
-		mes "having a " + mesitemlink(548) + " is crazy, but";
+		mes "having a cheese is crazy, but";
 		mes "that guy's talking has gotten";
 		mes "me curious now! Maybe it does";
 		mes "exist? How would it even taste?";
@@ -1284,7 +1284,7 @@ comodo,169,284,4	script	Kichiri#cmd	98,{
 		mes "[Kichiri]";
 		mes "Freakin' ^3355FFMagatu^000000...!";
 		mes "Can he talk about anything else";
-		mes "aside from Comodo " + mesitemlink(548) + "?";
+		mes "aside from Comodo Cheese?";
 		mes "I don't see why he's so excited";
 		mes "about the stuff! Everyone knows";
 		mes "it's just an old wive's tale.";
@@ -1294,7 +1294,7 @@ comodo,169,284,4	script	Kichiri#cmd	98,{
 		mes "me a favor and get";
 		mes "Magatu to shut up?";
 		mes "I just want to drink";
-		mes "my " + mesitemlink(970) + " in peace!";
+		mes "my alcohol in peace!";
 		set dmdswrd_Q,8;
 		break;
 	case 8:
@@ -1302,7 +1302,7 @@ comodo,169,284,4	script	Kichiri#cmd	98,{
 		mes "Cripes! Now Magatu's";
 		mes "got me wondering! I mean,";
 		mes "just because I've never seen";
-		mes "Comodo " + mesitemlink(548) + " doesn't mean";
+		mes "Comodo Cheese doesn't mean";
 		mes "it doesn't exist, right? Curses! Now I'm thinking about it too!";
 		break;
 	default:
@@ -1330,7 +1330,7 @@ comodo,163,280,4	script	Magatu#cmd	55,{
 	switch (dmdswrd_Q) {
 	case 8:
 		mes "[Magatu]";
-		mes "Comodo " + mesitemlink(548) + "...";
+		mes "Comodo Cheese...";
 		mes "It really exists...!";
 		mes "And I'm so close to";
 		mes "having the proof! Oh...";
@@ -1343,7 +1343,7 @@ comodo,163,280,4	script	Magatu#cmd	55,{
 		mes "but an adventurer to boot!";
 		mes "Great, this is perfect! Now,";
 		mes "listen, you want to learn more";
-		mes "about Comodo " + mesitemlink(548) + ", right?";
+		mes "about Comodo Cheese, right?";
 		next;
 		mes "[Magatu]";
 		mes "Well, I happen to know";
@@ -1354,30 +1354,30 @@ comodo,163,280,4	script	Magatu#cmd	55,{
 		next;
 		mes "[Magatu]";
 		mes "Oh, here, before I forget,";
-		mes "take my lucky bottle " + mesitemlink(2226) + "!";
+		mes "take my lucky bottle cap!";
 		mes "Show this to Manzi, and he'll";
 		mes "know that I sent you, and that";
 		mes "you want to learn more about";
-		mes "the elusive Comodo " + mesitemlink(548) + ".";
+		mes "the elusive Comodo Cheese.";
 		next;
 		mes "^3355FFYou have received";
 		mes "Magatu's lucky bottle";
-		mes "" + mesitemlink(2226) + " to present to Manzi.";
+		mes "cap to present to Manzi.";
 		set dmdswrd_Q,9;
 		break;
 	case 9:
 		mes "[Magatu]";
 		mes "Oh, don't forget to";
-		mes "show my lucky bottle " + mesitemlink(2226) + "";
+		mes "show my lucky bottle cap";
 		mes "to Manzi, okay? You can find";
 		mes "him inside Comodo's Casino~";
 		mes "Good luck, and I hope you get";
-		mes "to try that Comodo " + mesitemlink(548) + "~";
+		mes "to try that Comodo Cheese~";
 		break;
 	default:
 		mes "[Magatu]";
 		mes "It's true, it really";
-		mes "exists... Comodo " + mesitemlink(548) + "!";
+		mes "exists... Comodo Cheese!";
 		mes "Its flavor must be incomparably";
 		mes "delicious if adventurers have";
 		mes "quested to obtain it for so";
@@ -1403,14 +1403,14 @@ cmd_in02,189,99,4	script	Manzi#cmd	85,{
 		mes "trouble or anything, am I?";
 		next;
 		mes "^3355FFYou give Manzi the";
-		mes "lucky bottle " + mesitemlink(2226) + " that you";
+		mes "lucky bottle cap that you";
 		mes "received from Magatsu.^000000";
 		next;
 		mes "[Manzi]";
 		mes "Whoa, Magatsu gave you";
 		mes "this? Ah, okay, so you must";
 		mes "be looking for that Comodo";
-		mes "" + mesitemlink(548) + " he keeps talking about.";
+		mes "Cheese he keeps talking about.";
 		mes "Alright, I owe him a favor, so";
 		mes "I'll tell you who to talk to...";
 		next;
@@ -1427,14 +1427,14 @@ cmd_in02,189,99,4	script	Manzi#cmd	85,{
 		mes "way she looks--that old";
 		mes "lady is one of Comodo's";
 		mes "wisest elders. Ask her";
-		mes "about the " + mesitemlink(548) + ", and";
+		mes "about the cheese, and";
 		mes "let her know I sent you~";
 		next;
 		mes "[Manzi]";
 		mes "Ah, she won't take you";
 		mes "very seriously unless you";
 		mes "show her this. Magatsu gave";
-		mes "you his lucky bottle " + mesitemlink(2226) + ", so I'm gonna give you my lucky coin!";
+		mes "you his lucky bottle cap, so I'm gonna give you my lucky coin!";
 		mes "The old crone'll recognize it~";
 		next;
 		set dmdswrd_Q,10;
@@ -1448,7 +1448,7 @@ cmd_in02,189,99,4	script	Manzi#cmd	85,{
 		mes "Look for the old crone";
 		mes "near the Dance Stage here";
 		mes "in Comodo and ask her about";
-		mes "Comodo " + mesitemlink(548) + ", alright? Ah,";
+		mes "Comodo Cheese, alright? Ah,";
 		mes "and try not to insult her, kay?";
 		mes "It'll make me look bad~";
 		break;
@@ -1515,30 +1515,30 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Actually, I was hoping";
 			mes "you can tell me about";
-			mes "Comodo " + mesitemlink(548) + ". If it really";
+			mes "Comodo Cheese. If it really";
 			mes "exists, I'd like to know";
 			mes "where I can get some.";
 			next;
 			mes "[Hullaris]";
 			mes "Oh... That. First of all,";
-			mes "Comodo " + mesitemlink(548) + " does exist,";
+			mes "Comodo Cheese does exist,";
 			mes "and it's as precious as the";
 			mes "legends say. However, it's";
-			mes "not a true " + mesitemlink(548) + ", although you may think so from its taste.";
+			mes "not a true cheese, although you may think so from its taste.";
 			next;
 			mes "[Hullaris]";
 			mes "Yes, it's a very rare, natural";
 			mes "substance and isn't made from";
-			mes "cow or goat " + mesitemlink(519) + " or anything";
+			mes "cow or goat milk or anything";
 			mes "like that. However, Comodo";
-			mes "" + mesitemlink(548) + " isn't merely food.";
+			mes "Cheese isn't merely food.";
 			mes "No, it's much more...";
 			next;
 			mes "[Hullaris]";
 			mes "Those that eat Comodo";
-			mes "" + mesitemlink(548) + " find that their";
+			mes "Cheese find that their";
 			mes "true potential is unlocked.";
-			mes "Comodo " + mesitemlink(548) + "'s true name";
+			mes "Comodo Cheese's true name";
 			mes "is the ^3355FFAwakening Stone^000000. Now,";
 			mes "doesn't that sound impressive?";
 			next;
@@ -1552,7 +1552,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 			next;
 			mes "[Hullaris]";
 			mes "Do you really wish to";
-			mes "eat the Comodo " + mesitemlink(548) + " and";
+			mes "eat the Comodo Cheese and";
 			mes "see where its power may lead";
 			mes "you? If so, you'll have to endure great challenges to obtain it...";
 			next;
@@ -1562,7 +1562,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 			mes "Stone, seek out a man named";
 			mes "^3355FFNigirboran^000000. He will judge";
 			mes "whether you are worthy";
-			mes "of the Comodo " + mesitemlink(548) + "...";
+			mes "of the Comodo Cheese...";
 			set dmdswrd_Q,11;
 			next;
 			mes "[Hullaris]";
@@ -1591,7 +1591,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 	case 11:
 		mes "[Hullaris]";
 		mes "Do you really wish to";
-		mes "eat the Comodo " + mesitemlink(548) + " and";
+		mes "eat the Comodo Cheese and";
 		mes "see where its power may lead";
 		mes "you? If so, you'll have to endure great challenges to obtain it...";
 		next;
@@ -1601,7 +1601,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 		mes "Stone, seek out a man named";
 		mes "^3355FFNigirboran^000000. He will judge";
 		mes "whether you are worthy";
-		mes "of the Comodo " + mesitemlink(548) + "...";
+		mes "of the Comodo Cheese...";
 		next;
 		mes "[Hullaris]";
 		mes "Now, you should be";
@@ -1616,7 +1616,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 		mes "Hmm? So you've failed";
 		mes "Nigirboran's test, have";
 		mes "you? Well, you better train";
-		mes "until you can pass it. Otherwise, eating Comodo " + mesitemlink(548) + " could";
+		mes "until you can pass it. Otherwise, eating Comodo Cheese could";
 		mes "mean your death, you know.";
 		break;
 	case 13:
@@ -1636,7 +1636,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 		mes "Ah, I was right after all.";
 		mes "I'm glad to see that you've";
 		mes "proven worthy of eating this";
-		mes "Comodo " + mesitemlink(548) + ", or more";
+		mes "Comodo Cheese, or more";
 		mes "accurately, the Awakening";
 		mes "Stone. Here, let me get it...";
 		next;
@@ -1645,18 +1645,18 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 		mes "Only brave and worthy";
 		mes "adventurers are allowed to";
 		mes "eat this. Understand that";
-		mes "eating Comodo " + mesitemlink(548) + " is";
+		mes "eating Comodo Cheese is";
 		mes "a rare and coveted honor!";
 		next;
 		mes "^3355FFHullaris carefully";
 		mes "hands you a plate of";
-		mes "Comodo " + mesitemlink(548) + ". You enjoy";
+		mes "Comodo Cheese. You enjoy";
 		mes "the rich, smooth flavor of";
 		mes "each and every morsel...";
 		mes "It's sublimely delicious!^000000";
 		next;
 		mes "^3355FFAfter you finish eating the";
-		mes "Comodo " + mesitemlink(548) + ", you feel";
+		mes "Comodo Cheese, you feel";
 		mes "a subtle, yet definite energy";
 		mes "gently pulsing through your";
 		mes "body. You feel a powerful, yet";
@@ -1670,7 +1670,7 @@ comodo,187,153,4	script	Hullaris#cmd	701,{
 		mes "isn't it? It's unreal, how";
 		mes "delicious it is. All other";
 		mes "foods can never match the";
-		mes "quality of Comodo " + mesitemlink(548) + "~";
+		mes "quality of Comodo Cheese~";
 		next;
 		mes "[Hullaris]";
 		mes "Now, I know that you probably";
@@ -1717,7 +1717,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 		mes "Hullaris sent? So you're";
 		mes "here to earn the right to";
 		mes "eat the Awakening Stone...";
-		mes "Or Comodo " + mesitemlink(548) + ", as it's";
+		mes "Or Comodo Cheese, as it's";
 		mes "more commonly known.";
 		next;
 		mes "[Nigirboran]";
@@ -1731,7 +1731,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 		mes "If your mind and body";
 		mes "aren't sufficiently trained,";
 		mes "your body will reject the";
-		mes "Comodo " + mesitemlink(548) + " and you";
+		mes "Comodo Cheese and you";
 		mes "would die a slow, painful,";
 		mes "yet incredibly flavorful death.";
 		next;
@@ -1750,7 +1750,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 		mes "I'd expect nothing less of";
 		mes "a brave and daring adventurer.";
 		mes "Now hold still as I gauge your";
-		mes "body's internal energies and see if it can handle Comodo " + mesitemlink(548) + "...";
+		mes "body's internal energies and see if it can handle Comodo Cheese...";
 		next;
 		mes "[Nigirboran]";
 		mes "Alright.";
@@ -1771,7 +1771,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 				mes "Hmm... Your body seems";
 				mes "well trained, but your mind";
 				mes "is still reeling from the test.";
-				mes "If you ate the Comodo " + mesitemlink(548) + "";
+				mes "If you ate the Comodo Cheese";
 				mes "now, you'd be reduced to an";
 				mes "incoherent invalid...";
 				next;
@@ -1795,11 +1795,11 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 				mes "strong, but your spirit";
 				mes "is weak. You need more";
 				mes "training. If you were to eat";
-				mes "the Comodo " + mesitemlink(548) + " now...";
+				mes "the Comodo Cheese now...";
 				mes "You would evaporate.";
 				next;
 				mes "[Nigirboran]";
-				mes "But don't lose " + mesitemlink(7855) + ",";
+				mes "But don't lose heart,";
 				mes "it's too early for you";
 				mes "to give up. Go out and";
 				mes "train some more, and then";
@@ -1817,7 +1817,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 				mes "Yes... Yes...";
 				mes "Your mind, soul, and body";
 				mes "seem well trained. I think you";
-				mes "can eat the Comodo " + mesitemlink(548) + "";
+				mes "can eat the Comodo Cheese";
 				mes "without any ill effect. Good,";
 				mes "good, I think you're ready.";
 				next;
@@ -1837,7 +1837,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 				mes "[Nigirboran]";
 				mes "Ah, I almost forgot";
 				mes "to ask you. Why do you";
-				mes "seek the Comodo " + mesitemlink(548) + ",";
+				mes "seek the Comodo Cheese,";
 				mes "or the Awakening Stone?";
 				mes "Are you seeking one of";
 				mes "the 3 forbidden swords?";
@@ -1877,7 +1877,7 @@ beach_dun3,30,220,4	script	Nigirboran#cmd	704,{
 			mes "Goodness...!";
 			mes "Your mind and body";
 			mes "are far too weak to";
-			mes "handle the Comodo " + mesitemlink(548) + "";
+			mes "handle the Comodo Cheese";
 			mes "now. You must seriously";
 			mes "train yourself much more...";
 			next;
@@ -2007,11 +2007,11 @@ aldebaran,44,53,4	script	Meteurengut#cmd	64,{
 		next;
 		mes "[Meteurengut]";
 		mes "I shall need";
-		mes "^3355FF1 " + mesitemlink(726) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(640) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(757) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(721) + "^000000, and";
-		mes "^3355FF1 " + mesitemlink(717) + "^000000.";
+		mes "^3355FF1 Sapphire^000000,";
+		mes "^3355FF1 Shining Stone^000000,";
+		mes "^3355FF1 Rough Elunium^000000,";
+		mes "^3355FF1 Emerald^000000, and";
+		mes "^3355FF1 Blue Gemstone^000000.";
 		set dmdswrd_Q,15;
 		break;
 	case 15:
@@ -2032,7 +2032,7 @@ aldebaran,44,53,4	script	Meteurengut#cmd	64,{
 			next;
 			mes "[Meteurengut]";
 			mes "Would you please bring me";
-			mes "^3355FF1 " + mesitemlink(1025) + "^000000? You can obtain";
+			mes "^3355FF1 Cobweb^000000? You can obtain";
 			mes "them by slaying spiders in";
 			mes "Muriniel Pass which is on the";
 			mes "way to Al De Baran from here.";
@@ -2055,17 +2055,17 @@ aldebaran,44,53,4	script	Meteurengut#cmd	64,{
 		next;
 		mes "[Meteurengut]";
 		mes "I shall need";
-		mes "^3355FF1 " + mesitemlink(726) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(640) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(757) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(721) + "^000000, and";
-		mes "^3355FF1 " + mesitemlink(717) + "^000000.";
+		mes "^3355FF1 Sapphire^000000,";
+		mes "^3355FF1 Shining Stone^000000,";
+		mes "^3355FF1 Rough Elunium^000000,";
+		mes "^3355FF1 Emerald^000000, and";
+		mes "^3355FF1 Blue Gemstone^000000.";
 		break;
 	case 16:
 		if (countitem(1025) > 0) {
 			mes "[Meteurengut]";
 			mes "I see that you've brought";
-			mes "me a " + mesitemlink(1025) + ". It's hard to";
+			mes "me a Cobweb. It's hard to";
 			mes "believe, but it's integreal to";
 			mes "creating the Slate of Muriniel.";
 			mes "Now, if you'll wait a moment,";
@@ -2113,7 +2113,7 @@ aldebaran,44,53,4	script	Meteurengut#cmd	64,{
 		}
 		mes "[Meteurengut]";
 		mes "Ah, have you brought a";
-		mes "" + mesitemlink(1025) + "? I know it sounds";
+		mes "Cobweb? I know it sounds";
 		mes "strange, but I really need the";
 		mes "unique energy found only in";
 		mes "fresh Cobwebs to finish the";
@@ -2215,7 +2215,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 			mes "let me take them now and";
 			mes "begin work on the Book of";
 			mes "the Lamb. Now, I need you";
-			mes "to bring me ^3355FF1 " + mesitemlink(936) + "^000000.";
+			mes "to bring me ^3355FF1 Scale Shell^000000.";
 			next;
 			mes "[Zaka]";
 			mes "I know it would be more";
@@ -2238,7 +2238,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 		if (countitem(936) > 0) {
 			mes "[Zaka]";
 			mes "Oh, nice! You've brought";
-			mes "this " + mesitemlink(936) + " for me,";
+			mes "this Scale Shell for me,";
 			mes "right? Great, great, this will";
 			mes "help enhance the book's";
 			mes "physical durability, but it";
@@ -2246,7 +2246,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 			next;
 			mes "[Zaka]";
 			mes "Next, you need to bring";
-			mes "me ^3355FF1 Shining " + mesitemlink(935) + "^000000. Hurry";
+			mes "me ^3355FF1 Shining Shell^000000. Hurry";
 			mes "and bring you to me before";
 			mes "I finish this part of the process, okay? Wait, actually, I think";
 			mes "you can take your time...";
@@ -2257,7 +2257,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 		mes "[Zaka]";
 		mes "I'll be waiting right";
 		mes "here while you go and";
-		mes "look for a ^3355FFScale " + mesitemlink(935) + "^000000";
+		mes "look for a ^3355FFScale Shell^000000";
 		mes "that you can bring to me.";
 		mes "I'll need that in order to";
 		mes "finish this Book of the Lamb.";
@@ -2270,7 +2270,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 			mes "Scale? Perfect. Now, there";
 			mes "is just one more item that";
 			mes "I want to ask you to bring me:";
-			mes "^3355FF1 " + mesitemlink(959) + "^000000. Easy, right?";
+			mes "^3355FF1 Stinky Scale^000000. Easy, right?";
 			delitem 954,1; //Shining_Scales
 			set dmdswrd_Q,21;
 			next;
@@ -2288,7 +2288,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 		mes "finish this Book of";
 		mes "the Lamb, you need";
 		mes "to come back here with";
-		mes "^3355FF1 " + mesitemlink(954) + "^000000. There's";
+		mes "^3355FF1 Shining Scale^000000. There's";
 		mes "no way to work around it...";
 		break;
 	case 21:
@@ -2296,7 +2296,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 			mes "[Zaka]";
 			mes "What's that sme--?";
 			mes "Oh, right. I asked you to";
-			mes "bring me a " + mesitemlink(959) + ".";
+			mes "bring me a Stinky Scale.";
 			mes "Now I can finally complete";
 			mes "this Book of the Lamb! I've";
 			mes "been looking forward to this...";
@@ -2343,7 +2343,7 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 		mes "[Zaka]";
 		mes "The last thing that I need";
 		mes "to complete the Book of the";
-		mes "Lamb is ^3355FF1 " + mesitemlink(959) + "^000000. Please";
+		mes "Lamb is ^3355FF1 Stinky Scale^000000. Please";
 		mes "bring that to me as soon as";
 		mes "you can. Thank you for being";
 		mes "patient, young adventurer.";
@@ -2367,8 +2367,8 @@ morocc,201,30,4	script	Zaka#cmd	99,{
 		mes "also bound to powerful curses.";
 		next;
 		mes "[Zaka]";
-		mes "Therefore, the " + mesitemlink(1138) + ",";
-		mes "Ogretooth, and " + mesitemlink(1169) + "";
+		mes "Therefore, the Mysteltainn,";
+		mes "Ogretooth, and Executioner";
 		mes "have all been sealed away.";
 		mes "Only a truly great adventurer";
 		mes "can release these doomed swords and actually wield them...";
@@ -2436,7 +2436,7 @@ comodo,232,87,4	script	Won#cmd	106,{
 		set dmdswrd_Q,23;
 		next;
 		mes "[Won]";
-		mes "" + mesitemlink(1138) + ", " + mesitemlink(1169) + ",";
+		mes "Mysteltainn, Executioner,";
 		mes "and Ogretooth... These are";
 		mes "the forbidden blades, the";
 		mes "doomed swords. Remember";

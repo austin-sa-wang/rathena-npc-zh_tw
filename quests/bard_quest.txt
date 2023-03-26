@@ -95,8 +95,8 @@ geffen,132,38,3	script	Bard#2	51,{
 		mes "Every god would";
 		mes "have succumbed to age.";
 		mes "Even Thor, the strongest of gods,";
-		mes "would grow frail, " + mesitemlink(2629) + " would";
-		mes "slip from his waist, and " + mesitemlink(1530) + "";
+		mes "would grow frail, Megingjard would";
+		mes "slip from his waist, and Mjolnir";
 		mes "would never fly again.^000000";
 		next;
 		mes "^483D8BWithout Idun,";
@@ -116,7 +116,7 @@ geffen,132,38,3	script	Bard#2	51,{
 		next;
 		specialeffect EF_BEGINSPELL6;
 		mes "^483D8BIf you share the";
-		mes "" + mesitemlink(512) + " of youth with me";
+		mes "Apple of youth with me";
 		mes "Even a bite of it with";
 		mes "This poor poet.";
 		mes "You will be loved by every god...";
@@ -341,7 +341,7 @@ geffen,132,38,3	script	Bard#2	51,{
 				mes "Are you serious?";
 				mes "Oh, thank you so much!";
 				mes "You must be an angel!";
-				mes "An angel that truly understands the " + mesitemlink(7855) + " of a poet!";
+				mes "An angel that truly understands the heart of a poet!";
 				next;
 				mes "[Errende]";
 				mes "I'll pay you back somehow!";
@@ -394,11 +394,11 @@ geffen,132,38,3	script	Bard#2	51,{
 		mes "^483D8BWho made";
 		mes "this poor Bard cry?";
 		mes "Who broke his";
-		mes "tender " + mesitemlink(7855) + " of glass?";
+		mes "tender heart of glass?";
 		mes "Shattering his dreams...^000000";
 		next;
 		mes "^483D8BNo dreams,";
-		mes "No " + mesitemlink(7855) + ",";
+		mes "No heart,";
 		mes "No love,";
 		mes "No hope";
 		mes "No....^000000";
@@ -424,7 +424,7 @@ geffen,132,38,3	script	Bard#2	51,{
 			} else {
 				cutin "bard_eland04",2;
 				mes "^3355FFYou ignore his";
-				mes "" + mesitemlink(7855) + " wrenching song.";
+				mes "heart wrenching song.";
 				mes "But at what cost to your soul?^000000";
 			}
 			goto L_End;
@@ -476,7 +476,7 @@ geffen,132,38,3	script	Bard#2	51,{
 		next;
 		cutin "bard_eland04",2;
 		mes "[Errende]";
-		mes "*Sigh* I've lost the " + mesitemlink(7855) + " to sing ever since I've forgotten that line to the song. I just... can't. My spirit is unmoved. There's no inspiration.";
+		mes "*Sigh* I've lost the heart to sing ever since I've forgotten that line to the song. I just... can't. My spirit is unmoved. There's no inspiration.";
 		next;
 		mes "[Errende]";
 		mes "Please ask ^483D8BGunther^000000 about the ^483D8B8th love^000000 in ^483D8BAt One, I Fall in Love^000000. Thank you in advance.";
@@ -562,7 +562,7 @@ geffen,132,38,3	script	Bard#2	51,{
 				mes "Are you serious?";
 				mes "Oh, thank you so much!";
 				mes "You must be an angel!";
-				mes "An angel that truly understands the " + mesitemlink(7855) + " of a poet!";
+				mes "An angel that truly understands the heart of a poet!";
 				next;
 				mes "[Errende]";
 				mes "I'll pay you back somehow!";
@@ -693,7 +693,7 @@ geffen,132,38,3	script	Bard#2	51,{
 				set gef_bard_q,5;
 			} else {
 				mes "[Errende]";
-				mes "Are you serious? Oh, thank you so much! You must be an angel! An angel that truly understands the " + mesitemlink(7855) + " of a poet!";
+				mes "Are you serious? Oh, thank you so much! You must be an angel! An angel that truly understands the heart of a poet!";
 				next;
 				mes "[Errende]";
 				mes "I'll pay you back somehow! Thank you for your trouble in advance~";
@@ -738,9 +738,9 @@ geffen,132,38,3	script	Bard#2	51,{
 		mes "Wh-why must people always treat Bards like this?";
 		next;
 		mes "^483D8BWho made this poor Bard cry?";
-		mes "Who broke his tender " + mesitemlink(7855) + " of glass?";
+		mes "Who broke his tender heart of glass?";
 		mes "Shattering his dreams...";
-		mes "No dreams, no " + mesitemlink(7855) + ", no love, no hope, no...^000000";
+		mes "No dreams, no heart, no love, no hope, no...^000000";
 		next;
 		set .@random,rand(1,50);
 
@@ -761,7 +761,7 @@ geffen,132,38,3	script	Bard#2	51,{
 				set gef_bard_q,4;
 			} else {
 				mes "^3355FFYou ignore his";
-				mes "" + mesitemlink(7855) + " wrenching song.";
+				mes "heart wrenching song.";
 				mes "But at what cost to your soul?^000000";
 			}
 			goto L_End;
@@ -809,7 +809,7 @@ geffen,132,38,3	script	Bard#2	51,{
 		mes "Ah, perhaps not yet.";
 		next;
 		mes "[Errende]";
-		mes "*Sigh* I've lost the " + mesitemlink(7855) + " to sing ever since I forgotten that line to the song. I just... can't. My spirit is unmoved. There's no inspiration.";
+		mes "*Sigh* I've lost the heart to sing ever since I forgotten that line to the song. I just... can't. My spirit is unmoved. There's no inspiration.";
 		next;
 		mes "[Errende]";
 		mes "Please ask ^483D8BGunther^000000 about the ^483D8B8th love^000000 in ^483D8BAt One, I Fall in Love^000000. Thank you in advance.";
@@ -892,7 +892,7 @@ geffen,132,38,3	script	Bard#2	51,{
 				set gef_bard_q,5;
 			} else {
 				mes "[Errende]";
-				mes "Are you serious? Oh, thank you so much! You must be an angel! An angel that truly understands the " + mesitemlink(7855) + " of a poet!";
+				mes "Are you serious? Oh, thank you so much! You must be an angel! An angel that truly understands the heart of a poet!";
 				next;
 				mes "[Errende]";
 				mes "I'll pay you back somehow! Thank you for your trouble in advance~";
@@ -1046,10 +1046,10 @@ S_StorySong:
 				mes "the Pub in Geffen.";
 				next;
 				mes "[Errende]";
-				mes "Judging from his clothes, he must be from Morocc, which is a lot warmer. That's why he's got a " + mesitemlink(2501) + ", even though it has no drawstrings, for the cooler weather over here.";
+				mes "Judging from his clothes, he must be from Morocc, which is a lot warmer. That's why he's got a Hood, even though it has no drawstrings, for the cooler weather over here.";
 				next;
 				mes "[Errende]";
-				mes "I must warn you, don't let him talk you into buying that " + mesitemlink(2501) + " of his since he's selling it for an outrageous price. He's definitely not trustworthy.";
+				mes "I must warn you, don't let him talk you into buying that Hood of his since he's selling it for an outrageous price. He's definitely not trustworthy.";
 				next;
 				mes "[Errende]";
 				mes "Lastly, I want to mention the lost city of Geffenia, hidden under the Geffen Tower. I hear some kind of condition is required to enter Geffenia, but I'm not sure.";
@@ -1074,7 +1074,7 @@ S_StorySong:
 				next;
 				cutin "bard_eland02",2;
 				mes "[Errende]";
-				mes "In any case, I helped the father with an errand, and he gave me a mysterious " + mesitemlink(7948) + " in return. When I opened that " + mesitemlink(7948) + ", I found a strange " + mesitemlink(949) + ". I'm unaware of how it works, though...";
+				mes "In any case, I helped the father with an errand, and he gave me a mysterious box in return. When I opened that box, I found a strange feather. I'm unaware of how it works, though...";
 				next;
 				mes "[Errende]";
 				mes "I wonder if that man's friend, Pandger Mayer, ever found";
@@ -1087,7 +1087,7 @@ S_StorySong:
 				mes "When the sunken ship first drifted near Alberta, it was immediately found by one of the Alberta Security Knights.";
 				next;
 				mes "[Errende]";
-				mes "That Security Knight ventured inside and found an infant deep inside one of the rooms. Next to the baby was a music " + mesitemlink(7948) + ".";
+				mes "That Security Knight ventured inside and found an infant deep inside one of the rooms. Next to the baby was a music box.";
 				next;
 				mes "[Errende]";
 				mes "This baby was the one and only survivor from the sunken ship. He was brought up in Alberta, although he was treated with contempt when he was a child. He's fine now, but I digress.";
@@ -1166,7 +1166,7 @@ S_StorySong:
 			else
 				set .@random,rand(1,3);
 			if (.@random == 1) {
-				mes "^483D8BValhalla dazzles in " + mesitemlink(969) + "";
+				mes "^483D8BValhalla dazzles in gold";
 				mes "The fifth as we know";
 				mes "Is old Glast Heim!";
 				mes "Glorious warriors answer";
@@ -1181,7 +1181,7 @@ S_StorySong:
 				next;
 				mes "^483D8BFive hundred forty doors";
 				mes "In the grand halls of Valhalla";
-				mes "Fling open to the " + mesitemlink(7855) + " of a hero.";
+				mes "Fling open to the heart of a hero.";
 				mes "Eight hundred warriors gather";
 				mes "Under the will of God, and";
 				mes "Charge as one out through";
@@ -1230,7 +1230,7 @@ S_StorySong:
 				mes "Torches on the castle";
 				mes "Flare like thousands of Ifrits.";
 				next;
-				mes "^483D8BHear the throbbing of my " + mesitemlink(7855) + ",";
+				mes "^483D8BHear the throbbing of my heart,";
 				mes "The blood flowing in my veins.";
 				mes "Feeling the heaviness of my armor.";
 				mes "The enemy has appeared before us.^000000";
@@ -1258,7 +1258,7 @@ S_StorySong:
 						mes "Heroic warrior,";
 					else
 						mes "My fair lady,";
-					mes "Please listen to my song. If you have a " + mesitemlink(712) + " in hand and are in love, let's count the " + mesitemlink(712) + " petals as we go along.";
+					mes "Please listen to my song. If you have a flower in hand and are in love, let's count the flower petals as we go along.";
 					next;
 					mes "^483D8BAt One, I fall in love.";
 					mes "At Two, you give me your smile.";
@@ -1393,7 +1393,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "[Kino Kitty]";
 				mes "Many people love to listen to those songs because they dream of the romantic past. To sing these kinds of songs is the reason people like me exist.";
 				next;
-				mes "^3355FFKino Kitty adjusted the strings on his " + mesitemlink(1907) + ", and began to sing in a low voice.^000000";
+				mes "^3355FFKino Kitty adjusted the strings on his guitar, and began to sing in a low voice.^000000";
 				next;
 				mes "^D43D1ARheingold...";
 				mes "Hidden in the Rhein river.";
@@ -1449,7 +1449,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "Ah...";
 				mes "I do feel like singing a song. You know, every song has its own story. ^333333*Cough Cough*^000000";
 				next;
-				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the " + mesitemlink(1907) + " strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
+				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the guitar strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
 				next;
 				mes "^D43D1ABrave hero Siegfried ";
 				mes "Vanquished a mighty dragon	";
@@ -1508,7 +1508,7 @@ morocc,134,111,3	script	Bard#3	741,{
 			mes "[Kino Kitty]";
 			mes "Oh... Well, I have a chronic disease so I can't speak out loud. I, um, even cough up a little blood. But aside from that, I'm perfectly healthy.";
 			next;
-			mes "^3355FFA look of bitterness momentarily flashed across Kino Kitty's face. He then adjusted his " + mesitemlink(1907) + " strings and began to play, humming a low tune.^000000";
+			mes "^3355FFA look of bitterness momentarily flashed across Kino Kitty's face. He then adjusted his guitar strings and began to play, humming a low tune.^000000";
 			soundeffect "humming.wav",0;
 			close;
 		
@@ -1540,7 +1540,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "Ah...";
 				mes "I do feel like singing a song. You know, every song has its own story. ^333333*Cough Cough*^000000";
 				next;
-				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the " + mesitemlink(1907) + " strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
+				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the guitar strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
 				next;
 				mes "^D43D1ABrave hero Siegfried ";
 				mes "Vanquished a mighty dragon";
@@ -1576,7 +1576,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "Ah...";
 				mes "I do feel like singing a song. You know, every song has its own story. ^333333*Cough Cough*^000000";
 				next;
-				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the " + mesitemlink(1907) + " strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
+				mes "^3355FFKino Kitty coughed a few times, wiping his mouth with his sleeve. As he adjusts the guitar strings, you notice small stains of blood on his sleeve. Then, he began to sing.^000000";
 				next;
 				mes "^D43D1AI still remember feeling";
 				mes "Your shoulder's warmth";
@@ -1592,7 +1592,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				next;
 				mes "^D43D1AI still remember the clear chimes";
 				mes "Of the Prontera Church Bells";
-				mes "The " + mesitemlink(536) + " we shared in Morocc,";
+				mes "The ice cream we shared in Morocc,";
 				mes "Being chased by bats";
 				mes "In Payon dungeon.^000000";
 				next;
@@ -1605,7 +1605,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "^D43D1AYour beautiful soul";
 				mes "Will be with Odin.";
 				mes "When the day";
-				mes "Of the " + mesitemlink(13153) + " comes,";
+				mes "Of the dusk comes,";
 				mes "A brand new place";
 				mes "Will be before your eyes.^000000";
 				next;
@@ -1652,7 +1652,7 @@ morocc,134,111,3	script	Bard#3	741,{
 			mes "[Kino Kitty]";
 			mes "Oh... Well, I have a chronic disease so I can't speak out loud. I, um, even cough up a little blood. But aside from that, I'm perfectly healthy.";
 			next;
-			mes "^3355FFA look of bitterness momentarily flashed across Kino Kitty's face. He then adjusted his " + mesitemlink(1907) + " strings and began to play, humming a low tune.^000000";
+			mes "^3355FFA look of bitterness momentarily flashed across Kino Kitty's face. He then adjusted his guitar strings and began to play, humming a low tune.^000000";
 			soundeffect "humming.wav",0;
 			close;
 		
@@ -1709,7 +1709,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "^D43D1AAt Six, I fall in love~";
 				mes "At Seven, you fall in love~";
 				mes "At Eight, we're both in love.";
-				mes "At Nine, you know my " + mesitemlink(7855) + ".";
+				mes "At Nine, you know my heart.";
 				mes "At Ten, I know you've";
 				mes "been waiting for me.^000000";
 				next;
@@ -1755,7 +1755,7 @@ morocc,134,111,3	script	Bard#3	741,{
 		mes "If you don't mind, please come again and listen to this poor Bard's songs. I'll prepare a song just for you.";
 		next;
 		mes "[Kino Kitty]";
-		mes "Don't worry about my health. I'm a Bard at " + mesitemlink(7855) + ", and I can't help but sing for my audience.";
+		mes "Don't worry about my health. I'm a Bard at heart, and I can't help but sing for my audience.";
 		next;
 		mes "[Kino Kitty]";
 		mes "Also, I'd like to thank you for helping Errende. He may be a little whiny, but he's a good person.";
@@ -1764,7 +1764,7 @@ morocc,134,111,3	script	Bard#3	741,{
 	} else if (gef_bard_q == 11) {
 		mes "[Kino Kitty]";
 		mes "A silver seal...?";
-		mes "Well, welcome to the wanderer's " + mesitemlink(1501) + ". I must say, the silver crescent suits you.";
+		mes "Well, welcome to the wanderer's club. I must say, the silver crescent suits you.";
 		next;
 		mes "[Kino Kitty]";
 		mes "If you have that seal, Mr. Sketzi will permit you to read his books full of Norse songs.";
@@ -1777,11 +1777,11 @@ morocc,134,111,3	script	Bard#3	741,{
 		mes "my friend?";
 		next;
 		if (gef_bard_q == 24) {
-			mes "^3355FFYou gave " + mesitemlink(529) + " to the crying little girl, and relate the problem with the lyrics to Kino Kitty.^000000";
+			mes "^3355FFYou gave candy to the crying little girl, and relate the problem with the lyrics to Kino Kitty.^000000";
 			next;
 			mes "[Kino Kitty]";
 			mes "Hmm...";
-			mes "I'm insulted that Errende does not like the words I wrote for 'At One, I Fall in Love.' But, I suppose he is a romantic at " + mesitemlink(7855) + ".";
+			mes "I'm insulted that Errende does not like the words I wrote for 'At One, I Fall in Love.' But, I suppose he is a romantic at heart.";
 			next;
 			mes "[" + @name$ + "]";
 			mes "So...";
@@ -1816,7 +1816,7 @@ morocc,134,111,3	script	Bard#3	741,{
 			mes "Alright, listen.";
 			next;
 			mes "[Kino Kitty]";
-			mes "You'll need an " + mesitemlink(11004) + " of edda lyrics for the original words to the song. All the new books no longer contain the original version.";
+			mes "You'll need an old book of edda lyrics for the original words to the song. All the new books no longer contain the original version.";
 			next;
 			mes "[Kino Kitty]";
 			mes "I wonder...";
@@ -1847,7 +1847,7 @@ morocc,134,111,3	script	Bard#3	741,{
 				mes "and the wicked god, Loki.";
 				next;
 				mes "[Kino Kitty]";
-				mes "One night, Baldur had a " + mesitemlink(7102) + " where he was cast into the pit of Hell. Upon hearing of this, Baldur's mother Frigg was stricken with panic.";
+				mes "One night, Baldur had a nightmare where he was cast into the pit of Hell. Upon hearing of this, Baldur's mother Frigg was stricken with panic.";
 				next;
 				mes "[Kino Kitty]";
 				mes "To prevent tragedy from befalling her son, she made every single object on earth to agree to an oath where they would not harm Baldur.";
@@ -1983,11 +1983,11 @@ morocc,134,111,3	script	Bard#3	741,{
 					mes "that my reputation";
 					mes "precedes me.";
 					next;
-					mes "^3355FFYou give some " + mesitemlink(529) + " to the crying girl and relate your tale regarding the lyrics for the song 'At One, I Fall in Love.'^000000";
+					mes "^3355FFYou give some candy to the crying girl and relate your tale regarding the lyrics for the song 'At One, I Fall in Love.'^000000";
 					next;
 					mes "[Kino Kitty]";
 					mes "Hmm...";
-					mes "I'm insulted that Errende does not like the words I wrote for 'At One, I Fall in Love.' But, I suppose he is a romantic at " + mesitemlink(7855) + ".";
+					mes "I'm insulted that Errende does not like the words I wrote for 'At One, I Fall in Love.' But, I suppose he is a romantic at heart.";
 					next;
 					mes "[" + @name$ + "]";
 					mes "So...";
@@ -2017,7 +2017,7 @@ morocc,134,111,3	script	Bard#3	741,{
 					mes "Alright, listen.";
 					next;
 					mes "[Kino Kitty]";
-					mes "You'll need an " + mesitemlink(11004) + " of edda lyrics for the original words to the song. All the new books no longer contain the original version.";
+					mes "You'll need an old book of edda lyrics for the original words to the song. All the new books no longer contain the original version.";
 					next;
 					mes "[Kino Kitty]";
 					mes "I wonder...";
@@ -2223,7 +2223,7 @@ yuno_in01,163,101,0	script	Old Book#bq	111,{
 			next;
 			mes "[Collection of Eddas]";
 			mes "At Eight, we're both in love.";
-			mes "At Nine, you know my " + mesitemlink(7855) + ".";
+			mes "At Nine, you know my heart.";
 			mes "At Ten, I know you've";
 			mes "been waiting for me.";
 			next;
@@ -2270,14 +2270,14 @@ yuno_in01,173,96,0	script	Luke's Songs Vol.1	111,{
 			mes "At your most happy wedding.";
 			next;
 			mes "[Wedding Song]";
-			mes "With joy I strum my " + mesitemlink(1905) + "";
+			mes "With joy I strum my Lute";
 			mes "As that is my trade";
 			mes "To bring cheerful song";
 			mes "To your wedding parade.";
 			next;
 			mes "[Wedding Song]";
 			mes "For my songs, pay me";
-			mes "Not Zeny or " + mesitemlink(969) + ",";
+			mes "Not Zeny or Gold,";
 			mes "But the smile of the";
 			mes "Bride, if I may";
 			mes "be so bold.";
@@ -2375,7 +2375,7 @@ yuno_in01,173,94,0	script	Battle Songs	111,{
 		mes "Flare like thousands of Ifrits.";
 		next;
 		mes "[Drumming in the battlefield]";
-		mes "Hear the throbbing of my " + mesitemlink(7855) + ",";
+		mes "Hear the throbbing of my heart,";
 		mes "The blood flowing in my veins.";
 		mes "Feeling the heaviness of my armor.";
 		mes "The enemy has appeared before us.";
@@ -2429,8 +2429,8 @@ yuno_in01,173,92,0	script	Apple of Idun	111,{
 		next;
 		mes "[Apple of Idun]";
 		mes "Even Thor, the strongest of gods,";
-		mes "would grow frail, " + mesitemlink(2629) + " would";
-		mes "slip from his waist, and " + mesitemlink(1530) + "";
+		mes "would grow frail, Megingjard would";
+		mes "slip from his waist, and Mjolnir";
 		mes "would never fly again.";
 		next;
 		mes "[Apple of Idun]";
@@ -2451,7 +2451,7 @@ yuno_in01,173,92,0	script	Apple of Idun	111,{
 		next;
 		mes "[Apple of Idun]";
 		mes "If you share the";
-		mes "" + mesitemlink(512) + " of youth with me";
+		mes "Apple of youth with me";
 		mes "Even a bite of it with";
 		mes "This poor poet.";
 		next;
@@ -2575,7 +2575,7 @@ payon,181,172,3	script	Bard#4	51,{
 					mes "No money to make.";
 					next;
 					mes "^228B22Sold the";
-					mes "" + mesitemlink(2301) + "";
+					mes "Cotton Shirt";
 					mes "Off his back";
 					mes "No pity he'll take.^000000";
 					next;
@@ -2595,7 +2595,7 @@ payon,181,172,3	script	Bard#4	51,{
 					next;
 					mes "^228B22Bats, Dwarves, Eggs, Ants!";
 					mes "He battled them all~";
-					mes "Worm Peelings, " + mesitemlink(909) + "!";
+					mes "Worm Peelings, Jellopy!";
 					mes "He gathered loot great and small.";
 					next;
 					mes "^228B22Then the glorious day came";
@@ -2621,7 +2621,7 @@ payon,181,172,3	script	Bard#4	51,{
 					mes "^228B22Evergreen Yggdrasil~";
 					mes "Giant ashen tree";
 					mes "reaching for the sky.";
-					mes "Crystal, " + mesitemlink(6105) + "";
+					mes "Crystal, morning dew";
 					mes "From its leaves";
 					mes "Formed Urd's Pond.^000000";
 					next;
@@ -2656,7 +2656,7 @@ payon,181,172,3	script	Bard#4	51,{
 					mes "^228B22Guarded by a wise giant.";
 					mes "Odin sacrificed one";
 					mes "of his eyes for the wisdom.";
-					mes "Heimdall's " + mesitemlink(947) + " hidden";
+					mes "Heimdall's horn hidden";
 					mes "In Yggdrasil's roots";
 					mes "Will sound one last time";
 					mes "Signaling Ragnarok.^000000";
@@ -2704,10 +2704,10 @@ payon,181,172,3	script	Bard#4	51,{
 				case 1:
 					mes "[Gunther Doubleharmony]";
 					mes "Um, have you ever";
-					mes "tasted Comodo " + mesitemlink(548) + "?";
+					mes "tasted Comodo cheese?";
 					next;
 					mes "[Gunther Doubleharmony]";
-					mes "You can only taste it in Comodo, but you need to have a good strong stomach to digest it. Oh! And the " + mesitemlink(548) + " has a secret!";
+					mes "You can only taste it in Comodo, but you need to have a good strong stomach to digest it. Oh! And the cheese has a secret!";
 					next;
 					mes "[Gunther Doubleharmony]";
 					mes "You ^228B22might^000000 be invulnerable to the power of the doomed swords, which come from the other world, if you eat it!";

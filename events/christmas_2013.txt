@@ -50,7 +50,7 @@ xmas,150,134,3	script	Union Commander Cliff	10086,{
 			mes "We need more materials to hold a Christmas party for the Singles Union Army!";
 			next;
 			mes "[Union Commander Cliff]";
-			mes "Bring ^ff000010 " + mesitemlink(7909) + ", 10 " + mesitemlink(7910) + ", and 10 Bag Of Selling Goods^000000 from those damn raccoons!";
+			mes "Bring ^ff000010 Stolen Cookie, 10 Stolen Candy, and 10 Bag Of Selling Goods^000000 from those damn raccoons!";
 			close;
 		}
 		mes "[Union Commander Cliff]";
@@ -91,7 +91,7 @@ xmas,150,134,3	script	Union Commander Cliff	10086,{
 		mes "It's time to punish them and reclaim the items for the Singles Union Army!!";
 		next;
 		mes "[Union Commander Cliff]";
-		mes "^ff0000>10 " + mesitemlink(7909) + ", 10 " + mesitemlink(7910) + " and 10 Bag Of Selling Goods^000000 should be enough for the party. Find the raccoons on field maps and dungeons!";
+		mes "^ff0000>10 Stolen Cookie, 10 Stolen Candy and 10 Bag Of Selling Goods^000000 should be enough for the party. Find the raccoons on field maps and dungeons!";
 		next;
 		mes "[Union Commander Cliff]";
 		mes "It doesn't matter if you brought more, I will take them ALL!!";
@@ -609,7 +609,7 @@ xmas_in,32,99,5	script	Singles Union Kwami	10089,{
 		next;
 		mes "[Singles Union Kwami]";
 		mes "Were you.. eavesdropping?!";
-		mes "I just wanted to say we should find more members for the " + mesitemlink(1501) + "! Hahahahaha!";
+		mes "I just wanted to say we should find more members for the Club! Hahahahaha!";
 		next;
 		mes "[Singles Union Kwami]";
 		mes "I'll see you later, Rinka. I am going out to hunt down more couples. Don't tell the boss!";
@@ -1075,7 +1075,7 @@ xmas,138,174,5	script	Dark Lord#xmas	737,{
 			mes "I'll be yours forever!";
 			next;
 			mes "[Dark Lord]";
-			mes "I see...I can feel your " + mesitemlink(7855) + " now. Ok, let's go together... no matter how hard it will be!!";
+			mes "I see...I can feel your heart now. Ok, let's go together... no matter how hard it will be!!";
 			next;
 			mes "- I saved this world from darkess.";
 			mes "- though a couple was formed!";

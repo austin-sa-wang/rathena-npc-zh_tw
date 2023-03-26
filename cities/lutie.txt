@@ -323,7 +323,7 @@ xmas,176,236,4	script	Uncle Hairy	712,{
 			next;
 			delitem 1024,1;// Chinese_Ink
 			delitem 938,1;// Sticky_Mucus
-			mes "^3355FFYou quickly handed him the " + mesitemlink(1024) + " and " + mesitemlink(938) + " and watched with a little disgust as he relished the flavor.^000000";
+			mes "^3355FFYou quickly handed him the Squid Ink and Sticky Mucus and watched with a little disgust as he relished the flavor.^000000";
 			next;
 			mes "[Cantata]";
 			mes "*Burrrrpppp~*";
@@ -400,7 +400,7 @@ xmas,176,236,4	script	Uncle Hairy	712,{
 			mes "a man's drink. Hmmm, bring me...";
 			next;
 			mes "[Cantata]";
-			mes "^3355FF1 " + mesitemlink(1024) + "^000000 and";
+			mes "^3355FF1 Squid Ink^000000 and";
 			mes "^3355FF1 Sticky Muscus^000000!";
 			next;
 			mes "[Cantata]";
@@ -534,7 +534,7 @@ xmas,134,112,4	script	Snowman	710,{
 				mes "How did I ever get to this town? And how in the world am I able to talk?! I-It's not natural, is it? Does... Does that make me a monster?";
 				next;
 				mes "^3355FFSnowysnow is immersed in his deep thoughts, and seems^000000";
-				mes "^3355FFfixated on Poze's " + mesitemlink(934) + ".^000000";
+				mes "^3355FFfixated on Poze's memento.^000000";
 				set xmas_npc,3;
 				close2;
 				cutin "",255;
@@ -545,7 +545,7 @@ xmas,134,112,4	script	Snowman	710,{
 				mes "...";
 				next;
 				mes "^3355FFSnowysnow is immersed in his deep thoughts, and seems^000000";
-				mes "^3355FFfixated on Poze's " + mesitemlink(934) + ".^000000";
+				mes "^3355FFfixated on Poze's memento.^000000";
 				close2;
 				cutin "",255;
 				end;
@@ -580,7 +580,7 @@ xmas,134,112,4	script	Snowman	710,{
 				next;
 				cutin "rutie_snownow02.bmp",2;
 				mes "[Snowysnow]";
-				mes "Sure, he has a loud voice, doesn't take showers and smells like rotting food. But he's a funny guy with a warm " + mesitemlink(7855) + ". Everybody loves him!";
+				mes "Sure, he has a loud voice, doesn't take showers and smells like rotting food. But he's a funny guy with a warm heart. Everybody loves him!";
 				next;
 				mes "[Snowysnow]";
 				mes "Of course, he still enjoys drinking strange things. They say it's a miracle that he doesn't have a tummyache. Hee hee~! Oh, I love that guy!";
@@ -660,7 +660,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Wow~!";
-					mes "^3355FF5 " + mesitemlink(529) + "^000000!";
+					mes "^3355FF5 Candy^000000!";
 					mes "Congratulations!";
 					break;
 				case 2:
@@ -669,7 +669,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Ooh~!";
-					mes "^3355FF10 " + mesitemlink(529) + "^000000!";
+					mes "^3355FF10 Candy^000000!";
 					break;
 				case 3:
 					set xmas_npc,11;
@@ -677,7 +677,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Hoooraaaay~!";
-					mes "^3355FF5 " + mesitemlink(530) + "^000000!";
+					mes "^3355FF5 Candy Cane^000000!";
 					break;
 				case 4:
 					set xmas_npc,11;
@@ -685,7 +685,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Wow, that's so great!";
-					mes "^3355FF10 " + mesitemlink(530) + "^000000!";
+					mes "^3355FF10 Candy Cane^000000!";
 					break;
 				case 5:
 					set xmas_npc,11;
@@ -693,7 +693,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Aren't you lucky!";
-					mes "^3355FF1 " + mesitemlink(539) + "^000000!";
+					mes "^3355FF1 Piece Of Cake^000000!";
 					break;
 				case 6:
 					set xmas_npc,11;
@@ -701,7 +701,7 @@ xmas,134,112,4	script	Snowman	710,{
 					cutin "rutie_snownow02.bmp",2;
 					mes "[Snowysnow]";
 					mes "Now, isn't that nice?";
-					mes "^3355FF2 " + mesitemlink(539) + "^000000!";
+					mes "^3355FF2 Piece Of Cake^000000!";
 					break;
 				case 7:
 					set xmas_npc,11;
@@ -757,7 +757,7 @@ xmas,134,112,4	script	Snowman	710,{
 			mes "[Snowysnow]";
 			mes "Bye bye, friend~!";
 			mes "Thank you for listening me~";
-			mes "I'll see you again, someday! You'll always be in my " + mesitemlink(7855) + "~";
+			mes "I'll see you again, someday! You'll always be in my heart~";
 			close2;
 			cutin "",255;
 			end;

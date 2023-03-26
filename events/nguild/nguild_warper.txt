@@ -31,7 +31,7 @@
 prontera,146,163,6	script	Novice Castles	729,{
 	mes "[Cita]";
 	if (!getcharid(2)) {
-		mes "^FF0000You have to enter a guild to be able to hit " + mesitemlink(714) + "!^000000";
+		mes "^FF0000You have to enter a guild to be able to hit Emperium!^000000";
 	} else if (getgdskilllv(getcharid(2),10013) || 
 	         (getgdskilllv(getcharid(2),10000) +
 	          getgdskilllv(getcharid(2),10001) +

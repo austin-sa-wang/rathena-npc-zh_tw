@@ -29,7 +29,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 	switch(select("Purchase Anvil:Purchase Forging Item:Purchase Metal:Purify Rough Ores:Cancel")) {
 	case 1:
 		mes "[Christopher Guillenrow]";
-		mes "A better " + mesitemlink(986) + " gives ye a greeeater chance to make better weapons, ye know? But they'll cost ye more zeny. Just get it off yer chest and buy what fits your purposes best, laddy.";
+		mes "A better Anvil gives ye a greeeater chance to make better weapons, ye know? But they'll cost ye more zeny. Just get it off yer chest and buy what fits your purposes best, laddy.";
 		next;
 		switch(select("Anvil - 30,000 zeny:Oridecon Anvil - 120,000 zeny:Golden Anvil - 300,000 zeny:Better Anvil than the others.:Cancel.")) {
 		case 1:
@@ -52,7 +52,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			getitem 987,1; // Oridecon_Anvil
 			Zeny = Zeny-120000;
 			mes "[Christopher Guillenrow]";
-			mes "Aye, friend ye have an eye for the " + mesitemlink(986) + ". This must be the proper " + mesitemlink(986) + " for a Blacksmith, eh? Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
+			mes "Aye, friend ye have an eye for the anvil. This must be the proper anvil for a Blacksmith, eh? Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
 			close;
 		case 3:
 			if (Zeny < 300000) {
@@ -67,10 +67,10 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			close;
 		case 4:
 			mes "[Christopher Guillenrow]";
-			mes "Well, sorry. But I don't have anythin' harder' than the " + mesitemlink(988) + ".";
+			mes "Well, sorry. But I don't have anythin' harder' than the Golden Anvil.";
 			next;
 			mes "[Christopher Guillenrow]";
-			mes "Me thinks 'Ringgel,' the Legendary " + mesitemlink(986) + " Maker would have one. But, I don't think ye can find him, though he be somewhere in this world.";
+			mes "Me thinks 'Ringgel,' the Legendary Anvil Maker would have one. But, I don't think ye can find him, though he be somewhere in this world.";
 			close;
 		case 5:
 			mes "[Christopher Guillenrow]";
@@ -244,33 +244,33 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 		}
 	case 4:
 		mes "[Christopher Guillenrow]";
-		mes "I can purify yer " + mesitemlink(984) + " and " + mesitemlink(985) + ". I make a refined Ore out of 5 o'each rough ones. Well... Which one do ye want to make?";
+		mes "I can purify yer Oridecon and Elunium. I make a refined Ore out of 5 o'each rough ones. Well... Which one do ye want to make?";
 		next;
 		switch(select("Make Oridecon:Make Elunium:Cancel.")) {
 		case 1:
 			if (countitem(756) < 5) {
 				mes "[Christopher Guillenrow]";
-				mes "I told ye, I need 5 o'the rough Oridecons fer one " + mesitemlink(984) + ".";
+				mes "I told ye, I need 5 o'the rough Oridecons fer one Oridecon.";
 				close;
 			}
 			else {
 				delitem 756,5;  //Oridecon_Stone
 				getitem 984,1; // Oridecon
 				mes "[Christopher Guillenrow]";
-				mes "Here's an " + mesitemlink(984) + " fer ye. Ye will be always welcome here, I'll be waitin' for ye.";
+				mes "Here's an Oridecon fer ye. Ye will be always welcome here, I'll be waitin' for ye.";
 				close;
 			}
 		case 2:
 			if (countitem(757) < 5) {
 				mes "[Christopher Guillenrow]";
-				mes "I told ye, I need 5 rough Eluniums fer one " + mesitemlink(985) + ".";
+				mes "I told ye, I need 5 rough Eluniums fer one Elunium.";
 				close;
 			}
 			else {
 				delitem 757,5;  //Elunium_Stone
 				getitem 985,1; // Elunium
 				mes "[Christopher Guillenrow]";
-				mes "Arrr, here's yer " + mesitemlink(985) + ". Yer business is always welcome here, so feel free to come again.";
+				mes "Arrr, here's yer Elunium. Yer business is always welcome here, so feel free to come again.";
 				close;
 			}
 		case 3:
@@ -304,50 +304,50 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 	switch(select("Purchase Anvil.:Purchase Forging Items.:Purchase Metal.:Process Ores.:Quit.")) {
 	case 1:
 		mes "[Paul Spanner]";
-		mes "" + mesitemlink(986) + " is the most necessary item for Blacksmiths.";
-		mes "Since you will use an " + mesitemlink(986) + " more than once, you'd better buy a nice one.";
+		mes "Anvil is the most necessary item for Blacksmiths.";
+		mes "Since you will use an Anvil more than once, you'd better buy a nice one.";
 		next;
 		switch(select("Anvil - 30,000z.:Oridecon Anvil - 120,000z.:Golden Anvil - 300,000z.:I need a better anvil.:Cancel.")) {
 		case 1:
 			if (Zeny < 30000) {
 				mes "[Paul Spanner]";
-				mes "With that much of money, you cannot even buy a toy " + mesitemlink(986) + "!";
+				mes "With that much of money, you cannot even buy a toy anvil!";
 				close;
 			}
 			getitem 986,1; //Anvil
 			Zeny = Zeny-30000;
 			mes "[Paul Spanner]";
-			mes "It is the cheapest " + mesitemlink(986) + " which has the most basic ability.";
+			mes "It is the cheapest anvil which has the most basic ability.";
 			mes "Thank you for using my shop. If you need anything, just let me know.";
 			close;
 		case 2:
 			if (Zeny < 120000) {
 				mes "[Paul Spanner]";
-				mes "With that much of money, you cannot even buy a toy " + mesitemlink(986) + "!";
+				mes "With that much of money, you cannot even buy a toy anvil!";
 				close;
 			}
 			getitem 987,1; //Oridecon_Anvil
 			Zeny = Zeny-120000;
 			mes "[Paul Spanner]";
-			mes "Ah, you have an eye for " + mesitemlink(986) + ". A Blacksmith needs an " + mesitemlink(986) + " at least as good as this.";
+			mes "Ah, you have an eye for anvil. A Blacksmith needs an anvil at least as good as this.";
 			mes "Thank you for using my shop. If you need anything, just let me know.";
 			close;
 		case 3:
 			if (Zeny < 300000) {
 				mes "[Paul Spanner]";
-				mes "With that much of money, you cannot even buy a toy " + mesitemlink(986) + "!";
+				mes "With that much of money, you cannot even buy a toy anvil!";
 				close;
 			}
 			getitem 988,1; //Golden_Anvil
 			Zeny = Zeny-300000;
 			mes "[Paul Spanner]";
-			mes "I can tell your ambition to become a good Blacksmith just by looking at you to choose this " + mesitemlink(988) + "!";
-			mes "This " + mesitemlink(986) + " will surely aid you in creating the best weapons.";
+			mes "I can tell your ambition to become a good Blacksmith just by looking at you to choose this Golden Anvil!";
+			mes "This anvil will surely aid you in creating the best weapons.";
 			close;
 		case 4:
 			mes "[Paul Spanner]";
-			mes "I am sorry, but I do not sell better anvils than " + mesitemlink(988) + ".";
-			mes "Unless you find the legendary " + mesitemlink(986) + " of 'Linggell', I don't think that you could find better one than " + mesitemlink(988) + " in any other places.";
+			mes "I am sorry, but I do not sell better anvils than Golden Anvil.";
+			mes "Unless you find the legendary anvil of 'Linggell', I don't think that you could find better one than Golden Anvil in any other places.";
 			close;
 		case 5:
 			mes "[Paul Spanner]";
@@ -479,14 +479,14 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 		close;
 	case 4:
 		mes "[Paul Spanner]";
-		mes "I can process " + mesitemlink(984) + " and " + mesitemlink(985) + " for you.";
-		mes "You need 5 ores to process them into one " + mesitemlink(984) + " or " + mesitemlink(985) + ".";
+		mes "I can process Oridecon and Elunium for you.";
+		mes "You need 5 ores to process them into one Oridecon or Elunium.";
 		mes "So, which one do you want to process?";
 		switch(select("Oridecon:Elunium:Quit.")) {
 		case 1:
 			if (countitem(756) < 5) {
 				mes "[Paul Spanner]";
-				mes "You need 5 ores to process them into one pure " + mesitemlink(984) + ".";
+				mes "You need 5 ores to process them into one pure Oridecon.";
 				close;
 			}
 			else {
@@ -499,7 +499,7 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 		case 2:
 			if (countitem(757) < 5) {
 				mes "[Paul Spanner]";
-				mes "You need 5 ores to process them into one pure " + mesitemlink(985) + ".";
+				mes "You need 5 ores to process them into one pure Elunium.";
 				close;
 			}
 			else {
@@ -937,7 +937,7 @@ function	script	refinemain	{
 			mes "["+ .@npc_name$ +"]";
 			mes "Clang... No, but did you imagine I could be so stupid?!";
 			mes "You changed it...";
-			mes "Get out before I stun you with my " + mesitemlink(1354) + "!!";
+			mes "Get out before I stun you with my Hammer!!";
 			close;
 		} 
 		mes "Clang, clang!!!";
@@ -1027,7 +1027,7 @@ function	script	phramain	{
 	case 3:
 		mes "["+ .@npc_name$ +"]";
 		mes "Other metals?";
-		mes "Well, you'll need special metals to upgrade higher level weapons, or any kind of armor. But you know, " + mesitemlink(984) + " and " + mesitemlink(985) + " is really";
+		mes "Well, you'll need special metals to upgrade higher level weapons, or any kind of armor. But you know, Oridecon and Elunium is really";
 		mes "hard to just find...";
 		close;
 	}
@@ -1135,7 +1135,7 @@ function	script	orimain	{
 			delitem 756,5;  //Oridecon_Stone
 			getitem 984,1; // Oridecon
 			mes "["+ .@npc_name$ +"]";
-			mes "Here's your " + mesitemlink(984) + ".";
+			mes "Here's your Oridecon.";
 			mes "You're welcome to come";
 			mes "back whenever you want.";
 			close;
@@ -1143,7 +1143,7 @@ function	script	orimain	{
 		else {
 			mes "["+ .@npc_name$ +"]";
 			mes "You're kidding me, right?";
-			mes "I just told you that I need 5 Rough Oridecons to make a pure " + mesitemlink(984) + ".";
+			mes "I just told you that I need 5 Rough Oridecons to make a pure Oridecon.";
 			close;
 		}
 	case 2:
@@ -1151,7 +1151,7 @@ function	script	orimain	{
 			delitem 757,5;  //Elunium_Stone
 			getitem 985,1; // Elunium
 			mes "["+ .@npc_name$ +"]";
-			mes "Here's your " + mesitemlink(985) + ".";
+			mes "Here's your Elunium.";
 			mes "You're welcome to come";
 			mes "back whenever you want.";
 			close;
@@ -1159,7 +1159,7 @@ function	script	orimain	{
 		else {
 			mes "["+ .@npc_name$ +"]";
 			mes "You're kidding me, right?";
-			mes "I just told you that I need 5 Rough Eluniums to make a pure " + mesitemlink(985) + ".";
+			mes "I just told you that I need 5 Rough Eluniums to make a pure Elunium.";
 			close;
 		}
 	case 3:

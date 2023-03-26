@@ -32,27 +32,27 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 		mes "We have a system that allows you";
 		mes "to get your hands on these";
 		mes "cool items without burden!";
-		mes "" + mesitemlink(626) + " !";
-		mes "" + mesitemlink(629) + " !";
-		mes "Aaand...." + mesitemlink(10009) + " !";
+		mes "Monster Juice !";
+		mes "Singing Flower !";
+		mes "Aaand....Wild Flower !";
 		next;
 		mes "[Iwado]";
 		mes "To make";
-		mes "" + mesitemlink(626) + ", you need";
-		mes "^3355FF1 " + mesitemlink(702) + "^000000 and";
-		mes "^3355FF2 " + mesitemlink(512) + "^000000.";
+		mes "Monster Juice, you need";
+		mes "^3355FF1 Animal Gore^000000 and";
+		mes "^3355FF2 Apple^000000.";
 		next;
 		mes "[Iwado]";
-		mes "For 1 " + mesitemlink(629) + ",";
+		mes "For 1 Singing Flower,";
 		mes "you will need";
-		mes "^3355FF1 " + mesitemlink(707) + "^000000.";
+		mes "^3355FF1 Singing Plant^000000.";
 		next;
 		mes "[Iwado]";
 		mes "If you want me to make";
-		mes "1 " + mesitemlink(10009) + ",";
+		mes "1 Wild Flower,";
 		mes "just give me";
-		mes "^3355FF1 " + mesitemlink(2207) + "^000000 and";
-		mes "^3355FF1 " + mesitemlink(705) + "^000000.";
+		mes "^3355FF1 Fancy Flower^000000 and";
+		mes "^3355FF1 Clover^000000.";
 		close;
 	case 2:
 		mes "[Iwado]";
@@ -64,7 +64,7 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 		next;
 		if ((countitem(702) > 0) && (countitem(512) > 1)) {
 			mes "[Iwado]";
-			mes "Oh ! You have all the items to make 1 " + mesitemlink(626) + "! Good, good! With all my pride as a monster tamer, I will make one for you right now.";
+			mes "Oh ! You have all the items to make 1 Monster Juice! Good, good! With all my pride as a monster tamer, I will make one for you right now.";
 			next;
 			mes "[Iwado]";
 			mes "Got to twist these apples...";
@@ -77,7 +77,7 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 			mes "Please take it for the";
 			mes "cute monster you";
 			mes "are raising.";
-			mes "" + mesitemlink(626) + "!";
+			mes "Monster Juice!";
 			delitem 512,2;  //Apple
 			delitem 702,1;  //Animal_Blood
 			getitem 626,1; // Monster_Juice
@@ -86,26 +86,26 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 		else {
 			mes "[Iwado]";
 			mes "For the monster owner";
-			mes "that loves to use " + mesitemlink(626) + "...";
-			mes "I have mastered the recipe for " + mesitemlink(626) + "!";
+			mes "that loves to use monster juice...";
+			mes "I have mastered the recipe for Monster Juice!";
 			next;
 			mes "[Iwado]";
 			mes "If you bring me";
-			mes "^3355FF1 " + mesitemlink(702) + "^000000 and";
-			mes "^3355FF2 " + mesitemlink(512) + "^000000";
+			mes "^3355FF1 Animal Gore^000000 and";
+			mes "^3355FF2 Apple^000000";
 			mes "With all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
 	case 3:
 		mes "[Iwado]";
-		mes "A " + mesitemlink(712) + " with a song that is";
+		mes "A flower with a song that is";
 		mes "far beyond human comprehension!";
-		mes "Its name? ^3355FFSinging " + mesitemlink(712) + "^000000!!";
+		mes "Its name? ^3355FFSinging Flower^000000!!";
 		mes "A scent that makes you dizzy with pleasure. A perfect item for monsters...";
 		next;
 		if (countitem(707) > 0) {
 			mes "[Iwado]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(629) + "!! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
+			mes "Oh! You have all the items necessary to make 1 Singing Flower!! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
 			next;
 			mes "[Iwado]";
 			mes "Got to...";
@@ -119,7 +119,7 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 			mes "Please take it for the";
 			mes "cute monster you";
 			mes "are raising.";
-			mes "" + mesitemlink(629) + "!";
+			mes "Singing Flower!";
 			delitem 707,1;  //Singing_Plant
 			getitem 629,1; // Singing_Flower
 			close;
@@ -127,23 +127,23 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 		else {
 			mes "[Iwado]";
 			mes "For the monster owner";
-			mes "that loves to use " + mesitemlink(629) + "...";
+			mes "that loves to use Singing Flower...";
 			mes "I provide a way to make";
-			mes "1 " + mesitemlink(629) + "!";
+			mes "1 Singing Flower!";
 			next;
 			mes "[Iwado]";
 			mes "If you bring me";
-			mes "^3355FF1 " + mesitemlink(707) + " ^000000,";
+			mes "^3355FF1 Singing Plant ^000000,";
 			mes "With all my pride as a monster tamer, I will make one for you right away!";
 			close;
 		}
 	case 4:
 		mes "[Iwado]";
-		mes "This is a " + mesitemlink(712) + " that is far beyond what humans can gaze at! Its name? ^3355FFWild " + mesitemlink(712) + "^000000 !! A troublesome design, but perfect for monsters!";
+		mes "This is a flower that is far beyond what humans can gaze at! Its name? ^3355FFWild Flower^000000 !! A troublesome design, but perfect for monsters!";
 		next;
 		if ((countitem(2207) > 0) && (countitem(705) > 0)) {
 			mes "[Iwado]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(10009) + "! Good! Good! With all my pride as a monster tamer, I will make one for you right away.";
+			mes "Oh! You have all the items necessary to make 1 Wild Flower! Good! Good! With all my pride as a monster tamer, I will make one for you right away.";
 			next;
 			mes "[IWado]";
 			mes "Got to twist this...";
@@ -156,7 +156,7 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 			mes "Please take it for the";
 			mes "cute monsters you";
 			mes "are raising.";
-			mes "" + mesitemlink(10009) + "!";
+			mes "Wild Flower!";
 			delitem 2207,1;  //Fancy_Flower
 			delitem 705,1;  //Clover
 			getitem 10009,1; // Wild_Flower
@@ -165,13 +165,13 @@ alberta_in,173,76,4	script	Monster Tamer#alb	125,{
 		else {
 			mes "[Iwado]";
 			mes "For the monster owner";
-			mes "that loves to use " + mesitemlink(10009) + "...";
+			mes "that loves to use Wild Flower...";
 			mes "I provide a way to make";
-			mes "1 " + mesitemlink(10009) + "!";
+			mes "1 Wild Flower!";
 			next;
 			mes "[Iwado]";
-			mes "^3355FF1 " + mesitemlink(2207) + "^000000 and";
-			mes "^3355FF1 " + mesitemlink(705) + "^000000";
+			mes "^3355FF1 Fancy Flower^000000 and";
+			mes "^3355FF1 Clover^000000";
 			mes "is all I need! If you bring those to me, I will make one for you with all my pride as a monster tamer!";
 			close;
 		}
@@ -207,34 +207,34 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		next;
 		mes "[YuU]";
 		mes "We provide a system that allows you to get your hands on these cool items with less of the hassle!";
-		mes "" + mesitemlink(10007) + " !";
-		mes "" + mesitemlink(10002) + " !";
-		mes "" + mesitemlink(10001) + " !";
+		mes "Silk Ribbon !";
+		mes "Monster Oxygen Mask !";
+		mes "Skull Helm !";
 		next;
 		mes "[YuU]";
-		mes "" + mesitemlink(10011) + " !";
-		mes "" + mesitemlink(10012) + " !!";
-		mes "" + mesitemlink(10014) + " !!!";
+		mes "Stellar Hairpin !";
+		mes "Tiny Egg Shell !!";
+		mes "Rocker Glasses !!!";
 		next;
 		mes "[YuU]";
-		mes "1 " + mesitemlink(10001) + " requires";
-		mes "1 ^3355FFBone " + mesitemlink(2228) + "^000000";
+		mes "1 Skull Helm requires";
+		mes "1 ^3355FFBone Helm^000000";
 		next;
 		mes "[YuU]";
-		mes "1 " + mesitemlink(10002) + " requires";
+		mes "1 Monster Oxygen Mask requires";
 		mes "1 ^3355FFOxygen Mask^000000.";
 		next;
 		mes "[YuU]";
-		mes "1 " + mesitemlink(10007) + " requires";
+		mes "1 Silk Ribbon requires";
 		mes "1 ^3355FFRibbon^000000.";
 		next;
 		mes "[YuU]";
-		mes "1 " + mesitemlink(10011) + " requires";
+		mes "1 Stellar Hairpin requires";
 		mes "1 ^3355FFStellar^000000.";
 		next;
 		mes "[YuU]";
-		mes "1 " + mesitemlink(10012) + " requires";
-		mes "1 ^3355FFEgg " + mesitemlink(935) + "^000000.";
+		mes "1 Tiny Egg Shell requires";
+		mes "1 ^3355FFEgg Shell^000000.";
 		next;
 		mes "[YuU]";
 		mes "1 Rocker Glassess requires";
@@ -247,15 +247,15 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		close;
 	case 2:
 		mes "[YuU]";
-		mes "This is an item far beyond what humans can wear! Its name? ^3355FFSkull " + mesitemlink(2228) + "^000000! Disgusting on humans, but cute on monsters.";
+		mes "This is an item far beyond what humans can wear! Its name? ^3355FFSkull Helm^000000! Disgusting on humans, but cute on monsters.";
 		next;
 		if (countitem(5017) > 0) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make " + mesitemlink(10001) + "! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
+			mes "Oh! You have all the items necessary to make Skull Helm! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
 			next;
 			mes "[YuU]";
 			mes "Got to rub";
-			mes "this " + mesitemlink(5017) + "";
+			mes "this Bone Helm";
 			mes "just right...";
 			next;
 			mes "[YuU]";
@@ -263,32 +263,32 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take this for";
 			mes "the cute monster you";
 			mes "are raising.";
-			mes "" + mesitemlink(10001) + "!";
+			mes "Skull Helm!";
 			delitem 5017,1;  //Bone_Helm
 			getitem 10001,1; // Skull_Helm
 			close;
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that loves to spoil his or her monster, we provide one way to make a " + mesitemlink(10001) + ".";
+			mes "For the monster owner that loves to spoil his or her monster, we provide one way to make a Skull Helm.";
 			next;
 			mes "[YuU]";
 			mes "Just bring me...";
-			mes "^3355FF1 " + mesitemlink(5017) + "^000000!";
+			mes "^3355FF1 Bone Helm^000000!";
 			mes "With all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
 	case 3:
 		mes "[YuU]";
-		mes "This item is far beyond what humans can wear. Its name? ^3355FFMonster " + mesitemlink(5004) + "^000000! Show your monster that you care with this special gift.";
+		mes "This item is far beyond what humans can wear. Its name? ^3355FFMonster Oxygen Mask^000000! Show your monster that you care with this special gift.";
 		next;
 		if (countitem(5004) > 0) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(10002) + "! Good, Good! With all my pride as a monster tamer, I will make it for you right away.";
+			mes "Oh! You have all the items necessary to make 1 Monster Oxygen Mask! Good, Good! With all my pride as a monster tamer, I will make it for you right away.";
 			next;
 			mes "[YuU]";
 			mes "Got to pull apart";
-			mes "this " + mesitemlink(5004) + "";
+			mes "this Oxygen Mask";
 			mes "just right...";
 			next;
 			mes "^3355FF*Flip flop... Zowie!*^000000";
@@ -298,32 +298,32 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take it for";
 			mes "the cute monster you";
 			mes "are raising...";
-			mes "" + mesitemlink(10002) + "!";
+			mes "Monster Oxygen Mask!";
 			delitem 5004,1;  //Oxygen_Mask
 			getitem 10002,1; // Monster_Oxygen_Mask
 			close;
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that wants to pamper his or her monster with its very own breathing apparatus, we provide a way to create 1 " + mesitemlink(10002) + "!";
+			mes "For the monster owner that wants to pamper his or her monster with its very own breathing apparatus, we provide a way to create 1 Monster Oxygen Mask!";
 			next;
 			mes "[YuU]";
 			mes "Bring me...";
-			mes "^3355FF1 " + mesitemlink(5004) + "^000000.";
+			mes "^3355FF1 Oxygen Mask^000000.";
 			mes "With all my pride as a monster tamer, I will make it for you right away!";
 			close;
 		}
 	case 4:
 		mes "[YuU]";
-		mes "This is not an item that a normal human would dare to wear! Its name? ^3355FFSilk " + mesitemlink(2208) + "^000000! Its perfect for monsters!";
+		mes "This is not an item that a normal human would dare to wear! Its name? ^3355FFSilk Ribbon^000000! Its perfect for monsters!";
 		next;
 		if (countitem(2208) > 0) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(10007) + "! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
+			mes "Oh! You have all the items necessary to make 1 Silk Ribbon! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
 			next;
 			mes "[YuU]";
 			mes "Got to unravel";
-			mes "this " + mesitemlink(2208) + "";
+			mes "this ribbon";
 			mes "just right...";
 			next;
 			mes "[YuU]";
@@ -331,18 +331,18 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take it for";
 			mes "the cute monster you";
 			mes "are raising.";
-			mes "" + mesitemlink(10007) + "!";
+			mes "Silk Ribbon!";
 			delitem 2208,1;  //Ribbon
 			getitem 10007,1; // Silk_Ribbon
 			close;
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that is fond of elegantly dressing their pets, we provide a way to create 1 " + mesitemlink(10007) + "!";
+			mes "For the monster owner that is fond of elegantly dressing their pets, we provide a way to create 1 Silk Ribbon!";
 			next;
 			mes "[YuU]";
 			mes "Just bring me...";
-			mes "^3355FF1 " + mesitemlink(2208) + "^000000!";
+			mes "^3355FF1 Ribbon^000000!";
 			mes "with all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
@@ -352,7 +352,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		next;
 		if (countitem(2294) > 0) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(2294) + "! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
+			mes "Oh! You have all the items necessary to make 1 Stellar! Good, good! With all my pride as a monster tamer, I will make it for you right away.";
 			next;
 			mes "[YuU]";
 			mes "Now, if I can";
@@ -366,28 +366,28 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take it for";
 			mes "the cute monster you";
 			mes "are raising";
-			mes "" + mesitemlink(10011) + "!";
+			mes "Stellar Hairpin!";
 			delitem 2294,1;  // Stellar
 			getitem 10011,1; // Stellar_Hairpin
 			close;
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that want the best for their cute pet, we provide a wait to create 1 " + mesitemlink(10011) + "!";
+			mes "For the monster owner that want the best for their cute pet, we provide a wait to create 1 Stellar Hairpin!";
 			next;
 			mes "[YuU]";
 			mes "Just bring me...";
-			mes "^3355FF 1 " + mesitemlink(2294) + " !^000000";
+			mes "^3355FF 1 Stellar !^000000";
 			mes "with all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
 	case 6:
 		mes "[YuU]";
-		mes "This is far beyond what the headwear that humans can don. Its name? ^3355FFTiny " + mesitemlink(5015) + "^000000! It has the shine of marble and the glow of youth!";
+		mes "This is far beyond what the headwear that humans can don. Its name? ^3355FFTiny Egg Shell^000000! It has the shine of marble and the glow of youth!";
 		next;
 		if (countitem(5015) > 0) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(10012) + "! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
+			mes "Oh! You have all the items necessary to make 1 Tiny Egg Shell! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
 			next;
 			mes "[YuU]";
 			mes "Got to";
@@ -401,31 +401,31 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take it for";
 			mes "the cute monster you";
 			mes "are raising";
-			mes "" + mesitemlink(10012) + "!";
+			mes "Tiny Egg Shell!";
 			delitem 5015,1;  //Egg_Shell
 			getitem 10012,1; // Tiny_Egg_Shell
 			close;
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that is fond of eggs and fonder of " + mesitemlink(574) + " shells, we provide a way to create 1 " + mesitemlink(10012) + "!";
+			mes "For the monster owner that is fond of eggs and fonder of egg shells, we provide a way to create 1 Tiny Egg Shell!";
 			next;
 			mes "[YuU]";
 			mes "Just bring me...";
-			mes "^3355FF1 " + mesitemlink(10012) + "^000000!";
+			mes "^3355FF1 Tiny Egg Shell^000000!";
 			mes "with all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
 	case 7:
 		mes "[YuU]";
-		mes "Ah yes, this is eyewear far beyond the " + mesitemlink(2203) + " of normal humans. Its name? ^3355FFRocker " + mesitemlink(2203) + "^000000! Suave eyewear for suave monsters~";
+		mes "Ah yes, this is eyewear far beyond the glasses of normal humans. Its name? ^3355FFRocker Glasses^000000! Suave eyewear for suave monsters~";
 		next;
 		if ((countitem(912) > 1) && (countitem(2208) > 0) && (Zeny > 399)) {
 			mes "[YuU]";
-			mes "Oh! You have all the items necessary to make 1 " + mesitemlink(10014) + "! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
+			mes "Oh! You have all the items necessary to make 1 Rocker Glasses! Good, good! With all my pride as a monster tamer, I will make it for you right away!";
 			next;
 			mes "[YuU]";
-			mes "Okay, now all I gotta do is take this " + mesitemlink(912) + " and, um, make " + mesitemlink(2203) + " lenses out of them. Somehow.";
+			mes "Okay, now all I gotta do is take this Zargon and, um, make glasses lenses out of them. Somehow.";
 			next;
 			mes "^3355FF*Squeak squeak crush snap*^000000";
 			next;
@@ -435,7 +435,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take this for";
 			mes "the cute monster you";
 			mes "are raising.";
-			mes "" + mesitemlink(10014) + "!";
+			mes "Rocker Glasses!";
 			delitem 912,2;  //Zargon
 			delitem 2208,1;  //Ribbon
 			set Zeny,Zeny-400;
@@ -444,12 +444,12 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		}
 		else {
 			mes "[YuU]";
-			mes "For the monster owner that likes monster " + mesitemlink(2203) + ", we provide a way to make " + mesitemlink(10014) + "!";
+			mes "For the monster owner that likes monster glasses, we provide a way to make Rocker Glasses!";
 			next;
 			mes "[YuU]";
 			mes "Just bring me...";
-			mes "^3355FF2 " + mesitemlink(912) + "^000000";
-			mes "^3355FF1 " + mesitemlink(2208) + "^000000 and";
+			mes "^3355FF2 Zargon^000000";
+			mes "^3355FF1 Ribbon^000000 and";
 			mes "^3355FF400 zeny^000000. ";
 			mes "I will make it for you, with all my pride as a monster tamer!";
 			close;
@@ -481,22 +481,22 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		mes "[Shogo]";
 		mes "We provide a system that allows you to get your hands on these cool items with less of the hassle!";
 		mes "Book of Devil!";
-		mes "" + mesitemlink(636) + "!";
-		mes "" + mesitemlink(635) + "!";
+		mes "No Recipient!";
+		mes "Orc Trophy!";
 		next;
 		mes "[Shogo]";
 		mes "For 1 Book of Devil, you can exchange:";
 		mes "^3355FF1 Old Magic Book^000000";
-		mes "^3355FF2 " + mesitemlink(958) + "^000000.";
+		mes "^3355FF2 Horrendous Mouth^000000.";
 		next;
 		mes "[Shogo]";
-		mes "For 1 " + mesitemlink(636) + ", you can exchange ^3355FF1 " + mesitemlink(7014) + "^000000.";
+		mes "For 1 No Recipient, you can exchange ^3355FF1 Old Portrait^000000.";
 		next;
 		mes "[Shogo]";
 		mes "Lastly, you can exchange";
-		mes "^3355FF1 " + mesitemlink(1004) + "^000000 and";
-		mes "^3355FF1 " + mesitemlink(904) + "^000000";
-		mes "for 1 " + mesitemlink(635) + ".";
+		mes "^3355FF1 Chivalry Emblem^000000 and";
+		mes "^3355FF1 Scorpion Tail^000000";
+		mes "for 1 Orc Trophy.";
 		mes "Try these fantastic items!";
 		close;
 	case 2:
@@ -530,8 +530,8 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			next;
 			mes "[Shogo]";
 			mes "Just bring me...";
-			mes "^3355FF1 " + mesitemlink(1006) + "^000000 and";
-			mes "^3355FF2 " + mesitemlink(958) + "^000000!";
+			mes "^3355FF1 Old Magicbook^000000 and";
+			mes "^3355FF2 Horrendous Mouth^000000!";
 			mes "If you bring me these items, with all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
@@ -541,10 +541,10 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		next;
 		if (countitem(7014) > 0) {
 			mes "[Shogo]";
-			mes "Oh! You have all the items necessary to make " + mesitemlink(636) + "! Good, good! With all my pride as a monster tamer, I will make one for you right away.";
+			mes "Oh! You have all the items necessary to make No Recipient! Good, good! With all my pride as a monster tamer, I will make one for you right away.";
 			next;
 			mes "[Shogo]";
-			mes "Got to fold this " + mesitemlink(7014) + " just right...";
+			mes "Got to fold this Old Portrait just right...";
 			next;
 			mes "^3355FF*Scrape scrape brush brush*^000000";
 			next;
@@ -553,18 +553,18 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take this item";
 			mes "for the cute monster";
 			mes "you are raising.";
-			mes "" + mesitemlink(636) + "!";
+			mes "No Recipient!";
 			delitem 7014,1;  //Old_Portrait
 			getitem 636,1; // No_Recipient
 			close;
 		}
 		else {
 			mes "[Shogo]";
-			mes "For the monster owner that is fond of " + mesitemlink(636) + ", we provide a way to create to special item!";
+			mes "For the monster owner that is fond of No Recipient, we provide a way to create to special item!";
 			next;
 			mes "[Shogo]";
 			mes "Just bring me...";
-			mes "^3355FF1 " + mesitemlink(7014) + "^000000!";
+			mes "^3355FF1 Old Portrait^000000!";
 			mes "If you bring this to me, with all my pride as a monster tamer, I will make it for you!";
 			close;
 		}
@@ -576,11 +576,11 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 		next;
 		if ((countitem(1004) > 0) && (countitem(904) > 0)) {
 			mes "[Shogo]";
-			mes "Oh! You have all the items necessary to make an " + mesitemlink(635) + "! Good, good! With all my pride as a monster tamer, let me make one for you right away!";
+			mes "Oh! You have all the items necessary to make an Orc Trophy! Good, good! With all my pride as a monster tamer, let me make one for you right away!";
 			next;
 			mes "[Shogo]";
 			mes "Got to...";
-			mes "Fit this " + mesitemlink(904) + "...";
+			mes "Fit this Scorpion Tail...";
 			mes "Just right...";
 			next;
 			mes "^3355FF*Clang clang Boong*^000000";
@@ -590,7 +590,7 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "Please take this for";
 			mes "the cute monster";
 			mes "you are raising...";
-			mes "" + mesitemlink(635) + "!";
+			mes "Orc Trophy!";
 			delitem 904,1;  //Scorpion's_Tail
 			delitem 1004,1;  //Patriotism_Marks
 			getitem 635,1; // Horror_Of_Tribe
@@ -601,8 +601,8 @@ aldeba_in,168,175,4	script	Monster Tamer#alde	125,{
 			mes "For the monster owner";
 			mes "who is fond of Horror of Tribe...";
 			mes "One way to make Horror of Tribe !";
-			mes "^3355FF 1 " + mesitemlink(1004) + "^000000!";
-			mes "^3355FF 1 " + mesitemlink(904) + "^000000!";
+			mes "^3355FF 1 Chivalry Emblem^000000!";
+			mes "^3355FF 1 Scorpion Tail^000000!";
 			next;
 			mes "[Shogo]";
 			mes "If you bring these items to me,";

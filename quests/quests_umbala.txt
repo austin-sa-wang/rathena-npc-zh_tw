@@ -159,14 +159,14 @@ um_in,39,122,5	script	Utan Chief	784,{
 				mes "items ready so that we may proceed";
 				mes "with the lessons. First, we need";
 				mes "two different kinds of paper.";
-				mes "^3377FF10 " + mesitemlink(7151) + "^000000 and ";
-				mes "^3377FF5 " + mesitemlink(7111) + "^000000.";
+				mes "^3377FF10 Oil Paper^000000 and ";
+				mes "^3377FF5 Slick Paper^000000.";
 				next;
 				mes "[Karkatan]";
 				mes "We'll also need something to";
 				mes "write with. Let's use";
-				mes "^3377FF1 " + mesitemlink(1024) + "^000000 and";
-				mes "^3377FF1 " + mesitemlink(916) + "^000000.";
+				mes "^3377FF1 Squid Ink^000000 and";
+				mes "^3377FF1 Feather of Birds^000000.";
 				mes "Please bring me those, and I will";
 				mes "teach you when you're ready.";
 				set event_umbala,2;
@@ -284,10 +284,10 @@ um_in,39,122,5	script	Utan Chief	784,{
 			mes "so that we can start the lesson.";
 			next;
 			mes "[Karkatan]";
-			mes "^3377FF10 " + mesitemlink(7151) + "^000000,";
-			mes "^3377FF5 " + mesitemlink(7111) + "^000000,";
-			mes "^3377FF1 " + mesitemlink(1024) + "^000000,";
-			mes "^3377FF1 " + mesitemlink(916) + "^000000.";
+			mes "^3377FF10 Oil Paper^000000,";
+			mes "^3377FF5 Slick Paper^000000,";
+			mes "^3377FF1 Squid Ink^000000,";
+			mes "^3377FF1 Feather of Birds^000000.";
 			mes "When you bring all of these,";
 			mes "I will teach you our language.";
 			close;
@@ -308,7 +308,7 @@ um_in,39,122,5	script	Utan Chief	784,{
 			mes "that was made in Rune-Midgarts...";
 			next;
 			mes "[Karkatan]";
-			mes "I wish to have ^3377FF1 " + mesitemlink(2278) + "^000000.";
+			mes "I wish to have ^3377FF1 Mr. Smile^000000.";
 			mes "To Utans, receiving a mask as a";
 			mes "present is considered an";
 			mes "honor. Maybe Puchuchartan";
@@ -338,7 +338,7 @@ um_in,39,122,5	script	Utan Chief	784,{
 			else {
 				mes "[Karkatan]";
 				mes "Did I tell you that you need";
-				mes "^3377FF1 " + mesitemlink(2278) + "^000000?";
+				mes "^3377FF1 Mr. Smile^000000?";
 				mes "Please bring that as proof";
 				mes "of your goodwill, as well";
 				mes "as your sense of honor.";
@@ -572,7 +572,7 @@ um_in,44,71,2	script	Utan Shaman	782,{
 			case 993:
 				mes "I am putting these horns into a"; break;
 			}
-			mes "boiling " + mesitemlink(7482) + ", and casting a";
+			mes "boiling pot, and casting a";
 			mes "sacred incantation. Remember";
 			mes "the number you entered.";
 			next;
@@ -634,8 +634,8 @@ um_in,44,71,2	script	Utan Shaman	782,{
 				mes "[Puchuchartan]";
 				mes "Ambernite...the spirit of";
 				mes "water is contained within its";
-				mes "protective " + mesitemlink(935) + "...";
-				mes "I will need ^3377FF20 " + mesitemlink(946) + ".^000000";
+				mes "protective shell...";
+				mes "I will need ^3377FF20 Snail's Shell.^000000";
 				break;
 			case 992:
 				mes "Wind property...";
@@ -655,10 +655,10 @@ um_in,44,71,2	script	Utan Shaman	782,{
 				mes "the spirit of the Earth.";
 				next;
 				mes "[Puchuchartan]";
-				mes "" + mesitemlink(947) + "...that dwells in the forest";
+				mes "Horn...that dwells in the forest";
 				mes "is filled with the spirits of";
-				mes "earth and " + mesitemlink(6008) + "..." + mesitemlink(947) + "...";
-				mes "I need ^3377FF15 " + mesitemlink(947) + "^000000 from Horns.";
+				mes "earth and wood...Horn...";
+				mes "I need ^3377FF15 Horn^000000 from Horns.";
 				break;
 			}
 			mes "[Puchuchartan]";
@@ -792,7 +792,7 @@ um_in,44,71,2	script	Utan Shaman	782,{
 					break;
 				case 996:
 					mes "wind stones? Then I will need";
-					mes "you to bring "+input_want+" pure " + mesitemlink(7523) + ".";
+					mes "you to bring "+input_want+" pure wind stone.";
 					break;
 				case 997: 
 					mes "earth stones? Then I'll need";
@@ -829,7 +829,7 @@ umbala,221,193,1	script	#Skulldoor	111,{
 		end;
 	}
 	else {
-		mes "^3355FFA human " + mesitemlink(7005) + " disturbingly";
+		mes "^3355FFA human skull disturbingly";
 		mes "hangs beside the door. The door is";
 		mes "locked tight, so you can't get in.";
 		mes "As you peer through the keyhole,";
@@ -837,14 +837,14 @@ umbala,221,193,1	script	#Skulldoor	111,{
 		next;
 		if (select("Examine the skull.:Quit.") == 1) {
 			mes "^3355FFYou see that the eye sockets";
-			mes "of the " + mesitemlink(7005) + " are empty.";
+			mes "of the skull are empty.";
 			mes "How peculiar...";
 			mes "It seems that Gemstones";
 			mes "would fit perfectly inside of";
 			mes "them.^000000";
 			next;
 			mes "^3355FFYou see the left eye socket of the";
-			mes "" + mesitemlink(7005) + ". What do you want to do?^000000";
+			mes "skull. What do you want to do?^000000";
 			next;
 			switch(select("Leave it as it is.:Insert a Blue Gemstone.:Insert a Yellow Gemstone.:Insert a Red Gemstone.")) {
 			case 1:
@@ -866,8 +866,8 @@ umbala,221,193,1	script	#Skulldoor	111,{
 					mes "^3355FFYou inserted a "+getitemname(.@insert)+"";
 					mes "into the eye socket.^000000";
 					next;
-					mes "^3355FFThe " + mesitemlink(7300) + " rolled back out of";
-					mes "the mouth of the " + mesitemlink(7005) + ".^000000";
+					mes "^3355FFThe gemstone rolled back out of";
+					mes "the mouth of the skull.^000000";
 					set .@skulldoor,.@skulldoor+1;
 					switch (.@insert) {
 					case 715: set .@skull,2; break;
@@ -886,7 +886,7 @@ umbala,221,193,1	script	#Skulldoor	111,{
 				}
 			}
 			mes "^3355FFYou see the right eye socket of";
-			mes "the " + mesitemlink(7005) + ". What do you want to do?^000000";
+			mes "the skull. What do you want to do?^000000";
 			next;
 			switch(select("Leave it as it is.:Insert a Blue Gemstone.:Insert a Yellow Gemstone.:Insert a Red Gemstone.")) {
 			case 1:
@@ -908,8 +908,8 @@ umbala,221,193,1	script	#Skulldoor	111,{
 					mes "^3355FFYou inserted a "+getitemname(.@insert2)+"";
 					mes "into the eye socket.^000000";
 					next;
-					mes "^3355FFThe " + mesitemlink(7300) + " rolled back out of";
-					mes "the mouth of the " + mesitemlink(7005) + ".^000000";
+					mes "^3355FFThe gemstone rolled back out of";
+					mes "the mouth of the skull.^000000";
 					if (.@insert2 == .@insert) {
 						set .@skulldoor,.@skulldoor+1;
 					}
@@ -958,13 +958,13 @@ umbala,221,193,1	script	#Skulldoor	111,{
 			if (.@skullopen == 0) {
 				mes "^3355FFNothing happened.";
 				mes "You have the feeling that the";
-				mes "" + mesitemlink(7005) + " is grinning at you. But...";
+				mes "skull is grinning at you. But...";
 				mes "It's probably just a trick of the light.^000000";
 				close;
 			}
 			else {
 				mes "^3355FFSuddenly, a clicking sound comes";
-				mes "from the " + mesitemlink(7005) + "'s eye sockets and";
+				mes "from the skull's eye sockets and";
 				mes "the door opens. Before you know";
 				mes "it, you walk inside as if guided";
 				mes "by an unseen force...^000000";
@@ -1079,7 +1079,7 @@ um_in,144,45,5	script	Umpokoriohtan	789,{
 			mes "[Umpokoriohtan]";
 			mes "But someday, she'll have to";
 			mes "learn that I gots to share";
-			mes "this " + mesitemlink(7855) + " of mine with the ladies";
+			mes "this heart of mine with the ladies";
 			mes "who really need a dose of vitamin";
 			mes "lovin', ya dig? It's my obligation.";
 			next;

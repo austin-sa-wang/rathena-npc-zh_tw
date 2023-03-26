@@ -650,7 +650,7 @@ tha_t02,231,161,5	script	Entrance Guide	874,{
 			mes "But...";
 			next;
 			mes "[Burled]";
-			mes "Considerably strong monsters " + mesitemlink(908) + " inside the tower.";
+			mes "Considerably strong monsters spawn inside the tower.";
 			mes "The monsters weren't spawned there before.";
 			mes "The day after that happened...";
 			next;
@@ -808,9 +808,9 @@ tha_t02,231,161,5	script	Entrance Guide	874,{
 			mes "[Burled]";
 			mes "I hope that these will be useful for you, "+strcharinfo(0)+".";
 			next;
-			mes "- Burled gives you the note and an Old Violet " + mesitemlink(7948) + ". -";
+			mes "- Burled gives you the note and an Old Violet Box. -";
 			mes " ";
-			mes "^4d4dffYou acquire one Old Violet " + mesitemlink(7948) + ",";
+			mes "^4d4dffYou acquire one Old Violet Box,";
 			mes "as well as a little EXP.^000000";
 			set thana_tower, 10;
 			completequest 7053;
@@ -953,7 +953,7 @@ L_Key:
 	mes "The energy field begins to disappear,";
 	mes "and you see that a red object inside was the origin of the magical power.";
 	next;
-	mes "- You acquired the powerful " + mesitemlink(7421) + ". -";
+	mes "- You acquired the powerful Red Key. -";
 	getitem 7421,1; //Key_Red
 	if (thana_tower != 4) close;
 	mes "^4d4dffOnce you hold the key, a shocking feeling passes through your head.";
@@ -1000,7 +1000,7 @@ L_Key:
 		mes "wasn't just an illusion.^000000";
 		next;
 		mes "That's all.";
-		mes "The letters fly away in the form of a " + mesitemlink(7421) + "...";
+		mes "The letters fly away in the form of a red key...";
 		set thana_tower, 5;
 		changequest 7048,7049;
 		specialeffect2 EF_COMBOATTACK1;
@@ -1083,7 +1083,7 @@ tha_t04,195,195,0	script	Rune Device#tt2	111,3,3,{
 				mes "and appears on the screen's";
 				mes "surface. An object forms...^000000";
 				next;
-				mes "^4d4dffThe powerful " + mesitemlink(7422) + " appears.^000000";
+				mes "^4d4dffThe powerful Yellow Key appears.^000000";
 				getitem 7422,1; //Key_Yellow
 				if (thana_tower != 5) close;
 				mes "^4d4dffA fierce feeling passes through your head.";
@@ -1164,7 +1164,7 @@ tha_t05,62,179,0	script	Brilliant Statue#tt3	111,3,3,{
 		mes "I can feel some magical power from this beautiful stone statue.";
 		mes "There's a little crack between the wings.";
 		next;
-		mes "Red light is shining on a crack in the left wing, and " + mesitemlink(969) + " light on a crack in the right one.";
+		mes "Red light is shining on a crack in the left wing, and gold light on a crack in the right one.";
 		mes "What will you do?";
 		next;
 		if(select("Stick the key into the crack...:Ignore it.") == 2) {
@@ -1197,7 +1197,7 @@ tha_t05,62,179,0	script	Brilliant Statue#tt3	111,3,3,{
 			mes "The beak of the bird suddenly opens, and a strong light comes out.";
 			mes "There's a key-shaped object inside...";
 			next;
-			mes "^4d4dffThe powerful " + mesitemlink(7423) + " appears.^000000";
+			mes "^4d4dffThe powerful Blue Key appears.^000000";
 			getitem 7423,1; //Key_Blue
 			if (thana_tower != 6) close;
 			mes "^4d4dffOnce you hold the key, a shocking feeling passes through your head.";
@@ -1442,7 +1442,7 @@ tha_t06,226,230,0	script	Brilliant Statue#tt4	111,3,3,{
 				specialeffect EF_DISPELL;
 				specialeffect EF_POTION6;
 				next;
-				mes "^4d4dffAll of a sudden, the " + mesitemlink(7424) + " appears and you can feel great power from it.^000000";
+				mes "^4d4dffAll of a sudden, the Green Key appears and you can feel great power from it.^000000";
 				getitem 7424,1; //Key_Green
 				if (thana_tower != 7) close;
 				mes "^4d4dffWhen you pick up the key,";
@@ -1564,7 +1564,7 @@ tha_t06,204,181,0	script	Splendid Sword#tt5	111,3,3,{
 					mes "Slowly the smoke clears, and you see an object with a certain shape...";
 					specialeffect EF_CHANGEDARK;
 					next;
-					mes "^4d4dff All of a sudden, a " + mesitemlink(7425) + " appears from the smoke and you feel a great cursed power from it.^000000";
+					mes "^4d4dff All of a sudden, a Black Key appears from the smoke and you feel a great cursed power from it.^000000";
 					getitem 7425,1; //Key_Black
 					if (thana_tower != 8) close;
 					next;
@@ -1664,13 +1664,13 @@ tha_t08,90,153,0	script	Shining Crystal#tt_r1	844,{
 		mes "Beside the crystal ball, you find faded patterns marked on the floor.";
 		mes "Looks like some kind of keyhole that needs to be inserted with something...";
 		next;
-		mes "The " + mesitemlink(7421) + " suddenly responds once you come close to the keyhole.";
+		mes "The red key suddenly responds once you come close to the keyhole.";
 		mes "You insert the key in the keyhole and it turns out to be a small gem.";
 		next;
 		mes "When you touch the gem which is dazzling red...";
-		mes "You feel isolated and depressed deep inside your " + mesitemlink(7855) + "...";
+		mes "You feel isolated and depressed deep inside your heart...";
 		next;
-		mes "^4d4dffYou have found a " + mesitemlink(7426) + " that is concentrated with cruel fate and a deep darkness.^000000";
+		mes "^4d4dffYou have found a Red Charm Stone that is concentrated with cruel fate and a deep darkness.^000000";
 		delitem 7421,1; //Key_Red
 		getitem 7426,1; //Magic_Gem_Red
 		close;
@@ -1698,13 +1698,13 @@ tha_t08,49,153,0	script	Shining Crystal#tt_y1	844,{
 		mes "Beside the crystal ball, you find faded patterns marked on the floor.";
 		mes "Looks like some kind of keyhole that needs to be inserted with something...";
 		next;
-		mes "The " + mesitemlink(7422) + " suddenly responds once you come close to the keyhole.";
+		mes "The yellow key suddenly responds once you come close to the keyhole.";
 		mes "You insert the key in the keyhole and it turns out to be a small gem.";
 		next;
 		mes "When you touch the gem which is dazzling yellow...";
-		mes "Your " + mesitemlink(7855) + " begins to throb as though you are suffering from a broken " + mesitemlink(7855) + ".";
+		mes "Your heart begins to throb as though you are suffering from a broken heart.";
 		next;
-		mes "^4d4dffYou have found a " + mesitemlink(7427) + " that is concentrated with grief and mysterious power.^000000";
+		mes "^4d4dffYou have found a Yellow Charm Stone that is concentrated with grief and mysterious power.^000000";
 		delitem 7422,1; //Key_Yellow
 		getitem 7427,1; //Magic_Gem_Yellow
 		close;
@@ -1732,13 +1732,13 @@ tha_t08,49,65,0	script	Shining Crystal#tt_b1	844,{
 		mes "Beside the crystal ball, you find faded patterns marked on the floor.";
 		mes "Looks like some kind of keyhole that needs to be inserted with something...";
 		next;
-		mes "The " + mesitemlink(7423) + " suddenly responds once you come close to the keyhole.";
+		mes "The blue key suddenly responds once you come close to the keyhole.";
 		mes "You insert the key in the keyhole and it turns out to be a small gem.";
 		next;
 		mes "When you touch the gem which is dazzling blue....";
 		mes "Someone's sobbing comes into your ears as you smell blood on the wind and suddenly you become angry.";
 		next;
-		mes "^4d4dffYou have found a " + mesitemlink(7428) + " that is concentrated with grudge and mysterious power.^000000";
+		mes "^4d4dffYou have found a Blue Charm Stone that is concentrated with grudge and mysterious power.^000000";
 		delitem 7423,1; //Key_Blue
 		getitem 7428,1; //Magic_Gem_Blue
 		close;
@@ -1766,13 +1766,13 @@ tha_t08,90,65,0	script	Shining Crystal#tt_g1	844,{
 		mes "Beside the crystal ball, you find faded patterns marked on the floor.";
 		mes "Looks like some kind of keyhole that needs to be inserted with something...";
 		next;
-		mes "The " + mesitemlink(7424) + " suddenly responds once you come close to the keyhole.";
+		mes "The green key suddenly responds once you come close to the keyhole.";
 		mes "You insert the key in the keyhole and it turns out to be a small gem.";
 		next;
 		mes "When you touch the gem which is dazzling green...";
 		mes "Your head starts to ache and you feel worried and anxious about something.";
 		next;
-		mes "^4d4dffYou have found a " + mesitemlink(7429) + " that is concentrated with deep suffering.^000000";
+		mes "^4d4dffYou have found a Green Charm Stone that is concentrated with deep suffering.^000000";
 		delitem 7424,1; //Key_Green
 		getitem 7429,1; //Magic_Gem_Green
 		close;
@@ -1798,13 +1798,13 @@ tha_t12,161,57,0	script	Gold Religious Statue#tt	111,{
 		if (countitem(7427) > 0) {
 			mes "It's a statue giving off a golden light.";
 			mes "The sword appears to be missing a gem.";
-			mes "As I draw closer to the statue, the " + mesitemlink(7427) + " emits a bright light.";
+			mes "As I draw closer to the statue, the Yellow Charm Stone emits a bright light.";
 			specialeffect EF_BEGINSPELL5;
 			specialeffect2 EF_BEGINSPELL5;
 			next;
 			if(select("Insert the Yellow Charm Stone.:Run away.") == 2) close;
 			if ($@thana_summon == 0) {
-				mes "After inserting the " + mesitemlink(7427) + " into the sword, the statue begins to react.";
+				mes "After inserting the Yellow Charm Stone into the sword, the statue begins to react.";
 				specialeffect EF_BEGINSPELL5;
 				delitem 7427,1; //Magic_Gem_Yellow
 				set $@thana_summon, 1;
@@ -1827,14 +1827,14 @@ tha_t12,154,17,0	script	Green Wiseman Statue#tt	111,{
 	if ($@thana_summon == 1) {
 		if (countitem(7429) > 0) {
 			mes "A statue gives off green light.";
-			mes "The wiseman's " + mesitemlink(1604) + " seems to be missing a gem.";
-			mes "As I draw closer to the statue, the " + mesitemlink(7429) + " emits a bright light.";
+			mes "The wiseman's wand seems to be missing a gem.";
+			mes "As I draw closer to the statue, the Green Charm Stone emits a bright light.";
 			specialeffect EF_BEGINSPELL4;
 			specialeffect2 EF_BEGINSPELL4;
 			next;
 			if(select("Insert the Green Charm Stone.:Run away.") == 2) close;
 			if ($@thana_summon == 1) {
-				mes "After inserting the " + mesitemlink(7429) + " into the " + mesitemlink(1604) + ", the statue begins to react.";
+				mes "After inserting the Green Charm Stone into the wand, the statue begins to react.";
 				specialeffect EF_BEGINSPELL4;
 				delitem 7429,1; //Magic_Gem_Green
 				set $@thana_summon, 2;
@@ -1857,14 +1857,14 @@ tha_t12,103,17,0	script	Blue Angel Statue#tt	111,{
 	if ($@thana_summon == 2) {
 		if (countitem(7428) > 0) {
 			mes "An angel statue is covered with a blue light.";
-			mes "A gem seems to be missing from the statue's " + mesitemlink(2627) + ".";
-			mes "As I draw closer to the statue, the " + mesitemlink(7428) + " emits a bright light.";
+			mes "A gem seems to be missing from the statue's belt.";
+			mes "As I draw closer to the statue, the Blue Charm Stone emits a bright light.";
 			specialeffect EF_BEGINSPELL2;
 			specialeffect2 EF_BEGINSPELL2;
 			next;
 			if(select("Insert the Blue Charm Stone.:Run away.") == 2) close;
 			if ($@thana_summon == 2) {
-				mes "After inserting the " + mesitemlink(7428) + " into the " + mesitemlink(2627) + ", the statue begins to react.";
+				mes "After inserting the Blue Charm Stone into the belt, the statue begins to react.";
 				specialeffect EF_BEGINSPELL2;
 				delitem 7428,1; //Magic_Gem_Blue
 				set $@thana_summon, 3;
@@ -1887,14 +1887,14 @@ tha_t12,96,57,0	script	Bloody Knight Statue#tt	111,{
 	if ($@thana_summon == 3) {
 		if (countitem(7426) > 0) {
 			mes "A statue is shining like blood.";
-			mes "A gem seems to be missing from the " + mesitemlink(7855) + " area of its armor.";
-			mes "As I draw closer to the statue, the " + mesitemlink(7426) + " emits a bright light.";
+			mes "A gem seems to be missing from the heart area of its armor.";
+			mes "As I draw closer to the statue, the Red Charm Stone emits a bright light.";
 			specialeffect EF_BEGINSPELL3;
 			specialeffect2 EF_BEGINSPELL3;
 			next;
 			if(select("Insert the Red Charm Stone.:Run away.") == 2) close;
 			if ($@thana_summon == 3) {
-				mes "After inserting the " + mesitemlink(7426) + " into the armor, the statue begins to react.";
+				mes "After inserting the Red Charm Stone into the armor, the statue begins to react.";
 				specialeffect EF_BEGINSPELL3;
 				delitem 7426,1; //Magic_Gem_Red
 				set $@thana_summon, 4;
@@ -1918,13 +1918,13 @@ tha_t12,129,86,0	script	Dark Devil Statue#tt	111,{
 		if (countitem(7430) > 0) {
 			mes "A devil statue emits dark light.";
 			mes "The right eye seems to be missing a gem.";
-			mes "As I draw closer to the statue, the " + mesitemlink(7430) + " emits a bright light.";
+			mes "As I draw closer to the statue, the Black Charm Stone emits a bright light.";
 			specialeffect EF_BEGINSPELL7;
 			specialeffect2 EF_BEGINSPELL7;
 			next;
 			if(select("Insert the Black Charm Stone.:Run away.") == 2) close;
 			if ($@thana_summon == 4) {
-				mes "After inserting the " + mesitemlink(7426) + " into the eye socket, the statue begins to react.";
+				mes "After inserting the Red Charm Stone into the eye socket, the statue begins to react.";
 				specialeffect EF_BEGINSPELL7;
 				delitem 7430,1; //Magic_Gem_Black
 				set $@thana_summon, 5;
@@ -2124,8 +2124,8 @@ OnTouch_:
 		close;
 	}
 	mes "The seal seems to be dormant.";
-	mes "There is a " + mesitemlink(7094) + " missing from the crest of the Seal.";
-	mes "Surely I saw a familiar " + mesitemlink(7094) + " before...";
+	mes "There is a fragment missing from the crest of the Seal.";
+	mes "Surely I saw a familiar fragment before...";
 	next;
 	input .@inputstr$;
 	set .@exact_tt$, "Fragment of "+.@j$;
@@ -2294,10 +2294,10 @@ tha_t06,119,120,0	script	to 7th Floor	45,1,1,{
 OnTouch:
 	if ((eaclass()&(EAJL_2|EAJL_UPPER)) || (eaclass()&EAJL_THIRD) || ((Class == Job_Super_Novice || Class == Job_Taekwon || Class == Job_Star_Gladiator || Class == Job_Soul_Linker || BaseClass == Job_Ninja || Class == Job_Gunslinger || Class == Job_Summoner) && BaseLevel > 94)) {
 		if (countitem(7425) > 0) {
-			mes "The shadow of a " + mesitemlink(7425) + " is gleaming in the center of the portal.";
+			mes "The shadow of a Black Key is gleaming in the center of the portal.";
 			mes "To pass this way, looks like I need something.";
 			next;
-			mes "The " + mesitemlink(7425) + " reacts to the portal and floats in the air.";
+			mes "The Black Key reacts to the portal and floats in the air.";
 			next;
 			mes "The key seems to separate into many particles and suddenly collapses into a ball.";
 			mes "The barricade is removed through the power from newly formed black magic gem.";
@@ -2307,7 +2307,7 @@ OnTouch:
 			warp "thana_step",69,369;
 			end;
 		}
-		mes "The shadow of a " + mesitemlink(7425) + " is gleaming in the center of the portal.";
+		mes "The shadow of a Black Key is gleaming in the center of the portal.";
 		mes "To pass this way, looks like I need something.";
 		close;
 	}

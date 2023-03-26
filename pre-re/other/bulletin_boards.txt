@@ -56,7 +56,7 @@ yuno_fild03,37,143,5	script	Bulletin Board#24	837,{
 mjolnir_02,76,362,5	script	Bulletin Board#10	837,{
 	mes "[Coal Mine]";
 	mes "^6B1312Caution!^000000";
-	mes "The " + mesitemlink(1003) + " Mine consists of a total of 3 levels. This dungeon is suited to both new and experienced adventurers, depending on the dungeon level.";
+	mes "The Coal Mine consists of a total of 3 levels. This dungeon is suited to both new and experienced adventurers, depending on the dungeon level.";
 	next;
 	mes "[Coal Mine]";
 	mes "In the third level, monsters tend to attack adventurers in swarms, so avoid being surrounded. Since this area is a mine, many Ores can be found within the depths of this dungeon.";
@@ -127,7 +127,7 @@ xmas,147,311,5	script	Bulletin Board#23	837,{
 	mes "^6B1312Caution!^000000";
 	mes "Toy Factory is consisting of 2 levels.";
 	mes "This dungeon is not that difficult to venture for new adventurers,";
-	mes "but there are 3 dangerous boss monsters " + mesitemlink(908) + " at certain time.";
+	mes "but there are 3 dangerous boss monsters spawn at certain time.";
 	next;
 	mes "[Toy Factory]";
 	mes "In 1st level, you will encounter a boss monster, ^6B1312Angeling^000000.";

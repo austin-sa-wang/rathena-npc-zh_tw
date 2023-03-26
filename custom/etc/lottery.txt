@@ -312,7 +312,7 @@ LWinSmall:
 // NO ZENY
 L_NoZeny:
 	mes "[Lottery]";
-	mes "You can't afford a " + mesitemlink(7528) + ".";
+	mes "You can't afford a lottery ticket.";
 	close;
 
 // INVALID TICKET

@@ -337,7 +337,7 @@ splendide,181,107,5	script	Fairy#13_2_12	462,{
 splendide,188,76,5	script	Splendide Soldier#tre1	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Splendide Soldier]";
-		mes "This is Splendide, the " + mesitemlink(13104) + " base of the Laphine.";
+		mes "This is Splendide, the garrison base of the Laphine.";
 		close;
 	}
 	else {
@@ -350,7 +350,7 @@ splendide,188,76,5	script	Splendide Soldier#tre1	461,{
 splendide,201,76,3	script	Splendide Soldier#tre2	461,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Splendide Soldier]";
-		mes "This is Splendide, the " + mesitemlink(13104) + " base of the Laphine.";
+		mes "This is Splendide, the garrison base of the Laphine.";
 		close;
 	}
 	else {
@@ -521,7 +521,7 @@ spl_in01,172,225,3	script	Wandering Poet#ep13	51,{
 			next;
 			soundeffect "ring_of_nibelungen.wav",0;
 			mes "^4d4dff There was a river named Rhein that";
-			mes "that would shine as if made of " + mesitemlink(969) + ".";
+			mes "that would shine as if made of gold.";
 			mes "It's secret hidden from all since";
 			mes "before this story was told...^000000";
 			next;
@@ -534,7 +534,7 @@ spl_in01,172,225,3	script	Wandering Poet#ep13	51,{
 			mes "The power of the ring that held all the god's desires.^000000";
 			next;
 			mes "^4d4dff The treasure was used to buy the world's soul.";
-			mes "A soul purchased with the weight of " + mesitemlink(969) + ".^000000";
+			mes "A soul purchased with the weight of gold.^000000";
 			next;
 			mes "^4d4dff Rocky afraid of losing control. transforms poor Alberich to the shape of a toad.";
 			next;

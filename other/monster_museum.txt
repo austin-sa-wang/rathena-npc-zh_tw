@@ -157,7 +157,7 @@ yuno_in03,38,39,1	script	#PENOMANA	111,{
 	mes "small appendixes on its acetabulum.";
 	next;
 	mes "The long, thin tentacles on the";
-	mes "body " + mesitemlink(711) + " deadly poison which is";
+	mes "body shoot deadly poison which is";
 	mes "enough to kill its enemy at once.";
 	close;
 }
@@ -173,7 +173,7 @@ yuno_in03,37,44,3	script	#GALAPAGO	111,{
 	next;
 	mes "Explanation :";
 	mes "It's a kind of bird, but sadly, its body is too heavy to fly.";
-	mes "It's very sensitive to sunlight so it carries a water bottle and wears " + mesitemlink(2201) + " all the time.";
+	mes "It's very sensitive to sunlight so it carries a water bottle and wears sunglasses all the time.";
 	next;
 	mes "Although gluttonous, it will";
 	mes "always cooperate to attack";
@@ -233,8 +233,8 @@ yuno_in03,19,33,1	script	#VIOLY	111,{
 	mes " Attribute : Neutral";
 	next;
 	mes "Explanation :";
-	mes "A pretty doll looking creature with beautiful " + mesitemlink(1060) + ".";
-	mes "Since It plays " + mesitemlink(1901) + " all the time with a peaceful look on its face, people don't realize at first that it's a monster.";
+	mes "A pretty doll looking creature with beautiful golden hair.";
+	mes "Since It plays violin all the time with a peaceful look on its face, people don't realize at first that it's a monster.";
 	next;
 	mes "Exercise extreme caution upon encountering a Violy. Otherwise, it will snatch your soul in no time with its charming song.";
 	close;
@@ -276,13 +276,13 @@ yuno_in03,12,45,1	script	#ASSULTER	111,{
 	mes "Island, this turtle stands on two";
 	mes "legs and attacks passersby with";
 	mes "the other two legs, wielding a";
-	mes "big " + mesitemlink(13250) + " from its back.";
+	mes "big shuriken from its back.";
 	next;
 	mes "Interestingly, it creates a clone";
 	mes "to do more damage when it";
 	mes "encounters dangerous enemies.";
 	mes "It does very powerful damage using";
-	mes "its " + mesitemlink(13250) + ", but its nail attack";
+	mes "its shuriken, but its nail attack";
 	mes "is more threatening.";
 	close;
 }
@@ -371,7 +371,7 @@ yuno_in03,18,108,1	script	#TRI_JOINT	111,{
 	mes "Explanation :";
 	mes "Tri Joint is a prehistoric";
 	mes "monster that is covered with";
-	mes "a hard " + mesitemlink(935) + ", and uses a feeler";
+	mes "a hard shell, and uses a feeler";
 	mes "instead of eyes so that it can";
 	mes "live in dark places.";
 	next;
@@ -407,7 +407,7 @@ yuno_in03,16,117,5	script	Dragon Tail#yuno	1321,{
 }
 yuno_in03,18,116,1	script	#DRAGON_TAIL	111,{
 	mes " ";
-	mes " Scientific name : " + mesitemlink(1037) + "";
+	mes " Scientific name : Dragon Tail";
 	mes " Size : Medium";
 	mes " Attribute : Wind";
 	next;
@@ -466,7 +466,7 @@ yuno_in03,46,101,1	script	#MARINE_SPHERE	111,{
 	mes "caught in the explosion of";
 	mes "another, a trigger explosion";
 	mes "will result, and can lead to";
-	mes "a dangerous " + mesitemlink(1519) + " reaction.";
+	mes "a dangerous chain reaction.";
 	close;
 }
 	
@@ -483,14 +483,14 @@ yuno_in03,46,105,1	script	#MANDRAGORA	111,{
 	mes "An insectivore that swallows";
 	mes "anything alive. When it finds";
 	mes "its prey, it strikes it first";
-	mes "with a long " + mesitemlink(962) + " to";
-	mes "to " + mesitemlink(12717) + " it.";
+	mes "with a long tentacle to";
+	mes "to paralyze it.";
 	next;
 	mes "Once paralyzed, its prey is";
 	mes "put in a large tube attached";
 	mes "to its body where it is slowly";
 	mes "digested. Although this tube";
-	mes "has a " + mesitemlink(7005) + " mark, Mandragora";
+	mes "has a skull mark, Mandragora";
 	mes "does not actually contain any";
 	mes "poison.";
 	next;
@@ -512,7 +512,7 @@ yuno_in03,46,108,1	script	#GEOGRAPHER	111,{
 	next;
 	mes "Explanation :";
 	mes "An insectivore that looks like";
-	mes "a " + mesitemlink(2253) + ". It uses the petal";
+	mes "a sunflower. It uses the petal";
 	mes "like tentacles around its";
 	mes "mouth to attract and snare";
 	mes "its prey.";
@@ -565,7 +565,7 @@ yuno_in03,48,116,3	script	Stem Worm#yuno	1215,{
 }
 yuno_in03,45,116,1	script	#STEM_WORM	111,{
 	mes " ";
-	mes " Scientific name : " + mesitemlink(905) + " Worm";
+	mes " Scientific name : Stem Worm";
 	mes " Size : Medium";
 	mes " Attribute : Wind";
 	next;
@@ -574,7 +574,7 @@ yuno_in03,45,116,1	script	#STEM_WORM	111,{
 	mes "round, brownish grey body with";
 	mes "a small head. It is covered";
 	mes "with scales and has a long";
-	mes "" + mesitemlink(905) + "-like tail which is used";
+	mes "stem-like tail which is used";
 	mes "as a whip in attacks.";
 	close;
 }

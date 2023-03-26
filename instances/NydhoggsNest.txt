@@ -94,7 +94,7 @@ nyd_dun02,100,201,3	script	Yggdrasil Gatekeeper	111,8,8,{
 		set .@ins_nyd_check,checkquest(3135,PLAYTIME); // 3 Day cooldown
 		set .@ins_nyd_check2,checkquest(3136,PLAYTIME); // 4 Hour play limit
 
-		mes "As I put my hands on the stone gate, a voice sounded from the depth of my " + mesitemlink(7855) + ".";
+		mes "As I put my hands on the stone gate, a voice sounded from the depth of my heart.";
 		next;
 		if (.@ins_nyd_check == -1 && .@ins_nyd_check2 == -1) {
 			if (!instance_check_party(.@party_id,2,70)) {
@@ -224,7 +224,7 @@ OnTouch_:
 mid_camp,271,299,3	script	Historian Magnifier#edq	755,3,3,{
 	mes "[Historian Magniffer]";
 	if (ins_nyd == 1) {
-		mes "Sure, the mainland also has lots of interesting adventures... Hello, I am " + mesitemlink(611) + ", a historian dispatched from the Prontera royal court.";
+		mes "Sure, the mainland also has lots of interesting adventures... Hello, I am Magnifier, a historian dispatched from the Prontera royal court.";
 		next;
 		mes "[Historian Magniffer]";
 		mes "Finding another line of work might make for a really worthy job, but only a historian gets to know the world over..";
@@ -393,7 +393,7 @@ mid_camp,271,299,3	script	Historian Magnifier#edq	755,3,3,{
 		mes "First, report to Commander Agip, then act according to the situation. Let me organize my research findings...";
 		close;
 	} else {
-		mes "Sure, the mainland also has lots of interesting adventures... Hello, I am " + mesitemlink(611) + ", a historian dispatched from the Prontera royal court.";
+		mes "Sure, the mainland also has lots of interesting adventures... Hello, I am Magnifier, a historian dispatched from the Prontera royal court.";
 		next;
 		mes "[Historian Magnifier]";
 		mes "Finding another line of work might make for a really worthy job, but only a historian gets to know the world over..";
@@ -435,7 +435,7 @@ prt_in,171,94,3	script	Assistant Naomi#edq	893,3,3,{
 			mes "Ah...I...see...";
 			next;
 			mes "[Assistant Naomi]";
-			mes "Now, I am almost done... Who are you? Are you a new assistant to Dr. " + mesitemlink(611) + "?";
+			mes "Now, I am almost done... Who are you? Are you a new assistant to Dr. Magnifier?";
 			next;
 			mes "["+.@name$+"]";
 			mes "He asked me to bring some reports. Didn't he say anything?";
@@ -456,7 +456,7 @@ prt_in,171,94,3	script	Assistant Naomi#edq	893,3,3,{
 			next;
 			mes "... ...";
 			next;
-			mes "It's too messy due to lots of stacked books and files. Dr. " + mesitemlink(611) + " looks like he has a ton of reports.";
+			mes "It's too messy due to lots of stacked books and files. Dr. Magnifier looks like he has a ton of reports.";
 			next;
 			mes "["+.@name$+"]";
 			mes "'Birth of the World', 'The Fiction of Odin's Myth', 'God's Battle Then After', 'Dreams of the Tribes'. There are a variety of books...";
@@ -1521,7 +1521,7 @@ OnTouch_:
 //============================================================
 1@nyd,213,277,5	script	Murdered Yggdrasilid#1F	437,5,5,{
 	if ('ins_nyd2 == 0) {
-		mes "When a faint light enters your " + mesitemlink(7855) + ", a voice sounds in your head.";
+		mes "When a faint light enters your heart, a voice sounds in your head.";
 		next;
 		mes "[World Tree World Tree Yggdrasil]";
 		mes "It's all over... servants of the Guardian... Hurry up and leave this place.";
@@ -1586,7 +1586,7 @@ OnTouch_:
 		mes "With our current powers...it is impossible to defeat the Guardian.";
 		next;
 		mes "[World Tree Yggdrasil]";
-		mes "But the one going mad is not the Guardian, but his dark Shadow...maybe we can " + mesitemlink(1065) + " him here...";
+		mes "But the one going mad is not the Guardian, but his dark Shadow...maybe we can trap him here...";
 		next;
 		mes "[World Tree Yggdrasil]";
 		mes "Are you willing to accept this mission? Even if it means to pay with your life?";
@@ -2240,11 +2240,11 @@ nyd_dun02,7,7,2	script	Purification Admin#nyd2	844,2,0,{
 	}
 	switch(select("Generate Purification Stone:Remove Purification Stone:Turn Entrance NPC OFF:Turn Entrance NPC On:Cancel")) {
 	case 1:
-		mes "" + mesitemlink(6127) + " has been created and will stay on for 30 minutes.";
+		mes "Purification stone has been created and will stay on for 30 minutes.";
 		donpcevent "Purification Stone#nyd2::OnEnable";
 		close;
 	case 2:
-		mes "The " + mesitemlink(6127) + " has been destroyed.";
+		mes "The Purification Stone has been destroyed.";
 		donpcevent "Purification Stone#nyd2::OnDisable";
 		close;
 	case 3:

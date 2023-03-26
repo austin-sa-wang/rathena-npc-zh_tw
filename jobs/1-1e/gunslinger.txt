@@ -85,7 +85,7 @@ que_ng,152,167,3	script	Master Miller	901,{
 			mes "Great, great. Alright then,";
 			mes "let's get you started. Take";
 			mes "this letter to Mr. Wise Bull";
-			mes "" + mesitemlink(947) + " in Payon. He's a shaman";
+			mes "Horn in Payon. He's a shaman";
 			mes "that will judge whether or not";
 			mes "you qualify to be a Gunslinger.";
 			set GUNS_Q,1;
@@ -97,14 +97,14 @@ que_ng,152,167,3	script	Master Miller	901,{
 			mes "Take that letter of";
 			mes "introduction I've written";
 			mes "for you to Mr. Wise Bull";
-			mes "" + mesitemlink(947) + " in Payon. He'll test";
+			mes "Horn in Payon. He'll test";
 			mes "you to see if you're really";
 			mes "Gunslinger material.";
 			close;
 		}
 		else if (GUNS_Q == 2) {
 			mes "[Master Miller]";
-			mes "Hmm... Wise Bull " + mesitemlink(947) + "";
+			mes "Hmm... Wise Bull Horn";
 			mes "asked you to collect the";
 			mes "items you need to make the";
 			mes "voucher? Hm. I guess that's";
@@ -113,9 +113,9 @@ que_ng,152,167,3	script	Master Miller	901,{
 		}
 		else if (GUNS_Q == 3) {
 			mes "[Master Miller]";
-			mes "Wise Bull " + mesitemlink(947) + " asked";
+			mes "Wise Bull Horn asked";
 			mes "you to bring him some";
-			mes "" + mesitemlink(519) + "? He must really like";
+			mes "Milk? He must really like";
 			mes "you if he's already asking";
 			mes "for favors. Good luck, friend.";
 			close;
@@ -139,13 +139,13 @@ que_ng,152,167,3	script	Master Miller	901,{
 			}
 			mes "[Master Miller]";
 			mes "Oh, you've brought a";
-			mes "voucher from Wise Bull " + mesitemlink(947) + "?";
+			mes "voucher from Wise Bull Horn?";
 			mes "It's been a while since he's";
 			mes "given one to anybody, so";
 			mes "I'm really proud of you!";
 			next;
 			mes "[Master Miller]";
-			mes "If Wise Bull " + mesitemlink(947) + " approves,";
+			mes "If Wise Bull Horn approves,";
 			mes "then I have no reason to";
 			mes "reject you. Alright then, I'll";
 			mes "promote you to a Gunslinger.";
@@ -238,7 +238,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 		next;
 		mes "[Wise Bull Horn]";
 		mes "I can see it in your eyes:";
-		mes "you've got a warm " + mesitemlink(7855) + " and a";
+		mes "you've got a warm heart and a";
 		mes "strong sense of responsibility.";
 		mes "All you need is the blessing";
 		mes "of the Earth to protect you";
@@ -253,7 +253,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 		mes "I shall need these items...";
 		next;
 		mes "[Wise Bull Horn]";
-		mes "^3355FF1 " + mesitemlink(1019) + "^000000,";
+		mes "^3355FF1 Trunk^000000,";
 		mes "^3355FF3 Fluffs^000000,";
 		mes "^3355FF3 Zargons^000000,";
 		mes "^3355FF10 Shells^000000,";
@@ -282,7 +282,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 			mes "I shall need these items...";
 			next;
 			mes "[Wise Bull Horn]";
-			mes "^3355FF1 " + mesitemlink(1019) + "^000000,";
+			mes "^3355FF1 Trunk^000000,";
 			mes "^3355FF3 Fluffs^000000,";
 			mes "^3355FF3 Zargons^000000,";
 			mes "^3355FF10 Shells^000000,";
@@ -349,7 +349,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 		mes "Before you leave, may";
 		mes "I ask you for a small favor?";
 		mes "I'm thirsty, and would like";
-		mes "a cold glass of " + mesitemlink(519) + ". Would";
+		mes "a cold glass of Milk. Would";
 		mes "you please bring me some?";
 		set GUNS_Q,4;
 		changequest 6022,6023;
@@ -362,7 +362,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 			mes "soon be reunited with mother";
 			mes "earth. Would you do this old";
 			mes "Gunslinger a favor a bring me";
-			mes "a cold glass of " + mesitemlink(519) + ", please?";
+			mes "a cold glass of Milk, please?";
 			close;
 		}
 		delitem 519,1; // Milk
@@ -372,7 +372,7 @@ payon,184,65,3	script	Wise Bull Horn	866,{
 		mes "Oh, thank you for your!";
 		mes "generosity--I see that";
 		mes "you've brought me some";
-		mes "" + mesitemlink(519) + ". Ahhhh, delicious~";
+		mes "Milk. Ahhhh, delicious~";
 		next;
 		mes "[Wise Bull Horn]";
 		mes "I admire the patience,";

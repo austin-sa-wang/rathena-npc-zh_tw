@@ -154,8 +154,8 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 			mes "some materials so that I can";
 			mes "demonstrate the forging of";
 			mes "counterfeit zeny. Please";
-			mes "bring me 1 " + mesitemlink(999) + ", 5 " + mesitemlink(1003) + ",";
-			mes "1 " + mesitemlink(613) + " and... and...";
+			mes "bring me 1 Steel, 5 Coal,";
+			mes "1 Iron Hammer and... and...";
 			next;
 			mes "[Akkie]";
 			mes "Um, would you give";
@@ -174,11 +174,11 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 			mes "............";
 			next;
 			mes "[Akkie]";
-			mes "^0000FF1 " + mesitemlink(999) + "^000000,";
-			mes "^0000FF5 " + mesitemlink(1003) + "^000000,";
-			mes "^0000FF1 " + mesitemlink(613) + "^000000,";
+			mes "^0000FF1 Steel^000000,";
+			mes "^0000FF5 Coal^000000,";
+			mes "^0000FF1 Iron Hammer^000000,";
 			mes "^0000FF500 zeny^000000 and";
-			mes "^0000FF1 " + mesitemlink(971) + "^000000. Would";
+			mes "^0000FF1 Detrimindexta^000000. Would";
 			mes "you bring those, please?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
@@ -232,11 +232,11 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 			mes "you in the skill right away.";
 			next;
 			mes "[Akkie]";
-			mes "^0000FF1 " + mesitemlink(999) + "^000000,";
-			mes "^0000FF5 " + mesitemlink(1003) + "^000000,";
-			mes "^0000FF1 " + mesitemlink(613) + "^000000,";
+			mes "^0000FF1 Steel^000000,";
+			mes "^0000FF5 Coal^000000,";
+			mes "^0000FF1 Iron Hammer^000000,";
 			mes "^0000FF500 zeny^000000 and";
-			mes "^0000FF1 " + mesitemlink(971) + "^000000.";
+			mes "^0000FF1 Detrimindexta^000000.";
 			mes "Don't forget, okay?";
 			close;
 		}
@@ -296,7 +296,7 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		mes "[Akkie]";
 		mes "I promise that next time";
 		mes "I won't mess up! All I need";
-		mes "is 1 " + mesitemlink(999) + " and 3 more Coals!";
+		mes "is 1 Steel and 3 more Coals!";
 		mes "Please d-don't be angry with";
 		mes "me, it was just an accident!";
 		next;
@@ -308,7 +308,7 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		mes "[Akkie]";
 		mes "Yes, yes! Oh, thank";
 		mes "you for being so generous!";
-		mes "Just bring me ^FF00001 " + mesitemlink(999) + "^000000 and";
+		mes "Just bring me ^FF00001 Steel^000000 and";
 		mes "^FF00003 Coals^000000 and we'll try again!";
 		BLACK_SK = 3;
 		close;
@@ -317,7 +317,7 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		if (countitem(999) < 1 || countitem(1003) < 3) {
 			mes "[Akkie]";
 			mes "All I need you to do";
-			mes "is bring me 1 " + mesitemlink(999) + " and";
+			mes "is bring me 1 Steel and";
 			mes "3 Coals. Then I should";
 			mes "be able to teach you the";
 			mes "Dubious Salesmanship skill~";
@@ -351,14 +351,14 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		next;
 		mes "[Akkie]";
 		mes "*Sniff* I b-broke the";
-		mes "" + mesitemlink(613) + " you gave";
+		mes "Iron Hammer you gave";
 		mes "me! I c-can't finish forging";
 		mes "this without one! Waaah~";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "^333333(I guess I should";
 		mes "really bring her a new";
-		mes "^FF0000Iron " + mesitemlink(1354) + "^333333, or else";
+		mes "^FF0000Iron Hammer^333333, or else";
 		mes "I'll never learn this skill!)^000000";
 		BLACK_SK = 5;
 		close;
@@ -367,7 +367,7 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		if (countitem(613) < 1) {
 			mes "[Akkie]";
 			mes "Waah~! I can't believe";
-			mes "I broke the " + mesitemlink(613) + "!";
+			mes "I broke the Iron Hammer!";
 			mes "Would you please bring me";
 			mes "another one so that I can";
 			mes "finish this counterfeit zeny and teach you Dubious Salesmanship?";
@@ -376,7 +376,7 @@ geffen,178,72,3	script	Akkie#qsk_bs	726,{
 		mes "[Akkie]";
 		mes "^333333*Sniff*^000000 Did you";
 		mes "r-really bring this";
-		mes "" + mesitemlink(613) + " for me?";
+		mes "Iron Hammer for me?";
 		mes "Th-thank you for being so";
 		mes "patient with my screwups...";
 		next;

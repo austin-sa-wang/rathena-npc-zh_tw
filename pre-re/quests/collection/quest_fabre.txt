@@ -156,7 +156,7 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 				case 1:
 					// Item turn in
 					mes "[Langry]";
-					mes "I need to collect ^0000CE25 " + mesitemlink(914) + "^000000 to";
+					mes "I need to collect ^0000CE25 Fluff^000000 to";
 					mes "complete this community service project.";
 					mes "You know what? I can even reward you a little for helping me.";
 					next;
@@ -164,7 +164,7 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 					case 1:
 						if (countitem(914) > 24) {
 							mes "[Langry]";
-							mes "Thank you for the " + mesitemlink(914) + ". This helps me out greatly.";
+							mes "Thank you for the Fluff. This helps me out greatly.";
 							mes "Oh and here you go, this should help you get stronger, faster!";
 							delitem 914,25; //Fluff
 							getexp 385,30;
@@ -172,12 +172,12 @@ gef_fild07,321,193,4	script	Langry#Fabre_Hunt	754,{
 						}
 						else {
 							mes "[Langry]";
-							mes "I see no " + mesitemlink(914) + ", wait yea I do it's the lies coming from your mouth.";
+							mes "I see no Fluff, wait yea I do it's the lies coming from your mouth.";
 							close;
 						}
 					case 2:
 						mes "[Langry]";
-						mes "I need ^00CE0025 " + mesitemlink(914) + "^000000.";
+						mes "I need ^00CE0025 Fluff^000000.";
 						close;
 					}
 				case 2:

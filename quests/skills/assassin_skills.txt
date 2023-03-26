@@ -21,7 +21,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 			mes "Ah yes, that's why you";
 			mes "look so familiar. You're";
 			mes "of those to whom I've taught";
-			mes "the ^990099Venom " + mesitemlink(1201) + "^000000 skill. So, what";
+			mes "the ^990099Venom Knife^000000 skill. So, what";
 			mes "brings you to me this time?";
 			next;
 			mes "[Killtin]";
@@ -33,9 +33,9 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 			next;
 			mes "[Killtin]";
 			mes "First, you need to equip";
-			mes "a " + mesitemlink(1201) + " class weapon, and";
+			mes "a Knife class weapon, and";
 			mes "then cast Envenom on your";
-			mes "" + mesitemlink(1201) + ". Throwing the blade?";
+			mes "knife. Throwing the blade?";
 			mes "That's all in the wrist. Now,";
 			mes "watch me closely and take note.";
 			next;
@@ -60,7 +60,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 			mes "[Killtin]";
 			mes "Alright, I think it's";
 			mes "safe to say that you've";
-			mes "mastered the " + mesitemlink(1771) + "";
+			mes "mastered the Venom Knife";
 			mes "skill. Leave me now, and";
 			mes "always fight for the honor";
 			mes "of the Assassin Guild!";
@@ -70,7 +70,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 		else {
 			mes "[Killtin]";
 			mes "So how has that";
-			mes "^990099Venom " + mesitemlink(1201) + "^000000 skill";
+			mes "^990099Venom Knife^000000 skill";
 			mes "been working for you?";
 			mes "Be careful, and make sure";
 			mes "that your victims always";
@@ -91,7 +91,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 	else if (ASSN_SK2 == 1) {
 		mes "[Killtin]";
 		mes "So how has that";
-		mes "^990099Venom " + mesitemlink(1201) + "^000000 skill";
+		mes "^990099Venom Knife^000000 skill";
 		mes "been working for you?";
 		mes "Be careful, and make sure";
 		mes "that your victims always";
@@ -121,7 +121,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 			mes "enhances the Sonic Blow";
 			mes "skill, and the second skill";
 			mes "is a long range attack that's";
-			mes "named ''^990099Venom " + mesitemlink(1201) + "^000000.''";
+			mes "named ''^990099Venom Knife^000000.''";
 			next;
 			mes "[Killtin]";
 			mes "If you have any questions,";
@@ -167,7 +167,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 					next;
 					mes "[Killtin]";
 					mes "I suggest that you learn";
-					mes "the " + mesitemlink(1771) + " skill from";
+					mes "the Venom Knife skill from";
 					mes "me first. Then, you can talk";
 					mes "to Esmille, the beautiful";
 					mes "Assassin Cross right next to me, to learn Sonic Acceleration.";
@@ -183,16 +183,16 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 					mes "their uses are kind of limited.";
 					next;
 					mes "[Killtin]";
-					mes "This " + mesitemlink(1771) + " skill was";
+					mes "This Venom Knife skill was";
 					mes "developed with this weakness";
 					mes "in long range attacking in mind. Basically, we use the Envenom";
-					mes "skill on a " + mesitemlink(1201) + " and throw it at a distant enemy to poison them.";
+					mes "skill on a knife and throw it at a distant enemy to poison them.";
 					next;
 					break;
 				case 3:
 					mes "[Killtin]";
 					mes "Now, if you like, I can";
-					mes "teach you the ^009900Venom " + mesitemlink(1201) + "^000000";
+					mes "teach you the ^009900Venom Knife^000000";
 					mes "skill right now. It won't take";
 					mes "that much time, so what do";
 					mes "you say? You ready to learn?";
@@ -201,9 +201,9 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 						if (select("Learn Venom Knife:I d-don't wanna learn!") == 1) {
 							mes "[Killtin]";
 							mes "First, you need to equip";
-							mes "a " + mesitemlink(1201) + " class weapon, and";
+							mes "a Knife class weapon, and";
 							mes "then cast Envenom on your";
-							mes "" + mesitemlink(1201) + ". Throwing the blade?";
+							mes "knife. Throwing the blade?";
 							mes "That's all in the wrist. Now,";
 							mes "watch me closely and take note.";
 							next;
@@ -231,7 +231,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 							mes "to practice a bit more";
 							mes "of this skill, but for the most";
 							mes "part, you can use Venom";
-							mes "" + mesitemlink(1201) + " pretty easily in battle.";
+							mes "Knife pretty easily in battle.";
 							set ASSN_SK2,1;
 							set ASSN_SK,1;
 							skill "AS_VENOMKNIFE",1,SKILL_PERM;
@@ -249,7 +249,7 @@ in_moc_16,14,27,5	script	Assassin#realman	884,{
 							mes "Y-you don't want to";
 							mes "learn? Tough! It's my";
 							mes "job to teach this Venom";
-							mes "" + mesitemlink(1201) + " skill to every member";
+							mes "Knife skill to every member";
 							mes "of the Assassin Guild! You're^FFFFFFaaaaa^000000 not leaving until I tell you to!";
 							next;
 						}
@@ -375,7 +375,7 @@ in_moc_16,23,27,5	script	Assassin#realgirl	885,{
 			mes "I trust that using";
 			mes "Sonic Acceleration in";
 			mes "battle has given you an";
-			mes "" + mesitemlink(1132) + " over the enemy. Bring";
+			mes "edge over the enemy. Bring";
 			mes "swift defeat to your foes for";
 			mes "the Assassin Guild's honor.";
 			close;
@@ -386,7 +386,7 @@ in_moc_16,23,27,5	script	Assassin#realgirl	885,{
 		mes "I trust that using";
 		mes "Sonic Acceleration in";
 		mes "battle has given you an";
-		mes "" + mesitemlink(1132) + " over the enemy. Bring";
+		mes "edge over the enemy. Bring";
 		mes "swift defeat to your foes for";
 		mes "the Assassin Guild's honor.";
 		close;
@@ -768,7 +768,7 @@ OnTouch_:
 				mes "inside the coffin";
 				mes "through the gap";
 				mes "between the coffin's";
-				mes "" + mesitemlink(1132) + " and the lid.";
+				mes "edge and the lid.";
 				mes "...............................^000000";
 				next;
 				mes "^3355FFYou're barely able to";
@@ -841,7 +841,7 @@ OnTouch_:
 					mes "to find a solid object";
 					mes "that you pull out of the";
 					mes "coffin. You have obtained";
-					mes "a " + mesitemlink(726) + " for Esmille.^000000";
+					mes "a Sapphire for Esmille.^000000";
 					set ASSN_SK,5;
 					getitem 726,1; //Blue_Jewel
 					close;
@@ -851,7 +851,7 @@ OnTouch_:
 				mes "inside the coffin";
 				mes "through the gap";
 				mes "between the coffin's";
-				mes "" + mesitemlink(1132) + " and the lid.";
+				mes "edge and the lid.";
 				mes "...............................^000000";
 				next;
 				mes "^3355FFYou're barely able to";
@@ -910,7 +910,7 @@ OnTouch_:
 			mes "hold your breath in and expel";
 			mes "all gas in your lungs in time";
 			mes "to escape its effects. You've";
-			mes "retrieved a " + mesitemlink(723) + " for Esmille.^000000";
+			mes "retrieved a Ruby for Esmille.^000000";
 			set ASSN_SK,5;
 			getitem 723,1; //Cardinal_Jewel
 		}
@@ -978,7 +978,7 @@ OnTouch_:
 			mes "the glimmering object";
 			mes "before the water can";
 			mes "freeze you. You obtained";
-			mes "an " + mesitemlink(720) + " for Esmille.^000000";
+			mes "an Aquamarine for Esmille.^000000";
 			set ASSN_SK,5;
 			getitem 720,1; //Skyblue_Jewel
 		}

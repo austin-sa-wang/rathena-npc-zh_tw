@@ -183,13 +183,13 @@ prt_fild04,356,148,3	script	Laertes#Creamy_Hunt	798,{
 							mes "It doesn't look like you have enough.";
 							next;
 							mes "[Laertes]";
-							mes "If you bring me ^FF000025 " + mesitemlink(924) + "^000000,";
+							mes "If you bring me ^FF000025 Powder of Butterfly^000000,";
 							mes "I will give you some medical supplies.";
 							close;
 						}
 					case 2:
 						mes "[Laertes]";
-						mes "If you bring me ^FF000025 " + mesitemlink(924) + "^000000,";
+						mes "If you bring me ^FF000025 Powder of Butterfly^000000,";
 						mes "I will give you some medical supplies.";
 						close;
 					}

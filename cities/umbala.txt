@@ -88,7 +88,7 @@ comodo,171,137,1	script	Haith#um	92,{
 			next;
 			mes "[Haith]";
 			mes "*Whispers*";
-			mes "^555555He brought a big " + mesitemlink(7948) + " with him.^000000";
+			mes "^555555He brought a big box with him.^000000";
 			next;
 			mes "[La Ed]";
 			mes "Also, he came back in the middle";
@@ -97,7 +97,7 @@ comodo,171,137,1	script	Haith#um	92,{
 			mes "some secret, don't you think?";
 			next;
 			mes "[Haith]";
-			mes "What could be inside that " + mesitemlink(7948) + "~?";
+			mes "What could be inside that box~?";
 			mes "It just has to be treasure!!";
 			next;
 			mes "[La Ed]";
@@ -232,7 +232,7 @@ cmd_in01,164,115,1	script	Niels#um	731,{
 	mes "[Niels]";
 	mes "Now! Hurry and seek this place";
 	mes "out! Will this place be a totally";
-	mes "new world, or will it be a " + mesitemlink(1065) + "";
+	mes "new world, or will it be a trap";
 	mes "to hell?! Go forth, meet your";
 	mes "destiny, adventurer!";
 	close;
@@ -368,15 +368,15 @@ umbala,59,243,5	script	Utan Kid#1	787,{
 		mes "[Kotan]";
 		mes "............";
 		mes ".........poop!";
-		mes ".....me like " + mesitemlink(517) + ".";
-		mes "....gimme a " + mesitemlink(517) + ".";
+		mes ".....me like Meat.";
+		mes "....gimme a Meat.";
 		emotion ET_ROCK;
 		next;
 		if (select("Give him Meat.:Refuse.") == 1) {
 			if (countitem(517) > 0) {
 				mes "[Kotan]";
 				mes "Whoa, are you really giving me";
-				mes "" + mesitemlink(517) + "? Thanks! I will pay you";
+				mes "Meat? Thanks! I will pay you";
 				mes "back with these.";
 				delitem 517,1;// Meat
 				getitem 909,2;// Jellopy
@@ -386,7 +386,7 @@ umbala,59,243,5	script	Utan Kid#1	787,{
 				close;
 			}
 			mes "[Kotan]";
-			mes "Hah! You don't have " + mesitemlink(517) + ",";
+			mes "Hah! You don't have Meat,";
 			mes "but pretend that you do?!";
 			mes "I hate people who lie";
 			mes "to me!!";
@@ -397,7 +397,7 @@ umbala,59,243,5	script	Utan Kid#1	787,{
 		mes "[Kotan]";
 		mes ".........";
 		mes ".....hungwee.";
-		mes ".....I want " + mesitemlink(517) + ".";
+		mes ".....I want Meat.";
 		percentheal -1,0;
 		emotion ET_CRY;
 		close;
@@ -665,7 +665,7 @@ umbala,92,159,4	script	Bertan#um	785,{
 			mes "Give up..?";
 			next;
 			mes "[Bertan]";
-			mes "With a " + mesitemlink(2634) + "!";
+			mes "With a wedding ring!";
 			mes "HAHAHAHAHAHAHHA!";
 			mes "Oh God~ I'm hilarious!!";
 			next;
@@ -894,7 +894,7 @@ umbala,139,205,4	script	Utan Man#5	785,{
 		mes "Oh...right. A few unlucky people";
 		mes "just fell and died after";
 		mes "messing up their bungee jump. And";
-		mes "a few had " + mesitemlink(7855) + " attacks while";
+		mes "a few had heart attacks while";
 		mes "looking at other people jumping down...";
 		next;
 		mes "[Jooltan]";

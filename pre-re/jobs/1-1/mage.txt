@@ -351,19 +351,19 @@ geffen_in,164,112,4	script	Mixing Machine	111,{
 						next;
 						mes "[Mixing Machine]";
 						if (countitem(909) < .@mixitem1_1) {
-							mes "Insufficient " + mesitemlink(909) + ".";
+							mes "Insufficient Jellopy.";
 							mes "Please Check again.";
 							mes "Process Halted.";
 							close;
 						}
 						else if (countitem(914) < .@mixitem1_2) {
-							mes "Insufficient " + mesitemlink(914) + ".";
+							mes "Insufficient Fluff.";
 							mes "Please Check again.";
 							mes "Process Halted.";
 							close;
 						}
 						else if (countitem(519) < .@mixitem1_3) {
-							mes "Insufficient " + mesitemlink(519) + ".";
+							mes "Insufficient Milk.";
 							mes "Please Check again.";
 							mes "Process Halted.";
 							close;
@@ -552,7 +552,7 @@ geffen_in,164,112,4	script	Mixing Machine	111,{
 			mes "A good neighbor is better than a distant brother: When you need help, you can count on those close to you.";
 			break;
 		default:
-			mes "Birds of a " + mesitemlink(949) + " Flock Together: You can look at a person's friends as an indicator of their character.";
+			mes "Birds of a Feather Flock Together: You can look at a person's friends as an indicator of their character.";
 		}
 		next;
 		if (.@mixitem1_1 == 2 && .@mixitem1_2 == 3 && .@mixitem1_3 == 1 && .@mixitem2 == 1 && .@mixitem3 == 1 && .@magic_powder == 1) {
@@ -609,15 +609,15 @@ geffen_in,177,112,4	script	Bookshelf	111,{
 	case 1:
 		mes "[Mage Test Solution No. 1]";
 		mes "* Ingredients List *";
-		mes "2 " + mesitemlink(909) + "";
-		mes "3 " + mesitemlink(914) + "";
-		mes "1 " + mesitemlink(519) + "";
+		mes "2 Jellopy";
+		mes "3 Fluff";
+		mes "1 Milk";
 		next;
 		mes "[Mage Test Solution No. 1]";
 		mes "* Solvent Agent *";
-		mes "" + mesitemlink(1089) + "";
+		mes "Payon Solution";
 		mes "Where to Find:";
-		mes "A small " + mesitemlink(10035) + " in Payon, the Archer Village.";
+		mes "A small spring in Payon, the Archer Village.";
 		next;
 		mes "[Mage Test Solution No. 1]";
 		mes "* Magic Power Serial Code *";
@@ -625,16 +625,16 @@ geffen_in,177,112,4	script	Bookshelf	111,{
 		next;
 		mes "[Mage Test Solution No. 1]";
 		mes "* Catalyst *";
-		mes "" + mesitemlink(715) + "";
+		mes "Yellow Gemstone";
 		mes "(Provided by";
 		mes "Mixing Machine)";
 		close;
 	case 2:
 		mes "[Mage Test Solution No. 2]";
 		mes "* Ingredients List *";
-		mes "3 " + mesitemlink(909) + "";
-		mes "1 " + mesitemlink(914) + "";
-		mes "1 " + mesitemlink(519) + "";
+		mes "3 Jellopy";
+		mes "1 Fluff";
+		mes "1 Milk";
 		next;
 		mes "[Mage Test Solution No. 2]";
 		mes "* Solvent Agent *";
@@ -646,21 +646,21 @@ geffen_in,177,112,4	script	Bookshelf	111,{
 		next;
 		mes "[Mage Test Solution No. 2]";
 		mes "* Catalyst *";
-		mes "" + mesitemlink(716) + "";
+		mes "Red Gemstone";
 		mes "(Provided by";
 		mes "Mixing Machine)";
 		close;
 	case 3:
 		mes "[Mage Test Solution No. 3]";
 		mes "* Ingredients List *";
-		mes "6 " + mesitemlink(909) + "";
-		mes "1 " + mesitemlink(914) + "";
+		mes "6 Jellopy";
+		mes "1 Fluff";
 		next;
 		mes "[Mage Test Solution No. 3]";
 		mes "* Solvent Agent *";
-		mes "" + mesitemlink(1089) + "";
+		mes "Payon Solution";
 		mes "Where to Find:";
-		mes "A small " + mesitemlink(10035) + " in Payon, the Archer Village.";
+		mes "A small spring in Payon, the Archer Village.";
 		next;
 		mes "[Mage Test Solution No. 3]";
 		mes "* Magic Power Serial Code *";
@@ -668,21 +668,21 @@ geffen_in,177,112,4	script	Bookshelf	111,{
 		next;
 		mes "[Mage Test Solution No. 3]";
 		mes "* Catalyst *";
-		mes "" + mesitemlink(717) + "";
+		mes "Blue Gemstone";
 		mes "(Provided by";
 		mes "Mixing Machine)";
 		close;
 	case 4:
 		mes "[Mage Test Solution No. 4]";
 		mes "* Ingredients List *";
-		mes "2 " + mesitemlink(909) + "";
-		mes "3 " + mesitemlink(914) + "";
+		mes "2 Jellopy";
+		mes "3 Fluff";
 		next;
 		mes "[Mage Test Solution No. 4]";
 		mes "* Solvent Agent *";
-		mes "" + mesitemlink(1088) + "";
+		mes "Morocc Solution";
 		mes "Where to Find:";
-		mes "A small " + mesitemlink(10035) + " near entrance of pyramid in Morocc.";
+		mes "A small spring near entrance of pyramid in Morocc.";
 		next;
 		mes "[Mage Test Solution No. 4]";
 		mes "* Magic Power Serial Code *";

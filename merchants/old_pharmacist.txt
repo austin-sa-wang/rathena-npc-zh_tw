@@ -165,14 +165,14 @@ alberta_in,16,28,4	script	Pharmacist	61,{
 		mes "If you ask eagerly and politely, I will make them for you. But, not for free... Don't worry though, I only charge a small fee, so it's not that expensive.";
 		next;
 		mes "[Old Pharmacist]";
-		mes "" + mesitemlink(501) + " - ^0098E52 Red Herbs, 1 " + mesitemlink(713) + ", 2 zeny fee.^000000";
-		mes "" + mesitemlink(502) + " - ^0098E51 " + mesitemlink(507) + ", 1 " + mesitemlink(508) + ", 1 " + mesitemlink(713) + ", 5 zeny fee.^000000";
-		mes "" + mesitemlink(503) + " - ^0098E52 Yellow Herbs, 1 " + mesitemlink(713) + ", 10 zeny.^000000";
+		mes "Red Potion - ^0098E52 Red Herbs, 1 Empty Bottle, 2 zeny fee.^000000";
+		mes "Orange Potion - ^0098E51 Red Herb, 1 Yellow Herb, 1 Empty Bottle, 5 zeny fee.^000000";
+		mes "Yellow Potion - ^0098E52 Yellow Herbs, 1 Empty Bottle, 10 zeny.^000000";
 		next;
 		mes "[Old Pharmacist]";
-		mes "" + mesitemlink(504) + " - ^0098E52 White Herbs, 1 " + mesitemlink(713) + ", 20 zeny fee.^000000";
-		mes "" + mesitemlink(505) + " - ^0098E52 Blue Herbs, 1 " + mesitemlink(713) + ", 30 zeny fee.^000000";
-		mes "" + mesitemlink(506) + " - ^0098E52 Green Herbs, 1 " + mesitemlink(713) + ", 3 zeny fee.^000000";
+		mes "White Potion - ^0098E52 White Herbs, 1 Empty Bottle, 20 zeny fee.^000000";
+		mes "Blue Potion - ^0098E52 Blue Herbs, 1 Empty Bottle, 30 zeny fee.^000000";
+		mes "Green Potion - ^0098E52 Green Herbs, 1 Empty Bottle, 3 zeny fee.^000000";
 		close;
 	case 4:
 		mes "[Old Pharmacist]";

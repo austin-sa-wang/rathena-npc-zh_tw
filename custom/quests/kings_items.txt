@@ -24,7 +24,7 @@ prt_castle,80,170,4	script	King of Prontera	108,{
 	mes "[King of Prontera]";
 	mes "Thank you. Well, my daughter next to me is a little rowdy...";
 	mes "If you get her these items I'm sure she'll calm down.";
-	mes "I'll give you my " + mesitemlink(2235) + " or my sword as a reward.";
+	mes "I'll give you my crown or my sword as a reward.";
 	next;
 	setarray .@Items1[0],5007,742,30,741,50,753,20,732,1,710,20,629,20;
 	setarray .@Items2[0],1137,2254,1,2282,1,714,1;
@@ -35,7 +35,7 @@ prt_castle,80,170,4	script	King of Prontera	108,{
 				mes "If you could get me:";
 				for(set .@j,1; .@j<getarraysize(getd(".@Items"+.@i)); set .@j,.@j+2)
 					mes " ~ ^0055FF"+getd(".@Items"+.@i+"["+(.@j+1)+"]")+"^000000x "+getitemname(getd(".@Items"+.@i+"["+.@j+"]"));
-				mes "I'll give my "+((.@i == 2 )?"sword.":"" + mesitemlink(2235) + ".");
+				mes "I'll give my "+((.@i == 2 )?"sword.":"crown.");
 				if (.@i==2) close;
 				next; }
 		case 2:
@@ -55,7 +55,7 @@ prt_castle,80,170,4	script	King of Prontera	108,{
 			getitem getd(".@Items"+.@i+"[0]"),1;
 			mes "THANK YOU SOO MUCH!!";
 			mes "This will surely calm her down.";
-			mes "As promised, here is my "+((.@i==1)?"" + mesitemlink(2235) + ".":"sword.");
+			mes "As promised, here is my "+((.@i==1)?"crown.":"sword.");
 			close;
 		case 3:
 			mes "[King of Prontera]";

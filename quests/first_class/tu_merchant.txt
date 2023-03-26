@@ -602,7 +602,7 @@ prontera,66,111,3	script	Sagle	4_KID01,{
 	else if (tu_merchant == 8)
 		callsub L_Potions, 420,10;
 	mes "It's on the tip";
-	mes "of my " + mesitemlink(1015) + ", but";
+	mes "of my tongue, but";
 	mes "I can't quite remember...";
 	next;
 	mes "[Sagle]";

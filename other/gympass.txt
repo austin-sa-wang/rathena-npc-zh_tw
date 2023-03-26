@@ -57,7 +57,7 @@ payon,173,141,4	script	Ripped Cabus#GymPass	899,{
 			if (countitem(7776) > 0) {
 				mes "[Ripped]";
 				mes "Oh, awesome, I see you";
-				mes "brought your " + mesitemlink(7776) + ".";
+				mes "brought your Gym Pass.";
 				mes "Alright, just do what I do,";
 				mes "and try to feel the burn.";
 				mes "Ready? Let's do this.";

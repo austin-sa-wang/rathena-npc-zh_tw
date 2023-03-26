@@ -327,7 +327,7 @@ bat_a01,185,270,1	script	Guillaume Blacksmith#a01	851,{
 	if (getcharid(4) == $@TierraBG1_id1) {
 		mes "[Guillaume Blacksmith]";
 		mes "We are in urgency! The Barricade has been destroyed!";
-		mes "We can repair the Barricade with ^3131FF50 Stones, 3 " + mesitemlink(7085) + ", 500 Metal Fragments, 30 " + mesitemlink(757) + " and 100 " + mesitemlink(969) + ".^000000";
+		mes "We can repair the Barricade with ^3131FF50 Stones, 3 Sinew of Bear, 500 Metal Fragments, 30 Rough Elunium and 100 Gold.^000000";
 		mes "We have it all except for the 50 Stones!";
 		next;
 		switch(select("Repair.:Leave it.")) {
@@ -351,19 +351,19 @@ bat_a01,185,270,1	script	Guillaume Blacksmith#a01	851,{
 				mes "..............";
 				next;
 				mes "[Guillaume Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage.";
+				mes "Combine Stones and Gold in the proper percentage.";
 				next;
 				mes "[Guillaume Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade.";
 				next;
 				mes "[Guillaume Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger.";
 				next;
 				mes "[Guillaume Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger. Now decorate with Metal Fragments.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger. Now decorate with Metal Fragments.";
 				next;
 				mes "[Guillaume Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger. Decorate with Metal Fragments, and plait stones with " + mesitemlink(7085) + "!";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger. Decorate with Metal Fragments, and plait stones with Sinew of Bear!";
 				next;
 				mes "..............";
 				mes "..............";
@@ -413,7 +413,7 @@ bat_a01,170,121,5	script	Croix Blacksmith#bat_a01	851,{
 	if (getcharid(4) == $@TierraBG1_id2) {
 		mes "[Croix Blacksmith]";
 		mes "We are in urgency! The Barricade has been destroyed!";
-		mes "We can repair the Barricade with ^3131FF50 Stones, 3 " + mesitemlink(7085) + ", 500 Metal Fragments, 30 " + mesitemlink(757) + " and 100 " + mesitemlink(969) + ".^000000";
+		mes "We can repair the Barricade with ^3131FF50 Stones, 3 Sinew of Bear, 500 Metal Fragments, 30 Rough Elunium and 100 Gold.^000000";
 		mes "We have it all except for the 50 Stones!";
 		next;
 		switch(select("Repair.:Leave it.")) {
@@ -437,19 +437,19 @@ bat_a01,170,121,5	script	Croix Blacksmith#bat_a01	851,{
 				mes "..............";
 				next;
 				mes "[Croix Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage.";
+				mes "Combine Stones and Gold in the proper percentage.";
 				next;
 				mes "[Croix Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade.";
 				next;
 				mes "[Croix Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger.";
 				next;
 				mes "[Croix Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger. Now decorate with Metal Fragments.";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger. Now decorate with Metal Fragments.";
 				next;
 				mes "[Croix Blacksmith]";
-				mes "Combine Stones and " + mesitemlink(969) + " in the proper percentage and shape the Barricade, then add " + mesitemlink(757) + " to make it stronger. Decorate with Metal Fragments, and plait stones with " + mesitemlink(7085) + "!";
+				mes "Combine Stones and Gold in the proper percentage and shape the Barricade, then add Rough Elunium to make it stronger. Decorate with Metal Fragments, and plait stones with Sinew of Bear!";
 				next;
 				mes "..............";
 				mes "..............";

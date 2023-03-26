@@ -239,7 +239,7 @@ que_ng,30,65,3	script	Kuuga Gai#nq	730,{
 			mes "All you need";
 			mes "to bring me is";
 			mes "^3355FF5 Cyfars^000000 and";
-			mes "^3355FF1 " + mesitemlink(1010) + "^000000.";
+			mes "^3355FF1 Phracon^000000.";
 			mes "Please get those";
 			mes "as quickly as you can!";
 			next;
@@ -265,7 +265,7 @@ que_ng,30,65,3	script	Kuuga Gai#nq	730,{
 				mes "[Kuuga Gai]";
 				mes "Hurry and bring";
 				mes "^3355FF5 Cyfars^000000 and";
-				mes "^3355FF1 " + mesitemlink(1010) + "^000000 to me,";
+				mes "^3355FF1 Phracon^000000 to me,";
 				mes "so that I can craft";
 				mes "my own Kunai to use";
 				mes "against Wildcat Joe!";
@@ -432,7 +432,7 @@ einbroch,184,194,3	script	Suspicious Man#nq	881,{
 		mes "hear that. Please";
 		mes "help me find";
 		mes "^3355FF5 Cyfars^000000 and";
-		mes "^3355FF1 " + mesitemlink(1010) + "^000000.";
+		mes "^3355FF1 Phracon^000000.";
 		set NINJ_Q,2;
 		changequest 6015,6016;
 		close;
@@ -442,7 +442,7 @@ einbroch,184,194,3	script	Suspicious Man#nq	881,{
 			mes "[Suspicious Man]";
 			mes "Please bring";
 			mes "^3355FF5 Cyfars^000000 and";
-			mes "^3355FF1 " + mesitemlink(1010) + "^000000 to me as";
+			mes "^3355FF1 Phracon^000000 to me as";
 			mes "soon as you can. Then,";
 			mes "I can help you find";
 			mes "Red Leopard Joe.";

@@ -145,7 +145,7 @@ hu_in01,387,245,0	script	Allen Schuwell	849,2,2,{
 					mes "don't have any White";
 					mes "Potions either?! Wh-what";
 					mes "what am I gonna--?! Help me,";
-					mes "please! Bring me a " + mesitemlink(504) + "";
+					mes "please! Bring me a White Potion";
 					mes "as soon as you can! ^333333*Cough!*^000000";
 					close;
 				} else {
@@ -153,7 +153,7 @@ hu_in01,387,245,0	script	Allen Schuwell	849,2,2,{
 					mes "[Allen]";
 					mes "Oh, thank you!";
 					mes "I-It hurts so much...";
-					mes "A " + mesitemlink(504) + " just has";
+					mes "A White Potion just has";
 					mes "to help. I-It has to work!";
 					next;
 					mes "["+strcharinfo(0)+"]";
@@ -364,7 +364,7 @@ hu_in01,387,245,0	script	Allen Schuwell	849,2,2,{
 		} else if (hg_herb == 13) {
 			mes "[Allen]";
 			mes "So did you find the";
-			mes "" + mesitemlink(603) + " I put in";
+			mes "Old Blue Box I put in";
 			mes "my medicine drawer? It's";
 			mes "not much, but I hope you";
 			mes "like it. Consider my way";
@@ -539,7 +539,7 @@ OnTouch_:
 		next;
 		set .@rand,rand(1,7);
 		if (.@rand == 4) {
-			mes "^3355FFYou find an " + mesitemlink(11004) + "";
+			mes "^3355FFYou find an old book";
 			mes "inside the drawer.^000000";
 			next;
 			mes "[Welcome to Lighthalzen!]";
@@ -590,7 +590,7 @@ OnTouch_:
 		set hg_herb,7;
 		next;
 		if (.@rand == 4) {
-			mes "^3355FFYou find an " + mesitemlink(11004) + "";
+			mes "^3355FFYou find an old book";
 			mes "inside the drawer.^000000";
 			next;
 			mes "[Welcome to Lighthalzen!]";
@@ -633,7 +633,7 @@ OnTouch_:
 		end;
 	else if (hg_herb == 12) {
 		mes "^3355FFYou find an";
-		mes "" + mesitemlink(603) + " deep";
+		mes "Old Blue Box deep";
 		mes "inside the drawer.^000000";
 		close2;
 		specialeffect EF_CONE;
@@ -643,7 +643,7 @@ OnTouch_:
 		completequest 8056;
 	} else {
 		if (.@rand > 3) {
-			mes "^3355FFYou find an " + mesitemlink(11004) + "";
+			mes "^3355FFYou find an old book";
 			mes "inside the drawer.^000000";
 			next;
 			mes "[Welcome to Lighthalzen!]";
@@ -1114,7 +1114,7 @@ ein_in01,16,36,3	script	Morriphen	86,{
 		next;
 		mes "[Morriphen]";
 		mes "I couldn't see his face.";
-		mes "His " + mesitemlink(2501) + " was covering it,";
+		mes "His hood was covering it,";
 		mes "but I think his name was, um...";
 		mes "Mawon... Mawong? Anyway, when";
 		mes "we woke up, we were lying in";
@@ -1138,7 +1138,7 @@ ein_in01,16,36,3	script	Morriphen	86,{
 		mes "I had to make living for the";
 		mes "two of us to survive, so I found work in Einbroch and Lighthalzen.";
 		mes "Eventually, I bumped into Dono";
-		mes "inside a shabby " + mesitemlink(7872) + " shop in Lighthalzen. I felt so ashamed...";
+		mes "inside a shabby herb shop in Lighthalzen. I felt so ashamed...";
 		next;
 		mes "[Morriphen]";
 		mes "I burned up his lab, which";
@@ -1159,11 +1159,11 @@ ein_in01,16,36,3	script	Morriphen	86,{
 		mes "as Dono planned, Siria would";
 		mes "become a soldier, and I would";
 		mes "be supplying her armaments,";
-		mes "cutting " + mesitemlink(1132) + " weapons at the pinnacle of military development.";
+		mes "cutting edge weapons at the pinnacle of military development.";
 		next;
 		mes "[Morriphen]";
 		mes "While I was working for Rekenber, I was working on mass producing";
-		mes "imitations of the legendary sword, ''" + mesitemlink(1169) + ".'' They wouldn't be";
+		mes "imitations of the legendary sword, ''Executioner.'' They wouldn't be";
 		mes "perfect copies, but imagine what would've happened if I succeeded.";
 		next;
 		mes "[Morriphen]";
@@ -1506,19 +1506,19 @@ lighthalzen,88,79,7	script	Dono	85,{
 		next;
 		mes "[Dono]";
 		mes "Go get";
-		mes "^3355FF5 " + mesitemlink(1003) + "^000000,";
-		mes "^3355FF5 " + mesitemlink(7054) + "^000000,";
-		mes "^3355FF5 " + mesitemlink(7053) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(619) + "^000000,";
-		mes "^3355FF3 " + mesitemlink(971) + "^000000...";
+		mes "^3355FF5 Coal^000000,";
+		mes "^3355FF5 Brigan^000000,";
+		mes "^3355FF5 Cyfar^000000,";
+		mes "^3355FF1 Unripe Apple^000000,";
+		mes "^3355FF3 Detrimindexta^000000...";
 		next;
 		mes "[Dono]";
 		mes "...^3355FF20 Shells^000000,";
-		mes "^3355FF1 " + mesitemlink(507) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(510) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(511) + "^000000,";
-		mes "^3355FF1 " + mesitemlink(509) + "^000000, and";
-		mes "^3355FF1 " + mesitemlink(508) + "^000000.";
+		mes "^3355FF1 Red Herb^000000,";
+		mes "^3355FF1 Blue Herb^000000,";
+		mes "^3355FF1 Green Herb^000000,";
+		mes "^3355FF1 White Herb^000000, and";
+		mes "^3355FF1 Yellow Herb^000000.";
 		next;
 		mes "[Dono]";
 		mes "I know this is sudden,";
@@ -1583,7 +1583,7 @@ lighthalzen,88,79,7	script	Dono	85,{
 			mes "[Dono]";
 			mes "Go to the Lighthalzen";
 			mes "Makkie. Tell him I sent you";
-			mes "to get some Red Plant " + mesitemlink(905) + " Powder for Morriphen's medicine.";
+			mes "to get some Red Plant Stem Powder for Morriphen's medicine.";
 			next;
 			mes "[Dono]";
 			mes "Look, I know it's a pain,";
@@ -1604,19 +1604,19 @@ lighthalzen,88,79,7	script	Dono	85,{
 			next;
 			mes "[Dono]";
 			mes "Go get";
-			mes "^3355FF5 " + mesitemlink(1003) + "^000000,";
-			mes "^3355FF5 " + mesitemlink(7054) + "^000000,";
-			mes "^3355FF5 " + mesitemlink(7053) + "^000000,";
-			mes "^3355FF1 " + mesitemlink(619) + "^000000,";
-			mes "^3355FF3 " + mesitemlink(971) + "^000000...";
+			mes "^3355FF5 Coal^000000,";
+			mes "^3355FF5 Brigan^000000,";
+			mes "^3355FF5 Cyfar^000000,";
+			mes "^3355FF1 Unripe Apple^000000,";
+			mes "^3355FF3 Detrimindexta^000000...";
 			next;
 			mes "[Dono]";
 			mes "...^3355FF20 Shells^000000,";
-			mes "^3355FF1 " + mesitemlink(507) + "^000000,";
-			mes "^3355FF1 " + mesitemlink(510) + "^000000,";
-			mes "^3355FF1 " + mesitemlink(511) + "^000000,";
-			mes "^3355FF1 " + mesitemlink(509) + "^000000, and";
-			mes "^3355FF1 " + mesitemlink(508) + "^000000.";
+			mes "^3355FF1 Red Herb^000000,";
+			mes "^3355FF1 Blue Herb^000000,";
+			mes "^3355FF1 Green Herb^000000,";
+			mes "^3355FF1 White Herb^000000, and";
+			mes "^3355FF1 Yellow Herb^000000.";
 			close;
 		}
 	} else if (hg_bio == 4) {
@@ -1625,14 +1625,14 @@ lighthalzen,88,79,7	script	Dono	85,{
 		mes "to find Makkie inside the";
 		mes "pub across the street. Hurry";
 		mes "up and bring me some Red";
-		mes "Plant " + mesitemlink(905) + " Power from him. Come on, Morriphen's in trouble!";
+		mes "Plant Stem Power from him. Come on, Morriphen's in trouble!";
 		close;
 	} else if (hg_bio == 5) {
 		mes "[Dono]";
 		mes "Where is it?!";
 		mes "Okay, good, you brought";
 		mes "it. Huh. This isn't a lot of";
-		mes "Red Plant " + mesitemlink(905) + " Powder,";
+		mes "Red Plant Stem Powder,";
 		mes "but this should do. Alright,";
 		mes "let's see if it works now.";
 		next;
@@ -1744,7 +1744,7 @@ lhz_in03,193,28,3	script	Makkie	83,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Hi, I'm here to get";
-		mes "some Red Plant " + mesitemlink(905) + "";
+		mes "some Red Plant Stem";
 		mes "Powder for Dono. It's";
 		mes "pretty important, actually.";
 		next;
@@ -1812,10 +1812,10 @@ lhz_in03,193,28,3	script	Makkie	83,{
 		mes "Anyway, if you see him, or if";
 		mes "you visit Morriphen, please";
 		mes "give them my regards. Here you";
-		mes "are: Red Plant " + mesitemlink(905) + " Powder.";
+		mes "are: Red Plant Stem Powder.";
 		next;
 		mes "^3355FFYou receive a small bag";
-		mes "of Red Plant " + mesitemlink(905) + " Powder.^000000";
+		mes "of Red Plant Stem Powder.^000000";
 		set hg_bio,5;
 		changequest 11012,11013;
 		next;
@@ -1847,7 +1847,7 @@ lhz_in03,193,28,3	script	Makkie	83,{
 		mes "[Makkie]";
 		mes "Hm? Shouldn't you hurry";
 		mes "and get that bag of Red";
-		mes "Plant " + mesitemlink(905) + " Powder to";
+		mes "Plant Stem Powder to";
 		mes "Dono as soon as you can?";
 		close;
 	} else if (hg_bio == 6) {
@@ -1986,14 +1986,14 @@ hugel,70,137,5	script	Shede	879,{
 				mes "[Shede]";
 				mes "When you go to the beach, ";
 				mes "you will find clams near the ferry.";
-				mes "Please gather ^3131FF5 " + mesitemlink(966) + "^000000 from the clams.";
+				mes "Please gather ^3131FF5 Clam Flesh^000000 from the clams.";
 				mes "Please hurry!";
 				set hg_tre,20;
 				close2;
 				cutin "",255;
 				end;
 			case 3:
-				mes "In fact, I gave my " + mesitemlink(7855) + " to a gentleman.";
+				mes "In fact, I gave my heart to a gentleman.";
 				mes "I think that the time has come to let him know";
 				mes "how I feel about him.";
 				next;
@@ -2012,7 +2012,7 @@ hugel,70,137,5	script	Shede	879,{
 				mes "hiding in the bushes. They breed in this season, so they are plump with eggs.";
 				next;
 				mes "[Shede]";
-				mes "When you stew their shells and use the broth to kneed " + mesitemlink(7604) + ",";
+				mes "When you stew their shells and use the broth to kneed flour,";
 				mes "you can make fresh and crunch cookies.";
 				next;
 				cutin "siide2.bmp",2;
@@ -2050,7 +2050,7 @@ hugel,70,137,5	script	Shede	879,{
 		end;
 	} else if (hg_tre > 19 && hg_tre < 25) {
 		mes "[Shede]";
-		mes "Please pick up \"^3131FF5 Clams^000000\" from a fish " + mesitemlink(1065) + " in the ferry.";
+		mes "Please pick up \"^3131FF5 Clams^000000\" from a fish trap in the ferry.";
 		mes "I hope that you will bring their solution as quickly as you can!";
 		close2;
 		cutin "",255;
@@ -2257,7 +2257,7 @@ hu_in01,256,40,3	script	Herico	897,{
 			mes "Now, please tell me what you have found out.";
 			next;
 			mes "- You told him what you have seen and heard from the Odin Shirine, -";
-			mes "- such as Giantes, Ymir's " + mesitemlink(7855) + " and Rekenber. -";
+			mes "- such as Giantes, Ymir's Heart and Rekenber. -";
 			next;
 			cutin "heri3.bmp",2;
 			mes "[Herico]";
@@ -2489,7 +2489,7 @@ hu_in01,256,40,3	script	Herico	897,{
 		mes "[Herico]";
 		mes "First, I think that I should inform you about my true identity.";
 		mes "I may now be an old man whose days are numbered,";
-		mes "but I used to work at ^3131FFthe Ymir's " + mesitemlink(7855) + " imitation research department";
+		mes "but I used to work at ^3131FFthe Ymir's Heart imitation research department";
 		mes " in Regenschirm laboratory^000000 under Sage Varmunt's supervision.";
 		emotion ET_HUK, playerattached();
 		next;
@@ -2500,30 +2500,30 @@ hu_in01,256,40,3	script	Herico	897,{
 		cutin "heri1.bmp",2;
 		mes "["+strcharinfo(0)+"]";
 		mes "Does it mean that you are the one";
-		mes "who created the Ymir's " + mesitemlink(7855) + " imitation?";
+		mes "who created the Ymir's Heart imitation?";
 		next;
 		mes "[Herico]";
 		mes "Well, I was a mere assistant of Sage Varmunt,";
 		mes "so I can't say that I created it.";
 		next;
 		mes "[Herico]";
-		mes "Rekenber has been secretly gathering ^FF0000Ymir's " + mesitemlink(7855) + " Pieces^000000.";
-		mes "They are very obsessed with Ymir's " + mesitemlink(7855) + " Pieces,";
-		mes "and I guess that it is because of the enormous power that the " + mesitemlink(7855) + " pieces possess within..";
+		mes "Rekenber has been secretly gathering ^FF0000Ymir's Heart Pieces^000000.";
+		mes "They are very obsessed with Ymir's Heart Pieces,";
+		mes "and I guess that it is because of the enormous power that the heart pieces possess within..";
 		next;
 		mes "[Herico]";
-		mes "However, the power of the original " + mesitemlink(7855) + " pieces";
+		mes "However, the power of the original heart pieces";
 		mes "are too strong for humans to control.";
 		mes "Thus, it is not fiseable to manipulate the power";
 		mes "as energy sources.";
-		mes "That is why ^3131FFthe imitations of Ymir's " + mesitemlink(7855) + "";
+		mes "That is why ^3131FFthe imitations of Ymir's Heart";
 		mes "Pieces^000000 have been created.";
 		next;
 		mes "[Herico]";
 		mes "We, researchers including Sage Varmunt, endeavoured";
 		mes "our effort in studying and analyzing the revolutionary energy source";
 		mes "for a long time.";
-		mes "And our effort has gained a fruitful result; the Imitations of " + mesitemlink(7346) + ".";
+		mes "And our effort has gained a fruitful result; the Imitations of Ymir's Heart Piece.";
 		next;
 		mes "[Herico]";
 		mes "With the invention, we could create guardians.";
@@ -2541,7 +2541,7 @@ hu_in01,256,40,3	script	Herico	897,{
 		mes "Hmm...now I see.";
 		next;
 		mes "[Herico]";
-		mes "After we succeeded in creating the imitations of " + mesitemlink(7346) + ",";
+		mes "After we succeeded in creating the imitations of Ymir's Heart Piece,";
 		mes "Sage Varmunt looked pretty depressed for some reason.";
 		mes "After all, he left the laboratory and said that ^3131FFby him";
 		mes "staying with Regenschirm laboratory";
@@ -2716,7 +2716,7 @@ hu_in01,256,40,3	script	Herico	897,{
 		mes "Haha...you know what I am going to ask you now, don't you?";
 		next;
 		mes "[Herico]";
-		mes "Please go meet with ^3131FFthe " + mesitemlink(7138) + " manufacturer^000000,";
+		mes "Please go meet with ^3131FFthe Marine Sphere Bottle manufacturer^000000,";
 		mes "and purchase some Marine Sphere Bottles.";
 		mes "And explode ^3131FFthe bio experiment equipment^000000 in the 2nd level of bio lab!";
 		next;
@@ -2731,7 +2731,7 @@ hu_in01,256,40,3	script	Herico	897,{
 		end;
 	} else if (hg_tre == 54) {
 		mes "[Herico]";
-		mes "Please go meet with ^3131FFthe " + mesitemlink(7138) + " manufacturer^000000,";
+		mes "Please go meet with ^3131FFthe Marine Sphere Bottle manufacturer^000000,";
 		mes "and purchase some Marine Sphere Bottles.";
 		mes "And explode ^3131FFthe bio experiment equipment^000000 in the 2nd level of bio lab.";
 		mes "You are the only hope that I have.";
@@ -2766,7 +2766,7 @@ hu_in01,256,40,3	script	Herico	897,{
 		next;
 		mes "[Herico]";
 		mes "From now on, I will reward you every time when you bring me";
-		mes "a certain amount of the " + mesitemlink(7345) + ".";
+		mes "a certain amount of the Handcuffs.";
 		next;
 		mes "[Herico]";
 		mes "And...even though we succeeded in stopping them for now,";
@@ -2841,7 +2841,7 @@ hu_in01,256,40,3	script	Herico	897,{
 			switch(select("I brought Handcuffs:Regarding Sage Varmunt's documents")) {
 			case 1:
 				mes "[Herico]";
-				mes "I am willing to exchange 1 of level 4 food with 100 " + mesitemlink(7345) + ".";
+				mes "I am willing to exchange 1 of level 4 food with 100 Handcuffs.";
 				next;
 				if(select("Exchange:Cancel.") == 1) {
 					if (countitem(7345) > 99) {
@@ -2870,7 +2870,7 @@ hu_in01,256,40,3	script	Herico	897,{
 						}
 					} else {
 						mes "[Herico]";
-						mes "I don't think that you have brought me 100 " + mesitemlink(7345) + ".";
+						mes "I don't think that you have brought me 100 Handcuffs.";
 					}
 				}
 				close2;
@@ -3011,7 +3011,7 @@ lhz_in03,39,44,3	script	Enquro Carson	97,{
 			mes "[Enquro Carson]";
 			mes "Wow! This is awsome!";
 			mes "It is as delicious as I heard!";
-			mes "Its taste is still lingering on my " + mesitemlink(1015) + ",";
+			mes "Its taste is still lingering on my tongue,";
 			mes "and it is like Wow!";
 			next;
 			mes "[Enquro Carson]";
@@ -3243,7 +3243,7 @@ hu_in01,317,312,0	script	Book	111,{
 					mes "- You started reading the 3rd page of the book. -";
 					next;
 					mes "Date: **month **day";
-					mes "Today, we, \"Republic " + mesitemlink(13104) + "\",";
+					mes "Today, we, \"Republic Garrison\",";
 					mes "were introduced to ^3131FF2 Guardians.";
 					mes "Those machines joined us for their test operation^000000.";
 					mes "Everyone seemed to be intimidated by their big and heavy frames.";
@@ -3332,7 +3332,7 @@ hu_in01,317,312,0	script	Book	111,{
 						mes "Every member of our troops are already aware of the shocking incident,";
 						mes "and all of us are uncontrollably enraged.";
 						mes "The government has been bribed ";
-						mes "with Rekenber's filthy money and has become nothing but a " + mesitemlink(740) + ".";
+						mes "with Rekenber's filthy money and has become nothing but a puppet.";
 						mes "We must take control over our life once again. Our future depends on us.";
 						mes "We will join you, 'Blade Canine Mercenary' to fight for our rights.^000000";
 						next;
@@ -3436,7 +3436,7 @@ einbech,208,124,3	script	Bomb Maker	851,{
 		}
 		mes "[Boomer]";
 		mes "Hey, what's up?";
-		mes "I am a professional " + mesitemlink(7138) + " maker.";
+		mes "I am a professional Marine Sphere Bottle maker.";
 		mes "You can call me Boomer.";
 		next;
 		switch(select("Buy Marine Sphere Bottle.:End conversation.")) {
@@ -3448,7 +3448,7 @@ einbech,208,124,3	script	Bomb Maker	851,{
 			mes "You've got the right choice for the bomb here!";
 			next;
 			mes "[Boomer]";
-			mes "One " + mesitemlink(7138) + " is 3,000 zeny.";
+			mes "One Marine Sphere Bottle is 3,000 zeny.";
 			mes "You must understand that I am providing the bomb at such a low price";
 			mes "considering its amazing performance!";
 			mes "You will regret if you miss this chance. Hahaha!";
@@ -3479,7 +3479,7 @@ einbech,208,124,3	script	Bomb Maker	851,{
 	} else {
 		mes "[Boomer]";
 		mes "Hey, what's up?";
-		mes "I am a professional " + mesitemlink(7138) + " maker.";
+		mes "I am a professional Marine Sphere Bottle maker.";
 		mes "You can call me Boomer.";
 		close;
 	}
@@ -3656,7 +3656,7 @@ hugel,209,163,3	script	Clam#C1	111,{
 		next;
 		switch(select("Gather them.:Pass.")) {
 		case 1:
-			mes "- You started opening clam shells to gather " + mesitemlink(966) + ".-";
+			mes "- You started opening clam shells to gather Clam Flesh.-";
 			next;
 			mes "- *Snip Snip* -";
 			next;
@@ -3669,23 +3669,23 @@ hugel,209,163,3	script	Clam#C1	111,{
 			specialeffect2 EF_CONE;
 			next;
 			if (rand(1,5) > 4) {
-				mes "- Clams are too strong to open. You have failed in gathering " + mesitemlink(966) + ". -";
+				mes "- Clams are too strong to open. You have failed in gathering Clam Flesh. -";
 				specialeffect2 EF_STUNATTACK;
 				close;
 			}
-			mes "- You have successfully gathered " + mesitemlink(966) + ". -";
+			mes "- You have successfully gathered Clam Flesh. -";
 			specialeffect2 EF_VALLENTINE2;
 			set hg_tre,hg_tre+1;
 			if (hg_tre == 21)
-				mes "Collected " + mesitemlink(966) + ": 1ea ";
+				mes "Collected Clam Flesh: 1ea ";
 			else if (hg_tre == 22)
-				mes "Collected " + mesitemlink(966) + ": 2ea ";
+				mes "Collected Clam Flesh: 2ea ";
 			else if (hg_tre == 23)
-				mes "Collected " + mesitemlink(966) + ": 3ea ";
+				mes "Collected Clam Flesh: 3ea ";
 			else if (hg_tre == 24)
-				mes "Collected " + mesitemlink(966) + ": 4ea ";
+				mes "Collected Clam Flesh: 4ea ";
 			else if (hg_tre == 25)
-				mes "Collected " + mesitemlink(966) + ": 5ea ";
+				mes "Collected Clam Flesh: 5ea ";
 			initnpctimer;
 			disablenpc "Clam#C1";
 			close;
@@ -3711,7 +3711,7 @@ hugel,203,166,3	script	Clam#C2	111,{
 		next;
 		switch(select("Gather them.:Pass.")) {
 		case 1:
-			mes "- You started opening clam shells to gather " + mesitemlink(966) + ".-";
+			mes "- You started opening clam shells to gather Clam Flesh.-";
 			next;
 			mes "- *Snip Snip* -";
 			next;
@@ -3724,23 +3724,23 @@ hugel,203,166,3	script	Clam#C2	111,{
 			specialeffect2 EF_CONE;
 			next;
 			if (rand(1,5) > 4) {
-				mes "- Clams are too strong to open. You have failed in gathering " + mesitemlink(966) + ". -";
+				mes "- Clams are too strong to open. You have failed in gathering Clam Flesh. -";
 				specialeffect EF_STUNATTACK;
 				close;
 			}
-			mes "- You have successfully gathered " + mesitemlink(966) + ". -";
+			mes "- You have successfully gathered Clam Flesh. -";
 			specialeffect2 EF_VALLENTINE2;
 			set hg_tre,hg_tre+1;
 			if (hg_tre == 21)
-				mes "Collected " + mesitemlink(966) + ": 1ea ";
+				mes "Collected Clam Flesh: 1ea ";
 			else if (hg_tre == 22)
-				mes "Collected " + mesitemlink(966) + ": 2ea ";
+				mes "Collected Clam Flesh: 2ea ";
 			else if (hg_tre == 23)
-				mes "Collected " + mesitemlink(966) + ": 3ea ";
+				mes "Collected Clam Flesh: 3ea ";
 			else if (hg_tre == 24)
-				mes "Collected " + mesitemlink(966) + ": 4ea ";
+				mes "Collected Clam Flesh: 4ea ";
 			else if (hg_tre == 25)
-				mes "Collected " + mesitemlink(966) + ": 5ea ";
+				mes "Collected Clam Flesh: 5ea ";
 			initnpctimer;
 			disablenpc "Clam#C2";
 			close;
@@ -3766,7 +3766,7 @@ hugel,217,158,3	script	Clam#C3	111,{
 		next;
 		switch(select("Gather them.:Pass.")) {
 		case 1:
-			mes "- You started opening clam shells to gather " + mesitemlink(966) + ".-";
+			mes "- You started opening clam shells to gather Clam Flesh.-";
 			next;
 			mes "- *Snip Snip* -";
 			next;
@@ -3779,23 +3779,23 @@ hugel,217,158,3	script	Clam#C3	111,{
 			specialeffect2 EF_CONE;
 			next;
 			if (rand(1,5) > 4) {
-				mes "- Clams are too strong to open. You have failed in gathering " + mesitemlink(966) + ". -";
+				mes "- Clams are too strong to open. You have failed in gathering Clam Flesh. -";
 				specialeffect2 EF_STUNATTACK;
 				close;
 			}
-			mes "- You have successfully gathered " + mesitemlink(966) + ". -";
+			mes "- You have successfully gathered Clam Flesh. -";
 			specialeffect2 EF_VALLENTINE2;
 			set hg_tre,hg_tre+1;
 			if (hg_tre == 21)
-				mes "Collected " + mesitemlink(966) + ": 1ea ";
+				mes "Collected Clam Flesh: 1ea ";
 			else if (hg_tre == 22)
-				mes "Collected " + mesitemlink(966) + ": 2ea ";
+				mes "Collected Clam Flesh: 2ea ";
 			else if (hg_tre == 23)
-				mes "Collected " + mesitemlink(966) + ": 3ea ";
+				mes "Collected Clam Flesh: 3ea ";
 			else if (hg_tre == 24)
-				mes "Collected " + mesitemlink(966) + ": 4ea ";
+				mes "Collected Clam Flesh: 4ea ";
 			else if (hg_tre == 25)
-				mes "Collected " + mesitemlink(966) + ": 5ea ";
+				mes "Collected Clam Flesh: 5ea ";
 			initnpctimer;
 			disablenpc "Clam#C3";
 			close;
@@ -3821,7 +3821,7 @@ hugel,204,150,3	script	Clam#C4	111,{
 		next;
 		switch(select("Gather them.:Pass.")) {
 		case 1:
-			mes "- You started opening clam shells to gather " + mesitemlink(966) + ".-";
+			mes "- You started opening clam shells to gather Clam Flesh.-";
 			next;
 			mes "- *Snip Snip* -";
 			next;
@@ -3834,23 +3834,23 @@ hugel,204,150,3	script	Clam#C4	111,{
 			specialeffect2 EF_CONE;
 			next;
 			if (rand(1,5) > 4) {
-				mes "- Clams are too strong to open. You have failed in gathering " + mesitemlink(966) + ". -";
+				mes "- Clams are too strong to open. You have failed in gathering Clam Flesh. -";
 				specialeffect2 EF_STUNATTACK;
 				close;
 			}
-			mes "- You have successfully gathered " + mesitemlink(966) + ". -";
+			mes "- You have successfully gathered Clam Flesh. -";
 			specialeffect2 EF_VALLENTINE2;
 			set hg_tre,hg_tre+1;
 			if (hg_tre == 21)
-				mes "Collected " + mesitemlink(966) + ": 1ea ";
+				mes "Collected Clam Flesh: 1ea ";
 			else if (hg_tre == 22)
-				mes "Collected " + mesitemlink(966) + ": 2ea ";
+				mes "Collected Clam Flesh: 2ea ";
 			else if (hg_tre == 23)
-				mes "Collected " + mesitemlink(966) + ": 3ea ";
+				mes "Collected Clam Flesh: 3ea ";
 			else if (hg_tre == 24)
-				mes "Collected " + mesitemlink(966) + ": 4ea ";
+				mes "Collected Clam Flesh: 4ea ";
 			else if (hg_tre == 25)
-				mes "Collected " + mesitemlink(966) + ": 5ea ";
+				mes "Collected Clam Flesh: 5ea ";
 			initnpctimer;
 			disablenpc "Clam#C4";
 			close;
@@ -4092,7 +4092,7 @@ OnTimer20000:
 
 lhz_in01,214,129,0	script	A Pile of Paper	111,{
 	if (hg_tre == 52) {
-		mes "- You found a pile of paper that was tied up with a thick " + mesitemlink(2208) + ".";
+		mes "- You found a pile of paper that was tied up with a thick ribbon.";
 		mes "On the very top paper, a period and a title saying 'Report of the **th Research'";
 		mes "were written.";
 		next;
@@ -4134,7 +4134,7 @@ lhz_dun02,244,226,0	script	Unethical Machine	111,{
 			mes "Today, I am going to destroy you";
 			mes "for making innocent people's lives miserable!";
 			next;
-			mes "- You threw a " + mesitemlink(7138) + " toward the machine. -";
+			mes "- You threw a Marine Sphere Bottle toward the machine. -";
 			next;
 			mes "BOOM!";
 			specialeffect2 EF_SUI_EXPLOSION;
@@ -4145,7 +4145,7 @@ lhz_dun02,244,226,0	script	Unethical Machine	111,{
 			close;
 		} else {
 			mes "- You were staggered for the fact that";
-			mes "you forgot to bring the " + mesitemlink(7138) + " with you. -";
+			mes "you forgot to bring the Marine Sphere Bottle with you. -";
 			close;
 		}
 	}
@@ -4445,7 +4445,7 @@ hugel,191,172,3	script	Manainne	892,1,{
 		mes "''Your lovely face,";
 		mes "your enticing smile...";
 		mes "They're forever be in my";
-		mes "" + mesitemlink(7855) + ", so I'll never be lonely.''";
+		mes "heart, so I'll never be lonely.''";
 		next;
 		mes "[El Schatt]";
 		mes "Manainne...";
@@ -5200,7 +5200,7 @@ hugel,100,176,3	script	Suspicious Barrel	111,{
 		emotion ET_THINK, playerattached();
 		mes "^3355FFIt sounds like";
 		mes "this barrel wants";
-		mes "" + mesitemlink(12051) + ".^000000";
+		mes "Steamed Crab Nippers.^000000";
 		next;
 		switch(select("I'll bring you Steamed Crab Nippers:Ignore")) {
 		case 1:
@@ -5252,7 +5252,7 @@ hugel,100,176,3	script	Suspicious Barrel	111,{
 			next;
 			emotion ET_THINK, playerattached();
 			mes "^3355FFYou dumped the";
-			mes "" + mesitemlink(12051) + "";
+			mes "Steamed Crab Nippers";
 			mes "into the barrel where";
 			mes "it was quickly devoured.^000000";
 			delitem 12051,1; //Steamed crab nippers
@@ -5300,7 +5300,7 @@ hugel,100,176,3	script	Suspicious Barrel	111,{
 			next;
 			emotion ET_THINK, playerattached();
 			mes "^3355FFYou dumped the";
-			mes "" + mesitemlink(12051) + "";
+			mes "Steamed Crab Nippers";
 			mes "into the barrel where";
 			mes "it was quickly devoured.^000000";
 			delitem 12051,1; //Steamed crab nippers
@@ -5430,7 +5430,7 @@ hugel,100,174,3	script	Strange Man#Hugel	898,{
 	} else {
 		mes "[Strange Man]";
 		mes "Hahahaha!";
-		mes "" + mesitemlink(12051) + "!";
+		mes "Steamed Crab Nippers!";
 		mes "That really hit the spot!";
 		mes "I ate so much, I won't";
 		mes "have to eat again for days!";
@@ -5487,13 +5487,13 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		mes "able adventurer, so would";
 		mes "you consider working part time";
 		mes "for me? I have many orders for";
-		mes "" + mesitemlink(584) + ", so there's";
+		mes "Fish Cake Soup, so there's";
 		mes "no way I can make deliveries...";
 		next;
 		mes "[Cellette]";
 		mes "If you work for me, I'll";
 		mes "waive the price: I'll give you";
-		mes "1 " + mesitemlink(584) + " for each";
+		mes "1 Fish Cake Soup for each";
 		mes "delivery that you complete.";
 		mes "But if you're not interested,";
 		mes "you can just buy some now~";
@@ -5509,7 +5509,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 			case 1:
 				mes "[Cellette]";
 				mes "Alright, please take this";
-				mes "order of " + mesitemlink(584) + " to";
+				mes "order of Fish Cake Soup to";
 				mes "my friend Neha. I'm grateful";
 				mes "that she's a regular customer--";
 				mes "she's a good friend, but I'm sure that she loves the soup as well.";
@@ -5520,7 +5520,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 			case 2:
 				mes "[Cellette]";
 				mes "Right, take this next order";
-				mes "of " + mesitemlink(584) + " to Maewan,";
+				mes "of Fish Cake Soup to Maewan,";
 				mes "another one of my regulars.";
 				mes "He's been buying my soup ever";
 				mes "since I helped him start his business. Nice of him, isn't it?";
@@ -5556,7 +5556,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		case 2:
 			mes "[Cellette]";
 			mes "Oh, you'd like to try my";
-			mes "" + mesitemlink(584) + ", eh? Good";
+			mes "Fish Cake Soup, eh? Good";
 			mes "choice, I know you'll enjoy";
 			mes "its delicious, hearty flavor~";
 			mes "Each order costs 100 zeny.";
@@ -5566,7 +5566,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 				if (Zeny > 99) {
 					mes "[Cellette]";
 					mes "Thanks! Enjoy your";
-					mes "bowl of " + mesitemlink(584) + ".";
+					mes "bowl of Fish Cake Soup.";
 					mes "I hope you come and ";
 					mes "visit me again, okay?";
 					set Zeny,Zeny-100;
@@ -5593,7 +5593,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		case 3:
 			mes "[Cellette]";
 			mes "Oh? You're not interested";
-			mes "in trying my " + mesitemlink(584) + "";
+			mes "in trying my Fish Cake Soup";
 			mes "at all? Well, if you change";
 			mes "your mind, please come";
 			mes "back. I just know you'll love";
@@ -5606,14 +5606,14 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 			mes "Haven't you left already?";
 			mes "My friend Neha is waiting";
 			mes "for you to deliver her order";
-			mes "of " + mesitemlink(584) + ". Please";
+			mes "of Fish Cake Soup. Please";
 			mes "try to get it to her before the";
 			mes "soup gets cold, okay?";
 			close;
 		} else {
 			mes "[Cellette]";
 			mes "What's that? You lost";
-			mes "the " + mesitemlink(584) + " you're";
+			mes "the Fish Cake Soup you're";
 			mes "supposed to deliver to Neha?";
 			mes "Oh well, I suppose I'll have";
 			mes "to give you this fresh bowl";
@@ -5654,7 +5654,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		} else {
 			mes "[Cellette]";
 			mes "What's that? You lost";
-			mes "the " + mesitemlink(584) + " you're";
+			mes "the Fish Cake Soup you're";
 			mes "supposed to give to Maewan?";
 			mes "Oh well, I suppose I'll have";
 			mes "to give you this fresh bowl";
@@ -5696,7 +5696,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		} else {
 			mes "[Cellette]";
 			mes "What's that? You lost";
-			mes "the " + mesitemlink(584) + " you're";
+			mes "the Fish Cake Soup you're";
 			mes "supposed to give to Layoma?";
 			mes "Oh well, I suppose I'll have";
 			mes "to give you this fresh bowl";
@@ -5730,14 +5730,14 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 			mes "[Cellette]";
 			mes "Oh, dear, you better";
 			mes "leave now and deliver";
-			mes "that " + mesitemlink(584) + " to";
+			mes "that Fish Cake Soup to";
 			mes "Erjan before he can think";
 			mes "of something to complain about. Although it's probably too late...";
 			close;
 		} else {
 			mes "[Cellette]";
 			mes "What's that? You lost";
-			mes "the " + mesitemlink(584) + " you're";
+			mes "the Fish Cake Soup you're";
 			mes "supposed to deliver to Erjan?";
 			mes "Oh well, I suppose I'll have";
 			mes "to give you this fresh bowl";
@@ -5780,7 +5780,7 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		mes "you successfully delivered";
 		mes "the soup. I knew I could trust";
 		mes "you! Ah, before I forget, here";
-		mes "is your " + mesitemlink(584) + ". Thank";
+		mes "is your Fish Cake Soup. Thank";
 		mes "you so much for your help~";
 		set hg_odeng,0;
 		for(set .@i,8072; .@i<= 8075; set .@i,.@i+1) {
@@ -5796,14 +5796,14 @@ hu_in01,15,372,3	script	Cellette Lavit	74,{
 		mes "by and help me again sometime.";
 		mes "Oh, and please tell all your";
 		mes "friends about my delicious";
-		mes "" + mesitemlink(584) + ". See you later~";
+		mes "Fish Cake Soup. See you later~";
 		close;
 	} else {
 		mes "[Cellette]";
 		mes "Come and taste some";
 		mes "authentic Hugel cuisine!";
 		mes "Enjoy a big steaming bowl";
-		mes "of delicious " + mesitemlink(584) + "~";
+		mes "of delicious Fish Cake Soup~";
 		close;
 	}
 }
@@ -5886,7 +5886,7 @@ hugel,76,134,3	script	Neha	101,{
 			close;
 		} else {
 			mes "[Neha]";
-			mes "^FF00001 " + mesitemlink(584) + "^000000...";
+			mes "^FF00001 Fish Cake Soup^000000...";
 			mes "^FF00001 Whip^000000... Is that too";
 			mes "much for a girl to ask?";
 			mes "I'm hungry, and I want to";
@@ -5911,7 +5911,7 @@ hugel,87,139,3	script	Maewan	86,{
 			mes "[Maewan]";
 			mes "Oh, finally, I've been";
 			mes "waiting for my order of";
-			mes "" + mesitemlink(584) + " from Cellette!";
+			mes "Fish Cake Soup from Cellette!";
 			mes "Aaaah, it smells oh so delicious~";
 			next;
 			mes "[Maewan]";
@@ -5924,7 +5924,7 @@ hugel,87,139,3	script	Maewan	86,{
 			next;
 			mes "[Maewan]";
 			mes "Just bring me";
-			mes "1 " + mesitemlink(7015) + ",";
+			mes "1 Bookclip in Memory,";
 			mes "alright? Oh, and don't";
 			mes "eat my soup before";
 			mes "you deliver it to me!";
@@ -5945,7 +5945,7 @@ hugel,87,139,3	script	Maewan	86,{
 		if (countitem(584) && countitem(7015)) {
 			mes "[Maewan]";
 			mes "Great, you really brought";
-			mes "me a " + mesitemlink(7015) + "!";
+			mes "me a Bookclip in Memory!";
 			mes "Yes, this'll make a fine";
 			mes "addition to my collection~";
 			mes "Oh, and give me my soup.";
@@ -5959,7 +5959,7 @@ hugel,87,139,3	script	Maewan	86,{
 			mes "[Maewan]";
 			mes "I know it sounds unfair";
 			mes "of me to ask you to bring";
-			mes "^FF00001 " + mesitemlink(7015) + "^000000 with";
+			mes "^FF00001 Bookclip in Memory^000000 with";
 			mes "my ^FF0000Fish Cake Soup^000000, but well...";
 			next;
 			mes "[Maewan]";
@@ -5989,7 +5989,7 @@ hugel,84,125,3	script	Layoma	700,{
 		if (countitem(584)) {
 			mes "[Layoma]";
 			mes "You're here to deliver";
-			mes "my " + mesitemlink(584) + "?";
+			mes "my Fish Cake Soup?";
 			mes "How could you be so late?!";
 			mes "Don't you know that your";
 			mes "incompetence also reflects";
@@ -6000,7 +6000,7 @@ hugel,84,125,3	script	Layoma	700,{
 			mes "delivering for Cellette";
 			mes "unless you prove that you're";
 			mes "dependable to me. Erm, bring";
-			mes "me ^FF00001 " + mesitemlink(921) + "^000000, and";
+			mes "me ^FF00001 Mushroom Spore^000000, and";
 			mes "I'll forget this whole thing.";
 			set hg_odeng,8;
 			changequest 8066,8070;
@@ -6017,9 +6017,9 @@ hugel,84,125,3	script	Layoma	700,{
 		if (countitem(584) && countitem(921)) {
 			mes "[Layoma]";
 			mes "Great! You brought me";
-			mes "1 " + mesitemlink(921) + "! This";
+			mes "1 Mushroom Spore! This";
 			mes "will taste perfect with my";
-			mes "bowl of " + mesitemlink(584) + "~";
+			mes "bowl of Fish Cake Soup~";
 			next;
 			mes "[Layoma]";
 			mes "Alright, maybe I can";
@@ -6039,7 +6039,7 @@ hugel,84,125,3	script	Layoma	700,{
 			mes "you're a reliable and";
 			mes "trustworthy person! Go";
 			mes "and bring me 1 Mushroom";
-			mes "Spore with my " + mesitemlink(584) + "!";
+			mes "Spore with my Fish Cake Soup!";
 			close;
 		}
 	} else {
@@ -6059,7 +6059,7 @@ hugel,102,161,3	script	Erjan	100,{
 			mes "[Erjan]";
 			mes "Well, I thought you'd";
 			mes "never come to deliver";
-			mes "my " + mesitemlink(584) + ". You're";
+			mes "my Fish Cake Soup. You're";
 			mes "awfully late, you know that?";
 			mes "Still, the smell is just so appetizing, I can barely resist...";
 			next;
@@ -6076,7 +6076,7 @@ hugel,102,161,3	script	Erjan	100,{
 			mes "[Erjan]";
 			mes "Realize that I'm compromising";
 			mes "with you by asking you to bring";
-			mes "me regular " + mesitemlink(736) + "... I always";
+			mes "me regular China... I always";
 			mes "enjoy my meals on the finest";
 			mes "glass and tableware available.";
 			mes "That's how we noblemen live~";
@@ -6095,14 +6095,14 @@ hugel,102,161,3	script	Erjan	100,{
 		if (countitem(584) && countitem(736)) {
 			mes "[Erjan]";
 			mes "Ah, so you've delivered";
-			mes "my " + mesitemlink(584) + " with some";
-			mes "proper " + mesitemlink(736) + ". Yes, this pleases";
+			mes "my Fish Cake Soup with some";
+			mes "proper China. Yes, this pleases";
 			mes "me. Now, I may enjoy this meal";
 			mes "in a manner befitting the";
 			mes "Franchefeschu family.";
 			next;
 			mes "[Erjan]";
-			mes "Although this " + mesitemlink(736) + " is";
+			mes "Although this China is";
 			mes "below my standards, I also";
 			mes "understand that this is the";
 			mes "best you can do. Yes, to accept";
@@ -6122,7 +6122,7 @@ hugel,102,161,3	script	Erjan	100,{
 			mes "[Erjan]";
 			mes "Must I repeat myself?";
 			mes "Bring me my ^FF0000Fish Cake Soup^000000";
-			mes "with ^FF00001 " + mesitemlink(736) + "^000000 so that I may";
+			mes "with ^FF00001 China^000000 so that I may";
 			mes "properly enjoy my meal.";
 			close;
 		}
@@ -6906,7 +6906,7 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 		mes "[Kurupe]";
 		mes "Unfortunately, he's the";
 		mes "only one I can find that";
-		mes "can actually " + mesitemlink(519) + " my cow,";
+		mes "can actually milk my cow,";
 		mes "Booboo! If you can find";
 		mes "Burupu for me, I'll be sure";
 		mes "to pay you for your effort.";
@@ -6916,7 +6916,7 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 			mes "[Kurupe]";
 			mes "Thank you, you're a";
 			mes "lifesaver! I need to get the";
-			mes "" + mesitemlink(519) + " delivered by tomorrow,";
+			mes "milk delivered by tomorrow,";
 			mes "so I really need Burupu back!";
 			mes "You should be able to find him";
 			mes "somewhere just outside of town.";
@@ -6929,7 +6929,7 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 			mes "If I can't find";
 			mes "Burupu, then there's no";
 			mes "way I'd be able to deliver";
-			mes "the " + mesitemlink(519) + " orders by tomorrow!";
+			mes "the milk orders by tomorrow!";
 			mes "Great, what am I gonna do?";
 			close;
 		}
@@ -6954,17 +6954,17 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 	} else if (hg_milk == 6) {
 		mes "[Kurupe]";
 		mes "Oh, you're going to";
-		mes "help me " + mesitemlink(519) + " the cow?";
+		mes "help me milk the cow?";
 		mes "Great, great, thanks so";
-		mes "much! Please " + mesitemlink(519) + " Booboo";
+		mes "much! Please milk Booboo";
 		mes "right away, and get me";
-		mes "some delicious " + mesitemlink(519) + "~";
+		mes "some delicious milk~";
 		set hg_milk,7;
 		close;
 	} else if (hg_milk == 7) {
 		mes "[Kurupe]";
 		mes "Hmm, how about this?";
-		mes "If you can actually " + mesitemlink(519) + "";
+		mes "If you can actually milk";
 		mes "Booboo the cow, then I'll";
 		mes "give you some food. Does";
 		mes "that sound fair? Anyway,";
@@ -6996,7 +6996,7 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 		mes "[Kurupe]";
 		mes "I always need";
 		mes "someone to help me";
-		mes "" + mesitemlink(519) + " Booboo, especially";
+		mes "milk Booboo, especially";
 		mes "when Burupu doesn't feel";
 		mes "like doing it, so please come";
 		mes "by and help me when you can~";
@@ -7013,26 +7013,26 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 		case 1:
 			mes "[Kurupe]";
 			mes "Great, great! If you want";
-			mes "to " + mesitemlink(519) + " Booboo, first tell";
+			mes "to milk Booboo, first tell";
 			mes "Burupu that he doesn't need";
 			mes "to come in today, and then";
 			mes "come back to me. Then, I'll";
-			mes "let you " + mesitemlink(519) + " Booboo the cow.";
+			mes "let you milk Booboo the cow.";
 			set hg_milk,10;
 			close;
 		case 2:
 			mes "[Kurupe]";
 			mes "Let's see...";
-			mes "" + mesitemlink(519) + " Booboo for me this";
+			mes "Milk Booboo for me this";
 			mes "time, and I'll randomly";
 			mes "choose one of the following";
 			mes "sets of rewards to give you.";
 			next;
-			mes "1 set of 5 " + mesitemlink(519) + ",";
+			mes "1 set of 5 Milk,";
 			mes "1 set of 3 Honey,";
 			mes "1 set of 5 Orange Potions,";
 			mes "1 set of Yellow Potions, or";
-			mes "1 " + mesitemlink(12111) + ". Hmmm...";
+			mes "1 Bundle of Food. Hmmm...";
 			mes "That sounds fair, right?";
 			close;
 		case 3:
@@ -7056,13 +7056,13 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 		mes "Ah, you spoke to";
 		mes "Burupu already? Good,";
 		mes "now would you please";
-		mes "" + mesitemlink(519) + " Booboo the cow?";
+		mes "milk Booboo the cow?";
 		mes "Thanks once again~";
 		set hg_milk,12;
 		close;
 	} else if (hg_milk == 12) {
 		mes "[Kurupe]";
-		mes "Please go and " + mesitemlink(519) + "";
+		mes "Please go and milk";
 		mes "Booboo the cow as";
 		mes "soon as you can, okay?";
 		close;
@@ -7079,7 +7079,7 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 			mes "[Kurupe]";
 			mes "You know what?";
 			mes "Why don't you have";
-			mes "some " + mesitemlink(519) + "? It's only";
+			mes "some Milk? It's only";
 			mes "fitting, after all. Besides,";
 			mes "it's really good for you!";
 			mes "Thanks again for your help~";
@@ -7191,9 +7191,9 @@ hugel,56,104,3	script	Kurupe	709,3,3,{
 		mes "[Kurupe]";
 		mes "Aww, nuts...!";
 		mes "I've got so many";
-		mes "" + mesitemlink(519) + " deliveries to do";
+		mes "Milk deliveries to do";
 		mes "tomorrow, but what can";
-		mes "I do without any " + mesitemlink(519) + "?!";
+		mes "I do without any Milk?!";
 		close;
 	}
 
@@ -7203,7 +7203,7 @@ OnTouch_:
 			mes "[Kurupe]";
 			mes "Oh no, what am I gonna";
 			mes "do?! I need to deliver the";
-			mes "" + mesitemlink(519) + " tomorrow, but Burupu";
+			mes "milk tomorrow, but Burupu";
 			mes "still hasn't arrived yet!";
 			emotion ET_HUK;
 			next;
@@ -7220,7 +7220,7 @@ OnTouch_:
 	mes "Why hasn't Burupu";
 	mes "arrived yet? If he";
 	mes "doesn't come soon,";
-	mes "how will I get the " + mesitemlink(519) + "";
+	mes "how will I get the milk";
 	mes "delivered by tomorrow?";
 	close;
 }
@@ -7231,7 +7231,7 @@ hu_fild06,217,270,3	script	Burupu	896,3,3,{
 		mes "What? Kurupe wants me";
 		mes "to come in to work again?";
 		mes "Man, does it look like I want";
-		mes "to " + mesitemlink(519) + " Booboo all my life?";
+		mes "to milk Booboo all my life?";
 		mes "Forget that, I'm gonna be";
 		mes "a Swordman! Tally-hoooe!";
 		next;
@@ -7257,14 +7257,14 @@ hu_fild06,217,270,3	script	Burupu	896,3,3,{
 		mes "Booboo the cow if you can get";
 		mes "me some proper Swordman";
 		mes "equipment. Let's see... Why not";
-		mes "give me 1 " + mesitemlink(1110) + " with 2 Slots? That's not too much to ask, right?";
+		mes "give me 1 Rapier with 2 Slots? That's not too much to ask, right?";
 		next;
 		switch(select("Alright.:Whoa, that's too much!")) {
 			case 1:
 				mes "[Burupu]";
 				mes "I'm glad you agree~";
 				mes "Okay then, try to bring";
-				mes "me a " + mesitemlink(1110) + " with 2 Slots";
+				mes "me a Rapier with 2 Slots";
 				mes "as soon as you can! I can't";
 				mes "wait to start training with it!";
 				set hg_milk,5;
@@ -7284,8 +7284,8 @@ hu_fild06,217,270,3	script	Burupu	896,3,3,{
 			mes "[Burupu]";
 			mes "Hey, weren't you";
 			mes "supposed to bring me";
-			mes "a " + mesitemlink(1110) + " with 2 Slots?";
-			mes "If you want me to " + mesitemlink(519) + "";
+			mes "a Rapier with 2 Slots?";
+			mes "If you want me to milk";
 			mes "Booboo the cow, then keep";
 			mes "your end of our bargain~";
 			close;
@@ -7293,7 +7293,7 @@ hu_fild06,217,270,3	script	Burupu	896,3,3,{
 		mes "[Burupu]";
 		mes "Oh, wow...!";
 		mes "That's such a beautiful";
-		mes "" + mesitemlink(1110) + "! Look, it's got";
+		mes "Rapier! Look, it's got";
 		mes "2 Slots and everything!";
 		mes "I'm gonna start training";
 		mes "with it right now!";
@@ -7313,18 +7313,18 @@ hu_fild06,217,270,3	script	Burupu	896,3,3,{
 		mes "I hid my secret instructions";
 		mes "for milking Booboo the cow";
 		mes "under the ground just northeast";
-		mes "of her. Read them carefully, and you should be able to " + mesitemlink(519) + " her";
+		mes "of her. Read them carefully, and you should be able to milk her";
 		mes "yourself. You can do it, right?";
 		next;
 		mes "[Burupu]";
 		mes "Anyway, don't forget";
 		mes "to find and read those";
 		mes "instructions. Oh, and";
-		mes "thanks again for the " + mesitemlink(1110) + "~";
+		mes "thanks again for the Rapier~";
 		close;
 	} else if (hg_milk == 10) {
 		mes "[Burupu]";
-		mes "Hmm? You wanna " + mesitemlink(519) + "";
+		mes "Hmm? You wanna milk";
 		mes "Booboo today? Great,";
 		mes "that means I've got more";
 		mes "time to work on my fencing.";
@@ -7385,7 +7385,7 @@ hugel,72,101,0	script	Burupu's Instructions	111,{
 	next;
 	mes "[Table of Contents]";
 	mes " ";
-	mes "Chapter 1: How to " + mesitemlink(519) + " Booboo";
+	mes "Chapter 1: How to Milk Booboo";
 	mes "Chapter 2: How to Treat Booboo";
 	mes "Chapter 3: Before You Begin";
 	next;
@@ -7429,7 +7429,7 @@ hugel,72,101,0	script	Burupu's Instructions	111,{
 			mes "feels joy, then you go";
 			mes "ahead and brush her";
 			mes "hair 3 times before";
-			mes "you can " + mesitemlink(519) + " her.";
+			mes "you can milk her.";
 			mes "^800080 3 times^000000.";
 			next;
 			mes "[Chapter 2, Part 1]";
@@ -7481,7 +7481,7 @@ hugel,72,101,0	script	Burupu's Instructions	111,{
 			mes "^0000ffBoo! B! Boo~^000000";
 			next;
 			mes "[Chapter 2, Part 2]";
-			mes "When you try to " + mesitemlink(519) + "";
+			mes "When you try to milk";
 			mes "Booboo, she will sing this";
 			mes "song with a slight difference.";
 			mes "Look for the difference in";
@@ -7492,7 +7492,7 @@ hugel,72,101,0	script	Burupu's Instructions	111,{
 		break;
 	case 3:
 		mes "[Chapter 3]";
-		mes "If you want to " + mesitemlink(519) + "";
+		mes "If you want to milk";
 		mes "Booboo the cow, you";
 		mes "must first get permission";
 		mes "from Kurupe. You will also";
@@ -7539,7 +7539,7 @@ hugel,68,99,3	script	Booboo the Cow	889,{
 			mes "^3355FFMaybe you should learn more";
 			mes "about Booboo the cow, and";
 			mes "get more information before";
-			mes "you can attempt to " + mesitemlink(519) + " her.^000000";
+			mes "you can attempt to milk her.^000000";
 			close;
 		}
 	}
@@ -7658,7 +7658,7 @@ L_MilkCow:
 		mes "^3355FFSuccess!";
 		mes "Booboo the cow";
 		mes "is quite happy, and";
-		mes "you were able to " + mesitemlink(519) + "";
+		mes "you were able to milk";
 		mes "her. Now, you should";
 		mes "report to Kurupe.^000000";
 		if (hg_milk == 12) set hg_milk,13;
@@ -7962,7 +7962,7 @@ hu_in01,19,161,0	script	Alex	803,{
 				mes "these Runes will help";
 				mes "us in our research. I know";
 				mes "this isn't much, but please";
-				mes "accept this " + mesitemlink(603) + ".";
+				mes "accept this Old Blue Box.";
 				next;
 				mes "[Julian]";
 				mes "Wait...";
@@ -8373,7 +8373,7 @@ hu_in01,14,11,4	script	Laura	70,{
 			cutin "hu_laura01.bmp",2;
 			mes "[Laura]";
 			mes "You can freakin' find";
-			mes "" + mesitemlink(909) + " anywhere! I meant,";
+			mes "Jellopy anywhere! I meant,";
 			mes "did you find anything special";
 			mes "while you were at the shrine!";
 			next;
@@ -8772,13 +8772,13 @@ hu_in01,14,11,4	script	Laura	70,{
 				next;
 				emotion ET_SURPRISE, getnpcid(0, "Ashe");
 				mes "[Ashe]";
-				mes "..." + mesitemlink(7855) + "?";
-				mes "Ymir's " + mesitemlink(7855) + ", right?";
+				mes "...Heart?";
+				mes "Ymir's Heart, right?";
 				next;
 				mes "[Laura]";
 				mes "Ashe, you know about";
 				mes "this? What exactly";
-				mes "is Ymir's " + mesitemlink(7855) + "?";
+				mes "is Ymir's Heart?";
 				next;
 				switch(select("It's candy.:It's a book.:It's a place.:Ymir was a giant..."))
 				{
@@ -8793,15 +8793,15 @@ hu_in01,14,11,4	script	Laura	70,{
 						mes "["+strcharinfo(0)+"]";
 						mes "Er, you see...";
 						mes "A lot of people know";
-						mes "about Ymir's " + mesitemlink(7855) + "...";
+						mes "about Ymir's Heart...";
 						next;
 						break;
 						
 					case 3:
 						mes "["+strcharinfo(0)+"]";
 						mes "You know the expression,";
-						mes "''Home is where the " + mesitemlink(7855) + "";
-						mes "is?'' Er, well, Ymir's " + mesitemlink(7855) + "...";
+						mes "''Home is where the heart";
+						mes "is?'' Er, well, Ymir's Heart...";
 						next;
 						break;
 						
@@ -8814,7 +8814,7 @@ hu_in01,14,11,4	script	Laura	70,{
 				}
 				emotion ET_OK, getnpcid(0, "Ashe");
 				mes "[Ashe]";
-				mes "Ymir's " + mesitemlink(7855) + "?";
+				mes "Ymir's Heart?";
 				mes "That's a clothing";
 				mes "brand, isn't it? Yeah,";
 				mes "it's popular amongst";
@@ -9206,7 +9206,7 @@ hu_in01,159,84,3	script	Laura#2	70,{
 		mes "[Laura]";
 		mes "That's right.";
 		mes "Now tell me, what the";
-		mes "hell is ''^FF0000Ymir's " + mesitemlink(7855) + "?^000000''";
+		mes "hell is ''^FF0000Ymir's Heart?^000000''";
 		next;
 		cutin "hu_alex02.bmp",0;
 		mes "[Alex]";
@@ -9792,7 +9792,7 @@ OnTouch_:
 					mes "shrine's ruins.^000000";
 					close;
 				case 2:
-					mes "^3355FFYou find a " + mesitemlink(640) + "";
+					mes "^3355FFYou find a shining stone";
 					mes "within the ruins, and carefully";
 					mes "put it into your bag.^000000";
 					next;
@@ -9858,7 +9858,7 @@ OnTouch_:
 		mes "You said that it'd be here!";
 		mes "You told me so many people";
 		mes "are drawn to his place since";
-		mes "Ymir's " + mesitemlink(7855) + " might really";
+		mes "Ymir's Heart might really";
 		mes "be buried in this area!";
 		next;
 		mes "[Julian]";
@@ -9879,7 +9879,7 @@ OnTouch_:
 		next;
 		mes "[Alex]";
 		mes "We couldn't find";
-		mes "Ymir's " + mesitemlink(7855) + " inside";
+		mes "Ymir's Heart inside";
 		mes "the village, either...";
 		mes "Why don't you just--";
 		next;
@@ -9908,7 +9908,7 @@ OnTouch_:
 		mes "[Julian]";
 		mes "You can never understand";
 		mes "why I want to find Ymir's";
-		mes "" + mesitemlink(7855) + "! I'm not going to give";
+		mes "Heart! I'm not going to give";
 		mes "up looking for it, so just";
 		mes "leave me alone!";
 		next;
@@ -9916,7 +9916,7 @@ OnTouch_:
 		mes "I know you better than";
 		mes "yourself, and I can do";
 		mes "everything better than you";
-		mes "can. Forget Ymir's " + mesitemlink(7855) + " for";
+		mes "can. Forget Ymir's Heart for";
 		mes "now. Giantes is our highest,";
 		mes "most important priority!";
 		next;

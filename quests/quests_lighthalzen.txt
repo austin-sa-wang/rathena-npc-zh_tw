@@ -192,7 +192,7 @@ lighthalzen,341,224,3	script	Fishbone	4_M_LGTGUARD,{
 		mes "Oh hey, it's you!";
 		mes "Now, listen. If you wanna";
 		mes "get into Regenschirm again,";
-		mes "you gotta enter that Sewer " + mesitemlink(2268) + "";
+		mes "you gotta enter that Sewer Pipe";
 		mes "that's like, northeast from me.";
 		mes "It's gross, but you gotta...";
 		next;
@@ -392,7 +392,7 @@ lighthalzen,341,224,3	script	Fishbone	4_M_LGTGUARD,{
 			mes "[Fishbone]";
 			mes " ";
 			mes " ";
-			mes "...^FF000020 " + mesitemlink(909) + "^000000.";
+			mes "...^FF000020 Jellopy^000000.";
 			next;
 			mes "[Fishbone]";
 			mes "Gosh.";
@@ -403,9 +403,9 @@ lighthalzen,341,224,3	script	Fishbone	4_M_LGTGUARD,{
 				mes "[Fishbone]";
 				mes "Alright, then";
 				mes "bring me back a";
-				mes "total of 20 " + mesitemlink(909) + ".";
+				mes "total of 20 Jellopy.";
 				mes "But you gotta have";
-				mes "exactly 20 " + mesitemlink(909) + " on";
+				mes "exactly 20 Jellopy on";
 				mes "you, okay? Seeya pal~";
 				lhz_sincube = 5;
 				setquest 12014;// More missions
@@ -416,7 +416,7 @@ lighthalzen,341,224,3	script	Fishbone	4_M_LGTGUARD,{
 			mes "Okay, now you're the";
 			mes "one who's joking around.";
 			mes "Look, it's either bring me";
-			mes "20 " + mesitemlink(909) + " or 71,381,3--";
+			mes "20 Jellopy or 71,381,3--";
 			mes "whatever number I said-- zeny!";
 			close;
 		}
@@ -665,7 +665,7 @@ lhz_cube,237,198,0	script	Bundle of Files#cube	HIDDEN_NPC,{
 			if (select( "Rummage through the files.", "Cancel" ) == 1) {
 				mes "^3355FFWhile you are";
 				mes "rummaging through";
-				mes "the files, a " + mesitemlink(7421) + "";
+				mes "the files, a Red Key";
 				mes "drops to the ground";
 				mes "with a clink. You decide";
 				mes "to keep this ^000000Red Key^3355FF.^000000";
@@ -797,7 +797,7 @@ lhz_cube,242,201,0	script	Drawer#cube	HIDDEN_NPC,{
 		next;
 		input .@input$;
 		if (.@input$ == "Red Key") {
-			mes "^3355FFYou insert the " + mesitemlink(7421) + "";
+			mes "^3355FFYou insert the Red Key";
 			mes "into the lock and open the";
 			mes "drawer. Inside, you find a";
 			mes "^000000Jackknife^3355FF that you decide";
@@ -875,13 +875,13 @@ lhz_cube,237,183,0	script	Barrel#cube	HIDDEN_NPC,{
 			mes "swing it downwards,";
 			mes "smashing off the top of";
 			mes "the barrel. Inside, you find a";
-			mes "" + mesitemlink(7948) + " topped with a metal plate.^000000";
+			mes "box topped with a metal plate.^000000";
 			next;
 			mes "^3355FFThe numbers one";
 			mes "through nine are";
 			mes "etched on the surface";
 			mes "of the metal plate on";
-			mes "top of the " + mesitemlink(7948) + " you found,";
+			mes "top of the box you found,";
 			mes "like some kind of keypad...^000000";
 			lhz_sincube = 9;
 		}
@@ -914,7 +914,7 @@ lhz_cube,237,183,0	script	Barrel#cube	HIDDEN_NPC,{
 			mes "^3355FFYou decide to enter";
 			mes "some numbers into the";
 			mes "numberpad etched on the";
-			mes "metal plate on top of the " + mesitemlink(7948) + "";
+			mes "metal plate on top of the box";
 			mes "you found inside the keg.^000000";
 			next;
 			for( .@i = 0; .@i < 9; .@i++ ) {
@@ -925,7 +925,7 @@ lhz_cube,237,183,0	script	Barrel#cube	HIDDEN_NPC,{
 			if (.@number_line == 9) {
 				mes "^3355FFThe metal plate slides";
 				mes "open and you find a key";
-				mes "Key inside the " + mesitemlink(7948) + ". You";
+				mes "Key inside the box. You";
 				mes "to keep this ^000000Yellow Key^3355FF.^000000";
 				lhz_secret01 = 6;
 			}
@@ -936,13 +936,13 @@ lhz_cube,237,183,0	script	Barrel#cube	HIDDEN_NPC,{
 			}
 			close;
 		}
-		mes "^3355FFThis is the " + mesitemlink(7948) + " with";
+		mes "^3355FFThis is the box with";
 		mes "the keypad in which you";
 		mes "found the ^000000Yellow Key^3355FF.";
-		mes "The " + mesitemlink(7948) + " is now empty.^000000";
+		mes "The box is now empty.^000000";
 		close;
 	}
-	mes "^3355FFThis is a " + mesitemlink(7948) + "";
+	mes "^3355FFThis is a box";
 	mes "topped with a metal";
 	mes "plate that looks like";
 	mes "a crudely made keypad.^000000";
@@ -976,7 +976,7 @@ lhz_cube,224,192,0	script	Power Generator#cube	HIDDEN_NPC,{
 		input .@input$;
 		if (.@input$ == "Yellow Key") {
 			mes "^3355FFYou insert the";
-			mes "" + mesitemlink(7422) + " into the";
+			mes "Yellow Key into the";
 			mes "keyhole and turn it,";
 			mes "causing the machine";
 			mes "to sputter and deactivate.^000000";
@@ -1128,7 +1128,7 @@ lhz_cube,234,200,0	script	Desk#cube	HIDDEN_NPC,{
 			mes "always will be. It's likely";
 			mes "that nothing really valuable";
 			mes "is inside, aside from perhaps";
-			mes "a hip flask or a " + mesitemlink(529) + " stash.";
+			mes "a hip flask or a candy stash.";
 			close;
 		}
 	}
@@ -1419,7 +1419,7 @@ lhz_cube,249,191,0	script	Cabinet#cube	HIDDEN_NPC,{
 		next;
 		input .@input$;
 		if (.@input$ == "Green Key") {
-			mes "^3355FFYou take the " + mesitemlink(7424) + "";
+			mes "^3355FFYou take the Green Key";
 			mes "and finds that it fits into";
 			mes "one of the drawer keyholes.";
 			mes "You open the drawer and";
@@ -1439,7 +1439,7 @@ lhz_cube,249,191,0	script	Cabinet#cube	HIDDEN_NPC,{
 	}
 	mes "^3355FFThis is the locker";
 	mes "where you used the";
-	mes "" + mesitemlink(7424) + " to open one";
+	mes "Green Key to open one";
 	mes "of the Drawers and obtained";
 	mes "a ^000000Polygon^3355FF. You're pretty happy";
 	mes "with your Polygon and don't";
@@ -1474,7 +1474,7 @@ lhz_cube,224,197,0	script	Experiment Tube#cube	HIDDEN_NPC,{
 		next;
 		input .@input$;
 		if (.@input$ == "Black Key") {
-			mes "^3355FFYou insert the " + mesitemlink(7425) + "";
+			mes "^3355FFYou insert the Black Key";
 			mes "into the keyhole, causing";
 			mes "the experiment tube to open";
 			mes "and reveal an ^000000Oval^3355FF which you";
@@ -1506,7 +1506,7 @@ lhz_cube,224,197,0	script	Experiment Tube#cube	HIDDEN_NPC,{
 			if (.@input$ == "Laboratory Permit") {
 				if (countitem(2657)) {
 					mes "^3355FFYou insert the";
-					mes "" + mesitemlink(2657) + "";
+					mes "Laboratory Permit";
 					mes "into the slot and the";
 					mes "man made fissure in the";
 					mes "ground splits open, revealing";
@@ -1548,7 +1548,7 @@ lhz_cube,224,197,0	script	Experiment Tube#cube	HIDDEN_NPC,{
 
 lhz_cube,248,193,0	script	Box#cube1	HIDDEN_NPC,{
 	if (lhz_secret01 < 9 && lhz_secret02 < 4 && lhz_secret03 < 3) {
-		mes "^3355FFYou find a " + mesitemlink(7948) + " with";
+		mes "^3355FFYou find a box with";
 		mes "three distinctively";
 		mes "shaped holes.^000000";
 		next;
@@ -1558,7 +1558,7 @@ lhz_cube,248,193,0	script	Box#cube1	HIDDEN_NPC,{
 		close;
 	}
 	if (lhz_secret01 != 10 || lhz_secret02 != 5 || lhz_secret03 != 4) {
-		mes "^3355FFYou find a " + mesitemlink(7948) + " with";
+		mes "^3355FFYou find a box with";
 		mes "three distinctively";
 		mes "shaped holes.^000000";
 		next;
@@ -1643,17 +1643,17 @@ lhz_cube,248,193,0	script	Box#cube1	HIDDEN_NPC,{
 		}
 	}
 	if (lhz_secret01 == 10 && lhz_secret02 == 5 && lhz_secret03 == 4 && lhz_sincube != 10) {
-		mes "^3355FFYou find a " + mesitemlink(7948) + " with";
+		mes "^3355FFYou find a box with";
 		mes "three distinctively";
 		mes "shaped holes that";
 		mes "are now filled with the";
 		mes "objects you've inserted.^000000";
 		next;
 		if (select( "Open the box.", "Cancel" ) == 1) {
-			mes "^3355FFYou open the " + mesitemlink(7948) + "";
+			mes "^3355FFYou open the box";
 			mes "and find that there's";
 			mes "a small card labeled";
-			mes "''" + mesitemlink(2657) + "'' inside.";
+			mes "''Laboratory Permit'' inside.";
 			mes "You pocket this ^000000Laboratory";
 			mes "Permit^3355FF, knowing that you";
 			mes "will be needing it later.";
@@ -1662,10 +1662,10 @@ lhz_cube,248,193,0	script	Box#cube1	HIDDEN_NPC,{
 		}
 		close;
 	}
-	mes "^3355FFYou find the open " + mesitemlink(7948) + "";
+	mes "^3355FFYou find the open box";
 	mes "which used to contain";
 	mes "the ^000000Laboratory Permit^3355FF.";
-	mes "This " + mesitemlink(7948) + " is no longer";
+	mes "This box is no longer";
 	mes "useful to you now, but";
 	mes "once upon a time, its";
 	mes "mysteries were a challenge.^000000";
@@ -2054,7 +2054,7 @@ lhz_in02,201,210,5	script	Digotz	4_M_LGTMAN,{
 	if (friendship == 14) {
 		mes "^3355FFDigotz is seriously";
 		mes "injured from a wound";
-		mes "by a " + mesitemlink(1201) + " that is still";
+		mes "by a knife that is still";
 		mes "embedded in his belly.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
@@ -2109,7 +2109,7 @@ lhz_in02,201,210,5	script	Digotz	4_M_LGTMAN,{
 		mes "...............................";
 		next;
 		mes "^3355FFDigotz stopped breathing.";
-		mes "You remove the " + mesitemlink(1201) + " from";
+		mes "You remove the Knife from";
 		mes "his lifeless body as a final";
 		mes "courtesy to a man who";
 		mes "dearly loved his friends.^000000";
@@ -2154,7 +2154,7 @@ lhz_in02,201,210,5	script	Digotz	4_M_LGTMAN,{
 			mes "^856363Today, me, Digotz and";
 			mes "Maku played this crazy flying";
 			mes "game. Basically, we make";
-			mes "these wings out of " + mesitemlink(6008) + " and";
+			mes "these wings out of wood and";
 			mes "paper, jump off these hills";
 			mes "and try to fly. Dumb, I know.^000000";
 			next;
@@ -2580,7 +2580,7 @@ lighthalzen,337,232,3	script	Maku	4_M_LGTPOOR,{
 		mes "^856363Today, me, Digotz and";
 		mes "Maku played this crazy flying";
 		mes "game. Basically, we make";
-		mes "these wings out of " + mesitemlink(6008) + " and";
+		mes "these wings out of wood and";
 		mes "paper, jump off these hills";
 		mes "and try to fly. Dumb, I know.^000000";
 		next;
@@ -3857,7 +3857,7 @@ lhz_que01,21,31,5	script	#li_Varmunt	4_M_SAGE_C,{
 			mes "Amazing. You've accomplished";
 			mes "what most have thought to be";
 			mes "impossible ahead of schedule.";
-			mes "An imitation of Ymir's " + mesitemlink(7855) + "!";
+			mes "An imitation of Ymir's Heart!";
 			mes "This will surely spur Airship";
 			mes "and Guardian development~!";
 			next;
@@ -3865,12 +3865,12 @@ lhz_que01,21,31,5	script	#li_Varmunt	4_M_SAGE_C,{
 			mes "I still don't believe that";
 			mes "were able to do it. This is";
 			mes "a huge leap for science, even";
-			mes "if this imitation isn't as powerful as the real Ymir's " + mesitemlink(7855) + ".";
+			mes "if this imitation isn't as powerful as the real Ymir's Heart.";
 			next;
 			mes "[??]";
 			mes "Come, we must celebrate!";
 			mes "Let's go outside and have";
-			mes "a " + mesitemlink(5391) + " in your honor! Ha ha~";
+			mes "a toast in your honor! Ha ha~";
 			next;
 			mes "............";
 			next;
@@ -3992,7 +3992,7 @@ lhz_que01,29,24,3	script	#li_researcher	4_M_SAGE_A,{
 			mes "Amazing. You've accomplished";
 			mes "what most have thought to be";
 			mes "impossible ahead of schedule.";
-			mes "An imitation of Ymir's " + mesitemlink(7855) + "!";
+			mes "An imitation of Ymir's Heart!";
 			mes "This will surely spur Airship";
 			mes "and Guardian development~!";
 			next;
@@ -4000,12 +4000,12 @@ lhz_que01,29,24,3	script	#li_researcher	4_M_SAGE_A,{
 			mes "I still don't believe that";
 			mes "were able to do it. This is";
 			mes "a huge leap for science, even";
-			mes "if this imitation isn't as powerful as the real Ymir's " + mesitemlink(7855) + ".";
+			mes "if this imitation isn't as powerful as the real Ymir's Heart.";
 			next;
 			mes "[??]";
 			mes "Come, we must celebrate!";
 			mes "Let's go outside and have";
-			mes "a " + mesitemlink(5391) + " in your honor! Ha ha~";
+			mes "a toast in your honor! Ha ha~";
 			next;
 			mes "............";
 			next;
@@ -4426,10 +4426,10 @@ lighthalzen,346,263,3	script	Elder#lhz	4_F_EINOLD,{
 					next;
 					mes "[Elder]";
 					mes "Hurry and bring";
-					mes "^3131FF5 " + mesitemlink(523) + "^000000 and";
-					mes "^3131FF1 " + mesitemlink(744) + "^000000. The " + mesitemlink(523) + "";
+					mes "^3131FF5 Holy Water^000000 and";
+					mes "^3131FF1 Bouquet^000000. The Holy Water";
 					mes "will purify this Pendant and";
-					mes "the " + mesitemlink(744) + " will comfort";
+					mes "the Bouquet will comfort";
 					mes "the spirit of its owner.";
 					next;
 					mes "[Elder]";
@@ -4511,8 +4511,8 @@ lighthalzen,346,263,3	script	Elder#lhz	4_F_EINOLD,{
 			else {
 				mes "[Elder]";
 				mes "Hurry and bring";
-				mes "^3131FF5 " + mesitemlink(523) + "^000000 and";
-				mes "^3131FF1 " + mesitemlink(744) + "^000000 in order";
+				mes "^3131FF5 Holy Water^000000 and";
+				mes "^3131FF1 Bouquet^000000 in order";
 				mes "for me to nullify this";
 				mes "curse. Do not forget to";
 				mes "bring the Pendant as well.";
@@ -4765,7 +4765,7 @@ lhz_in03,32,162,3	script	Crippled Girl#li_tre	1_M_INNKEEPER,{
 			mes "this pendant, though.";
 			next;
 			mes "^3131ffYou place the";
-			mes "" + mesitemlink(7341) + "";
+			mes "old pendant";
 			mes "into her hands.^000000";
 			next;
 			specialeffect2 EF_FORESTLIGHT4;
@@ -4961,7 +4961,7 @@ lhz_in03,32,162,3	script	Crippled Girl#li_tre	1_M_INNKEEPER,{
 					mes "brother come.";
 					next;
 					mes "^3131ffYou place the";
-					mes "" + mesitemlink(7341) + "";
+					mes "old pendant";
 					mes "into her hands.^000000";
 					next;
 					specialeffect2 EF_FORESTLIGHT4;
@@ -5919,7 +5919,7 @@ lhz_in01,286,226,3	script	Secretary Slierre#li	4_F_ZONDAGIRL,{
 				switch(select("Show Evidence:Cancel")) {
 				case 1:
 					if (countitem(7345) > 0) {
-						mes "^3355FFYou reveal the " + mesitemlink(7345) + "";
+						mes "^3355FFYou reveal the Handcuffs";
 						mes "you found in the laboratory,";
 						mes "and Secretary Slierre's face";
 						mes "is instantly shadowed by a";
@@ -6027,7 +6027,7 @@ lhz_in01,286,226,3	script	Secretary Slierre#li	4_F_ZONDAGIRL,{
 		mes "shouldn't be making rumors...";
 		next;
 		if (countitem(7345) > 0) {
-			mes "^3355FFYou reveal the " + mesitemlink(7345) + "";
+			mes "^3355FFYou reveal the Handcuffs";
 			mes "you found in the laboratory,";
 			mes "and Secretary Slierre's face";
 			mes "is instantly shadowed by a";
@@ -6601,7 +6601,7 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 				mes "tonic every so often to avoid";
 				mes "suffering fron unpleasant";
 				mes "consequences. When we";
-				mes "finish, you get the " + mesitemlink(6128) + ".";
+				mes "finish, you get the antidote.";
 				next;
 				switch( select( "........." ) )
 				{
@@ -6612,7 +6612,7 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 				mes "If you choose not to";
 				mes "cooperate, simply drink";
 				mes "this blue tonic, which will";
-				mes "erase every " + mesitemlink(7094) + " of your";
+				mes "erase every fragment of your";
 				mes "memory regarding our meeting.";
 				next;
 				mes "[Ghalstein]";
@@ -6643,7 +6643,7 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 								next;
 								mes "^3355FFYou drink the red tonic.";
 								mes "It doesn't feel any different";
-								mes "from a " + mesitemlink(501) + ", but it";
+								mes "from a Red Potion, but it";
 								mes "would be wise to cooperate";
 								mes "with Ghalstein until this";
 								mes "mission is accomplished.^000000";
@@ -6681,7 +6681,7 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 						next;
 						mes "^3355FFYou drink the red tonic.";
 						mes "It doesn't feel any different";
-						mes "from a " + mesitemlink(501) + ", but it";
+						mes "from a Red Potion, but it";
 						mes "would be wise to cooperate";
 						mes "with Ghalstein until this";
 						mes "mission is accomplished.^000000";
@@ -6723,10 +6723,10 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 		mes "^666666Now...^000000";
 		if(Sex == SEX_MALE) mes "^666666Make him^000000";
 		else mes "^666666Make her^000000";
-		mes "^666666swallow this " + mesitemlink(14523) + ".^000000";
+		mes "^666666swallow this pill.^000000";
 		next;
 		mes "^3355FFYou're forced to swallow";
-		mes "some strange " + mesitemlink(14523) + " which";
+		mes "some strange pill which";
 		mes "immediately makes all your";
 		mes "thoughts hazier until it begins";
 		mes "to feel like your entire mind";
@@ -6931,7 +6931,7 @@ lighthalzen,179,170,4	script	Ordinary Man	4W_M_02,{
 		mes "service for us. Although we";
 		mes "failed, you carried out your";
 		mes "missions perfectly. Here,";
-		mes "take this " + mesitemlink(6128) + " so that";
+		mes "take this antidote so that";
 		mes "you'll finally be free of us.";
 		next;
 		mes "[Ghalstein]";
@@ -7116,7 +7116,7 @@ yuno_fild04,165,245,4	script	Dismal Guy	4_M_ORIENT02,{
 							close;
 						}
 						mes "^3355FFYou suavely flash";
-						mes "your " + mesitemlink(7348) + "";
+						mes "your Membership Card";
 						mes "to Gushaar, who gives";
 						mes "you an approving nod.^000000";
 						next;
@@ -7209,7 +7209,7 @@ yuno_fild04,165,245,4	script	Dismal Guy	4_M_ORIENT02,{
 		mes "It won't be easy to see";
 		mes "such an important man,";
 		mes "so show your Secret Wing";
-		mes "" + mesitemlink(7348) + " to his";
+		mes "Membership Card to his";
 		mes "secretary and there should";
 		mes "be very little hassle.";
 		next;
@@ -7318,14 +7318,14 @@ yuno_pre,69,20,4	script	Secretary#1	4_F_LGTGIRL,{
 					mes "You don't seem to";
 					mes "be carrying your";
 					mes "''Secret Wing''";
-					mes "" + mesitemlink(7348) + ".^000000";
+					mes "Membership Card.^000000";
 					close;
 				}
 				if(((gettime(DT_HOUR) > 10) && (gettime(DT_HOUR) < 15)) || ((gettime(DT_HOUR) > 19) && (gettime(DT_HOUR) <= 23)))
 				{
 					mes "^3355FFYou suavely flash";
 					mes "your ''Secret Wing''";
-					mes "" + mesitemlink(7348) + ".^000000";
+					mes "Membership Card.^000000";
 					next;
 					mes "[Hes O'Neil]";
 					mes "Oh... I see.";
@@ -7417,7 +7417,7 @@ yuno_pre,69,20,4	script	Secretary#1	4_F_LGTGIRL,{
 				break;
 		}
 		mes "[Hes O'Neil]";
-		mes "Ah, the " + mesitemlink(7342) + "";
+		mes "Ah, the file folder";
 		mes "I needed. I'm so sorry";
 		mes "to trouble you. Thank";
 		mes "you so much for your help.";
@@ -7953,7 +7953,7 @@ L_Mission:
 		if(Shinokas_Quest == 11)
 		{
 			mes "[Karl]";
-			mes "Ymir's " + mesitemlink(7855) + " Pieces?";
+			mes "Ymir's Heart Pieces?";
 			mes "Is that what they're";
 			mes "trying to collect?";
 			mes "What are they going";
@@ -8203,7 +8203,7 @@ L_Mission:
 		mes "Ah, now everything is";
 		mes "clearer. Shinokas and his";
 		mes "friends were killed over";
-		mes "that piece of Ymir's " + mesitemlink(7855) + ".";
+		mes "that piece of Ymir's Heart.";
 		mes "That's what the Rekenber";
 		mes "Corporation ultimately wants.";
 		next;
@@ -8211,7 +8211,7 @@ L_Mission:
 		mes "But this raises some";
 		mes "new questions. What";
 		mes "are they planning to";
-		mes "do with Ymir's " + mesitemlink(7855) + "?";
+		mes "do with Ymir's Heart?";
 		mes "It must be more powerful";
 		mes "than we had thought...";
 		next;
@@ -8457,7 +8457,7 @@ L_Mission:
 		next;
 		mes "[Karl]";
 		mes "I'm not sure.";
-		mes "The Secret Wing has been disbanded and I am just another " + mesitemlink(740) + " they have, just like the previous presidents.";
+		mes "The Secret Wing has been disbanded and I am just another puppet they have, just like the previous presidents.";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Not long ago, the scientists of Regenschrim have stolen the research record and destroyed the machines that they used for research purposes.";
@@ -8600,7 +8600,7 @@ aldebaran,58,225,4	script	Kafra Employee#l1	4_F_KAFRA2,{
 		mes "[Kafra Employee]";
 		mes "Welcome to the";
 		mes "Kafra Headquarters.";
-		mes "Here in the " + mesitemlink(7855) + " of";
+		mes "Here in the heart of";
 		mes "Kafra's operations, you";
 		mes "can be provided with special";
 		mes "services offered nowhere else!";
@@ -8794,7 +8794,7 @@ aldeba_in,155,240,5	script	Kafra Employee#l2	4_F_AGENTKAFRA,{
 									mes "^3355FFWait...";
 									mes "You can't show";
 									mes "your ''Secret Wing''";
-									mes "" + mesitemlink(7348) + "";
+									mes "Membership Card";
 									mes "if you don't have it!^000000";
 									close;
 								}
@@ -9790,7 +9790,7 @@ L_Search:
 				{
 					mes "^663300[Search Result]";
 					mes "Documents regarding";
-					mes "Ymir's " + mesitemlink(7855) + " are ranked";
+					mes "Ymir's Heart are ranked";
 					mes "as highly classified and";
 					mes "cannot be accessed";
 					mes "through this system.^000000";
@@ -9930,7 +9930,7 @@ lhz_in01,184,40,0	script	Area 1-5	HIDDEN_NPC,{
 		mes "you've been looking for.^000000";
 		next;
 		mes "[Classified Info]";
-		mes "^8C1717A piece of Ymir's " + mesitemlink(7855) + "";
+		mes "^8C1717A piece of Ymir's Heart";
 		mes "was uncovered in one of";
 		mes "the mines in Einbech and";
 		mes "immediately transported to";
@@ -9940,7 +9940,7 @@ lhz_in01,184,40,0	script	Area 1-5	HIDDEN_NPC,{
 		mes "^8C1717However, something";
 		mes "happened to the miners";
 		mes "who discovered the piece";
-		mes "of Ymir's " + mesitemlink(7855) + ". Apparently,";
+		mes "of Ymir's Heart. Apparently,";
 		mes "a beast from Einbroch folk";
 		mes "lore inhabited the area...^000000";
 		set lhz_boss,35;
@@ -10143,14 +10143,14 @@ lhz_in01,177,56,0	script	Area 6-1	HIDDEN_NPC,{
 		mes "all of western Einbech and";
 		mes "began construction of Einbroch";
 		mes "in 927 in order to obtain more";
-		mes "pieces of Ymir's " + mesitemlink(7855) + ".^000000";
+		mes "pieces of Ymir's Heart.^000000";
 		next;
 		mes "[Classified Info]";
 		mes "^8C1717Unofficially, each and";
 		mes "every single factory belongs";
 		mes "to the Rekenber Corporation.";
 		mes "Their highest priority is";
-		mes "to uncover Ymir " + mesitemlink(7855) + " Pieces...^000000";
+		mes "to uncover Ymir Heart Pieces...^000000";
 		next;
 		mes "^3355FFAlthough this file contains";
 		mes "surprising information about";
@@ -10229,7 +10229,7 @@ lhz_dun02,282,278,0	script	Broken Machine	HIDDEN_NPC,{
 						mes "looks funny doesn't make";
 						mes "it any more special than";
 						mes "the countless number of";
-						mes "" + mesitemlink(2796) + " you've seen in";
+						mes "rocks you've seen in";
 						mes "your entire lifetime.^000000";
 						close;
 				}

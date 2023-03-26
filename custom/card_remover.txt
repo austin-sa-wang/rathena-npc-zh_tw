@@ -59,7 +59,7 @@ prt_in,28,73,4	script	Wise Old Woman#eAcustom	78,{
 			close;
 		}
 		mes "[Wise Old Woman]";
-		mes "This item has " + .@cardcount + " cards compounded on it. To perform my magic, I will need " + (.zenycost+(.@cardcount * .percardcost)) + " zeny, a ^0000FFStar Crumb^000000, and a ^0000FFYellow " + mesitemlink(7300) + "^000000.";
+		mes "This item has " + .@cardcount + " cards compounded on it. To perform my magic, I will need " + (.zenycost+(.@cardcount * .percardcost)) + " zeny, a ^0000FFStar Crumb^000000, and a ^0000FFYellow Gemstone^000000.";
 		next;
 		if(select("Very well. Do it.:Never mind.") == 2) {
 			mes "[Wise Old Woman]";
@@ -139,7 +139,7 @@ prt_in,28,73,4	script	Wise Old Woman#eAcustom	78,{
 		close;
 	case 2:
 		mes "[Wise Old Woman]";
-		mes "I charge a flat fee of "+callfunc("F_InsertComma",.zenycost)+" zeny, plus "+callfunc("F_InsertComma",.percardcost)+" zeny for each card I remove from the item. In addition, I need a " + mesitemlink(1000) + " and a " + mesitemlink(715) + " to work my magic.";
+		mes "I charge a flat fee of "+callfunc("F_InsertComma",.zenycost)+" zeny, plus "+callfunc("F_InsertComma",.percardcost)+" zeny for each card I remove from the item. In addition, I need a star crumb and a yellow gemstone to work my magic.";
 		close;
 	case 3:
 		mes "[Wise Old Woman]";

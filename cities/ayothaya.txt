@@ -32,7 +32,7 @@
 		mes "We Ayothayans are a pious people who value peace and sincerity. We endeavor to lead simple, yet noble, lives in harmony with nature.";
 		next;
 		mes "[Aibakthing]";
-		mes "Our traditional cuisine is world famous. It's no surprise when we serve dishes like " + mesitemlink(566) + ", made of " + mesitemlink(567) + ", " + mesitemlink(568) + " and Chillies, which has a tantalizing aroma and flavor beyond imagining.";
+		mes "Our traditional cuisine is world famous. It's no surprise when we serve dishes like Tom Yum Goong, made of Shrimp, Lemon and Chillies, which has a tantalizing aroma and flavor beyond imagining.";
 		next;
 		mes "[Aibakthing]";
 		mes "For those who crave adventure, there is an age old story about the Sa-mhing Tiger, an evil creature that haunts our temple ruins.";
@@ -80,7 +80,7 @@
 ayothaya,152,68,1	script	Aibakthing#ayo2	843,{
 	mes "[Aibakthing]";
 	mes "Hoo! Hah! Hmm! Hah!";
-	mes "So, how did you like Ayothaya? Did you get a chance to try " + mesitemlink(566) + "? When you're ready, I shall take you back home.";
+	mes "So, how did you like Ayothaya? Did you get a chance to try Tom Yum Goong? When you're ready, I shall take you back home.";
 	next;
 	if (select("Go back to Alberta.:Cancel.") == 1) {
 		mes "[Aibakthing]";

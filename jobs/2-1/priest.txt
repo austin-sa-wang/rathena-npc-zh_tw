@@ -76,7 +76,7 @@ prt_church,16,41,4	script	High Bishop#prst	60,{
 				mes "I hope you will assist your Acolyte friend in the second test, the spiritual training.";
 				next;
 				mes "[Bishop Paul]";
-				mes "You need to bring ^0000FF1 " + mesitemlink(2608) + "^000000 in order to accompany an Acolyte in spiritual training. If you have one of those, I can send you to the test area now.";
+				mes "You need to bring ^0000FF1 Rosary^000000 in order to accompany an Acolyte in spiritual training. If you have one of those, I can send you to the test area now.";
 				next;
 				mes "[Bishop Paul]";
 				mes "Do you wish to help him out during the spiritual training?";
@@ -473,7 +473,7 @@ prt_church,16,41,4	script	High Bishop#prst	60,{
 		mes "Now, you must go and swear your devotion to God with Sister Cecilia. Don't be nervous...";
 		next;
 		mes "[Bishop Paul]";
-		mes "Just answer honestly, and listen to the voice of God that speaks quietly in your " + mesitemlink(7855) + ".";
+		mes "Just answer honestly, and listen to the voice of God that speaks quietly in your heart.";
 		next;
 		mes "[Bishop Paul]";
 		mes "Well then...";
@@ -486,7 +486,7 @@ prt_church,16,41,4	script	High Bishop#prst	60,{
 		mes "Hmm? You haven't made your oath yet...? Without the conviction of an oath to God, you may be tempted by evil at anytime.";
 		next;
 		mes "[Bishop Paul]";
-		mes "You should go to sister Cecilia and promise your devotion to God. Return here with honor, and listen to the voice of God that speaks quietly in your " + mesitemlink(7855) + ".";
+		mes "You should go to sister Cecilia and promise your devotion to God. Return here with honor, and listen to the voice of God that speaks quietly in your heart.";
 		close;
 	}
 	else if (PRIEST_Q == 9) {
@@ -523,7 +523,7 @@ prt_church,16,41,4	script	High Bishop#prst	60,{
 		}
 		else {
 			getitem 1551,1; //Bible
-			mes "In commemoration of your job change, I am giving you a " + mesitemlink(1551) + ". This will lighten your way to the path of righteousness.";
+			mes "In commemoration of your job change, I am giving you a bible. This will lighten your way to the path of righteousness.";
 		}
 		next;
 		mes "[Bishop Paul]";
@@ -536,7 +536,7 @@ prt_church,27,24,1	script	Sister Cecilia	79,{
 	mes "[Sister Cecilia]";
 	if (BaseJob != Job_Acolyte) {
 		if (BaseJob == Job_Priest) {
-			mes "May god bless you, "+ (Sex == SEX_MALE ? "brother":"sister") +". It brings my " + mesitemlink(7855) + " joy to see that you working hard to carry out the will of God.";
+			mes "May god bless you, "+ (Sex == SEX_MALE ? "brother":"sister") +". It brings my heart joy to see that you working hard to carry out the will of God.";
 		} else if (Class == Job_Novice) {
 			mes "May god bless you, "+ (Sex == SEX_MALE ? "brother":"sister") +".";
 			mes "Prontera parish welcomes you.";
@@ -708,7 +708,7 @@ prt_church,27,24,1	script	Sister Cecilia	79,{
 			mes "Brother "+ strcharinfo(0) +"...";
 		else
 			mes "Sister "+ strcharinfo(0) +"...";
-		mes "We will now begin your formal oath for the Priesthood. Make yourself comfortable, and just answer with your " + mesitemlink(7855) + ".";
+		mes "We will now begin your formal oath for the Priesthood. Make yourself comfortable, and just answer with your heart.";
 		next;
 		mes "[Sister Cecilia]";
 		if (Sex == SEX_MALE)
@@ -778,7 +778,7 @@ prt_church,27,24,1	script	Sister Cecilia	79,{
 			close;
 		}
 		mes "[Sister Cecilia]";
-		mes "Will you " + mesitemlink(2775) + " many monsters to help your party members level up?";
+		mes "Will you lure many monsters to help your party members level up?";
 		next;
 		if (select("Yes.:No.") == 1) {
 			mes "[Sister Cecilia]";
@@ -1373,7 +1373,7 @@ OnTouch_:
 		mes "[Deviruchi]";
 		mes "But how about this...? Now, isn't this an attractive sight? A nice, shiny new card. Mint condition. Not too many people have this you know. But I happen to have soooo many, my pockets hurt.";
 		next;
-		cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",4; // Mistress Card
+		cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",4; // Mistress Card
 		mes "[Deviruchi]";
 		mes "Isn't it everyone's dream to have one of these? Think about it, being a Priest can only bring you suffering...";
 		next;
@@ -1383,7 +1383,7 @@ OnTouch_:
 			mes "This card can";
 			mes "can be yours...";
 			next;
-			cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",255; // Mistress Card
+			cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255; // Mistress Card
 			mes "[Deviruchi]";
 			mes "Theoretically!";
 			mes "BWAHAHAHAHAHAHAHA!";
@@ -1392,7 +1392,7 @@ OnTouch_:
 			warp "mjolnir_05",200,200;
 			end;
 		}
-		cutin "ï¿½Ì½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½.bmp",255; // Mistress Card
+		cutin "¹Ì½ºÆ®·¹½ºÄ«µå.bmp",255; // Mistress Card
 		mes "[Deviruchi]";
 		mes "Did...";
 		mes "Did you just tell";

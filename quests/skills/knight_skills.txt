@@ -135,7 +135,7 @@ prt_in,85,99,3	script	Knight#kabuto	734,{
 			mes "[Essofeit]";
 			mes "Back in my day, Knights";
 			mes "were strong enough to get";
-			mes "at least 5 " + mesitemlink(529) + " Canes and";
+			mes "at least 5 Candy Canes and";
 			mes "3 Witherless Roses through";
 			mes "hunting alone! But Knights";
 			mes "these days have grown soft...";
@@ -417,7 +417,7 @@ prontera,73,357,5	script	Knight#drake	734,{
 		mes "What'll I get with";
 		mes "my next paycheck?";
 		mes "Ah~ I should get a nice";
-		mes "" + mesitemlink(2603) + " for my wife.";
+		mes "necklace for my wife.";
 		mes "I just know she'll love it!";
 		next;
 		if (KNGT_SK == 4) set KNGT_SK,5;
@@ -486,7 +486,7 @@ prontera,66,358,5	script	Knight#gattack	733,{
 		mes "Gosh, I'm sick and tired of";
 		mes "him talking about Knighthood.";
 		mes "Essofeit insists that all Knights, even complete rookies, should be";
-		mes "able to obtain 5 " + mesitemlink(529) + " Canes and 3 Witherless Roses from hunting.";
+		mes "able to obtain 5 Candy Canes and 3 Witherless Roses from hunting.";
 		next;
 		mes "[Gatack]";
 		mes "Hell, I just hate to hear";

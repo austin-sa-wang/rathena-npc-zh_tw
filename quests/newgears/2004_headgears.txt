@@ -65,7 +65,7 @@ payon,115,131,3	script	Neko Neko#1	725,{
 		mes "[Neko Neko]";
 		mes "Phew! There you go.";
 		mes "Now you can wear";
-		mes "" + mesitemlink(5057) + "";
+		mes "Black Cat Ears";
 		mes "of your very own~";
 		delitem 2213,1; //Cat_Hairband
 		delitem 983,1; //Black_Dyestuffs
@@ -86,7 +86,7 @@ payon,115,131,3	script	Neko Neko#1	725,{
 	mes "Heh heh~!";
 	next;
 	mes "[Neko Neko]";
-	mes "You want to know where I got these tiny little cute " + mesitemlink(5057) + " on my head, don't you? I knew it! Hahaha~!";
+	mes "You want to know where I got these tiny little cute black cat ears on my head, don't you? I knew it! Hahaha~!";
 	next;
 	mes "[Neko Neko]";
 	mes "Well, I made these myself.";
@@ -158,14 +158,14 @@ geffen,129,148,3	script	Argen#1	779,{
 	case 1:
 		if (countitem(2294) > 0 && countitem(7220) > 399) {
 			mes "[Argen]";
-			mes "" + mesitemlink(5079) + "!";
+			mes "X Hairpin!";
 			mes "Nice choice~!";
 			next;
 			emotion ET_SURPRISE;
 			mes "[Argen]";
 			mes "Ah... Right.";
-			mes "About the " + mesitemlink(2294) + "...";
-			mes "^CE3100If you use an upgraded " + mesitemlink(2294) + " to make this item, any upgrades will be lost. That okay with you?^000000";
+			mes "About the Stellar...";
+			mes "^CE3100If you use an upgraded Stellar to make this item, any upgrades will be lost. That okay with you?^000000";
 			next;
 			switch(select("I don't mind.:I will come back later.")) {
 			case 1:
@@ -198,8 +198,8 @@ geffen,129,148,3	script	Argen#1	779,{
 			mes "That's easy!";
 			next;
 			mes "[Argen]";
-			mes "I need ^FF00001 " + mesitemlink(2294) + "^000000";
-			mes "and ^FF0000400 " + mesitemlink(7220) + "^000000.";
+			mes "I need ^FF00001 Stellar^000000";
+			mes "and ^FF0000400 Ectoplasm^000000.";
 			mes "Tell me when you're ready!";
 			close;
 		}
@@ -231,8 +231,8 @@ geffen,129,148,3	script	Argen#1	779,{
 			mes "That stuff is great for faking injuries, or hiding a bald spot. Handy to have when you wanna ditch school.";
 			next;
 			mes "[Argen]";
-			mes "Bring me ^FF00001 " + mesitemlink(970) + "^000000 and";
-			mes "^FF0000500 " + mesitemlink(930) + "^000000!";
+			mes "Bring me ^FF00001 Alcohol^000000 and";
+			mes "^FF0000500 Rotten Bandage^000000!";
 			mes "Tell me when you're ready, yeah?";
 			close;
 		}
@@ -240,7 +240,7 @@ geffen,129,148,3	script	Argen#1	779,{
 	case 3:
 		if (countitem(2269) > 0 && countitem(999) > 9 && Zeny > 19999) {
 			mes "[Argen]";
-			mes "You wanna a " + mesitemlink(5061) + "~?";
+			mes "You wanna a Flower Hairpin~?";
 			mes "Alright, gimmie a minute, yeah?";
 			next;
 			mes "^3131FF - Scrape Scrape - ^000000";
@@ -249,7 +249,7 @@ geffen,129,148,3	script	Argen#1	779,{
 			emotion ET_BEST;
 			mes "[Argen]";
 			mes "Ah... It's done!";
-			mes "Hey, that looks pretty smooth! Oh, and uh, you can keep this leftover " + mesitemlink(905) + ".";
+			mes "Hey, that looks pretty smooth! Oh, and uh, you can keep this leftover Stem.";
 			delitem 2269,1; //Centimental_Flower
 			delitem 999,10; //Steel
 			set Zeny, Zeny-20000;
@@ -266,18 +266,18 @@ geffen,129,148,3	script	Argen#1	779,{
 			mes "Wouldn't some kinda... ^3131FFFlower Hairpin^000000 be a hit with chicks? So I tried making one, and it seemed to be pretty popular among my lady friends.";
 			next;
 			mes "[Argen]";
-			mes "And it's a much better way to use a " + mesitemlink(712) + " than to put it on Pet Orc Warriors. Man, those things just look gnarly~";
+			mes "And it's a much better way to use a flower than to put it on Pet Orc Warriors. Man, those things just look gnarly~";
 			next;
 			mes "[Argen]";
-			mes "Well, if you want one, I'll make it. But I want you should pay me some royalties for my services. It's pretty hard to attach a " + mesitemlink(712) + " to a hairpin, you know?";
+			mes "Well, if you want one, I'll make it. But I want you should pay me some royalties for my services. It's pretty hard to attach a flower to a hairpin, you know?";
 			next;
 			mes "[Argen]";
 			mes "It takes mad skill.";
 			next;
 			mes "[Argen]";
 			mes "So, I want you to bring...";
-			mes "^FF00001 " + mesitemlink(2269) + "^000000,";
-			mes "^FF000010 " + mesitemlink(999) + "^000000";
+			mes "^FF00001 Romantic Flower^000000,";
+			mes "^FF000010 Steel^000000";
 			mes "and ^3131FF20,000 zeny^000000!";
 			mes "Got it? Cool~";
 			close;
@@ -344,15 +344,15 @@ yuno,300,188,5	script	Zhenbolt#1	753,{
 		mes "Yes, it is I, the man who has pummelled over a trillion foes and rising. Raging Hurricane Hero of Justice: Zhenbolt!";
 		next;
 		mes "[Zhenbolt]";
-		mes "I see in your eyes that you also fight with a " + mesitemlink(7855) + " of purity, a " + mesitemlink(7855) + " of passion!";
+		mes "I see in your eyes that you also fight with a heart of purity, a heart of passion!";
 		next;
 		mes "[Zhenbolt]";
 		mes "It is decided! If you bring me the following items, I will give you the famous symbol of battle by which villains fear Zhenbolt.";
 		next;
 		mes "[Zhenbolt]";
 		mes "Bring me...";
-		mes "300 ^FF0000Red " + mesitemlink(2503) + "^000000,";
-		mes "300 ^FF0000Burning " + mesitemlink(7855) + "^000000,";
+		mes "300 ^FF0000Red Muffler^000000,";
+		mes "300 ^FF0000Burning Heart^000000,";
 		mes "1 ^FF0000Bandana^000000 and 1 ^FF0000White Dyestuffs^000000.";
 		mes "That's all I need.";
 		next;
@@ -380,8 +380,8 @@ yuno,300,188,5	script	Zhenbolt#1	753,{
 	next;
 	mes "[Zhenbolt]";
 	mes "Bring me";
-	mes "300 ^FF0000Red " + mesitemlink(2503) + "^000000,";
-	mes "300 ^FF0000Burning " + mesitemlink(7855) + "^000000,";
+	mes "300 ^FF0000Red Muffler^000000,";
+	mes "300 ^FF0000Burning Heart^000000,";
 	mes "1 ^FF0000Bandana^000000 and 1 ^FF0000White Dyestuffs^000000.";
 	mes "That's all I need.";
 	next;
@@ -406,7 +406,7 @@ prontera,165,232,3	script	Nephia#1	744,{
 	if (countitem(2244) > 0 && countitem(2209) > 0 && countitem(10007) > 0) {
 		mes "[Nephia]";
 		mes "Oh...";
-		mes "You've brought all these ribbons! I can't wait to tie you a new " + mesitemlink(2208) + " to put on your ^FF66CCbeautiful hair!^000000";
+		mes "You've brought all these ribbons! I can't wait to tie you a new ribbon to put on your ^FF66CCbeautiful hair!^000000";
 		next;
 		mes "[Nephia]";
 		mes "...";
@@ -433,7 +433,7 @@ prontera,165,232,3	script	Nephia#1	744,{
 	mes "Such beautiful hair! I'm sorry, it's just that I love pretty hairstyles, and accessories!";
 	next;
 	mes "[Nephia]";
-	mes "Ooh~! You know what would make your hair so much cuter? I think if you tied it back with a big, " + mesitemlink(5083) + ", you would look sooo ^FF66CCadorable^000000!";
+	mes "Ooh~! You know what would make your hair so much cuter? I think if you tied it back with a big, red ribbon, you would look sooo ^FF66CCadorable^000000!";
 	next;
 	if (Sex == SEX_MALE) {
 		if (select("Um, lady, I'm a dude.:^FF66CCOoh~! You're right!^000000") == 1) {
@@ -456,13 +456,13 @@ prontera,165,232,3	script	Nephia#1	744,{
 		mes "That sounds great!";
 		next;
 		mes "[Nephia]";
-		mes "Like, oh my God! That's what I was thinking! Oh hey~! I can go ahead and tie that " + mesitemlink(2208) + " for you if you want!";
+		mes "Like, oh my God! That's what I was thinking! Oh hey~! I can go ahead and tie that ribbon for you if you want!";
 		next;
 		mes "[Nephia]";
 		mes "Ooh! Bring...";
-		mes "1 ^FF0000Big " + mesitemlink(2208) + "^000000,";
-		mes "1 ^FF0000slotted " + mesitemlink(2208) + "^000000 and";
-		mes "1 ^FF0000Silk " + mesitemlink(2208) + "^000000!";
+		mes "1 ^FF0000Big Ribbon^000000,";
+		mes "1 ^FF0000slotted Ribbon^000000 and";
+		mes "1 ^FF0000Silk Ribbon^000000!";
 		next;
 		mes "[Nephia]";
 		mes "Oh, I almost forgot!";
@@ -488,13 +488,13 @@ prontera,165,232,3	script	Nephia#1	744,{
 		mes "That sounds great!";
 		next;
 		mes "[Nephia]";
-		mes "Like, oh my God! That's what I was thinking! Oh hey~! I can go ahead and tie a " + mesitemlink(2208) + " for you if you want!";
+		mes "Like, oh my God! That's what I was thinking! Oh hey~! I can go ahead and tie a ribbon for you if you want!";
 		next;
 		mes "[Nephia]";
 		mes "Ooh! To do that I need";
-		mes "1 ^FF0000Big " + mesitemlink(2208) + "^000000,";
-		mes "1 ^FF0000slotted " + mesitemlink(2208) + "^000000 and";
-		mes "1 ^FF0000Silk " + mesitemlink(2208) + "^000000!";
+		mes "1 ^FF0000Big Ribbon^000000,";
+		mes "1 ^FF0000slotted Ribbon^000000 and";
+		mes "1 ^FF0000Silk Ribbon^000000!";
 		next;
 		mes "[Nephia]";
 		mes "Oh, I almost forgot!";
@@ -519,7 +519,7 @@ comodo,237,217,5	script	Meruntei#1	732,{
 	}
 	if (countitem(5010) > 0 && countitem(5049) > 0 && countitem(7101) > 9 && Zeny > 9999) {
 		mes "[Meruntei]";
-		mes "Oh! You brought all of them! Now I shall make you an " + mesitemlink(5071) + " of your very own.";
+		mes "Oh! You brought all of them! Now I shall make you an Indian Headband of your very own.";
 		next;
 		mes "[Meruntei]";
 		mes "Take this! The items you have brought will be very useful for continuing my work in spreading headbands around Midgard.";
@@ -540,13 +540,13 @@ comodo,237,217,5	script	Meruntei#1	732,{
 	mes "On behalf of the Comodo Indians, I give reverence to all Indian Tribes!";
 	next;
 	mes "[Meruntei]";
-	mes "Would you like to have an " + mesitemlink(5071) + "? You wouldn't become an official member of my tribe, but wearing it would show your respect if you happen to encounter tribal Indians in your adventures.";
+	mes "Would you like to have an Indian Headband? You wouldn't become an official member of my tribe, but wearing it would show your respect if you happen to encounter tribal Indians in your adventures.";
 	next;
 	mes "[Meruntei]";
 	mes "You could just bring...";
 	mes "1 ^FF0000Indian Fillet^000000,";
 	mes "1 ^FF0000Striped Hairband^000000,";
-	mes "10 ^FF0000PecoPeco " + mesitemlink(949) + "^000000";
+	mes "10 ^FF0000PecoPeco Feather^000000";
 	mes "and ^FF000010,000 zeny!";
 	next;
 	mes "[Meruntei]";
@@ -595,7 +595,7 @@ geffen,67,87,3	script	Ipore#1	700,{
 		next;
 		mes "[Ipore]";
 		mes "I know, I know...";
-		mes "It's not as cool as having the mushroom actually attached to your " + mesitemlink(7005) + ", but it's all we can do. I'm sorry I let you down.";
+		mes "It's not as cool as having the mushroom actually attached to your skull, but it's all we can do. I'm sorry I let you down.";
 		next;
 		mes "[Ipore]";
 		mes "...There.";
@@ -635,7 +635,7 @@ geffen,67,87,3	script	Ipore#1	700,{
 	next;
 	mes "[Ipore]";
 	mes "Remember, bring me...";
-	mes "^FF0000300 " + mesitemlink(921) + "^000000,";
+	mes "^FF0000300 Mushroom Spore^000000,";
 	mes "so that I can let you experience my amazing magic for yourself~!";
 	close;
 }
@@ -679,8 +679,8 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 			mes "[Hatbyr Mhore]";
 			mes "Aha~ Good good good.";
 			mes "Let's see let's see...";
-			mes "1 " + mesitemlink(2254) + "";
-			mes "1 " + mesitemlink(2286) + "...";
+			mes "1 Angel Wing";
+			mes "1 Elven Ears...";
 			next;
 			mes "[Hatbyr Mhore]";
 			mes "Some other crap and";
@@ -707,7 +707,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						mes "[Hatbyr Mhore]";
 						mes "There you go, buddy.";
 						mes "I am proud to say this is my masterpiece. Please take this item. I call it...";
-						mes "'" + mesitemlink(5074) + "!'";
+						mes "'Angel Wing Ears!'";
 						delitem 2254,1; //Angelic_Chain
 						delitem 2286,1; //Elven_Ears
 						set Zeny, Zeny-20000;
@@ -717,11 +717,11 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						mes "There's no doubt that you'll be the talk of the town sporting these fashionable things.";
 						next;
 						mes "[Hatbyr Mhore]";
-						mes "The glamour of an angel and the cuteness of " + mesitemlink(2286) + " is almost too much goodness for one headgear~!";
+						mes "The glamour of an angel and the cuteness of Elven Ears is almost too much goodness for one headgear~!";
 						close;
 					}
 					mes "[Hatbyr Mhore]";
-					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 " + mesitemlink(2254) + ", 1 " + mesitemlink(2286) + " and 20,000 zeny.";
+					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 Angel Wing, 1 Elven Ears and 20,000 zeny.";
 					close;
 				}
 			}
@@ -733,13 +733,13 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 		case 3:
 			mes "[Hatbyr Mhore]";
 			mes "Of course, I can make an item";
-			mes "out of an " + mesitemlink(2255) + " as well!";
+			mes "out of an Evil Wing as well!";
 			mes "That sort of thing is simple for me!";
 			next;
 			mes "[Hatbyr Mhore]";
 			mes "Okay then, I will need...?";
-			mes "1 " + mesitemlink(2255) + ",";
-			mes "1 " + mesitemlink(2286) + ",";
+			mes "1 Evil Wing,";
+			mes "1 Elven Ears,";
 			mes "...and 20,000 zeny.";
 			next;
 			mes "[Hatbyr Mhore]";
@@ -773,7 +773,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						close;
 					}
 					mes "[Hatbyr Mhore]";
-					mes "I'm sorry buddy, but I can't make this item without the stuff I need. Remember I need 1 Devil Wing, 1 " + mesitemlink(2286) + " and 20,000 zeny.";
+					mes "I'm sorry buddy, but I can't make this item without the stuff I need. Remember I need 1 Devil Wing, 1 Elven Ears and 20,000 zeny.";
 					close;
 				}
 			}
@@ -805,7 +805,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 			mes "Aha~ Good good good.";
 			mes "Let's see let's see...";
 			mes "1 Devil Wing";
-			mes "1 " + mesitemlink(2286) + "...";
+			mes "1 Elven Ears...";
 			next;
 			mes "[Hatbyr Mhore]";
 			mes "Some other crap and";
@@ -843,7 +843,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						close;
 					}
 					mes "[Hatbyr Mhore]";
-					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 Devil Wing, 1 " + mesitemlink(2286) + " and 20,000 zeny.";
+					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 Devil Wing, 1 Elven Ears and 20,000 zeny.";
 					close;
 				}
 			}
@@ -855,13 +855,13 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 		case 3:
 			mes "[Hatbyr Mhore]";
 			mes "Of course, I can make an item";
-			mes "out of an " + mesitemlink(2254) + " as well!";
+			mes "out of an Angel Wing as well!";
 			mes "That sort of thing is simple for me!";
 			next;
 			mes "[Hatbyr Mhore]";
 			mes "Okay then, then I'll need...";
-			mes "1 " + mesitemlink(2254) + ",";
-			mes "1 " + mesitemlink(2286) + ",";
+			mes "1 Angel Wing,";
+			mes "1 Elven Ears,";
 			mes "...and 20,000 zeny.";
 			next;
 			mes "[Hatbyr Mhore]";
@@ -886,7 +886,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						next;
 						mes "[Hatbyr Mhore]";
 						mes "There you go, buddy.";
-						mes "I am proud to say this is my masterpiece. Please take this item. I call it... '" + mesitemlink(5074) + "!'";
+						mes "I am proud to say this is my masterpiece. Please take this item. I call it... 'Angel Wing Ears!'";
 						delitem 2254,1; //Angelic_Chain
 						delitem 2286,1; //Elven_Ears
 						set Zeny, Zeny-20000;
@@ -896,11 +896,11 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 						mes "There's no doubt that you'll be the talk of the town sporting these fashionable things.";
 						next;
 						mes "[Hatbyr Mhore]";
-						mes "The glamour of an angel and the cuteness of " + mesitemlink(2286) + " is almost too much goodness for one headgear~!";
+						mes "The glamour of an angel and the cuteness of Elven Ears is almost too much goodness for one headgear~!";
 						close;
 					}
 					mes "[Hatbyr Mhore]";
-					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 " + mesitemlink(2254) + ", 1 " + mesitemlink(2286) + " and 20,000 zeny.";
+					mes "I'm sorry buddy, but I can't make this item without having the things I need. Remember, I need 1 Angel Wing, 1 Elven Ears and 20,000 zeny.";
 					close;
 				}
 			}
@@ -917,20 +917,20 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 		mes "I happened to come to Juno while I was traveling around the world. Being someplace up in the clouds makes me a little nervous, but still, the scenery looks great from up here.";
 		next;
 		mes "[Hatbyr Mhore]";
-		mes "Although I really enjoy traveling more than staying in my shop, I'm still a Blacksmith at " + mesitemlink(7855) + " and I always gotta be making something. It's been a while since I've made my last creation...";
+		mes "Although I really enjoy traveling more than staying in my shop, I'm still a Blacksmith at heart and I always gotta be making something. It's been a while since I've made my last creation...";
 		next;
 		mes "[Hatbyr Mhore]";
 		mes "Hmm...";
 		mes "If I had some materials, I think I could put together some pretty amazing stuff.";
 		next;
 		mes "[Hatbyr Mhore]";
-		mes "If by any chance, you have an " + mesitemlink(2254) + " or " + mesitemlink(2255) + ", and";
-		mes "" + mesitemlink(2286) + ", would you give me a chance to smith something?";
+		mes "If by any chance, you have an Angel Wing or Evil Wing, and";
+		mes "Elven Ears, would you give me a chance to smith something?";
 		next;
 		mes "[Hatbyr Mhore]";
 		mes "I was thinking...";
-		mes "" + mesitemlink(2286) + " are great...";
-		mes "And everyone loves " + mesitemlink(2254) + " or Devil Wing. Wouldn't it be totally fab if I could combine the " + mesitemlink(2286) + " with one of the wings?!";
+		mes "Elven Ears are great...";
+		mes "And everyone loves Angel Wing or Devil Wing. Wouldn't it be totally fab if I could combine the Elven Ears with one of the wings?!";
 		next;
 		if (select("Give me more information.:Yeah, I will think about it.") == 1) {
 			mes "[Hatbyr Mhore]";
@@ -939,7 +939,7 @@ yuno,241,52,3	script	Old Blacksmith#hgear	813,{
 			mes "you exactly I need.";
 			next;
 			mes "[Hatbyr Mhore]";
-			mes "For creating " + mesitemlink(5074) + ", I need 1 ^4d4dffAngel Wing^000000,";
+			mes "For creating Angel Wing Ears, I need 1 ^4d4dffAngel Wing^000000,";
 			mes "1 ^4d4dffElven Ears^000000 and";
 			mes "^4d4dff20,000 zeny^000000.";
 			next;
@@ -991,9 +991,9 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 		mes "put this down on the ground...";
 		mes "Okay, I am ready...";
 		next;
-		mes "^FF0000Lindsay put the " + mesitemlink(5033) + " on the ground, threw the " + mesitemlink(5064) + " onto the hat and mumbled some words while hugging herself.^000000";
+		mes "^FF0000Lindsay put the Raccoon Hat on the ground, threw the Smokie Leaf onto the hat and mumbled some words while hugging herself.^000000";
 		next;
-		mes "^FF0000Then, suddenly with a dazzling light, the " + mesitemlink(5033) + " turned blue and slowly transformed into a " + mesitemlink(5078) + ".^000000";
+		mes "^FF0000Then, suddenly with a dazzling light, the Raccoon Hat turned blue and slowly transformed into a Sea-Otter Hat.^000000";
 		specialeffect EF_FLASHER;
 		next;
 		mes "[Pretty Lindsay]";
@@ -1006,7 +1006,7 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 		getitem 5078,1; //Sea_Otter_Cap
 		next;
 		mes "[Pretty Lindsay]";
-		mes "I made this hat with all my " + mesitemlink(7855) + ", so you gotta promise me you will take care of this, okay?";
+		mes "I made this hat with all my heart, so you gotta promise me you will take care of this, okay?";
 		close;
 	}
 	if (Sex == SEX_MALE) {
@@ -1017,13 +1017,13 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 		emotion ET_SMILE;
 		mes "[Pretty Lindsay]";
 		mes "You look like you're freezing...";
-		mes "Um, I know! How about I make you a cute, warm and fuzzy " + mesitemlink(5078) + "?";
+		mes "Um, I know! How about I make you a cute, warm and fuzzy Sea-Otter hat?";
 		next;
 		mes "[Pretty Lindsay]";
 		mes "It's really really cute! Also, it's the only hat I know how to make, because I love playing with Sea Otters so much!";
 		next;
 		mes "[Pretty Lindsay]";
-		mes "I have to put together ^0000FF1 " + mesitemlink(5033) + "^000000 and ^0000FF1 " + mesitemlink(5064) + "^000000 to make a ^4D4DFFSea-Otter Hat^000000 for you, though.";
+		mes "I have to put together ^0000FF1 Raccoon Hat^000000 and ^0000FF1 Smokie Leaf^000000 to make a ^4D4DFFSea-Otter Hat^000000 for you, though.";
 		next;
 		if (select("Okay, I will come back with the stuff.:Um... How come you need a Raccoon Hat?") == 1) {
 			emotion ET_SMILE;
@@ -1035,7 +1035,7 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 		mes "Well, it's supposed to be a seeeecret, but my mommy taught me some magic to make Sea-Otter hats with Raccoon hats.";
 		next;
 		mes "[Pretty Lindsay]";
-		mes "It's the bestest magic ever because it comes from my " + mesitemlink(7855) + "!";
+		mes "It's the bestest magic ever because it comes from my heart!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "That...";
@@ -1053,10 +1053,10 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 	next;
 	emotion ET_SMILE;
 	mes "[Pretty Lindsay]";
-	mes "Hey hey! Can I make you a " + mesitemlink(5078) + "! It's really really really really cute!";
+	mes "Hey hey! Can I make you a Sea-Otter hat! It's really really really really cute!";
 	next;
 	mes "[Pretty Lindsay]";
-	mes "I need ^0000FF1 " + mesitemlink(5033) + "^000000 and ^0000FF1 " + mesitemlink(5064) + "^000000 so I can make a ^4D4DFFSea-Otter Hat^000000 for you.";
+	mes "I need ^0000FF1 Raccoon Hat^000000 and ^0000FF1 Smokie Leaf^000000 so I can make a ^4D4DFFSea-Otter Hat^000000 for you.";
 	next;
 	if (select("Okay, I will come back with the stuff.:Um, why do you want to make hats so much?") == 1) {
 		emotion ET_SMILE;
@@ -1068,7 +1068,7 @@ xmas,183,267,3	script	Pretty Lindsay#1	793,{
 	}
 	mes "[Pretty Lindsay]";
 	mes "Because...!";
-	mes "If everyone in Lutie was wearing a fuzzy Sea-Otter " + mesitemlink(2226) + ", it would look so so cute!";
+	mes "If everyone in Lutie was wearing a fuzzy Sea-Otter cap, it would look so so cute!";
 	next;
 	mes "[Pretty Lindsay]";
 	mes "We could play games in the snow, and play with real Sea Otters and have them give us rides and...";
@@ -1095,7 +1095,7 @@ xmas,175,156,3	script	Fuzzy Fuzz#1	712,{
 			close;
 		}
 		mes "[Fuzzy Fuzz]";
-		mes "Excellent! You brought everything! Please make yourself comfortable while I make you your " + mesitemlink(5059) + ".";
+		mes "Excellent! You brought everything! Please make yourself comfortable while I make you your Teddybear Hat.";
 		next;
 		emotion ET_DELIGHT;
 		mes "[Fuzzy Fuzz]";
@@ -1127,35 +1127,35 @@ xmas,175,156,3	script	Fuzzy Fuzz#1	712,{
 	mes "I'm a master of creating stuffed animals, which make great presents. As we all know, everyone loves to hug cute and cuddly stuffed animals.";
 	next;
 	mes "[Fuzzy Fuzz]";
-	mes "My specialty is the '" + mesitemlink(5059) + ".' When it's worn, it makes you as cute as a teddy bear, and your hugs twice as warm and cuddly.";
+	mes "My specialty is the 'Teddybear Hat.' When it's worn, it makes you as cute as a teddy bear, and your hugs twice as warm and cuddly.";
 	next;
 	mes "[Fuzzy Fuzz]";
 	if (Sex == SEX_MALE) {
-		mes "The '" + mesitemlink(5059) + "' can't be worn by just anyone, since it's cuddling powers are easily abused.";
+		mes "The 'Teddybear Hat' can't be worn by just anyone, since it's cuddling powers are easily abused.";
 		next;
 		mes "[Fuzzy Fuzz]";
-		mes "But I sense that you are an adventurer with a pure " + mesitemlink(7855) + " and would not use the " + mesitemlink(5059) + " for selfish gain.";
+		mes "But I sense that you are an adventurer with a pure heart and would not use the Teddybear Hat for selfish gain.";
 		next;
 		mes "[Fuzzy Fuzz]";
 		mes "You can learn a lot about telling good people from the naughty after working for Santa for a loooong time...";
 	}
 	else {
-		mes "I sense that you are an adventurer with a good " + mesitemlink(7855) + ", and that a sweet girl like you deserves a nice gift.";
+		mes "I sense that you are an adventurer with a good heart, and that a sweet girl like you deserves a nice gift.";
 		next;
 		mes "[Fuzzy Fuzz]";
 		mes "You know more about such things after working for Santa for so long.";
 	}
 	next;
 	mes "[Fuzzy Fuzz]";
-	mes "Unfortunately, I don't have any material to make the headgear right now. But if you bring the materials, I will make you a '" + mesitemlink(5059) + "' for free.";
+	mes "Unfortunately, I don't have any material to make the headgear right now. But if you bring the materials, I will make you a 'Teddybear Hat' for free.";
 	next;
 	mes "[Fuzzy Fuzz]";
 	mes "Let's see...";
 	mes "I'll need...";
-	mes "^0000FF1 " + mesitemlink(5030) + "^000000,";
-	mes "^0000FF100 " + mesitemlink(7213) + "^000000,";
-	mes "^0000FF100 " + mesitemlink(7217) + "^000000 and";
-	mes "^0000FF300 " + mesitemlink(7161) + "^000000.";
+	mes "^0000FF1 Panda Hat^000000,";
+	mes "^0000FF100 Needle Packet^000000,";
+	mes "^0000FF100 Spool^000000 and";
+	mes "^0000FF300 Black Bear Skin^000000.";
 	next;
 	mes "[Fuzzy Fuzz]";
 	mes "So, do you think you can get all of them? I will be here waiting for you.";
@@ -1184,14 +1184,14 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 	if (countitem(5073) > 0 && countitem(1750) > 0) {
 		mes "[Nanhyang]";
 		mes "Hello, there.";
-		mes "Ah, I can tell that you already have a ^8C1717'" + mesitemlink(5073) + "'^000000. I see that using it has corrected your posture.";
+		mes "Ah, I can tell that you already have a ^8C1717'Model Training Hat'^000000. I see that using it has corrected your posture.";
 		next;
 		mes "[Nanhyang]";
 		mes "Oh...";
-		mes "I forgot to tell you that I can not only put together a '" + mesitemlink(5073) + ",' I can disassemble it into its original parts.";
+		mes "I forgot to tell you that I can not only put together a 'Model Training Hat,' I can disassemble it into its original parts.";
 		next;
 		mes "[Nanhyang]";
-		mes "If you give me ^0000FF1 '" + mesitemlink(5073) + "'^000000 and ^0000FF1 'Arrow'^000000, I give you ^8C17171 '" + mesitemlink(2285) + "'^000000 and ^8C17171 'Book'^000000. So, would you like to disassemble the items?";
+		mes "If you give me ^0000FF1 'Model Training Hat'^000000 and ^0000FF1 'Arrow'^000000, I give you ^8C17171 'Apple of Archer'^000000 and ^8C17171 'Book'^000000. So, would you like to disassemble the items?";
 		next;
 		if (select("Disassemble:Cancel") == 1) {
 			mes "[Nanhyang]";
@@ -1213,7 +1213,7 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 			next;
 			mes "[Nanhyang]";
 			mes "If you want to make a";
-			mes "'" + mesitemlink(5073) + "' again,";
+			mes "'Model Training Hat' again,";
 			mes "feel free to come back.";
 			close;
 		}
@@ -1234,10 +1234,10 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 		mes "Before I start to create the item, I'm obligated to warn you...";
 		next;
 		mes "[Nanhyang]";
-		mes "If the ^FF0000'Book' and '" + mesitemlink(2285) + "' items you have brought to make a '" + mesitemlink(5073) + "' was ^FF0000upgraded^000000, after I create the hat out of the book, ^FF0000these upgrades, including compounded cards, will be lost.^000000";
+		mes "If the ^FF0000'Book' and 'Apple of Archer' items you have brought to make a 'Model Training Hat' was ^FF0000upgraded^000000, after I create the hat out of the book, ^FF0000these upgrades, including compounded cards, will be lost.^000000";
 		next;
 		mes "[Hanhyang]";
-		mes "So would you like to create the " + mesitemlink(5073) + " right now?";
+		mes "So would you like to create the Model Training Hat right now?";
 		next;
 		if (select("Create:Cancel") == 1) {
 			mes "[Nanhyang]";
@@ -1261,17 +1261,17 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 			mes "That wasn't too difficult. I hope you wear this hat everyday to improve your posture.";
 			next;
 			mes "[Nanhyang]";
-			mes "You may have trouble at first, keeping your balance and trying not to drop the " + mesitemlink(512) + ". You may even feel incredible neck pain. But for the sake of beauty, it'll all be worth it.";
+			mes "You may have trouble at first, keeping your balance and trying not to drop the apple. You may even feel incredible neck pain. But for the sake of beauty, it'll all be worth it.";
 			next;
 			mes "[Nanhyang]";
 			mes "Here it is.";
-			mes "Oh, right, this arrow from the " + mesitemlink(2285) + " is left over, so you can go ahead and take that.";
+			mes "Oh, right, this arrow from the Apple of Archer is left over, so you can go ahead and take that.";
 			delitem 2285,1; //Apple_Of_Archer
 			delitem 1550,1; //Book
 			getitem 5073,1; //Cap_Of_Concentration
 			next;
 			mes "[Nanhyang]";
-			mes "Also, I can disassemble the " + mesitemlink(5073) + " into its original materials. So if you want the original items back, bring the " + mesitemlink(5073) + " and the arrow I gave you.";
+			mes "Also, I can disassemble the Model Training Hat into its original materials. So if you want the original items back, bring the Model Training Hat and the arrow I gave you.";
 			getitem 1750,1; //Arrow
 			next;
 			mes "[Nanhyang]";
@@ -1304,7 +1304,7 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 		mes "At the very least, we could train you to improve your posture so that you can walk with regal poise.";
 		next;
 		mes "[Nanhyang]";
-		mes "Although we can't offer any classes at this time, I can create a special '" + mesitemlink(5073) + "' for you. That way, you can practice the glamourous way of walking down the catwalk on your own.";
+		mes "Although we can't offer any classes at this time, I can create a special 'Model Training Hat' for you. That way, you can practice the glamourous way of walking down the catwalk on your own.";
 		next;
 		mes "[Nanhyang]";
 		emotion ET_QUESTION;
@@ -1312,9 +1312,9 @@ payon_in03,8,193,4	script	Nanhyang#1	77,{
 		next;
 		mes "[Nanhyang]";
 		mes "Please bring...";
-		mes "^0000FF1 " + mesitemlink(2285) + "^000000 and";
+		mes "^0000FF1 Apple of Archer^000000 and";
 		mes "^0000FF1 Book^000000.";
-		mes "Then I can fashion a '" + mesitemlink(5073) + "' for you right away.";
+		mes "Then I can fashion a 'Model Training Hat' for you right away.";
 		close;
 	}
 	mes "[Nanhyang]";
@@ -1340,13 +1340,13 @@ geffen,83,189,5	script	Seth#1	716,{
 	emotion ET_SMILE;
 	next;
 	mes "[Seth]";
-	mes "Today at school, I learned how to make a paper " + mesitemlink(712) + "! The " + mesitemlink(712) + " was sort of hard, but now I can do it! Then I made a tiny tiny " + mesitemlink(712) + " and put in on my head~";
+	mes "Today at school, I learned how to make a paper flower! The flower was sort of hard, but now I can do it! Then I made a tiny tiny flower and put in on my head~";
 	emotion ET_THROB;
 	next;
 	if (countitem(2278) > 0 && countitem(975) > 0) {
 		mes "[Seth]";
 		mes "Hey~!";
-		mes "You have a " + mesitemlink(2278) + " and " + mesitemlink(975) + "! Yaaay~! I could use those and make you a paper " + mesitemlink(712) + ". C'mon, lemme show you!";
+		mes "You have a Mr. Smile and Scarlet Dyestuffs! Yaaay~! I could use those and make you a paper flower. C'mon, lemme show you!";
 		emotion ET_PROFUSELY_SWEAT;
 		next;
 		mes "[Seth]";
@@ -1364,7 +1364,7 @@ geffen,83,189,5	script	Seth#1	716,{
 			next;
 			mes "[Seth]";
 			mes "Let's see...";
-			mes "I cut " + mesitemlink(2278) + " this way~.";
+			mes "I cut Mr. Smile this way~.";
 			mes "*Snip Snip Snip~~*";
 			mes "*Snip...Snip...*";
 			mes "Yyyyyaaaeeep...";
@@ -1392,7 +1392,7 @@ geffen,83,189,5	script	Seth#1	716,{
 			mes "I'm gonna make one for my little sister~! And everybody I love!";
 			next;
 			mes "[Seth]";
-			mes "If you want to see me make another one, just bring more " + mesitemlink(975) + " and Mr.Smile, okay? Bye bye~!";
+			mes "If you want to see me make another one, just bring more Scarlet Dyestuffs and Mr.Smile, okay? Bye bye~!";
 			close;
 		case 2:
 			mes "[Seth]";
@@ -1428,9 +1428,9 @@ geffen,83,189,5	script	Seth#1	716,{
 			mes "[Seth]";
 			mes "Okay okay...";
 			mes "I neeeeed...";
-			mes "^3131FF1 " + mesitemlink(2278) + "^000000 and";
-			mes "^3131FF1 " + mesitemlink(975) + "^000000.";
-			mes "Then I can make you a tiiiiny little " + mesitemlink(712) + ".";
+			mes "^3131FF1 Mr. Smile^000000 and";
+			mes "^3131FF1 Scarlet Dyestuffs^000000.";
+			mes "Then I can make you a tiiiiny little flower.";
 			next;
 			mes "[Seth]";
 			mes "Seth will wait for you here. Promise me you'll come back?";
@@ -1469,16 +1469,16 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 	case 1:
 		if (countitem(2236) > 0 && countitem(7151) > 99 && countitem(7111) > 99) {
 			mes "[Mad Hatter]";
-			mes "" + mesitemlink(5060) + "! It's a " + mesitemlink(2236) + " I've remade by adding colorful paper for a festive look. Celebrate good times with a " + mesitemlink(5060) + "! Come on!";
+			mes "Party Hat! It's a Santa Hat I've remade by adding colorful paper for a festive look. Celebrate good times with a Party Hat! Come on!";
 			next;
 			mes "[Mad Hatter]";
 			mes "Oh wait! Please check one thing before we start.";
 			next;
 			mes "[Mad Hatter]";
-			mes "If the " + mesitemlink(2236) + " you use to create this hat was upgraded or compounded with a card, all those upgrades will be lost. So, to be safe, I suggest you put everything in your inventory, other than the things to make the " + mesitemlink(5060) + ", into Kafra Storage.";
+			mes "If the Santa Hat you use to create this hat was upgraded or compounded with a card, all those upgrades will be lost. So, to be safe, I suggest you put everything in your inventory, other than the things to make the Party Hat, into Kafra Storage.";
 			next;
 			mes "[Mad Hatter]";
-			mes "It seems to me that you have everything. Alright! Shall I make you a " + mesitemlink(5060) + "?";
+			mes "It seems to me that you have everything. Alright! Shall I make you a Party Hat?";
 			next;
 			if (select("No thanks.:Yes.") == 1) {
 				mes "[Mad Hatter]";
@@ -1494,7 +1494,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			delitem 7151,100; //Oil_Paper
 			delitem 7111,100; //Smooth_Paper
 			mes "[Mad Hatter]";
-			mes "It's done! Your new life, as the life of the party, has officially begun. All you need to do is wear this " + mesitemlink(5060) + ". Though, knowing a couple jokes would probably help too.";
+			mes "It's done! Your new life, as the life of the party, has officially begun. All you need to do is wear this Party Hat. Though, knowing a couple jokes would probably help too.";
 			getitem 5060,1; //Party_Hat
 			next;
 			mes "[Mad Hatter]";
@@ -1504,7 +1504,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 		}
 		else {
 			mes "[Mad Hatter]";
-			mes "Oh... man. Everyone needs a " + mesitemlink(5060) + "! Even boring types get jazzed with pizazz wearing one of these!";
+			mes "Oh... man. Everyone needs a Party Hat! Even boring types get jazzed with pizazz wearing one of these!";
 			next;
 			mes "[Mad Hatter]";
 			mes "You can wear them for birthday parties, Christmas parties. Um, slumber parties. P-political parties.";
@@ -1512,29 +1512,29 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "And hunting parties?";
 			next;
 			mes "[Mad Hatter]";
-			mes "Anyway, this is what I need to make a " + mesitemlink(5060) + "...";
+			mes "Anyway, this is what I need to make a Party Hat...";
 			mes "1 ^3355FFSanta Hat^000000,";
 			mes "100 ^3355FFOil Paper^000000 and";
 			mes "100 ^3355FFSlick Paper^000000.";
 			next;
 			mes "[Mad Hatter]";
-			mes "I'll be right here when you decide to crank your life up a notch with a " + mesitemlink(5060) + ".";
+			mes "I'll be right here when you decide to crank your life up a notch with a Party Hat.";
 			close;
 		}
 	case 2:
 		if (countitem(2280) > 0 && countitem(7197) > 299 && countitem(7150) > 299) {
 			mes "[Mad Hatter]";
-			mes "A " + mesitemlink(5062) + "! Made out of a " + mesitemlink(2280) + " with bamboo and " + mesitemlink(7197) + ", it gives you a relaxed, rustic feeling when you wear it.";
+			mes "A Straw Hat! Made out of a Sakkat with bamboo and tough vines, it gives you a relaxed, rustic feeling when you wear it.";
 			next;
 			mes "[Mad Hatter]";
 			mes "Oh wait! Please check one thing before we start.";
-			mes "If the " + mesitemlink(2280) + " you use to create this hat was upgraded, any cards, slots or upgrades will disappear once I make a new hat out of it.";
+			mes "If the Sakkat you use to create this hat was upgraded, any cards, slots or upgrades will disappear once I make a new hat out of it.";
 			next;
 			mes "[Mad Hatter]";
 			mes "To be safe, I suggest you put everything else, other than the required hat items, into Kafra Storage.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Ah! I see you brought everything. Alright! Do you want me to make you a " + mesitemlink(5062) + " now?";
+			mes "Ah! I see you brought everything. Alright! Do you want me to make you a Straw Hat now?";
 			next;
 			if (select("No thanks.:Yes.") == 1) {
 				mes "[Mad Hatter]";
@@ -1558,10 +1558,10 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 		}
 		else {
 			mes "[Mad Hatter]";
-			mes "A " + mesitemlink(5062) + "! It shades you from the heat of the sun and keeps farmers cool when they're working on the fields. It's a hat for cool, relaxed types and the hat of choice for some famous heroes!";
+			mes "A Straw Hat! It shades you from the heat of the sun and keeps farmers cool when they're working on the fields. It's a hat for cool, relaxed types and the hat of choice for some famous heroes!";
 			next;
 			mes "[Mad Hatter]";
-			mes "Anyways, I need all these to make you a " + mesitemlink(5062) + "...";
+			mes "Anyways, I need all these to make you a Straw Hat...";
 			mes "1 ^3355FFSakkat^000000,";
 			mes "300 ^3355FFTough Vines^000000 and";
 			mes "300 ^3355FFPiece of Bamboo^000000.";
@@ -1573,20 +1573,20 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 	case 3:
 		if (countitem(2248) > 0 && countitem(7030) > 107 && countitem(7194) > 107 && countitem(7120) > 3) {
 			mes "[Mad Hatter]";
-			mes "I take a " + mesitemlink(2248) + ", add some manliness, um, do some finangling, and Voila~! A " + mesitemlink(5075) + "!";
+			mes "I take a Western Grace, add some manliness, um, do some finangling, and Voila~! A Cowboy Hat!";
 			next;
 			mes "[Mad Hatter]";
 			mes "It's a hat for adventure and exploration. Although it's a manly hat like no other, with a manly factor of 9, it also looks great on girls.";
 			next;
 			mes "[Mad Hatter]";
 			mes "Oh wait! Please check one thing before we start.";
-			mes "If the " + mesitemlink(2248) + " you use to create this hat was upgraded, any cards or upgrades will be lost once I make a new hat out of it.";
+			mes "If the Western Grace you use to create this hat was upgraded, any cards or upgrades will be lost once I make a new hat out of it.";
 			next;
 			mes "[Mad Hatter]";
 			mes "To be safe, I suggest you put everything, other than the required materials, into Kafra Storage.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Ah! You brought everything already. Excellent. Do you want me to make a " + mesitemlink(5075) + " now?";
+			mes "Ah! You brought everything already. Excellent. Do you want me to make a Cowboy Hat now?";
 			next;
 			if (select("No thanks.:Yes.") == 1) {
 				mes "[Mad Hatter]";
@@ -1609,41 +1609,41 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 		}
 		else {
 			mes "[Mad Hatter]";
-			mes "A " + mesitemlink(5075) + "! This is a very popular that brings up images of frontier life and gunplay.";
+			mes "A Cowboy Hat! This is a very popular that brings up images of frontier life and gunplay.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Wearing a " + mesitemlink(5075) + " will make guys look tougher and more heroic, and will add untamed cuteness to the ladies.";
+			mes "Wearing a Cowboy Hat will make guys look tougher and more heroic, and will add untamed cuteness to the ladies.";
 			next;
 			mes "[Mad Hatter]";
-			mes "I need these items to make a " + mesitemlink(5075) + "...";
+			mes "I need these items to make a Cowboy Hat...";
 			mes "1 ^3355FFWestern Grace^000000,";
 			mes "108 ^3355FFClaw of Desert Wolf^000000,";
 			mes "108 ^3355FFSoft Blade of Grass^000000 and";
-			mes "4 ^3355FFBurning " + mesitemlink(944) + "^000000.";
+			mes "4 ^3355FFBurning Horseshoe^000000.";
 			next;
 			mes "[Mad Hatter]";
-			mes "So when you decide to give your life a boost with rustic style, come back to me with those items so I can make you a " + mesitemlink(5075) + ".";
+			mes "So when you decide to give your life a boost with rustic style, come back to me with those items so I can make you a Cowboy Hat.";
 			close;
 		}
 	case 4:
 		if (countitem(5062) > 0 && countitem(952) > 49 && countitem(1907) > 0) {
 			mes "[Mad Hatter]";
-			mes "Ah yes. Now here's a classy hat for mariachi heroes and Latin lovers. You can't deny the sex appeal that just pours from someone wearing a " + mesitemlink(5067) + ".";
+			mes "Ah yes. Now here's a classy hat for mariachi heroes and Latin lovers. You can't deny the sex appeal that just pours from someone wearing a Sombrero.";
 			next;
 			mes "[Mad Hatter]";
 			mes "Oh wait! Please check one thing before we start.";
-			mes "If the " + mesitemlink(5062) + " you use to creating this hat was upgraded, any cards or upgrades in this hat will be lost once I make the " + mesitemlink(5067) + ".";
+			mes "If the Straw Hat you use to creating this hat was upgraded, any cards or upgrades in this hat will be lost once I make the Sombrero.";
 			next;
 			mes "[Mad Hatter]";
 			mes "To be safe, I suggest you put everything you don't need to make this hat into Kafra Storage.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Ah! You brought everything already. Alright! Do you want me to make you a " + mesitemlink(5067) + " right away?";
+			mes "Ah! You brought everything already. Alright! Do you want me to make you a Sombrero right away?";
 			next;
 			if (select("No thanks.:Yes.") == 1) {
 				mes "[Mad Hatter]";
 				mes "Fine, fine.";
-				mes "But think of all the sex appeal you're missing out on. Come on, you know you need a " + mesitemlink(5067) + ".";
+				mes "But think of all the sex appeal you're missing out on. Come on, you know you need a Sombrero.";
 				close;
 			}
 			mes "^3355FFZinga Zinga Zang Zang^000000";
@@ -1654,19 +1654,19 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			delitem 952,50; //Cactus_Needle
 			delitem 1907,1; //Guitar
 			mes "[Mad Hatter]";
-			mes "With this " + mesitemlink(5067) + ", you'll look like you have all kinds of style. Adios, cool guy~";
+			mes "With this Sombrero, you'll look like you have all kinds of style. Adios, cool guy~";
 			getitem 5067,1; //Sombrero
 			close;
 		}
 		else {
 			mes "[Mad Hatter]";
-			mes "Now, everyone needs a " + mesitemlink(5067) + ". They're one of the most versatile hats in existence. You can wear them to formal events, you can wear them while napping, you can wear them just to hang out...";
+			mes "Now, everyone needs a Sombrero. They're one of the most versatile hats in existence. You can wear them to formal events, you can wear them while napping, you can wear them just to hang out...";
 			next;
 			mes "[Mad Hatter]";
-			mes "Look, you don't need me to explain how cool a " + mesitemlink(5067) + " is. It's just one of those things that everyone naturally knows. So I know you want one.";
+			mes "Look, you don't need me to explain how cool a Sombrero is. It's just one of those things that everyone naturally knows. So I know you want one.";
 			next;
 			mes "[Mad Hatter]";
-			mes "So this is what I need to make a " + mesitemlink(5067) + "...";
+			mes "So this is what I need to make a Sombrero...";
 			mes "1 ^3355FFStraw Hat^000000,";
 			mes "50 ^3355FFCactus Needle^000000 and";
 			mes "1 ^3355FFGuitar^000000.";
@@ -1679,18 +1679,18 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 	case 5:
 		if (countitem(2226) > 0 && countitem(7038) > 499) {
 			mes "[Mad Hatter]";
-			mes "A " + mesitemlink(5076) + "...!";
+			mes "A Beanie...!";
 			mes "Whaddup, broham. This hat keeps your head toasty, but let's you play things cool with your homeys. And, um, fly girls.";
 			next;
 			mes "[Mad Hatter]";
 			mes "Oh wait! Please check one thing before we start.";
-			mes "If the " + mesitemlink(2226) + " you use to make this " + mesitemlink(5076) + " was upgraded, any cards or upgrades will be lost once I make this hat!";
+			mes "If the Cap you use to make this Beanie was upgraded, any cards or upgrades will be lost once I make this hat!";
 			next;
 			mes "[Mad Hatter]";
 			mes "To be safe, I suggest you put everything not needed to make this hat into Kafra Storage.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Ah! You brought everything already. Alright! How about I make you that " + mesitemlink(5076) + " right now?";
+			mes "Ah! You brought everything already. Alright! How about I make you that Beanie right now?";
 			next;
 			if (select("No thanks.:Yes.") == 1) {
 				mes "[Mad Hatter]";
@@ -1705,7 +1705,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			delitem 2226,1; //Cap
 			delitem 7038,500; //Yarn
 			mes "[Mad Hatter]";
-			mes "There you go! Your very own " + mesitemlink(5076) + "! Cute, but still 'dope!'";
+			mes "There you go! Your very own Beanie! Cute, but still 'dope!'";
 			next;
 			mes "[Mad Hatter]";
 			mes "Uh! Uh!";
@@ -1715,7 +1715,7 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 		}
 		else {
 			mes "[Mad Hatter]";
-			mes "A " + mesitemlink(5076) + "!";
+			mes "A Beanie!";
 			mes "Whether you plan to go to a house party, get your groove back, or be as fresh as a prince, you'll be chillin' with this fly style.";
 			next;
 			mes "[Mad Hatter]";
@@ -1723,12 +1723,12 @@ xmas_in,35,30,3	script	Hat Merchant#zero	797,{
 			mes "Although it can be a street fashion, Beanies also look really cute on some people.";
 			next;
 			mes "[Mad Hatter]";
-			mes "Anyway, this is what I need to make a " + mesitemlink(5076) + "...";
+			mes "Anyway, this is what I need to make a Beanie...";
 			mes "1 ^3355FFCap^000000 and";
 			mes "500 ^3355FFYarn^000000.";
 			next;
 			mes "[Mad Hatter]";
-			mes "When you decide to represent yo' " + mesitemlink(2501) + ", come to me with the stuff. I'll hook you up.";
+			mes "When you decide to represent yo' hood, come to me with the stuff. I'll hook you up.";
 			close;
 		}
 	}
@@ -1766,7 +1766,7 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 	switch(select("Decorative Golden Bell:Crown of Ancient Queen:Crown of Mistress")) {
 	case 1:
 		mes "[Nehris]";
-		mes "This " + mesitemlink(10016) + " is fashioned after the one worn by the 'Sohee' monster. It's a cute accessory I personally recommend for us ladies. A little oversized, but I believe you'll like it a lot.";
+		mes "This Golden Bell is fashioned after the one worn by the 'Sohee' monster. It's a cute accessory I personally recommend for us ladies. A little oversized, but I believe you'll like it a lot.";
 		next;
 		if (countitem(10016) > 0 && countitem(714) > 0 && countitem(969) > 2 && Zeny > 19999) {
 			mes "[Nehris]";
@@ -1783,7 +1783,7 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 			getitem 5091,1; //Big_Golden_Bell
 			mes "[Nehris]";
 			mes "Yoohoo~";
-			mes "There you go. Here's your beautiful " + mesitemlink(10016) + ". I doubt it will jingle if you shake your head, though.";
+			mes "There you go. Here's your beautiful Golden Bell. I doubt it will jingle if you shake your head, though.";
 			next;
 			mes "[Nehris]";
 			mes "Oh, one more thing, don't confuse yourself with Sohee and commit suicide!";
@@ -1793,8 +1793,8 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 			close;
 		}
 		mes "[Nehris]";
-		mes "The required materials for the " + mesitemlink(5091) + " are...";
-		mes "^3355FF1 " + mesitemlink(10016) + ", 1 " + mesitemlink(714) + ", 3 " + mesitemlink(969) + "^000000 and";
+		mes "The required materials for the Decorative Golden Bell are...";
+		mes "^3355FF1 Golden Bell, 1 Emperium, 3 Gold^000000 and";
 		mes "20,000 zeny.";
 		next;
 		mes "[Nehris]";
@@ -1804,7 +1804,7 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 		close;
 	case 2:
 		mes "[Nehris]";
-		mes "This " + mesitemlink(2235) + " is inspired by the the one worn by the 'Isis' monster. It has a elegant look fitting for ancient royalty.";
+		mes "This crown is inspired by the the one worn by the 'Isis' monster. It has a elegant look fitting for ancient royalty.";
 		next;
 		if (countitem(10006) > 0 && countitem(714) > 0 && countitem(969) > 2 && Zeny > 19999) {
 			mes "[Nehris]";
@@ -1821,15 +1821,15 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 			getitem 5080,1; //Headgear_Of_Queen
 			mes "[Nehris]";
 			mes "Tah dah!";
-			mes "Here's your " + mesitemlink(5080) + "! I don't know if you can get anyone to bow before you while wearing this, but at least you'll look elegant.";
+			mes "Here's your Crown of Ancient Queen! I don't know if you can get anyone to bow before you while wearing this, but at least you'll look elegant.";
 			next;
 			mes "[Nehris]";
 			mes "If you'd like me to make another one, please come again. Thank you for visiting the Monster Museum.";
 			close;
 		}
 		mes "[Nehris]";
-		mes "The required materials for the " + mesitemlink(5080) + " are...";
-		mes "^3355FF1 " + mesitemlink(10006) + ", 1 " + mesitemlink(714) + ", 3 " + mesitemlink(969) + "^000000 and";
+		mes "The required materials for the Crown of Ancient Queen are...";
+		mes "^3355FF1 Queen's Hair Ornament, 1 Emperium, 3 Gold^000000 and";
 		mes "20,000 zeny.";
 		next;
 		mes "[Nehris]";
@@ -1839,7 +1839,7 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 		close;
 	case 3:
 		mes "[Nehris]";
-		mes "This " + mesitemlink(2235) + " is an imitation of the one worn by the 'Mistress' monster. Wearing this will give you a look of brusque authority.";
+		mes "This crown is an imitation of the one worn by the 'Mistress' monster. Wearing this will give you a look of brusque authority.";
 		next;
 		if (countitem(2249) > 0 && countitem(714) > 0 && countitem(969) > 2 && Zeny > 39999) {
 			mes "[Nehris]";
@@ -1848,15 +1848,15 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 			next;
 			mes "[Nehris]";
 			mes "^FF0000By the way, if you use an upgraded";
-			mes "" + mesitemlink(2249) + " for making this item,";
-			mes "the item you create out of the " + mesitemlink(2249) + "";
+			mes "Coronet for making this item,";
+			mes "the item you create out of the Coronet";
 			mes "will not have its upgraded status.^000000";
 			next;
 			mes "[Nehris]";
-			mes "^FF0000Also, please only have one " + mesitemlink(2249) + " in your inventory to make the " + mesitemlink(5081) + ". We are not responsible for any loss.";
+			mes "^FF0000Also, please only have one Coronet in your inventory to make the Crown of Mistress. We are not responsible for any loss.";
 			next;
 			mes "[Nehris]";
-			mes "Are you sure you want to create the " + mesitemlink(5081) + "?";
+			mes "Are you sure you want to create the Crown of Mistress?";
 			next;
 			if (select("Yes:Wait a minute...!") == 1) {
 				mes "[Nehris]";
@@ -1870,7 +1870,7 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 				set Zeny, Zeny-40000;
 				getitem 5081,1; //Mistress_Crown
 				mes "[Nehris]";
-				mes "Yay! You've got a great looking " + mesitemlink(2235) + "!";
+				mes "Yay! You've got a great looking crown!";
 				next;
 				mes "[Nehris]";
 				mes "I don't know if everyone will obey your commands while wearing this, but at least you can feel beautifully regal.";
@@ -1887,8 +1887,8 @@ yuno_in03,20,18,6	script	Nehris#1	726,{
 			close;
 		}
 		mes "[Nehris]";
-		mes "The required materials for the " + mesitemlink(5081) + " are...";
-		mes "^3355FF1 " + mesitemlink(2249) + ", 1 " + mesitemlink(714) + ", 3 " + mesitemlink(969) + "^000000 and";
+		mes "The required materials for the Crown of Mistress are...";
+		mes "^3355FF1 Coronet, 1 Emperium, 3 Gold^000000 and";
 		mes "40,000 zeny.";
 		next;
 		mes "[Nehris]";
@@ -1954,7 +1954,7 @@ alde_alche,88,180,0	script	Muscle Man#Alarm Mask	748,{
 		}
 		mes "[Muscle Man]";
 		mes "Hmmm...?";
-		mes "That's funny, I thought you would have that " + mesitemlink(2288) + " mask and all those clock hands by now...";
+		mes "That's funny, I thought you would have that Mr. Scream mask and all those clock hands by now...";
 		close;
 	}
 	mes "[Muscle Man]";
@@ -1984,7 +1984,7 @@ alde_alche,88,180,0	script	Muscle Man#Alarm Mask	748,{
 	mes "If you help me out, I promise to give you, um...";
 	next;
 	mes "[Muscle Man]";
-	mes "...this " + mesitemlink(5086) + "!";
+	mes "...this Alarm Mask!";
 	mes ".....";
 	next;
 	mes "[Muscle Man]";
@@ -2002,7 +2002,7 @@ alde_alche,88,180,0	script	Muscle Man#Alarm Mask	748,{
 		mes "Okay, here's the deal.";
 		mes "Bring me...";
 		mes "^0000FF3000 Clock Hand^000000 and";
-		mes "^0000FF1 " + mesitemlink(2288) + "^000000.";
+		mes "^0000FF1 Mr. Scream^000000.";
 		next;
 		mes "[Muscle Man]";
 		mes "With those, I will be able to continue my research, at least for a while. As I told you, I will give you this awesome ^0000FFAlarm Mask^000000 for those items!";
@@ -2022,7 +2022,7 @@ alde_alche,88,180,0	script	Muscle Man#Alarm Mask	748,{
 	mes "[Muscle Man]";
 	mes "But listen, I'll need:";
 	mes "^0000FF3000 Clock Hand^000000 and";
-	mes "^0000FF1 " + mesitemlink(2288) + "^000000";
+	mes "^0000FF1 Mr. Scream^000000";
 	mes "in order to continue my research.";
 	next;
 	mes "[Muscle Man]";
@@ -2089,7 +2089,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 		mes "Hm...?";
 		mes "What's that";
 		mes "you have on you?";
-		mes "Ah, a " + mesitemlink(7030) + "~!";
+		mes "Ah, a Claw of Desert Wolf~!";
 		next;
 		mes "[Lee Hester]";
 		mes "You can only get one of those if you've been traveling for a long time in the desert. I guess someone like you also appreciates the beauty of my homeland.";
@@ -2111,7 +2111,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "[Lee Hester]";
 				mes "Ah...";
 				mes "You brought everything.";
-				mes "Excellent! Okay, give me some time to create the '" + mesitemlink(5058) + ".'";
+				mes "Excellent! Okay, give me some time to create the 'Drooping Cat.'";
 				next;
 				mes "*Scratch scratch...*";
 				next;
@@ -2139,7 +2139,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				next;
 				mes "[Lee Hester]";
 				mes "There you go. *Phew~*";
-				mes "Your own '" + mesitemlink(5058) + "' hat, powered by a scientific principle! Also, would you mind if I keep that Desert " + mesitemlink(920) + "? Heh heh, thanks~";
+				mes "Your own 'Drooping Cat' hat, powered by a scientific principle! Also, would you mind if I keep that Desert Wolf Claw? Heh heh, thanks~";
 				delitem 2233,1; //Circlet_
 				delitem 983,1; //Black_Dyestuffs
 				delitem 7206,300; //Black_Kitty_Doll
@@ -2151,7 +2151,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 			else {
 				mes "[Lee Hester]";
 				mes "Why don't I make you...";
-				mes "a '" + mesitemlink(5058) + "?'";
+				mes "a 'Drooping Cat?'";
 				mes "Having a cat for a hat makes a certain sort of sense if you'll just hear me out...";
 				next;
 				mes "[Lee Hester]";
@@ -2168,12 +2168,12 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				next;
 				mes "[Lee Hester]";
 				mes "The items I need are...";
-				mes "1 ^ff0000slotted " + mesitemlink(2232) + "^000000,";
+				mes "1 ^ff0000slotted Circlet^000000,";
 				mes "1 ^ff0000Black Dyestuffs^000000";
 				mes "and 300 ^ff0000Black Cat Doll^000000.";
 				next;
 				mes "[Lee Hester]";
-				mes "I will make a " + mesitemlink(5058) + " right away when you bring all of those items.";
+				mes "I will make a Drooping Cat right away when you bring all of those items.";
 				close;
 			}
 		case 2:
@@ -2181,7 +2181,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "[Lee Hester]";
 				mes "Ah...";
 				mes "You brought everything.";
-				mes "Excellent! Okay, give me some time to put this '" + mesitemlink(5064) + "' together.";
+				mes "Excellent! Okay, give me some time to put this 'Smokie Leaf' together.";
 				next;
 				mes "*Scratch scratch...*";
 				next;
@@ -2211,7 +2211,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				next;
 				mes "[Lee Hester]";
 				mes "There you go. *Phew~*";
-				mes "Your own '" + mesitemlink(5064) + "' hat, powered by a scientific principle! Also, would you mind if I keep that Desert " + mesitemlink(920) + "? Heh heh, thanks~";
+				mes "Your own 'Smokie Leaf' hat, powered by a scientific principle! Also, would you mind if I keep that Desert Wolf Claw? Heh heh, thanks~";
 				delitem 945,600; //Raccoon_Leaf
 				delitem 7030,1; //Claw_Of_Desert_Wolf
 				getitem 5064,1; //Leaf_Headgear
@@ -2221,7 +2221,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 			else {
 				mes "[Lee Hester]";
 				mes "How about...";
-				mes "a '" + mesitemlink(5064) + "?'";
+				mes "a 'Smokie Leaf?'";
 				next;
 				mes "[Lee Hester]";
 				mes "I know, I know, wearing a big ol' Leaf on top of your head sounds impractical. But, it makes a certain sort of sense if you'll just hear me out.";
@@ -2254,7 +2254,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "[Lee Hester]";
 				mes "Ah....";
 				mes "You brought everything.";
-				mes "Excellent! Okay, give me some time to create the '" + mesitemlink(5084) + "' hat.";
+				mes "Excellent! Okay, give me some time to create the 'Lazy Smokie' hat.";
 				mes "....";
 				next;
 				mes "*Scratch scratch...*";
@@ -2286,7 +2286,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				next;
 				mes "[Lee Hester]";
 				mes "There you go. *Phew~*";
-				mes "Your own '" + mesitemlink(5084) + "' hat, powered by a scientific principle! Also, would you mind if I keep that Desert " + mesitemlink(920) + "? Heh heh, thanks~";
+				mes "Your own 'Lazy Smokie' hat, powered by a scientific principle! Also, would you mind if I keep that Desert Wolf Claw? Heh heh, thanks~";
 				delitem 1026,1000; //Acorn
 				delitem 7065,100; //Sea_Otter_Leather
 				delitem 945,10; //Raccoon_Leaf
@@ -2298,7 +2298,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 			else {
 				mes "[Lee Hester]";
 				mes "Why don't I make...";
-				mes "a '" + mesitemlink(5084) + "?'";
+				mes "a 'Lazy Smokie?'";
 				next;
 				mes "[Lee Hester]";
 				mes "I know, I know, having a Racoon on your head sounds ridiculous, but it makes a certain sort of sense if you'll just hear me out.";
@@ -2317,7 +2317,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "And, as we all know, you wear no colors if you're invisible, or when you're completely nude. I've already conducted my nudity experiment with sad and pitiable results...";
 				next;
 				mes "[Lee Hester]";
-				mes "So now I'm experimenting with invisibility. I've tried using a human sized " + mesitemlink(5064) + " to become invisible, but it didn't really work yet. So I got to thinking...";
+				mes "So now I'm experimenting with invisibility. I've tried using a human sized Smokie Leaf to become invisible, but it didn't really work yet. So I got to thinking...";
 				next;
 				mes "[Lee Hester]";
 				mes "If I somehow connected a Smokie to me, would I become invisible when he becomes invisible?";
@@ -2329,12 +2329,12 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "So of course I need a practice Smokie to wear on my head before I'm ready for the real thing.";
 				next;
 				mes "[Lee Hester]";
-				mes "And that was how I invented the '" + mesitemlink(5084) + "' hat.";
+				mes "And that was how I invented the 'Lazy Smokie' hat.";
 				next;
 				mes "[Lee Hester]";
 				mes "The items I need are...";
 				mes "1000 ^ff0000Acorn^000000,";
-				mes "100 ^ff0000Sea-Otter " + mesitemlink(6020) + "^000000 and";
+				mes "100 ^ff0000Sea-Otter Fur^000000 and";
 				mes "10 ^ff0000Raccoon Leaf^000000.";
 				close;
 			}
@@ -2343,7 +2343,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "[Lee Hester]";
 				mes "Ah...";
 				mes "You brought everything.";
-				mes "Excellent! Okay, give me some time to create the '" + mesitemlink(5065) + "' hat out of all this fish.";
+				mes "Excellent! Okay, give me some time to create the 'Blue Fish' hat out of all this fish.";
 				next;
 				mes "*Scratch scratch...*";
 				next;
@@ -2371,7 +2371,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				next;
 				mes "[Lee Hester]";
 				mes "There you go. *Phew~*";
-				mes "Your own '" + mesitemlink(5065) + "' hat, powered by a scientific principle! Also, would you mind if I keep that Desert " + mesitemlink(920) + "? Heh heh, thanks~";
+				mes "Your own 'Blue Fish' hat, powered by a scientific principle! Also, would you mind if I keep that Desert Wolf Claw? Heh heh, thanks~";
 				delitem 624,1; //Rotten_Fish
 				delitem 959,300; //Rotten_Scale
 				delitem 551,50; //Shusi
@@ -2386,7 +2386,7 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "[Lee Hester]";
 				mes "Ah! I got it!";
 				mes "How about I make you...";
-				mes "a '" + mesitemlink(5065) + "' hat?";
+				mes "a 'Blue Fish' hat?";
 				next;
 				mes "[Lee Hester]";
 				mes "I know putting a Fish on top of your head doesn't sound like the best idea, but it makes a certain sort of sense if you'll just hear me out.";
@@ -2411,15 +2411,15 @@ morocc,273,79,4	script	Educated Traveller	99,{
 				mes "First, I removed Emu, because everyone kept telling me I was spelling it wrong. And as everyone knows, a Giraffe hat would just look ridiculous. So, of course, I chose the Fish.";
 				next;
 				mes "[Lee Hester]";
-				mes "And that, my friend, was how I invented the '" + mesitemlink(5065) + "' hat.";
+				mes "And that, my friend, was how I invented the 'Blue Fish' hat.";
 				next;
 				mes "[Lee Hester]";
 				mes "The items I need are...";
-				mes "^ff00001 " + mesitemlink(624) + ",";
-				mes "300 " + mesitemlink(959) + ",";
-				mes "50 " + mesitemlink(551) + ",";
-				mes "1 " + mesitemlink(1023) + "^000000 and";
-				mes "^ff0000100 " + mesitemlink(938) + "^000000.";
+				mes "^ff00001 Rotten Fish,";
+				mes "300 Stinky Scale,";
+				mes "50 Sushi,";
+				mes "1 Fish Tail^000000 and";
+				mes "^ff0000100 Sticky Mucus^000000.";
 				close;
 			}
 		case 5:
@@ -2549,7 +2549,7 @@ pay_dun03,48,84,4	script	Nine Tails#Kitsune Man	762,{
 		mes "Anyway, I've got a bone to pick with you humans. You're an aggressive and greedy race, always killing things and taking stuff. And despite all the hunting, you never seem to be satisfied.";
 		next;
 		mes "[Nine Tails]";
-		mes "You always intrude our territory to slay us foxes for our nice, soft " + mesitemlink(6020) + ". But it's not only us you harass. The Sohees always complain that you barbaric humans keep stealing their clothing!";
+		mes "You always intrude our territory to slay us foxes for our nice, soft fur. But it's not only us you harass. The Sohees always complain that you barbaric humans keep stealing their clothing!";
 		next;
 		mes "[Nine Tails]";
 		mes "My wife was killed as a victim of human greed, probably skinned for her fabulous pelt...";
@@ -2674,7 +2674,7 @@ OnTouch_:
 			next;
 			mes "[Orc Warrior]";
 			mes "You can bleed in my house, but I will only talk with you if...";
-			mes "You bring ^FF00001000 " + mesitemlink(909) + "^000000!";
+			mes "You bring ^FF00001000 Jellopy^000000!";
 			next;
 			if (select("I challenge you to a duel, Orc!:1000 Jellopies it is.") == 1) {
 				mes "[Orc Warrior]";
@@ -2699,10 +2699,10 @@ OnTouch_:
 		if (countitem(909) > 999) {
 			mes "[Orc Warrior]";
 			mes "WHAT?!";
-			mes "That's so much " + mesitemlink(909) + "!!";
+			mes "That's so much Jellopy!!";
 			next;
 			mes "[Orc Warrior]";
-			mes "I do not like this joke you have played on me human. Still, I refuse to believe that you have really brought ^FF00001000 " + mesitemlink(909) + "^000000.";
+			mes "I do not like this joke you have played on me human. Still, I refuse to believe that you have really brought ^FF00001000 Jellopy^000000.";
 			next;
 			mes "[Orc Warrior]";
 			mes "We Orcs are a proud race and do not like to admit when we are wrong.";
@@ -2768,7 +2768,7 @@ OnTouch_:
 			mes "Tough!";
 			mes "If you want to";
 			mes "hear more, bring...";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+			mes "^FF00001000 Jellopy^000000!";
 			next;
 			mes "[Orc Warrior]";
 			mes "Now get out of here, you horrible stinking, poor excuse for an animal!!";
@@ -2776,7 +2776,7 @@ OnTouch_:
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?!";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		close;
@@ -2785,11 +2785,11 @@ OnTouch_:
 		if (countitem(909) > 999) {
 			mes "[Orc Warrior]";
 			mes "No.... Not again!!";
-			mes "What are you doing with so much " + mesitemlink(909) + "?!";
+			mes "What are you doing with so much Jellopy?!";
 			next;
 			mes "[Orc Warrior]";
 			mes "Damn...!";
-			mes "I refuse to speak to you until I've finished counting all of this " + mesitemlink(909) + ".";
+			mes "I refuse to speak to you until I've finished counting all of this Jellopy.";
 			next;
 			mes "[Orc Warrior]";
 			mes "...";
@@ -2825,14 +2825,14 @@ OnTouch_:
 			mes "bring me...";
 			next;
 			mes "[Orc Warrior]";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000 again!";
+			mes "^FF00001000 Jellopy^000000 again!";
 			mes "I do not think that you can endure much more of this torture.";
 			mes "Bwahahahahahha~!";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget!?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		close;
@@ -2885,12 +2885,12 @@ OnTouch_:
 			delitem 909,1000; //Jellopy
 			set orcs_hero_hat,4;
 			mes "[Orc Warrior]";
-			mes "Grrr~! If you want to listen longer go bring me ^FF00001000 " + mesitemlink(909) + "^000000 again.";
+			mes "Grrr~! If you want to listen longer go bring me ^FF00001000 Jellopy^000000 again.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget!?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect if";
 		mes "you wish to talk!!";
 		mes "I don't take the 2,000 jellopies you have given to me seriously!!";
@@ -2900,7 +2900,7 @@ OnTouch_:
 		if (countitem(909) > 999) {
 			mes "[Orc Warrior]";
 			mes "Oh... it's you again.";
-			mes "I can see the " + mesitemlink(909) + " in your hands, and I'm pretty sure you've brought a thousand again, so let's get this over with.";
+			mes "I can see the Jellopy in your hands, and I'm pretty sure you've brought a thousand again, so let's get this over with.";
 			next;
 			mes "[Orc Warrior]";
 			mes "*Sigh* I suppose it's time for our conversation.";
@@ -2922,12 +2922,12 @@ OnTouch_:
 			set orcs_hero_hat,5;
 			mes "[Orc Warrior]";
 			mes "Now, if you want to listen some more, go bring me";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000 again tomorrow.";
+			mes "^FF00001000 Jellopy^000000 again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take the 3,000 jellopies you have given to me seriously.";
@@ -2960,13 +2960,13 @@ OnTouch_:
 			mes "Now, if you want";
 			mes "to listen to me";
 			mes "some more, go and";
-			mes "bring me ^FF00001000 " + mesitemlink(909) + "^000000";
+			mes "bring me ^FF00001000 Jellopy^000000";
 			mes "again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take the 4,000 jellopies you have given to me seriously.";
@@ -3003,13 +3003,13 @@ OnTouch_:
 			mes "If you want to";
 			mes "listen longer,";
 			mes "go bring me";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000";
+			mes "^FF00001000 Jellopy^000000";
 			mes "again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take the 5,000 jellopies you have given to me seriously.";
@@ -3049,13 +3049,13 @@ OnTouch_:
 			mes "Now, if you want";
 			mes "to listen longer,";
 			mes "go and bring me";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000";
+			mes "^FF00001000 Jellopy^000000";
 			mes "again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		next;
@@ -3085,7 +3085,7 @@ OnTouch_:
 			mes "Among those well-experienced warriors, the greatest one of all is given the title of Orc Lord, and is given our respect as the leader of our tribe.";
 			next;
 			mes "[Orc Warrior]";
-			mes "Every Orc can recognize him by his distinguished " + mesitemlink(2228) + " with the three horns.";
+			mes "Every Orc can recognize him by his distinguished helm with the three horns.";
 			next;
 			delitem 909,1000; //Jellopy
 			set orcs_hero_hat,9;
@@ -3094,13 +3094,13 @@ OnTouch_:
 			mes "If you want to";
 			mes "listen longer,";
 			mes "go bring me";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000";
+			mes "^FF00001000 Jellopy^000000";
 			mes "again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take the 7,000 jellopies you have given to me seriously.";
@@ -3109,7 +3109,7 @@ OnTouch_:
 	else if (orcs_hero_hat == 9) {
 		if (countitem(909) > 999) {
 			mes "[Orc Warrior]";
-			mes "It's been a while I've seen such a determined human such as yourself. Just leave the " + mesitemlink(909) + " near the bed.";
+			mes "It's been a while I've seen such a determined human such as yourself. Just leave the Jellopy near the bed.";
 			next;
 			mes "[Orc Warrior]";
 			mes "Now...";
@@ -3140,13 +3140,13 @@ OnTouch_:
 			mes "If you want";
 			mes "to hear more,";
 			mes "go bring me";
-			mes "^FF00001000 " + mesitemlink(909) + "^000000";
+			mes "^FF00001000 Jellopy^000000";
 			mes "again tomorrow.";
 			close;
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take the 8,000 jellopies you have given to me seriously.";
@@ -3176,7 +3176,7 @@ OnTouch_:
 		}
 		mes "[Orc Warrior]";
 		mes "Did you already forget?";
-		mes "^FF00001000 " + mesitemlink(909) + "^000000!";
+		mes "^FF00001000 Jellopy^000000!";
 		mes "Show me your respect";
 		mes "if you want to talk.";
 		mes "I don't take 9,000 jellopies you have given to me seriously.";
@@ -3227,7 +3227,7 @@ OnTouch_:
 				set orcs_hero_hat,13;
 				set orcs_hero_hat2,100;
 				mes "[Orc Warrior]";
-				mes "I took 100 " + mesitemlink(931) + " from you now. Now, fight and fight until you have defeated 10,000 more Orc Warriors so that the whole tribe will have to recognize you!";
+				mes "I took 100 Orcish Voucher from you now. Now, fight and fight until you have defeated 10,000 more Orc Warriors so that the whole tribe will have to recognize you!";
 				close;
 			}
 			mes "[Orc Warrior]";
@@ -3317,7 +3317,7 @@ OnTouch_:
 					mes "[Orc Warrior]";
 					mes "As an Orc Warrior,";
 					mes "I will now give you";
-					mes "an " + mesitemlink(931) + "";
+					mes "an Orcish Voucher";
 					mes "of your very own.";
 					next;
 					mes "[Orc Warrior]";
@@ -3480,7 +3480,7 @@ OnTouch_:
 	else if (orcs_hero_hat > 15) {
 		if (countitem(968) < 1) {
 			mes "[Orc Warrior]";
-			mes "Warrior, where did you leave your " + mesitemlink(968) + "? Without the token, I cannot recognize you as an Orc Hero. Please find it and keep it with you anywhere you go.";
+			mes "Warrior, where did you leave your Heroic Emblem? Without the token, I cannot recognize you as an Orc Hero. Please find it and keep it with you anywhere you go.";
 			close;
 		}
 		else if (countitem(1124) < 1 && isequipped(1124) == 0) {
@@ -3538,7 +3538,7 @@ OnTouch_:
 					next;
 					mes "[Orc Hero]";
 					mes "Wait...";
-					mes "Isn't that an Orc Warrior's " + mesitemlink(2228) + "...?";
+					mes "Isn't that an Orc Warrior's Helm...?";
 					next;
 					mes "[Orc Hero]";
 					mes "Wait a second...";
@@ -3548,10 +3548,10 @@ OnTouch_:
 					mes "interesting.";
 					next;
 					mes "[Orc Hero]";
-					mes "I guess you don't know what's so special about this particular " + mesitemlink(2228) + "...";
+					mes "I guess you don't know what's so special about this particular helm...";
 					next;
 					mes "[Orc Hero]";
-					mes "It actually belonged to one of our Orc Lords who was defeated by a human. He was so furious about losing that he broke the middle " + mesitemlink(947) + " and threw it away!";
+					mes "It actually belonged to one of our Orc Lords who was defeated by a human. He was so furious about losing that he broke the middle horn and threw it away!";
 					next;
 					mes "[Orc Hero]";
 					mes "I was told that it somehow ended in the hands of a human, but I didn't know it was you, the human Orc Hero.";
@@ -3564,7 +3564,7 @@ OnTouch_:
 					next;
 					if (select("Yes, I mind.:No, I don't mind.") == 1) {
 						mes "[Orc Hero]";
-						mes "Wow, you're so stubborn! Just treat the " + mesitemlink(2228) + " with care, and wear it with respect. Recognize that it has a long history...";
+						mes "Wow, you're so stubborn! Just treat the helm with care, and wear it with respect. Recognize that it has a long history...";
 						close;
 					}
 					mes "[Orc Hero]";
@@ -3576,13 +3576,13 @@ OnTouch_:
 					mes "something useful!";
 					next;
 					mes "[Orc Hero]";
-					mes "Although you're a human, you're an Orc Hero amongst us now, so you should have a " + mesitemlink(2228) + " suitable for your position...";
+					mes "Although you're a human, you're an Orc Hero amongst us now, so you should have a helm suitable for your position...";
 					next;
 					delitem 2299,1; //Viking_Helm
 					set orcs_hero_hat,17;
 					getnameditem 5094,strcharinfo(0); //Orc_Hero_Helm
 					mes "[Orc Hero]";
-					mes "There you go. I marked a small indication on it. So wear this " + mesitemlink(2228) + " from now on. Do you understand? My human Orc Hero.";
+					mes "There you go. I marked a small indication on it. So wear this helm from now on. Do you understand? My human Orc Hero.";
 					close;
 				}
 				close;

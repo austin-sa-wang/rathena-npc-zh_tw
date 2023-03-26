@@ -188,7 +188,7 @@ izlu2dun,133,160,2	script	Snoowy	714,{
 
 M_END:
 	mes "[Snoowy]";
-	mes "I'd exchange a " + mesitemlink(969) + " magic ring for 3 gift boxes...";
+	mes "I'd exchange a GOLD magic ring for 3 gift boxes...";
 	emotion ET_SWEAT;
 	close;
 }

@@ -154,7 +154,7 @@ prt_in,88,101,4	script	Chivalry Captain#knt	56,{
 				mes "start over.";
 				next;
 				mes "[Captain Herman]";
-				mes "But I believe if you persist with an earnest " + mesitemlink(7855) + ", you shall be acknowledged by the Knights and ultimately recognized as a member of our Chivalry.";
+				mes "But I believe if you persist with an earnest heart, you shall be acknowledged by the Knights and ultimately recognized as a member of our Chivalry.";
 				next;
 				mes "[Captain Herman]";
 				mes "So, let's not waste any more time talking! Go and meet these Knights and begin their tests. Once you have completed all of the tests, come back to me.";
@@ -477,7 +477,7 @@ prt_in,75,107,4	script	Sir Andrew#knt	65,{
 			next;
 			mes "[Sir Andrew]";
 			mes "You must work diligently to gather food as well as save zeny to buy equipment. Save everything you";
-			mes "find in battle, even the smallest " + mesitemlink(909) + ".";
+			mes "find in battle, even the smallest Jellopy.";
 			next;
 			mes "[Sir Andrew]";
 			mes "But it's not good";
@@ -861,13 +861,13 @@ prt_in,71,91,0	script	Sir Siracuse#knt	65,{
 			}
 		}
 		mes "[Sir Siracuse]";
-		mes "A Knight must possess great strength, defense, speed, and the skill to wield a " + mesitemlink(1157) + ". Which of the following weapons are not affected by the Two Hand Quicken skill?";
+		mes "A Knight must possess great strength, defense, speed, and the skill to wield a Two-Handed Sword. Which of the following weapons are not affected by the Two Hand Quicken skill?";
 		next;
 		if (select("Katana:Slayer:Broadsword:Flamberge") != 4) {
 			set KNIGHT_Q,5;
 			mes "[Sir Siracuse]";
 			mes "Wrong!";
-			mes "That's a " + mesitemlink(1157) + "!";
+			mes "That's a Two-Handed Sword!";
 			mes "Are you sure you want to be a Knight? You don't even know the basics...";
 			next;
 			mes "[Sir Siracuse]";
@@ -898,7 +898,7 @@ prt_in,71,91,0	script	Sir Siracuse#knt	65,{
 			close;
 		}
 		mes "[Sir Siracuse]";
-		mes "Some Spears also have magical attributes, just like spells. Of the following, which can attack a " + mesitemlink(7102) + ", which has the Ghost attribute?";
+		mes "Some Spears also have magical attributes, just like spells. Of the following, which can attack a Nightmare, which has the Ghost attribute?";
 		next;
 		if (select("Zephyrus:Lance:Bill Guisarme:Crescent Scythe") != 1) {
 			set KNIGHT_Q,5;
@@ -1833,11 +1833,11 @@ prt_in,70,99,6	script	Sir Edmond#knt	734,{
 		if (select("I would like to take the test to change jobs.:Oh, nothing.") == 1) {
 			mes "[Sir Edmond]";
 			mes "A seed must first be nestled";
-			mes "in the earth before the seed may " + mesitemlink(7193) + ". Then, the " + mesitemlink(7193) + " must grow leaves before its buds blossom into flowers...";
+			mes "in the earth before the seed may sprout. Then, the sprout must grow leaves before its buds blossom into flowers...";
 			next;
 			mes "[Sir Edmond]";
 			mes "If not...";
-			mes "The " + mesitemlink(712) + " will";
+			mes "The flower will";
 			mes "be incomplete.";
 			next;
 			mes "[Sir Edmond]";
@@ -2019,20 +2019,20 @@ prt_in,87,92,4	script	Sir Gray#knt	119,{
 			switch(select("About ^3355FFClaymore^000000:Buy Claymore:End Conversation")) {
 			case 1:
 				mes "[Sir Gray]";
-				mes "" + mesitemlink(1163) + ", one of the best among the famous swords you can attain in Rune-Midgarts' Prontera!! Its value is priceless when considered by a Knight.";
+				mes "Claymore, one of the best among the famous swords you can attain in Rune-Midgarts' Prontera!! Its value is priceless when considered by a Knight.";
 				next;
 				mes "[Sir Gray]";
 				mes "Now, the Prontera Chivalry is making these fabulous Claymores. For Knights, they are only ^3355FF74,000^000000 Zeny.";
 				next;
 				mes "[Sir Gray]";
 				mes "But not only that, you need";
-				mes "1 ^3355FFSteel^000000 because of the " + mesitemlink(1163) + "'s characteristics. If you like, I can create one for you. For the honor of the Prontera Chivalry!";
+				mes "1 ^3355FFSteel^000000 because of the Claymore's characteristics. If you like, I can create one for you. For the honor of the Prontera Chivalry!";
 				close;
 			case 2:
 				if (MaxWeight - Weight < 1800) {
 					mes "[Sir Gray]";
 					mes "Oh no...";
-					mes "It seems that you are carrying too many things. You don't have enough space for a heavy " + mesitemlink(1163) + " in your inventory.";
+					mes "It seems that you are carrying too many things. You don't have enough space for a heavy Claymore in your inventory.";
 					next;
 					mes "[Sir Gray]";
 					mes "Why don't you";
@@ -2046,13 +2046,13 @@ prt_in,87,92,4	script	Sir Gray#knt	119,{
 						mes "You are ready!";
 						mes "You must know the";
 						mes "true value of";
-						mes "a " + mesitemlink(1163) + "!";
+						mes "a Claymore!";
 						mes "I shall make";
 						mes "it right now!!";
 						next;
 						mes "[Sir Gray]";
 						mes "The basics of";
-						mes "making the " + mesitemlink(1163) + "";
+						mes "making the Claymore";
 						mes "is easy. Watch~!";
 						next;
 						mes "^3355FF*Stir Stir*^000000";
@@ -2070,8 +2070,8 @@ prt_in,87,92,4	script	Sir Gray#knt	119,{
 						close;
 					}
 					mes "[Sir Gray]";
-					mes "I realize you may really want a " + mesitemlink(1163) + ", but I can't make it without the materials.";
-					mes "^3355FF74,000 zeny^000000 and ^3355FF1 " + mesitemlink(999) + "!^000000.";
+					mes "I realize you may really want a Claymore, but I can't make it without the materials.";
+					mes "^3355FF74,000 zeny^000000 and ^3355FF1 Steel!^000000.";
 					next;
 					mes "[Sir Gray]";
 					mes "Come back when";
@@ -2082,7 +2082,7 @@ prt_in,87,92,4	script	Sir Gray#knt	119,{
 				}
 			case 3:
 				mes "[Sir Gray]";
-				mes "Any Knight should be able to wield a " + mesitemlink(1163) + " as if it were an extension of their body. I used to look forward to brandishing my " + mesitemlink(1163) + " in battle...";
+				mes "Any Knight should be able to wield a Claymore as if it were an extension of their body. I used to look forward to brandishing my Claymore in battle...";
 				close;
 			}
 		}
@@ -2346,7 +2346,7 @@ prt_in,87,92,4	script	Sir Gray#knt	119,{
 			switch(select("My friends.:My Guild members.:My Lover.")) {
 			case 1:
 				mes "[Sir Gray]";
-				mes "I see, they would share in the joy of your achievements. Don't ever lose your kind " + mesitemlink(7855) + ", and always give help to your friends.";
+				mes "I see, they would share in the joy of your achievements. Don't ever lose your kind heart, and always give help to your friends.";
 				next;
 				break;
 			case 2:

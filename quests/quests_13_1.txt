@@ -368,8 +368,8 @@ aldebaran,127,138,3	script	Promotional Staff#alde	100,{
 	if (ep13_ryu == 2) {
 		if (countitem(909) < 300) {
 			mes "[Promotional Staff]";
-			mes "Don't forget to bring... ^FF0000300 " + mesitemlink(909) + "^000000.";
-			mes "Got it? ^FF0000300 " + mesitemlink(909) + "^000000!";
+			mes "Don't forget to bring... ^FF0000300 Jellopy^000000.";
+			mes "Got it? ^FF0000300 Jellopy^000000!";
 			mes "Let me know once you got them.";
 			close;
 		}
@@ -380,7 +380,7 @@ aldebaran,127,138,3	script	Promotional Staff#alde	100,{
 		mes "[Promotional Staff]";
 		mes "Hm? Did you bring all of them?";
 		mes "No! It's quite an annoying job";
-		mes "I'm impressed that you managed to do such a menial thing to bring 300 " + mesitemlink(909) + "!";
+		mes "I'm impressed that you managed to do such a menial thing to bring 300 Jellopy!";
 		next;
 		mes "[Promotional Staff]";
 		mes "You have guts kid!";
@@ -439,7 +439,7 @@ aldebaran,127,138,3	script	Promotional Staff#alde	100,{
 		mes "What a bother!";
 		next;
 		mes "[Promotional Staff]";
-		mes "I will accept you if you bring me ^FF0000300 " + mesitemlink(909) + "^000000.";
+		mes "I will accept you if you bring me ^FF0000300 Jellopy^000000.";
 		mes "I believe that you can bring them to me.";
 		mes "Are you ready?";
 		next;
@@ -470,7 +470,7 @@ geffen,90,67,3	script	Promotional Staff#gef	100,{
 	if (ep13_ryu == 5) {
 		if (countitem(723) == 0) {
 			mes "[Promotional Staff]";
-			mes "^FF00001 " + mesitemlink(723) + "!!^000000.";
+			mes "^FF00001 Ruby!!^000000.";
 			mes "Don't you forget it!";
 			mes "Hurry up! Time is zeny!";
 			close;
@@ -517,14 +517,14 @@ geffen,90,67,3	script	Promotional Staff#gef	100,{
 		mes "[Promotional Staff]";
 		mes "You brought it so soon!";
 		mes "You're a real adventurer!";
-		mes "I will accept this " + mesitemlink(721) + " as evidence.";
+		mes "I will accept this Emerald as evidence.";
 		next;
 		mes "[Promotional Staff]";
 		mes "This isn't something I wanted to keep for myself.";
 		mes "You know that, right?";
 		next;
 		mes "[Promotional Staff]";
-		mes "Next bring me ^FF00001 " + mesitemlink(723) + "^000000.";
+		mes "Next bring me ^FF00001 Ruby^000000.";
 		mes "I can't judge you with only one jewel.";
 		mes "So I need one more stone.";
 		next;
@@ -532,7 +532,7 @@ geffen,90,67,3	script	Promotional Staff#gef	100,{
 		changequest 10060,10061;
 		set ep13_ryu,5;
 		mes "[Promotional Staff]";
-		mes "Please bring me a " + mesitemlink(723) + ".";
+		mes "Please bring me a Ruby.";
 		mes "As I mentioned, this is the second request.";
 		mes "I will wait until you bring me a stone again.";
 		close;
@@ -555,13 +555,13 @@ geffen,90,67,3	script	Promotional Staff#gef	100,{
 		mes "I need you to gather some stones for me.";
 		next;
 		mes "[Promotional Staff]";
-		mes "I will accept you if you bring ^FF00001 " + mesitemlink(721) + "^000000.";
+		mes "I will accept you if you bring ^FF00001 Emerald^000000.";
 		mes "Are you ready?";
 		next;
 		changequest 10059,10060;
 		set ep13_ryu,4;
 		mes "[Promotional Staff]";
-		mes "Just bring me ^ff00001 " + mesitemlink(721) + "^000000.";
+		mes "Just bring me ^ff00001 Emerald^000000.";
 		mes "That isn't hard for you right?";
 		mes "Then we can go forward.";
 		close;
@@ -631,7 +631,7 @@ geffen,90,67,3	script	Promotional Staff#gef	100,{
 		changequest 10063,10064;
 		set ep13_ryu,8;
 		mes "[Promotional Staff]";
-		mes "Bless all of your " + mesitemlink(7855) + ",";
+		mes "Bless all of your heart,";
 		mes "for your great future!";
 		close;
 	}
@@ -2078,7 +2078,7 @@ mid_camp,222,283,4	script	Marian#ep13bs	727,{
 		else set .@i,1;
 		if (countitem(6045) < .@i) {
 			mes "[Marian]";
-			mes "Ha! You misplaced the " + mesitemlink(6045) + "?!";
+			mes "Ha! You misplaced the Supply Box?!";
 			mes "What the~~?";
 			emotion ET_HUK;
 			next;
@@ -2312,7 +2312,7 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 			mes "them to their receivers.";
 			next;
 			mes "[Instructor Lugen]";
-			mes "The first " + mesitemlink(7948) + " should be sent to";
+			mes "The first box should be sent to";
 			mes "Jan, northwest of the camp.";
 			mes "She may be around the fence.";
 			set ep13_newbs,15;
@@ -2331,7 +2331,7 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 	if (ep13_newbs == 15) {
 		if (countitem(6045) > 2) {
 			mes "[Instructor Lugen]";
-			mes "The first " + mesitemlink(7948) + " should be sent to";
+			mes "The first box should be sent to";
 			mes "Jan, northwest of the camp.";
 			mes "She may be around the fence.";
 			close;
@@ -2355,7 +2355,7 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 		next;
 		if (countitem(6045) > 1) {
 			mes "[Instructor Lugen]";
-			mes "Next, this " + mesitemlink(7948) + " is for Gerard.";
+			mes "Next, this box is for Gerard.";
 			mes "He is investigating across the";
 			mes "west bridge outside the camp.";
 			next;
@@ -2377,7 +2377,7 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 	if (ep13_newbs == 17) {
 		if (countitem(6045) > 1) {
 			mes "[Instructor Lugen]";
-			mes "Next, this " + mesitemlink(7948) + " is for Gerard.";
+			mes "Next, this box is for Gerard.";
 			mes "He is investigating across the";
 			mes "west bridge outside the camp.";
 			close;
@@ -2405,13 +2405,13 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 		next;
 		if (countitem(6045) > 0) {
 			mes "[Instructor Lugen]";
-			mes "And the last " + mesitemlink(7948) + " is for";
+			mes "And the last box is for";
 			mes "Alberto at the entrance";
 			mes "of the eastern field.";
 			next;
 			mes "[Instructor Lugen]";
 			mes "Perhaps, he ordered";
-			mes "the heavy " + mesitemlink(2309) + ".";
+			mes "the heavy coat.";
 			mes "It's freezing there so";
 			mes "you'd better hurry.";
 			next;
@@ -2433,7 +2433,7 @@ mid_camp,261,284,4	script	Instructor#ep13bs	405,{
 	if (ep13_newbs == 19) {
 		if (countitem(6045) > 0) {
 			mes "[Instructor Lugen]";
-			mes "And the last " + mesitemlink(7948) + " is for";
+			mes "And the last box is for";
 			mes "Alberto at the entrance";
 			mes "of the eastern field.";
 			close;
@@ -2989,7 +2989,7 @@ mid_campin,106,122,4	script	Receptionist Brink#ep13b	89,{
 			mes "[Diego]";
 			mes "I think we should be";
 			mes "able to fix this with";
-			mes "^0000FF20 Ordinary Branches and 20 " + mesitemlink(6041) + "^000000.";
+			mes "^0000FF20 Ordinary Branches and 20 Strong Vine^000000.";
 			mes "Please bring them to me!!!";
 			set ep13_newbs,6;
 			setquest 11087;
@@ -3026,7 +3026,7 @@ mid_campin,106,122,4	script	Receptionist Brink#ep13b	89,{
 			mes "[Diego]";
 			mes "I think we should be";
 			mes "able to fix this with";
-			mes "^0000FF20 Ordinary Branches and 20 " + mesitemlink(6041) + "^000000.";
+			mes "^0000FF20 Ordinary Branches and 20 Strong Vine^000000.";
 			mes "Please bring them to me!!!";
 			close;
 		}
@@ -3348,7 +3348,7 @@ man_fild01,80,248,4	script	Alberto#ep13bs	934,{
 			next;
 			mes "[Alberto]";
 			mes "I finally got it.";
-			mes "My " + mesitemlink(2309) + "...sniff.";
+			mes "My coat...sniff.";
 			mes "It's freezing here.";
 			emotion ET_CRY;
 			next;
@@ -3397,7 +3397,7 @@ man_fild01,80,248,4	script	Alberto#ep13bs	934,{
 	else if (ep13_newbs == 20) {
 		mes "[Alberto]";
 		mes "I am still cold even";
-		mes "with this heavy " + mesitemlink(2309) + ".";
+		mes "with this heavy coat.";
 		mes "I need to order more clothes.";
 		close;
 	}
@@ -3420,7 +3420,7 @@ mid_camp,159,282,4	script	Cooking Soldier#ep13bs	886,{
 	next;
 	mes "[Alix]";
 	mes "Have you had it?";
-	mes "My " + mesitemlink(12322) + "!!!";
+	mes "My chocolate pie!!!";
 	mes "This food is a real miracle!!";
 	close;
 }
@@ -3454,19 +3454,19 @@ spl_fild02,348,76,0	script	Tree#ep13bs1::ep13tree	111,{
 	if (ep13_newbs == 6) {
 		if (rand(1,3) == 3) {
 			mes "- rustling sound -";
-			mes "- You find a " + mesitemlink(13150) + " -";
+			mes "- You find a branch -";
 			next;
 			if (rand(1,3) == 2) {
 				mes "- Break! -";
 				mes "- Bomb, bomb~~ -";
-				mes "- You got the " + mesitemlink(13150) + ". -";
+				mes "- You got the branch. -";
 				getitem 6042,1; //Ordinary_Branch
 				close;
 			}
 			else {
 				mes "- Break! -";
 				mes "- Bomb, bomb~~ -";
-				mes "- This " + mesitemlink(13150) + " is decayed. -";
+				mes "- This branch is decayed. -";
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "This is useless.";
@@ -3933,9 +3933,9 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 					next;
 					mes "[Rumis Block]";
 					mes "To make my specimen tools,";
-					mes "I need ^3131FF1 " + mesitemlink(713) + ",";
+					mes "I need ^3131FF1 Empty Bottle,";
 					mes "5 Holy Waters, and";
-					mes "30 " + mesitemlink(938) + "^000000.";
+					mes "30 Sticky Mucus^000000.";
 					next;
 					mes "[Rumis Block]";
 					mes "You know what I'm.";
@@ -4053,7 +4053,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 			else {
 				mes "[Rumis Block]";
 				mes "To make my specimen tools,";
-				mes "I need ^3131FF1 " + mesitemlink(713) + ", 5 Holy Waters, and 30 " + mesitemlink(938) + "^000000.";
+				mes "I need ^3131FF1 Empty Bottle, 5 Holy Waters, and 30 Sticky Mucus^000000.";
 				next;
 				mes "[Rumis Block]";
 				mes "You know what I'm asking here, don't you? Thank you in advance.";
@@ -4128,7 +4128,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 			mes "Apparently, an extremely intelligent creature inhabits Ash Vaccum.";
 			next;
 			mes "[Rumis Block]";
-			mes "An explorer went over the rightward bridge to find some " + mesitemlink(6008) + ". In the darkness, something really big rushed at him from far away.";
+			mes "An explorer went over the rightward bridge to find some wood. In the darkness, something really big rushed at him from far away.";
 			next;
 			mes "[Rumis Block]";
 			mes "When he came back to his senses, there was nothing but a tricorn hat left on the ground.";
@@ -4232,7 +4232,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 				mes "I'm extremely frustrated. I feel helpless because I wasn't able to go back home last time...";
 				next;
 				mes "["+strcharinfo(0)+"]";
-				mes "I've found this " + mesitemlink(947) + " from a monster in the Splendide Area.";
+				mes "I've found this horn from a monster in the Splendide Area.";
 				mes "That monster was very mysterious, and its body was covered with grass.";
 				next;
 				mes "[Rumis Block]";
@@ -4240,7 +4240,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 				mes "...I know you're excited, but that doesn't sound interesting to me. Sorry.";
 				next;
 				mes "[Rumis Block]";
-				mes "Let me take a look at the " + mesitemlink(947) + ".";
+				mes "Let me take a look at the horn.";
 				next;
 				mes "[Rumis Block]";
 				mes "Hmm.";
@@ -4253,7 +4253,7 @@ mid_camp,188,254,3	script	Monster Scholar#ep13	883,{
 				next;
 				mes "[Rumis Block]";
 				mes "...This is remarkable.";
-				mes "...This " + mesitemlink(947) + " looks very similar to that of the Hillsrions that inhabit the Manuk area.";
+				mes "...This horn looks very similar to that of the Hillsrions that inhabit the Manuk area.";
 				next;
 				mes "[Rumis Block]";
 				mes "I wonder if they're related,";
@@ -4431,7 +4431,7 @@ mid_camp,240,270,3	script	Botanist#ep13	750,{
 			next;
 			emotion ET_OHNO;
 			mes "[Botanist]";
-			mes "Let me see what Rumis is doing right now... Oh, he's picking his nose with his left hand and eating a slice of " + mesitemlink(580) + " with his right.";
+			mes "Let me see what Rumis is doing right now... Oh, he's picking his nose with his left hand and eating a slice of bread with his right.";
 			mes "God, how disgusting!";
 			next;
 			switch(select("Go check Rumis if it's true.:Do not trust his word.")) {
@@ -4474,7 +4474,7 @@ mid_camp,240,270,3	script	Botanist#ep13	750,{
 			select("It's... Hard to say.");
 			mes "[Botanist]";
 			mes "Have you explored the area over the bridge at the right side of the united expedition camp?";
-			mes "Then you know the area is so cold that it'll instantly freeze your " + mesitemlink(7855) + ".";
+			mes "Then you know the area is so cold that it'll instantly freeze your heart.";
 			next;
 			mes "[Botanist]";
 			mes "You should go across the leftward bridge, you'll be surprised to see what's ahead of you.";
@@ -4486,7 +4486,7 @@ mid_camp,240,270,3	script	Botanist#ep13	750,{
 			mes "I suppose I don't have the words to really describe such an amazing scene.";
 			next;
 			mes "[Botanist]";
-			mes "I'll send a message to the " + mesitemlink(13104) + " for you. Why don't you go see it with your own eyes? You won't be disappointed!";
+			mes "I'll send a message to the garrison for you. Why don't you go see it with your own eyes? You won't be disappointed!";
 			next;
 			mes "[Botanist]";
 			mes "Of course, I'm offering such an extraordinary service because there's something I want in return. Ahahaha!";
@@ -4585,7 +4585,7 @@ mid_camp,240,270,3	script	Botanist#ep13	750,{
 				next;
 				mes "[Botanist]";
 				mes "Let me show you.";
-				mes "Please take this rotting plant " + mesitemlink(905) + ",";
+				mes "Please take this rotting plant stem,";
 				mes "I'll meet you at the environmental purifier standing right next to the leftward bridge on the other side.";
 				set ep13_animal,7;
 				getitem 6035,1; //Decaying_Stem
@@ -4617,7 +4617,7 @@ mid_camp,336,171,1	script	Camp Guard#man1	852,{
 	mes "[Camp Guard]";
 	mes "Stop!";
 	mes "You're about to enter an area that has not been fully explored.";
-	mes "Only personnel--researchers and explorers--authorized by United Midgard and the " + mesitemlink(13104) + " are allowed to enter the danger zone.";
+	mes "Only personnel--researchers and explorers--authorized by United Midgard and the garrison are allowed to enter the danger zone.";
 	if (ep13_ryu < 100 && ep13_start < 100)
 		close;
 	next;
@@ -4625,7 +4625,7 @@ mid_camp,336,171,1	script	Camp Guard#man1	852,{
 	case 1:
 		mes "[Camp Guard]";
 		mes "Please be careful out there.";
-		mes "If you encounter any threats or strange phenomenon, then please don't hesitate to report to us at the " + mesitemlink(13104) + ".";
+		mes "If you encounter any threats or strange phenomenon, then please don't hesitate to report to us at the garrison.";
 		close2;
 		switch(atoi(charat(strnpcinfo(2),3))) {
 		case 1:
@@ -4662,14 +4662,14 @@ OnTouch:
 		mes "You can tell the pileus is creating drops of light which drip to the ground.";
 		next;
 		mes "[Botanist]";
-		mes "Please try to plant the rotting " + mesitemlink(905) + " in the ground.";
+		mes "Please try to plant the rotting stem in the ground.";
 		set ep13_animal,8;
 		close;
 	}
 	else if (ep13_animal == 8) {
 		enablenpc "Botanist#ep13_1";
 		mes "[Botanist]";
-		mes "Please try to plant the rotting " + mesitemlink(905) + " in the ground.";
+		mes "Please try to plant the rotting stem in the ground.";
 		close;
 	}
 	else if (ep13_animal == 9) {
@@ -4681,12 +4681,12 @@ OnTouch:
 mid_camp,45,148,7	script	Botanist#ep13_1	750,{
 	if (ep13_animal == 8) {
 		mes "[Botanist]";
-		mes "Please try to plant the rotting " + mesitemlink(905) + " in the ground.";
+		mes "Please try to plant the rotting stem in the ground.";
 		close;
 	}
 	else if (ep13_animal == 9) {
 		mes "["+strcharinfo(0)+"]";
-		mes "It's sprouted! That " + mesitemlink(711) + " looks healthy!";
+		mes "It's sprouted! That shoot looks healthy!";
 		next;
 		mes "[Botanist]";
 		mes "See?";
@@ -4720,7 +4720,7 @@ OnInit:
 
 mid_camp,52,148,1	script	Dirt#ep13	844,{
 	if (ep13_animal == 8) {
-		mes "- You dug a hole into the ground, planted the rotting " + mesitemlink(905) + ", and then watered it. -";
+		mes "- You dug a hole into the ground, planted the rotting stem, and then watered it. -";
 		next;
 		mes "... ... ... ...";
 		mes "... ... ... ...";
@@ -4770,7 +4770,7 @@ man_fild01,92,230,3	script	Frozen Tree#evt_lumis	111,1,1,{
 		next;
 		mes "[Rumis Block]";
 		mes "...I'm looking at Hillsrion, the creature that people are talking about.";
-		mes "It's covered with soft " + mesitemlink(6020) + " that reminds me of soft ice flakes floating in the air.";
+		mes "It's covered with soft fur that reminds me of soft ice flakes floating in the air.";
 		mes "...Oh, sorry.. I was just talking to myself.";
 		next;
 		mes "[Rumis Block]";
@@ -5245,12 +5245,12 @@ OnTouch_:
 			mes "Whhhhhhaaattt!!!! What is it!!?";
 			mes "The Thief Bug, Again!!!???";
 			next;
-			mes "- Except for Ryosen, the rest " + mesitemlink(10035) + " out of their seats and run hurriedly for the door. -";
+			mes "- Except for Ryosen, the rest spring out of their seats and run hurriedly for the door. -";
 			next;
 			mes "[Ryosen]";
-			mes "My... my " + mesitemlink(578) + " cake!!!";
+			mes "My... my strawberry cake!!!";
 			next;
-			mes "- Ryosen picks up his " + mesitemlink(578) + " cake, all squashed with some fingerprints. -";
+			mes "- Ryosen picks up his strawberry cake, all squashed with some fingerprints. -";
 			next;
 			mes "[Ryosen]";
 			mes "Stop! Freeze, everyone!";
@@ -5260,10 +5260,10 @@ OnTouch_:
 			mes "This cake was just fine before that evil thing appeared, and there were only 4 of us here!";
 			next;
 			mes "[Ryosen]";
-			mes "One of you must be guilty of ruining my Rune-Midgarts' " + mesitemlink(578) + " Cake!!!";
+			mes "One of you must be guilty of ruining my Rune-Midgarts' Strawberry Cake!!!";
 			next;
 			mes "[Ryosen]";
-			mes "I can't help checking your hands! This must be a fingerprint! It's loud and clear!! Hmm, I bet this is the mark of an index " + mesitemlink(1811) + "!";
+			mes "I can't help checking your hands! This must be a fingerprint! It's loud and clear!! Hmm, I bet this is the mark of an index finger!";
 			next;
 			mes "[Hue]";
 			mes "Wait a minute! Wait! Stop treating us like criminals! What is wrong with you, it's only a cake!? Don't you think you're going a little too far?";
@@ -5273,7 +5273,7 @@ OnTouch_:
 			mes "Aha, yeah, I just remembered. You people from Schwarzwald don't ever appreciate food at all, right?";
 			next;
 			mes "[Ryosen]";
-			mes "Especially when the food is NOT yours, huh? That's why you people sneak a taste of other people's food like my " + mesitemlink(578) + " cake!!!";
+			mes "Especially when the food is NOT yours, huh? That's why you people sneak a taste of other people's food like my strawberry cake!!!";
 			next;
 			mes "[Hue]";
 			mes "Hmm, are you talking about Dusty?";
@@ -5286,7 +5286,7 @@ OnTouch_:
 			mes "Ughhhhh! It was I who did that!!!";
 			next;
 			mes "[Hansenne]";
-			mes "Sorry, I was just too shocked by that thief bug and accidentally touched your cake with my " + mesitemlink(1811) + "!";
+			mes "Sorry, I was just too shocked by that thief bug and accidentally touched your cake with my finger!";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "...Huh? No. Wait...";
@@ -5619,13 +5619,13 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 			mes "The only thing we enjoy here is that dessert we receive, once a week.";
 			next;
 			mes "[Ryosen]";
-			mes "Schwarzwald's " + mesitemlink(6265) + " " + mesitemlink(7312) + " is just awful. It tastes something like rusty " + mesitemlink(999) + ".";
+			mes "Schwarzwald's Pineapple Jubilee is just awful. It tastes something like rusty steel.";
 			next;
 			mes "[Ryosen]";
-			mes "Arunafeltz's Desert Sandwich is nothing better than that. I think that sandwich's made of some old " + mesitemlink(517) + ", otherwise, we wouldn't have been food poisoned so often!";
+			mes "Arunafeltz's Desert Sandwich is nothing better than that. I think that sandwich's made of some old meat, otherwise, we wouldn't have been food poisoned so often!";
 			next;
 			mes "[Ryosen]";
-			mes "But, Rune-Midgarts' " + mesitemlink(578) + " Cake! It's the best.";
+			mes "But, Rune-Midgarts' Strawberry Cake! It's the best.";
 			next;
 			mes "[Ryosen]";
 			mes "Nice and soft spongecake covered with sweet-tasting whipped cream, lots of fresh strawberries on top!";
@@ -5708,7 +5708,7 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 			mes "It wasn't our will to have this meeting, and I never imagined they'd sign this thing... Well, I just feel like I've been punched in the head or something.";
 			next;
 			mes "[Ryosen]";
-			mes "Well, it's already spilled " + mesitemlink(519) + ". I need to go to that meeting whether I like it or not. Could you please send this to the Official of the United Research?";
+			mes "Well, it's already spilled milk. I need to go to that meeting whether I like it or not. Could you please send this to the Official of the United Research?";
 			next;
 			mes "[Ryosen]";
 			mes "In the meantime, I should prepare myself for the meeting.";
@@ -5722,7 +5722,7 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 			mes "It wasn't our will to have this meeting, and I never imagined they'd sign this thing... Well, I just feel like I've been punched in the head or something.";
 			next;
 			mes "[Ryosen]";
-			mes "Well, it's already spilled " + mesitemlink(519) + ". I need to go to that meeting whether I like it or not. Could you please send this to the Official of the United Research?";
+			mes "Well, it's already spilled milk. I need to go to that meeting whether I like it or not. Could you please send this to the Official of the United Research?";
 			next;
 			mes "[Ryosen]";
 			mes "In the meantime, I should prepare myself for the meeting.";
@@ -5783,7 +5783,7 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 				mes "What is he expecting from me with this!!!!";
 				next;
 				mes "[Ryosen]";
-				mes "Aarrrrr!!!!! This is a " + mesitemlink(7102) + "!";
+				mes "Aarrrrr!!!!! This is a nightmare!";
 				close;
 			}
 			else {
@@ -5910,7 +5910,7 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 			mes "Could you go see the Official in my stead and set up a meeting?";
 			next;
 			mes "[Ryosen]";
-			mes "Oh! And... Here's Rune-Midgarts' fresh " + mesitemlink(578) + " cake. This is for you. I'm so sorry I haven't even offered you a piece. I was so distracted with stress, I think.";
+			mes "Oh! And... Here's Rune-Midgarts' fresh strawberry cake. This is for you. I'm so sorry I haven't even offered you a piece. I was so distracted with stress, I think.";
 			next;
 			mes "[Ryosen]";
 			mes "Thank you so much for everything you've done. And... pleade don't forget to do me this last favor, going to the Official and setting up a meeting.";
@@ -5947,11 +5947,11 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 			mes "You can't imagine how greatful I feel!";
 			next;
 			mes "[Ryosen]";
-			mes "Oh, but then... Have you ever seen a ^0000ffMystic " + mesitemlink(947) + "^000000? I'd love to get one.";
+			mes "Oh, but then... Have you ever seen a ^0000ffMystic Horn^000000? I'd love to get one.";
 			mes "I heard you can get this thing from a monster named, 'Cornus' found in the fields.";
 			next;
 			mes "[Ryosen]";
-			mes "Or... do you have any ^0000ffMystic Horns^000000 with you? Of course, I'm not saying that I want it for free. If you'd give me ^0000ff2 Mystic Horns^000000, I'd give you my Rune-Midgarts' " + mesitemlink(578) + " Cake.";
+			mes "Or... do you have any ^0000ffMystic Horns^000000 with you? Of course, I'm not saying that I want it for free. If you'd give me ^0000ff2 Mystic Horns^000000, I'd give you my Rune-Midgarts' Strawberry Cake.";
 			next;
 			switch(select("I haven't seen such a thing.:Oh, ok, I'll give you!")) {
 			case 1:
@@ -5967,7 +5967,7 @@ mid_camp,165,245,0	script	Ryosen#ep131_rhea01	748,{
 					mes "Huh?";
 					next;
 					mes "[Ryosen]";
-					mes "You have Rune-Midgarts' " + mesitemlink(578) + " Cake?";
+					mes "You have Rune-Midgarts' Strawberry Cake?";
 					next;
 					mes "[Ryosen]";
 					mes "How come you haven't had it yet?";
@@ -6180,10 +6180,10 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 				mes "Too bad I'm not in Schwarzwald. I could use our document restoring machine back at home... Ugh! Now I gotta do everything manually.";
 				next;
 				mes "[Hue]";
-				mes "Hmmm. It's completely soaked. I Should dry this thing first and " + mesitemlink(998) + " these crumples. Then, I should restore the texts.";
+				mes "Hmmm. It's completely soaked. I Should dry this thing first and iron these crumples. Then, I should restore the texts.";
 				next;
 				mes "[Hue]";
-				mes "I need some materials. You gotta help me on this. I need ^0000ff1 Fan, 1 " + mesitemlink(7031) + ", 1 " + mesitemlink(7521) + ", 1 Chinese Ink^000000.";
+				mes "I need some materials. You gotta help me on this. I need ^0000ff1 Fan, 1 Old Frying Pan, 1 Flame Stone, 1 Chinese Ink^000000.";
 				next;
 				mes "[Hue]";
 				mes "Hey, hey... don't look at me like that. I know you're not delighted to do these things but think about it, what about me? Why should I restore this garbage?";
@@ -6227,10 +6227,10 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 			}
 			else {
 				mes "[Hue]";
-				mes "Hmmm. It's completely soaked. I Should dry this thing first and " + mesitemlink(998) + " these crumples. Then, I should restore the texts.";
+				mes "Hmmm. It's completely soaked. I Should dry this thing first and iron these crumples. Then, I should restore the texts.";
 				next;
 				mes "[Hue]";
-				mes "I need some materials. You gotta help me on this. I need ^0000ff1 Fan, 1 " + mesitemlink(7031) + ", 1 " + mesitemlink(7521) + ", 1 Chinese Ink^000000.";
+				mes "I need some materials. You gotta help me on this. I need ^0000ff1 Fan, 1 Old Frying Pan, 1 Flame Stone, 1 Chinese Ink^000000.";
 				next;
 				mes "[Hue]";
 				mes "Just don't gorget that the file will be restored as fast as you prepare those things for me.";
@@ -6311,7 +6311,7 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 			next;
 			mes "[Hue]";
 			mes "I'm sorry to ask you this but...";
-			mes "Could you? For this, I'll give you some Schwarzwald's " + mesitemlink(6265) + " " + mesitemlink(7312) + ".";
+			mes "Could you? For this, I'll give you some Schwarzwald's Pineapple Jubilee.";
 			next;
 			mes "[Hue]";
 			mes "Please give this report to Ryosen.";
@@ -6348,7 +6348,7 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 			next;
 			mes "[Hue]";
 			mes "Could you bring ^0000ffFur^000000 if you get some? I'm not asking it for free.";
-			mes "I'll give you my " + mesitemlink(6265) + " " + mesitemlink(7312) + " from Schwarzwald, if you bring me ^0000ff2 Furs^000000.";
+			mes "I'll give you my Pineapple Jubilee from Schwarzwald, if you bring me ^0000ff2 Furs^000000.";
 			next;
 			switch(select("I don't have any, right now.:Oh, I'll give you Fur.")) {
 			case 1:
@@ -6364,7 +6364,7 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 					mes "Ah, oh my.";
 					next;
 					mes "[Hue]";
-					mes "You already have the " + mesitemlink(6265) + " " + mesitemlink(7312) + " from Schwarzwald!";
+					mes "You already have the Pineapple Jubilee from Schwarzwald!";
 					next;
 					mes "[Hue]";
 					mes "I think you should drin that thing fast. Otherwise, all the ice will melt and it'll taste like some kinda medicine!";
@@ -6377,10 +6377,10 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 			next;
 			if (countitem(6020) > 1) {
 				mes "[Hue]";
-				mes "Oh, so it's the thing called, " + mesitemlink(6020) + "??";
+				mes "Oh, so it's the thing called, Fur??";
 				next;
 				mes "[Hue]";
-				mes "Are you sure you want to exchange this for my " + mesitemlink(6265) + " " + mesitemlink(7312) + "?";
+				mes "Are you sure you want to exchange this for my Pineapple Jubilee?";
 				next;
 				if(select("No way.:Sure.") == 1) {
 					mes "[Hue]";
@@ -6401,10 +6401,10 @@ mid_camp,247,255,1	script	Hue#ep131_rhea02	868,{
 			}
 			else {
 				mes "[Hue]";
-				mes "Well, I don't think you have any " + mesitemlink(6020) + ".";
+				mes "Well, I don't think you have any Fur.";
 				next;
 				mes "[Hue]";
-				mes "Please come back if you find any " + mesitemlink(6020) + ".";
+				mes "Please come back if you find any Fur.";
 				close;
 			}
 		}
@@ -6484,7 +6484,7 @@ mid_camp,222,218,3	script	Hansenne#ep131_rhea03	931,{
 				mes "I should have a look at least.";
 				next;
 				mes "[Hansenne]";
-				mes "You should take a rest, while I'm reading this. Oh, have some Poring " + mesitemlink(529) + " from Rune-Midgarts. It's terribly sour and sometimes salty. Funny taste, huh?";
+				mes "You should take a rest, while I'm reading this. Oh, have some Poring Candy from Rune-Midgarts. It's terribly sour and sometimes salty. Funny taste, huh?";
 				delitem 6036,1; //Invite_To_Meeting
 				set ep13_1_rhea,7;
 				close;
@@ -6650,7 +6650,7 @@ mid_camp,222,218,3	script	Hansenne#ep131_rhea03	931,{
 			mes "Those pussycats on the South-West can teach us fishing, you know.";
 			next;
 			mes "[Hansenne]";
-			mes "Maybe we can catch that document with a fishing " + mesitemlink(1601) + " if we're lucky!";
+			mes "Maybe we can catch that document with a fishing rod if we're lucky!";
 			mes "Wow!";
 			set ep13_1_rhea,13;
 			changequest 8200,8201;
@@ -7073,7 +7073,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							set ep13_alba,1;
 							setquest 7042;
 							mes "[Taab]";
-							mes "Please bring me 50 " + mesitemlink(579) + ".";
+							mes "Please bring me 50 Fresh Fish.";
 							mes "They're feed for Tatachoes.";
 							mes "I'm fresh out, and I'll need to restock very soon.";
 							next;
@@ -7084,7 +7084,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							next;
 							mes "[Taab]";
 							mes "Thank you in advance.";
-							mes "Please bring me feed for Tatachoes: ^4d4dff50 " + mesitemlink(579) + "^000000.";
+							mes "Please bring me feed for Tatachoes: ^4d4dff50 Fresh Fish^000000.";
 							close;
 						}
 						else if ($@PartTimeSlots == 2) {
@@ -7116,7 +7116,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							next;
 							mes "[Taab]";
 							mes "This time... I'd like to";
-							mes "try " + mesitemlink(528) + ".";
+							mes "try Monster's Feed.";
 							mes "Can you please bring me";
 							mes "^4d4dff20 Monster's Feeds and 30 Pet Foods^000000?";
 							next;
@@ -7136,20 +7136,20 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							mes "This is perfect because";
 							mes "I was going to try some";
 							mes "new feed for Hillsrions.";
-							mes "I tried " + mesitemlink(528) + ",";
+							mes "I tried Monster's Feed,";
 							mes "but I don't know if they";
 							mes "liked it or not.";
 							next;
 							mes "[Taab]";
-							mes "I want to try " + mesitemlink(517) + " this time.";
+							mes "I want to try Meat this time.";
 							mes "Can you please bring me";
-							mes "^4d4dff50 " + mesitemlink(517) + "^000000 and ^4d4dff30 Pet Foods^000000?";
+							mes "^4d4dff50 Meat^000000 and ^4d4dff30 Pet Foods^000000?";
 							next;
 							mes "[Taab]";
 							mes "Thank you in advance.";
 							mes "Don't forget the";
-							mes "^4d4dff50 " + mesitemlink(517) + "^000000 and ^4d4dff30 Pet Foods^000000";
-							mes "I really hope they'll like the " + mesitemlink(517) + ".";
+							mes "^4d4dff50 Meat^000000 and ^4d4dff30 Pet Foods^000000";
+							mes "I really hope they'll like the Meat.";
 							close;
 						}
 						else {
@@ -7157,13 +7157,13 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							setquest 7046;
 							mes "[Taab]";
 							mes "Oh, I always wanted to put something warm on the floor for my creatures.";
-							mes "I was thinking of using " + mesitemlink(6020) + ".";
-							mes "I can also use " + mesitemlink(6020) + " to cover the cage during rainy days, you know?";
+							mes "I was thinking of using fur.";
+							mes "I can also use fur to cover the cage during rainy days, you know?";
 							next;
 							mes "[Taab]";
-							mes "Can you please bring me ^4d4dff30 scraps of " + mesitemlink(6020) + "^000000?";
+							mes "Can you please bring me ^4d4dff30 scraps of fur^000000?";
 							mes "It sounds easy, doesn't it?";
-							mes "I think the " + mesitemlink(6020) + " of Tatachoes and Hillsrions will be perfect.";
+							mes "I think the fur of Tatachoes and Hillsrions will be perfect.";
 							next;
 							mes "[Taab]";
 							mes "Of course, I'm not going to use them for the cages with the Tatachoes and Hillsrions.";
@@ -7175,7 +7175,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 							next;
 							mes "[Taab]";
 							mes "Thank you in advance.";
-							mes "Don't forget the 30 scraps of " + mesitemlink(6020) + ".";
+							mes "Don't forget the 30 scraps of fur.";
 							close;
 						}
 					}
@@ -7230,7 +7230,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 			}
 			else {
 				mes "[Taab]";
-				mes "Please bring me 50 " + mesitemlink(579) + " for Tatachoes.";
+				mes "Please bring me 50 Fresh Fish for Tatachoes.";
 				mes "You should hurry up because they get impatient when they're hungry.";
 				close;
 			}
@@ -7355,7 +7355,7 @@ mid_camp,143,306,5	script	Breeder Taab#ep13_alba	946,{
 			else {
 				mes "[Taab]";
 				mes "Don't forget the";
-				mes "50 " + mesitemlink(517) + " and";
+				mes "50 Meat and";
 				mes "30 Pet Foods.";
 				mes "They're for the Hillsrions.";
 				close;
@@ -8322,8 +8322,8 @@ mid_camp,75,135,0	duplicate(Fishinghole)	School of Fish#4	844
 mid_camp,66,122,55	script	Henry Clifford	712,{
 	if (countitem(6049) > 0) {
 		mes "[Henry Clifford]";
-		mes "Congratulations, you've caught a precious " + mesitemlink(6049) + ".";
-		mes "I'll give you 2 Cat Trading Points in exchange for your " + mesitemlink(6049) + ".";
+		mes "Congratulations, you've caught a precious Marlin.";
+		mes "I'll give you 2 Cat Trading Points in exchange for your Marlin.";
 		next;
 		mes "[Henry Clifford]";
 		mes "I got them from a black marketer,";
@@ -8335,7 +8335,7 @@ mid_camp,66,122,55	script	Henry Clifford	712,{
 			delitem 6049,1; //Marlin
 			set ep13_yong1,ep13_yong1+2;
 			mes "[Henry Clifford]";
-			mes "Thank you for the " + mesitemlink(6049) + ".";
+			mes "Thank you for the Marlin.";
 			mes "I've given you the points in return.";
 			mes "You may go check your points through the Cat Paw Agent.";
 			close;
@@ -8355,13 +8355,13 @@ mid_camp,66,122,55	script	Henry Clifford	712,{
 		mes "to see if the rumor is true.";
 		next;
 		mes "[Henry Clifford]";
-		mes "" + mesitemlink(6049) + ", the legendary silver";
+		mes "Marlin, the legendary silver";
 		mes "fish is the best prey of all.";
 		mes "You can also catch precious";
 		mes "treasure floating in the river.";
 		next;
 		mes "[Henry Clifford]";
-		mes "If you happen to catch a " + mesitemlink(6049) + ",";
+		mes "If you happen to catch a Marlin,";
 		mes "please trade it with me.";
 		mes "I'll give you something";
 		mes "nice in return.";
@@ -8571,7 +8571,7 @@ mid_campin,90,121,5	script	Hibba Agip	459,{
 		mes "I must say that I'm quite impressed.";
 		next;
 		mes "[Hibba Agip]";
-		mes "As you know by now, I have to send out an " + mesitemlink(11012) + " to the national leaders of the Midgard continent, and I need someone that I can trust.";
+		mes "As you know by now, I have to send out an expedition report to the national leaders of the Midgard continent, and I need someone that I can trust.";
 		next;
 		mes "[Hibba Agip]";
 		mes "I'd go if I could, but my duty is to command, and my instructor over there is too dense. He'll embarrass me by acting stupid in front of the national leaders.";
@@ -8581,7 +8581,7 @@ mid_campin,90,121,5	script	Hibba Agip	459,{
 		mes "Don't you think you're exaggerating?";
 		next;
 		mes "[Hibba Agip]";
-		mes "Hmm... Anyways, this is not a difficult mission. All you have to do is deliver this " + mesitemlink(11012) + " to officials of three countries of Midgard. Simple right?";
+		mes "Hmm... Anyways, this is not a difficult mission. All you have to do is deliver this expedition report to officials of three countries of Midgard. Simple right?";
 		next;
 		getitem 11012,1; //Expedition_Report
 		set ep13_1_edq,3;
@@ -8644,10 +8644,10 @@ mid_campin,90,121,5	script	Hibba Agip	459,{
 		mes "Igrid, evaluate the security of this camp and discipline among the soldiers.";
 		next;
 		mes "[Hibba Agip]";
-		mes "Now it's your turn... Abidal disposed reports from various departments after he used them to compile the " + mesitemlink(11012) + ".";
+		mes "Now it's your turn... Abidal disposed reports from various departments after he used them to compile the expedition report.";
 		next;
 		mes "[Hibba Agip]";
-		mes "We take the security of our documents seriously. So... There are no extra copies of the " + mesitemlink(11012) + ".";
+		mes "We take the security of our documents seriously. So... There are no extra copies of the expedition report.";
 		next;
 		mes "[Staff Officer Abidal]";
 		mes "I still remember at least 30% of the document. I might be able to rewrite another...";
@@ -8727,10 +8727,10 @@ mid_campin,90,121,5	script	Hibba Agip	459,{
 		mes "Igrid, evaluate the security of this camp and discipline among the soldiers.";
 		next;
 		mes "[Hibba Agip]";
-		mes "Now it's your turn... Abidal disposed reports from various departments after he used them to compile the " + mesitemlink(11012) + ".";
+		mes "Now it's your turn... Abidal disposed reports from various departments after he used them to compile the expedition report.";
 		next;
 		mes "[Hibba Agip]";
-		mes "We take the security of our documents seriously. So... There are no extra copies of the " + mesitemlink(11012) + ".";
+		mes "We take the security of our documents seriously. So... There are no extra copies of the expedition report.";
 		next;
 		mes "[Staff Officer Abidal]";
 		mes "I still remember at least 30% of the document. I might be able to rewrite another...";
@@ -9311,7 +9311,7 @@ mid_campin,94,118,3	script	Staff Officer Abidal	755,{
 			mes "Thank you so much. I had a good feeling about you, and I was so sure that you'd be willing to help.";
 			next;
 			mes "[Staff Officer Abidal]";
-			mes "Let's cut to the chase. The mission is simple, deliver our " + mesitemlink(11012) + " to the three countries of Midgard.";
+			mes "Let's cut to the chase. The mission is simple, deliver our expedition report to the three countries of Midgard.";
 			next;
 			mes "[Staff Officer Abidal]";
 			mes "But I have to tell you... We sent out three adventurers on this mission before you, and they all dissapeared. Please don't disclose this information to anyone.";
@@ -9963,7 +9963,7 @@ mid_camp,206,286,3	script	Expedition Messenger	997,{
 	}
 	else if ((ep13_1_edq == 3) && (countitem(11012) == 0)) {
 		mes "[Expedition Messenger]";
-		mes "Were you assigned to deliver the " + mesitemlink(11012) + "?";
+		mes "Were you assigned to deliver the expedition report?";
 		next;
 		mes "[Expedition Messenger]";
 		mes "I'm sorry, but I don't see any report in your hands. Please bring me the report, so I can confirm your identification.";
@@ -10495,7 +10495,7 @@ mid_campin,68,185,3	script	Pursuit Party Leader#1	803,{
 		mes "Alas! There's no one I can trust!";
 		mes "You know, when I was working at the palace, I was.. *Blah Blah*...";
 		next;
-		mes "- Her rant doesn't seem to be ending any time soon. You'd better go back and help Mr. Kidd, even if your " + mesitemlink(7855) + "'s not in it. -";
+		mes "- Her rant doesn't seem to be ending any time soon. You'd better go back and help Mr. Kidd, even if your heart's not in it. -";
 		next;
 		set mao_morocc2,3;
 		changequest 7013,7014;
@@ -10533,7 +10533,7 @@ mid_campin,68,185,3	script	Pursuit Party Leader#1	803,{
 		next;
 		select("Who?");
 		mes "[Echinacea]";
-		mes "Do you see an old man over there? He's trying to make a fire with wet firewood to roast a " + mesitemlink(633) + ".";
+		mes "Do you see an old man over there? He's trying to make a fire with wet firewood to roast a sweet potato.";
 		mes "His name is Mr. ^4d4dffDefaria^000000.";
 		next;
 		mes "[Echinacea]";
@@ -10599,11 +10599,11 @@ mid_campin,68,185,3	script	Pursuit Party Leader#1	803,{
 		}
 		else {
 			mes "It's not working for some reason.";
-			mes "I can't find a " + mesitemlink(7597) + " that has the same wavelength as yours.";
+			mes "I can't find a magic stone that has the same wavelength as yours.";
 			next;
 			mes "[Echinacea]";
 			mes "This location-tracing spell uses a pair of magic stones of the same wavelength..";
-			mes "I can't find a " + mesitemlink(7597) + " that has the same wavelength as your pattern number.";
+			mes "I can't find a magic stone that has the same wavelength as your pattern number.";
 			next;
 			mes "[Echinacea]";
 			mes "Go check the number again.";
@@ -10661,7 +10661,7 @@ mid_campin,68,185,3	script	Pursuit Party Leader#1	803,{
 		mes "...I guess we have no choice now..";
 		next;
 		mes "[Echinacea]";
-		mes "...I should " + mesitemlink(7201) + " a report entry into this journal.";
+		mes "...I should log a report entry into this journal.";
 		mes "Our pursuit of Satan Morocc is at an end for now.";
 		next;
 		mes "[Echinacea]";
@@ -10837,10 +10837,10 @@ mid_camp,191,206,3	script	Manager#moc2_finder	852,{
 		next;
 		mes "[Manager]";
 		mes "When the target of the trace dies, the pair of stones are automatically destroyed.";
-		mes "Since this patterned " + mesitemlink(7597) + " is still intact..";
+		mes "Since this patterned magic stone is still intact..";
 		next;
 		mes "[Manager]";
-		mes "Well, this " + mesitemlink(7597) + " serves as proof that the target of the trace is still alive somewhere in the world.";
+		mes "Well, this magic stone serves as proof that the target of the trace is still alive somewhere in the world.";
 		mes "I'll keep watching.";
 		mes "Hopefully, we'll detect the same wavelength.";
 		next;
@@ -11067,7 +11067,7 @@ mid_camp,199,311,7	script	Mr. Kidd#ep13_dan01	884,{
 	}
 	else if (mao_morocc2 == 10) {
 		mes "Kidd is standing at the side of the space gap, leafing through the journal's pages and taking notes.";
-		mes "The 'Bloody " + mesitemlink(7799) + "' is sitting aside, and remains untouched.";
+		mes "The 'Bloody Crystal of Darkness' is sitting aside, and remains untouched.";
 		next;
 		mes "I feel the crystal resonating with the space gap.";
 		mes "I suddenly have the urge to touch the crystal...";
@@ -11139,7 +11139,7 @@ mid_camp,199,311,7	script	Mr. Kidd#ep13_dan01	884,{
 		next;
 		cutin "mocseal_kid01",2;
 		mes "[Mr. Kidd]";
-		mes "By the way, I saw you touch this 'Bloody " + mesitemlink(7799) + ".'";
+		mes "By the way, I saw you touch this 'Bloody Crystal of Darkness.'";
 		mes "There was a bright flash of light around you, and then you were suddenly drawn into the space gap.";
 		next;
 		mes "[Mr. Kidd]";
@@ -11329,10 +11329,10 @@ mid_camp,199,311,7	script	Mr. Kidd#ep13_dan01	884,{
 		next;
 		mes "[Mr. Kidd]";
 		mes "The crystal no longer resonates with the space gap.";
-		mes "Now it's exactly the same as a regular " + mesitemlink(7799) + ".";
+		mes "Now it's exactly the same as a regular Crystal of Darkness.";
 		next;
 		mes "[Mr. Kidd]";
-		mes "That means, the phenomenon that you've experienced with the 'Bloody " + mesitemlink(7799) + "' can't be..";
+		mes "That means, the phenomenon that you've experienced with the 'Bloody Crystal of Darkness' can't be..";
 		mes ".........";
 		next;
 		select("Can't be explained?");
@@ -11760,7 +11760,7 @@ mid_camp,256,272,3	script	Defaria#moc2	897,{
 				mes "not to mention that it takes a certain kind of courage.";
 				next;
 				mes "[Defaria]";
-				mes "For example, Tarous that know when to abandon their hopes of getting " + mesitemlink(548) + ", you know, the bait in traps, are the hardest ones to catch. You know?";
+				mes "For example, Tarous that know when to abandon their hopes of getting cheese, you know, the bait in traps, are the hardest ones to catch. You know?";
 				mes "..Hahaha!";
 				close;
 			}
@@ -11813,7 +11813,7 @@ mid_camp,256,272,3	script	Defaria#moc2	897,{
 		}
 	}
 	else if (mao_morocc2 == 103) {
-		mes "- Defaria is blowing on a roast " + mesitemlink(633) + ", peeling off it's skin. -";
+		mes "- Defaria is blowing on a roast sweet potato, peeling off it's skin. -";
 		next;
 		select("Excuse me, sir...");
 		mes "[Defaria]";
@@ -11899,7 +11899,7 @@ mid_camp,256,272,3	script	Defaria#moc2	897,{
 		mes "Muhahahaha!";
 		mes "Did Echinacea really say that?";
 		mes "She's an executive of the Rune-Midgarts army.";
-		mes "I can tell that what she said came from the bottom of " + mesitemlink(659) + ".";
+		mes "I can tell that what she said came from the bottom of her heart.";
 		next;
 		mes "[Defaria]";
 		mes "I'm relieved that things turned out this way.";
@@ -11925,7 +11925,7 @@ mid_camp,256,272,3	script	Defaria#moc2	897,{
 	}
 	else if (mao_morocc2 > 108) {
 		mes "- Defaria is lost in thought, standing with a poker in one hand";
-		mes "and a " + mesitemlink(633) + " in the other. -";
+		mes "and a sweet potato in the other. -";
 		next;
 		mes "- Sometimes, he looks to the sky, sighs, and then says, 'I'm envious of young people these days ..'";
 		mes "or something like 'I don't care anymore, no matter what happens.' -";
@@ -12020,7 +12020,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 	switch(select("Order a Drink:About the mission:Quit")) {
 	case 1:
 		mes "[Karred]";
-		mes "We have " + mesitemlink(12112) + "";
+		mes "We have Tropical Sograt";
 		mes "and Vermillion on the Beach.";
 		mes "Which one would you like to drink?";
 		next;
@@ -12028,7 +12028,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 		case 1:
 			if (checkweight(1201,1) == 0) {
 				mes "[Karred]";
-				mes "Are you sure you can even hold a glass of " + mesitemlink(970) + "?";
+				mes "Are you sure you can even hold a glass of alcohol?";
 				mes "You're carrying too many things on you already.";
 				close;
 			}
@@ -12045,7 +12045,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 						mes "[Karred]";
 						mes "I'll give you a special discount.";
 						mes "Here, drink up.";
-						mes "This drink is mainly made of " + mesitemlink(12332) + ",";
+						mes "This drink is mainly made of fruit juice,";
 						mes "but you still shouldn't drink too much.";
 						set Zeny, Zeny-800;
 						getitem 12112,1; //Tropical_Sograt
@@ -12063,7 +12063,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 					else {
 						mes "[Karred]";
 						mes "There you go.";
-						mes "This drink is mainly made of " + mesitemlink(12332) + ",";
+						mes "This drink is mainly made of fruit juice,";
 						mes "but you still shouldn't drink too much.";
 						set Zeny, Zeny-1000;
 						getitem 12112,1; //Tropical_Sograt
@@ -12074,7 +12074,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 		case 2:
 			if (MaxWeight - Weight < 2000) {
 				mes "[Karred]";
-				mes "Are you sure you can even hold a glass of " + mesitemlink(970) + "?";
+				mes "Are you sure you can even hold a glass of alcohol?";
 				mes "You're carrying too many things on you already.";
 				close;
 			}
@@ -12163,7 +12163,7 @@ que_job01,82,95,3	script	Bar Master#moc2_01	46,{
 				next;
 				mes "[Litheron]";
 				mes "Ah, just forget what I said. That was out of line.";
-				mes "I guess I'm drunk after dealing with " + mesitemlink(970) + " all day.";
+				mes "I guess I'm drunk after dealing with alcohol all day.";
 				close;
 			}
 			else {
@@ -12310,7 +12310,7 @@ que_job01,81,79,5	script	Idle Knight#dan_08	733,{
 	mes "What, haven't you seen a Knight before?";
 	mes "You think Knights don't belong here?";
 	if (BaseClass == Job_Knight)
-		mes "Looks like this is a case of the " + mesitemlink(7482) + " calling the kettle black.";
+		mes "Looks like this is a case of the pot calling the kettle black.";
 	next;
 	mes "[Litheron]";
 	mes "You know, I'm just here to take a break from the town restoration work.";
@@ -12385,7 +12385,7 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 			mes "[Tao]";
 			mes "It's a long story, meow.";
 			mes "It's been a long time since I started meowing one day..";
-			mes "That day, Tao wanted to have a " + mesitemlink(2244) + " so badly.";
+			mes "That day, Tao wanted to have a Big Ribbon so badly.";
 			next;
 			mes "[Tao]";
 			mes "So Tao went to find Wild Roses.";
@@ -12915,7 +12915,7 @@ que_job01,84,17,3	script	Rin#moc_room2_1	885,{
 		mes "Have you found anything?";
 		next;
 		mes "- You told her you couldn't find anything regarding their whereabouts,";
-		mes "but you found the ''Bloody " + mesitemlink(7799) + "'' in the bushes.";
+		mes "but you found the ''Bloody Crystal of Darkness'' in the bushes.";
 		next;
 		if (countitem(6027) > 0) {
 			cutin "moc2_rin01",2;
@@ -13088,21 +13088,21 @@ que_job01,144,54,3	script	Rin#moc_room2_2	885,{
 			switch(select("Smack his head.:Punch his stomach.:Slap his face.")) {
 			case 1:
 				specialeffect EF_HIT2,AREA,"Rayan#moc_room2_2";
-				mes "- Wanting to stop Rayan from going " + mesitemlink(1814) + ", you smacked the back of his head with the journal. Rayan staggered and then fell to the ground. Nice job! -";
+				mes "- Wanting to stop Rayan from going berserk, you smacked the back of his head with the journal. Rayan staggered and then fell to the ground. Nice job! -";
 				next;
 				break;
 			case 2:
 				specialeffect EF_HIT4,AREA,"Rayan#moc_room2_2";
-				mes "- Wanting to stop Rayan from going " + mesitemlink(1814) + ", you sucker punched him in the 'ole " + mesitemlink(580) + " basket. Rayan staggered and then fell to the ground...! -";
+				mes "- Wanting to stop Rayan from going berserk, you sucker punched him in the 'ole bread basket. Rayan staggered and then fell to the ground...! -";
 				next;
 				break;
 			case 3:
 				specialeffect EF_HIT1,AREA,"Rayan#moc_room2_2";
-				mes "- Wanting to stop Rayan from going " + mesitemlink(1814) + ", you slapped his face with the journal. Rayan staggered and then fell onto the ground. Wah! -";
+				mes "- Wanting to stop Rayan from going berserk, you slapped his face with the journal. Rayan staggered and then fell onto the ground. Wah! -";
 				next;
 				break;
 			}
-			mes "- By your sudden violent move, the Bloody " + mesitemlink(7799) + " flew out of your " + mesitemlink(2303) + ", and rolled on the ground toward Rayan. -";
+			mes "- By your sudden violent move, the Bloody Crystal of Darkness flew out of your jacket, and rolled on the ground toward Rayan. -";
 			next;
 			cutin "moc2_dan02",0;
 			mes "[Rayan]";
@@ -13195,7 +13195,7 @@ que_job01,144,54,3	script	Rin#moc_room2_2	885,{
 		mes "He's been controlling Rayan from deep inside his mind..";
 		next;
 		mes "[Rin]";
-		mes "And... That Mad Rayan seems to have a connection with your Bloody " + mesitemlink(7799) + ".";
+		mes "And... That Mad Rayan seems to have a connection with your Bloody Crystal of Darkness.";
 		next;
 		cutin "moc2_rin02",2;
 		mes "[Rin]";
@@ -13359,7 +13359,7 @@ hu_fild04,235,103,0	script	Heap of Earth#mao2_01	844,4,4,{
 			mes "As you took a careful look,";
 			mes "you notice something shining in the ground.";
 			next;
-			mes "^4d4dffYou have found a 'Bloody " + mesitemlink(7799) + "'.^000000";
+			mes "^4d4dffYou have found a 'Bloody Crystal of Darkness'.^000000";
 			next;
 			mes "[" + strcharinfo(0) + "]";
 			mes "I don't think I'll find anything else here...";
@@ -13609,7 +13609,7 @@ que_dan01,49,36,5	script	Corpse#moc2_dead01	457,{
 				next;
 				break;
 			}
-			mes "A scroll flew out of the body's " + mesitemlink(2303) + " pocket.";
+			mes "A scroll flew out of the body's jacket pocket.";
 			mes "You're not sure what this scroll is for, but obviously it seems pretty important.";
 			next;
 			mes "^4d4dffYou have obtained a Sealed Magic Scroll.";
@@ -13792,7 +13792,7 @@ OnTouch:
 		mes "What the?! Does he know I'm here?!";
 		mes "I'd better run!";
 		next;
-		mes "- You used a " + mesitemlink(602) + ".-";
+		mes "- You used a Butterfly Wing.-";
 		set mao_morocc2,18;
 		changequest 7026,7027;
 		close2;

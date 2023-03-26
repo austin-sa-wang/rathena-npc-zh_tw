@@ -76,9 +76,9 @@ prontera,115,90,0	script	Putty	4_F_01,{
 			mes "The points can be used to exchange for items that I have.";
 			next;
 			mes "[Putty]";
-			mes "For ^CC0000100 points^000000: ^0000CC1 " + mesitemlink(616) + "^000000.";
-			mes "For ^CC000050 points^000000: ^0000CC20 " + mesitemlink(607) + "^000000.";
-			mes "For ^CC000020 points^000000: ^0000CC10 " + mesitemlink(505) + "^000000.";
+			mes "For ^CC0000100 points^000000: ^0000CC1 Old Card Album^000000.";
+			mes "For ^CC000050 points^000000: ^0000CC20 Yggdrasil Berry^000000.";
+			mes "For ^CC000020 points^000000: ^0000CC10 Blue Potion^000000.";
 			mes "For ^CC00001 point^000000: ^0000CC4 Honey^000000.";
 			next;
 			break;

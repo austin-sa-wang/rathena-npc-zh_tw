@@ -28,7 +28,7 @@
 // Louise's Santa Hat (Event 1)
 xmas_in,89,92,5	script	Louise Kim#designer	714,{
 	mes "[Designer Louise Kim]";
-	mes "Cone shaped red " + mesitemlink(2236) + " is too ordinary.";
+	mes "Cone shaped red Santa hat is too ordinary.";
 	mes "It's old fashioned.";
 	mes "Maybe in 1980's?!";
 	mes "Haha~";
@@ -72,9 +72,9 @@ xmas_in,89,92,5	script	Louise Kim#designer	714,{
 				mes "[Designer Louise Kim]";
 				mes "Anyway,to sum up,required materials are....";
 				mes "Basically ^0000FFSanta's Hat^000000 and";
-				mes " ^0000FF 1 " + mesitemlink(952) + " ^000000 for sewing, ";
-				mes "^0000FF 10 " + mesitemlink(523) + " ^000000 for blessing, ";
-				mes "^0000FF 1 " + mesitemlink(2608) + " ^000000 for luckiness.";
+				mes " ^0000FF 1 Cactus Needle ^000000 for sewing, ";
+				mes "^0000FF 10 Holy Water ^000000 for blessing, ";
+				mes "^0000FF 1 Rosary ^000000 for luckiness.";
 				mes "It's pretty enough to make Louise Hat.";
 				next;
 				if (countitem(952) > 0 && countitem(523) > 9 && countitem(2608) > 0) {
@@ -87,7 +87,7 @@ xmas_in,89,92,5	script	Louise Kim#designer	714,{
 					emotion ET_BEST;
 					next;
 					mes "-She puts the hat in a bucket -";
-					mes "-filled with " + mesitemlink(523) + ".-";
+					mes "-filled with Holy Water.-";
 					mes "-She rapidly takes it out and starts mending the hat-";
 					mes "-humming a tune.-";
 					next;
@@ -97,7 +97,7 @@ xmas_in,89,92,5	script	Louise Kim#designer	714,{
 					emotion ET_DELIGHT;
 					misceffect EF_BLESSING;
 					next;
-					mes "-Immediately, she puts " + mesitemlink(2608) + " in an-";
+					mes "-Immediately, she puts Rosary in an-";
 					mes "-unknown liquid and dissolves it.-";
 					mes "-And with a brush,-";
 					mes "-neatly coats the liquid on -";
@@ -110,7 +110,7 @@ xmas_in,89,92,5	script	Louise Kim#designer	714,{
 					misceffect EF_GLORIA;
 					next;
 					mes "-She starts sewing the hat with -";
-					mes "-a " + mesitemlink(952) + " and a thread.-";
+					mes "-a Cactus Needle and a thread.-";
 					mes " ";
 					next;
 					mes "[Designer Louise Kim]";
@@ -195,7 +195,7 @@ prontera,155,285,3	script	Enjoy#enjoy	753,{
 		mes "It's already winter again~~!";
 		mes "This chilling weather makes";
 		mes "my body freeze~";
-		mes "And also makes my " + mesitemlink(7855) + " freeze.";
+		mes "And also makes my heart freeze.";
 		mes "Who said that christmas is only for lovers~";
 		mes "Oh~~I'm so lonely~!!!";
 		next;
@@ -247,7 +247,7 @@ prontera,155,285,3	script	Enjoy#enjoy	753,{
 			next;
 			mes "[Enjoy]";
 			mes "Oh,and don't forget to bring";
-			mes "5 " + mesitemlink(13150) + " of dead trees!!!";
+			mes "5 branch of dead trees!!!";
 			mes "Must bring item to attack town~";
 			mes "hahahaha~~";
 			emotion ET_KIK;
@@ -307,7 +307,7 @@ prontera,155,285,3	script	Enjoy#enjoy	753,{
 		next;
 		mes "[Enjoy]";
 		mes "Oh,and don't forget to bring";
-		mes "5 " + mesitemlink(13150) + " of dead trees!!!";
+		mes "5 branch of dead trees!!!";
 		mes "Let's go punish couples!!!";
 		close;
 	}
@@ -315,7 +315,7 @@ prontera,155,285,3	script	Enjoy#enjoy	753,{
 		if (countitem(604) > 4){
 			mes "[Enjoy]";
 			mes "Did you do as I told you to do?!!!";
-			mes "Did you bring " + mesitemlink(13150) + " of dead trees?Let me see~~!!";
+			mes "Did you bring branch of dead trees?Let me see~~!!";
 			next;
 			mes "[Enjoy]";
 			mes "Fine!!";
@@ -435,7 +435,7 @@ prontera,155,285,3	script	Enjoy#enjoy	753,{
 			mes "so happily.";
 			mes "Are you going to leave them like that!!!!!";
 			mes "Let's go let's go!!";
-			mes "Go get ^0000FF 5 " + mesitemlink(13150) + " of dead tree^000000s!!!";
+			mes "Go get ^0000FF 5 branch of dead tree^000000s!!!";
 			close;
 		}
 	}
@@ -748,7 +748,7 @@ prontera,163,66,7	script	Mas#mas	748,{
 	if (christ_solo05 == 3) {
 		mes "[Mas]";
 		mes "Herds!!!!!How long does it take!";
-		mes "Somebody know the regenerating time of " + mesitemlink(7872) + "?!!";
+		mes "Somebody know the regenerating time of Herb?!!";
 		mes "I'll dig herbs and make potions and sell it to singles!!";
 		mes "Hahahaha!!";
 		next;
@@ -767,7 +767,7 @@ prontera,163,66,7	script	Mas#mas	748,{
 		mes "Who...who are you?!!!";
 		mes "Well, it's been so long since I spoke to a stranger.";
 		mes "Hm...";
-		mes "I feel something warm inside my " + mesitemlink(7855) + "....... ";
+		mes "I feel something warm inside my heart....... ";
 		mes "Never mind!! What am I thinking?!!";
 		mes "Get away~I have dig herbs~";
 		next;
@@ -802,7 +802,7 @@ prontera,163,66,7	script	Mas#mas	748,{
 	}
 	else if (christ_solo05 > 3) {
 		mes "[Mas]";
-		mes "If you excuse me, I'll go ahead and " + mesitemlink(517) + " Enjoy.";
+		mes "If you excuse me, I'll go ahead and meat Enjoy.";
 		mes "And don't forget to tell ^0000FFEvent^000000 about this.";
 		mes "Herbs~couples~~Whatever~~";
 		mes "This christmas is gonna be fantastic!!";
@@ -812,7 +812,7 @@ prontera,163,66,7	script	Mas#mas	748,{
 	else {
 		mes "[Mas]";
 		mes "Herds!!!!!How long does it take!";
-		mes "Somebody know the regenerating time of " + mesitemlink(7872) + "?!!";
+		mes "Somebody know the regenerating time of Herb?!!";
 		mes "I'll dig herbs and make potions and sell it to singles!!";
 		mes "Hahahaha!!";
 		next;
@@ -835,7 +835,7 @@ prontera,35,209,5	script	Event#event	881,{
 		mes "...Are... you...?";
 		next;
 		mes "[Event]";
-		mes "..." + mesitemlink(6206) + " too~!!!";
+		mes "...I love you too~!!!";
 		emotion ET_HUK, playerattached();
 		next;
 		mes "["+ strcharinfo(0) +"]";
@@ -899,7 +899,7 @@ prontera,35,209,5	script	Event#event	881,{
 		mes "........................";
 		next;
 		mes "[Event]";
-		mes "..." + mesitemlink(6206) + " too~!!!";
+		mes "...I love you too~!!!";
 		emotion ET_HUK, playerattached();
 		next;
 		mes "["+ strcharinfo(0) +"]";
@@ -1040,9 +1040,9 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 			close;
 		case 4:
 			mes "[Oholy]";
-			mes "A " + mesitemlink(2236) + "!!";
+			mes "A Santa Hat!!";
 			mes "Did you know that the real";
-			mes "" + mesitemlink(2236) + " is totally different";
+			mes "Santa Hat is totally different";
 			mes "from the one that monsters";
 			mes "are wearing?! I heard a rumor";
 			mes "that an anonymous designer";
@@ -1061,7 +1061,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 			mes "Maybe that anonymous designer";
 			mes "still lives in Lutie. Why don't";
 			mes "you go visit him and ask to";
-			mes "make you a new " + mesitemlink(2236) + "?";
+			mes "make you a new Santa Hat?";
 			next;
 			mes "[Oholy]";
 			mes "The latest headline by Oholy";
@@ -1164,7 +1164,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 			switch(rand(1,15)) {
 			case 1:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(12130) + "!";
+				mes "A Cookie Bag!";
 				mes "I wrapped those indivisually.";
 				mes "There are many sweets in them.";
 				mes "Merry Christmas!";
@@ -1187,7 +1187,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 3:
 				mes "[Oholy]";
-				mes "" + mesitemlink(529) + " Canes!";
+				mes "Candy Canes!";
 				mes "These were made by";
 				mes "Chief noun.";
 				mes "Very sweet and delicious.";
@@ -1199,7 +1199,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 4:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(539) + "!";
+				mes "A Piece Of Cake!";
 				mes "These were baked by";
 				mes "Chief Acolyte.";
 				mes "Very soft and delicious.";
@@ -1223,7 +1223,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 6:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(743) + "!";
+				mes "A Spore Doll!";
 				mes "It's made elaborately by";
 				mes "Bishop, Tomas.";
 				mes "Very cute.";
@@ -1235,7 +1235,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 7:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(750) + "!";
+				mes "A Baphomet Doll!";
 				mes "..........?!..........";
 				mes "How did it get in here..?!";
 				mes "Oops, oh well.";
@@ -1247,7 +1247,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 8:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(751) + "!";
+				mes "A Osiris Doll!";
 				mes "..........?!..........";
 				mes "How did it get in here..?!";
 				mes "Oops, oh well.";
@@ -1259,7 +1259,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 9:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(752) + "!";
+				mes "A Rocker Doll!";
 				mes "This was donated by";
 				mes "a knight, Lighten.";
 				mes "Very kind of him.";
@@ -1272,7 +1272,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 
 			case 10:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(753) + "!";
+				mes "A Yoyo Doll!";
 				mes "This was donated by";
 				mes "an assassin, Marzia.";
 				mes "Very kind of him.";
@@ -1296,7 +1296,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 12:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(7206) + "!";
+				mes "A Black Cat Doll!";
 				mes "Sister Magareta found the item";
 				mes "from the monster, Loli Ruri.";
 				mes "Very kind of her.";
@@ -1309,7 +1309,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 13:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(7212) + "!";
+				mes "A Hung Doll!";
 				mes "I made this doll.";
 				mes "Isn't it adorable?!";
 				mes "Merry Christmas!";
@@ -1320,7 +1320,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 14:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(7277) + "!";
+				mes "A Munak Doll!";
 				mes "That is from some country";
 				mes "across the ocean.";
 				mes "An artisan made this doll";
@@ -1333,7 +1333,7 @@ prontera,156,242,0	script	Oholy#pron::OholyDup	79,{
 				close;
 			case 15:
 				mes "[Oholy]";
-				mes "A " + mesitemlink(2236) + "!";
+				mes "A Santa Hat!";
 				mes "This is only produced";
 				mes "during Christmas season.";
 				mes "It is not a common hat.";

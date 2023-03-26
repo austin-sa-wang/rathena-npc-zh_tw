@@ -24,7 +24,7 @@ umbala,126,129,4	script	Bearded Man#bandit	120,{
 
 	mes "[Bearded Man]";
 	mes "Beards! Get your wonderful beards!";
-	mes "Would you like a " + mesitemlink(2240) + "?";
+	mes "Would you like a beard?";
 	next;
 	menu "Yes, I'd like some facial hair!",-,"No thanks, thats gross!",M_NO;
 
@@ -39,19 +39,19 @@ umbala,126,129,4	script	Bearded Man#bandit	120,{
 	set BEARD_QUEST,1;
 L_THREAD:
 	mes "[Bearded Man]";
-	mes "I would need some ^8080FFThread^000000 for the " + mesitemlink(2240) + ".";
+	mes "I would need some ^8080FFThread^000000 for the Beard.";
 	mes "Talk to my friend in Izlude for some ^8080FFThread^000000.";
 	next;
 
 	mes "[Bearded Man]";
-	mes "Also I would need you to get me some things for the " + mesitemlink(2240) + ".";
+	mes "Also I would need you to get me some things for the beard.";
 	mes "They are:";
 L_LIST:
 	mes "^8080FFElastic Band^000000";
 	mes "^8080FF5 Animal Skins^000000";
 	mes "^8080FFBlack Dye Stuff^000000";
-	mes "^8080FFGranpa " + mesitemlink(2240) + "^000000";
-	mes "^8080FF100 " + mesitemlink(938) + "^000000";
+	mes "^8080FFGranpa Beard^000000";
+	mes "^8080FF100 sticky Mucus^000000";
 	mes "^8080FFCounteragent^000000";
 	mes " and one ^8080FF2 Carat Diamond^000000";
 	close;
@@ -71,7 +71,7 @@ L_DONE:
 
 L_MAKE:
 	mes "[Bearded Man]";
-	mes "Let's make you your " + mesitemlink(2240) + "!";
+	mes "Let's make you your beard!";
 	next;
 	if(countitem(7200) < 1 || countitem(919) < 1 ||	countitem(983) < 1 || countitem(2241) < 1 ||
 	countitem(938) < 100 || countitem(973) < 1 || countitem(731) < 1) goto L_NOITEMS;
@@ -82,9 +82,9 @@ L_MAKE:
 	delitem 938, 100;
 	delitem 973, 1;
 	delitem 731, 1;
-	mes "^8080FF~You see him cutting and sewing the " + mesitemlink(2240) + " together~^000000";
+	mes "^8080FF~You see him cutting and sewing the beard together~^000000";
 	next;
-	mes "^8080FF~He hands you the finished " + mesitemlink(2240) + "~^000000";
+	mes "^8080FF~He hands you the finished beard~^000000";
 	next;
 	getitem 2237, 1;
 	set BEARD_QUEST, 5;
@@ -95,7 +95,7 @@ L_MAKE:
 
 L_NOITEMS:
 	mes "[Bearded Man]";
-	mes "What the hell! I can't make a " + mesitemlink(2240) + " without the items!";
+	mes "What the hell! I can't make a beard without the items!";
 	mes "Here is the list again:";
 	emotion ET_HUK;
 	goto L_LIST;
@@ -192,7 +192,7 @@ L_KILLED:
 	set $@beardMobD,0;
 	mes "[Thread Merchant]";
 	mes "Thank you for killing the Thief Bugs.";
-	mes "As a token of my gratitude here is a " + mesitemlink(7948) + " full of ^8080FFThread^000000.";
+	mes "As a token of my gratitude here is a box full of ^8080FFThread^000000.";
 	set BEARD_QUEST,4;
 	close;
 

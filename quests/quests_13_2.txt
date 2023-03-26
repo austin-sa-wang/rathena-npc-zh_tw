@@ -385,7 +385,7 @@ spl_fild02,25,211,4	script	Cat Paw Agent#spl	421,{
 	else {
 		mes "[Cat Paw Agent]";
 		mes "... ... ... ...";
-		mes "Please give me some " + mesitemlink(6039) + ".";
+		mes "Please give me some Piece of Fish.";
 		close;
 	}
 function Catwarp {
@@ -718,7 +718,7 @@ spl_in01,32,306,3	script	Splendide Guard#ep13md01	447,2,2,{
 			select("Covered with wounds?");
 			mes "[Arc]";
 			mes "She didn't even get treatment!";
-			mes "She just took the " + mesitemlink(6224) + " with that exhausted body!";
+			mes "She just took the Bradium with that exhausted body!";
 			next;
 			mes "[Arc]";
 			mes "Didn't even tell me the reason!";
@@ -739,14 +739,14 @@ spl_in01,32,306,3	script	Splendide Guard#ep13md01	447,2,2,{
 			mes "......anyways.";
 			mes "I couldn't either stop her, or follow her...";
 			mes "What now...?";
-			mes "Why did she take the " + mesitemlink(6224) + "...?";
+			mes "Why did she take the Bradium...?";
 			next;
 			mes "- You tell Arc about the Giant from the cave. -";
 			next;
 			mes "[Arc]";
 			mes "What? Is that what happened?";
-			mes "" + mesitemlink(6224) + "...is certainly a precious ore for Sapha.";
-			mes "They use a " + mesitemlink(6090) + " ore...";
+			mes "Bradium...is certainly a precious ore for Sapha.";
+			mes "They use a refined Bradium ore...";
 			next;
 			mes "[Arc]";
 			mes "You said that a Sapha was hurt?";
@@ -766,7 +766,7 @@ spl_in01,32,306,3	script	Splendide Guard#ep13md01	447,2,2,{
 			select("What are you trying to do?");
 			mes "[Arc]";
 			mes "Can't you see?";
-			mes "I'm going out to look for Terra. She took the " + mesitemlink(6224) + " with her, it has got to be something to do with that Sapha.";
+			mes "I'm going out to look for Terra. She took the Bradium with her, it has got to be something to do with that Sapha.";
 			next;
 			select("Is it okay for you to leave your post?");
 			mes "[Arc]";
@@ -782,7 +782,7 @@ spl_in01,32,306,3	script	Splendide Guard#ep13md01	447,2,2,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "Let's hear rest of the story from Terra.";
 			mes "It is important for you to guard this place, isn't it?";
-			mes "If Terra really took the " + mesitemlink(6224) + " without any permission...";
+			mes "If Terra really took the Bradium without any permission...";
 			next;
 			mes "[Arc]";
 			mes "The higher ups won't just remain still...";
@@ -953,7 +953,7 @@ spl_fild02,45,214,0	script	????#ep13_mdplant01	844,{
 	if (ep13_mdrama == 2) {
 		cutin "ep13_plant01",2;
 		mes "Weeds are easy to find around here...";
-		mes "A closer look reveals that there's one knotted " + mesitemlink(905) + "...";
+		mes "A closer look reveals that there's one knotted stem...";
 		mes "It looks like this is Terra's trace that Arc told me about.";
 		next;
 		mes "A knotted leaf is pointing toward the^4d4dff Southern^000000 direction.";
@@ -979,7 +979,7 @@ spl_fild02,122,106,0	script	????#ep13_mdplant02	844,{
 	if (ep13_mdrama > 2) {
 		cutin "ep13_plant01",2;
 		mes "Weeds are easy to find around here...";
-		mes "A closer look reveals that there's one knotted " + mesitemlink(905) + "...";
+		mes "A closer look reveals that there's one knotted stem...";
 		mes "It looks like this is Terra's trace that Arc told me about.";
 		next;
 		mes "A knotted leaf is pointing ^4d4dff East^000000.";
@@ -998,7 +998,7 @@ spl_fild02,329,191,0	script	????#ep13_mdplant03	844,{
 	if (ep13_mdrama > 2) {
 	cutin "ep13_plant01",2;
 		mes "Weeds are easy to find around here...";
-		mes "A closer look reveals that there's one knotted " + mesitemlink(905) + "...";
+		mes "A closer look reveals that there's one knotted stem...";
 		mes "It looks like this is Terra's trace that Arc told me about.";
 		next;
 		mes "A knotted leaf is pointing ^4d4dff North^000000.";
@@ -1056,7 +1056,7 @@ spl_fild01,341,109,0	script	????#ep13_mdplant05	844,{
 spl_fild01,375,109,0	script	to_dun01#ep13_2	-1,2,2,{
 OnTouch:
 	if (ep13_mdrama == 5) {
-		mes "There's a " + mesitemlink(905) + " entangled inside an opening in the roots of a huge tree...";
+		mes "There's a stem entangled inside an opening in the roots of a huge tree...";
 		mes "It looks like something slipped here.";
 		next;
 		mes "A cold breeze is blowing out from deep inside the tree.";
@@ -1117,7 +1117,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Hm, This resembles... that giant tribe in Manuk...";
-		mes "Huh? It's wearing a " + mesitemlink(2503) + "...";
+		mes "Huh? It's wearing a muffler...";
 		mes "...It can't be!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -1141,7 +1141,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 		mes "That hole I came in is too slippery to climb back out...";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Light is coming in from the ceiling above... Maybe I should just climb a " + mesitemlink(905) + " around here...";
+		mes "Light is coming in from the ceiling above... Maybe I should just climb a stem around here...";
 		close;
 	}
 	else if ((ep13_mdrama == 7) || (ep13_mdrama == 8)) {
@@ -1157,7 +1157,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "So...Terra was here.....";
-		mes "Powdered " + mesitemlink(6224) + "...";
+		mes "Powdered Bradium...";
 		mes "What was she trying to do with this Sapha?";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -1190,8 +1190,8 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 			mes "It won't come off. It's as if it is a tree rooted on a rock.";
 			close;
 		case 2:
-			mes "You carefully strip a worn " + mesitemlink(2503) + " off of the Sapha's neck.";
-			mes "We will see if this " + mesitemlink(2503) + " belongs to Ogen or not.";
+			mes "You carefully strip a worn muffler off of the Sapha's neck.";
+			mes "We will see if this muffler belongs to Ogen or not.";
 			next;
 			mes "And...what else should I take?";
 			next;
@@ -1203,7 +1203,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 				mes "... I don't want to take off a dead MAN's pants...";
 				close;
 			case 3:
-				mes "You pick up a " + mesitemlink(7094) + " of " + mesitemlink(6224) + " scattered on the ground.";
+				mes "You pick up a fragment of Bradium scattered on the ground.";
 				mes "This should be enough.";
 				set ep13_mdrama,22;
 				getitem 6085,1; //Shaggy_Muffler
@@ -1215,7 +1215,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 			mes "... I don't want to take off a dead MAN's pants...";
 			close;
 		case 4:
-			mes "You pick up a " + mesitemlink(7094) + " of " + mesitemlink(6224) + " scattered on the ground.";
+			mes "You pick up a fragment of Bradium scattered on the ground.";
 			mes "This will prove Terra's effort...";
 			mes "And what else?";
 			next;
@@ -1224,8 +1224,8 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 				mes "It won't come off. It's as if it is a tree rooted on a rock.";
 				close;
 			case 2:
-				mes "You carefully strip a worn " + mesitemlink(2503) + " off of the Sapha's neck.";
-				mes "We will see if this " + mesitemlink(2503) + " belongs to Ogen or not...";
+				mes "You carefully strip a worn muffler off of the Sapha's neck.";
+				mes "We will see if this muffler belongs to Ogen or not...";
 				mes "This should be enough.";
 				set ep13_mdrama,22;
 				getitem 6085,1; //Shaggy_Muffler
@@ -1240,7 +1240,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 	}
 	else if (ep13_mdrama == 22) {
 		mes "Petrified Sapha.";
-		mes "Now I have the " + mesitemlink(2503) + ", let's go back to Luik and Snorren.";
+		mes "Now I have the muffler, let's go back to Luik and Snorren.";
 		close;
 	}
 	else if (ep13_mdrama == 23) {
@@ -1257,7 +1257,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 			mes "Ogen... this doesn't look like it can be reversed...";
 			next;
 			mes "[Snorren]";
-			mes "No matter how much " + mesitemlink(6224) + " fluid we inject... Ogen can't come back alive...";
+			mes "No matter how much bradium fluid we inject... Ogen can't come back alive...";
 			next;
 			mes "[Snorren]";
 			mes "Ogen... really was adament... about protecting that Laphine... to protect Terra.....";
@@ -1312,7 +1312,7 @@ nyd_dun01,58,223,0	script	Petrified Sapha#ep13md03	844,{
 	}
 	else {
 		// custom translation
-		mes "Before you is a statue made of stone and " + mesitemlink(6008) + ". It's so life-like it's eerie.";
+		mes "Before you is a statue made of stone and wood. It's so life-like it's eerie.";
 		close;
 	}
 }
@@ -1332,12 +1332,12 @@ OnEnable:
 }
 
 nyd_dun01,62,233,0	script	Trunk of a Tree#ep13	844,2,2,{
-	mes "The " + mesitemlink(1019) + " of a Tree moderately stretched upward.";
+	mes "The trunk of a Tree moderately stretched upward.";
 	mes "There are big thorns here that should be enough to use as footholds to climb up.";
 	close;
 
 OnTouch:
-	mes "It's the " + mesitemlink(1019) + " of a Tree stretched out toward a hole in the ceiling.";
+	mes "It's the trunk of a Tree stretched out toward a hole in the ceiling.";
 	mes "Big thorns can be used as footholds.";
 	next;
 	switch(select("Climb up.:Never mind.")) {
@@ -1404,7 +1404,7 @@ manuk,278,177,5	script	Villager#ep13_11	454,{
 				next;
 				mes "[Villager Rivier]";
 				mes "Anyway, that fairy is now in prison.";
-				mes "By the way, pull within " + mesitemlink(949) + "";
+				mes "By the way, pull within feather";
 				mes "Today we have to go to the refinery,";
 				mes "do not forget.";
 				next;
@@ -1502,7 +1502,7 @@ manuk,281,177,3	script	Villager#ep13_12	449,{
 				next;
 				mes "[Villager Rivier]";
 				mes "Anyway, that fairy is now in prison.";
-				mes "By the way, pull within " + mesitemlink(949) + "";
+				mes "By the way, pull within feather";
 				mes "Today we have to go to the refinery,";
 				mes "do not forget.";
 				next;
@@ -1620,10 +1620,10 @@ man_in01,175,59,5	script	Snorren#ep13_13	454,{
 				next;
 				mes "[Snorren]";
 				mes "I don't know what guts she had to just fly into our territory.";
-				mes "That fairy just kept on yelling 'a " + mesitemlink(6224) + "!' 'a " + mesitemlink(6224) + "!'";
+				mes "That fairy just kept on yelling 'a bradium!' 'a bradium!'";
 				next;
 				mes "[Snorren]";
-				mes "Our village's vigilantes are saying that fairy is affected by the power of " + mesitemlink(6224) + " and went crazy.";
+				mes "Our village's vigilantes are saying that fairy is affected by the power of bradium and went crazy.";
 				mes "That's what Laphine are all like!";
 				next;
 				mes "[Snorren]";
@@ -1643,21 +1643,21 @@ man_in01,175,59,5	script	Snorren#ep13_13	454,{
 				next;
 				mes "[Snorren]";
 				mes "That fairy attacked Ogen as he was trying to peek on your camp.";
-				mes "And she was drawn by Ogen's " + mesitemlink(6224) + " and came all the way here to find more " + mesitemlink(6224) + "!";
+				mes "And she was drawn by Ogen's bradium and came all the way here to find more bradium!";
 				next;
 				switch(select("That could be right...:I don't see it that way...")) {
 				case 1:
 					mes "[" + strcharinfo(0) + "]";
-					mes "But does that Ore called " + mesitemlink(6224) + " really possess an overwhelming magical power?";
+					mes "But does that Ore called bradium really possess an overwhelming magical power?";
 					mes "It didn't seem like that...";
 					next;
 					mes "[Snorren]";
-					mes "Really? But, we Sapha can't live without " + mesitemlink(6224) + ".";
-					mes "This war with the Laphine... is to protect the " + mesitemlink(6224) + " from them...";
+					mes "Really? But, we Sapha can't live without bradium.";
+					mes "This war with the Laphine... is to protect the bradium from them...";
 					next;
 					mes "[" + strcharinfo(0) + "]";
 					mes "I see...";
-					mes "Your people and their people are fighting over the " + mesitemlink(6224) + "...";
+					mes "Your people and their people are fighting over the bradium...";
 					next;
 					break;
 				case 2:
@@ -1720,7 +1720,7 @@ man_in01,175,59,5	script	Snorren#ep13_13	454,{
 			next;
 			mes "[Snorren]";
 			mes "Herbs? Is her condition that bad?";
-			mes "Can't we fix her with " + mesitemlink(6224) + "?";
+			mes "Can't we fix her with bradium?";
 			mes "Oh right, She's not Sapha, ey?";
 			next;
 			select("Nothing gets past you...");
@@ -1840,7 +1840,7 @@ man_in01,175,59,5	script	Snorren#ep13_13	454,{
 		}
 		else if (ep13_mdrama > 24) {
 			mes "[Snorren]";
-			mes "What do you think of this " + mesitemlink(2503) + "?";
+			mes "What do you think of this muffler?";
 			mes "This belonged to Ogen...";
 			mes "Does it look good on me?";
 			close;
@@ -1915,7 +1915,7 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 			next;
 			mes "[Wounded Laphine]";
 			mes "Where... am I?";
-			mes "Oh My! That's right! I need " + mesitemlink(6224) + "!";
+			mes "Oh My! That's right! I need Bradium!";
 			mes "Get me out of here!";
 			next;
 			mes "[Wounded Laphine]";
@@ -1932,10 +1932,10 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 				mes "[Wounded Laphine]";
 				mes "We were each other's enemy......";
 				mes "but he saved me...";
-				mes "I heard they need a " + mesitemlink(6224) + " to live!";
+				mes "I heard they need a bradium to live!";
 				next;
 				mes "[Wounded Laphine]";
-				mes "Give me some " + mesitemlink(6224) + ". Hurry!";
+				mes "Give me some bradium. Hurry!";
 				mes "I can't be late!";
 				next;
 				select("You are Terra. Right?");
@@ -1953,10 +1953,10 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 				next;
 				mes "[Terra]";
 				mes "Giants.. It is said that the Sapha people are cursed to be petrified.";
-				mes "And that the " + mesitemlink(6224) + " is what prevents them from becoming petrified.";
+				mes "And that the Bradium is what prevents them from becoming petrified.";
 				next;
 				mes "[Terra]";
-				mes "So I tried to bring a " + mesitemlink(6224) + " to him... ...";
+				mes "So I tried to bring a bradium to him... ...";
 				mes "But he... Sob...";
 				next;
 				mes "- Terra couldn't continue to talk as she was agonizing in the pain from her wounds. -";
@@ -1977,7 +1977,7 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 				next;
 				mes "[Terra]";
 				mes "To find a... Bra.. dium.";
-				mes "That's right. " + mesitemlink(6224) + "! Give me a " + mesitemlink(6224) + "!!";
+				mes "That's right. Bradium! Give me a bradium!!";
 				next;
 				mes "[Terra]";
 				mes "A giant... a giant in a cave...";
@@ -1988,10 +1988,10 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 				mes "[Terra]";
 				mes "We were each other's enemy......";
 				mes "but he saved me...";
-				mes "I heard they need a " + mesitemlink(6224) + " to live!";
+				mes "I heard they need a bradium to live!";
 				next;
 				mes "[Terra]";
-				mes "Give me some " + mesitemlink(6224) + ". Hurry!";
+				mes "Give me some bradium. Hurry!";
 				mes "I can't be late!";
 				next;
 				mes "[" + strcharinfo(0) + "]";
@@ -2000,10 +2000,10 @@ man_in01,22,126,3	script	Captured Laphine#ep13md	441,{
 				next;
 				mes "[Terra]";
 				mes "Giants.. It is said that the Sapha people are cursed to be petrified.";
-				mes "And that the " + mesitemlink(6224) + " is what prevents them from becoming petrified.";
+				mes "And that the Bradium is what prevents them from becoming petrified.";
 				next;
 				mes "[Terra]";
-				mes "So I tried to bring a " + mesitemlink(6224) + " to him... ...";
+				mes "So I tried to bring a bradium to him... ...";
 				mes "But he... Sob...";
 				next;
 				mes "- Terra couldn't continue to talk as she was agonizing in the pain from her wounds. -";
@@ -2098,7 +2098,7 @@ man_in01,17,128,5	script	Snorren#ep13md_15	454,{
 		else if (ep13_mdrama == 20) {
 			mes "[Snorren]";
 			mes "Let's listen to her story.";
-			mes "Why don't we start from... Why does she want a " + mesitemlink(6224) + "?";
+			mes "Why don't we start from... Why does she want a bradium?";
 			next;
 			mes "[Snorren]";
 			mes "This part must be told to Luik in exact detail.";
@@ -2113,14 +2113,14 @@ man_in01,17,128,5	script	Snorren#ep13md_15	454,{
 		else if (ep13_mdrama == 22) {
 			if ((countitem(6085) > 0) && (countitem(6084) > 0)) {
 				mes "[Luik]";
-				mes "...This " + mesitemlink(6224) + " has not been refined properly...";
+				mes "...This Bradium has not been refined properly...";
 				mes "This would be no help...";
-				mes "and, this " + mesitemlink(2503) + "...";
+				mes "and, this muffler...";
 				next;
 				mes "[Snorren]";
-				mes "This is Ogen's! Ogen's " + mesitemlink(2503) + "!";
+				mes "This is Ogen's! Ogen's muffler!";
 				mes "Luik! Ogen! This is Ogen!";
-				mes "Unrefined " + mesitemlink(6224) + "!";
+				mes "Unrefined Bradium!";
 				next;
 				mes "[Snorren]";
 				mes "Lu.. Luik. Ogen.. Ogen...?!";
@@ -2133,7 +2133,7 @@ man_in01,17,128,5	script	Snorren#ep13md_15	454,{
 				mes "If it is Ogen... We could be able to save him if we make haste.";
 				next;
 				mes "[Luik]";
-				mes "Snorren. Go to Refinery and get the finest " + mesitemlink(6224) + "...";
+				mes "Snorren. Go to Refinery and get the finest bradium...";
 				mes "Save him.";
 				next;
 				mes "[Luik]";
@@ -2205,7 +2205,7 @@ man_in01,19,126,3	script	Luik#ep13md16	450,{
 		else if (ep13_mdrama == 20) {
 			mes "[Luik]";
 			mes "First of all, Why did that Laphine come here?";
-			mes "Why does she need a " + mesitemlink(6224) + "?";
+			mes "Why does she need a bradium?";
 			next;
 			select("To give it to a Sapha in a cave...");
 			mes "[Luik]";
@@ -2214,11 +2214,11 @@ man_in01,19,126,3	script	Luik#ep13md16	450,{
 			next;
 			mes "[Luik]";
 			mes "Wait...";
-			mes "Why would a Laphine give a " + mesitemlink(6224) + " to our ally?";
+			mes "Why would a Laphine give a bradium to our ally?";
 			next;
 			mes "[" + strcharinfo(0) + "]";
 			mes "They fought in the cave and your friend got hurt and began to petrify.";
-			mes "So she came here to get a " + mesitemlink(6224) + " to try to save his life...";
+			mes "So she came here to get a bradium to try to save his life...";
 			next;
 			mes "[Luik]";
 			mes "They fought?";
@@ -2283,14 +2283,14 @@ man_in01,19,126,3	script	Luik#ep13md16	450,{
 		else if (ep13_mdrama == 22) {
 			if ((countitem(6085) > 0) && (countitem(6084) > 0)) {
 				mes "[Luik]";
-				mes "...This " + mesitemlink(6224) + " has not been refined properly...";
+				mes "...This Bradium has not been refined properly...";
 				mes "This would be no help...";
-				mes "and, this " + mesitemlink(2503) + "...";
+				mes "and, this muffler...";
 				next;
 				mes "[Snorren]";
-				mes "This is Ogen's! Ogen's " + mesitemlink(2503) + "!";
+				mes "This is Ogen's! Ogen's muffler!";
 				mes "Luik! Ogen! This is Ogen!";
-				mes "Unrefined " + mesitemlink(6224) + "!";
+				mes "Unrefined Bradium!";
 				next;
 				mes "[Snorren]";
 				mes "Lu.. Luik. Ogen.. Ogen...?!";
@@ -2303,7 +2303,7 @@ man_in01,19,126,3	script	Luik#ep13md16	450,{
 				mes "If it is Ogen... We could be able to save him if we make haste.";
 				next;
 				mes "[Luik]";
-				mes "Snorren. Go to Refinery and get the finest " + mesitemlink(6224) + "...";
+				mes "Snorren. Go to Refinery and get the finest bradium...";
 				mes "Save him.";
 				next;
 				mes "[Luik]";
@@ -2559,7 +2559,7 @@ spl_fild01,357,44,0	script	???#ep13mdf01	844,{
 	}
 	if (ep13_mdrama == 14) {
 		mes "There's some kind of fruit lying on the ground.";
-		mes "I see a small berry inside of a big outer " + mesitemlink(935) + "...";
+		mes "I see a small berry inside of a big outer shell...";
 		mes "It is a Yggdrasil!";
 		set ep13_mdrama,15;
 		getitem 607,1; //Yggdrasilberry
@@ -2577,7 +2577,7 @@ spl_fild01,357,44,0	script	???#ep13mdf01	844,{
 			close;
 		}
 		else if (.@apple == 50) {
-			mes "I found an " + mesitemlink(512) + ".";
+			mes "I found an apple.";
 			getitem 512,1; //Apple
 			close;
 		}
@@ -2587,7 +2587,7 @@ spl_fild01,357,44,0	script	???#ep13mdf01	844,{
 		}
 	}
 	else if (ep13_mdrama > 15) {
-		mes "There's only an empty " + mesitemlink(935) + " left.";
+		mes "There's only an empty shell left.";
 		close;
 	}
 	else {
@@ -2608,7 +2608,7 @@ spl_fild01,312,79,0	script	???#ep13mdf02	844,{
 	}
 	if (ep13_mdrama == 15) {
 		mes "There's some kind of fruit lying on the ground.";
-		mes "I see a small berry inside of a big outer " + mesitemlink(935) + "...";
+		mes "I see a small berry inside of a big outer shell...";
 		mes "It is a Yggdrasil!";
 		set ep13_mdrama,16;
 		getitem 607,1; //Yggdrasilberry
@@ -2626,7 +2626,7 @@ spl_fild01,312,79,0	script	???#ep13mdf02	844,{
 			close;
 		}
 		else if (.@apple == 50) {
-			mes "I found an " + mesitemlink(512) + ".";
+			mes "I found an apple.";
 			getitem 512,1; //Apple
 			close;
 		}
@@ -2636,7 +2636,7 @@ spl_fild01,312,79,0	script	???#ep13mdf02	844,{
 		}
 	}
 	else if (ep13_mdrama > 16) {
-		mes "There's only an empty " + mesitemlink(935) + " left.";
+		mes "There's only an empty shell left.";
 		close;
 	}
 	else {
@@ -2657,7 +2657,7 @@ spl_fild01,329,29,0	script	???#ep13mdf03	844,{
 	}
 	if (ep13_mdrama == 16) {
 		mes "There's some kind of fruit lying on the ground.";
-		mes "I see a small berry inside of a big outer " + mesitemlink(935) + "...";
+		mes "I see a small berry inside of a big outer shell...";
 		mes "It is a Yggdrasil!";
 		set ep13_mdrama,17;
 		getitem 607,1; //Yggdrasilberry
@@ -2681,7 +2681,7 @@ spl_fild01,329,29,0	script	???#ep13mdf03	844,{
 			close;
 		}
 		else if (.@apple == 50) {
-			mes "I found an " + mesitemlink(512) + ".";
+			mes "I found an apple.";
 			getitem 512,1; //Apple
 			close;
 		}
@@ -2691,7 +2691,7 @@ spl_fild01,329,29,0	script	???#ep13mdf03	844,{
 		}
 	}
 	else if (ep13_mdrama > 17) {
-		mes "There's only an empty " + mesitemlink(935) + " left.";
+		mes "There's only an empty shell left.";
 		close;
 	}
 	else {
@@ -2801,7 +2801,7 @@ manuk,252,116,3	script	Manuk Galtun#ep13_2day	450,{
 			next;
 			mes "[Strom]";
 			mes "But... you're different.";
-			mes "In such cold weather, you are best to don Hillslions " + mesitemlink(6020) + "...";
+			mes "In such cold weather, you are best to don Hillslions fur...";
 			close;
 		}
 	}
@@ -2834,13 +2834,13 @@ man_in01,378,276,3	script	Manuk Engineer#ep13_2	453,{
 			set .@time_chek,checkquest(7080,PLAYTIME);
 			if (.@time_chek != 2) {
 				mes "[Manuk Engineer]";
-				mes "Thank you for collecting the Enriched " + mesitemlink(6224) + " for me, it was very helpful.";
+				mes "Thank you for collecting the Enriched Bradium for me, it was very helpful.";
 				mes "We've got more than enough for now though.";
 				close;
 			}
 			else {
 				mes "[Manuk Engineer]";
-				mes "Thank you for collecting the Enriched " + mesitemlink(6224) + " for me, it was very helpful.";
+				mes "Thank you for collecting the Enriched Bradium for me, it was very helpful.";
 				mes "I hope you can help me again.";
 				erasequest 7080;
 				close;
@@ -2876,8 +2876,8 @@ man_in01,378,276,3	script	Manuk Engineer#ep13_2	453,{
 				switch(select("About collecting stones.:About the usage of stones.")) {
 				case 1:
 					mes "[Manuk Engineer]";
-					mes "To prevent our bodies from becoming numb, we need " + mesitemlink(6224) + ".";
-					mes "From the " + mesitemlink(6224) + " we can extract a special element that we need to survive.";
+					mes "To prevent our bodies from becoming numb, we need Bradium.";
+					mes "From the Bradium we can extract a special element that we need to survive.";
 					next;
 					mes "[Manuk Engineer]";
 					mes "The mining industry is primary here since our lives depend on it.";
@@ -2885,13 +2885,13 @@ man_in01,378,276,3	script	Manuk Engineer#ep13_2	453,{
 					next;
 					mes "[Manuk Engineer]";
 					mes "I've already heard that you guys are good soldiers.";
-					mes "Would you mind terminating the " + mesitemlink(6224) + " Golem, and bringing back some " + mesitemlink(6224) + " for me?";
+					mes "Would you mind terminating the Bradium Golem, and bringing back some Bradium for me?";
 					next;
 					switch(select("Sure, I don't mind.:Nope, I can't.")) {
 					case 1:
 						mes "[Manuk Engineer]";
 						mes "Then take this mission.";
-						mes "Please hunt " + mesitemlink(6224) + " Golem and bring me 20 blended " + mesitemlink(6224) + ".";
+						mes "Please hunt Bradium Golem and bring me 20 blended Bradium.";
 						setquest 7079;
 						close;
 					case 2:
@@ -2902,7 +2902,7 @@ man_in01,378,276,3	script	Manuk Engineer#ep13_2	453,{
 					}
 				case 2:
 					mes "[Manuk Engineer]";
-					mes "We refine " + mesitemlink(6224) + " and extract special things from it.";
+					mes "We refine Bradium and extract special things from it.";
 					mes "Then form that into an injection.";
 					mes "When it is refined it is used to maintain our body cycles.";
 					next;
@@ -2997,12 +2997,12 @@ spl_in01,97,313,3	script	Laphine Craftsman#ep13	446,{
 				next;
 				mes "[Laphine craftsman]";
 				mes "I heard that a water ghost has been appearing in the cave.";
-				mes "Can you bring me 15 Crystallized Teardrop and 15 " + mesitemlink(7326) + "?";
+				mes "Can you bring me 15 Crystallized Teardrop and 15 Fluorescent Liquid?";
 				next;
 				if (select("Yes.:Sorry.") == 1) {
 					mes "[Laphine craftsman]";
 					mes "Please take my request.";
-					mes "Can you bring me 15 Crystallized Teardrop and 15 " + mesitemlink(7326) + "?";
+					mes "Can you bring me 15 Crystallized Teardrop and 15 Fluorescent Liquid?";
 					setquest 7081;
 					close;
 				}
@@ -3109,7 +3109,7 @@ mid_camp,146,306,3	script	Pet Breeder#ep13_eden01	982,{
 				mes "Here's something Rin was storing here.";
 				next;
 				mes "[Pinedel]";
-				mes "This is Rin's cherished " + mesitemlink(7444) + "...";
+				mes "This is Rin's cherished treasure box...";
 				mes "This is enough payment, right?";
 				completequest 7076;
 				set ep13_2_wanted,2;
@@ -3206,8 +3206,8 @@ mid_camp,146,306,3	script	Pet Breeder#ep13_eden01	982,{
 	mes "Ash-vacuum has several monsters that I think could become cute pets.";
 	next;
 	mes "[Pinedel]";
-	mes "The objective is one Dragon " + mesitemlink(574) + "!";
-	mes "Can you bring me a Dragon " + mesitemlink(574) + "?";
+	mes "The objective is one Dragon egg!";
+	mes "Can you bring me a Dragon Egg?";
 	next;
 	if (select("Yes.:Nope.") == 1) {
 		mes "[Pinedel]";
@@ -3240,14 +3240,14 @@ mid_camp,192,239,4	script	Wanted Sign#ep13_2ect01	857,{
 		mes " ";
 		mes "Wanted: Dandelion";
 		mes "Requester: Rin";
-		mes "Reward : " + mesitemlink(7444) + ".";
+		mes "Reward : treasure box.";
 		mes " ";
 		mes "Notice : We thought that all of the Dandelion gang were terminated.";
 		mes "But they weren't.";
 		mes "I've heard that there was a Dandelion's black clothing found in Ash-Vacuum.";
 		mes "There were some problems...";
 		mes "I need someone to find the Dandelion and terminate them.";
-		mes "I can provide a " + mesitemlink(7444) + " that I cherish.";
+		mes "I can provide a treasure box that I cherish.";
 		mes "I've heard a rumor that he's in a cave somewhere..!";
 		mes " ";
 		mes "PS> They have a bad reputation...";
@@ -3526,7 +3526,7 @@ mid_camp,197,237,3	script	Schwarzwald Mechanic#1	869,{
 	if (ep13_1_edq > 2 || ep13_start == 100) {
 		if (ep13_2_rhea < 1) {
 			mes "[Mechanic Engineer Dorance]";
-			mes "Do you know about the " + mesitemlink(2782) + "? If you wear that Ring, you can talk to animals.";
+			mes "Do you know about the Ring of the Ancient Wise King? If you wear that Ring, you can talk to animals.";
 			next;
 			mes "[Mechanic Engineer Dorance]";
 			mes "I don't know if it is a legend based on truth or not... but something like that would come in pretty handy.";
@@ -3828,7 +3828,7 @@ mid_campin,168,82,3	script	Arunafeltz Linguist#1	935,{
 			mes "Looks like you haven't encountered them yet.";
 			next;
 			mes "[Linguist Dictionary]";
-			mes "Rumor here says that there's a fairy-looking and a giant " + mesitemlink(6008) + " people living out in the fields next to our camp here.";
+			mes "Rumor here says that there's a fairy-looking and a giant wood people living out in the fields next to our camp here.";
 			next;
 			mes "[Linguist Dictionary]";
 			mes "Apparently these people are speaking in a strange languages that we humans can't understand...but no one seems to be able to remember how their languages sound like.";
@@ -3854,7 +3854,7 @@ mid_campin,168,82,3	script	Arunafeltz Linguist#1	935,{
 			mes "From the look on your face, I think you have something crossed in your mind.";
 			next;
 			mes "[Linguist Dictionary]";
-			mes "Rumor here says that there's a fairy-looking and a giant " + mesitemlink(6008) + " people living out in the fields next to our camp here.";
+			mes "Rumor here says that there's a fairy-looking and a giant wood people living out in the fields next to our camp here.";
 			next;
 			mes "[Linguist Dictionary]";
 			mes "Apparently these people are speaking in a strange languages that we humans can't understand...but no one seems to be able to remember how their languages sound like.";
@@ -4187,7 +4187,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 		mes "To store a tremendous amount of information, well, it's impossible with existing technology.";
 		next;
 		mes "[Magician Whisper]";
-		mes "" + mesitemlink(12735) + "-Midgarts Kingdom used a some kind of magic onto a magical gem to store large information...Using a gem as a storage...";
+		mes "Ancient Rune-Midgarts Kingdom used a some kind of magic onto a magical gem to store large information...Using a gem as a storage...";
 		next;
 		mes "[Magician Whisper]";
 		mes "Oh, pardon me, you have such a comfortable atmosphere and I involuntarily spoke to you. Who might you be?";
@@ -4198,7 +4198,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 		mes "To store a tremendous amount of information, well, it's impossible with existing technology.";
 		next;
 		mes "[Magician Whisper]";
-		mes "The " + mesitemlink(12735) + "-Midgarts Kingdom used some kind of magic on a magical gem to store large amounts of information... Using a gem as storage...";
+		mes "The Ancient Rune-Midgarts Kingdom used some kind of magic on a magical gem to store large amounts of information... Using a gem as storage...";
 		next;
 		mes "[Magician Whisper]";
 		mes "Oh, pardon me, you have such a comfortable atmosphere and I involuntarily spoke to you. Who might you be?";
@@ -4255,7 +4255,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 		next;
 		mes "[Magician Whisper]";
 		mes "I almost forgot! You should be careful when you dig for the Gem.";
-		mes "Assassins installed a " + mesitemlink(1065) + " to protect Gems as they bury them.";
+		mes "Assassins installed a trap to protect Gems as they bury them.";
 		completequest 8245;
 		setquest 8246;
 		set ep13_2_rhea,5;
@@ -4325,7 +4325,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 			next;
 			mes "[Magician Whisper]";
 			mes "I almost forgot! You should be careful when you dig for the Gem.";
-			mes "Assassins installed a " + mesitemlink(1065) + " to protect Gems as they bury them.";
+			mes "Assassins installed a trap to protect Gems as they bury them.";
 			close;
 		}
 	}
@@ -4342,7 +4342,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 		mes "Hmm...There's more data than we thought...";
 		next;
 		mes "[Magician Whisper]";
-		mes "Of course it is a " + mesitemlink(539) + " to turn data into magical power and put'em into a gem...Most important thing is, I don't know if there's a jewl that has enough storage space to store that much of data...";
+		mes "Of course it is a piece of cake to turn data into magical power and put'em into a gem...Most important thing is, I don't know if there's a jewl that has enough storage space to store that much of data...";
 		next;
 		mes "[Magician Whisper]";
 		mes "I heard that cold side of a field outside of the Expedition Camp, ^0000ff Mysterious Ore that can't be found in the Midgard.";
@@ -4396,7 +4396,7 @@ mid_camp,147,256,3	script	Rune-Midgarts Magician#1	735,{
 		}
 		else {
 			mes "[Magician Whisper]";
-			mes "I heard that the cold side of the field outside of the Expedition Camp has a " + mesitemlink(6048) + " that can't be found in Midgard.";
+			mes "I heard that the cold side of the field outside of the Expedition Camp has a Unidentified Mineral that can't be found in Midgard.";
 			next;
 			mes "[Magician Whisper]";
 			mes "Only if we could find that ore, it would make this work much easier... What do you think about that? Do you think you could go and find one for me?";
@@ -4667,7 +4667,7 @@ man_in01,372,221,5	script	Scientist#lifeguard	449,{
 			next;
 			mes "[Dr. Lifeguard]";
 			mes "I don't know if it's caused by the cold weather or our chronic disease getting worse.";
-			mes "It hasn't been too long since we administered the " + mesitemlink(6224) + ", so why.";
+			mes "It hasn't been too long since we administered the Bradium, so why.";
 			next;
 			mes "[Dr. Lifeguard]";
 			mes "Huu... You see, we are afraid of such things... What a hard life.";
@@ -4689,18 +4689,18 @@ man_in01,372,221,5	script	Scientist#lifeguard	449,{
 			mes "To heal this rare disease the smartest Sapha studied and studied.";
 			next;
 			mes "[Dr. Lifeguard]";
-			mes "What they found was that by injecting a " + mesitemlink(6090) + ", which is buried around Jotunheim, it can postpone the progression of the disease.";
+			mes "What they found was that by injecting a refined Bradium, which is buried around Jotunheim, it can postpone the progression of the disease.";
 			next;
 			mes "[Dr. Lifeguard]";
-			mes "So all of the giants of Sapha established their towns around mines to get " + mesitemlink(6224) + " easier.";
+			mes "So all of the giants of Sapha established their towns around mines to get Bradium easier.";
 			next;
 			mes "[Dr. Lifeguard]";
-			mes "It seems the amount of buried " + mesitemlink(6224) + " is enough.";
+			mes "It seems the amount of buried Bradium is enough.";
 			mes "But for the eternal prosperity of our tribe, and to make the vaccine for this incurable disease, we have to study more and more.";
 			next;
 			mes "[Dr. Lifeguard]";
-			mes "" + mesitemlink(6224) + " is the " + mesitemlink(905) + " of our life.";
-			mes "But the buried " + mesitemlink(6224) + " will be exhausted someday, so we Scientists have to find an alternative for our descendants.";
+			mes "Bradium is the stem of our life.";
+			mes "But the buried Bradium will be exhausted someday, so we Scientists have to find an alternative for our descendants.";
 			next;
 			mes "[Dr. Lifeguard]";
 			mes "Recently, we've learned that there are various minerals in the human world Midgard.";
@@ -4742,7 +4742,7 @@ man_in01,372,221,5	script	Scientist#lifeguard	449,{
 					case 2: setarray .@rand_dayq$[0],"Abyss Lake","5","3"; break;
 					case 3: setarray .@rand_dayq$[0],"Thor Volcano","5","4"; break;
 				}
-				mes "Recently, someone who came from Schwarzwald gave me a small mineral as a gift from his home town when he saw our study of " + mesitemlink(6224) + ".";
+				mes "Recently, someone who came from Schwarzwald gave me a small mineral as a gift from his home town when he saw our study of Bradium.";
 				next;
 				mes "[Dr. Lifeguard]";
 				mes "I can't say for sure until now,";
@@ -4771,8 +4771,8 @@ man_in01,372,221,5	script	Scientist#lifeguard	449,{
 				mes "I think ^FF0000"+.@rand_dayq$[1]+"^000000 would be enough.";
 				next;
 				mes "[Dr. Lifeguard]";
-				mes "I'll give you this " + mesitemlink(6076) + ".";
-				mes "Things like a detector and a little " + mesitemlink(1354) + " for mining minerals are included in this toolbox.";
+				mes "I'll give you this portable toolbox.";
+				mes "Things like a detector and a little hammer for mining minerals are included in this toolbox.";
 				next;
 				mes "[Dr. Lifeguard]";
 				mes "Take it, it shold be";
@@ -4839,7 +4839,7 @@ function	script	find_13_2	{
 		case 2: setarray .@Check[0],4,5; set .@str$,"Thor Volcano"; break;
 	}
 	if (ep13_2_tre != .@Check[0] || countitem(6076) != 1 || countitem(6077) >= .@Check[1]) end;
-	mes "- Just arrived at "+.@str$+". I think I can find the mineral by using the Mineral Detector in the " + mesitemlink(6076) + ". -";
+	mes "- Just arrived at "+.@str$+". I think I can find the mineral by using the Mineral Detector in the Portable Toolbox. -";
 	next;
 	switch(select("Check current location.:Do nothing.")) {
 		case 1:
@@ -5543,9 +5543,9 @@ spl_in01,30,324,3	script	High Laphine#grenouille	446,{
 				mes "of Alfheim.";
 				next;
 				mes "[Grenouille]";
-				mes "I'll make the " + mesitemlink(712) + " of";
+				mes "I'll make the flower of";
 				mes "Alfheim open with the seed.";
-				mes "The " + mesitemlink(712) + " of their hometown.";
+				mes "The flower of their hometown.";
 				next;
 				mes "[Grenouille]";
 				mes "There are some devices that purify";
@@ -5553,10 +5553,10 @@ spl_in01,30,324,3	script	High Laphine#grenouille	446,{
 				mes "that can hasten the growth of plants.";
 				next;
 				mes "[Grenouille]";
-				mes "Please bring me the " + mesitemlink(6079) + " that bloomed by the device.";
+				mes "Please bring me the flower of Alfheim that bloomed by the device.";
 				next;
 				mes "[Grenouille]";
-				mes "The " + mesitemlink(6079) + " is not";
+				mes "The flower of Alfheim is not";
 				mes "strong enough to keep it's life by";
 				mes "depending on the Splendide device,";
 				mes "but ^FF0000the way^000000 can fill";
@@ -5587,7 +5587,7 @@ spl_in01,30,324,3	script	High Laphine#grenouille	446,{
 					next;
 					mes "[Grenouille]";
 					mes "For now, I'll extract a liquid that";
-					mes "includes the scent of this " + mesitemlink(712) + " by using a distiller.";
+					mes "includes the scent of this flower by using a distiller.";
 					mes "Making a ^3131FFPerfume^000000.";
 					next;
 					mes "[Grenouille]";
@@ -5599,7 +5599,7 @@ spl_in01,30,324,3	script	High Laphine#grenouille	446,{
 				}
 				else {
 					mes "[Grenouille]";
-					mes "Where is the " + mesitemlink(712) + "?";
+					mes "Where is the flower?";
 					close;
 				}
 			}
@@ -5714,7 +5714,7 @@ spl_in02,139,65,3	script	Middle-Ranked Laphine#la	438,{
 		}
 		if (ep13_2_tre1 == 1) {
 			mes "[Flowery]";
-			mes "Huh? Seed of the " + mesitemlink(6079) + "?";
+			mes "Huh? Seed of the flower of Alfheim?";
 			mes "Do I have that one? Hmm~";
 			next;
 			mes "[Flowery]";
@@ -5749,12 +5749,12 @@ spl_in02,139,65,3	script	Middle-Ranked Laphine#la	438,{
 			mes "Hmm... But this one is";
 			mes "one of the most common and trifle";
 			mes "kind in Alfheim, so you can find";
-			mes "this " + mesitemlink(10009) + " at anywhere...";
+			mes "this wild flower at anywhere...";
 			mes "This one would be ok?";
 			next;
 			mes "[Flowery]";
 			mes "Umm.. But I don't have";
-			mes "any other seed of " + mesitemlink(712) + "..";
+			mes "any other seed of flower..";
 			mes "So, just bring this, here you are~";
 			set ep13_2_tre1,2;
 			getitem 7193,1; //Germinating_Sprout
@@ -5793,7 +5793,7 @@ spl_in02,139,65,3	script	Middle-Ranked Laphine#la	438,{
 			specialeffect2 EF_HEALSP;
 			next;
 			mes "- When the lights gone,";
-			mes "a big " + mesitemlink(6079) + " was lied";
+			mes "a big flower of Alfheim was lied";
 			mes "in your hand, instead of the seed. -";
 			delitem 7193,1; //Germinating_Sprout
 			set ep13_2_tre1,3;
@@ -6298,7 +6298,7 @@ mid_camp,283,198,5	script	Bazett Teablack#ep13bs	883,{
 			next;
 			mes "[Industrious Man]";
 			mes "Uh!! Wait!!";
-			mes "Your " + mesitemlink(1811) + "... Is that..?!";
+			mes "Your finger... Is that..?!";
 			next;
 			mes " - He grabs your hand with a surprised look -";
 			next;
@@ -6518,7 +6518,7 @@ mid_camp,283,198,5	script	Bazett Teablack#ep13bs	883,{
 	if (ep13_2_busut == 2) {
 		mes "[Bazett]";
 		mes "Um... for today can you search for giants in the Manuk Field?";
-		mes "That place is pretty cold so, you might need a " + mesitemlink(2309) + ".";
+		mes "That place is pretty cold so, you might need a coat.";
 		next;
 		mes "[Bazett]";
 		mes "I used this note so it should still be useful. Take it...";
@@ -6713,7 +6713,7 @@ manuk,193,135,0	script	Worker#ep13bs	454,{
 				mes "Anyway my name is ^0000FFGill^000000.";
 				next;
 				mes "[Gill]";
-				mes "I need something to fix the tent with, if you can get^0000FF 30 " + mesitemlink(1825) + "^000000, I can make them into sturdy enough screws.";
+				mes "I need something to fix the tent with, if you can get^0000FF 30 Horn of Hillslion^000000, I can make them into sturdy enough screws.";
 				next;
 				mes "[Gill]";
 				mes "Sorry, again for making you do this but I will be waiting here for you.";
@@ -6738,7 +6738,7 @@ manuk,193,135,0	script	Worker#ep13bs	454,{
 				}
 				else {
 					mes "[Gill]";
-					mes "Sorry, again for making you do this but I will be waiting here for you to bring back the^0000FF 30 " + mesitemlink(947) + " of Hillslions.^000000.";
+					mes "Sorry, again for making you do this but I will be waiting here for you to bring back the^0000FF 30 Horn of Hillslions.^000000.";
 					close;
 				}
 			}

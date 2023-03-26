@@ -96,7 +96,7 @@ rachel,124,132,1	script	Citizen#1 	921,{
 	mes "[Citizen]";
 	mes "May Freya bless";
 	mes "you, and give you an";
-	mes "" + mesitemlink(6069) + " of health,";
+	mes "abundance of health,";
 	mes "wealth, joy, and happiness!";
 	next;
 	mes "[Citizen]";
@@ -142,7 +142,7 @@ rachel,144,243,5	script	Cheshrumnir Guard::ChesGuard	934,{
 	mes "by our pope, Freya's mortal";
 	mes "incarnation. In respect for";
 	mes "her Excellency, I expect you";
-	mes "to enter with a pious " + mesitemlink(7855) + ".";
+	mes "to enter with a pious heart.";
 	close;
 }
 
@@ -324,7 +324,7 @@ rachel,197,137,3	script	Bard#aru	51,{
 	mes "I've wandered this";
 	mes "land, singing my songs~";
 	mes "Searching for someone";
-	mes "for my " + mesitemlink(7855) + " longs~";
+	mes "for my heart longs~";
 	next;
 	mes "[Bard]";
 	mes "Can I fulfill this hope~?";
@@ -377,7 +377,7 @@ ra_temin,287,88,7	script	Follower Lekua	926,{
 	mes "Look at these flowers.";
 	mes "Aren't they so beautiful?";
 	mes "I've spent a lot of time";
-	mes "cultivating this " + mesitemlink(712) + " garden.";
+	mes "cultivating this flower garden.";
 	next;
 	mes "[Follower Lekua]";
 	mes "I think it's Freya's";
@@ -653,7 +653,7 @@ airplane,238,54,7	script	Adventurer	4_M_ORIENT01,{
 		mes "[Adventurer]";
 		mes "Another buddy of mine?";
 		mes "Not so lucky. He got a";
-		mes "" + mesitemlink(547) + "...";
+		mes "Condensed White Potion...";
 		mes "Yeah, I don't blame him for";
 		mes "feeling a little gypped, but he";
 		mes "donated for a good cause, right?";

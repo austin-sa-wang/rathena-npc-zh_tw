@@ -294,7 +294,7 @@ yuno_in02,93,207,1	script	Book of Ymir	111,{
 			mes "[The Book of Ymir]";
 			mes "Valkyrie...";
 			mes "The legendary";
-			mes "" + mesitemlink(12313) + ".";
+			mes "guardian angel.";
 			mes "Angel of Ragnarok.";
 			next;
 			mes "[The Book of Ymir]";
@@ -312,11 +312,11 @@ yuno_in02,93,207,1	script	Book of Ymir	111,{
 			mes "with energy...";
 			next;
 			mes "[The Book of Ymir]";
-			mes "And their souls will be given abilities with the " + mesitemlink(7855) + " of Ymir. However, the " + mesitemlink(7855) + " of Ymir was totally destroyed and scattered all over the world after the battle for Rune-Midgarts.";
+			mes "And their souls will be given abilities with the heart of Ymir. However, the heart of Ymir was totally destroyed and scattered all over the world after the battle for Rune-Midgarts.";
 			next;
 			mes "[The Book of Ymir]";
 			mes "I have found a small amount of";
-			mes "Ymir " + mesitemlink(7855) + " pieces over a long";
+			mes "Ymir heart pieces over a long";
 			mes "long period of time. But I can't";
 			mes "confirm if the story of Valkyrie";
 			mes "and Valhalla is true just";

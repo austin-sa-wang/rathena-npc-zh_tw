@@ -210,11 +210,11 @@ prt_church,97,100,4	script	Wedding Staff#w	71,{
 			mes "So you'd like to get married?";
 			mes "As a groom, you need to prepare";
 			if (.@covenant) {
-				mes "^3377FF1 " + mesitemlink(7170) + "^000000 and give me your ^3377FF1 Marriage Covenant^000000.";
+				mes "^3377FF1 Tuxedo^000000 and give me your ^3377FF1 Marriage Covenant^000000.";
 				mes "Brides have to provide their own Wedding Dresses and pay a fee";
 				mes "of 1,200,000 zeny or also bring a Marriage Covenant.";
 			} else {
-				mes "^3377FF1 " + mesitemlink(7170) + "^000000 and pay ^3377FF1,300,000 zeny^000000.";
+				mes "^3377FF1 Tuxedo^000000 and pay ^3377FF1,300,000 zeny^000000.";
 				mes "Brides have to provide their own Wedding Dresses and pay a fee";
 				mes "of 1,200,000 zeny.";
 			}
@@ -223,18 +223,18 @@ prt_church,97,100,4	script	Wedding Staff#w	71,{
 			mes "So you'd like to get married?";
 			mes "As a bride, you need to prepare";
 			if (.@covenant) {
-				mes "^3377FF1 " + mesitemlink(2338) + "^000000 and give me your ^3377FFMarriage Covenant^000000.";
-				mes "Grooms must bring a " + mesitemlink(7170) + " and pay";
+				mes "^3377FF1 Wedding Dress^000000 and give me your ^3377FFMarriage Covenant^000000.";
+				mes "Grooms must bring a Tuxedo and pay";
 				mes "1,300,000 zeny or also bring a Marriage Covenant.";
 			} else {
-				mes "^3377FF1 " + mesitemlink(2338) + "^000000 and pay a fee of 1,200,000 zeny. Grooms must";
-				mes "bring a " + mesitemlink(7170) + " and pay 1,300,000 zeny to get married.";
+				mes "^3377FF1 Wedding Dress^000000 and pay a fee of 1,200,000 zeny. Grooms must";
+				mes "bring a Tuxedo and pay 1,300,000 zeny to get married.";
 			}
 		}
 		next;
 		mes "[Marry Happy]";
 		mes "Brides and grooms also need";
-		mes "to have ^3377FF1 " + mesitemlink(2613) + "^000000 to be";
+		mes "to have ^3377FF1 Diamond Ring^000000 to be";
 		mes "exchanged with their partners.";
 		mes "You'll need all of these items";
 		mes "prepared when you submit your";
@@ -283,7 +283,7 @@ prt_church,97,100,4	script	Wedding Staff#w	71,{
 			else if (countitem(2613) < 1) {
 				mes "[Marry Happy]";
 				mes "Mm? Did you forget to";
-				mes "bring the " + mesitemlink(2613) + "";
+				mes "bring the Diamond Ring";
 				mes "to exchange with your partner";
 				mes "during the wedding ceremony?";
 				mes "Look for it carefully and come";
@@ -305,7 +305,7 @@ prt_church,97,100,4	script	Wedding Staff#w	71,{
 				else if (countitem(2338) < 1) {
 					mes "[Marry Happy]";
 					mes "Oh dear, did you forget";
-					mes "your " + mesitemlink(2338) + "?";
+					mes "your Wedding Dress?";
 					mes "Hurry and find it, then";
 					mes "bring it to me-- you";
 					mes "absolutely need it";
@@ -326,7 +326,7 @@ prt_church,97,100,4	script	Wedding Staff#w	71,{
 				}
 				else if (countitem(7170) < 1) {
 					mes "[Marry Happy]";
-					mes "Where's your " + mesitemlink(7170) + "?";
+					mes "Where's your Tuxedo?";
 					mes "You absolutely have to";
 					mes "wear it during the wedding";
 					mes "ceremony! Find it, bring it";
@@ -771,7 +771,7 @@ prt_church,100,128,4	script	Bishop#w	60,{
 								mes "you've changed your";
 								mes "mind. Although I feel";
 								mes "sorry for the groom, you";
-								mes "must do what your " + mesitemlink(7855) + "";
+								mes "must do what your heart";
 								mes "tells you is right. Now, run!";
 							}
 							set $@wed_groom$,"";
@@ -913,7 +913,7 @@ prt_church,20,179,4	script	Divorce Staff	71,{
 	mes "Great, you know the";
 	mes "password! Now, did you";
 	mes "want me to remove the";
-	mes "" + mesitemlink(2634) + " in your";
+	mes "Wedding Ring in your";
 	mes "inventory?";
 	next;
 	switch(select("Drop 1 Wedding Ring.:Keep it.")) {
@@ -926,7 +926,7 @@ prt_church,20,179,4	script	Divorce Staff	71,{
 		} else {
 			mes "[Bad Ending]";
 			mes "I couldn't find";
-			mes "the " + mesitemlink(2634) + "...";
+			mes "the Wedding Ring...";
 			mes "Please make sure";
 			mes "that it's not equipped.";
 		}
@@ -960,7 +960,7 @@ prt_church,22,179,4	script	Remarry Staff	71,{
 		mes "[Wedding Again]";
 		mes "Hmm...";
 		mes "I can only create";
-		mes "a " + mesitemlink(2634) + " if the";
+		mes "a Wedding Ring if the";
 		mes "character is married.";
 		close;
 	}
@@ -968,7 +968,7 @@ prt_church,22,179,4	script	Remarry Staff	71,{
 	mes "Ah, I see that you";
 	mes "know the password.";
 	mes "Alright, if you somehow";
-	mes "lost your " + mesitemlink(2634) + ",";
+	mes "lost your Wedding Ring,";
 	mes "I can make you a new one.";
 	next;
 	switch(select("Make new Wedding Ring.:Cancel.")) {
@@ -978,7 +978,7 @@ prt_church,22,179,4	script	Remarry Staff	71,{
 			mes "[Wedding Again]";
 			mes "Wait, wait...";
 			mes "You're wearing your";
-			mes "" + mesitemlink(2634) + ". I better";
+			mes "Wedding Ring. I better";
 			mes "not make you another since";
 			mes "you don't need more than one.";
 		} else {
@@ -986,13 +986,13 @@ prt_church,22,179,4	script	Remarry Staff	71,{
 			mes "[Wedding Again]";
 			mes "Here you go~";
 			mes "It's your brand";
-			mes "new " + mesitemlink(2634) + "!";
+			mes "new Wedding Ring!";
 		}
 		close;
 	case 2:
 		mes "[Wedding Again]";
 		mes "Alright. If you ever";
-		mes "lose your " + mesitemlink(2634) + ",";
+		mes "lose your Wedding Ring,";
 		mes "come to me if you happen";
 		mes "to need a new one, okay?";
 		close;

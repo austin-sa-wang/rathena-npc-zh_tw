@@ -85,7 +85,7 @@
 						mes "[" + .@name$ + "]";
 						mes "The next step for";
 						mes "you is to take this, the";
-						mes "''" + mesitemlink(7240) + ".'' If this";
+						mes "''Spirit of Trust.'' If this";
 						mes "guild is going to be solid,";
 						mes "you need to think how much";
 						mes "trust there is in the guild.";
@@ -101,7 +101,7 @@
 						mes "must carry out this task.";
 						next;
 						mes "[" + .@name$ + "]";
-						mes "The " + mesitemlink(7240) + " must";
+						mes "The Spirit of Trust must";
 						mes "be delivered to ^4D4DFF" + .@name3$ + "^000000,";
 						mes "so don't forget to relay";
 						mes "that information to your";
@@ -142,7 +142,7 @@
 						mes "[" + .@name$ + "]";
 						mes "The next step for";
 						mes "you is to take this, the";
-						mes "''" + mesitemlink(7240) + ".'' If this";
+						mes "''Spirit of Trust.'' If this";
 						mes "guild is going to be solid,";
 						mes "you need to think how much";
 						mes "trust there is in the guild.";
@@ -158,7 +158,7 @@
 						mes "must carry out this task.";
 						next;
 						mes "[" + .@name$ + "]";
-						mes "The " + mesitemlink(7240) + " must";
+						mes "The Spirit of Trust must";
 						mes "be delivered to ^4D4DFF" + .@name3$ + "^000000,";
 						mes "so don't forget to relay";
 						mes "that information to your";
@@ -198,7 +198,7 @@
 					mes "[" + .@name$ + "]";
 					mes "The next step for";
 					mes "you is to take this, the";
-					mes "''" + mesitemlink(7240) + ".'' If this";
+					mes "''Spirit of Trust.'' If this";
 					mes "guild is going to be solid,";
 					mes "you need to think how much";
 					mes "trust there is in the guild.";
@@ -214,7 +214,7 @@
 					mes "must carry out this task.";
 					next;
 					mes "[" + .@name$ + "]";
-					mes "The " + mesitemlink(7240) + " must";
+					mes "The Spirit of Trust must";
 					mes "be delivered to ^4D4DFFY" + .@name3$ + "^000000,";
 					mes "so don't forget to relay";
 					mes "that information to your";
@@ -273,7 +273,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Please dispatch a Rogue";
 					mes "or Stalker to bring this";
-					mes "" + mesitemlink(7246) + " to ^4D4DFF" + .@name4$ + "^000000.";
+					mes "Spirit of Peace to ^4D4DFF" + .@name4$ + "^000000.";
 					mes "If you don't know any Rogues";
 					mes "or Stalkers, then it would be";
 					mes "prudent for you to meet one.";
@@ -375,7 +375,7 @@
 					next;
 					mes "[" + .@name$ + "]";
 					mes "This Knight should take";
-					mes "the " + mesitemlink(7234) + " over";
+					mes "the Spirit of Guild over";
 					mes "to ^4D4DFF" + .@name2$ + "^000000. Good luck, and";
 					mes "may the gods be with you.";
 					close;
@@ -400,7 +400,7 @@
 					next;
 					mes "[" + .@name$ + "]";
 					mes "When you do find a Knight,";
-					mes "give him the " + mesitemlink(7234) + "";
+					mes "give him the Spirit of Guild";
 					mes "and ask him to find " + .@name2$ + "";
 					mes "since he will conducting";
 					mes "the trial. Good luck";
@@ -463,7 +463,7 @@
 					mes "trouble finding " + .@name3$ + ".";
 					mes "Make sure that you have";
 					mes "a Sage or Scholar friend";
-					mes "give that " + mesitemlink(7240) + " to";
+					mes "give that Spirit of Trust to";
 					mes "him once you locate him.";
 					close;
 				}
@@ -474,7 +474,7 @@
 					mes "of Friendship? Good work.";
 					mes "You must now recognize the";
 					mes "value of teamwork. Please give";
-					mes "the " + mesitemlink(7245) + " to me.";
+					mes "the Spirit of Friendship to me.";
 					next;
 					mes "[" + .@name$ + "]";
 					mes "Now, please take this";
@@ -553,7 +553,7 @@
 				if (countitem(7246) > 0) {
 					mes "[" + .@name$ + "]";
 					mes "You still have the";
-					mes "" + mesitemlink(7246) + "? If you";
+					mes "Spirit of Peace? If you";
 					mes "don't have any Rogues or";
 					mes "Stalkers in your guild, now";
 					mes "would be the time to recruit";
@@ -564,7 +564,7 @@
 					mes "[" + .@name$ + "]";
 					mes "I see that you've completed";
 					mes "the last test and received";
-					mes "the " + mesitemlink(7251) + ". Heh.";
+					mes "the Spirit of Victory. Heh.";
 					mes "Victory is the natural result";
 					mes "when your guild works together";
 					mes "in harmony as a united team.";
@@ -725,7 +725,7 @@
 				}
 				else {
 					mes "[" + .@name$ + "]";
-					mes "The " + mesitemlink(7234) + " is";
+					mes "The Spirit of Guild is";
 					mes "useless unless it is in the";
 					mes "hands of a Knight or Lord";
 					mes "Knight. You should speak";
@@ -754,7 +754,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Hello," + strcharinfo(0) + ".";
 					mes "Ah, I see that you have";
-					mes "the " + mesitemlink(7235) + ".";
+					mes "the Spirit of Charge.";
 					mes "Heh heh, it's always exciting";
 					mes "to charge into battle, isn't";
 					mes "it? Well then, do your best.";
@@ -766,7 +766,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name2$ + " knows more about the";
-					mes "" + mesitemlink(7235) + ", so you should";
+					mes "Spirit of Charge, so you should";
 					mes "ask him more about that spirit.";
 					close;
 				}
@@ -791,7 +791,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Hello, " + strcharinfo(0) + ".";
 					mes "I see that you posess";
-					mes "the " + mesitemlink(7237) + ".";
+					mes "the Spirit of Association.";
 					mes "Good luck with your test.";
 					close;
 				}
@@ -802,7 +802,7 @@
 					mes "hands of the right person.";
 					mes "Talk to " + .@name2$ + " if you want";
 					mes "to know more about the";
-					mes "" + mesitemlink(7237) + ".";
+					mes "Spirit of Association.";
 					close;
 				}
 			}
@@ -826,7 +826,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Hello, " + strcharinfo(0) + ".";
 					mes "I see that you posess";
-					mes "the " + mesitemlink(7238) + ".";
+					mes "the Spirit of Coordination.";
 					mes "Good luck on your test.";
 					close;
 				}
@@ -836,7 +836,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name2$ + " will know more about";
-					mes "the " + mesitemlink(7238) + "";
+					mes "the Spirit of Coordination";
 					mes "so you should consult him.";
 					close;
 				}
@@ -857,7 +857,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name2$ + " will know more about";
-					mes "the " + mesitemlink(7239) + " so";
+					mes "the Spirit of Advance so";
 					mes "you should consult him.";
 					close;
 				}
@@ -867,7 +867,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Hello, " + strcharinfo(0) + ".";
 					mes "I see that you possess";
-					mes "the " + mesitemlink(7240) + ".";
+					mes "the Spirit of Trust.";
 					mes "Good luck, and do not";
 					mes "fail the trust placed in";
 					mes "you by your guild.";
@@ -879,7 +879,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name3$ + " will know more";
-					mes "about the " + mesitemlink(7240) + "";
+					mes "about the Spirit of Trust";
 					mes "so you should consult him.";
 					close;
 				}
@@ -905,7 +905,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "I see that you have the";
-					mes "" + mesitemlink(7241) + ". Always keep";
+					mes "Spirit of Union. Always keep";
 					mes "in mind that the strength of";
 					mes "your guild is directly";
 					mes "related to its unity.";
@@ -917,7 +917,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name3$ + " will know more";
-					mes "about the " + mesitemlink(7241) + "";
+					mes "about the Spirit of Union";
 					mes "so you should consult him.";
 					close;
 				}
@@ -955,7 +955,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name3$ + " will know more about";
-					mes "the " + mesitemlink(7242) + " so";
+					mes "the Spirit of Combination so";
 					mes "you should consult him.";
 					close;
 				}
@@ -993,7 +993,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name3$ + " will know more";
-					mes "about the " + mesitemlink(7244) + "";
+					mes "about the Spirit of Solidarity";
 					mes "so you should consult him.";
 					close;
 				}
@@ -1004,7 +1004,7 @@
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "congratulations on a job";
 					mes "well done. Please give the";
-					mes "" + mesitemlink(7245) + " to your";
+					mes "Spirit of Friendship to your";
 					mes "guild master to continue";
 					mes "the guild testing.";
 					close;
@@ -1015,7 +1015,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name3$ + " will know more";
-					mes "about the " + mesitemlink(7245) + "";
+					mes "about the Spirit of Friendship";
 					mes "so you should consult him.";
 					close;
 				}
@@ -1025,7 +1025,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "I see that you have the";
-					mes "" + mesitemlink(7246) + ". Please";
+					mes "Spirit of Peace. Please";
 					mes "do your best for the sake";
 					mes "of the guild, though I do not";
 					mes "doubt you'll pass this test.";
@@ -1037,7 +1037,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name4$ + " will know more";
-					mes "about the " + mesitemlink(7246) + "";
+					mes "about the Spirit of Peace";
 					mes "so you should consult him.";
 					close;
 				}
@@ -1063,7 +1063,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "please take good care of";
-					mes "that " + mesitemlink(7247) + ".";
+					mes "that Spirit of Determination.";
 					close;
 				}
 				else {
@@ -1072,7 +1072,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name4$ + " will know more about";
-					mes "the " + mesitemlink(7247) + "";
+					mes "the Spirit of Determination";
 					mes "so you should consult him.";
 					close;
 				}
@@ -1098,7 +1098,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "please take good care";
-					mes "of that " + mesitemlink(7249) + ".";
+					mes "of that Spirit of Service.";
 					close;
 				}
 				else {
@@ -1107,7 +1107,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name4$ + " will know more about";
-					mes "the " + mesitemlink(7249) + " so";
+					mes "the Spirit of Service so";
 					mes "you should consult him.";
 					close;
 				}
@@ -1133,7 +1133,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "please take good care";
-					mes "of that " + mesitemlink(7250) + ".";
+					mes "of that Spirit of Glory.";
 					close;
 				}
 				else {
@@ -1142,7 +1142,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name4$ + " will know more about";
-					mes "the " + mesitemlink(7250) + " so you";
+					mes "the Spirit of Glory so you";
 					mes "should consult him.";
 					close;
 				}
@@ -1153,7 +1153,7 @@
 					mes "Ah, " + strcharinfo(0) + ",";
 					mes "congratulations on a job";
 					mes "well done. Please give";
-					mes "the " + mesitemlink(7251) + " to your";
+					mes "the Spirit of Victory to your";
 					mes "guild master. That's it for now.";
 					mes "Good luck to you in the future.";
 					close;
@@ -1164,7 +1164,7 @@
 					mes "useful if it's not in the";
 					mes "hands of the right person.";
 					mes "" + .@name4$ + " will know more about";
-					mes "the " + mesitemlink(7251) + " so you";
+					mes "the Spirit of Victory so you";
 					mes "should consult him.";
 					close;
 				}
@@ -1295,7 +1295,7 @@
 					mes "[" + .@name$ + "]";
 					mes "^FF000030 Worn Out Pages^000000,";
 					mes "^FF000030 Round Shells^000000, and";
-					mes "^FF000030 " + mesitemlink(1017) + "^000000.";
+					mes "^FF000030 Mole Whiskers^000000.";
 					mes "That shouldn't be too";
 					mes "hard now, right?";
 					delitem 7234,1; //Soul_Of_Guild
@@ -1359,7 +1359,7 @@
 				mes "to bring me? I wanted";
 				mes "^FF000030 Worn Out Pages^000000,";
 				mes "^FF000030 Round Shells^000000, and";
-				mes "^FF000030 " + mesitemlink(1017) + "^000000.";
+				mes "^FF000030 Mole Whiskers^000000.";
 				mes "Don't forget this time.";
 				close;
 			}
@@ -1633,7 +1633,7 @@
 			if ((guildrelay_q == 88) && (countitem(7235) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7235) + " to";
+				mes "Spirit of Charge to";
 				mes "a ^FF0000Blacksmith^000000 or ^FF0000Mastersmith^000000.";
 				mes "It won't do any good in the";
 				mes "hands of anybody else.";
@@ -1652,7 +1652,7 @@
 			if ((guildrelay_q == 87) && (countitem(7237) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7237) + " to";
+				mes "Spirit of Association to";
 				mes "an ^FF0000Alchemist^000000 or ^FF0000Biochemist^000000.";
 				mes "It won't do any good in the";
 				mes "hands of anybody else.";
@@ -1671,7 +1671,7 @@
 			if ((guildrelay_q == 86) && (countitem(7238) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7238) + "";
+				mes "Spirit of Coordination";
 				mes "to a ^FF0000Hunter^000000 or ^FF0000Sniper^000000.";
 				mes "It won't do any good in the";
 				mes "hands of anybody else.";
@@ -1689,7 +1689,7 @@
 			if ((guildrelay_q == 85) && (countitem(7239) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7239) + "";
+				mes "Spirit of Advance";
 				mes "to your ^FF0000guild master^000000.";
 				mes "It won't do any good in the";
 				mes "hands of anybody else.";
@@ -2099,7 +2099,7 @@
 			if ((BaseJob == Job_Assassin) && (countitem(7242) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "You brought the";
-				mes "" + mesitemlink(7242) + "?";
+				mes "Spirit of Combination?";
 				mes "Make sure that you give";
 				mes "that to a ^2F4F2FWizard^000000 or";
 				mes "a ^2F4F2FHigh Wizard^000000.";
@@ -2173,7 +2173,7 @@
 					mes "Acknowledge the extent and";
 					mes "limits of your strength, but";
 					mes "never allow conceit to pollute";
-					mes "your " + mesitemlink(7855) + ". Pride will always";
+					mes "your heart. Pride will always";
 					mes "shackle your power if you";
 					mes "let it. Remember humility.";
 					next;
@@ -2469,7 +2469,7 @@
 				mes "[" + .@name$ + "]";
 				mes "So you're the one that's";
 				mes "been entrusted with the";
-				mes "" + mesitemlink(7246) + "? Well then...";
+				mes "Spirit of Peace? Well then...";
 				mes "My task for you is to ^FF0000form";
 				switch(rand(1,3)) {
 				case 1:
@@ -2604,7 +2604,7 @@
 			if ((BaseJob == Job_Priest) && (countitem(7247) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Good work getting the";
-				mes "" + mesitemlink(7247) + ",";
+				mes "Spirit of Determination,";
 				mes "but I want you to work on";
 				mes "getting stronger. If you";
 				mes "intend to protect others,";
@@ -2746,7 +2746,7 @@
 			if ((BaseJob == Job_Crusader) && (countitem(7249) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "I see that you possess";
-				mes "the " + mesitemlink(7249) + ". Hmm.";
+				mes "the Spirit of Service. Hmm.";
 				mes "Good job. Now, your next";
 				mes "task will test your patience.";
 				mes "All you have to do is ^FF0000wait^000000.";
@@ -2778,7 +2778,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Yes. You've come at just";
 					mes "the right time. Remember";
-					mes "that feeling in your " + mesitemlink(7855) + ",";
+					mes "that feeling in your heart,";
 					mes "and trust it when it comes";
 					mes "again. Now give this spirit to";
 					mes "a ^FF0000Monk^000000 or ^FF0000Champion^000000 for me...";
@@ -2791,7 +2791,7 @@
 					mes "Too early.";
 					mes "Still too early.";
 					mes "Have you been listening";
-					mes "to your " + mesitemlink(7855) + "? Listen harder.";
+					mes "to your heart? Listen harder.";
 					close;
 				}
 			}
@@ -2800,7 +2800,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Yes. You've come at just";
 					mes "the right time. Remember";
-					mes "that feeling in your " + mesitemlink(7855) + ",";
+					mes "that feeling in your heart,";
 					mes "and trust it when it comes";
 					mes "again. Now give this spirit to";
 					mes "a ^FF0000Monk^000000 or ^FF0000Champion^000000 for me...";
@@ -2813,7 +2813,7 @@
 					mes "Too early.";
 					mes "Still too early.";
 					mes "Have you been listening";
-					mes "to your " + mesitemlink(7855) + "? Listen harder.";
+					mes "to your heart? Listen harder.";
 					close;
 				}
 			}
@@ -2822,7 +2822,7 @@
 					mes "[" + .@name$ + "]";
 					mes "Yes. You've come at just";
 					mes "the right time. Remember";
-					mes "that feeling in your " + mesitemlink(7855) + ",";
+					mes "that feeling in your heart,";
 					mes "and trust it when it comes";
 					mes "again. Now give this spirit to";
 					mes "a ^FF0000Monk^000000 or ^FF0000Champion^000000 for me...";
@@ -2835,7 +2835,7 @@
 					mes "Too early.";
 					mes "Still too early.";
 					mes "Have you been listening";
-					mes "to your " + mesitemlink(7855) + "? Listen harder.";
+					mes "to your heart? Listen harder.";
 					close;
 				}
 			}
@@ -2843,7 +2843,7 @@
 				mes "[" + .@name$ + "]";
 				mes "Yes. You've come at just";
 				mes "the right time. Remember";
-				mes "that feeling in your " + mesitemlink(7855) + ",";
+				mes "that feeling in your heart,";
 				mes "and trust it when it comes";
 				mes "again. Now give this spirit to";
 				mes "a ^FF0000Monk^000000 or ^FF0000Champion^000000 for me...";
@@ -2921,7 +2921,7 @@
 			if ((BaseJob == Job_Monk) && (guildrelay_q == 23)) {
 				mes "[" + .@name$ + "]";
 				mes "You have to give ^FF0000Transparent Celestial Robe ^00000030ea,";
-				mes "^FF0000Dokebi " + mesitemlink(947) + " ^00000030ea, ^FF0000Fish Tail ^00000030ea.";
+				mes "^FF0000Dokebi Horn ^00000030ea, ^FF0000Fish Tail ^00000030ea.";
 				mes "You know that, right?";
 				mes "Good luck~";
 				close;
@@ -2979,7 +2979,7 @@
 			if ((guildrelay_q == 95) && (countitem(7247) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7247) + "";
+				mes "Spirit of Determination";
 				mes "to a ^FF0000Priest^000000 or ^FF0000High Priest^000000.";
 				mes "You knew that already,";
 				mes "didn't you? Please hurry";
@@ -2999,7 +2999,7 @@
 			if ((guildrelay_q == 98) && (countitem(7249) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7249) + " to";
+				mes "Spirit of Service to";
 				mes "a ^FF0000Crusader^000000 or ^FF0000Paladin^000000.";
 				mes "You knew that already,";
 				mes "didn't you? Please hurry";
@@ -3017,7 +3017,7 @@
 			if ((guildrelay_q == 96) && (countitem(7250) > 0)) {
 				mes "[" + .@name$ + "]";
 				mes "Please give the";
-				mes "" + mesitemlink(7250) + " to";
+				mes "Spirit of Glory to";
 				mes "a ^FF0000Monk^000000 or ^FF0000Champion^000000.";
 				mes "You knew that already,";
 				mes "didn't you? Please hurry";

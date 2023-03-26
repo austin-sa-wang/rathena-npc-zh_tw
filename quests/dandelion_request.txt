@@ -73,7 +73,7 @@ izlude,103,106,3	script	Guildsman#1	48,3,3,{
 			mes "Look, just do me a favor";
 			mes "and do the right thing like";
 			mes "you always do, okay? Here's";
-			mes "a " + mesitemlink(7416) + "";
+			mes "a letter of recommendation";
 			mes "to get you started on this";
 			mes "mission, alright?";
 			set mao_request,1;
@@ -114,7 +114,7 @@ izlude,103,106,3	script	Guildsman#1	48,3,3,{
 			mes "Super Novices, Priests...";
 			mes "You name it. This is gonna be";
 			mes "huge. Listen, if you're going";
-			mes "to help, then let me give you this " + mesitemlink(7416) + "...";
+			mes "to help, then let me give you this letter of recommendation...";
 			set mao_request,1;
 			getitem 7416,1;
 			close;
@@ -151,7 +151,7 @@ izlude,103,106,3	script	Guildsman#1	48,3,3,{
 			mes "[Guildsman]";
 			mes "There, that's all it says.";
 			mes "Here, I think you'll need";
-			mes "this " + mesitemlink(7416) + "";
+			mes "this letter of recommendation";
 			mes "if you plan to follow these";
 			mes "orders. I hope you take that";
 			mes "mission for those kids' sake...";
@@ -321,7 +321,7 @@ OnTouch:
 				mes "Look, just do me a favor";
 				mes "and do the right thing like";
 				mes "you always do, okay? Here's";
-				mes "a " + mesitemlink(7416) + "";
+				mes "a letter of recommendation";
 				mes "to get you started on this";
 				mes "mission, alright?";
 				set mao_request,1;
@@ -362,7 +362,7 @@ OnTouch:
 				mes "Super Novices, Priests...";
 				mes "You name it. This is gonna be";
 				mes "huge. Listen, if you're going";
-				mes "to help, then let me give you this " + mesitemlink(7416) + "...";
+				mes "to help, then let me give you this letter of recommendation...";
 				set mao_request,1;
 				getitem 7416,1;
 				close;
@@ -399,7 +399,7 @@ OnTouch:
 				mes "[Guildsman]";
 				mes "There, that's all it says.";
 				mes "Here, I think you'll need";
-				mes "this " + mesitemlink(7416) + "";
+				mes "this letter of recommendation";
 				mes "if you plan to follow these";
 				mes "orders. I hope you take that";
 				mes "mission for those kids' sake...";
@@ -523,7 +523,7 @@ prontera,237,313,3	script	Nun#moc	79,3,3,{
 		mes "as soon as you can.";
 		mes "When you arrive, you";
 		mes "will need the Bishop's";
-		mes "" + mesitemlink(7416) + ",";
+		mes "letter of recommendation,";
 		mes "so please take it now.";
 		set mao_request,1;
 		getitem 7416,1;
@@ -629,7 +629,7 @@ OnTouch:
 				mes "as soon as you can.";
 				mes "When you arrive, you";
 				mes "will need the Bishop's";
-				mes "" + mesitemlink(7416) + ",";
+				mes "letter of recommendation,";
 				mes "so please take it now.";
 				set mao_request,1;
 				getitem 7416,1;
@@ -723,7 +723,7 @@ alberta,129,59,3	script	Guildsman#2	49,3,3,{
 			mes "^71637DSo, go and help the Assassins!^000000";
 			mes " ";
 			mes "Wait, don't forget the";
-			mes "" + mesitemlink(7416) + "!";
+			mes "letter of recommendation!";
 			mes " ";
 			mes "^71637DOh, right! Here, take this!^000000";
 			set mao_request,1;
@@ -761,7 +761,7 @@ alberta,129,59,3	script	Guildsman#2	49,3,3,{
 			mes "children that are missing";
 			mes "from Morocc. If you want to";
 			mes "help them, you'll need this";
-			mes "" + mesitemlink(7416) + ", okay?";
+			mes "letter of recommendation, okay?";
 			set mao_request,1;
 			getitem 7416,1;
 			close;
@@ -781,7 +781,7 @@ alberta,129,59,3	script	Guildsman#2	49,3,3,{
 			mes "has formally requested for our";
 			mes "help in a mission regarding";
 			mes "children that have been missing";
-			mes "from Morocc recently. Here, take this " + mesitemlink(7416) + "...";
+			mes "from Morocc recently. Here, take this letter of recommendation...";
 			next;
 			mes "[Guildsman]";
 			mes "If the Assassin Guild";
@@ -1063,7 +1063,7 @@ OnTouch:
 				mes "^71637DSo, go and help the Assassins!^000000";
 				mes " ";
 				mes "Wait, don't forget the";
-				mes "" + mesitemlink(7416) + "!";
+				mes "letter of recommendation!";
 				mes " ";
 				mes "^71637DOh, right! Here, take this!^000000";
 				set mao_request,1;
@@ -1101,7 +1101,7 @@ OnTouch:
 				mes "children that are missing";
 				mes "from Morocc. If you want to";
 				mes "help them, you'll need this";
-				mes "" + mesitemlink(7416) + ", okay?";
+				mes "letter of recommendation, okay?";
 				set mao_request,1;
 				getitem 7416,1;
 				close;
@@ -1121,7 +1121,7 @@ OnTouch:
 				mes "has formally requested for our";
 				mes "help in a mission regarding";
 				mes "children that have been missing";
-				mes "from Morocc recently. Here, take this " + mesitemlink(7416) + "...";
+				mes "from Morocc recently. Here, take this letter of recommendation...";
 				next;
 				mes "[Guildsman]";
 				mes "If the Assassin Guild";
@@ -1225,7 +1225,7 @@ geffen,123,109,3	script	Academy Staff	742,3,3,{
 		mes "the magic community by";
 		mes "assisting the Assassins";
 		mes "in this mission. Please take";
-		mes "this " + mesitemlink(7416) + ".";
+		mes "this letter of recommendation.";
 		set mao_request,1;
 		getitem 7416,1;
 		next;
@@ -1317,7 +1317,7 @@ OnTouch:
 				mes "the magic community by";
 				mes "assisting the Assassins";
 				mes "in this mission. Please take";
-				mes "this " + mesitemlink(7416) + ".";
+				mes "this letter of recommendation.";
 				set mao_request,1;
 				getitem 7416,1;
 				next;
@@ -1678,7 +1678,7 @@ payon,231,323,3	script	Guildsman#3	59,3,3,{
 			mes "[Guildsman]";
 			mes "If you are interested in";
 			mes "assisting them, please take";
-			mes "this " + mesitemlink(7416) + "";
+			mes "this Letter of Recommendation";
 			mes "and bring it to the contact from the Assassin Guild in Morocc.";
 			set mao_request,1;
 			getitem 7416,1;
@@ -1710,7 +1710,7 @@ payon,231,323,3	script	Guildsman#3	59,3,3,{
 			next;
 			mes "[Guildsman]";
 			mes "Here, please take this";
-			mes "" + mesitemlink(7416) + "";
+			mes "letter of recommendation";
 			mes "and meet with our Asssasin";
 			mes "Guild contact to the west";
 			mes "of the Oasis in Morocc.";
@@ -1782,7 +1782,7 @@ payon,231,323,3	script	Guildsman#3	59,3,3,{
 			mes "[Guildsman]";
 			mes "Anyway, Aile then sent me";
 			mes "out to look for you and give";
-			mes "this " + mesitemlink(7416) + ".";
+			mes "this letter of recommendation.";
 			mes "I guess she thinks you'll do";
 			mes "the best job. So, um, congrats~";
 			set mao_request,1;
@@ -1822,7 +1822,7 @@ payon,231,323,3	script	Guildsman#3	59,3,3,{
 		{
 			mes "[Guildsman]";
 			mes "Please take your";
-			mes "" + mesitemlink(7416) + "";
+			mes "letter of recommendation";
 			mes "and meet with our Asssasin";
 			mes "Guild contact to the west";
 			mes "of the Oasis in Morocc.";
@@ -1951,7 +1951,7 @@ OnTouch:
 				mes "[Guildsman]";
 				mes "If you are interested in";
 				mes "assisting them, please take";
-				mes "this " + mesitemlink(7416) + "";
+				mes "this Letter of Recommendation";
 				mes "and bring it to the contact from the Assassin Guild in Morocc.";
 				set mao_request,1;
 				getitem 7416,1;
@@ -1983,7 +1983,7 @@ OnTouch:
 				next;
 				mes "[Guildsman]";
 				mes "Here, please take this";
-				mes "" + mesitemlink(7416) + "";
+				mes "letter of recommendation";
 				mes "and meet with our Asssasin";
 				mes "Guild contact to the west";
 				mes "of the Oasis in Morocc.";
@@ -2055,7 +2055,7 @@ OnTouch:
 				mes "[Guildsman]";
 				mes "Anyway, Aile then sent me";
 				mes "out to look for you and give";
-				mes "this " + mesitemlink(7416) + ".";
+				mes "this letter of recommendation.";
 				mes "I guess she thinks you'll do";
 				mes "the best job. So, um, congrats~";
 				set mao_request,1;
@@ -2131,7 +2131,7 @@ morocc,43,108,5	script	Sharp-Looking Kid	82,{
 		mes "one I've been waiting for.";
 		mes "Yeah, alright, come on in,";
 		mes "and don't forget to show";
-		mes "the " + mesitemlink(7416) + "";
+		mes "the letter of recommendation";
 		mes "to the Bar Master, okay?";
 		close;
 	}
@@ -2413,8 +2413,8 @@ que_job01,82,95,3	script	Bar Master	46,{
 			mes "[Master]";
 			mes "In this place, I only";
 			mes "serve two drinks. You";
-			mes "want a " + mesitemlink(12112) + " or";
-			mes "a " + mesitemlink(12113) + "?";
+			mes "want a Tropical Sograt or";
+			mes "a Vermilion on the Beach?";
 			next;
 			switch( select( "Tropical Sograt","Vermilion on the Beach","Do you have anything cheaper?" ) )
 			{
@@ -2541,7 +2541,7 @@ que_job01,82,95,3	script	Bar Master	46,{
 					close;
 				}
 				mes "^3355FFYou forgot to bring your";
-				mes "" + mesitemlink(7416) + ".^000000";
+				mes "Letter of Recommendation.^000000";
 				next;
 				mes "[Master]";
 				mes "Alright...";
@@ -2696,7 +2696,7 @@ que_job01,49,49,5	script	Tao	877,{
 			mes "Meow, meow.";
 			mes "It's a long story, meow.";
 			mes "Something about wanting";
-			mes "a " + mesitemlink(2244) + " and hunting";
+			mes "a Big Ribbon and hunting";
 			mes "Wild Roses, meow. It all started when meow, meow, meow, meow...";
 			close;
 	}
@@ -3620,7 +3620,7 @@ que_job01,84,17,3	script	Lin#2-1	885,{
 		mes "to ask Lin to explain everything that I just told her. Excuse me...";
 		next;
 		mes "^3355FFMr. R pulled out a pendant";
-		mes "from his " + mesitemlink(2603) + ", placed it";
+		mes "from his necklace, placed it";
 		mes "against his forehead, and then";
 		mes "quickly mumbled something";
 		mes "before raising his head.^000000";
@@ -3914,7 +3914,7 @@ que_job01,84,17,3	script	Lin#2-1	885,{
 		mes "[R. Moore]";
 		mes "Oh, yes. On your way";
 		mes "back, would you bring";
-		mes "me a " + mesitemlink(12112) + "?";
+		mes "me a Tropical Sograt?";
 		mes "I'm very fond of those.";
 		next;
 		cutin "mocseal_rin01.bmp",2;
@@ -3960,7 +3960,7 @@ que_job01,84,17,3	script	Lin#2-1	885,{
 		mes "bring me a snack ^A9A9A9ME^000000 too.";
 		mes "Do you think you ^A9A9A9AT^000000 can";
 		mes "^A9A9A9THE^000000 get me a glass of, um...";
-		mes "^A9A9A9STAIRS^000000 " + mesitemlink(12113) + "?";
+		mes "^A9A9A9STAIRS^000000 Vermilion on the Beach?";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Snack? Um... That's";
@@ -4165,7 +4165,7 @@ que_job01,79,15,1	script	R	880,{
 		mes "to ask Lin to explain everything that I just told her. Excuse me...";
 		next;
 		mes "^3355FFMr. R pulled out a pendant";
-		mes "from his " + mesitemlink(2603) + ", placed it";
+		mes "from his necklace, placed it";
 		mes "against his forehead, and then";
 		mes "quickly mumbled something";
 		mes "before raising his head.^000000";
@@ -4184,7 +4184,7 @@ que_job01,79,15,1	script	R	880,{
 		mes "your job. Please excuse me...";
 		next;
 		mes "^3355FFMr. R pulled out a pendant";
-		mes "from his " + mesitemlink(2603) + ", placed it";
+		mes "from his necklace, placed it";
 		mes "against his forehead, and then";
 		mes "quickly mumbled something";
 		mes "before raising his head.^000000";
@@ -4464,7 +4464,7 @@ que_job01,79,15,1	script	R	880,{
 		mes "bring me a snack ^A9A9A9ME^000000 too.";
 		mes "Do you think you ^A9A9A9AT^000000 can";
 		mes "^A9A9A9THE^000000 get me a glass of, um...";
-		mes "^A9A9A9STAIRS^000000 " + mesitemlink(12113) + "?";
+		mes "^A9A9A9STAIRS^000000 Vermilion on the Beach?";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Snack? Um... That's";
@@ -4557,7 +4557,7 @@ que_job01,79,15,1	script	R	880,{
 		mes "able to complete my work.";
 		next;
 		mes "^3355FFMr. R pulled out a pendant";
-		mes "from his " + mesitemlink(2603) + ", placed it";
+		mes "from his necklace, placed it";
 		mes "against his forehead, and then";
 		mes "quickly mumbled something";
 		mes "before raising his head.^000000";
@@ -4758,7 +4758,7 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 		next;
 		mes "^3355FFThe representative from";
 		mes "the Dandelion Organization";
-		mes "pulled out a " + mesitemlink(2603) + " pendant";
+		mes "pulled out a necklace pendant";
 		mes "from under his shirt, pressed";
 		mes "it to his forehead, and then";
 		mes "quickly mumbled some words.^000000";
@@ -4986,9 +4986,9 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 		mes "As for the north and east";
 		mes "crest locations, you're on";
 		mes "your own. Anyway, don't forget";
-		mes "to bring a " + mesitemlink(994) + ", Mystic";
-		mes "Frozen, " + mesitemlink(997) + " and";
-		mes "" + mesitemlink(996) + " with you, okay?";
+		mes "to bring a Flame Heart, Mystic";
+		mes "Frozen, Great Nature and";
+		mes "Rough Wind with you, okay?";
 		close2;
 	}
 	else if(mao_request > 12 && mao_request < 16)
@@ -5123,11 +5123,11 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 		cutin "mocseal_dan01.bmp",0;
 		mes "[Dandelion Member]";
 		mes "Oh, this?";
-		mes "It's a " + mesitemlink(12112) + ".";
+		mes "It's a Tropical Sograt.";
 		mes "Trust me, it's delicious.";
 		mes "Here, let me buy you a glass.";
 		mes "Master! Let me have another";
-		mes "glass of " + mesitemlink(12112) + "!";
+		mes "glass of Tropical Sograt!";
 		next;
 		mes "[Master]";
 		mes "Alright, alright~";
@@ -5268,7 +5268,7 @@ que_job01,91,83,3	script	Kidd#hall	884,{
 				if(thana_quest > 1)
 				{
 					mes "[" + strcharinfo(0) + "]";
-					mes "Well, I found some old " + mesitemlink(7201) + "";
+					mes "Well, I found some old log";
 					mes "entries about Satan Morocc.";
 					mes "They pretty much confirm that";
 					mes "Satan Morocc is real, and that";
@@ -5649,7 +5649,7 @@ que_job01,89,85,5	script	Dandelion Member	880,{
 		next;
 		mes "^3355FFThe representative from";
 		mes "the Dandelion Organization";
-		mes "pulled out a " + mesitemlink(2603) + " pendant";
+		mes "pulled out a necklace pendant";
 		mes "from under his shirt, pressed";
 		mes "it to his forehead, and then";
 		mes "quickly mumbled some words.^000000";
@@ -5668,7 +5668,7 @@ que_job01,89,85,5	script	Dandelion Member	880,{
 		next;
 		mes "^3355FFThe representative from";
 		mes "the Dandelion Organization";
-		mes "pulled out a " + mesitemlink(2603) + " pendant";
+		mes "pulled out a necklace pendant";
 		mes "from under his shirt, pressed";
 		mes "it to his forehead, and then";
 		mes "quickly mumbled some words.^000000";
@@ -5827,11 +5827,11 @@ que_job01,89,85,5	script	Dandelion Member	880,{
 		cutin "mocseal_dan01.bmp",0;
 		mes "[Dandelion Member]";
 		mes "Oh, this?";
-		mes "It's a " + mesitemlink(12112) + ".";
+		mes "It's a Tropical Sograt.";
 		mes "Trust me, it's delicious.";
 		mes "Here, let me buy you a glass.";
 		mes "Master! Let me have another";
-		mes "glass of " + mesitemlink(12112) + "!";
+		mes "glass of Tropical Sograt!";
 		next;
 		mes "[Master]";
 		mes "Alright, alright~";
@@ -5853,7 +5853,7 @@ que_job01,89,85,5	script	Dandelion Member	880,{
 	{
 		cutin "mocseal_dan01.bmp",0;
 		mes "[Dandelion Member]";
-		mes "Isn't " + mesitemlink(12112) + "";
+		mes "Isn't Tropical Sograt";
 		mes "so good? I can't believe";
 		mes "Assassins can enjoy this";
 		mes "drink whenever they want~";
@@ -6607,7 +6607,7 @@ que_job01,8,77,1	script	#linstairs	139,3,3,{
 		donpcevent "Lin#stairs::OnEnter";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Well, I found some old " + mesitemlink(7201) + "";
+		mes "Well, I found some old log";
 		mes "entries about Satan Morocc.";
 		mes "They pretty much confirm that";
 		mes "Satan Morocc is real, and that";
@@ -6669,11 +6669,11 @@ moc_fild10,281,148,1	script	Upturned Spot#water	111,{
 		mes "splashing wave of water.^000000";
 		if(countitem(996))
 		{
-			mes "^3355FFYou take out a " + mesitemlink(996) + "";
+			mes "^3355FFYou take out a Rough Wind";
 			mes "to counter the crest's power.^000000";
 			next;
 			mes "^3355FFThe crest responds to";
-			mes "the " + mesitemlink(996) + ", and both";
+			mes "the Rough Wind, and both";
 			mes "objects violent glow in";
 			mes "conflict against each other.^000000";
 			specialeffect EF_BEGINSPELL2;
@@ -6721,12 +6721,12 @@ moc_fild10,281,148,1	script	Upturned Spot#water	111,{
 		cutin "mocseal_ice02.bmp",2;
 		if (countitem(995))
 		{
-			mes "^3355FFYou bring out a " + mesitemlink(995) + "";
+			mes "^3355FFYou bring out a Mystic Frozen";
 			mes "to enhance the crest's power.^000000";
 			next;
 			cutin "mocseal_ice01.bmp",2;
 			mes "^3355FFThe crest resonates";
-			mes "with the " + mesitemlink(995) + ",";
+			mes "with the Mystic Frozen,";
 			mes "suddenly causing the air";
 			mes "to chill and raising the";
 			mes "waves in the oasis.^000000";
@@ -6812,11 +6812,11 @@ moc_fild19,21,33,1	script	Unturned Spot#wind	111,{
 			mes "Okay, the power of the";
 			mes "Earth counteracts the ";
 			mes "Wind. I'll just pull out this";
-			mes "" + mesitemlink(997) + " and... Eh?";
+			mes "Great Nature and... Eh?";
 			next;
 			mes "^3355FFThe Wind elemental crest";
 			mes "quickly responds to the";
-			mes "" + mesitemlink(997) + " stone.^000000";
+			mes "Great Nature stone.^000000";
 			specialeffect EF_BEGINSPELL4;
 			specialeffect EF_BEGINSPELL5;
 			next;
@@ -6883,7 +6883,7 @@ moc_fild19,21,33,1	script	Unturned Spot#wind	111,{
 					mes "[" + strcharinfo(0) + "]";
 					mes "Earth...?";
 					mes "That's it! I need a";
-					mes "" + mesitemlink(997) + " to use";
+					mes "Great Nature to use";
 					mes "on this Wind crest!";
 					close2;
 					break;
@@ -6924,13 +6924,13 @@ moc_fild19,21,33,1	script	Unturned Spot#wind	111,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "Let's see...";
 			mes "Hopefully this";
-			mes "" + mesitemlink(996) + " will do";
+			mes "Rough Wind will do";
 			mes "the trick. Whoa. Um...";
 			mes "Something's happening...";
 			next;
 			mes "^3355FFThe elemental crest";
 			mes "quickly responds to the";
-			mes "" + mesitemlink(996) + ", causing the";
+			mes "Rough Wind, causing the";
 			mes "crest to shine brighter and";
 			mes "the wind to blow stronger.^000000";
 			specialeffect EF_BEGINSPELL4;
@@ -6949,7 +6949,7 @@ moc_fild19,21,33,1	script	Unturned Spot#wind	111,{
 		else
 		{
 			mes "^3355FFYou need to bring";
-			mes "a " + mesitemlink(996) + " to activate";
+			mes "a Rough Wind to activate";
 			mes "this Wind elemental crest.^000000";
 			cutin "mocseal_wind02.bmp",2;
 			close2;
@@ -6984,18 +6984,18 @@ moc_fild12,280,36,1	script	Unturned Spot#earth	111,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "Let's see...";
 			mes "I should use this";
-			mes "" + mesitemlink(994) + " to";
+			mes "Flame Heart to";
 			mes "stabilize this crest.";
 			next;
 			mes "^3355FFAs soon as you pull out";
-			mes "the " + mesitemlink(994) + ", the stone";
+			mes "the Flame Heart, the stone";
 			mes "and the crest begin to glow";
 			mes "intensely, as if their powers";
 			mes "were conflicting.^000000";
 			specialeffect EF_BEGINSPELL5;
 			specialeffect EF_BEGINSPELL3;
 			next;
-			mes "^3355FFThe " + mesitemlink(994) + " then";
+			mes "^3355FFThe Flame Heart then";
 			mes "quickly vanishes with";
 			mes "a burst of heated vapor.";
 			mes "This power of this crest";
@@ -7022,7 +7022,7 @@ moc_fild12,280,36,1	script	Unturned Spot#earth	111,{
 			mes "^3355FFTo counteract the";
 			mes "crest's Earth power,";
 			mes "you'll probably need";
-			mes "a " + mesitemlink(994) + " stone.^000000";
+			mes "a Flame Heart stone.^000000";
 			close2;
 		}
 	}
@@ -7041,14 +7041,14 @@ moc_fild12,280,36,1	script	Unturned Spot#earth	111,{
 		mes "^3355FFYou find a shimmering";
 		mes "crest that symbolizes";
 		mes "the power of the Earth.";
-		mes "You'll need a " + mesitemlink(997) + "";
+		mes "You'll need a Great Nature";
 		mes "stone to enhance its power.^000000";
 		cutin "mocseal_earth02.bmp",2;
 		next;
 		if (countitem(997))
 		{
 			mes "^3355FFYou pull out a";
-			mes "" + mesitemlink(997) + ", which";
+			mes "Great Nature, which";
 			mes "causes tremors in the";
 			mes "ground and sand to flow";
 			mes "towards the crest.^000000";
@@ -7069,7 +7069,7 @@ moc_fild12,280,36,1	script	Unturned Spot#earth	111,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "The next time that";
 			mes "I come here, I better";
-			mes "have a " + mesitemlink(997) + " ready...";
+			mes "have a Great Nature ready...";
 			close2;
 		}
 	}
@@ -7099,11 +7099,11 @@ moc_fild07,192,166,1	script	Unturned Spot#fire	111,{
 			mes "This crest must be";
 			mes "imbued with the Fire";
 			mes "element. I better see";
-			mes "if this " + mesitemlink(995) + "";
+			mes "if this Mystic Frozen";
 			mes "can stabilize it.";
 			next;
 			mes "^3355FFAs soon as you take";
-			mes "out the " + mesitemlink(995) + ",";
+			mes "out the Mystic Frozen,";
 			mes "it begins to pulse with";
 			mes "light as the crest glows";
 			mes "brighter and brighter.^000000";
@@ -7112,7 +7112,7 @@ moc_fild07,192,166,1	script	Unturned Spot#fire	111,{
 			next;
 			mes "^3355FFThe air in the area";
 			mes "suddenly chills, and";
-			mes "your " + mesitemlink(995) + "";
+			mes "your Mystic Frozen";
 			mes "bursts into cold vapor.^000000";
 			cutin "mocseal_fire02.bmp",2;
 			specialeffect EF_SPHERE;
@@ -7130,7 +7130,7 @@ moc_fild07,192,166,1	script	Unturned Spot#fire	111,{
 			cutin "mocseal_fire01.bmp",2;
 			mes "^3355FFYou find a gleaming";
 			mes "crest that symbolizes Fire.";
-			mes "You'll need a " + mesitemlink(995) + "";
+			mes "You'll need a Mystic Frozen";
 			mes "to stabilize its power.^000000";
 			close2;
 		}
@@ -7151,11 +7151,11 @@ moc_fild07,192,166,1	script	Unturned Spot#fire	111,{
 		mes "crest that symbolizes Fire.";
 		if (countitem(994))
 		{
-			mes "You'll need a " + mesitemlink(994) + "";
+			mes "You'll need a Flame Heart";
 			mes "in order to enhance its power.^000000";
 			next;
 			mes "^3355FFYou pull out a Flame";
-			mes "" + mesitemlink(7855) + ", and the crest";
+			mes "Heart, and the crest";
 			mes "begins to shine as the";
 			mes "air around you heats up.^000000";
 			specialeffect EF_BEGINSPELL3;
@@ -7172,7 +7172,7 @@ moc_fild07,192,166,1	script	Unturned Spot#fire	111,{
 		}
 		else
 		{
-			mes "You'll need a " + mesitemlink(994) + "";
+			mes "You'll need a Flame Heart";
 			mes "in order to enhance its power.^000000";
 			close2;
 		}

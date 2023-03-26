@@ -412,13 +412,13 @@ bat_room,160,150,3	script	Erundek	109,{
 			switch(select("Dagger/OneSword/TwoSword/TwoSpear:Staff/Mace/TwoAxe/Shuriken:Bow/Katar/Music/Whip:Book/Knuckle:Revolver/Rifle/Gatling/Shotgun/Launcher")) {
 			case 1:
 				mes "[Erundek]";
-				mes "The following items are available in the ^3131FFDagger, One-Handed Sword, " + mesitemlink(1157) + ", and Two-Handed Spear^000000 category.";
+				mes "The following items are available in the ^3131FFDagger, One-Handed Sword, Two-Handed Sword, and Two-Handed Spear^000000 category.";
 				next;
 				setarray .@Weapons[0],13036,7828,13037,7829,13411,7828,13410,7829,1183,7828,1184,7829,1425,7828,1482,7829;
 				break;
 			case 2:
 				mes "[Erundek]";
-				mes "The following items are available in the ^3131FFStaff / Mace / " + mesitemlink(1360) + " / Huuma " + mesitemlink(13250) + "^000000 category.";
+				mes "The following items are available in the ^3131FFStaff / Mace / Two-Handed Axe / Huuma Shuriken^000000 category.";
 				next;
 				setarray .@Weapons[0],1632,7828,1633,7829,1634,7828,1635,7829,1543,7828,1542,7829,1380,7828,1379,7829,13305,7828,13306,7829;
 				break;

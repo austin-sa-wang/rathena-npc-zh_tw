@@ -312,7 +312,7 @@ prontera,147,59,3	script	Goldberg#pron	878,{
 		}
 		if (countitem(6665) == 0) {
 			mes "[Goldberg]";
-			mes "I'm sorry. But you don't have the RWC Initialization " + mesitemlink(7037) + ". Can you check your inventory?";
+			mes "I'm sorry. But you don't have the RWC Initialization coupon. Can you check your inventory?";
 			close;
 		}
 		if (getiteminfo(.@equip_card[3], ITEMINFO_SUBTYPE) != CARD_ENCHANT) {

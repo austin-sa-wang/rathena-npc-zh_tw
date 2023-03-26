@@ -142,8 +142,8 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	747,{
 				next;
 				mes "[Markie]";
 				mes "Heh heh...";
-				mes "Fresh " + mesitemlink(517) + ". This'll be";
-				mes "a cinch to--Wait! Er, I wasn't talkin' about you! I meant the other fresh " + mesitemlink(517) + "~";
+				mes "Fresh meat. This'll be";
+				mes "a cinch to--Wait! Er, I wasn't talkin' about you! I meant the other fresh meat~";
 				close;
 			}
 			else if (ROGUE_Q == 16 || ROGUE_Q == 17) {
@@ -235,7 +235,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	747,{
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
-				mes "5. Choose the skill that you can learn at Level 5 ^880000Divest " + mesitemlink(2228) + "^000000.";
+				mes "5. Choose the skill that you can learn at Level 5 ^880000Divest Helm^000000.";
 				next;
 				if (select("^880000Envenom^000000:^880000Strip Tease^000000:^880000Venom Splasher^000000:^880000Divest Shield^000000") == 4)
 					set .@assassin_t,.@assassin_t+10;
@@ -253,7 +253,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	747,{
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
-				mes "8. Choose the monster that receives more damage when it's attacked by a weapon with the " + mesitemlink(4049) + " (20 % more damage on Fire property).";
+				mes "8. Choose the monster that receives more damage when it's attacked by a weapon with the Vadon card (20 % more damage on Fire property).";
 				next;
 				if (select("Vadon:Deviruchi:Elder Willow:Baphomet") == 3)
 					set .@assassin_t,.@assassin_t+10;
@@ -272,7 +272,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	747,{
 				break;
 			case 2:
 				mes "[Markie]";
-				mes "1. Which monster drops a slotted " + mesitemlink(1219) + "?";
+				mes "1. Which monster drops a slotted Gladius?";
 				next;
 				if (select("Thief Bug:Peco Peco:Desert Wolf:Kobold") == 4)
 					set .@assassin_t,.@assassin_t+10;
@@ -593,29 +593,29 @@ in_rogue,376,23,1	script	Mr. Smith#rg	57,{
 			next;
 			mes "[Mr. Smith]";
 			mes "^FF00005 Crysalis^000000!";
-			mes "^FF00005 " + mesitemlink(713) + "^000000!";
-			mes "^FF00005 " + mesitemlink(1002) + "^000000!";
-			mes "^FF00005 " + mesitemlink(953) + "^000000!!";
+			mes "^FF00005 Empty Bottle^000000!";
+			mes "^FF00005 Iron Ore^000000!";
+			mes "^FF00005 Stone Heart^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(507) + "^000000!";
-			mes "^FF00005 " + mesitemlink(919) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(715) + "^000000!!";
+			mes "^FF00005 Red Herb^000000!";
+			mes "^FF00005 Animal Skin^000000!!";
+			mes "^FF00005 Yellow Gemstone^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(913) + "^000000!";
-			mes "^FF00005 " + mesitemlink(904) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(942) + "^000000!!";
+			mes "^FF00005 Tooth of Bat^000000!";
+			mes "^FF00005 Scorpion Tail^000000!!";
+			mes "^FF00005 Yoyo Tail^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(528) + "^000000!";
-			mes "^FF00005 " + mesitemlink(914) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(705) + "^000000!!";
+			mes "^FF00005 Monster's Feed^000000!";
+			mes "^FF00005 Fluff^000000!!";
+			mes "^FF00005 Clover^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(916) + "^000000!";
-			mes "^FF00005 " + mesitemlink(917) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(908) + "^000000!!";
+			mes "^FF00005 Feather of Birds^000000!";
+			mes "^FF00005 Talon^000000!!";
+			mes "^FF00005 Spawn^000000!!";
 			next;
 			mes "[Mr. Smith]";
 			mes "Don't even think about coming back until you've got all those or I'll kill you where you stand.";
@@ -624,7 +624,7 @@ in_rogue,376,23,1	script	Mr. Smith#rg	57,{
 			mes "What the F$@k? Did you just say I'm annoying you? Shut up, you ungrateful prick!";
 			next;
 			mes "[Mr. Smith]";
-			mes "I just added ^FF000010 " + mesitemlink(945) + "^000000 to the list. You better get it!";
+			mes "I just added ^FF000010 Raccoon Leaf^000000 to the list. You better get it!";
 			next;
 			mes "[Mr. Smith]";
 			mes "F%$#*&#@$%#@$@#$%@$%&*k! Haven't you ever thought about how hard it would be to be an NPC!?!";
@@ -686,7 +686,7 @@ in_rogue,376,23,1	script	Mr. Smith#rg	57,{
 				mes "[Mr. Smith]";
 				mes "Wow, you've brought each and every single thing I asked you to. Good work... I salute you.";
 				next;
-				mes "^CCCCCC- Middle " + mesitemlink(1811) + " -^000000'";
+				mes "^CCCCCC- Middle Finger -^000000'";
 				mes "*Grins*";
 				set ROGUE_Q,8;
 				changequest 2021,2025;
@@ -720,30 +720,30 @@ in_rogue,376,23,1	script	Mr. Smith#rg	57,{
 			mes "Application fee:";
 			mes "^FF000010000 zeny^000000,";
 			mes "^FF00005 Crysalis^000000!";
-			mes "^FF00005 " + mesitemlink(713) + "^000000!";
-			mes "^FF00005 " + mesitemlink(1002) + "^000000!";
+			mes "^FF00005 Empty Bottle^000000!";
+			mes "^FF00005 Iron Ore^000000!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(953) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(507) + "^000000!";
-			mes "^FF00005 " + mesitemlink(919) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(715) + "^000000!!";
+			mes "^FF00005 Stone Heart^000000!!";
+			mes "^FF00005 Red Herb^000000!";
+			mes "^FF00005 Animal Skin^000000!!";
+			mes "^FF00005 Yellow Gemstone^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(913) + "^000000!";
-			mes "^FF00005 " + mesitemlink(904) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(942) + "^000000!!";
+			mes "^FF00005 Tooth of Bat^000000!";
+			mes "^FF00005 Scorpion Tail^000000!!";
+			mes "^FF00005 Yoyo Tail^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(528) + "^000000!";
-			mes "^FF00005 " + mesitemlink(914) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(705) + "^000000!!";
+			mes "^FF00005 Monster's Feed^000000!";
+			mes "^FF00005 Fluff^000000!!";
+			mes "^FF00005 Clover^000000!!";
 			next;
 			mes "[Mr. Smith]";
-			mes "^FF00005 " + mesitemlink(916) + "^000000!";
-			mes "^FF00005 " + mesitemlink(917) + "^000000!!";
-			mes "^FF00005 " + mesitemlink(908) + "^000000!!";
-			mes "^FF000010 " + mesitemlink(945) + "^000000!!";
+			mes "^FF00005 Feather of Birds^000000!";
+			mes "^FF00005 Talon^000000!!";
+			mes "^FF00005 Spawn^000000!!";
+			mes "^FF000010 Raccoon Leaf^000000!!";
 			next;
 			mes "[Mr. Smith]";
 			mes "Don't even think";

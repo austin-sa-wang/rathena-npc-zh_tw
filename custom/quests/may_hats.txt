@@ -29,7 +29,7 @@ gonryun,187,140,4	script	Yakima	850,{
 	next;
 	mes "[Yakima]";
 	mes "For the hat I'll need:";
-	mes "1 " + mesitemlink(5067) + ",";
+	mes "1 Sombrero,";
 	mes "920 Feathers of Birds and";
 	mes "310 Bills of Birds.";
 	next;
@@ -55,7 +55,7 @@ M_2:
 	next;
 	mes "[Yakima]";
 	mes "For the hat I'll need:";
-	mes "1 " + mesitemlink(5098) + ",";
+	mes "1 Tiger Mask,";
 	mes "10 Tiger's Footskins,";
 	mes "30 Tiger Skins and";
 	mes "300 Tiger Panties.";
@@ -78,16 +78,16 @@ M_2:
 
 M_3:
 	mes "[Yakima]";
-	mes "I wish I sold this filthy " + mesitemlink(2505) + " faster...";
+	mes "I wish I sold this filthy manteau faster...";
 	mes "Guess it isn't so plain as it looks... Hmm.";
 	emotion ET_KEK;
 	next;
 	mes "[Yakima]";
 	mes "I'm giving it almost for free:";
 	mes "10 Old Manteaus,";
-	mes "3 " + mesitemlink(7005) + " Rings,";
-	mes "2 " + mesitemlink(2505) + "[1] and";
-	mes "1 " + mesitemlink(2508) + ".";
+	mes "3 Skull Rings,";
+	mes "2 Manteau[1] and";
+	mes "1 Ragamuffin Manteau.";
 	next;
 	mes "[Yakima]";
 	mes "Do you have all the items?";
@@ -112,10 +112,10 @@ M_4:
 	emotion ET_SMILE;
 	next;
 	mes "[Yakima]";
-	mes "Now my stock is full of those bags... So I'll make it from 3 " + mesitemlink(712) + " things and a rough piece of clothes:";
+	mes "Now my stock is full of those bags... So I'll make it from 3 flower things and a rough piece of clothes:";
 	mes "3 Romantic Flowers,";
 	mes "3 Fancy Flowers,";
-	mes "2 " + mesitemlink(712) + " Rings and";
+	mes "2 Flower Rings and";
 	mes "3 Pirate Bandanas.";
 	next;
 	mes "[Yakima]";
@@ -142,8 +142,8 @@ M_5:
 	next;
 	mes "[Yakima]";
 	mes "Well... we construct it from some common items:";
-	mes "1 " + mesitemlink(975) + ",";
-	mes "1 " + mesitemlink(980) + ",";
+	mes "1 Scarlet Dyestuffs,";
+	mes "1 Orange Dyestuffs,";
 	mes "2 Stop Posts,";
 	mes "3 Clown Noses,";
 	mes "180 Fig Leaves and";

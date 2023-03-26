@@ -51,7 +51,7 @@
 		mes "[PVP Narrator]";
 		mes "When you are qualified, you";
 		mes "can choose one of the two modes.";
-		mes "Yoyo Mode or " + mesitemlink(7102) + " Mode.";
+		mes "Yoyo Mode or Nightmare Mode.";
 		next;
 		mes "[PVP Narrator]";
 		mes "Yoyo Mode is risk free.";
@@ -62,7 +62,7 @@
 		mes "here before you move on.";
 		next;
 		mes "[PVP Narrator]";
-		mes "" + mesitemlink(7102) + " Mode is very";
+		mes "Nightmare Mode is very";
 		mes "dangerous! Please be cautious,";
 		mes "you will lose some of your";
 		mes "EXP when you are defeated. And";
@@ -187,7 +187,7 @@ geffen_in,67,63,4	duplicate(pvpe)	PVP Narrator#pe6	84
 	switch(select("^FF5533' PvP Nightmare Mode'^000000:^3355FF' PvP Yoyo Mode'^000000:^3355FF' PvP Event Mode'^000000:Quit")) {
 		case 1:
 			mes "[Gate Keeper]";
-			mes "I am sorry, but currently the " + mesitemlink(7102) + " mode service is not available.";
+			mes "I am sorry, but currently the Nightmare mode service is not available.";
 			mes "Please use the Yoyo Mode instead. We apologize for the inconvenience.";
 			break;
 		case 2:

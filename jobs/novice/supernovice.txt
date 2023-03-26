@@ -81,7 +81,7 @@ aldeba_in,223,167,3	script	Tzerero#sn	709,{
 		mes "Consider these Panties a gift...";
 		mes "This very garment is rumored";
 		mes "to be worn by Mister Kimu-Shaun,";
-		mes "our legendary " + mesitemlink(1501) + " founder, in";
+		mes "our legendary club founder, in";
 		mes "his early days in striving for";
 		mes "exemplary mediocrity.";
 		next;
@@ -103,8 +103,8 @@ aldeba_in,223,167,3	script	Tzerero#sn	709,{
 		next;
 		mes "[Tzerero]";
 		mes "I asked you to bring me";
-		mes "^FF000030 " + mesitemlink(938) + "^000000 and";
-		mes "^FF000030 " + mesitemlink(907) + "^000000.";
+		mes "^FF000030 Sticky Mucus^000000 and";
+		mes "^FF000030 Resin^000000.";
 		close;
 	}
 	if (BaseJob == Job_Novice && Upper != 1) {
@@ -199,8 +199,8 @@ aldeba_in,223,167,3	script	Tzerero#sn	709,{
 			next;
 			mes "[Tzerero]";
 			mes "Hmmmm...";
-			mes "^FF000030 " + mesitemlink(938) + "^000000";
-			mes "and ^FF000030 " + mesitemlink(907) + "";
+			mes "^FF000030 Sticky Mucus^000000";
+			mes "and ^FF000030 Resin";
 			mes "^000000will be suitable to test your";
 			mes "ability to fight meager enemies.";
 			next;
@@ -231,7 +231,7 @@ aldeba_in,223,167,3	script	Tzerero#sn	709,{
 			mes "anytime...";
 			next;
 			mes "[Tzerero]";
-			mes "As our Novice " + mesitemlink(1501) + "";
+			mes "As our Novice club";
 			mes "grows more popular and";
 			mes "we gain more followers,";
 			mes "we may consider using";
@@ -342,7 +342,7 @@ aldeba_in,216,169,5	script	Esseray#sn	86,{
 		mes "Hm? Hey, you're a member";
 		mes "of our great Novice Society,";
 		mes "aren't you? Isn't this the";
-		mes "best " + mesitemlink(1501) + " ever?!";
+		mes "best club ever?!";
 		next;
 		mes "[Essaray]";
 		mes "Living life mundanely,";
@@ -364,7 +364,7 @@ aldeba_in,216,169,5	script	Esseray#sn	86,{
 		mes "Hah~ you don't know anything";
 		mes "about being a normal person yet!";
 		mes "Why don't you join our Novice";
-		mes "Society? This " + mesitemlink(1501) + " is the best in the world~";
+		mes "Society? This club is the best in the world~";
 		next;
 		mes "[Esseray]";
 		mes "Yup, Super Novices";

@@ -26,7 +26,7 @@ veins,162,34,5	script	Towner#ve1	943,{
 	next;
 	mes "[Towner]";
 	mes "If you feel a stirring";
-	mes "in your " + mesitemlink(7855) + " when you";
+	mes "in your heart when you";
 	mes "look at a cactus, you";
 	mes "must appreciate the";
 	mes "desert's true beauty.";
@@ -374,13 +374,13 @@ veins,263,153,5	script	Towner#ve13	943,{
 	mes "[Towner]";
 	mes "The clothes we make here";
 	mes "are high, airy, and sewn";
-	mes "with high quality " + mesitemlink(1059) + ".";
+	mes "with high quality fabric.";
 	mes "Of course, we need to wear";
 	mes "stuff like this since the";
 	mes "weather is unbearably hot.";
 	next;
 	mes "[Towner]";
-	mes "The " + mesitemlink(1059) + "? Well,";
+	mes "The fabric? Well,";
 	mes "I'll give you a hint.";
 	mes "It's made of something";
 	mes "related to camels. Heh!";
@@ -406,10 +406,10 @@ veins,296,184,3	script	Towner#ve14	940,{
 	mes "[Towner]";
 	mes "That robot can blow";
 	mes "hurricanes from its mouth,";
-	mes "and " + mesitemlink(711) + " lightning from";
+	mes "and shoot lightning from";
 	mes "its horns, and it can fire";
 	mes "its fists away, and its";
-	mes "chest is a " + mesitemlink(2139) + "!";
+	mes "chest is a flame thrower!";
 	next;
 	mes "[Towner]";
 	mes "..............................";

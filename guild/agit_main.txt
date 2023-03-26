@@ -728,7 +728,7 @@ OnRecvCastle:
 			set .@def_invest,.@def_invest*4;
 		}
 		mes "["+strnpcinfo(1)+"]";
-		mes "If you raise Castle Defenses, the durability of Guardians and the " + mesitemlink(714) + " will increase. Therefore, if you consider our coming battles, some investment in this area will be required.";
+		mes "If you raise Castle Defenses, the durability of Guardians and the Emperium will increase. Therefore, if you consider our coming battles, some investment in this area will be required.";
 		mes " ";
 		mes "Originally you can invest just once but if you pay more money, you can invest twice.";
 		if (.@Defence >= 100) {

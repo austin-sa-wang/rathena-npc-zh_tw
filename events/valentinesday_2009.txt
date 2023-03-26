@@ -33,13 +33,13 @@ prontera,164,174,4	script	Trader#Val09	58,{
 	next;
 	mes "[Marco Bassinio]";
 	mes "It's the perfect dessert and the perfect gift for loved ones.";
-	mes "High-quality, traditional homemade " + mesitemlink(558) + " only 5000z each!";
+	mes "High-quality, traditional homemade chocolate only 5000z each!";
 	next;
 	switch(select("I'll take it, please!:I want to wrap the chocolate!:End trading.")) {
 		case 1:
 			mes "[Marco Bassinio]";
 			mes "Ahaha, my dear.";
-			mes "This " + mesitemlink(558) + " is nothing like others.";
+			mes "This chocolate is nothing like others.";
 			mes "Every piece bears the devotion of the person who made it!";
 			next;
 			mes "[Marco Bassinio]";
@@ -88,7 +88,7 @@ prontera,164,174,4	script	Trader#Val09	58,{
 				mes "[Marco Bassinio]";
 				mes "Good for you!";
 				mes "It's also perfect as a gift!";
-				mes "You know you can't get this kind of " + mesitemlink(558) + " normally.";
+				mes "You know you can't get this kind of chocolate normally.";
 				next;
 				mes "[Marco Bassinio]";
 				mes "If you want more, you should come back.";
@@ -99,21 +99,21 @@ prontera,164,174,4	script	Trader#Val09	58,{
 			}
 		case 2:
 			mes "[Marco Bassinio]";
-			mes "If you want to gift-wrap the " + mesitemlink(558) + ", of course, you need " + mesitemlink(558) + ", plus, " + mesitemlink(7175) + ", wrapping strap and a " + mesitemlink(7948) + ".";
+			mes "If you want to gift-wrap the chocolate, of course, you need chocolate, plus, wrapping paper, wrapping strap and a box.";
 			next;
 			mes "[Marco Bassinio]";
-			mes "You also need to pay 500 zeny to carve your name on the " + mesitemlink(7948) + ".";
+			mes "You also need to pay 500 zeny to carve your name on the box.";
 			mes "Are you all prepared...?";
 			next;
 			if (countitem(7175) < 1 || countitem(7174) < 1 || countitem(7948) < 1 || Zeny < 500) {
 				mes "[Marco Bassinio]";
-				mes "Hmm.. Looks like you don't have enough materials to decorate the " + mesitemlink(644) + "..";
-				mes "You can't just put your gift into some plain looking " + mesitemlink(7948) + "..";
+				mes "Hmm.. Looks like you don't have enough materials to decorate the gift box..";
+				mes "You can't just put your gift into some plain looking box..";
 				mes "Don't you think?";
 				next;
 				mes "[Marco Bassinio]";
-				mes "You need to bring some " + mesitemlink(7175) + ", wrapping strap, and a " + mesitemlink(7948) + ".";
-				mes "Oh, also bring 500 zeny, and don't forget to bring your true loving " + mesitemlink(7855) + " with you!!";
+				mes "You need to bring some wrapping paper, wrapping strap, and a box.";
+				mes "Oh, also bring 500 zeny, and don't forget to bring your true loving heart with you!!";
 				close;
 			}
 			if (countitem(558) < 1) {
@@ -123,7 +123,7 @@ prontera,164,174,4	script	Trader#Val09	58,{
 				mes "You know I'm not an alchemist or anything.";
 				next;
 				mes "[Marco Bassinio]";
-				mes "You're not saying that you want an empty " + mesitemlink(12744) + " without any " + mesitemlink(558) + " in it, am I right?";
+				mes "You're not saying that you want an empty chocolate box without any chocolate in it, am I right?";
 				close;
 			}
 			if (!checkweight(12744,1)) {
@@ -134,9 +134,9 @@ prontera,164,174,4	script	Trader#Val09	58,{
 			}
 			mes "[Marco Bassinio]";
 			mes "Here, look!";
-			mes "It's your " + mesitemlink(12744) + " with your name on it.";
+			mes "It's your chocolate box with your name on it.";
 			mes "Isn't it fabulous?";
-			mes "See, your name looks great on the " + mesitemlink(7948) + "!";
+			mes "See, your name looks great on the box!";
 			next;
 			delitem 558,1;
 			delitem 7175,1;
@@ -215,7 +215,7 @@ prontera,147,171,5	script	Packs Trader#Val09	58,{
 				}
 			case 2:
 				mes "[Packs Trader]";
-				mes "It's 200 zeny for 1 Packing " + mesitemlink(2208) + ".";
+				mes "It's 200 zeny for 1 Packing Ribbon.";
 				mes "How many do you want?";
 				mes "You can't buy more than 10 items at once.";
 				next;
@@ -256,7 +256,7 @@ prontera,147,171,5	script	Packs Trader#Val09	58,{
 				}
 			case 3:
 				mes "[Packs Trader]";
-				mes "It's 600 zeny for 1 " + mesitemlink(7948) + ".";
+				mes "It's 600 zeny for 1 Box.";
 				mes "How many do you want?";
 				mes "You can't buy more than 10 items at once.";
 				next;
@@ -319,7 +319,7 @@ prontera,154,185,5	script	Event Ring Maker#Val09	721,{
 	
 	if (iROval09ring >= 1) {
 		mes "[Event Ring Maker]";
-		mes "The " + mesitemlink(7948) + " with the ring, carved with your name, is for the one you love.";
+		mes "The box with the ring, carved with your name, is for the one you love.";
 		next;
 		mes "[Event Ring Maker]";
 		mes "As for the rings that you receive from others, they should all be registered with the Vote Manager.";
@@ -350,7 +350,7 @@ prontera,154,185,5	script	Event Ring Maker#Val09	721,{
 	next;
 	mes "[Event Ring Maker]";
 	mes "Remember, you can only generate the ring once.";
-	mes "You also need " + mesitemlink(7175) + ", Wrapping Strap and a " + mesitemlink(7948) + " to make the ring.";
+	mes "You also need Wrapping Paper, Wrapping Strap and a Box to make the ring.";
 	next;
 	mes "[Event Ring Maker]";
 	mes "So you better be sure of who you give this to.";
@@ -362,12 +362,12 @@ prontera,154,185,5	script	Event Ring Maker#Val09	721,{
 		mes "Alrighty!";
 		mes "You can't put a rush on such a thing like this.";
 		mes "Think about what you truly want.";
-		mes "Just follow your " + mesitemlink(7855) + "!";
+		mes "Just follow your heart!";
 		close;
 	}
 	if (countitem(7175) < 1 || countitem(7174) < 1 || countitem(7948) < 1 || Zeny < 1000) {
 		mes "[Event Ring Maker]";
-		mes "Well, you don't have enough materials to make a " + mesitemlink(644) + ".";
+		mes "Well, you don't have enough materials to make a gift box.";
 		mes "Check what you have, and come back later with all the materials.";
 		close;
 	}
@@ -484,7 +484,7 @@ prontera,157,185,4	script	Valentine Vote Manager#v	113,{
 					}
 					
 					mes "[Valentine Vote Manager]";
-					mes "I'll take those " + mesitemlink(969) + " rings, and count the votes for you.";
+					mes "I'll take those gold rings, and count the votes for you.";
 					mes "Thank you for participating.";
 					delitem 7946,.@input;
 					set Val09Rings,Val09Rings+.@input;
@@ -558,29 +558,29 @@ prt_castle,42,35,3	script	Dessert Manager#Val09	47,{
 		mes "[Charles Orleans]";
 		mes "Ahhh, Mademoiselle.";
 		mes "I'm not an alchemist, or a magician.";
-		mes "I don't just make " + mesitemlink(558) + " out of anything.";
+		mes "I don't just make chocolate out of anything.";
 		next;
 		mes "[Charles Orleans]";
-		mes "I always think of making " + mesitemlink(558) + " as artistic work.";
+		mes "I always think of making chocolate as artistic work.";
 		mes "You see, I'm no ordinary cook...";
-		mes "I make " + mesitemlink(558) + " with feelings..";
+		mes "I make chocolate with feelings..";
 		mes "messages of loving hearts..";
 		next;
 		mes "[Charles Orleans]";
 		mes "I make masterpieces.";
 		mes "No one can imitate the looks and the taste.";
-		mes "Yes, it's nothing like ordinary " + mesitemlink(558) + "!";
+		mes "Yes, it's nothing like ordinary chocolate!";
 		next;
 		mes "[Charles Orleans]";
 		mes "I'm afraid I can't make it and prove it to you now.";
 		mes "This is really a shame!";
 		next;
 		mes "[Charles Orleans]";
-		mes "I really want to thank you for visiting me and if you only bring ^3152ff3 Chocolates^000000, I'll make you " + mesitemlink(558) + " like you've never seen...";
+		mes "I really want to thank you for visiting me and if you only bring ^3152ff3 Chocolates^000000, I'll make you chocolate like you've never seen...";
 		next;
 		mes "[Charles Orleans]";
 		mes "never tasted before...";
-		mes "Mademoiselle, with your spirit, I'm sure you can bring 3 pieces of " + mesitemlink(558) + ".";
+		mes "Mademoiselle, with your spirit, I'm sure you can bring 3 pieces of chocolate.";
 		mes "I have no doubt at all.";
 		next;
 		mes "[Charles Orleans]";
@@ -601,8 +601,8 @@ prt_castle,42,35,3	script	Dessert Manager#Val09	47,{
 		}
 		mes "[Charles Orleans]";
 		mes "Oh, Mademoiselle!";
-		mes "I'll make the best " + mesitemlink(558) + " with the pieces you've brought.";
-		mes "I'm going to put the light of your eyes into this " + mesitemlink(558) + " that no one can resist.";
+		mes "I'll make the best chocolate with the pieces you've brought.";
+		mes "I'm going to put the light of your eyes into this chocolate that no one can resist.";
 		next;
 		mes "[Charles Orleans]";
 		mes "It'll be stronger than a sweet sweet love potion.....";
@@ -610,7 +610,7 @@ prt_castle,42,35,3	script	Dessert Manager#Val09	47,{
 		mes "[Charles Orleans]";
 		mes "Un, Deux, Trois, Quatre.....";
 		mes "Just like the ugly duckling that turned to a beautiful swan-";
-		mes "Ordinary " + mesitemlink(558) + " pieces are becoming a piece of art!";
+		mes "Ordinary chocolate pieces are becoming a piece of art!";
 		next;
 		mes "[Charles Orleans]";
 		mes "They're changing!";
@@ -628,7 +628,7 @@ prt_castle,42,35,3	script	Dessert Manager#Val09	47,{
 		next;
 		mes "[Charles Orleans]";
 		mes "Alright. Mademoiselle,";
-		mes "I hope this is just what you wanted, for it bears your beautiful " + mesitemlink(7855) + " inside.";
+		mes "I hope this is just what you wanted, for it bears your beautiful heart inside.";
 		close;
 	}
 	

@@ -153,8 +153,8 @@ payon_in02,67,65,3	script	Bard Jet#tu	1_M_BARD,{
 		next;
 		mes "[Jet]";
 		mes "'Who put the";
-		mes "" + mesitemlink(1901) + " in this";
-		mes "" + mesitemlink(1901) + " case?!'";
+		mes "violin in this";
+		mes "violin case?!'";
 		mes "Bwahahahahahahah!";
 		mes "Get the joke?";
 	}
@@ -191,7 +191,7 @@ payon_in02,54,13,3	script	Master Kavaruk	1_M_JOBTESTER,{
 		mes "Icarus was a brave young man who flew through the sky using wings held together by beeswax. Out of curiosity, he flew too close to the sun, his wings melted, and he fell to his death.";
 		next;
 		mes "[Master Kavaruk]";
-		mes "Although his is a tragic story, Icarus had a courageous " + mesitemlink(7855) + "";
+		mes "Although his is a tragic story, Icarus had a courageous heart";
 		mes "that we should look up to as";
 		mes "our standard.";
 		next;
@@ -723,7 +723,7 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 				if (checkre(0))
 					mes "Alright, Mandagora usually live around Geffen. I can send you to Geffen, so just travel north from there to find";
 				else
-					mes "Alright, Mandagora usually live around Mt. " + mesitemlink(1530) + ". I can send you to Prontera, so just travel north, then east from there to find";
+					mes "Alright, Mandagora usually live around Mt. Mjolnir. I can send you to Prontera, so just travel north, then east from there to find";
 				mes "some of them.";
 				next;
 				mes "[Reidin Corse]";
@@ -891,7 +891,7 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 				mes "Be aware that Rockers are earth element monsters!! ^3131FFSo they should be weak against fire^000000.";
 				next;
 				mes "[Reidin Corse]";
-				mes "Now go and bring ^3131FF10 " + mesitemlink(940) + "^000000 from hunting Rockers.";
+				mes "Now go and bring ^3131FF10 Grasshopper's Leg^000000 from hunting Rockers.";
 				mes "Bring all of that and you pass~";
 				next;
 				mes "[Reidin Corse]";
@@ -909,7 +909,7 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 				next;
 				mes "[Reidin Corse]";
 				mes "Now go and bring ^3131FF10 Tentacles^000000";
-				mes "from hunting Hydra and ^3131FF1 " + mesitemlink(991) + "^000000, which you can get from hunting the Mushrooms there.";
+				mes "from hunting Hydra and ^3131FF1 Crystal Blue^000000, which you can get from hunting the Mushrooms there.";
 				mes "Bring all of that and you pass~";
 				next;
 				mes "[Reidin Corse]";
@@ -921,13 +921,13 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 			if (checkre(0) && countitem(940) < 10) {
 				mes "Hey...";
 				mes "You gotta bring";
-				mes "^3131FF10 " + mesitemlink(940) + "^000000 to pass my midterm! Go back to the southwest area of Prontera and get them!";
+				mes "^3131FF10 Grasshopper's Leg^000000 to pass my midterm! Go back to the southwest area of Prontera and get them!";
 				close;
 			} else if (!checkre(0) && (countitem(962) < 10 || countitem(991) == 0)) {
 				mes "Hey...";
 				mes "You gotta bring";
 				mes "^3131FF10 Tentacles^000000 and";
-				mes "^3131FF1 " + mesitemlink(991) + "^000000 to pass my midterm! Go back to the dungeon on Byalan Island and get them!";
+				mes "^3131FF1 Crystal Blue^000000 to pass my midterm! Go back to the dungeon on Byalan Island and get them!";
 				close;
 			}
 			if(MaxWeight - Weight < 1000){
@@ -994,7 +994,7 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 				mes "Now, go into the forest east of Payon and hunt Spores and Wormtails. Your test will be to bring back ^3131FF10 Mushroom Spores^000000 and";
 				mes "^3131FF10 Pointed Scales^000000.";
 			} else {
-				mes "Now, go to Mt. " + mesitemlink(1530) + " and hunt Floras. Your test will be to bring back ^3131FF5 Maneater Blossoms^000000 and";
+				mes "Now, go to Mt. Mjolnir and hunt Floras. Your test will be to bring back ^3131FF5 Maneater Blossoms^000000 and";
 				mes "^3131FF20 Stems^000000.";
 			}
 			next;
@@ -1033,12 +1033,12 @@ pay_arche,103,165,5	script	Reidin Corse#tu	4_M_REIDIN_KURS,{
 			} else if (!checkre(0) && (countitem(1032) < 5 || countitem(905) < 20)) {
 				mes "Remember, you";
 				mes "need to head over to";
-				mes "Mt. " + mesitemlink(1530) + " and get me";
+				mes "Mt. Mjolnir and get me";
 				mes "^3131FF5 Maneater Blossoms^000000";
 				mes "and ^3131FF20 Stems^000000.";
 				next;
 				mes "[Reidin Corse]";
-				mes "From Prontera, you'd get to Mt. " + mesitemlink(1530) + " by traveling ^3131FFnorth^000000, ^3131FFnorth^000000 and then ^3131FFeast^000000. But if you want,";
+				mes "From Prontera, you'd get to Mt. Mjolnir by traveling ^3131FFnorth^000000, ^3131FFnorth^000000 and then ^3131FFeast^000000. But if you want,";
 				mes "I can just send you there.";
 				next;
 				switch(select("Go!:W-Wait!")) {
@@ -1248,7 +1248,7 @@ pay_arche,84,139,3	script	Seisner	4_F_JOB_HUNTER,{
 						mes "In a sense, STR might not be necessary for Archers, although I'm sure there are skills or situations where STR will come in handy.";
 						next;
 						mes "[Seisner]";
-						mes "For instance, if you run out of arrows (which is every Archer's " + mesitemlink(7102) + ") and need to equip a " + mesitemlink(1201) + ", having some STR might";
+						mes "For instance, if you run out of arrows (which is every Archer's nightmare) and need to equip a Knife, having some STR might";
 						mes "be helpful.";
 						next;
 						mes "[Seisner]";
@@ -1549,8 +1549,8 @@ pay_arche,130,113,3	script	Alchemist Guildmember#tu	2_M_ALCHE,{
 			mes "Would you like to sell ^3131FFStems^000000";
 			mes "and ^3131FFManeater Blossoms^000000 to";
 			mes "the Alchemist Guild? We'll buy";
-			mes "each " + mesitemlink(905) + " for ^3131FF30 Zeny^000000 and each";
-			mes "" + mesitemlink(1032) + " for ^3131FF130 Zeny^000000.";
+			mes "each Stem for ^3131FF30 Zeny^000000 and each";
+			mes "Maneater Blossom for ^3131FF130 Zeny^000000.";
 			next;
 			switch(select("Sell all Stems and Maneater Blossoms:Don't sell anything.")) {
 			case 1:
@@ -1633,7 +1633,7 @@ prontera,126,335,5	script	Arthail	1_M_BARD,{
 			mes "I can't handle it all...";
 			next;
 			mes "[Arthail]";
-			mes "Why can't I be like everyone else? It seems that as I approach people, my " + mesitemlink(7855) + " retreats further away from them. I wonder why that is?";
+			mes "Why can't I be like everyone else? It seems that as I approach people, my heart retreats further away from them. I wonder why that is?";
 			next;
 			mes "[Arthail]";
 			mes "I became a Bard to try to fix this social complex of mine, but to";
@@ -1666,7 +1666,7 @@ prontera,126,335,5	script	Arthail	1_M_BARD,{
 		mes "I see...";
 		mes "Nothing much.";
 		mes "Another person";
-		mes "found an " + mesitemlink(714) + "";
+		mes "found an Emperium";
 		mes "and is starting a";
 		mes "brand new guild...";
 		next;
@@ -1676,7 +1676,7 @@ prontera,126,335,5	script	Arthail	1_M_BARD,{
 		mes "there are people clamoring to obtain one...";
 		next;
 		mes "[Arthail]";
-		mes "Supposedly, having an " + mesitemlink(714) + "";
+		mes "Supposedly, having an Emperium";
 		mes "will give you the power to change the world. People are bound to be attracted to it.";
 		next;
 		mes "[Arthail]";
@@ -1757,7 +1757,7 @@ prontera,126,335,5	script	Arthail	1_M_BARD,{
 		mes "That's really peculiar...";
 		next;
 		mes "[Arthail]";
-		mes "Even the " + mesitemlink(714) + " you mentioned earlier. I thought it was supposed to be a rare item, but why is it so easy for so many people to get";
+		mes "Even the Emperium you mentioned earlier. I thought it was supposed to be a rare item, but why is it so easy for so many people to get";
 		mes "one? It's very strange...";
 		next;
 		mes "[Arthail]";

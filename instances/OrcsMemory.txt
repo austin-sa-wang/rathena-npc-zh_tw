@@ -886,7 +886,7 @@ OnTouch_:
 		next;
 		mes "[Kruger]";
 		mes "I.. I just couldn't kill my own daughter...";
-		mes "Thank you, I'm sure she's finally free from the " + mesitemlink(7102) + " that used to choke her soul.";
+		mes "Thank you, I'm sure she's finally free from the nightmare that used to choke her soul.";
 		next;
 		mes "Kruger was about to say something more, but he breathed his last breath before he could...";
 		set yong_odun,2;

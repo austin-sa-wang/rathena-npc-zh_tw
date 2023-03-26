@@ -175,7 +175,7 @@ moc_ruins,132,144,0	script	Wolf Young Man#moc	85,{
 	mes "I remember I said the bandits of desert are the desert wolves.. Those bastards always roam around in a bunch and they would get so cruel and outrageous if one of them got attacked.";
 	next;
 	mes "[Young Man]";
-	mes "They are so vicious, and I'm telling ya, I'm no kidding. You can only find some bones and rotten " + mesitemlink(519) + " in the " + mesitemlink(10013) + " after these wolves sweep through.";
+	mes "They are so vicious, and I'm telling ya, I'm no kidding. You can only find some bones and rotten milk in the backpack after these wolves sweep through.";
 	mes "Those things are so mean and vicious..";
 	next;
 	mes "[Young Man]";
@@ -297,10 +297,10 @@ moc_ruins,118,82,1	script	Little Boy#moc	706,{
 moc_ruins,121,116,4	script	Picky Lady#moc	66,{
 	mes "[Syvia]";
 	mes "The fields of Rune-Midgarts are infested with wild and dangerous monsters..But, you've got to admit a bunch of them are soooo cute!";
-	mes "You know, like how Spore sticks out its " + mesitemlink(1015) + " after you kill it..";
+	mes "You know, like how Spore sticks out its tongue after you kill it..";
 	next;
 	mes "[Syvia]";
-	mes "Or, how little Picky wears that " + mesitemlink(10012) + " sometimes?..";
+	mes "Or, how little Picky wears that tiny egg shell sometimes?..";
 	next;
 	mes "[Syvia]";
 	mes "I can't believe what just has happened.. Our town used to be the one with those cute little monsters, not that kinda of vicious dreadful Evil sleeping in! Whew...";
@@ -425,7 +425,7 @@ moc_ruins,143,43,4	script	Assassin Boy#moc	118,{
 		mes "Well, I hear that if you leave this town and go 2 maps east, and then 2 maps South, you should be able to find it..";
 		next;
 		mes "[Slayer Kid]";
-		mes "The 'Mirage Tower,' the head building of Sograt Desert, is supposed to appear in this awesome " + mesitemlink(13035) + "! But, I still haven't found it.";
+		mes "The 'Mirage Tower,' the head building of Sograt Desert, is supposed to appear in this awesome sandstorm! But, I still haven't found it.";
 		next;
 		mes "[Slayer Kid]";
 		mes "If you find them, and the clan master thinks you're qualified, you can become an Assassin! Or, at least, I think..";
@@ -480,12 +480,12 @@ moc_ruins,173,141,4	script	Dimitri#moc	49,{
 		close;
 	case 3:
 		mes "[Dimitri]";
-		mes "Sometimes '" + mesitemlink(519) + "' comes out of 'PecoPeco's " + mesitemlink(574) + ".' Now..";
-		mes "I'm not sure how the cow's " + mesitemlink(519) + " comes out of some bird's " + mesitemlink(574) + "...";
+		mes "Sometimes 'Milk' comes out of 'PecoPeco's Egg.' Now..";
+		mes "I'm not sure how the cow's milk comes out of some bird's egg...";
 		next;
 		mes "[Dimitri]";
 		mes "I may not be a man of science, but how is that even possible?.";
-		mes "I mean, did the " + mesitemlink(519) + " come prepackaged with the " + mesitemlink(574) + ", or did it get in there somehow?..";
+		mes "I mean, did the Milk come prepackaged with the egg, or did it get in there somehow?..";
 		mes "Oh, whatever.. It's just not the time for this.";
 		close;
 	}
@@ -591,7 +591,7 @@ moc_fild16,199,212,4	script	 Uncle Assassin#moc	55,{
 		mes "not without good reason";
 		next;
 		mes "[Hashisid]";
-		mes "Our true " + mesitemlink(2734) + " is to assassinate evil creatures,";
+		mes "Our true directive is to assassinate evil creatures,";
 		mes "and to use our stealth to gather intelligence";
 		mes "for the good of all Rune-Midgarts.";
 		close;
@@ -612,7 +612,7 @@ moc_fild16,199,212,4	script	 Uncle Assassin#moc	55,{
 		mes "strong smell...";
 		mes "If you ever,";
 		mes "try eating those";
-		mes "smelly garlic " + mesitemlink(580) + " with spices,";
+		mes "smelly garlic bread with spices,";
 		next;
 		mes "[Hashisid]";
 		mes "and try hiding against";
@@ -639,7 +639,7 @@ moc_fild16,211,254,4	script	Assassin#07rhea_30	118,{
 		mes "A set of Katars is";
 		mes "worn on both of the hands,";
 		mes "and allows Assassins";
-		mes "to quickly " + mesitemlink(1526) + " their enemies.";
+		mes "to quickly slash their enemies.";
 		mes "Anyone can buy a basic set of Katars";
 		mes "in Morocc somewhere.";
 		mes "Of course, only Assassins can use them.";

@@ -53,7 +53,7 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 	}
 	if (countitem(7609) > 0) {
 		mes "[Gloomy Jack]";
-		mes "Oh wait, is that a " + mesitemlink(7609) + " you are carrying?";
+		mes "Oh wait, is that a Pumpkin Mojo you are carrying?";
 		mes " ";
 		mes "[Cool Devi]";
 		mes "Says he.";
@@ -71,27 +71,27 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 			next;
 			mes "[Cool Devi]";
 			mes "Jack is not like others. He is halloween Jack.";
-			mes "but one day, he lost his " + mesitemlink(7609) + " and turned into depressed Jack..";
-			mes "" + mesitemlink(7609) + " was his all.";
+			mes "but one day, he lost his Pumpkin Mojo and turned into depressed Jack..";
+			mes "Pumpkin Mojo was his all.";
 			next;
 			mes "[Cool Devi]";
 			mes "Well, actually that's the main reason Jack came to town.";
-			mes "To find his " + mesitemlink(7609) + ". Most suspicious suspect is ^4d4dffDelightful Lude^000000, the one known as Halloween monster";
+			mes "To find his Pumpkin Mojo. Most suspicious suspect is ^4d4dffDelightful Lude^000000, the one known as Halloween monster";
 			next;
 			mes "[Cool Devi]";
-			mes "Why don't you give him back the '" + mesitemlink(7609) + "'.";
+			mes "Why don't you give him back the 'Pumpkin Mojo'.";
 			mes "Don't worry he will compensate you.";
 			next;
 			mes "[" + strcharinfo(0) + "]";
 			mes "Compensate?With what?";
 			next;
 			mes "[Cool Devi]";
-			mes "If you bring ^4d4dff 1 " + mesitemlink(7609) + "^000000 and a " + mesitemlink(535) + " head that we gave out to you last year,";
-			mes "he will make it to ^00ff00the most fantastic " + mesitemlink(535) + " hat^000000.";
-			mes "Or if you don't have " + mesitemlink(535) + " head, you can just bring a ^3d3dff " + mesitemlink(7609) + ", a " + mesitemlink(535) + ", and a " + mesitemlink(2226) + " ^000000.";
+			mes "If you bring ^4d4dff 1 Pumpkin Mojo^000000 and a pumpkin head that we gave out to you last year,";
+			mes "he will make it to ^00ff00the most fantastic pumpkin hat^000000.";
+			mes "Or if you don't have pumpkin head, you can just bring a ^3d3dff Pumpkin Mojo, a pumpkin, and a cap ^000000.";
 			next;
 			mes "[Cool Devi]";
-			mes "Well, that " + mesitemlink(7609) + " is useless if you just carry it. ";
+			mes "Well, that Pumpkin Mojo is useless if you just carry it. ";
 			mes "Give it to Jack. Don't you feel pity for him?.";
 			close;
 		}
@@ -101,7 +101,7 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 		next;
 		if ((countitem(7609) > 0) && (countitem(5134) > 0)) {
 			mes "[Gloomy Jack]";
-			mes "Oh, you brought the " + mesitemlink(535) + " head!";
+			mes "Oh, you brought the pumpkin head!";
 			mes "I'll make you to nicer one.";
 			mes " ";
 			mes "[Cool Devi]";
@@ -113,7 +113,7 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 				mes " ";
 				mes "[Cool Devi]";
 				mes "What? Look at Jack. He has got so dissapointed.";
-				mes "Promise me to give the " + mesitemlink(7609) + " back to Jack later someday, will you?";
+				mes "Promise me to give the Pumpkin Mojo back to Jack later someday, will you?";
 				close;
 			}
 			mes "[Gloomy Jack]";
@@ -133,14 +133,14 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 			next;
 			donpcevent "Gloomy Jack#06_hw::OnEffect2";
 			mes "[Gloomy Jack]";
-			mes "My aura is not like it used to be. Maybe I need more " + mesitemlink(7609) + ".";
+			mes "My aura is not like it used to be. Maybe I need more Pumpkin Mojo.";
 			mes " ";
 			mes "[Cool Devi]";
 			mes "says he...";
 			next;
 			mes "[Cool Devi]";
 			mes "Oh~poor Jack.";
-			mes "Well, someday he'll get back all his " + mesitemlink(7609) + " back.";
+			mes "Well, someday he'll get back all his Pumpkin Mojo back.";
 			close;
 		}
 		else if ((countitem(7609) > 0) && (countitem(535) > 0) && (countitem(2226) > 0)) {
@@ -157,7 +157,7 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 				mes " ";
 				mes "[Cool Devi]";
 				mes "What? Look at Jack. He has got so dissapointed.";
-				mes "Promise me to give the " + mesitemlink(7609) + " back to Jack later someday,will you?";
+				mes "Promise me to give the Pumpkin Mojo back to Jack later someday,will you?";
 				close;
 			}
 			mes "[Gloomy Jack]";
@@ -178,14 +178,14 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 			next;
 			donpcevent "Gloomy Jack#06_hw::OnEffect2";
 			mes "[Gloomy Jack]";
-			mes "My aura is not like it used to be. Maybe I need more " + mesitemlink(7609) + ".";
+			mes "My aura is not like it used to be. Maybe I need more Pumpkin Mojo.";
 			mes " ";
 			mes "[Cool Devi]";
 			mes "says he...";
 			next;
 			mes "[Cool Devi]";
 			mes "Oh~poor Jack.";
-			mes "Well, someday he'll get back all his " + mesitemlink(7609) + " back.";
+			mes "Well, someday he'll get back all his Pumpkin Mojo back.";
 			close;
 		}
 		else {
@@ -210,27 +210,27 @@ prontera,164,69,3	script	Cool Devi#06_hw	738,{
 		next;
 		mes "[Cool Devi]";
 		mes "Jack is not like others. He is halloween Jack.";
-		mes "but one day, he lost his " + mesitemlink(7609) + " and turned into depressed Jack..";
-		mes "" + mesitemlink(7609) + " was his all.";
+		mes "but one day, he lost his Pumpkin Mojo and turned into depressed Jack..";
+		mes "Pumpkin Mojo was his all.";
 		next;
 		mes "[Cool Devi]";
 		mes "Well, actually that's the main reason Jack came to town.";
-		mes "To find his " + mesitemlink(7609) + ". Most suspicious suspect is ^4d4dffDelightful Lude^000000, the one known as Halloween monster.";
+		mes "To find his Pumpkin Mojo. Most suspicious suspect is ^4d4dffDelightful Lude^000000, the one known as Halloween monster.";
 		next;
 		mes "[Cool Devi]";
-		mes "Why don't you give him back the '" + mesitemlink(7609) + "'.";
+		mes "Why don't you give him back the 'Pumpkin Mojo'.";
 		mes "Don't worry he will compensate you.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Compensate? With what?";
 		next;
 		mes "[Cool Devi]";
-		mes "If you bring ^4d4dff 1 " + mesitemlink(7609) + "^000000 and a " + mesitemlink(535) + " head that we gave out to you last year,";
-		mes "he will make it to ^00ff00the most fantastic " + mesitemlink(535) + " hat^000000.";
-		mes "Or if you don't have " + mesitemlink(535) + " head, you can just bring a ^3d3dff " + mesitemlink(7609) + ", a " + mesitemlink(535) + ", and a " + mesitemlink(2226) + " ^000000.";
+		mes "If you bring ^4d4dff 1 Pumpkin Mojo^000000 and a pumpkin head that we gave out to you last year,";
+		mes "he will make it to ^00ff00the most fantastic pumpkin hat^000000.";
+		mes "Or if you don't have pumpkin head, you can just bring a ^3d3dff Pumpkin Mojo, a pumpkin, and a cap ^000000.";
 		next;
 		mes "[Cool Devi]";
-		mes "Well, that " + mesitemlink(7609) + " is useless if you just carry it. ";
+		mes "Well, that Pumpkin Mojo is useless if you just carry it. ";
 		mes "Give it to Jack. Don't you feel pity for him?.";
 		close;
 	}
@@ -249,31 +249,31 @@ geffen,145,132,3	script	Hoirin#06_hw	729,{
 	}
 	if (halloween < 100) {
 		mes "[Hoirin]";
-		mes "" + mesitemlink(535) + " is the gift that God had sent us.";
+		mes "Pumpkin is the gift that God had sent us.";
 		mes "It provides good nutrition and helps you to stay healthy!";
 		mes "Bravo~bravo~!";
 		next;
 		mes "[Hoirin]";
 		mes "I, Hoirin have always thought about a ";
-		mes "way to eat " + mesitemlink(535) + " more deliciously.";
+		mes "way to eat pumpkin more deliciously.";
 		mes "But all of a sudden, I realized.";
 		next;
 		mes "[Hoirin]";
-		mes "If I have that! I can make best the " + mesitemlink(6097) + "!!!!!";
+		mes "If I have that! I can make best the Pumpkin pie!!!!!";
 		next;
 		if (select( "What's that?:Ignore.") == 1) {
 			mes "[Hoirin]";
-			mes "What's the first image you see when you think of " + mesitemlink(535) + "?";
-			mes "I see Jack! I think Jack is the most evolved form of " + mesitemlink(535) + "!";
+			mes "What's the first image you see when you think of pumpkin?";
+			mes "I see Jack! I think Jack is the most evolved form of pumpkin!";
 			mes "I wonder what does Jack have something special? Can you imagine?";
 			next;
 			mes "[Hoirin]";
-			mes "I always prefer unique " + mesitemlink(535) + " dish! Recently, I found out that there are many kinds of Jack in the world ";
+			mes "I always prefer unique pumpkin dish! Recently, I found out that there are many kinds of Jack in the world ";
 			mes "and the extreme class Jack has blue aura around his body!";
 			next;
 			mes "[Hoirin]";
 			mes "Guess what?! it was Halloween Jack!";
-			mes "Halloween Jack has somthing that is concentrated with " + mesitemlink(535) + ".";
+			mes "Halloween Jack has somthing that is concentrated with pumpkin.";
 			mes "It is called ^4d4dffPumpkin Mojo^000000. Only if i have it, i can finish making my special pie.";
 			next;
 			mes "[Hoirin]";
@@ -289,20 +289,20 @@ geffen,145,132,3	script	Hoirin#06_hw	729,{
 			next;
 			mes "[Hoirin]";
 			mes "Good question!";
-			mes "To make my special " + mesitemlink(6097) + ", I need";
-			mes "^4d4dff 1 " + mesitemlink(7609) + "";
-			mes "2 " + mesitemlink(535) + "";
-			mes "2 " + mesitemlink(574) + "^000000";
+			mes "To make my special Pumpkin pie, I need";
+			mes "^4d4dff 1 Pumpkin Mojo";
+			mes "2 Pumpkin";
+			mes "2 Egg^000000";
 			next;
 			mes "[Hoirin]";
-			mes "Just Bring " + mesitemlink(7609) + ", " + mesitemlink(535) + ", and a " + mesitemlink(574) + ".";
+			mes "Just Bring Pumpkin Mojo, Pumpkin, and a Egg.";
 			mes "Leave the rest for me..You'll get to try the best pumkin pie!";
 			set halloween, 100;
 			close;
 		}
 		mes "[Hoirin]";
 		mes "Hm..You'll regret it!";
-		mes "Hoirin's " + mesitemlink(6097) + " is just so delicious.";
+		mes "Hoirin's pumpkin pie is just so delicious.";
 		close;
 	}
 	else {
@@ -336,16 +336,16 @@ geffen,145,132,3	script	Hoirin#06_hw	729,{
 			else {
 				mes "[Hoirin]";
 				mes "No!! This is not enough. I need";
-				mes "^4d4dff 1 " + mesitemlink(7609) + "";
-				mes "2 " + mesitemlink(535) + "";
-				mes "2 " + mesitemlink(574) + "^000000";
+				mes "^4d4dff 1 Pumpkin Mojo";
+				mes "2 Pumpkin";
+				mes "2 Egg^000000";
 				mes " at least.";
 				close;
 			}
 		case 2:
 			if (halloween == 100) {
 				mes "[Hoirin]";
-				mes "" + mesitemlink(574) + "?";
+				mes "Egg?";
 				mes "Well, actually I know someone who can help you.";
 				mes "There's a man who raise many chickens.";
 				next;
@@ -375,7 +375,7 @@ geffen,145,132,3	script	Hoirin#06_hw	729,{
 		case 3:
 			mes "[Hoirin]";
 			mes "Next time, don't forget to bring ";
-			mes "all the ingredients for " + mesitemlink(6097) + "!";
+			mes "all the ingredients for pumpkin pie!";
 			close;
 		}
 	}
@@ -402,7 +402,7 @@ nif_in,19,32,3	script	Deviruchi#06_hw	738,{
 		close;
 	}
 	mes "[Loli Ruri]";
-	mes "Devi~Where's the " + mesitemlink(6097) + "?";
+	mes "Devi~Where's the pumpkin pie?";
 	mes "Humans make them, don't they?";
 	mes "Do you have it then?";
 	mes " ";
@@ -443,13 +443,13 @@ nif_in,19,32,3	script	Deviruchi#06_hw	738,{
 		else {
 			mes "[Loli Ruri]";
 			mes "Are you kidding me?";
-			mes "Where's the " + mesitemlink(6097) + "! Don't try to lie to me!";
+			mes "Where's the pumpkin pie! Don't try to lie to me!";
 			mes " ";
 			mes "[Deviruchi]";
 			mes "Say she..Seems like she's very angry...You are in trouble.";
 			next;
 			mes "[Loli Ruri]";
-			mes "Devi!!!!!You are the one who told me that I can get the " + mesitemlink(6097) + " if I stand here and wait.";
+			mes "Devi!!!!!You are the one who told me that I can get the pumpkin pie if I stand here and wait.";
 			mes "Watch your back!";
 			mes " ";
 			mes "[Deviruchi]";
@@ -463,14 +463,14 @@ nif_in,19,32,3	script	Deviruchi#06_hw	738,{
 		}
 	case 2:
 		mes "[Loli Ruri]";
-		mes "I want to eat " + mesitemlink(6097) + ". Can I have one?Please~~~~";
+		mes "I want to eat pumpkin pie. Can I have one?Please~~~~";
 		mes " ";
 		mes "[Deviruchi]";
 		mes "Says he.....Give me if you have one.";
 		close;
 	case 3:
 		mes "[Deviruchi]";
-		mes "There's a man who makes a very special " + mesitemlink(6097) + ".";
+		mes "There's a man who makes a very special pumpkin pie.";
 		mes "No one can forget what it taste like.";
 		next;
 		mes "[Deviruchi]";
@@ -680,7 +680,7 @@ nif_fild01,167,113,3	script	Masta's chicken#06_hw01	800,{
 	set @egg_temp,rand(1,4);
 	if( @egg_temp == 3) {
 		mes "As soon as you got close to the chicken and touched it, it disappeared completely.";
-		mes "You got an '" + mesitemlink(574) + "' in the place where the chicken disappeared.";
+		mes "You got an 'egg' in the place where the chicken disappeared.";
 		disablenpc "Chicken#"+strnpcinfo(1);
 		getitem 574,1; //Egg
 		close;
@@ -696,7 +696,7 @@ nif_fild01,167,113,3	script	Masta's chicken#06_hw01	800,{
 	set @egg_temp,rand(1,4);
 	if( @egg_temp == 3) {
 		mes "As soon as you got close to the chicken and touched it, it disappeared completely.";
-		mes "You got an '" + mesitemlink(574) + "' in the place where the chicken disappeared.";
+		mes "You got an 'egg' in the place where the chicken disappeared.";
 		disablenpc "Chicken#"+strnpcinfo(1);
 		getitem 574,1; //Egg
 		close;
@@ -1069,7 +1069,7 @@ prontera,155,285,3	script	Familiar#06_hw01::HWFamiDup	799,{
 	}
 	mes "[Familiar]";
 	mes "Ok.";
-	mes "If you want to ask something, give a piece of " + mesitemlink(6097) + " to Loli Ruri.";
+	mes "If you want to ask something, give a piece of pumpkin pie to Loli Ruri.";
 	mes "He likes it.";
 	close;
 }

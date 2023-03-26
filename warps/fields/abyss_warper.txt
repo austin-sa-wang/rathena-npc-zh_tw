@@ -33,21 +33,21 @@ hu_fild05,168,304,0	script	Column#abyss1	111,{
 		{
 			case 1:
 				mes "^3355FFYou carefully place a";
-				mes "" + mesitemlink(1035) + " into one of";
+				mes "Dragon Canine into one of";
 				mes "the grooves, and then you";
 				mes "hear a powerful rumbling";
 				mes "from within the column.^000000";
 				specialeffect EF_WINDHIT;
 				next;
 				mes "^3355FFYou slowly insert a";
-				mes "" + mesitemlink(1036) + " into another";
+				mes "Dragon Scale into another";
 				mes "of the column's grooves,";
 				mes "trigerring another small";
 				mes "tremor from the column.^000000";
 				specialeffect EF_WINDHIT;
 				next;
 				mes "^3355FFYou cautiously insert";
-				mes "a " + mesitemlink(1037) + " into the";
+				mes "a Dragon Tail into the";
 				mes "final groove. Lights shine";
 				mes "forth from cracks in the";
 				mes "column's surface...^000000";
@@ -69,7 +69,7 @@ hu_fild05,168,304,0	script	Column#abyss1	111,{
 			case 2:
 				mes "^3355FFYou gingerly place a";
 				mes "Dragon's Canine, a Dragon";
-				mes "Scale, and a " + mesitemlink(1037) + " into";
+				mes "Scale, and a Dragon Tail into";
 				mes "your mouth and slowly begin";
 				mes "to chew. Nothing happens";
 				mes "and the taste of these items";

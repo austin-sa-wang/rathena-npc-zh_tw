@@ -282,24 +282,24 @@ que_qsch05,345,23,0	warp	Gate02#gq_sch05	1,1,schg_cas05,369,306
 				next;
 				mes "[Wish Maiden]";
 				if (compare(.@sub$,"aru")) {
-					mes "" + mesitemlink(7835) + "";
-					mes "" + mesitemlink(7836) + "";
-					mes "" + mesitemlink(7837) + "";
-					mes "" + mesitemlink(7838) + ".";
+					mes "Dusk Glow";
+					mes "Dawn Essence";
+					mes "Cold Moonlight";
+					mes "Hazy Starlight.";
 					next;
 					mes "[Wish Maiden]";
-					mes "Please bring those four things, 10 " + mesitemlink(7291) + ", 10 " + mesitemlink(7293) + ", and 20 " + mesitemlink(985) + ",";
+					mes "Please bring those four things, 10 Agate, 10 Rose Quartz, and 20 Elunium,";
 					mes "a Heavenly Maiden's Robe, as well as 100 Soft feathers.";
 				} else {
-					mes "" + mesitemlink(7830) + "";
-					mes "" + mesitemlink(7831) + "";
-					mes "" + mesitemlink(7832) + "";
+					mes "Goddess Tear";
+					mes "Valkyrie's Token";
+					mes "Brynhild Armor Piece";
 					mes "Hero Remains";
 					mes "Valkyrie Armor";
-					mes "" + mesitemlink(7834) + ".";
+					mes "Andvari's Ring.";
 					next;
 					mes "[Wish Maiden]";
-					mes "You must bring those six things, 10 " + mesitemlink(969) + ", and 20 " + mesitemlink(985) + ".";
+					mes "You must bring those six things, 10 Gold, and 20 Elunium.";
 					mes "Many Valhala's Flowers are also required as an offering.";				
 				}
 				next;
@@ -940,13 +940,13 @@ que_qsch05,2,3,0	duplicate(#miro_yf_main)	#miro_yf_sch05	844
 OnTouch_:
 	set .@sub$,callfunc("F_Okolnir");
 	if (countitem(7839)) {
-		mes "The Warp Gate responds to the " + mesitemlink(7839) + ".";
+		mes "The Warp Gate responds to the Crystal Key.";
 		delitem 7839,1; //Crystal_Key
 		close2;
 		warp "que_q"+.@sub$,114,158;
 		end;
 	}
-	mes "You need the " + mesitemlink(7839) + " to activate the Warp Gate.";
+	mes "You need the Crystal Key to activate the Warp Gate.";
 	close;
 }
 que_qaru01,132,172,0	duplicate(windpath01_main)	windpath01_aru01	45,1,1

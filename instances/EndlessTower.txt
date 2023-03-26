@@ -335,11 +335,11 @@ e_tower,1,1,2	script	#102Administrator Mode	844,{
 	if (.@i == 1) {
 		switch(select("Generate Purification Stone:Remove Purification Stone:Cancel")) {
 		case 1:
-			mes "Create the " + mesitemlink(6127) + " that stays for 30 minutes.";
+			mes "Create the Purification Stone that stays for 30 minutes.";
 			donpcevent "Purification Stone#et1::OnEnable";
 			break;
 		case 2:
-			mes "Destroy the " + mesitemlink(6127) + " immediately";
+			mes "Destroy the Purification Stone immediately";
 			donpcevent "Purification Stone#et1::OnDisable";
 			break;
 		case 3:
@@ -1919,7 +1919,7 @@ OnEnable:
 // Level 101
 //============================================================
 6@tower,45,89,2	script	Life Spring#1	844,{
-	mes "^0066ffYou took a sip of the " + mesitemlink(10035) + "'s clear water, and you feel invigorated.^000000";
+	mes "^0066ffYou took a sip of the spring's clear water, and you feel invigorated.^000000";
 	heal (MaxHp-Hp),(MaxSp-Sp);
 	close;
 
@@ -2140,7 +2140,7 @@ OnMyMobDead:
 			switch(select("It's fine with me. Please make one.:No way!")) {
 			case 1:
 				mes "[Lost Souls]";
-				mes "Good, then I'll combine these to create a " + mesitemlink(1157) + ".";
+				mes "Good, then I'll combine these to create a two-handed sword.";
 				next;
 				delitem 13412,1; //Twin_Edge_B
 				delitem 13413,1; //Twin_Edge_R

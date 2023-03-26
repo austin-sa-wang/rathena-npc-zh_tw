@@ -316,7 +316,7 @@ ra_in01,384,246,3	script	Vincent#ra_in01	47,{
 		mes "Huh? Oh yeah, he's";
 		mes "just fine. I found Phobe";
 		mes "loitering around Freya's";
-		mes "" + mesitemlink(10035) + ". Er, he's not willing";
+		mes "Spring. Er, he's not willing";
 		mes "to come home yet, but he did";
 		mes "give me the gem he stole.";
 		next;
@@ -416,7 +416,7 @@ ra_in01,384,246,3	script	Vincent#ra_in01	47,{
 		next;
 		mes "[Vincent]";
 		mes "Ah, and this note is a";
-		mes "" + mesitemlink(7416) + "";
+		mes "letter of recommendation";
 		mes "that I have written for you.";
 		mes "Please deliver it to Sir Zhed";
 		mes "as soon as possible. Good bye,";
@@ -845,13 +845,13 @@ rachel,138,73,5	script	Idle Merchant#ra_in01	85,{
 		next;
 		mes "[Idle Merchant]";
 		mes "You know how some restaurants";
-		mes "offer dishes with mock " + mesitemlink(517) + "";
+		mes "offer dishes with mock meat";
 		mes "made out of vegetables and";
 		mes "stuff like wheat gluten, right?";
 		next;
 		mes "[Idle Merchant]";
 		mes "Get this: mock vegetables";
-		mes "made out of pure " + mesitemlink(517) + "! Now";
+		mes "made out of pure meat! Now";
 		mes "how's that for the best of both";
 		mes "worlds? Yeah? Yeah? Here,";
 		mes "why don't you try a sample?";
@@ -867,7 +867,7 @@ rachel,138,73,5	script	Idle Merchant#ra_in01	85,{
 		mes "It's the world's";
 		mes "first zucchini...";
 		mes "Made completely out";
-		mes "of Grade A Sirloin " + mesitemlink(11706) + "!";
+		mes "of Grade A Sirloin Steak!";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "No no no! I've got to";
@@ -1052,7 +1052,7 @@ ra_fild01,245,325,3	script	Suspicious Man#ra_in01	934,{
 		mes "here. Did you steal";
 		mes "something really";
 		mes "valuable, like some";
-		mes "" + mesitemlink(7575) + " or something?";
+		mes "red jewel or something?";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Huh? No! Vincent actually";
@@ -1156,7 +1156,7 @@ rachel,263,32,3	script	Kid#ra_in01	931,{
 		mes "my mom, and not for him!";
 		next;
 		mes "^3355FFPhobe gingerly pulls";
-		mes "the shining " + mesitemlink(7575) + "";
+		mes "the shining red jewel";
 		mes "from his pocket and";
 		mes "reluctantly hands it to you.^000000";
 		next;
@@ -1331,7 +1331,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "I struggled, and tried to";
 		mes "save her, but she managed";
 		mes "to drown herself in Freya's";
-		mes "" + mesitemlink(10035) + ". She's gone from my";
+		mes "Spring. She's gone from my";
 		mes "life. Just like that. Forever.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -1387,7 +1387,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "Did... Did something";
 		mes "happen when Bruspetti";
 		mes "confronted you at Freya's";
-		mes "" + mesitemlink(10035) + "? What did exactly";
+		mes "Spring? What did exactly";
 		mes "did she learn about";
 		mes "you in Lighthalzen?";
 		next;
@@ -1401,7 +1401,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "diary that she learned";
 		mes "something horrible about";
 		mes "you, and it involved a";
-		mes "" + mesitemlink(1201) + "... just like this one.";
+		mes "Knife... just like this one.";
 		next;
 		mes "[Katinshuell]";
 		mes ".........!";
@@ -1428,7 +1428,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "Did... Did something";
 		mes "happen when Bruspetti";
 		mes "confronted you at Freya's";
-		mes "" + mesitemlink(10035) + "? What did exactly";
+		mes "Spring? What did exactly";
 		mes "did she learn about";
 		mes "you in Lighthalzen?";
 		next;
@@ -1480,12 +1480,12 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "I can live with this!";
 		mes "The man I love... It's";
 		mes "unthinkable that he'd";
-		mes "use a " + mesitemlink(1201) + " t-to... I just";
+		mes "use a Knife t-to... I just";
 		mes "want to throw up.";
 		next;
 		mes "- Date: OOXO -";
 		mes "I'm planning to meet him";
-		mes "tomorrow at Freya's " + mesitemlink(10035) + ".";
+		mes "tomorrow at Freya's Spring.";
 		mes "I can't help but look at him";
 		mes "differently now, but still...";
 		mes "He's the man I truly love.";
@@ -1501,7 +1501,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "the very last page...";
 		mes "What happened when";
 		mes "Bruspetti confronted";
-		mes "you at Freya's " + mesitemlink(10035) + "?";
+		mes "you at Freya's Spring?";
 		set rach_vice,19;
 		next;
 		mes "[Katinshuell]";
@@ -1515,7 +1515,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		mes "Damn it! I don't want to";
 		mes "think about her anymore!";
 		mes "Get away from me, and take";
-		mes "" + mesitemlink(7571) + " with you!";
+		mes "Bruspetti's diary with you!";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "What?! No way, not after";
@@ -1551,7 +1551,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "You recognized";
-			mes "" + mesitemlink(7571) + "";
+			mes "Bruspetti's diary";
 			mes "pretty quickly...";
 			mes "And you did mention";
 			mes "you were looking for it.";
@@ -1614,7 +1614,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 				mes "[" + strcharinfo(0) + "]";
 				mes "So while she was away";
 				mes "in Lighthalzen, you went";
-				mes "to Freya's " + mesitemlink(10035) + ", all";
+				mes "to Freya's Spring, all";
 				mes "by yourself, didn't you?!";
 				next;
 				mes "[Katinshuell]";
@@ -1667,7 +1667,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 					mes "[" + strcharinfo(0) + "]";
 					mes "Hmm... Why are you";
 					mes "always hanging out at";
-					mes "Freya's " + mesitemlink(10035) + " alone?";
+					mes "Freya's Spring alone?";
 					mes "And why has Bruspetti";
 					mes "not returned home yet?";
 					next;
@@ -1693,7 +1693,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 			}
 		case 3:
 			mes "[" + strcharinfo(0) + "]";
-			mes "Freya's " + mesitemlink(10035) + ".";
+			mes "Freya's Spring.";
 			mes "Why are you always";
 			mes "hanging around there";
 			mes "by yourself, eh?";
@@ -1763,7 +1763,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		next;
 		mes "[Katinshuell]";
 		mes "Hey! Hey that's...";
-		mes "That's " + mesitemlink(7571) + "!";
+		mes "That's Bruspetti's diary!";
 		mes "I-I've been looking for-- um...";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -1817,7 +1817,7 @@ ra_in01,235,194,5	script	Katinshuell	931,{
 		}
 		else if (.@input$ == "Freya's Spring") {
 			mes "[Katinshuell]";
-			mes "Freya's " + mesitemlink(10035) + "...";
+			mes "Freya's Spring...";
 			mes "That's just a park";
 			mes "where old people and";
 			mes "couples sort of hang out.";
@@ -2231,7 +2231,7 @@ rachel,73,244,3	script	Lachellen	919,{
 		}
 		else if (.@input$ == "Freya's Spring") {
 			mes "[Lachellen]";
-			mes "Freya's " + mesitemlink(10035) + "?";
+			mes "Freya's Spring?";
 			mes "Oh, I like that place!";
 			mes "Speaking of which, I know";
 			mes "someone named Katinshuell";
@@ -2439,7 +2439,7 @@ rachel,266,35,3	script	Grandma#rachel	918,{
 		mes "too. Hm, that reminds me...";
 		next;
 		mes "[Grandma]";
-		mes "See the " + mesitemlink(1132) + " of the " + mesitemlink(10035) + "?";
+		mes "See the edge of the spring?";
 		mes "The same young man frequently";
 		mes "comes to that spot, and stares";
 		mes "into the water, just dripping with sadness. Someone so young";
@@ -2469,7 +2469,7 @@ rachel,266,35,3	script	Grandma#rachel	918,{
 	mes "It's so heavenly peaceful.";
 	next;
 	mes "[Grandma]";
-	mes "It brings my " + mesitemlink(7855) + " joy to see";
+	mes "It brings my heart joy to see";
 	mes "young couples can coming";
 	mes "here and relaxing together.";
 	mes "Isn't love a grand thing?";
@@ -2502,7 +2502,7 @@ OnTouch_:
 	if (rach_vice == 23) {
 		mes "[" + strcharinfo(0) + "]";
 		mes "Just looking at this";
-		mes "" + mesitemlink(10035) + " makes me think";
+		mes "spring makes me think";
 		mes "of Bruspetti. What really";
 		mes "happened to her? I get";
 		mes "the feeling that she";
@@ -2562,7 +2562,7 @@ OnTouch_:
 		mes "but you mustn't stand";
 		mes "there! It's very slippery.";
 		mes "What if you fall into the";
-		mes "" + mesitemlink(10035) + "? It's dangerous.";
+		mes "spring? It's dangerous.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Oh... Er, thank you.";
@@ -2619,7 +2619,7 @@ OnTouch_:
 ra_in01,255,25,0	script	Book#ra_in	111,{
 	if (rach_vice == 15) {
 		mes "^3355FFThis is where you";
-		mes "found " + mesitemlink(7571) + ".";
+		mes "found Bruspetti's diary.";
 		mes "Perhaps you should take";
 		mes "it with you the next time";
 		mes "you talk to Katinshuell.^000000";
@@ -2630,7 +2630,7 @@ ra_in01,255,25,0	script	Book#ra_in	111,{
 		changequest 8118,8119;
 		getitem 7571,1; //Diary_Of_Blue
 		mes "^3355FFThis must be";
-		mes "" + mesitemlink(7571) + "!";
+		mes "Bruspetti's diary!";
 		mes "You now have permission";
 		mes "to take it with you so that";
 		mes "you can figure out if she and";
@@ -2639,7 +2639,7 @@ ra_in01,255,25,0	script	Book#ra_in	111,{
 	}
 	else if ((rach_vice == 9) || (rach_vice == 10)) {
 		mes "^3355FFThis must be";
-		mes "" + mesitemlink(7571) + "!";
+		mes "Bruspetti's diary!";
 		mes "But... reading it";
 		mes "would make you feel";
 		mes "like a real creep.";
@@ -2743,7 +2743,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 			next;
 			mes "[Urstialla]";
 			mes "I managed to acquire a";
-			mes "" + mesitemlink(2603) + " of incomparable";
+			mes "necklace of incomparable";
 			mes "beauty from the dwarves.";
 			mes "However, the gems have dulled";
 			mes "with age and need to be shined";
@@ -2751,7 +2751,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 			next;
 			mes "[Urstialla]";
 			mes "However, not just anyone can";
-			mes "shine this special " + mesitemlink(2603) + "";
+			mes "shine this special necklace";
 			mes "forged by the Dwarves. I need";
 			mes "someone that knows arcane magic";
 			mes "to help me. I think there's only";
@@ -2762,7 +2762,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 			mes "access to the most powerful";
 			mes "magic spells in the world,";
 			mes "must be able to clean this";
-			mes "" + mesitemlink(2603) + "'s gems! However";
+			mes "necklace's gems! However";
 			mes "There's no way I can reach him.";
 			next;
 			mes "[Urstialla]";
@@ -2778,7 +2778,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 			mes "regularly travel through those";
 			mes "kinds of areas, so would you";
 			mes "please look for Maheo and ask";
-			mes "him to clean this " + mesitemlink(2603) + " on";
+			mes "him to clean this necklace on";
 			mes "my behalf? Please, for my son...";
 			next;
 			if (select("But that's none of my business!:Alright, I'll do it.") == 1) {
@@ -2796,7 +2796,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 			mes "[Urstialla]";
 			mes "Thank you so much!";
 			mes "Please, take care of this";
-			mes "" + mesitemlink(2603) + " and ask Maheo";
+			mes "necklace and ask Maheo";
 			mes "to restore its luster. Then,";
 			mes "it'll be a fitting tribute to";
 			mes "our loving goddess Freya.";
@@ -2813,13 +2813,13 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 		mes "Are you telling me";
 		mes "that you don't believe?";
 		mes "Repent, and may your";
-		mes "" + mesitemlink(7855) + " be opened to Freya!";
+		mes "heart be opened to Freya!";
 	}
 	else if ((ice_necklace_q >= 1) && (ice_necklace_q < 5)) {
 		mes "[Urstialla]";
 		mes "Please find Maheo the";
 		mes "Mage and ask him to restore";
-		mes "the beauty of the " + mesitemlink(2603) + "";
+		mes "the beauty of the necklace";
 		mes "I gave you. He should be";
 		mes "fighting monsters in the";
 		mes "ice cave to the north.";
@@ -2827,7 +2827,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 	else if (ice_necklace_q == 5) {
 		if (countitem(7573) > 0) {
 			mes "[Urstialla]";
-			mes "Oh! My " + mesitemlink(2603) + "! Thank you!";
+			mes "Oh! My necklace! Thank you!";
 			mes "It's so beautiful! It will";
 			mes "make a wonderful tribute to";
 			mes "Freya! I am certain with this,";
@@ -2857,7 +2857,7 @@ rachel,157,183,3	script	Sincere Follower Urstia	916,{
 		}
 		else {
 			mes "["+strcharinfo(0)+"]";
-			mes "Oh, no! The " + mesitemlink(2603) + " has disappeared!";
+			mes "Oh, no! The necklace has disappeared!";
 		}
 	}
 	else {
@@ -2908,7 +2908,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		}
 		else {
 			specialeffect EF_HIT2;
-			mes "^3355FFYou " + mesitemlink(1354) + " at the";
+			mes "^3355FFYou hammer at the";
 			mes "ice with all your might.^000000";
 		}
 		next;
@@ -3039,7 +3039,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		mes "["+strcharinfo(0)+"]";
 		mes "I heard that you can";
 		mes "polish the gems on this";
-		mes "" + mesitemlink(2603) + " with your magic,";
+		mes "necklace with your magic,";
 		mes "so I came here to find you.";
 		next;
 		mes "[Maheo]";
@@ -3066,7 +3066,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		mes "that my master will know";
 		mes "of a way to free me from";
 		mes "this prison of ice. He can";
-		mes "be found near Freya's " + mesitemlink(10035) + ":";
+		mes "be found near Freya's Spring:";
 		mes "beseech him on my behalf!";
 		set ice_necklace_q,2;
 		changequest 2109,2110;
@@ -3081,7 +3081,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		mes "is very knowledgable in";
 		mes "the ways of magic. Please...";
 		mes "Ask him for help. He should";
-		mes "be reading near Freya's " + mesitemlink(10035) + ".";
+		mes "be reading near Freya's Spring.";
 		close;
 	}
 	else if (ice_necklace_q == 4) {
@@ -3096,7 +3096,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 			}
 			else {
 				mes "["+strcharinfo(0)+"]";
-				mes "Oh, " + mesitemlink(711) + "! I left the " + mesitemlink(2603) + " in the city! I will be right back!";
+				mes "Oh, shoot! I left the necklace in the city! I will be right back!";
 				next;
 				mes "[Maheo]";
 				mes "Hey, hey! Can't you just release me first?";
@@ -3111,12 +3111,12 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 			mes "is very knowledgable in";
 			mes "the ways of magic. Please...";
 			mes "Ask him for help. He should";
-			mes "be reading near Freya's " + mesitemlink(10035) + ".";
+			mes "be reading near Freya's Spring.";
 			close;
 		}
 		mes "["+strcharinfo(0)+"]";
 		mes "Well, he made this";
-		mes "magic " + mesitemlink(1354) + " which is";
+		mes "magic hammer which is";
 		mes "supposed to be able to";
 		mes "break this magic ice.";
 		next;
@@ -3127,7 +3127,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		mes "me out of here please!";
 		next;
 		mes "^3355FFYou tightly gripped";
-		mes "the " + mesitemlink(7569) + ", and";
+		mes "the Wind Hammer, and";
 		mes "swung it down at the ice";
 		mes "with all of your strength.^000000";
 		next;
@@ -3165,7 +3165,7 @@ ice_dun02,120,105,3	script	Man Stuck in Ice#cave	924,5,5,{
 		mes "[Maheo]";
 		mes "Er, but first, I need to";
 		mes "use my magic to clean";
-		mes "that " + mesitemlink(2603) + " of yours.";
+		mes "that necklace of yours.";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Here...";
@@ -3291,13 +3291,13 @@ rachel,265,98,3	script	Hamion#aru	930,{
 		mes "Would you help";
 		mes "me? I need to get";
 		mes "^4D4DFF5 Rough Winds^000000,";
-		mes "^4D4DFF1 " + mesitemlink(1354) + "^000000, and";
-		mes "^4D4DFF1 " + mesitemlink(7433) + "^000000";
+		mes "^4D4DFF1 Hammer^000000, and";
+		mes "^4D4DFF1 Blank Scroll^000000";
 		next;
 		mes "[Hamion]";
 		mes "You can get Blank Scrolls";
 		mes "in the Sage Academy in Juno.";
-		mes "Ah, and the " + mesitemlink(1354) + " is a weapon,";
+		mes "Ah, and the Hammer is a weapon,";
 		mes "not one of those smithing tools.";
 		mes "I'd help you if I could, but...";
 		mes "I'm just smart, not strong.";
@@ -3318,13 +3318,13 @@ rachel,265,98,3	script	Hamion#aru	930,{
 			mes "[Hamion]";
 			mes "I need to get";
 			mes "^4D4DFF5 Rough Winds^000000,";
-			mes "^4D4DFF1 " + mesitemlink(1354) + "^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(7433) + "^000000";
+			mes "^4D4DFF1 Hammer^000000, and";
+			mes "^4D4DFF1 Blank Scroll^000000";
 			next;
 			mes "[Hamion]";
 			mes "You can get Blank Scrolls";
 			mes "in the Sage Academy in Juno.";
-			mes "Ah, and the " + mesitemlink(1354) + " is a weapon,";
+			mes "Ah, and the Hammer is a weapon,";
 			mes "not one of those smithing tools.";
 			mes "I'd help you if I could, but...";
 			mes "I'm just smart, not strong.";
@@ -3334,9 +3334,9 @@ rachel,265,98,3	script	Hamion#aru	930,{
 		mes "Great, you have everything";
 		mes "I need! But first, would you";
 		mes "make sure that you only have";
-		mes "1 " + mesitemlink(1354) + " in your inventory?";
+		mes "1 Hammer in your inventory?";
 		mes "If you have more than one,";
-		mes "I might take the wrong " + mesitemlink(1354) + ".";
+		mes "I might take the wrong Hammer.";
 		next;
 		if (select("Let me check.:Don't worry, I checked.") == 1) {
 			mes "[Hamion]";
@@ -3363,9 +3363,9 @@ rachel,265,98,3	script	Hamion#aru	930,{
 		next;
 		mes "[Hamion]";
 		mes "...Aaaand now it's done.";
-		mes "Here, take this " + mesitemlink(7569) + "";
+		mes "Here, take this Wind Hammer";
 		mes "and use it to free Maheo.";
-		mes "This " + mesitemlink(1354) + " will only work";
+		mes "This hammer will only work";
 		mes "once, so make sure that you";
 		mes "smash that ice properly!";
 		delitem 1354,1; //Hammer
@@ -3521,7 +3521,7 @@ ice_dun03,126,126,3	script	Blazing Fire#ice1	802,{
 			else if (countitem(7562) > 0) {
 				next;
 				select("Use Ice Scale.");
-				mes "^3355FFYou throw the " + mesitemlink(7562) + " into";
+				mes "^3355FFYou throw the Ice Scale into";
 				mes "the flame, it crackles before";
 				mes "extinguising.^000000";
 				delitem 7562,1; //Ice Scale
@@ -3558,7 +3558,7 @@ ice_dun03,172,126,0	script	Blazing Fire#ice2	802,{
 			else if (countitem(7562) > 0) {
 				next;
 				select("Use Ice Scale.");
-				mes "^3355FFYou throw the " + mesitemlink(7562) + " into";
+				mes "^3355FFYou throw the Ice Scale into";
 				mes "the flame, it crackles before";
 				mes "extinguising.^000000";
 				delitem 7562,1; //Ice Scale
@@ -3594,7 +3594,7 @@ ice_dun03,172,172,0	script	Blazing Fire#ice3	802,{
 			else if (countitem(7562) > 0) {
 				next;
 				select("Use Ice Scale.");
-				mes "^3355FFYou throw the " + mesitemlink(7562) + " into";
+				mes "^3355FFYou throw the Ice Scale into";
 				mes "the flame, it crackles before";
 				mes "extinguising.^000000";
 				delitem 7562,1; //Ice Scale
@@ -3630,7 +3630,7 @@ ice_dun03,127,172,0	script	Blazing Fire#ice4	802,{
 			else if (countitem(7562) > 0) {
 				next;
 				select("Use Ice Scale.");
-				mes "^3355FFYou throw the " + mesitemlink(7562) + " into";
+				mes "^3355FFYou throw the Ice Scale into";
 				mes "the flame, it crackles before";
 				mes "extinguising.^000000";
 				delitem 7562,1; //Ice Scale
@@ -3849,7 +3849,7 @@ ra_temple,116,174,3	script	Nemma#ra_temple	920,{
 			mes "to win something nice from our";
 			mes "Temple Storage. However, you";
 			mes "donate the 50,000 zeny for each";
-			mes "" + mesitemlink(7528) + ", which also happens to be the minimum donation amount.";
+			mes "Lottery Ticket, which also happens to be the minimum donation amount.";
 			next;
 			cutin "ra_nemma03",2;
 			mes "[Priestess Nemma]";
@@ -4186,7 +4186,7 @@ S_Donate:
 			mes "I can scarcely believe it...";
 			mes "You're carrying so much stuff,";
 			mes "you don't even have enough";
-			mes "room for a " + mesitemlink(7528) + ".";
+			mes "room for a Lottery Ticket.";
 			mes "You'd better put some of";
 			mes "your things in Storage, yes?";
 			next;
@@ -4279,7 +4279,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 		next;
 		mes "[Kid]";
 		mes "Oh hey, do";
-		mes "you like " + mesitemlink(529) + "?";
+		mes "you like candy?";
 		if (ra_tem_q == 1) {
 			next;
 			switch(select("Not at all.:Yeah.:Sure, I love the stuff~:Not much.")) {
@@ -4312,7 +4312,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 				mes "aren't you? Heh heh heh!";
 				next;
 				mes "[Kid]";
-				mes "" + mesitemlink(529) + " is only for";
+				mes "Candy is only for";
 				mes "kids! Hahahahaah!";
 				next;
 				mes "[Kid]";
@@ -4324,7 +4324,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 				mes "Oh, you do?";
 				mes "Does that mean";
 				mes "that you have";
-				mes "any " + mesitemlink(529) + ", then?";
+				mes "any candy, then?";
 				next;
 				mes "[Kid]";
 				mes "I want one!";
@@ -4337,7 +4337,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 					mes "[Kid]";
 					mes "Mmm...";
 					mes "If you give me";
-					mes "some " + mesitemlink(529) + ", then I'll";
+					mes "some Candy, then I'll";
 					mes "tell you something";
 					mes "really cool, yeah?";
 					next;
@@ -4348,7 +4348,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 						mes "[Kid]";
 						mes "Hah! Got you!";
 						mes "I didn't want any";
-						mes "" + mesitemlink(529) + " anyway! Nyeh!";
+						mes "candy anyway! Nyeh!";
 						mes "But I like you, so";
 						mes "I can tell you a secret!";
 						next;
@@ -4369,7 +4369,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 						mes "[Kid]";
 						mes "Awww, nuts!";
 						mes "I just remembered!";
-						mes "If you have " + mesitemlink(529) + ", it";
+						mes "If you have candy, it";
 						mes "must be from another";
 						mes "country! I should have";
 						mes "taken it from you. Dang it!";
@@ -4382,7 +4382,7 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 					}
 					mes "[Kid]";
 					mes "You don't wanna";
-					mes "share your " + mesitemlink(529) + "?";
+					mes "share your candy?";
 					mes "Hmpf! I guess you";
 					mes "must really love it.";
 					mes "...You big greedy.";
@@ -4390,33 +4390,33 @@ rachel,243,37,3	script	Kid#Candy Addict	921,{
 				}
 				mes "[Kid]";
 				mes "Wait, you don't have";
-				mes "any " + mesitemlink(529) + ", huh? How can";
-				mes "you tell me you like " + mesitemlink(529) + "";
+				mes "any Candy, huh? How can";
+				mes "you tell me you like Candy";
 				mes "when you don't carry any?";
 				mes "Look at this! My pockets";
-				mes "are full of " + mesitemlink(529) + "!";
+				mes "are full of candy!";
 				next;
 				mes "[Kid]";
 				mes "See?";
 				mes "Look at all";
-				mes "this " + mesitemlink(529) + "!";
+				mes "this candy!";
 				next;
 				mes "[Kid]";
 				mes "Yeah, you have to";
 				mes "have at least this";
-				mes "much " + mesitemlink(529) + " to say";
+				mes "much candy to say";
 				mes "that you like them.";
 				mes "Hee hee hee hee!";
 				next;
 				mes "[Kid]";
 				mes "Oh hey...";
 				mes "Would you like to";
-				mes "have some " + mesitemlink(529) + "?";
+				mes "have some candy?";
 				next;
 				mes "[Kid]";
 				mes "Haha! I tricked you!";
 				mes "I'm not gonna share";
-				mes "all this " + mesitemlink(529) + " with you!";
+				mes "all this candy with you!";
 				mes "All of it is for me!";
 				next;
 				mes "[Kid]";
@@ -4616,7 +4616,7 @@ OnTouch:
 			mes ".........";
 			next;
 			mes "^3355FFIt smells a little bit";
-			mes "like copper or " + mesitemlink(998) + ". Blood";
+			mes "like copper or iron. Blood";
 			mes "has probably been spilled here.^000000";
 			set ra_tem_q,7;
 			close;
@@ -5357,7 +5357,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 			else if (aru_vol == 0) {
 				cutin "ra_gman",2;
 				mes "[High Priest Zhed]";
-				mes "Ah, it does my " + mesitemlink(7855) + " to";
+				mes "Ah, it does my heart to";
 				mes "good to see you again.";
 				mes "Adventurers willing to work";
 				mes "so hard for the sake of world";
@@ -5444,7 +5444,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				next;
 				mes "[High Priest Zhed]";
 				mes "All the priests agree that";
-				mes "reassembling Ymir's " + mesitemlink(7855) + " will";
+				mes "reassembling Ymir's Heart will";
 				mes "revive Freya. As you know, the";
 				mes "pieces are scattered all over";
 				mes "the world. Some are possessed";
@@ -5455,12 +5455,12 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				mes "conflict, the moderate faction";
 				mes "of priests decided to hire";
 				mes "scientists to reproduce Ymir's";
-				mes "" + mesitemlink(7855) + ", resulting in an";
+				mes "Heart, resulting in an";
 				mes "imitation of that artifact.";
 				next;
 				mes "["+strcharinfo(0)+"]";
 				mes "An imitation of Ymir's";
-				mes "" + mesitemlink(7855) + "? I think I know of";
+				mes "Heart? I think I know of";
 				mes "a famous scientist from the";
 				mes "Schwarzwald Republic that";
 				mes "was working on that! Let's";
@@ -5477,7 +5477,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "Yes, his name was Varmunt.";
 					mes "Unfortunately, he deliberately";
 					mes "destroyed the Imitation of";
-					mes "Ymir's " + mesitemlink(7855) + " into pieces,";
+					mes "Ymir's Heart into pieces,";
 					mes "and then disappeared.";
 					next;
 				}
@@ -5486,7 +5486,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes ""+.@input$+"?";
 					mes "No, that wasn't him.";
 					mes "The man that created the";
-					mes "imitation of Ymir's " + mesitemlink(7855) + "";
+					mes "imitation of Ymir's Heart";
 					mes "was named Varmunt.";
 					mes "He was truly a genius.";
 					next;
@@ -5501,7 +5501,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				next;
 				mes "[High Priest Zhed]";
 				mes "Although the working";
-				mes "Ymir's " + mesitemlink(7855) + " imitation that";
+				mes "Ymir's Heart imitation that";
 				mes "Varmunt had created was broken";
 				mes "into pieces, other scientists";
 				mes "managed to mostly reproduce";
@@ -5510,7 +5510,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				mes "[High Priest Zhed]";
 				mes "Since our moderate faction,";
 				mes "was only able to provide";
-				mes "unstable Ymir " + mesitemlink(7855) + " imitations,";
+				mes "unstable Ymir Heart imitations,";
 				mes "the hard-liner faction quickly";
 				mes "gained more respectability than";
 				mes "us in the eyes of the people.";
@@ -5527,14 +5527,14 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				mes "Although the hard-liners";
 				mes "allowed us to continue";
 				mes "our research in faithfully";
-				mes "reproducing Ymir's " + mesitemlink(7855) + ",";
+				mes "reproducing Ymir's Heart,";
 				mes "they've been developing their";
 				mes "military might unopposed.";
 				next;
 				mes "[High Priest Zhed]";
 				mes "So basically, the moderates";
 				mes "are trying to recreate Ymir's";
-				mes "" + mesitemlink(7855) + " at research centers";
+				mes "Heart at research centers";
 				mes "in the Holy Ground and the";
 				mes "Schwarzwald Republic.";
 				next;
@@ -5549,7 +5549,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 				mes "["+strcharinfo(0)+"]";
 				mes "This doesn't look good.";
 				mes "I mean, if they're gearing";
-				mes "up to take the Ymir " + mesitemlink(7855) + "";
+				mes "up to take the Ymir Heart";
 				mes "Pieces by force, it'll be war";
 				mes "against the Schwalzvalt Republic";
 				mes "and the Rune-Midgarts Kingdom!";
@@ -5609,7 +5609,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "faction are opposed to war,";
 					mes "so we've been trying to";
 					mes "develop imitations of Ymir's";
-					mes "" + mesitemlink(7855) + " for a long time. We've";
+					mes "Heart for a long time. We've";
 					mes "yet to succeed, unfortunately.";
 					next;
 					mes "[High Priest Zhed]";
@@ -5621,7 +5621,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "military purposes.";
 					next;
 					mes "[High Priest Zhed]";
-					mes "The Ymir " + mesitemlink(7855) + " reproduction";
+					mes "The Ymir Heart reproduction";
 					mes "project has been frustrating";
 					mes "the best minds in the world,";
 					mes "and some scientists have even";
@@ -5630,7 +5630,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					next;
 					mes "[High Priest Zhed]";
 					mes "Varmunt actually succeeded";
-					mes "in recreating Ymir's " + mesitemlink(7855) + ",";
+					mes "in recreating Ymir's Heart,";
 					mes "but then he destroyed it and";
 					mes "he disappeared. He did it to";
 					mes "prevent war, but we could";
@@ -5651,7 +5651,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "Volcano disturbs me greatly.";
 					mes "It's almost certain that they";
 					mes "intend to wage war against any";
-					mes "nation with a " + mesitemlink(7346) + ".";
+					mes "nation with a Ymir's Heart piece.";
 					next;
 					mes "["+strcharinfo(0)+"]";
 					mes "Who is in charge of that";
@@ -5689,7 +5689,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "[High Priest Zhed]";
 					mes "Of course.";
 					mes "Let's see, what's";
-					mes "in this " + mesitemlink(7342) + "?";
+					mes "in this File Folder?";
 					next;
 					mes "[High Priest Zhed]";
 					mes ".............";
@@ -5763,7 +5763,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "["+strcharinfo(0)+"]";
 					mes "Huh...?";
 					mes "Where did I put";
-					mes "that " + mesitemlink(7342) + "?";
+					mes "that File Folder?";
 				}
 			}
 			else if (aru_vol == 6) {
@@ -5868,7 +5868,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "but think I'm in the wrong.";
 					next;
 					mes "["+strcharinfo(0)+"]";
-					mes "Don't lose " + mesitemlink(7855) + ",";
+					mes "Don't lose heart,";
 					mes "High Priest Zhed.";
 					mes "I... I believe in you!";
 					next;
@@ -5986,7 +5986,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "It'd probably be best to";
 					mes "tell her exactly what is";
 					mes "happening. The full truth.";
-					mes "In my " + mesitemlink(7855) + ", I know that";
+					mes "In my heart, I know that";
 					mes "would be best.";
 					next;
 					mes "[High Priest Zhed]";
@@ -6247,7 +6247,7 @@ ra_temin,277,159,3	script	High Priest Zhed#rachel	932,{
 					mes "We won't give up on";
 					mes "reviving our goddess Freya,";
 					mes "but we will retrieve Ymir's";
-					mes "" + mesitemlink(7855) + " through diplomacy";
+					mes "Heart through diplomacy";
 					mes "rather than violence.";
 					mes "It won't be easy...";
 					next;
@@ -6686,7 +6686,7 @@ L_Lottery:
 	mes "Here we go";
 	mes "Excited? Mm";
 	mes "I can redeem only";
-	mes "1 " + mesitemlink(7528) + " at";
+	mes "1 Lottery Ticket at";
 	mes "a time. Your reward";
 	mes "for this ticket is...";
 	next;
@@ -7342,7 +7342,7 @@ OnTouch:
 		mes "^3355FFNo wonder this object";
 		mes "in the water seems so";
 		mes "familiar: it's a Ymir's";
-		mes "" + mesitemlink(7855) + " Piece! In fact, there's";
+		mes "Heart Piece! In fact, there's";
 		mes "dozens of them just lying here.^000000";
 		next;
 		mes "^3355FFWhy would so many of these";

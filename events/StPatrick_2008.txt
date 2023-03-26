@@ -58,7 +58,7 @@ prt_fild05,170,286,4	script	Anxious Leprechaun#8pday	954,{
 		next;
 		mes "[O'Riley the Leprechaun]";
 		mes "This year, I have made me journey to see the outside world once again.";
-		mes "I traveled to me cache of " + mesitemlink(969) + " I found it to be safe and undisturbed.";
+		mes "I traveled to me cache of gold I found it to be safe and undisturbed.";
 		next;
 		mes "[O'Riley the Leprechaun]";
 		mes "I thought to meself, I am very clever to hide the treasure from the snakes.";
@@ -71,7 +71,7 @@ prt_fild05,170,286,4	script	Anxious Leprechaun#8pday	954,{
 		mes "So once again, I am without treasure this year.";
 		next;
 		mes "[O'Riley the Leprechaun]";
-		mes "I have not even begun brewing me famous " + mesitemlink(12135) + " on account of this mess.";
+		mes "I have not even begun brewing me famous green ale on account of this mess.";
 		mes "I will ask ye, will ya help get me treasure back?";
 		next;
 		if (select("Sure, I can help you.:I'm too busy.") == 2) {
@@ -205,31 +205,31 @@ mjolnir_01,272,363,4	script	Rocks#08StPattysDay	-1,1,1,{
 
 OnTouch:
 	if (StPatrick2008 < 1) {
-		mes "- You've found a pile of " + mesitemlink(2796) + " covered with soil. -";
+		mes "- You've found a pile of rocks covered with soil. -";
 		close;
 	}
 	if (StPatrick2008 == 1) {
-		mes "- You've found a pile of " + mesitemlink(2796) + " covered with soil. -";
+		mes "- You've found a pile of rocks covered with soil. -";
 		next;
 		if (countitem(12018) < 200) {
-			mes "The " + mesitemlink(2796) + " won't budge.";
-			mes "Maybe O'Riley knows a way to move the " + mesitemlink(2796) + ".";
+			mes "The rocks won't budge.";
+			mes "Maybe O'Riley knows a way to move the rocks.";
 			close;
 		}
 		else {
 			if (select("Use Firecrackers.:Ignore") == 2) {
 				close;
 			}
-			mes "You buried 200 Firecrackers under the pile of " + mesitemlink(2796) + ".";
+			mes "You buried 200 Firecrackers under the pile of rocks.";
 			mes "You light the fuse.";
 			next;
 			mes "*BOOM!*";
 			specialeffect2 EF_LORD;
 			next;
 			mes "After A cloud of dust and smoke has dissipated,";
-			mes "You've found a " + mesitemlink(7948) + " between the " + mesitemlink(2796) + " and soil.";
-			mes "This " + mesitemlink(7948) + " must contain O'Riley's valuables.";
-			mes "Let's bring the " + mesitemlink(7948) + " to O'Riley.";
+			mes "You've found a box between the rocks and soil.";
+			mes "This box must contain O'Riley's valuables.";
+			mes "Let's bring the box to O'Riley.";
 			close2;
 			set StPatrick2008,2;
 			delitem 12018,200;

@@ -44,7 +44,7 @@ geffen,59,143,0	script	Meera	91,{
 	mes "^CC6600Royal Jelly^000000!";
 	next;
 	mes "[Meera]";
-	mes "Nothing can compare to the luscious flavor of " + mesitemlink(526) + ". And I think it's even better for you than ordinary Honey!";
+	mes "Nothing can compare to the luscious flavor of Royal Jelly. And I think it's even better for you than ordinary Honey!";
 	close;
 }
 
@@ -89,7 +89,7 @@ geffen_in,164,109,0	script	Wizard Stanza	64,{
 	mes "But there is an item that can protect the caster from ill consequence, allowing the safe use of certain magics. These are the shining, mystical stones known as Gemstones.";
 	next;
 	mes "[Stanza]";
-	mes "" + mesitemlink(7300) + "...";
+	mes "Gemstone...";
 	mes "If you wish to use your powers to the fullest, remember this item.";
 	close;
 }
@@ -128,7 +128,7 @@ geffen,111,48,0	script	Stacey	101,{
 	if (getequipid(EQI_HEAD_TOP) == 2299) {
 		mes "[Stacey]";
 		mes "Oh...!";
-		mes "Is that an " + mesitemlink(2299) + " you're wearing?! That's so cool! Wow...";
+		mes "Is that an Orc Helm you're wearing?! That's so cool! Wow...";
 		next;
 		mes "[Stacey]";
 		if (Sex == SEX_MALE) {
@@ -207,7 +207,7 @@ geffen_in,34,170,0	script	Theodore	47,{
 	mes "[Theodore]";
 	mes "Some sort of...";
 	mes "Sharp, piercing";
-	mes "projectile launcher, preferably made out of " + mesitemlink(6008) + ".";
+	mes "projectile launcher, preferably made out of wood.";
 	next;
 	mes "[Theodore]";
 	mes "But where could";
@@ -241,10 +241,10 @@ OnTouch_:
 		mes "Yeah, I got the stuff!";
 		next;
 		mes "[Suspicious Guy]";
-		mes "Here it is! High quality " + mesitemlink(501) + "! It starts working right away once you take it. Once it hits your lips, you can't stop. This stuff is that good.";
+		mes "Here it is! High quality Red Potion! It starts working right away once you take it. Once it hits your lips, you can't stop. This stuff is that good.";
 		next;
 		mes "[Suspicious Guy]";
-		mes "C'mon dude. This is the latest " + mesitemlink(501) + ". I got it from a close friend of a friend, you know, a real dependable source, and it's real cheap too. You can't pass this up!";
+		mes "C'mon dude. This is the latest Red Potion. I got it from a close friend of a friend, you know, a real dependable source, and it's real cheap too. You can't pass this up!";
 		next;
 		select("Uh, can I buy White Potions instead?");
 		mes "[Suspicious Guy]";
@@ -262,7 +262,7 @@ OnTouch_:
 			if (.@input == 0) {
 				mes "[Suspicious Guy]";
 				if (Sex == SEX_MALE)
-					mes "Ah duuuuuude~ You're breakin' my " + mesitemlink(7855) + "! I mean, at these prices, I'm practically performing charity!";
+					mes "Ah duuuuuude~ You're breakin' my heart! I mean, at these prices, I'm practically performing charity!";
 				else
 					mes "W-waaaait! You didn't let me tell you the part about how Red Potions help you lose and gain weight in all the right places! Waaaaait!";
 				close;
@@ -294,7 +294,7 @@ OnTouch_:
 	case 2:
 		mes "[Suspicious Guy]";
 		if (Sex == SEX_MALE) {
-			mes "What would a strong guy like you want a " + mesitemlink(1201) + " for? Those will just break under the force of your incredibly powerful swings!";
+			mes "What would a strong guy like you want a knife for? Those will just break under the force of your incredibly powerful swings!";
 			next;
 			mes "[Suspicious Guy]";
 			mes "Now...";
@@ -359,24 +359,24 @@ OnTouch_:
 	case 3:
 		mes "[Suspicious Guy]";
 		if (Sex == SEX_MALE)
-			mes "A " + mesitemlink(2505) + "? That's old news! You know what's the latest in protective armors?";
+			mes "A Manteau? That's old news! You know what's the latest in protective armors?";
 		else
 			mes "Now why would such a beautiful woman wear something out of style? You know what would make you look even better?";
 		next;
 		mes "[Suspicious Guy]";
 		mes "That's right!";
-		mes "A " + mesitemlink(2501) + "! Wearing one of those is the quickest way to win respect these days!";
+		mes "A Hood! Wearing one of those is the quickest way to win respect these days!";
 		next;
 		mes "[Suspicious Guy]";
-		mes "If you've got a " + mesitemlink(2501) + " on, monsters will fear you and run away in terror! And check out this sturdy " + mesitemlink(1059) + ". I can pull it all I want and it won't tear!";
+		mes "If you've got a Hood on, monsters will fear you and run away in terror! And check out this sturdy fabric. I can pull it all I want and it won't tear!";
 		next;
 		select("This hood has no drawstrings...? ");
 		mes "[Suspicious Guy]";
-		mes "Haha! What are you saying? You don't need drawstrings! The space age Rayon and Nylon and Krypton fibers keep the " + mesitemlink(2501) + " secure on your head!";
+		mes "Haha! What are you saying? You don't need drawstrings! The space age Rayon and Nylon and Krypton fibers keep the Hood secure on your head!";
 		next;
 		mes "[Suspicious Guy]";
 		mes "Man...";
-		mes "So much technology was invested into this " + mesitemlink(2501) + ". Can you believe I'm only selling it for 930 zeny?";
+		mes "So much technology was invested into this Hood. Can you believe I'm only selling it for 930 zeny?";
 		next;
 		mes "[Suspicious Guy]";
 		mes "Clearly, this is the deal of the century. So how many do you want?";
@@ -534,7 +534,7 @@ geffen_in,59,61,1	script	Skyler	61,{
 		mes "Oh, I see. He's just some guy in the room to the left of me. He's always working on some sort of project.";
 		next;
 		mes "[Skyler]";
-		mes "Something to do with these magic sort of " + mesitemlink(2283) + ". I guess he's been looking for investors to help him finish building whatever he's making.";
+		mes "Something to do with these magic sort of Ear Muffs. I guess he's been looking for investors to help him finish building whatever he's making.";
 		close;
 	}
 	mes "[Skyler]";
@@ -565,7 +565,7 @@ geffen_in,27,134,5	script	Waitress#elen	91,{
 	if (select("May I have a drink?:Is there any interesting gossip?") == 1) {
 		mes "[Elenore]";
 		mes "Well...";
-		mes "If you're looking for " + mesitemlink(970) + ", King Tristram III outlawed it a while ago. Now I hear they only serve it in certain places.";
+		mes "If you're looking for alcohol, King Tristram III outlawed it a while ago. Now I hear they only serve it in certain places.";
 		next;
 		mes "[Elenore]";
 		mes "Still, people manage to get drunk off the imitation drinks that we serve here. I guess it's all psychological.";
@@ -699,13 +699,13 @@ geffen_in,70,67,3	script	Waitress#elise	90,{
 		mes "Drink?";
 		next;
 		mes "[Elisa]";
-		mes "You know that we don't serve " + mesitemlink(970) + " here anymore. We just have all these fake, flavorless drinks that have no effect. Yeah, they're pretty boring...";
+		mes "You know that we don't serve alcohol here anymore. We just have all these fake, flavorless drinks that have no effect. Yeah, they're pretty boring...";
 		next;
 		mes "[Elisa]";
 		mes "We pretty much only serve water around here. That, and really bad alcoholic imitation drinks.";
 		next;
 		mes "[Elisa]";
-		mes "It's horrible that King Tristram III outlawed " + mesitemlink(970) + " in the kingdom! It's probably the only bad decision he's made throughout his entire reign!";
+		mes "It's horrible that King Tristram III outlawed alcohol in the kingdom! It's probably the only bad decision he's made throughout his entire reign!";
 		close;
 	}
 	switch(rand(1,4)) {
@@ -1301,7 +1301,7 @@ geffen_in,39,127,2	script	Psychic Advisor	704,{
 			mes "No matter how much zeny you may put into your wardrobe, you'll look silly unless you match the things you wear.";
 			next;
 			mes "[Psychic Advisor]";
-			mes "Now, here's a good example of a mismatched outfit. Imagine some Crusader wearing a " + mesitemlink(2235) + ", " + mesitemlink(2286) + " and an " + mesitemlink(2266) + ".";
+			mes "Now, here's a good example of a mismatched outfit. Imagine some Crusader wearing a Crown, Elven ears and an Iron Cain.";
 			next;
 			mes "[Psychic Advisor]";
 			mes "Instead of looking cool, they look sort of like an Evil Keebler Prince. Spooky, huh?";
@@ -1318,14 +1318,14 @@ geffen_in,39,127,2	script	Psychic Advisor	704,{
 			next;
 			break;
 		case 4:
-			mes "Sometimes, it's a cute idea to follow a theme. Like, if you wear both " + mesitemlink(2254) + " and " + mesitemlink(5074) + " at the same time.";
+			mes "Sometimes, it's a cute idea to follow a theme. Like, if you wear both Angel Wing and Angel Wing Ears at the same time.";
 			next;
 			mes "[Psychic Advisor]";
 			mes "Of course, that might be too expensive for most people, but you get the idea.";
 			next;
 			break;
 		case 5:
-			mes "I now predict that the " + mesitemlink(5067) + " will be come very popular when a mass group of Bards form a guild in which the members only wear Sombreros.";
+			mes "I now predict that the Sombrero will be come very popular when a mass group of Bards form a guild in which the members only wear Sombreros.";
 			next;
 			mes "[Psychic Advisor]";
 			mes "Or was it the Feathered Bonnet that's supposed to skyrocket in popularity? Both of those hats are just sooo stylish, especially on Bards...";
@@ -1385,17 +1385,17 @@ geffen_in,109,72,2	script	Monster Scholar	90,{
 		break;
 	case 4:
 		mes "[Estheres]";
-		mes "Ah yes, " + mesitemlink(909) + ".";
-		mes "It seems that almost every monster around is composed of " + mesitemlink(909) + ". But is it just a crystallization made by some monsters, or is it... More?";
+		mes "Ah yes, Jellopy.";
+		mes "It seems that almost every monster around is composed of Jellopy. But is it just a crystallization made by some monsters, or is it... More?";
 		next;
 		mes "[Estheres]";
-		mes "From our research of ancient monsters and studies of recently discovered monsters, it seems that that traces of " + mesitemlink(909) + " cannot be found in stronger beasts.";
+		mes "From our research of ancient monsters and studies of recently discovered monsters, it seems that that traces of Jellopy cannot be found in stronger beasts.";
 		next;
 		mes "[Estheres]";
-		mes "Still, may of us believe that there might be some relation to " + mesitemlink(909) + " and monsters, although it may be hard to believe that there is any.";
+		mes "Still, may of us believe that there might be some relation to Jellopy and monsters, although it may be hard to believe that there is any.";
 		next;
 		mes "[Estheres]";
-		mes "It's possible that " + mesitemlink(909) + " may be linked to a monster's personality and strength. So, if you mixed " + mesitemlink(909) + " with something, you'd create a stronger monster.";
+		mes "It's possible that Jellopy may be linked to a monster's personality and strength. So, if you mixed Jellopy with something, you'd create a stronger monster.";
 		next;
 		mes "[Estheres]";
 		mes "Of course, doing that kind of experimentation just seems dangerous. You might be able to unleash some really scary monsters into the world...";

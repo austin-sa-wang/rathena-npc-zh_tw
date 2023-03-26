@@ -61,7 +61,7 @@ OnTouch_:
 				mes "of out here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -74,7 +74,7 @@ OnTouch_:
 				mes "of out here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -87,7 +87,7 @@ OnTouch_:
 				mes "of out here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -105,7 +105,7 @@ OnTouch_:
 				mes "Hey, I got a thief here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -149,7 +149,7 @@ OnTouch_:
 				mes "Get out of here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -163,7 +163,7 @@ OnTouch_:
 				mes "Get out of here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -177,7 +177,7 @@ OnTouch_:
 				mes "Get out of here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -195,7 +195,7 @@ OnTouch_:
 				mes "There's a Thief!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -245,7 +245,7 @@ OnTouch_:
 				mes "leave right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -259,7 +259,7 @@ OnTouch_:
 				mes "leave right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -273,7 +273,7 @@ OnTouch_:
 				mes "leave right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -292,7 +292,7 @@ OnTouch_:
 				mes "Get out of here!!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -378,7 +378,7 @@ OnTouch_:
 				mes "get outta here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				warp "louyang",280,161;
 				close;
@@ -393,7 +393,7 @@ OnTouch_:
 				mes "get outta here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				warp "louyang",280,161;
 				close;
@@ -408,7 +408,7 @@ OnTouch_:
 				mes "get outta here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				warp "louyang",280,161;
 				close;
@@ -427,7 +427,7 @@ OnTouch_:
 				mes "G-Get out of here!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				warp "louyang",280,161;
 				close;
@@ -715,7 +715,7 @@ lou_fild01,175,173,3	script	Jiu Lian Bu#1-2	819,{
 lou_in02,50,185,5	script	Pot#1	111,{
 	if (ch_tre == 1) {
 		mes "^3131FFBeneath the shadows,";
-		mes "you find a large " + mesitemlink(7482) + " filled with dark, red liquid. What do you";
+		mes "you find a large pot filled with dark, red liquid. What do you";
 		mes "want to do?^000000 ";
 		next;
 		if (select("Take the pot.:Look for another pot.") == 1) {
@@ -739,7 +739,7 @@ lou_in02,50,185,5	script	Pot#1	111,{
 				next;
 				mes "^3131FFEveryone seems so busy";
 				mes "and preoccupied that they don't";
-				mes "notice you approach the " + mesitemlink(7482) + ".^000000";
+				mes "notice you approach the pot.^000000";
 			}
 			else {
 				mes "^3131FFSince the restaurant";
@@ -748,7 +748,7 @@ lou_in02,50,185,5	script	Pot#1	111,{
 				mes "employees are all asleep.^000000";
 			}
 			next;
-			mes "^3131FFYou carefully lift the " + mesitemlink(7482) + ", and although it's heavy, you think";
+			mes "^3131FFYou carefully lift the pot, and although it's heavy, you think";
 			mes "you can carry it.^000000";
 			next;
 			mes "^3131FFAll you have";
@@ -764,11 +764,11 @@ lou_in02,50,185,5	script	Pot#1	111,{
 			close;
 		}
 		mes "^3131FFYou decide to^000000";
-		mes "^3131FFlook for another " + mesitemlink(7482) + ".^000000";
+		mes "^3131FFlook for another pot.^000000";
 		close;
 	}
 	else if (ch_tre > 3 && ch_tre < 6) {
-		mes "^3131FFYou found a " + mesitemlink(7482) + ".^000000";
+		mes "^3131FFYou found a pot.^000000";
 		mes "^3131FFHowever, it's empty.^000000";
 		close;
 	}
@@ -780,14 +780,14 @@ lou_in02,50,185,5	script	Pot#1	111,{
 		close;
 	}
 	mes "^3131FFBeneath the shadows,";
-	mes "you find a large " + mesitemlink(7482) + " filled with dark, red liquid.^000000 ";
+	mes "you find a large pot filled with dark, red liquid.^000000 ";
 	close;
 }
 
 lou_in02,49,185,5	script	Pot#2	111,{
 	if (ch_tre == 1) {
 		mes "^3131FFBeneath the shadows,";
-		mes "you find a large " + mesitemlink(7482) + " filled with dark, red liquid. What do you";
+		mes "you find a large pot filled with dark, red liquid. What do you";
 		mes "want to do?^000000";
 		next;
 		if (select("Take the pot.:Look for another pot.") == 1) {
@@ -811,7 +811,7 @@ lou_in02,49,185,5	script	Pot#2	111,{
 				next;
 				mes "^3131FFEveryone seems so busy";
 				mes "and preoccupied that they don't";
-				mes "notice you approach the " + mesitemlink(7482) + ".^000000";
+				mes "notice you approach the pot.^000000";
 			}
 			else {
 				mes "^3131FFSince the restaurant";
@@ -820,7 +820,7 @@ lou_in02,49,185,5	script	Pot#2	111,{
 				mes "employees are all asleep.^000000";
 			}
 			next;
-			mes "^3131FFYou carefully lift the " + mesitemlink(7482) + ", and although it's heavy, you think";
+			mes "^3131FFYou carefully lift the pot, and although it's heavy, you think";
 			mes "you can carry it.^000000";
 			next;
 			mes "^3131FFAll you have";
@@ -836,12 +836,12 @@ lou_in02,49,185,5	script	Pot#2	111,{
 			close;
 		}
 		mes "^3131FFYou decided to^000000";
-		mes "^3131FFlook for another " + mesitemlink(7482) + ".^000000";
+		mes "^3131FFlook for another pot.^000000";
 		close;
 	}
 	else if (ch_tre > 3 && ch_tre < 6) {
 		mes "^3131FFYou found";
-		mes "an empty " + mesitemlink(7482) + ".^000000";
+		mes "an empty pot.^000000";
 		close;
 	}
 	if (gettime(DT_HOUR) >= 10 && gettime(DT_HOUR) < 22) {
@@ -852,7 +852,7 @@ lou_in02,49,185,5	script	Pot#2	111,{
 		close;
 	}
 	mes "^3131FFBeneath the shadows,";
-	mes "you find a large " + mesitemlink(7482) + " filled with dark, red liquid.^000000";
+	mes "you find a large pot filled with dark, red liquid.^000000";
 	close;
 }
 
@@ -900,12 +900,12 @@ OnTouch_:
 			if (rand(1,10) < 9) {
 				mes "[Jin Wei Ling]";
 				mes "Wait! Who are you!";
-				mes "Put that " + mesitemlink(7482) + " down";
+				mes "Put that pot down";
 				mes "and get out of";
 				mes "here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -914,12 +914,12 @@ OnTouch_:
 			if (rand(1,10) < 10) {
 				mes "[Jin Wei Ling]";
 				mes "Wait! Who are you!";
-				mes "Put that " + mesitemlink(7482) + " down";
+				mes "Put that pot down";
 				mes "and get out of";
 				mes "here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -928,12 +928,12 @@ OnTouch_:
 			if (rand(1,10) < 6) {
 				mes "[Jin Wei Ling]";
 				mes "Wait! Who are you!";
-				mes "Put that " + mesitemlink(7482) + " down";
+				mes "Put that pot down";
 				mes "and get out of";
 				mes "here right now!";
 				next;
 				mes "^3131FFYou have failed^000000";
-				mes "^3131FFto steal the " + mesitemlink(7482) + ".^000000";
+				mes "^3131FFto steal the pot.^000000";
 				set ch_tre,1;
 				close;
 			}
@@ -973,7 +973,7 @@ lou_in02,80,173,3	script	Li Min#lou	746,{
 	next;
 	mes "[Li Min]";
 	mes "Ummmmm...";
-	mes "" + mesitemlink(526) + "!";
+	mes "Royal Jelly!";
 	mes "It makes my";
 	mes "mouth water~";
 	close;
@@ -987,7 +987,7 @@ lou_in02,42,186,5	script	Liu Jia Lim#lou	816,{
 		emotion ET_THROB;
 		mes "[Liu Jia Lim]";
 		mes "Its delicate taste comes from";
-		mes "a broth extracted from pure " + mesitemlink(517) + " that does not contain any fat. So it's also a very popular diet food for the ladies.";
+		mes "a broth extracted from pure meat that does not contain any fat. So it's also a very popular diet food for the ladies.";
 		next;
 		mes "[Liu Jia Lim]";
 		mes "I'm not sure what happened,";
@@ -1000,7 +1000,7 @@ lou_in02,42,186,5	script	Liu Jia Lim#lou	816,{
 	next;
 	mes "[Liu Jia Lim]";
 	mes "Its delicate taste comes from";
-	mes "a broth extracted from pure " + mesitemlink(517) + " that does not contain any fat. So it's also a very popular diet food for the ladies.";
+	mes "a broth extracted from pure meat that does not contain any fat. So it's also a very popular diet food for the ladies.";
 	next;
 	mes "[Liu Jia Lim]";
 	mes "It's tasty and really good for your health. Why don't you order a bowl? I've never known anyone to taste Dragon Soup and not love it!";
@@ -1308,10 +1308,10 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 		mes "you too much trouble. Um, so the medicines I'll need are...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^0000ff2 " + mesitemlink(7172) + "^000000 which strengthen bones, ^0000ff10 " + mesitemlink(7164) + "^000000 which strengthens muscle, ^0000ff5 " + mesitemlink(7155) + "^000000 which replenishes the skin...";
+		mes "^0000ff2 Leopard Claw^000000 which strengthen bones, ^0000ff10 Solid Peach^000000 which strengthens muscle, ^0000ff5 Poisonous Toad Skin^000000 which replenishes the skin...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^0000ff20 " + mesitemlink(7188) + "^000000 which regulates the " + mesitemlink(7855) + ", ^0000ff10 " + mesitemlink(7193) + "^000000 which eases the abdomen and ^0000ff5 " + mesitemlink(7121) + "^000000 which provides nutrition.";
+		mes "^0000ff20 Brown Root^000000 which regulates the heart, ^0000ff10 Sprout^000000 which eases the abdomen and ^0000ff5 Honey Pot^000000 which provides nutrition.";
 		next;
 		mes "[Hua Tuo]";
 		mes "I hope you were";
@@ -1319,12 +1319,12 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 		mes "of that. Once again, that's...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^3355FF2 " + mesitemlink(7172) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7164) + "^000000,";
-		mes "^3355FF5 " + mesitemlink(7155) + "^000000,";
-		mes "^3355FF20 " + mesitemlink(7188) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7193) + "^000000 and";
-		mes "^3355FF5 " + mesitemlink(7121) + "^000000.";
+		mes "^3355FF2 Leopard Claw^000000,";
+		mes "^3355FF10 Solid Peach^000000,";
+		mes "^3355FF5 Poisonous Toad Skin^000000,";
+		mes "^3355FF20 Brown Root^000000,";
+		mes "^3355FF10 Sprout^000000 and";
+		mes "^3355FF5 Honey Pot^000000.";
 		set ch_par,17;
 		changequest 11056,11057;
 		close;
@@ -1418,10 +1418,10 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 		mes "I've just run out of other medicines that my patients will be needing. I don't need too much, but you would be doing me a great favor.";
 		next;
 		mes "[Hua Tuo]";
-		mes "The medicines I need are ^0000ff2 " + mesitemlink(7172) + "^000000 which supports the bones, ^0000ff10 " + mesitemlink(7164) + "^000000 which strengthens the muscle, ^0000ff5 " + mesitemlink(7155) + "^000000 which replenishes the skin...";
+		mes "The medicines I need are ^0000ff2 Leopard Claw^000000 which supports the bones, ^0000ff10 Solid Peach^000000 which strengthens the muscle, ^0000ff5 Poisonous Toad Skin^000000 which replenishes the skin...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^0000ff20 " + mesitemlink(7188) + "^000000 which regulates the " + mesitemlink(7855) + ", ^0000ff10 " + mesitemlink(7193) + "^000000 which eases the abdomen and ^0000ff5 " + mesitemlink(7121) + "^000000 which provides nutrition.";
+		mes "^0000ff20 Brown Root^000000 which regulates the heart, ^0000ff10 Sprout^000000 which eases the abdomen and ^0000ff5 Honey Pot^000000 which provides nutrition.";
 		next;
 		mes "[Hua Tuo]";
 		mes "I hope you've";
@@ -1429,12 +1429,12 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 		mes "Once again, that's...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^3355FF2 " + mesitemlink(7172) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7164) + "^000000,";
-		mes "^3355FF5 " + mesitemlink(7155) + "^000000,";
-		mes "^3355FF20 " + mesitemlink(7188) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7193) + "^000000 and";
-		mes "^3355FF5 " + mesitemlink(7121) + "^000000.";
+		mes "^3355FF2 Leopard Claw^000000,";
+		mes "^3355FF10 Solid Peach^000000,";
+		mes "^3355FF5 Poisonous Toad Skin^000000,";
+		mes "^3355FF20 Brown Root^000000,";
+		mes "^3355FF10 Sprout^000000 and";
+		mes "^3355FF5 Honey Pot^000000.";
 		set ch_par,17;
 		close;
 	}
@@ -1473,12 +1473,12 @@ lou_in02,265,69,5	script	Doctor#lyang	814,{
 		mes "Unfortunately, you haven't collected everything that I need yet. Once again, please gather...";
 		next;
 		mes "[Hua Tuo]";
-		mes "^3355FF2 " + mesitemlink(7172) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7164) + "^000000,";
-		mes "^3355FF5 " + mesitemlink(7155) + "^000000,";
-		mes "^3355FF20 " + mesitemlink(7188) + "^000000,";
-		mes "^3355FF10 " + mesitemlink(7193) + "^000000 and";
-		mes "^3355FF5 " + mesitemlink(7121) + "^000000.";
+		mes "^3355FF2 Leopard Claw^000000,";
+		mes "^3355FF10 Solid Peach^000000,";
+		mes "^3355FF5 Poisonous Toad Skin^000000,";
+		mes "^3355FF20 Brown Root^000000,";
+		mes "^3355FF10 Sprout^000000 and";
+		mes "^3355FF5 Honey Pot^000000.";
 		close;
 	}
 	mes "[Hua Tuo]";
@@ -2534,7 +2534,7 @@ lou_in02,123,39,4	script	Poison King#lou	824,{
 						set .@answer_poet,.@answer_poet + 10;
 					next;
 					mes "[Nagash Arses]";
-					mes "Now to see if you see really understand the poem. It's no use to just know the words. To know this poem by " + mesitemlink(7855) + " is to truly take it to " + mesitemlink(7855) + ".";
+					mes "Now to see if you see really understand the poem. It's no use to just know the words. To know this poem by heart is to truly take it to heart.";
 					next;
 					mes "[Nagash Arses]";
 					mes "According to the poem,";
@@ -3191,7 +3191,7 @@ lou_in02,123,39,4	script	Poison King#lou	824,{
 						close;
 					}
 					mes "^3355FFYou tell Nagash Arses how";
-					mes "Song Zhi Du created this Deadly " + mesitemlink(678) + " and his plan to get his revenge on the lord of Luoyang.^000000";
+					mes "Song Zhi Du created this Deadly Poison Bottle and his plan to get his revenge on the lord of Luoyang.^000000";
 					next;
 					mes "[Nagash Arses]";
 					mes "^666666*Sigh...*^000000";
@@ -3214,7 +3214,7 @@ lou_in02,123,39,4	script	Poison King#lou	824,{
 				mes "[Nagash Arses]";
 				mes "I hope he'll be fine.";
 				mes "After all, he's truly";
-				mes "kind at " + mesitemlink(7855) + ".";
+				mes "kind at heart.";
 				close;
 			}
 			mes "[Nagash Arses]";
@@ -3224,7 +3224,7 @@ lou_in02,123,39,4	script	Poison King#lou	824,{
 			mes "[Nagash Arses]";
 			mes "I hope he'll be fine.";
 			mes "After all, he's truly";
-			mes "kind at " + mesitemlink(7855) + ".";
+			mes "kind at heart.";
 			close;
 		case 3:
 			mes "[Nagash Arses]";
@@ -3558,7 +3558,7 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		mes "[Song Zhi Du]";
 		mes "As I told you, I am weak.";
 		mes "Too weak... I know that from";
-		mes "the bottom of my " + mesitemlink(7855) + ".";
+		mes "the bottom of my heart.";
 		next;
 		mes "[Song Zhi Du]";
 		mes "But...";
@@ -3608,7 +3608,7 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		next;
 		mes "[Song Zhi Du]";
 		mes "Still, I'll need some materials to complete my research. Then, when";
-		mes "I succeed and create a poison " + mesitemlink(14523) + ", I'll need someone to carry my revenge out for me.";
+		mes "I succeed and create a poison pill, I'll need someone to carry my revenge out for me.";
 		next;
 		mes "[Song Zhi Du]";
 		mes "Since my body is so frail, I can't bear the tension and rage of seeing my lifelong enemy face to face.";
@@ -3637,10 +3637,10 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 			mes "poison potion I'm creating. I hope you can bring what I need to finish it. Go and get me...";
 			next;
 			mes "[Song Zhi Du]";
-			mes "^0000FF4 " + mesitemlink(939) + ",";
-			mes "10 " + mesitemlink(937) + ",";
+			mes "^0000FF4 Bee Sting,";
+			mes "10 Venom Canine,";
 			mes "10 Empty Potion,";
-			mes "30 " + mesitemlink(506) + "^000000.";
+			mes "30 Green Potion^000000.";
 			set ch_poison,7;
 			changequest 11071,11072;
 			next;
@@ -3701,10 +3701,10 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		mes "Go and get me...";
 		next;
 		mes "[Song Zhi Du]";
-		mes "^0000FF4 " + mesitemlink(939) + ",";
-		mes "10 " + mesitemlink(937) + ",";
+		mes "^0000FF4 Bee Sting,";
+		mes "10 Venom Canine,";
 		mes "10 Empty Potion,";
-		mes "30 " + mesitemlink(506) + "^000000.";
+		mes "30 Green Potion^000000.";
 		specialeffect EF_ENDURE;
 		close;
 	}
@@ -3723,7 +3723,7 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		next;
 		mes "[Song Zhi Du]";
 		mes "Would you bring me the";
-		mes "" + mesitemlink(7948) + " from the " + mesitemlink(12018) + "";
+		mes "box from the firecracker";
 		mes "lady at the entrance";
 		mes "to Luoyang? Thanks";
 		mes "in advance.";
@@ -3738,15 +3738,15 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 			mes "shall we begin?";
 			next;
 			mes "[Song Zhi Du]";
-			mes "First, I shall mix a poison extracted from " + mesitemlink(937) + "";
-			mes "with a foreign liquid named " + mesitemlink(972) + ".";
+			mes "First, I shall mix a poison extracted from Venom Canine";
+			mes "with a foreign liquid named Karvodailnirol.";
 			next;
 			mes "[Song Zhi Du]";
-			mes "Then, I add " + mesitemlink(511) + " extract, poison extracted from " + mesitemlink(939) + " and a " + mesitemlink(7126) + " into the liquid! Finally, I must heat them all!";
+			mes "Then, I add Green Herb extract, poison extracted from Bee Sting and a Large Jellopy into the liquid! Finally, I must heat them all!";
 			specialeffect EF_BEGINSPELL;
 			next;
 			mes "[Song Zhi Du]";
-			mes "Finally, I have to carefully heat the " + mesitemlink(974) + " and collect it all into a Potion Bottle.";
+			mes "Finally, I have to carefully heat the mixture and collect it all into a Potion Bottle.";
 			specialeffect EF_ENCHANTPOISON;
 			specialeffect EF_VENOMDUST;
 			next;
@@ -3775,7 +3775,7 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		next;
 		mes "[Song Zhi Du]";
 		mes "Would you bring me the";
-		mes "" + mesitemlink(7948) + " from the " + mesitemlink(12018) + "";
+		mes "box from the firecracker";
 		mes "lady at the entrance";
 		mes "to Luoyang? Thanks";
 		mes "in advance.";
@@ -3806,16 +3806,16 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 			next;
 			if (rand(1,1000) > 700) {
 				mes "[Song Zhi Du]";
-				mes "First, I shall mix a poison extracted from " + mesitemlink(937) + "";
-				mes "with a foreign liquid named " + mesitemlink(972) + ".";
+				mes "First, I shall mix a poison extracted from Venom Canine";
+				mes "with a foreign liquid named Karvodailnirol.";
 				next;
 				mes "[Song Zhi Du]";
-				mes "Then, I add " + mesitemlink(511) + " extract,";
-				mes "a poison extracted from " + mesitemlink(939) + " and a " + mesitemlink(7126) + "!";
+				mes "Then, I add Green Herb extract,";
+				mes "a poison extracted from Bee Sting and a Large Jellopy!";
 				specialeffect EF_BEGINSPELL;
 				next;
 				mes "[Song Zhi Du]";
-				mes "Finally, I have to carefully heat the " + mesitemlink(974) + " and collect it all into a Potion Bottle.";
+				mes "Finally, I have to carefully heat the mixture and collect it all into a Potion Bottle.";
 				specialeffect EF_ENCHANTPOISON;
 				specialeffect EF_VENOMDUST;
 				next;
@@ -3854,15 +3854,15 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 				close;
 			}
 			mes "[Song Zhi Du]";
-			mes "First, I shall mix a poison extracted from " + mesitemlink(937) + "";
-			mes "with a foreign liquid named " + mesitemlink(972) + ".";
+			mes "First, I shall mix a poison extracted from Venom Canine";
+			mes "with a foreign liquid named Karvodailnirol.";
 			next;
 			mes "[Song Zhi Du]";
-			mes "Then I add " + mesitemlink(511) + " extract, a poison extracted from " + mesitemlink(939) + " and a " + mesitemlink(7126) + "!";
+			mes "Then I add Green Herb extract, a poison extracted from Bee Sting and a Large Jellopy!";
 			specialeffect EF_BEGINSPELL;
 			next;
 			mes "[Song Zhi Du]";
-			mes "Then I must carefully heat the " + mesitemlink(974) + ", and gather it all into a potion bottle.";
+			mes "Then I must carefully heat the mixture, and gather it all into a potion bottle.";
 			specialeffect EF_ENCHANTPOISON;
 			specialeffect EF_VENOMDUST;
 			next;
@@ -3882,11 +3882,11 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		mes "Hmm, would you please help me again? I've used all the materials from last time.";
 		next;
 		mes "[Song Zhi Du]";
-		mes "^0000FF4 " + mesitemlink(939) + "^000000,";
-		mes "^0000FF10 " + mesitemlink(937) + "^000000,";
-		mes "^0000FF10 " + mesitemlink(1093) + "^000000,";
-		mes "^0000FF30 " + mesitemlink(506) + "^000000 and";
-		mes "^0000FF1 " + mesitemlink(7126) + "^000000.";
+		mes "^0000FF4 Bee Sting^000000,";
+		mes "^0000FF10 Venom Canine^000000,";
+		mes "^0000FF10 Empty Potion Bottle^000000,";
+		mes "^0000FF30 Green Potion^000000 and";
+		mes "^0000FF1 Large Jellopy^000000.";
 		next;
 		mes "[Song Zhi Du]";
 		mes "That's everything I'll need.";
@@ -3996,18 +3996,18 @@ lou_in02,253,45,0	script	Employee#poison	822,{
 		mes "Let me rest... Take care, my friend, and travel in safety.";
 		next;
 		mes "[Song Zhi Du]";
-		mes "But before you go, let me give you some poison and a medicinal " + mesitemlink(14523) + ".";
+		mes "But before you go, let me give you some poison and a medicinal pill.";
 		mes "I made these with the leftover materials and medicine in the storage.";
 		set ch_poison,14;
 		getitem 678,3; //Poison_Bottle
 		next;
 		mes "[Song Zhi Du]";
 		mes "Please take the";
-		mes "medicine " + mesitemlink(14523) + "";
+		mes "medicine pill";
 		mes "right away.";
 		next;
-		mes "^3355FFYou swallowed a strange " + mesitemlink(14523) + "";
-		mes "that shines with a " + mesitemlink(969) + " color.";
+		mes "^3355FFYou swallowed a strange pill";
+		mes "that shines with a gold color.";
 		mes "It tastes bitter...^000000";
 		next;
 		mes "^3355FFThe nasty taste lingers in your mouth, but then you feel a great warmth flowing throughout your body. Eventually, you pass out.^000000";
@@ -4358,7 +4358,7 @@ lou_in01,107,163,0	script	 #lou_drink1	111,{
 	}
 	else if (ch_poison == 16) {
 		if (countitem(938) > 0 && countitem(713) > 0) {
-			mes "^3355FFYou take the drink bottle and replace it with a bottle filled with " + mesitemlink(938) + ". Hopefully Bai Long won't notice!^000000";
+			mes "^3355FFYou take the drink bottle and replace it with a bottle filled with Sticky Mucus. Hopefully Bai Long won't notice!^000000";
 			delitem 938,1; //Sticky_Mucus
 			delitem 713,1; //Empty_Bottle
 			set ch_poison,17;
@@ -4367,7 +4367,7 @@ lou_in01,107,163,0	script	 #lou_drink1	111,{
 		}
 		mes "^3355FFIt seems that you need switch Bai Long's drinking bottle with something else. Just taking the drink bottle would arouse suspicion.^000000";
 		next;
-		mes "^3355FFMaybe if you found some kind of " + mesitemlink(713) + " and filled it with something, like " + mesitemlink(938) + "...^000000";
+		mes "^3355FFMaybe if you found some kind of empty bottle and filled it with something, like Sticky Mucus...^000000";
 		close;
 	}
 	mes "^3355FFYou found a drink bottle. It's fancy enough that the only possible owner could be Bai Long, lord of Luoyang.^000000";
@@ -4736,10 +4736,10 @@ lou_in02,77,37,7	script	Hermit	824,{
 				mes "Recently, some of the evil organizations have conspired with corrupt government officials in the interest to expand their power.";
 				next;
 				mes "[Sun Mao]";
-				mes "These corrupt government officials have been suspicious of our " + mesitemlink(7204) + " research and arrested our comrade, ^3355FFHao Chenryu^000000, our " + mesitemlink(7204) + " expert, under the pretext of investigation.";
+				mes "These corrupt government officials have been suspicious of our gunpowder research and arrested our comrade, ^3355FFHao Chenryu^000000, our gunpowder expert, under the pretext of investigation.";
 				next;
 				mes "[Sun Mao]";
-				mes "Without him, we cannot continue the " + mesitemlink(7204) + " research, or produce the " + mesitemlink(7204) + " we'll need for our movement. We must contact him so that he may make " + mesitemlink(7204) + " for us.";
+				mes "Without him, we cannot continue the gunpowder research, or produce the gunpowder we'll need for our movement. We must contact him so that he may make gunpowder for us.";
 				next;
 				mes "[Sun Mao]";
 				mes "Unfortunately, many of us cannot contact him, as our identities are known to the officials. However, since you are new recruits, as well as Midgardians, they will not know how you are.";
@@ -4900,7 +4900,7 @@ lou_in01,43,147,3	script	Gunpowder Expert	750,{
 			mes "Please give me";
 			mes "a minute so that";
 			mes "I may quickly make";
-			mes "the " + mesitemlink(7204) + ".";
+			mes "the gunpowder.";
 			next;
 			switch(select("Make Gunpowder.:Cancel.")) {
 			case 1:
@@ -4908,7 +4908,7 @@ lou_in01,43,147,3	script	Gunpowder Expert	750,{
 				delitem 7096,1; //Cold_Magma
 				delitem 7004,1; //Mud_Lump
 				mes "[Hao Chenryu]";
-				mes "I don't want you to be caught if the soldiers inspect your goods. It will be better if one of you carry a Cart and hide the " + mesitemlink(7204) + " in there.";
+				mes "I don't want you to be caught if the soldiers inspect your goods. It will be better if one of you carry a Cart and hide the gunpowder in there.";
 				set ch_make,1;
 				getitem 7204,1; //Gunpowder
 				close;
@@ -4933,7 +4933,7 @@ lou_in01,43,147,3	script	Gunpowder Expert	750,{
 			next;
 			mes "[Hao Chenryu]";
 			mes "If you came for the";
-			mes "" + mesitemlink(7204) + ", you should";
+			mes "gunpowder, you should";
 			mes "get some chemcials";
 			mes "from your party leader.";
 			close;
@@ -4942,14 +4942,14 @@ lou_in01,43,147,3	script	Gunpowder Expert	750,{
 		mes "[Hao Chenryu]";
 		mes "Be careful!";
 		mes "It's easy for";
-		mes "" + mesitemlink(7204) + " to be";
+		mes "gunpowder to be";
 		mes "found during the";
 		mes "inspection process!";
 		mes "Hide it well...!";
 		close;
 	} else {
 		mes "[Hao Chenryu]";
-		mes "I hope you bring the " + mesitemlink(7204) + " to Mao safely. The next time you see him, please give him my thanks.";
+		mes "I hope you bring the gunpowder to Mao safely. The next time you see him, please give him my thanks.";
 		close;
 	}
 }
@@ -4960,7 +4960,7 @@ lou_in01,45,138,3	script	Soldier#1	825,{
 		mes "Hold on there!";
 		next;
 		mes "[Soldier]";
-		mes "You're not allowed to bring any " + mesitemlink(7204) + " out of here. Now go";
+		mes "You're not allowed to bring any gunpowder out of here. Now go";
 		mes "and put it back, Midgardian! Move!";
 		close;
 	}

@@ -163,26 +163,26 @@ gef_fild04,191,54,3	script	Halgus#Pupa_Hunt	123,{
 				case 1:
 					// Item turn in
 					mes "[Halgus]";
-					mes "Can you collect ^00CE0025 " + mesitemlink(915) + "^000000 and return them to me, I promise to reward you well.";
+					mes "Can you collect ^00CE0025 Chrysalis^000000 and return them to me, I promise to reward you well.";
 					next;
 					switch(select("I have Chrysalis:What did you need?")) {
 					case 1:
 						if (countitem(915) > 24) {
 							mes "[Halgus]";
 							mes "Amazing you found so many that fast.";
-							mes "Like I promised, give me the " + mesitemlink(915) + " and I will reward you with my wisdom.";
+							mes "Like I promised, give me the Chrysalis and I will reward you with my wisdom.";
 							delitem 915,25; //Chrysalis
 							getexp 385,30;
 							close;
 						}
 						else {
 							mes "[Halgus]";
-							mes "I need ^00CE0025 " + mesitemlink(915) + "^000000 and no less please.";
+							mes "I need ^00CE0025 Chrysalis^000000 and no less please.";
 							close;
 						}
 					case 2:
 						mes "[Halgus]";
-						mes "I need ^00CE0025 " + mesitemlink(915) + "^000000.";
+						mes "I need ^00CE0025 Chrysalis^000000.";
 						close;
 					}
 				case 2:

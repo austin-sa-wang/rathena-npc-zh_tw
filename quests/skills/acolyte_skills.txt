@@ -41,9 +41,9 @@ prt_church,173,23,4	script	Cleric	79,{
 		next;
 		mes "[Acolyte Klift]";
 		mes "To gain the skill, you must find these items.";
-		mes "^FF33551 " + mesitemlink(727) + "^000000";
-		mes "^FF33551 " + mesitemlink(991) + "^000000";
-		mes "^FF33551 " + mesitemlink(2608) + "^000000 ";
+		mes "^FF33551 Opal^000000";
+		mes "^FF33551 Crystal Blue^000000";
+		mes "^FF33551 Rosary^000000 ";
 		next;
 		mes "[Acolyte Klift]";
 		mes "In order to be able to even use this skill,";

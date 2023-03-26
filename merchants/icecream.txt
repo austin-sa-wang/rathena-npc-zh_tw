@@ -18,10 +18,10 @@
 
 -	script	Ice Cream Maker::IceCreamer	-1,{
 	mes "[Ice Cream Maker]";
-	mes "Fresh " + mesitemlink(536) + " made with snow from Lutie!";
+	mes "Fresh Ice Cream made with snow from Lutie!";
 	mes "Enjoy it now, it won't be on sale for long!";
-	mes "^3355FF100 Zeny^000000 " + mesitemlink(536) + ",";
-	mes "" + mesitemlink(536) + "!";
+	mes "^3355FF100 Zeny^000000 Ice Cream,";
+	mes "Ice Cream!";
 	next;
 	if(select("Gimme Ice Cream!:Cancel Trade") == 2) {
 		mes "Are you sure you don't want any?";
@@ -31,8 +31,8 @@
 		close;
 	}
 	mes "[Ice Cream Maker]";
-	mes "Fresh " + mesitemlink(536) + " made with snow from Lutie!";
-	mes "Everyone wants our delicious " + mesitemlink(536) + ", ";
+	mes "Fresh Ice Cream made with snow from Lutie!";
+	mes "Everyone wants our delicious ice cream, ";
 	mes "but we have a limited amount,";
 	mes "so you can only purchase 5 at a time!!";
 	next;
@@ -62,13 +62,13 @@
 	if(Zeny<.@input*100) {
 		mes "[Ice Cream Maker]";
 		mes "Dear customer, your wallet seems to be light.";
-		mes "Price is ^3355FF100 Zeny^000000 per " + mesitemlink(536) + ".";
+		mes "Price is ^3355FF100 Zeny^000000 per ice cream.";
 		close;
 	}
 	if(checkweight(536,.@input) == 0) {
 		mes "[Ice Cream Maker]";
 		mes "Dear customer,you look like you're carrying a lot.";
-		mes "" + mesitemlink(536) + " is fine,";
+		mes "Ice Cream is fine,";
 		mes "but you must consider your weight";
 		mes "before making a purchase.";
 		close;

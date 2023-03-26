@@ -171,8 +171,8 @@ morocc_in,174,30,6	script	Kid#link1	716,{
 				mes "[Kid]";
 				mes "Now bring me";
 				mes "^0000FF1 3 Carat Diamond^000000,";
-				mes "^0000FF1 " + mesitemlink(929) + "^000000 and";
-				mes "^0000FF1 " + mesitemlink(748) + "^000000.";
+				mes "^0000FF1 Immortal Heart^000000 and";
+				mes "^0000FF1 Witherless Rose^000000.";
 				mes "And try not to make me";
 				mes "wait too long, alright?";
 				close;
@@ -190,8 +190,8 @@ morocc_in,174,30,6	script	Kid#link1	716,{
 				mes "You're back, eh?";
 				mes "So did you bring";
 				mes "^0000FF1 3 Carat Diamond^000000,";
-				mes "^0000FF1 " + mesitemlink(929) + "^000000 and";
-				mes "^0000FF1 " + mesitemlink(748) + "^000000.";
+				mes "^0000FF1 Immortal Heart^000000 and";
+				mes "^0000FF1 Witherless Rose^000000.";
 				mes "like I asked you to?";
 				next;
 				if (select("There you are.:No, not yet...") == 1) {
@@ -236,8 +236,8 @@ morocc_in,174,30,6	script	Kid#link1	716,{
 					mes "what we need, but I'm";
 					mes "going to remind you again:";
 					mes "^0000FF1 3 Carat Diamond^000000,";
-					mes "^0000FF1 " + mesitemlink(929) + "^000000 and";
-					mes "^0000FF1 " + mesitemlink(748) + "^000000.";
+					mes "^0000FF1 Immortal Heart^000000 and";
+					mes "^0000FF1 Witherless Rose^000000.";
 					close;
 				}
 				mes "[Kid]";
@@ -416,20 +416,20 @@ OnTouch_:
 			mes "it to your friends in battle.";
 			next;
 			mes "[Maia]";
-			mes "This " + mesitemlink(748) + " will";
+			mes "This Witherless Rose will";
 			mes "wither away instead of you...";
 			specialeffect EF_MAPPILLAR2,AREA,"Maia#link2";
 			next;
 			mes "[Maia]";
-			mes "This " + mesitemlink(748) + " will";
+			mes "This Witherless Rose will";
 			mes "wither away instead of you...";
-			mes "This " + mesitemlink(929) + " will cease";
+			mes "This Immortal Heart will cease";
 			mes "to pump blood, instead of yours. ";
 			next;
 			mes "[Maia]";
-			mes "This " + mesitemlink(748) + " will";
+			mes "This Witherless Rose will";
 			mes "wither away instead of you...";
-			mes "This " + mesitemlink(929) + " will cease";
+			mes "This Immortal Heart will cease";
 			mes "to pump blood, instead of yours. This Diamond will turn to dust,";
 			mes "in place of your mortal body.";
 			next;

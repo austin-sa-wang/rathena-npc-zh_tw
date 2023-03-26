@@ -72,7 +72,7 @@ payon,134,211,4	script	Young Man#payon	59,{
 	mes "I'm no expert at fighting, but someone once told me that sheer strength alone won't be able to win some battles.";
 	next;
 	mes "[Young Man]";
-	mes "Sometimes, you may encounter creatures protected by a hard-" + mesitemlink(935) + " that don't be damaged by physical attacks. Only psychic power, like Magic, can easily defeat such creatures.";
+	mes "Sometimes, you may encounter creatures protected by a hard-shell that don't be damaged by physical attacks. Only psychic power, like Magic, can easily defeat such creatures.";
 	next;
 	mes "[Young Man]";
 	mes "Of course, not everyone can study magic. The point is that you should keep different kinds of friends and comrades close to you, as you can't possibly handle every situation by yourself.";
@@ -449,7 +449,7 @@ payon_in01,180,7,2	script	Waitress#payon	90,{
 		next;
 		mes "[Pub Lady]";
 		mes "But I'm so sorry, we sold out.";
-		mes "And we can't afford to prepare " + mesitemlink(970) + " anymore because of the hostile creatures out there. But please come again later. I'm sorry for the inconvenience.";
+		mes "And we can't afford to prepare alcohol anymore because of the hostile creatures out there. But please come again later. I'm sorry for the inconvenience.";
 		break;
 	}
 	next;
@@ -514,7 +514,7 @@ payon_in01,66,64,5	script	Archer Zakk#payon	88,{
 		mes "[Archer Zakk]";
 		mes "I admire our chief";
 		mes "from the bottom";
-		mes "of my " + mesitemlink(7855) + ". ";
+		mes "of my heart. ";
 		break;
 	case 3:
 		mes "[Archer Zakk]";
@@ -593,20 +593,20 @@ payon_in01,47,59,2	script	Archer Wolt#payon	88,{
 			mes "are the greatest on this continent! They are light and stout, made out of high quality tree Trunks from Payon Forest!";
 			next;
 			mes "[Archer Wolt]";
-			mes "The quality of the " + mesitemlink(6008) + " often determines the quality of the Bow. My lil' sweety was made out of a walnut tree, and is strong enough to bear thousands of pounds";
+			mes "The quality of the wood often determines the quality of the Bow. My lil' sweety was made out of a walnut tree, and is strong enough to bear thousands of pounds";
 			mes "of force.";
 			next;
 			mes "[Arche Wolt]";
 			mes "Oh, oh! And my Bow's stylish as well. It comes in a sophisticated ebony color, and I just look so cool and heroic while I'm killing monsters~!";
 			next;
 			mes "[Archer Wolt]";
-			mes "Oh, and the trees in Payon Forest are famous for the quality of their " + mesitemlink(6008) + ". But then, more and more of them have been turning into monsters. Is this the work of evil forces?!";
+			mes "Oh, and the trees in Payon Forest are famous for the quality of their wood. But then, more and more of them have been turning into monsters. Is this the work of evil forces?!";
 			next;
 			mes "[Archer Wolt]";
-			mes "It's a pity because the tree monsters used to be beautiful, majestic trees. But then it's okay if we kill them, so that we can make Bows out of their " + mesitemlink(6008) + ".";
+			mes "It's a pity because the tree monsters used to be beautiful, majestic trees. But then it's okay if we kill them, so that we can make Bows out of their wood.";
 			next;
 			mes "[Archer Wolt]";
-			mes "And then we use these Bows to kill even more tree monsters... And then make more " + mesitemlink(6008) + "! Mwahahahaha! It's an endless cycle!";
+			mes "And then we use these Bows to kill even more tree monsters... And then make more wood! Mwahahahaha! It's an endless cycle!";
 			next;
 			select("^666666*Ahem!*^000000 Speaking of endless...");
 			mes "[Archer Wolt]";
@@ -621,7 +621,7 @@ payon_in01,47,59,2	script	Archer Wolt#payon	88,{
 			mes "was built where it is?";
 			next;
 			mes "[Archer Wolt]";
-			mes "To the West, near Archer Village, you'll see Payon Cave. Inside the cave, an enormous amount of monster endlessly " + mesitemlink(908) + " without showing any sign of slowing down.";
+			mes "To the West, near Archer Village, you'll see Payon Cave. Inside the cave, an enormous amount of monster endlessly spawn without showing any sign of slowing down.";
 			next;
 			mes "[Archer Wolt]";
 			mes "We Archers are here to protect our territory against them, as ordered by our honorable chief!";
@@ -812,7 +812,7 @@ payon_in01,47,59,2	script	Archer Wolt#payon	88,{
 			next;
 			mes "[Archer Wolt]";
 			mes "Still...";
-			mes "I have to admit that, at " + mesitemlink(7855) + ",";
+			mes "I have to admit that, at heart,";
 			mes "I'm a pretty lazy guy. I guess it's pretty amazing that someone like";
 			mes "me can even be an Archer!";
 			next;
@@ -922,7 +922,7 @@ OnTouch_:
 			break;
 		case 4:
 			mes "[Chief]";
-			mes "Ah, it is fortunate that archery is a specialty here in Payon. Because of the surrounding forest, we have an abundant supply of " + mesitemlink(6008) + " to create Bows.";
+			mes "Ah, it is fortunate that archery is a specialty here in Payon. Because of the surrounding forest, we have an abundant supply of wood to create Bows.";
 			next;
 			mes "[Chief]";
 			mes "The forest also is a good training place for Archers to learn how to use their environment to impede the advance of their enemies while attacking from a safe distance.";

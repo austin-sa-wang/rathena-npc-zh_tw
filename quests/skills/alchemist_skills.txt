@@ -113,7 +113,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "^6600005 Yellow Gemstones^000000,";
 				mes "^6600004 Empty Potion Bottles^000000,";
 				mes "^66000010 Hearts of Mermaids^000000,";
-				mes "and ^66000010 " + mesitemlink(1057) + "^000000?";
+				mes "and ^66000010 Moth Dust^000000?";
 				close;
 			}
 			mes "[Pisruik]";
@@ -274,11 +274,11 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 							mes "appreciate it. While";
 							mes "I'm waiting for you,";
 							mes "I can start boiling";
-							mes "the " + mesitemlink(705) + " extract.";
+							mes "the Clover extract.";
 							next;
 							select("Clover extract? What's that for?");
 							mes "[Pisruik]";
-							mes "Well, I need the " + mesitemlink(705) + "";
+							mes "Well, I need the Clover";
 							mes "extract for a compound";
 							mes "that I'm going to make with";
 							mes "the Maneater Blossoms. I'm";
@@ -288,7 +288,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 							mes "[Pisruik]";
 							mes "Yeah, ever since I was";
 							mes "little, I've had a weak";
-							mes "" + mesitemlink(7855) + " and bad eyesight.";
+							mes "heart and bad eyesight.";
 							mes "The doctor tells me to avoid";
 							mes "stress and hard work, but";
 							mes "researching is my life.";
@@ -335,11 +335,11 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 							mes "appreciate it. While";
 							mes "I'm waiting for you,";
 							mes "I can start boiling";
-							mes "the " + mesitemlink(705) + " extract.";
+							mes "the Clover extract.";
 							next;
 							select("Clover extract? What's that for?");
 							mes "[Pisruik]";
-							mes "Well, I need the " + mesitemlink(705) + "";
+							mes "Well, I need the Clover";
 							mes "extract for a compound";
 							mes "that I'm going to make with";
 							mes "the Maneater Blossoms. I'm";
@@ -349,7 +349,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 							mes "[Pisruik]";
 							mes "Yeah, ever since I was";
 							mes "little, I've had a weak";
-							mes "" + mesitemlink(7855) + " and bad eyesight.";
+							mes "heart and bad eyesight.";
 							mes "The doctor tells me to avoid";
 							mes "stress and hard work, but";
 							mes "researching is my life.";
@@ -402,7 +402,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 					}
 				}
 				mes "[Pisruik]";
-				mes "" + mesitemlink(7126) + "?";
+				mes "Large Jellopy?";
 				mes "Yes, Large--no.";
 				mes "Wait, that doesn't";
 				mes "sound right at all.";
@@ -514,11 +514,11 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "appreciate it. While";
 				mes "I'm waiting for you,";
 				mes "I can start boiling";
-				mes "the " + mesitemlink(705) + " extract.";
+				mes "the Clover extract.";
 				next;
 				select("Clover extract? What's that for?");
 				mes "[Pisruik]";
-				mes "Well, I need the " + mesitemlink(705) + "";
+				mes "Well, I need the Clover";
 				mes "extract for a compound";
 				mes "that I'm going to make with";
 				mes "the Maneater Blossoms. I'm";
@@ -528,7 +528,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "[Pisruik]";
 				mes "Yeah, ever since I was";
 				mes "little, I've had a weak";
-				mes "" + mesitemlink(7855) + " and bad eyesight.";
+				mes "heart and bad eyesight.";
 				mes "The doctor tells me to avoid";
 				mes "stress and hard work, but";
 				mes "researching is my life.";
@@ -575,11 +575,11 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "appreciate it. While";
 				mes "I'm waiting for you,";
 				mes "I can start boiling";
-				mes "the " + mesitemlink(705) + " extract.";
+				mes "the Clover extract.";
 				next;
 				select("Clover extract? What's that for?");
 				mes "[Pisruik]";
-				mes "Well, I need the " + mesitemlink(705) + "";
+				mes "Well, I need the Clover";
 				mes "extract for a compound";
 				mes "that I'm going to make with";
 				mes "the Maneater Blossoms. I'm";
@@ -589,7 +589,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "[Pisruik]";
 				mes "Yeah, ever since I was";
 				mes "little, I've had a weak";
-				mes "" + mesitemlink(7855) + " and bad eyesight.";
+				mes "heart and bad eyesight.";
 				mes "The doctor tells me to avoid";
 				mes "stress and hard work, but";
 				mes "researching is my life.";
@@ -675,7 +675,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				else {
 					mes "Now all I have to do";
 					mes "is mix these with the";
-					mes "" + mesitemlink(705) + " extract I prepared.";
+					mes "Clover extract I prepared.";
 				}
 				next;
 				set ALCHE_SK,9;
@@ -692,18 +692,18 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "big explosion...";
 				next;
 				mes "["+ strcharinfo(0) +"]";
-				mes "Your " + mesitemlink(2203) + "...";
+				mes "Your glasses...";
 				mes "They're broken...";
 				next;
 				if (Sex == SEX_FEMALE) {
 					mes "^3355FFThe explosion destroyed";
-					mes "Pisruik's " + mesitemlink(2203) + ", revealing";
+					mes "Pisruik's glasses, revealing";
 					mes "the beautiful face of a";
 					mes "gorgeous, gorgeous man.^000000";
 				}
 				else {
 					mes "^3355FFThe explosion blew off";
-					mes "Pisruik's " + mesitemlink(2203) + ". Without";
+					mes "Pisruik's glasses. Without";
 					mes "them, he looks more like";
 					mes "a male model than a dorky";
 					mes "scientific researcher.^000000";
@@ -716,7 +716,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				next;
 				mes "[Pisruik]";
 				mes "I c-can't see too";
-				mes "well without my " + mesitemlink(2203) + ".";
+				mes "well without my glasses.";
 				mes "Well, at least I can tell";
 				mes "that you're not bleeding.";
 				mes "But are you alright?";
@@ -725,13 +725,13 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "Oh, I'm fine.";
 				mes "But what are you";
 				mes "going to do about";
-				mes "your " + mesitemlink(2203) + "?";
+				mes "your glasses?";
 				next;
 				mes "[Pisruik]";
-				mes "" + mesitemlink(711) + ", you're right.";
+				mes "Shoot, you're right.";
 				mes "I don't happen to have";
 				mes "an extra pair. Hey, can";
-				mes "you get me a pair of " + mesitemlink(2203) + ",";
+				mes "you get me a pair of glasses,";
 				mes "the same kind I used to wear?";
 				next;
 				mes "[Pisruik]";
@@ -796,18 +796,18 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "big explosion...";
 				next;
 				mes "["+ strcharinfo(0) +"]";
-				mes "Your " + mesitemlink(2203) + "...";
+				mes "Your glasses...";
 				mes "They're broken...";
 				next;
 				if (Sex == SEX_FEMALE) {
 					mes "^3355FFThe explosion destroyed";
-					mes "Pisruik's " + mesitemlink(2203) + ", revealing";
+					mes "Pisruik's glasses, revealing";
 					mes "the beautiful face of a";
 					mes "gorgeous, gorgeous man.^000000";
 				}
 				else {
 					mes "^3355FFThe explosion blew off";
-					mes "Pisruik's " + mesitemlink(2203) + ". Without";
+					mes "Pisruik's glasses. Without";
 					mes "them, he looks more like";
 					mes "a male model than a dorky";
 					mes "scientific researcher.^000000";
@@ -820,7 +820,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				next;
 				mes "[Pisruik]";
 				mes "I c-can't see too";
-				mes "well without my " + mesitemlink(2203) + ".";
+				mes "well without my glasses.";
 				mes "Well, at least I can tell";
 				mes "that you're not bleeding.";
 				mes "But are you alright?";
@@ -829,13 +829,13 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 				mes "Oh, I'm fine.";
 				mes "But what are you";
 				mes "going to do about";
-				mes "your " + mesitemlink(2203) + "?";
+				mes "your glasses?";
 				next;
 				mes "[Pisruik]";
-				mes "" + mesitemlink(711) + ", you're right.";
+				mes "Shoot, you're right.";
 				mes "I don't happen to have";
 				mes "an extra pair. Hey, can";
-				mes "you get me a pair of " + mesitemlink(2203) + ",";
+				mes "you get me a pair of glasses,";
 				mes "the same kind I used to wear?";
 				next;
 				mes "[Pisruik]";
@@ -859,7 +859,7 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 		}
 		else if (ALCHE_SK == 9) {
 			mes "^3355FFPisruik is holding his";
-			mes "broken " + mesitemlink(2203) + ", squinting";
+			mes "broken glasses, squinting";
 			mes "his eyes. It seems he like";
 			mes "he really does need them,";
 			mes "even if he looks much less";
@@ -874,11 +874,11 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 					mes "Here, why don't you";
 					mes "check I'm carrying and";
 					mes "see if there's a pair of";
-					mes "" + mesitemlink(2203) + " that you can use?";
+					mes "glasses that you can use?";
 					next;
 					mes "[Pisruik]";
 					mes "Huh? Oh, is that you?";
-					mes "Ah, this pair of " + mesitemlink(2203) + "";
+					mes "Ah, this pair of glasses";
 					mes "works! Thanks a lot, now";
 					mes "I can see again! Now, let";
 					mes "me check the results of the";
@@ -969,14 +969,14 @@ yuno_in04,33,108,4	script	Pisruik#qsk_al	883,{
 					mes "is nothing in your inventory";
 					mes "that seems like a suitable";
 					mes "replacement for Pisruik's";
-					mes "broken " + mesitemlink(2203) + ".^000000";
+					mes "broken glasses.^000000";
 					close;
 				}
 			}
 			mes "["+ strcharinfo(0) +"]";
 			mes "Listen, you look so";
 			mes "much better when you're";
-			mes "not wearing " + mesitemlink(2203) + ".";
+			mes "not wearing glasses.";
 			next;
 			mes "[Pisruik]";
 			mes "Excuse me,";
@@ -1662,7 +1662,7 @@ lhz_in01,224,140,3	script	Kellasus#qsk_al	57,{
 		mes "[Kellasus]";
 		mes "Most people see Alchemists";
 		mes "as greedy scientists, assuming";
-		mes "that we use our skills exclusively for^FFFFFF.^000000the transmutation of " + mesitemlink(969) + ". Of";
+		mes "that we use our skills exclusively for^FFFFFF.^000000the transmutation of gold. Of";
 		mes "course, learning how to do that";
 		mes "is part of our basic training.";
 		next;
@@ -1879,7 +1879,7 @@ lhz_in01,204,138,5	script	Keshibien#qsk_al	750,{
 		mes "I know he likes to drink,";
 		mes "so maybe you can find him";
 		mes "some place where they serve";
-		mes "" + mesitemlink(970) + " in Lighthalzen?";
+		mes "alcohol in Lighthalzen?";
 		close;
 	}
 	if (BaseJob == Job_Alchemist && bioeth == 5) {
@@ -1913,10 +1913,10 @@ lhz_in01,204,138,5	script	Keshibien#qsk_al	750,{
 		mes "this skill and these items...";
 		next;
 		mes "[Keshibien]";
-		mes "^FF00001 " + mesitemlink(7142) + "^000000,";
-		mes "^FF00001 " + mesitemlink(7143) + "^000000,";
-		mes "^FF00001 " + mesitemlink(7140) + "^000000 and";
-		mes "^FF00001 " + mesitemlink(7141) + "^000000.";
+		mes "^FF00001 Embryo^000000,";
+		mes "^FF00001 Glass Tube^000000,";
+		mes "^FF00001 Seed of Life^000000 and";
+		mes "^FF00001 Morning Dew of Yggdrasil^000000.";
 		next;
 		mes "[Keshibien]";
 		mes "Well, that's all the";
@@ -2046,7 +2046,7 @@ lhz_in02,278,273,3	script	Broncher#qsk_al	709,{
 		mes "[Broncher]";
 		mes "Now leave alone";
 		mes "and let me enjoy";
-		mes "all of this " + mesitemlink(970) + "";
+		mes "all of this alcohol";
 		mes "in solitude, alright?";
 		close;
 	}
