@@ -73,7 +73,7 @@ L_Start:
 		next;
 		mes "[Santa Claus]";
 		mes "If you collect 3 of these, I will give";
-		mes "you a prototype mystery box that";
+		mes "you a prototype mystery " + mesitemlink(7948) + " that";
 		mes "I've been keeping around the";
 		mes "lab. It spits out random presents";
 		mes "and saves me a ton of work.";

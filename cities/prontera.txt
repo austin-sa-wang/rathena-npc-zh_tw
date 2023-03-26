@@ -104,7 +104,7 @@ prontera,149,202,2	script	YuNa#pront	700,{
 	mes "I bet the first time you saw this statue, you thought, '^3355FFOh, what a nice muscle man on a horse^000000.'";
 	next;
 	mes "[YuNA]";
-	mes "But this statue is obviously not muscular enough, not godly enough to fairly represent a god! Maybe if he had a halo?";
+	mes "But this statue is obviously not muscular enough, not godly enough to fairly represent a god! Maybe if he had a " + mesitemlink(2282) + "?";
 	close;
 }
 
@@ -232,7 +232,7 @@ prontera,78,150,3	script	Dairenne#pront	90,{
 //This NPC has been disabled officially.
 prt_in,178,92,0	script	Curator of Library#pront	57,{
 	mes "[Curator Guiss]";
-	mes "Here, in the Western branch of the Prontera Library, ";
+	mes "Here, in the Western " + mesitemlink(13150) + " of the Prontera Library, ";
 	mes "we keep records of monsters found in various dungeons scattered around the Rune-Midgarts Kingdom.";
 	next;
 	mes "[Curator Guiss]";
@@ -241,15 +241,15 @@ prt_in,178,92,0	script	Curator of Library#pront	57,{
 	next;
 	mes "[Curator Guiss]";
 	mes "I must say, this is a most useful reference for you adventurers. When dealing with beasts, it's good to be informed and understand what you're up against.";
-	mes "If you would like to peruse monster records organized by their properties, please visit the Eastern branch of our library.";
+	mes "If you would like to peruse monster records organized by their properties, please visit the Eastern " + mesitemlink(13150) + " of our library.";
 	close;
 }
 */
 
 prt_in,175,50,0	script	Library Girl#pront	71,{
 	mes "[Library Girl Ellen]";
-	mes "Here in the Eastern branch of the Prontera Library, we provide Monster Encyclopedias in which creatures are organized by their properties. We also have books on Merchant and Blacksmith skills.";
-	mes "Ooh~! The other branch of our library also has many interesting things to read! So if you get a chance, you just might want to visit.";
+	mes "Here in the Eastern " + mesitemlink(13150) + " of the Prontera Library, we provide Monster Encyclopedias in which creatures are organized by their properties. We also have books on Merchant and Blacksmith skills.";
+	mes "Ooh~! The other " + mesitemlink(13150) + " of our library also has many interesting things to read! So if you get a chance, you just might want to visit.";
 	close;
 }
 
@@ -502,7 +502,7 @@ prt_in,284,168,3	script	Ginedin Rephere#pront	55,{
 		mes "I believe for us humans, clothes are one of the few ways to show our personality, style, and beauty.";
 		next;
 		mes "[Tailor Ginedin Rephere]";
-		mes "Considering this, I personally think my job is very helpful and rather fancy. This in itself makes it all worthwhile. Coarse fabric and rough leather burst with energy and life when colored...";
+		mes "Considering this, I personally think my job is very helpful and rather fancy. This in itself makes it all worthwhile. Coarse " + mesitemlink(1059) + " and rough leather burst with energy and life when colored...";
 		next;
 		mes "[Tailor Ginedin Rephere]";
 		mes "It is a very hard and tedious process, but the happiness and delight you feel when your clothes are done makes up for all the hard work.";
@@ -606,7 +606,7 @@ prt_church,103,76,0	script	Garnet#pront	67,{
 			mes "Well, it's a bit of hassle, but if you want to make a certain place one of your Warp Points, you need to be physically there first. Then, type in ^6666CC/memo^000000 into the command prompt.";
 			next;
 			mes "[Garnet]";
-			mes "Just so you know, you can't save a Warp Point inside of a dungeon. Oh, and don't forget, each time you make a Warp Portal, you must use 1 ^6666CCBlue Gemstone^000000 as a Catalyst.";
+			mes "Just so you know, you can't save a Warp Point inside of a dungeon. Oh, and don't forget, each time you make a Warp Portal, you must use 1 ^6666CCBlue " + mesitemlink(7300) + "^000000 as a Catalyst.";
 			continue;
 		case 7:
 			mes "["+ strcharinfo(0) +"]";
@@ -635,7 +635,7 @@ prt_church,103,71,0	script	Henson#pront	120,{
 			mes "If you want to permanently improve your Defense against the Undead, learn ^6666CCDivine Protection^000000.";
 			next;
 			mes "[Henson]";
-			mes "Learning Divine Protection to certain levels will also allow you to learn other skills, like ^6666CCAngelus^000000 and ^6666CCBlessing^000000, which Garnet can explain.";
+			mes "Learning Divine Protection to certain levels will also allow you to learn other skills, like ^6666CCAngelus^000000 and ^6666CCBlessing^000000, which " + mesitemlink(718) + " can explain.";
 			next;
 			mes "[Henson]";
 			mes "When you learn ^6666CCLevel 3 Divine Protection^000000, you will then be able to learn the ^6666CCDemon Bane^000000 skill.";
@@ -695,7 +695,7 @@ prt_church,103,71,0	script	Henson#pront	120,{
 			mes "Once the Teleport skill is mastered, you can Teleport to the latest Save Point that you have made with a Kafra Employee. I do not know why it is that way, but the Lord works in mysterious ways.";
 			next;
 			mes "[Henson]";
-			mes "When Teleport is mastered, you can also learn the ^6666CCWarp Portal^000000 skill. Ask Garnet if you wish to know more about Warp Portal.";
+			mes "When Teleport is mastered, you can also learn the ^6666CCWarp Portal^000000 skill. Ask " + mesitemlink(718) + " if you wish to know more about Warp Portal.";
 			continue;
 		case 8:
 			mes "[Henson]";

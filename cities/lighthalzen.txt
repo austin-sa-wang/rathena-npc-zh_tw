@@ -379,7 +379,7 @@ lighthalzen,190,134,5	script	Joyce#zen	862,{
 	mes "[Joyce]";
 	mes "I can sense your";
 	mes "longing look within";
-	mes "the depths of my heart,";
+	mes "the depths of my " + mesitemlink(7855) + ",";
 	mes "beating faster and faster";
 	mes "with a feverish passion~";
 	close;
@@ -470,7 +470,7 @@ lighthalzen,132,103,5	script	Sefith#li_01	734,{
 	mes "discuss how sorry I should";
 	mes "feel for any other man living";
 	mes "in Lighthalzen. They don't hold";
-	mes "a candle to my studliness~";
+	mes "a " + mesitemlink(5028) + " to my studliness~";
 	close;
 }
 
@@ -622,7 +622,7 @@ lighthalzen,182,102,3	script	Lucius#zen5	866,{
 		mes "[Lucius]";
 		mes "I understand. Still,";
 		mes "keep in mind that when";
-		mes "you give from your heart,";
+		mes "you give from your " + mesitemlink(7855) + ",";
 		mes "you will be rewarded tenfold.";
 		mes "Though I admit, the benefits";
 		mes "aren't always readily apparent.";
@@ -700,7 +700,7 @@ lhz_in02,201,181,7	script	Safwat Fahmy	853,{
 	mes "[Safwat Fahmy]";
 	mes "If this is the best hotel,";
 	mes "I expect them to provide me";
-	mes "with the best alcohol. When";
+	mes "with the best " + mesitemlink(970) + ". When";
 	mes "I stay at a hotel, that's what";
 	mes "I want. To spend the entire";
 	mes "day not being sober.";
@@ -761,7 +761,7 @@ lhz_in02,221,276,1	script	Harp#zen8	869,{
 	mes "[Harp]";
 	mes "Oh sweet jiminy...";
 	mes "That Kafra Lady is so hot.";
-	mes "What a body. And those glasses.";
+	mes "What a body. And those " + mesitemlink(2203) + ".";
 	mes "I just gotta ask her out somehow.";
 	next;
 	mes "[Harp]";
@@ -790,14 +790,14 @@ lhz_in02,247,275,1	script	Hotel Employee#zen4	868,{
 	mes "Welcome to the";
 	mes "Royal Dragon Hotel Bar.";
 	mes "How about a nice night";
-	mes "cap before going to bed?";
+	mes "" + mesitemlink(2226) + " before going to bed?";
 	next;
 	mes "[Hotel Employee]";
 	mes "If you're looking";
 	mes "for a friend, you";
 	mes "can almost always";
 	mes "make one in this bar.";
-	mes "Alcohol certainly is the";
+	mes "" + mesitemlink(970) + " certainly is the";
 	mes "grease for social gears.";
 	close;
 }
@@ -971,7 +971,7 @@ lighthalzen,296,239,3	script	Berru#lhz_01	706,{
 		mes "No, I'm not gonna";
 		mes "sleep till Daddy gets";
 		mes "home! He said he'll";
-		mes "bring us candy tonight!";
+		mes "bring us " + mesitemlink(529) + " tonight!";
 		mes "You go sleep first, Pilia!";
 		emotion ET_ANGER, getnpcid(0, "Berru#lhz_01");
 		next;
@@ -1969,7 +1969,7 @@ lhz_in01,24,140,3	script	Regenschirm Guard#40	4_M_LGTGUARD,{
 	mes "May I help you?";
 	mes "If you would like to";
 	mes "enter, you must first";
-	mes "have a Laboratory Permit.";
+	mes "have a " + mesitemlink(2657) + ".";
 	mes "Thank you for your cooperation.";
 	close;
 }
@@ -2251,7 +2251,7 @@ lhz_in01,129,54,1	script	Mereth#erem	869,{
 lhz_in01,108,53,3	script	#horri	111,{
 	mes "^3355FFThis is simply a pile";
 	mes "of files, a smattering of";
-	mes "books and a family portrait.^000000";
+	mes "books and a " + mesitemlink(7499) + ".^000000";
 	close;
 }
 
@@ -2325,7 +2325,7 @@ lhz_in01,157,47,1	script	Mareth#seram	797,{
 	mes "[Mareth]";
 	mes "Yoo hoo hoo~";
 	mes "Oh, how I love";
-	mes "love love chocolate!";
+	mes "love love " + mesitemlink(558) + "!";
 	emotion ET_THROB;
 	next;
 	mes "[Mareth]";
@@ -2465,7 +2465,7 @@ lighthalzen,162,304,7	script	Rekenber Guard Drew#li	868,{
 	mes "So they're all wearing";
 	mes "garter belts in these?";
 	mes "Whoa, that means they";
-	mes "even got the glasses chick";
+	mes "even got the " + mesitemlink(2203) + " chick";
 	mes "to wear 'em too? That's the";
 	mes "best news I've heard all day!";
 	emotion ET_HUK, getnpcid(0, "Rekenber Guard Tan#li");
@@ -2505,7 +2505,7 @@ lighthalzen,163,306,3	script	Rekenber Guard Tan#li	867,{
 	next;
 	mes "[Rekenber Guard Tan]";
 	mes "Leilah? Oh, you mean";
-	mes "the glasses chick? Dude...";
+	mes "the " + mesitemlink(2203) + " chick? Dude...";
 	mes "Dude. She's my favorite too!";
 	close;
 }
@@ -2670,7 +2670,7 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	next;
 	mes "[Shop Assistant]";
 	mes "Ma'am, are you talking";
-	mes "about this Stiletto? You";
+	mes "about this " + mesitemlink(1216) + "? You";
 	mes "certainly have an eye for";
 	mes "quality weapons. If you";
 	mes "don't mind me asking,";
@@ -2685,7 +2685,7 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	mes "good things about that town.";
 	mes "You've certainly proven that";
 	mes "people from Morocc truly have";
-	mes "good taste. Now, this Stiletto";
+	mes "good taste. Now, this " + mesitemlink(1216) + "";
 	mes "is a steal at 39,800 zeny...";
 	next;
 	emotion ET_HUK;
@@ -2694,10 +2694,10 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	mes "That's ridiculous!";
 	mes "Never mind that, let";
 	mes "me take a look at that";
-	mes "Gladius in the corner.";
+	mes "" + mesitemlink(1219) + " in the corner.";
 	next;
 	mes "[Shop Assistant]";
-	mes "The Gladius?";
+	mes "The " + mesitemlink(1219) + "?";
 	mes "Ah, that would be";
 	mes "39,800 zeny, ma'am.";
 	next;
@@ -2708,7 +2708,7 @@ lhz_in02,267,25,4	script	Diana#npc	747,{
 	mes "[Shop Assistant]";
 	mes "Yes, this replica really";
 	mes "does look just like an";
-	mes "actual Gladius, does it";
+	mes "actual " + mesitemlink(1219) + ", does it";
 	mes "not? Although not a true";
 	mes "weapon, it's quite capable of";
 	mes "opening the toughest envelopes.";
@@ -2954,7 +2954,7 @@ lhz_in01,139,48,7	script	Leimi#mimir	73,{
 			mes "[Leimi]";
 			mes "Oh, you're an Assassin!";
 			mes "Oh, you boys are soooo cute!";
-			mes "And so cool and so mysterious all at the same time! I love you!";
+			mes "And so cool and so mysterious all at the same time! " + mesitemlink(6206) + "!";
 		}
 		else {
 			next;

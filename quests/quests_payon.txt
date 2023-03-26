@@ -64,7 +64,7 @@ payon_in01,99,72,4	script	Granny	103,{
 		next;
 		mes "[Granny]";
 		mes "...";
-		mes "But for that, I need ^3355FF4 Skirt of Virgin^000000...";
+		mes "But for that, I need ^3355FF4 " + mesitemlink(1049) + "^000000...";
 		next;
 		mes "[Granny]";
 		mes "Young traveler, please help me. When you find some ^3355FFSkirt of Virgin^000000, please bring them to me. I'd really appreciate it...";
@@ -83,7 +83,7 @@ payon_in01,18,10,4	script	Mystic Lady	76,{
 	emotion ET_THINK;
 	next;
 	mes "[Mystic Lady]";
-	mes "Ear Muffs are my family's specialty, and we provide it to customers who have ^FF33551 Cursed Ruby^000000, ^3311AA1 Headset,^000000 ^3355FF 200 Feathers^000000 and ^DDDD005000 Zeny^000000.";
+	mes "" + mesitemlink(2283) + " are my family's specialty, and we provide it to customers who have ^FF33551 " + mesitemlink(724) + "^000000, ^3311AA1 " + mesitemlink(5001) + ",^000000 ^3355FF 200 Feathers^000000 and ^DDDD005000 Zeny^000000.";
 	emotion ET_THINK;
 	next;
 	switch(select("Oh Yeah? That sounds good.:No thank you, Ma'am.")) {
@@ -98,7 +98,7 @@ payon_in01,18,10,4	script	Mystic Lady	76,{
 			getitem 2283,1; //Ear_Mufs
 			next;
 			mes "[Mystic Lady]";
-			mes "Thank you for buying our product. You won't regret purchasing our Ear Muffs: Satisfaction guaranteed~";
+			mes "Thank you for buying our product. You won't regret purchasing our " + mesitemlink(2283) + ": Satisfaction guaranteed~";
 			emotion ET_THINK;
 			close;
 		}
@@ -139,7 +139,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "Is, is this";
 			mes "the one?!";
 			mes "This is...";
-			mes "Ora Ora!!";
+			mes "" + mesitemlink(701) + "!!";
 			next;
 			mes "[Young Man]";
 			mes "I'll make it short! Give it to me, and I will give you my treasure! So how's my idea? Wanna deal?";
@@ -151,7 +151,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "[Young Man]";
 			mes "Muhahahahah!!!";
 			mes "I finally have this!";
-			mes "Ora Ora!";
+			mes "" + mesitemlink(701) + "!";
 			mes "Stupid and Disgusting";
 			mes "Thief Bugs!!";
 			mes "You will pay!!!";
@@ -168,7 +168,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "Kakakakakaka!";
 			mes "I can't wait";
 			mes "to use this";
-			mes "Ora Ora!";
+			mes "" + mesitemlink(701) + "!";
 			close;
 		case 3:
 			mes "[Young Man]";
@@ -202,7 +202,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "I tried to do everything I could do. I coaxed them, killed them, but it only brought peace for a moment! I even tried to burn this house down...!";
 			next;
 			mes "[Young Man]";
-			mes "*Gasp* I mean, really, do I need ^3355FF Ora Ora^000000 to get rid of them? People say it is very rarely seen in distant countries.";
+			mes "*Gasp* I mean, really, do I need ^3355FF " + mesitemlink(701) + "^000000 to get rid of them? People say it is very rarely seen in distant countries.";
 			next;
 			mes "[Young Man]";
 			mes "If I could afford 5 of them, I won't have to be frustrated with these disgusting bugs any more...";
@@ -229,9 +229,9 @@ payon_in02,25,71,4	script	Boy	86,{
 		switch(select("Helm of Angel.:Deviruchi Cap.:I will come next time.")) {
 		case 1:
 			mes "[Young man]";
-			mes "1 Helm (with slot).";
-			mes "1 Angel Wing.";
-			mes "5 Fang of Garm.";
+			mes "1 " + mesitemlink(2228) + " (with slot).";
+			mes "1 " + mesitemlink(2254) + ".";
+			mes "5 " + mesitemlink(1063) + " of Garm.";
 			mes "That's all I require.";
 			next;
 			mes "[Young man]";
@@ -248,7 +248,7 @@ payon_in02,25,71,4	script	Boy	86,{
 				if ((countitem(2229) > 0) && (countitem(2254) > 0) && (countitem(7036) > 4)) {
 					mes "[Young man]";
 					mes ".....Hm.";
-					mes "Fine, here's your Helm of Angel. Take it.";
+					mes "Fine, here's your " + mesitemlink(5025) + ". Take it.";
 					delitem 2229,1; //Helm_
 					delitem 2254,1; //Angelic_Chain
 					delitem 7036,5; //Fang_Of_Garm
@@ -268,8 +268,8 @@ payon_in02,25,71,4	script	Boy	86,{
 			}
 		case 2:
 			mes "[Young man]";
-			mes "600 Little Evil Horn.";
-			mes "40 Talon of Griffon.";
+			mes "600 " + mesitemlink(1038) + ".";
+			mes "40 " + mesitemlink(7048) + ".";
 			mes "That's all I require.";
 			next;
 			mes "[Young man]";
@@ -285,7 +285,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			case 1:
 				if ((countitem(1038) > 599) && (countitem(7048) > 39)) {
 					mes "[Young man]";
-					mes ".....Hm. Here's your Deviruchi Hat. Please take it.";
+					mes ".....Hm. Here's your " + mesitemlink(5038) + ". Please take it.";
 					delitem 1038,600; //Petite_DiablOfs_Horn
 					delitem 7048,40; //Talon_Of_Griffin
 					close2;

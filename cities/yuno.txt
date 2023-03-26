@@ -35,7 +35,7 @@ yuno,184,173,4	script	Freidrich#juno	729,{
 		mes "This power is said to come from a relic from an ancient civilization called ^3355FFJuperos^000000 which existed here long before Juno.";
 		next;
 		mes "[Freidrich]";
-		mes "Research revealed that Juno's power source based on ^3355FFPieces of Ymir's Heart^000000. I hear that this power source is found where Juperos used to exist.";
+		mes "Research revealed that Juno's power source based on ^3355FFPieces of Ymir's " + mesitemlink(7855) + "^000000. I hear that this power source is found where Juperos used to exist.";
 		next;
 		mes "[Freidrich]";
 		mes "Since many scholars have been coming to Juno to study and research this power source, our city is basically a well known mecca for scholars.";
@@ -63,12 +63,12 @@ yuno,337,227,4	script	Juno Granny#juno	103,{
 	mes "[Granny]";
 	if (rand(1,50) == 1) {
 		if (Zeny > 999) {
-			mes "So, do you enjoy candy?";
+			mes "So, do you enjoy " + mesitemlink(529) + "?";
 			next;
-			mes "^3355FFGranny hands you some candy^000000.";
+			mes "^3355FFGranny hands you some " + mesitemlink(529) + "^000000.";
 			next;
 			mes "[Granny]";
-			mes "You've already chosen. It doesn't matter whether or not you get this candy. That doesn't matter at all. You have to understand why it's happened.";
+			mes "You've already chosen. It doesn't matter whether or not you get this " + mesitemlink(529) + ". That doesn't matter at all. You have to understand why it's happened.";
 			next;
 			mes "[Granny]";
 			mes "Here's ^3355FF1,000 zeny^000000.";
@@ -88,7 +88,7 @@ yuno,337,227,4	script	Juno Granny#juno	103,{
 				close;
 			}
 			mes "[Granny]";
-			mes "Yes, that's right. Now you must ask yourself why you didn't accept the candy I offered.";
+			mes "Yes, that's right. Now you must ask yourself why you didn't accept the " + mesitemlink(529) + " I offered.";
 			close;
 		}
 		else {
@@ -158,10 +158,10 @@ yuno,165,111,4	script	Juno Sage#juno	123,,{
 			mes "Look in my hand. I am holding two different kinds of herbs.";
 			next;
 			mes "[Le Morpheus]";
-			mes "One is a ^3355FFBlue Herb^000000 which will make you forget about reality and keep you in this virtual reality^000000.";
+			mes "One is a ^3355FFBlue " + mesitemlink(7872) + "^000000 which will make you forget about reality and keep you in this virtual reality^000000.";
 			next;
 			mes "[Le Morpheus]";
-			mes "The other is a ^FF3355Red Herb^000000 which will reveal to you what is true and real.";
+			mes "The other is a ^FF3355Red " + mesitemlink(7872) + "^000000 which will reveal to you what is true and real.";
 			next;
 			mes "[Le Morpheus]";
 			mes "Whichever one you choose, you must spend ^3355FF5,000 zeny^000000. Now, please select one.";
@@ -228,11 +228,11 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 		close;
 	case 3:
 		mes "[Artisan]";
-		mes "^3355FFRice Cake^000000! Yes, it's a traditional food that's favored by a lot of people. There's a lot of nostalgic memories of old fashioned markets that are connected to the Rice Cake.";
+		mes "^3355FFRice Cake^000000! Yes, it's a traditional food that's favored by a lot of people. There's a lot of nostalgic memories of old fashioned markets that are connected to the " + mesitemlink(550) + ".";
 		next;
 		mes "[Artisan]";
 		mes "Ahhh~";
-		mes "I wish I could eat a bit of Rice Cake right now.";
+		mes "I wish I could eat a bit of " + mesitemlink(550) + " right now.";
 		close;
 	case 4:
 		mes "[Artisan]";
@@ -246,10 +246,10 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	mes "Welcome to Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "There is a monster near here known as Lava Golem. This golem is made from a stone heart whose power happened to be amplified with magic power when it was swept away by molten rock.";
+	mes "There is a monster near here known as " + mesitemlink(7096) + " Golem. This golem is made from a " + mesitemlink(953) + " whose power happened to be amplified with magic power when it was swept away by molten rock.";
 	next;
 	mes "[Juno Soldier]";
-	mes "The lava dripping from its body is so hot that it can melt down armor and weapons made out of high quality steel.";
+	mes "The " + mesitemlink(7096) + " dripping from its body is so hot that it can melt down armor and weapons made out of high quality " + mesitemlink(999) + ".";
 	next;
 	mes "[Juno Soldier]";
 	mes "You'd better be careful when you encounter this monster. It will damage armor and weapons in the twinkling of an eye.";
@@ -262,7 +262,7 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	next;
 	mes "[Juno Soldier]";
 	mes "Geographer...";
-	mes "That monster looks like a flower blooming from the ground.";
+	mes "That monster looks like a " + mesitemlink(712) + " blooming from the ground.";
 	next;
 	mes "[Juno Soldier]";
 	mes "Strangely, it can extend its body a long distance. Even if you're far away from it, it can still pose a threat.";
@@ -305,13 +305,13 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	next;
 	mes "[Juno Soldier]";
 	mes "Have you ever";
-	mes "seen a Large Jellopy?";
+	mes "seen a " + mesitemlink(7126) + "?";
 	mes "Those things are huuuge!";
 	next;
 	mes "[Juno Soldier]";
 	mes "It's hard to believe";
 	mes "that such a large and";
-	mes "shining jellopy even exists!";
+	mes "shining " + mesitemlink(909) + " even exists!";
 	close;
 }
 
@@ -320,7 +320,7 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	mes "Welcome to Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "Among the Sage's weapons, there is a 'Dagger of Counter.'";
+	mes "Among the Sage's weapons, there is a '" + mesitemlink(1242) + ".'";
 	next;
 	mes "[Juno Soldier]";
 	mes "Its use is limited to the Sage class, and it increases the chance of inflicting critical attacks. So, for Sages, that dagger can be very useful, as well as make them look stylish in battle.";
@@ -332,10 +332,10 @@ yuno,157,205,4	script	Juno Artisan#juno	54,{
 	mes "Welcome to Juno, the city of noble-mindedness.";
 	next;
 	mes "[Juno Soldier]";
-	mes "There is a holy shield named 'Sacred Mission' which can only be used by Crusaders.";
+	mes "There is a holy shield named '" + mesitemlink(2111) + "' which can only be used by Crusaders.";
 	next;
 	mes "[Juno Soldier]";
-	mes "It's a long and narrow shield with an angel wing engraved in the center of the front side. Against Devil and Undead monsters, it is especially powerful.";
+	mes "It's a long and narrow shield with an " + mesitemlink(2254) + " engraved in the center of the front side. Against Devil and Undead monsters, it is especially powerful.";
 	close;
 }
 

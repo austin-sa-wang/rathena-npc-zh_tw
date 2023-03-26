@@ -49,7 +49,7 @@ yuno,1,1,0	script	Festival Manager#gq_fes0	891,{
 yuno,118,192,5	script	Rmimi Ravies#gq_fes01	891,{
 	if (countitem(7840) > 0) {
 		mes "[Rmimi Ravies]";
-		mes "This is the flower.";
+		mes "This is the " + mesitemlink(712) + ".";
 		mes "This is just a formality, but let me check your qualifications.";
 		next;
 		if (is_guild_leader() == true) {
@@ -57,10 +57,10 @@ yuno,118,192,5	script	Rmimi Ravies#gq_fes01	891,{
 			mes "Your qualification is verified as a Guild master.";
 			next;
 			mes "[Rmimi Ravies]";
-			mes "I wonder if you know what this flower's use is... Let me explain it to you.";
+			mes "I wonder if you know what this " + mesitemlink(712) + "'s use is... Let me explain it to you.";
 			next;
 			mes "[Rmimi Ravies]";
-			mes "This is the holy flower given by the Wish Maiden in Valkyrie, it can summon certain monsters by certain summoners.";
+			mes "This is the holy " + mesitemlink(712) + " given by the Wish Maiden in Valkyrie, it can summon certain monsters by certain summoners.";
 			next;
 			mes "[Rmimi Ravies]";
 			mes "There are only two summoners in this world...";
@@ -89,7 +89,7 @@ yuno,118,192,5	script	Rmimi Ravies#gq_fes01	891,{
 			}
 			mes "[Rmimi Ravies]";
 			mes "I will explain to you how to summon monsters.";
-			mes "This flower can summon the monsters 'Valkyrie's Blessing' and 'Valkyrie's Present' for one hour here in Juno.";
+			mes "This " + mesitemlink(712) + " can summon the monsters 'Valkyrie's Blessing' and 'Valkyrie's Present' for one hour here in Juno.";
 			next;
 			mes "[Rmimi Ravies]";
 			mes "An announcement will be made stating which monster is summoned.";
@@ -139,7 +139,7 @@ yuno,118,192,5	script	Rmimi Ravies#gq_fes01	891,{
 			mes "It seems you are not worthy.";
 			next;
 			mes "[Rmimi Ravies]";
-			mes "I don't know how you obtained that flower, but if you're not capable of leading others.. then you cannot continue.";
+			mes "I don't know how you obtained that " + mesitemlink(712) + ", but if you're not capable of leading others.. then you cannot continue.";
 			next;
 			mes "[Rmimi Ravies]";
 			mes "Too tough?";
@@ -426,7 +426,7 @@ rachel,1,1,0	script	Festival Manager#gq_fes2	891,{
 rachel,132,117,3	script	Rhehe Ravies#gq_fes03	891,{
 	if (countitem(7840) > 0) {
 		mes "[Rhehe Ravies]";
-		mes "A flower!!";
+		mes "A " + mesitemlink(712) + "!!";
 		mes "Shall we proceed?";
 		next;
 		if (is_guild_leader() == true) {
@@ -434,14 +434,14 @@ rachel,132,117,3	script	Rhehe Ravies#gq_fes03	891,{
 			mes "Eeeeh, so young and yet you're a guild master? Your guildsmen must be jealous.";
 			next;
 			mes "[Reumimi Ravies]";
-			mes "I'm not sure if you understand the uses for that flower, so I'll briefly explain.";
+			mes "I'm not sure if you understand the uses for that " + mesitemlink(712) + ", so I'll briefly explain.";
 			next;
 			mes "[Reumimi Ravies]";
-			mes "That flower has been passed down as a gift from the Valkyrie Wish Maiden herself.";
+			mes "That " + mesitemlink(712) + " has been passed down as a gift from the Valkyrie Wish Maiden herself.";
 			mes "It may be used to summon special monsters through summoners in special areas.";
 			next;
 			mes "[Rhehe Ravies]";
-			mes "There are only two summoners in existence who are capable of using that flower.";
+			mes "There are only two summoners in existence who are capable of using that " + mesitemlink(712) + ".";
 			mes "One is me, and the other is my twin sister Reumimi.";
 			next;
 			mes "[Rhehe Ravies]";
@@ -469,7 +469,7 @@ rachel,132,117,3	script	Rhehe Ravies#gq_fes03	891,{
 			}
 			mes "[Rhehe Ravies]";
 			mes "Okay then, I'll explain a little about the summoning ritual.";
-			mes "Here in Juno, the summoning ritual through the use of that flower will summon Valkyrie's Blessing and Valkyrie's Gift.";
+			mes "Here in Juno, the summoning ritual through the use of that " + mesitemlink(712) + " will summon Valkyrie's Blessing and " + mesitemlink(7840) + ".";
 			mes "The effects of the summoning ritual will last approximately one hour.";
 			next;
 			mes "[Rhehe Ravies]";
@@ -520,7 +520,7 @@ rachel,132,117,3	script	Rhehe Ravies#gq_fes03	891,{
 			mes "...Seems like you're not in a worthy position for me to talk to?";
 			next;
 			mes "[Rhehe Ravies]";
-			mes "I don't know how you obtained that flower, but if you're not capable of leading others.. then you cannot continue.";
+			mes "I don't know how you obtained that " + mesitemlink(712) + ", but if you're not capable of leading others.. then you cannot continue.";
 			next;
 			mes "[Rhehe Ravies]";
 			mes "Too tough?";

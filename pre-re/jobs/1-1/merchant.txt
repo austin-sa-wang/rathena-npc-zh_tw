@@ -183,7 +183,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 	else if (job_merchant_q2 && job_merchant_q > 0 && job_merchant_q < 7) {
 		mes "[Chief Mahnsoo]";
 		if (job_merchant_q2 == 1 || job_merchant_q2 == 2) {
-			mes "First, get the delivery package from the storehouse, and then take it to the former Swordman's Association in Prontera.";
+			mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then take it to the former Swordman's Association in Prontera.";
 			next;
 			mes "[Chief Mahnsoo]";
 			mes "When you get there, give the package to the Kafra Employee stationed near there. Her name is Blossom. Did you get all that?";
@@ -198,7 +198,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			}
 		}
 		else if (job_merchant_q2 == 3 || job_merchant_q2 == 4) {
-			mes "First, get the delivery package from the storehouse, and then take it to the Mage Guild in Geffen.";
+			mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then take it to the Mage Guild in Geffen.";
 			next;
 			if (job_merchant_q2 == 3) {
 				mes "[Chief Mahnsoo]";
@@ -210,7 +210,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			}
 		}
 		else if (job_merchant_q2 == 5 || job_merchant_q2 == 6) {
-			mes "First, get the delivery package from the storehouse, and then take it to Morocc.";
+			mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then take it to Morocc.";
 			next;
 			mes "[Chief Mahnsoo]";
 			mes "You'll have to find Java Dullihan, the Dyemaker, so that you can deliver the product he ordered.";
@@ -255,7 +255,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 		mes "help you out.";
 		next;
 		mes "[Chief Mahnsoo]";
-		mes "After you make the delivery, return to the storehouse and give the receipt to the storekeeper.";
+		mes "After you make the delivery, return to the storehouse and give the " + mesitemlink(6271) + " to the storekeeper.";
 		mes "Then, come back";
 		mes "and see me.";
 		next;
@@ -382,7 +382,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			mes "[Chief Mahnsoo]";
 			switch(rand(1,4)) {
 			case 1:
-				mes "First, get the delivery package from the storehouse, then go to the former Swordman's Association in Prontera.";
+				mes "First, get the " + mesitemlink(7488) + " from the storehouse, then go to the former Swordman's Association in Prontera.";
 				next;
 				mes "[Chief Mahnsoo]";
 				mes "When you get there, visit the Kafra Employee stationed there. Her name is Blossom. Did you get";
@@ -390,18 +390,18 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 				callsub S_GiveSerial,2485741,1,2328137,2,1009;
 				break;
 			case 2:
-				mes "First, get the delivery package from the storehouse, and then go to the Mage Guild in Geffen. When you get there, visit the Mage Guildsman in charge.";
+				mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then go to the Mage Guild in Geffen. When you get there, visit the Mage Guildsman in charge.";
 				callsub S_GiveSerial,2989396,3,2191737,4,1010;
 				break;
 			case 3:
-				mes "First, get the delivery package from the storehouse, and then go to Morocc. There you must find Java Dullihan, the dyemaker.";
+				mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then go to Morocc. There you must find Java Dullihan, the dyemaker.";
 				next;
 				mes "[Chief Mahnsoo]";
 				mes "He's a bit forgetful, so you should probably give the package to one of his students.";
 				callsub S_GiveSerial,3012685,5,3487372,6,1011;
 				break;
 			case 4:
-				mes "First, get the delivery package from the storehouse, and then give it to the Kafra Employee stationed on Byalan Island.";
+				mes "First, get the " + mesitemlink(7488) + " from the storehouse, and then give it to the Kafra Employee stationed on Byalan Island.";
 				callsub S_GiveSerial,3318702,7,3543625,8,1012;
 				next;
 				mes "[Chief Mahnsoo]";
@@ -420,7 +420,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			mes "Don't forget your destination and the package's Serial Number. You will need to tell those to the storekeeper in the storehouse to the right of me.";
 			next;
 			mes "[Chief Mahnsoo]";
-			mes "After the delivery, give the receipt to the storekeeper, and then come back and see me.";
+			mes "After the delivery, give the " + mesitemlink(6271) + " to the storekeeper, and then come back and see me.";
 			next;
 			mes "[Chief Mahnsoo]";
 			mes "Is that clear?";
@@ -446,7 +446,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			next;
 			mes "[Chief Mahnsoo]";
 			mes "Throwing away zeny like that";
-			mes "causes a deadly rage to well up in the heart of any Merchant!";
+			mes "causes a deadly rage to well up in the " + mesitemlink(7855) + " of any Merchant!";
 			mes "Just thinking about it";
 			mes "makes my blood boil!";
 			next;
@@ -524,13 +524,13 @@ alberta_in,28,29,2	script	Merchant Guildsman#mer	83,{
 		next;
 		mes "[Union Staff Kay]";
 		if (job_merchant_q2 == 1 || job_merchant_q2 == 2)
-			mes "Wow! You met the Kafra babe in Prontera?! Lucky you~ ...Receipt?";
+			mes "Wow! You met the Kafra babe in Prontera?! Lucky you~ ..." + mesitemlink(6271) + "?";
 		else if (job_merchant_q2 == 3 || job_merchant_q2 == 4)
-			mes "Geffen Magic Academy. Okay, receipt?";
+			mes "Geffen Magic Academy. Okay, " + mesitemlink(6271) + "?";
 		else if (job_merchant_q2 == 5 || job_merchant_q2 == 6)
-			mes "The dyemaker in Morocc. Not bad. Receipt?";
+			mes "The dyemaker in Morocc. Not bad. " + mesitemlink(6271) + "?";
 		else if (job_merchant_q2 == 7 || job_merchant_q2 == 8)
-			mes "Oh hohohoho~! The Kafra Babe on Byalan Island?! Awesome! Anyway, did you bring the receipt?";
+			mes "Oh hohohoho~! The Kafra Babe on Byalan Island?! Awesome! Anyway, did you bring the " + mesitemlink(6271) + "?";
 
 		if (job_merchant_q2 == 1 && countitem(1073) != 0)
 			delitem 1073,1; //Merchant_Voucher_1
@@ -553,11 +553,11 @@ alberta_in,28,29,2	script	Merchant Guildsman#mer	83,{
 			set job_merchant_q,9;
 			mes " [Union Staff Kay] ";
 			mes "Wait a sec.";
-			mes "Where's the receipt?";
+			mes "Where's the " + mesitemlink(6271) + "?";
 			mes "What happened?";
 			next;
 			mes " [Union Staff Kay] ";
-			mes "If you don't have the receipt, you fail the test! You better talk to Mahnsoo if you wanna retake it, alright? Pay attention next time!";
+			mes "If you don't have the " + mesitemlink(6271) + ", you fail the test! You better talk to Mahnsoo if you wanna retake it, alright? Pay attention next time!";
 			close;
 		}
 		next;
@@ -755,7 +755,7 @@ alberta_in,28,29,2	script	Merchant Guildsman#mer	83,{
 			next;
 			mes "[Union Staff Kay]";
 			mes "Well then, I wish you luck. Remember, you gotta bring me";
-			mes "a receipt once you finish the delivery, okay?";
+			mes "a " + mesitemlink(6271) + " once you finish the delivery, okay?";
 			close;
 		case 2:
 			mes "[Union Staff Kay]";
@@ -796,14 +796,14 @@ morocc_in,140,102,4	script	Student#mer	86,{
 		}
 		next;
 		mes "[Dyer's Student]";
-		mes "Let me check the Serial Number of the package so I can give you the receipt, okay?";
+		mes "Let me check the Serial Number of the package so I can give you the " + mesitemlink(6271) + ", okay?";
 		next;
 		mes "[Dyer's Student]";
 		if (job_merchant_q2 == 5 && countitem(1081) != 0) {
 			mes "3012685...";
 			mes "That's right.";
 			mes "Here's your";
-			mes "receipt.";
+			mes "" + mesitemlink(6271) + ".";
 			delitem 1081,1; //Merchant_Box_1
 			getitem 1077,1; //Merchant_Voucher_5
 		}
@@ -811,7 +811,7 @@ morocc_in,140,102,4	script	Student#mer	86,{
 			mes "3487372...";
 			mes "That's right.";
 			mes "Here's your";
-			mes "receipt.";
+			mes "" + mesitemlink(6271) + ".";
 			delitem 1082,1; //Merchant_Box_2
 			getitem 1078,1; //Merchant_Voucher_6
 		}
@@ -880,12 +880,12 @@ geffen_in,155,122,4	script	Guild Staff#mer	47,{
 		mes "Alright, let me";
 		mes "check the Serial Number...";
 		if (job_merchant_q2 == 3 && countitem(1081) != 0) {
-			mes "2989396. Yes, this is what we ordered. Here is your receipt.";
+			mes "2989396. Yes, this is what we ordered. Here is your " + mesitemlink(6271) + ".";
 			delitem 1081,1; //Merchant_Box_1
 			getitem 1075,1; //Merchant_Voucher_3
 		}
 		else if (job_merchant_q2 == 4 && countitem(1082) != 0) {
-			mes "2191737. Yes, this is what we ordered. Here is your receipt.";
+			mes "2191737. Yes, this is what we ordered. Here is your " + mesitemlink(6271) + ".";
 			delitem 1082,1; //Merchant_Box_2
 			getitem 1076,1; //Merchant_Voucher_4
 		}
@@ -973,7 +973,7 @@ prontera,248,42,0	script	Kafra Employee#mer	116,{
 		if (job_merchant_q2 == 1 && countitem(1081) != 0) {
 			mes "2485741. Right, this is";
 			mes "the one we ordered. Oh,";
-			mes "and don't forget this receipt!";
+			mes "and don't forget this " + mesitemlink(6271) + "!";
 			next;
 			delitem 1081,1; //Merchant_Box_1
 			getitem 1073,1; //Merchant_Voucher_1
@@ -981,7 +981,7 @@ prontera,248,42,0	script	Kafra Employee#mer	116,{
 		else if (job_merchant_q2 == 2 && countitem(1082) != 0) {
 			mes "2328137. Right, this is";
 			mes "the one we ordered. Oh,";
-			mes "and don't forget this receipt!";
+			mes "and don't forget this " + mesitemlink(6271) + "!";
 			next;
 			delitem 1082,1; //Merchant_Box_2
 			getitem 1074,1; //Merchant_Voucher_2
@@ -1092,14 +1092,14 @@ function	script	F_MercKafra	{
 		if (job_merchant_q2 == 7 && countitem(1081) != 0) {
 			mes "3318702. Right, this is";
 			mes "the one we ordered. Oh,";
-			mes "and don't forget this receipt!";
+			mes "and don't forget this " + mesitemlink(6271) + "!";
 			delitem 1081,1; //Merchant_Box_1
 			getitem 1079,1; //Merchant_Voucher_7
 		}
 		else if (job_merchant_q2 == 8 && countitem(1082) != 0) {
 			mes "3543625. Right, this is";
 			mes "the one we ordered. Oh,";
-			mes "and don't forget this receipt!";
+			mes "and don't forget this " + mesitemlink(6271) + "!";
 			delitem 1082,1; //Merchant_Box_2
 			getitem 1080,1; //Merchant_Voucher_8
 		}

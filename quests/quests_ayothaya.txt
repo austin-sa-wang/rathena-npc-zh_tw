@@ -78,7 +78,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 			mes "[Shuda]";
 			mes "Ah... Is it...?!!";
 			mes "Yes, that's it!";
-			mes "My engagement ring that was";
+			mes "My " + mesitemlink(7288) + " that was";
 			mes "thrown into the water by that stupid Annon!";
 			next;
 			mes "[Shuda]";
@@ -95,7 +95,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 			mes "^666666*Ahem*^000000";
 			mes "I-I didn't mean";
 			mes "to scare him, all I wanted was";
-			mes "my engagement ring back.";
+			mes "my " + mesitemlink(7288) + " back.";
 			next;
 			mes "[Shuda]";
 			mes "^666666*Sigh*^000000";
@@ -197,7 +197,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 			next;
 			mes "[Powerful-Looking Woman]";
 			mes "Now, I've got to find my";
-			mes "engagement ring. If only";
+			mes "" + mesitemlink(7288) + ". If only";
 			mes "my fiancee hadn't";
 			mes "thrown it...";
 			next;
@@ -318,7 +318,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 					mes "(...H-Horrifying!)";
 					next;
 					mes "[Shuda]";
-					mes "So anyway, I want you to go out and find my engagement ring. Since the water is calm and still around here, the ring is probably still under the water, and hasn't been swept away yet.";
+					mes "So anyway, I want you to go out and find my " + mesitemlink(7288) + ". Since the water is calm and still around here, the ring is probably still under the water, and hasn't been swept away yet.";
 					next;
 					mes "[Shuda]";
 					mes "And so, that is my quest for you. It should keep you entertained for a while. So get into the water, and I'll supervise from here.";
@@ -336,7 +336,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 					mes "[Powerful-Looking Woman]";
 					mes "Oh I see...";
 					mes "Don't help strangers, do you?";
-					mes "Well, my name is Shuda, a beautiful damsel waiting for her engagement ring to rise up from the water.";
+					mes "Well, my name is Shuda, a beautiful damsel waiting for her " + mesitemlink(7288) + " to rise up from the water.";
 					next;
 					mes "[Powerful-Looking Woman]";
 					mes "There...!";
@@ -356,7 +356,7 @@ ayothaya,233,105,3	script	Powerful-Looking Woman	838,2,2,{
 					mes " ...Say what?!";
 					next;
 					mes "[Shuda]";
-					mes "Basically, you're gonna find my engagement ring, and I'll be the happiest bride in the whole world and I'll live happily ever after. What's so hard to understand";
+					mes "Basically, you're gonna find my " + mesitemlink(7288) + ", and I'll be the happiest bride in the whole world and I'll live happily ever after. What's so hard to understand";
 					mes "about that?";
 					next;
 					mes "[Shuda]";
@@ -595,11 +595,11 @@ ayo_dun02,91,264,3	script	Haggard Man	841,{
 				mes "["+strcharinfo(0)+"]";
 				mes "Ah...";
 				mes "Here we are,";
-				mes "a White Potion.";
+				mes "a " + mesitemlink(504) + ".";
 				delitem 504,1; //White_Potion
 				next;
 				mes "[Haggard Man]";
-				mes "You mean the White Potion,";
+				mes "You mean the " + mesitemlink(504) + ",";
 				mes "the ultimate drink for healing?";
 				mes "I appreciate you doing me this favor. ^666666*Phew*^000000 Now, I feel much better.";
 				next;
@@ -666,7 +666,7 @@ ayo_dun02,91,264,3	script	Haggard Man	841,{
 					next;
 					mes "[Annon]";
 					mes "She thinks it's funny to electrocute me. and ties me up in";
-					mes "a darkened room and feeds me only Jellopy whenever I don't listen to her. Now can you see why I crave freedom?";
+					mes "a darkened room and feeds me only " + mesitemlink(909) + " whenever I don't listen to her. Now can you see why I crave freedom?";
 					next;
 					mes "[Annon]";
 					mes "Of course, if you reveal to her that you've found me, I'll repay your favor. I implore you, just pretend you haven't found me, please?";
@@ -843,8 +843,8 @@ ayothaya,253,99,3	script	Fisherman	843,{
 		mes "so it's easy to catch them.";
 		next;
 		mes "[Dannai]";
-		mes "We are providing a fishing rod rental service. Every time you fish, you'll need ^3355FF 1 Monster's Feed^000000 to use as bait, and pay";
-		mes "a rod rental fee of ^3355FF50 Zeny^000000.";
+		mes "We are providing a fishing " + mesitemlink(1601) + " rental service. Every time you fish, you'll need ^3355FF 1 " + mesitemlink(528) + "^000000 to use as bait, and pay";
+		mes "a " + mesitemlink(1601) + " rental fee of ^3355FF50 Zeny^000000.";
 		next;
 		mes "[Dannai]";
 		mes "Would you";
@@ -875,32 +875,32 @@ ayothaya,253,99,3	script	Fisherman	843,{
 					end;
 				} else if (.@randfish > 39 && .@randfish < 60) {
 					mes "^3355FFInside of the Phen,";
-					mes "you find a Red Potion.^000000";
+					mes "you find a " + mesitemlink(501) + ".^000000";
 					close2;
 					getitem 501,1; //Red_Potion
 					end;
 				} else if (.@randfish > 59 && .@randfish < 70) {
 					mes "^3355FFInside of the Phen,";
-					mes "you find a Yellow Potion.^000000";
+					mes "you find a " + mesitemlink(503) + ".^000000";
 					close2;
 					getitem 503,1; //Yellow_Potion
 					end;
 				} else if (.@randfish > 69 && .@randfish < 80) {
 					mes "^3355FFThere's nothing inside...";
-					mes "But now you can eat Sushi!^000000";
+					mes "But now you can eat " + mesitemlink(551) + "!^000000";
 					close2;
 					getitem 551,1; //Shusi
 					end;
 				} else if (.@randfish > 79 && .@randfish < 90) {
 					mes "^3355FFYou find";
-					mes "a Flower Ring";
+					mes "a " + mesitemlink(2612) + "";
 					mes "inside the Phen.^000000";
 					close2;
 					getitem 2612,1; //Flower_Ring
 					end;
 				} else if (.@randfish == 90) {
 					mes "^3355FFYou find";
-					mes "a Diamond Ring";
+					mes "a " + mesitemlink(2613) + "";
 					mes "inside the Phen.^000000";
 					close2;
 					getitem 2613,1; //Diamond_Ring
@@ -911,7 +911,7 @@ ayothaya,253,99,3	script	Fisherman	843,{
 					mes "inside the band.^000000";
 					next;
 					mes "^3355FFYou take the";
-					mes "engagement ring.^000000";
+					mes "" + mesitemlink(7288) + ".^000000";
 					close2;
 					set thai_find,2;
 					changequest 12029,12030;
@@ -920,7 +920,7 @@ ayothaya,253,99,3	script	Fisherman	843,{
 				}
 			} else {
 				mes "[Dannai]";
-				mes "Remember, you need ^3355FF1 Monster's Feed^000000 to use as bait and ^3355FF50 zeny^000000 to rend a rod.";
+				mes "Remember, you need ^3355FF1 " + mesitemlink(528) + "^000000 to use as bait and ^3355FF50 zeny^000000 to rend a " + mesitemlink(1601) + ".";
 				close;
 			}
 		case 2:
@@ -1209,7 +1209,7 @@ ayothaya,193,171,3	script	Old Man#02	842,{
 		} else if (.@randayo > 4 && .@randayo < 7) {
 			mes "[Tham]";
 			mes "Ah~";
-			mes "I've got this craving for Ms. Mali the Spicy's food, especially her 'Tom Yum Goong.'";
+			mes "I've got this craving for Ms. Mali the Spicy's food, especially her '" + mesitemlink(566) + ".'";
 			next;
 			mes "[Tham]";
 			mes "I think it's the";
@@ -1248,7 +1248,7 @@ ayothaya,83,132,0	script	Dusit#thai	843,{
 			next;
 			mes "[Dusit]";
 			mes "The Sa-mhing Tiger is addicted";
-			mes "to the taste of human flesh. It has been known to transform into the shape of a person it has eaten in order to lure out his family and friends.";
+			mes "to the taste of human flesh. It has been known to transform into the shape of a person it has eaten in order to " + mesitemlink(2775) + " out his family and friends.";
 			next;
 			mes "[Dusit]";
 			mes "The local people are still afraid that the creature might transform into someone they know, and sneak into their homes to eat them.";
@@ -1455,8 +1455,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			mes "[Boonthom]";
 			mes "^3366991 "+getitemname(.@items[0])+"^000000,";
 			mes "^3366991 "+getitemname(.@items[1])+"^000000,";
-			mes "^3366991 Solid Husk^000000 and";
-			mes "^3366991 Holy Water^000000...";
+			mes "^3366991 " + mesitemlink(7190) + "^000000 and";
+			mes "^3366991 " + mesitemlink(523) + "^000000...";
 			mes "That's all I need.";
 			next;
 			mes "[Boonthom]";
@@ -1496,7 +1496,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			next;
 			mes "[Boonthom]";
 			mes "Here you go.";
-			mes "Please take these holy threads.";
+			mes "Please take these " + mesitemlink(7285) + ".";
 			mes "With this, you will be able to enter the ruins with less worry.";
 			delitem .@items[0],1;
 			delitem .@items[1],1;
@@ -1523,8 +1523,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		mes "[Boonthom]";
 		mes "^3366991 "+getitemname(.@items[0])+"^000000,";
 		mes "^3366991 "+getitemname(.@items[1])+"^000000,";
-		mes "^3366991 Solid Husk^000000 and";
-		mes "^3366991 Holy Water^000000.";
+		mes "^3366991 " + mesitemlink(7190) + "^000000 and";
+		mes "^3366991 " + mesitemlink(523) + "^000000.";
 		next;
 		mes "[Boonthom]";
 		mes "See you later.";
@@ -1546,7 +1546,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			next;
 			mes "[Boonthom]";
 			mes "Here you go.";
-			mes "Please take these holy threads.";
+			mes "Please take these " + mesitemlink(7285) + ".";
 			mes "With this, you will be able to enter the ruins with less worry.";
 			delitem .@items[0],1;
 			delitem .@items[1],1;
@@ -1559,13 +1559,13 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			close;
 		}
 		mes "[Boonthom]";
-		mes "If you lose the holy threads, don't worry. I can make some more for you. Just gather the following items.";
+		mes "If you lose the " + mesitemlink(7285) + ", don't worry. I can make some more for you. Just gather the following items.";
 		next;
 		mes "[Boonthom]";
 		mes "^3366991 "+getitemname(.@items[0])+"^000000,";
 		mes "^3366991 "+getitemname(.@items[1])+"^000000,";
-		mes "^3366991 Solid Husk^000000 and";
-		mes "^3366991 Holy Water^000000.";
+		mes "^3366991 " + mesitemlink(7190) + "^000000 and";
+		mes "^3366991 " + mesitemlink(523) + "^000000.";
 		next;
 		mes "[Boonthom]";
 		mes "See you later.";
@@ -1604,14 +1604,14 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		next;
 		mes "[Boonthom]";
 		mes "As you can guess from the";
-		mes "note, the 2nd underground level is very very dangerous. You will need holy threads that contain even more holy protection.";
+		mes "note, the 2nd underground level is very very dangerous. You will need " + mesitemlink(7285) + " that contain even more holy protection.";
 		next;
 		mes "[Boonthom]";
-		mes "Now, go and gather some materials so that I can create more powerful holy threads for you.";
+		mes "Now, go and gather some materials so that I can create more powerful " + mesitemlink(7285) + " for you.";
 		next;
 		mes "[Boonthom]";
-		mes "^3366992 Holy Water^000000,";
-		mes "^3366991 Yggdrasil Leaf^000000,";
+		mes "^3366992 " + mesitemlink(523) + "^000000,";
+		mes "^3366991 " + mesitemlink(610) + "^000000,";
 		mes "^3366992 "+getitemname(.@items[0])+"^000000 and";
 		mes "^3366992 "+getitemname(.@items[1])+"^000000.";
 		set ayodunquest,10;
@@ -1643,7 +1643,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			next;
 			mes "[Boonthom]";
 			mes "Here you go.";
-			mes "Please take these holy threads.";
+			mes "Please take these " + mesitemlink(7285) + ".";
 			mes "With this, you will be able to enter the ruins with less worry.";
 			delitem .@items[0],2;
 			delitem .@items[1],2;
@@ -1666,8 +1666,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		mes "holy thread?";
 		next;
 		mes "[Boonthom]";
-		mes "^3366992 Holy Water^000000,";
-		mes "^3366991 Yggdrasil Leaf^000000,";
+		mes "^3366992 " + mesitemlink(523) + "^000000,";
+		mes "^3366991 " + mesitemlink(610) + "^000000,";
 		mes "^3366992 "+getitemname(.@items[0])+"^000000 and";
 		mes "^3366992 "+getitemname(.@items[1])+"^000000.";
 		next;
@@ -1701,7 +1701,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			next;
 			mes "[Boonthom]";
 			mes "Here you go.";
-			mes "Please take these holy threads.";
+			mes "Please take these " + mesitemlink(7285) + ".";
 			mes "With this, you will be able to enter the ruins with less worry.";
 			delitem .@items[0],2;
 			delitem .@items[1],2;
@@ -1718,8 +1718,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		mes "holy thread?";
 		next;
 		mes "[Boonthom]";
-		mes "^3366992 Holy Water^000000,";
-		mes "^3366991 Yggdrasil Leaf^000000,";
+		mes "^3366992 " + mesitemlink(523) + "^000000,";
+		mes "^3366991 " + mesitemlink(610) + "^000000,";
 		mes "^3366992 "+getitemname(.@items[0])+"^000000 and";
 		mes "^3366992 "+getitemname(.@items[1])+"^000000.";
 		close;
@@ -1744,8 +1744,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		next;
 		mes "[Boonthom]";
 		mes "Thank you for your trouble.";
-		mes "My friend left that box for me.";
-		mes "But I guess he would wish to give that box to the person who found his remains.";
+		mes "My friend left that " + mesitemlink(7948) + " for me.";
+		mes "But I guess he would wish to give that " + mesitemlink(7948) + " to the person who found his remains.";
 		next;
 		mes "[Boonthom]";
 		mes "If you wish to explore the building again, but you don't have any holy thread, feel free to ask me at anytime.";
@@ -1762,7 +1762,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		} else if (countitem(523) > 1 && countitem(610) > 0 && countitem(.@items[0]) > 1 && countitem(.@items[1]) > 1 && countitem(7287) == 0) {
 			mes "[Boonthom]";
 			mes "Lost the";
-			mes "holy threads";
+			mes "" + mesitemlink(7285) + "";
 			mes "somehow, did you?";
 			mes "With the items you";
 			mes "have, I'll simply";
@@ -1780,7 +1780,7 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 			next;
 			mes "[Boonthom]";
 			mes "Here you go.";
-			mes "Please take these holy threads.";
+			mes "Please take these " + mesitemlink(7285) + ".";
 			mes "With this, you will be able to enter the ruins with less worry.";
 			delitem .@items[0],2;
 			delitem .@items[1],2;
@@ -1797,8 +1797,8 @@ ayo_in01,181,193,4	script	Shaman#thai	840,{
 		mes "holy thread?";
 		next;
 		mes "[Boonthom]";
-		mes "^3366992 Holy Water^000000,";
-		mes "^3366991 Yggdrasil Leaf^000000,";
+		mes "^3366992 " + mesitemlink(523) + "^000000,";
+		mes "^3366991 " + mesitemlink(610) + "^000000,";
 		mes "^3366992 "+getitemname(.@items[0])+"^000000 and";
 		mes "^3366992 "+getitemname(.@items[1])+"^000000.";
 		close;
@@ -2058,7 +2058,7 @@ ayo_dun01,16,188,0	script	 #hun_thai_6	111,{
 ayo_dun01,24,283,0	script	 #2_dun_in	111,{
 	if (ayodunquest > 10) {
 		if (countitem(7287) > 0) {
-			mes "^3355FFThe holy threads";
+			mes "^3355FFThe " + mesitemlink(7285) + "";
 			mes "emanate a powerful sense";
 			mes "of safety and security.";
 			mes "With the protection of";
@@ -2083,7 +2083,7 @@ ayo_dun02,268,108,0	script	 #reward_tiger	111,{
 	if (ayodunquest == 11 && countitem(7287) > 0) {
 		mes "^3355FFYou find half of the skeletal remains of a person sticking out from the ground. It seems to be the remains of Boonthom's comrade.^000000";
 		next;
-		mes "^3355FFYou find a piece of paper beside the skeleton, as well as a box.^000000";
+		mes "^3355FFYou find a piece of paper beside the skeleton, as well as a " + mesitemlink(7948) + ".^000000";
 		next;
 		mes "^3355FFYou read what is written on the old sheet of paper. The letters have faded with age, and it is difficult to read.^000000";
 		next;
@@ -2092,7 +2092,7 @@ ayo_dun02,268,108,0	script	 #reward_tiger	111,{
 		mes "I was a fool. There is 'Sa-mhing Tig'...One who ....my remains... Please take...to Boonthom...";
 		next;
 		mes "^3355FFYou pick";
-		mes "up the box.^000000";
+		mes "up the " + mesitemlink(7948) + ".^000000";
 		set ayodunquest,12;
 		// completequest 12039;
 		getitem 603,1; //Old_Blue_Box
@@ -2116,7 +2116,7 @@ ayothaya,196,265,3	script	Einon#ayo	842,{
 		mes "'^3131FFTom Yum Goong^000000' is the best.";
 		next;
 		mes "[Einon]";
-		mes "Tom Yum Goong is a type";
+		mes "" + mesitemlink(566) + " is a type";
 		mes "of soup that is very spicy. Try it once, and you will be amazed by its profound taste. Try it twice, and you will be enraptured by its tantalizing aroma.";
 		next;
 		mes "[Einon]";
@@ -2130,7 +2130,7 @@ ayothaya,196,265,3	script	Einon#ayo	842,{
 			mes "Okay...!";
 			mes "Now who would be";
 			mes "best for preparing";
-			mes "Tom Yum Goong for you?";
+			mes "" + mesitemlink(566) + " for you?";
 			mes "Hmmmmm...";
 			next;
 			mes "[Einon]";
@@ -2144,7 +2144,7 @@ ayothaya,196,265,3	script	Einon#ayo	842,{
 			setquest 8123;
 			mes "[Einon]";
 			mes "She is the best cook when it";
-			mes "comes to Tom Yum Goong!";
+			mes "comes to " + mesitemlink(566) + "!";
 			mes "Why don't you ask her";
 			mes "to cook you some?";
 			close;
@@ -2189,7 +2189,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 		mes "I am especially proud of my";
 		mes "^3131FFTom Yum Goong^000000, which is the";
 		mes "best in the village. I suppose";
-		mes "it's my fate to cook the greatest Tom Yum Goong ever.";
+		mes "it's my fate to cook the greatest " + mesitemlink(566) + " ever.";
 		if (tomyumgoong == 0) {
 			close;
 		} else {
@@ -2197,22 +2197,22 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 			mes "[Mali the Spicy]";
 			mes "Oh I see...";
 			mes "You want me to cook";
-			mes "Tom Yum Goong for you,";
+			mes "" + mesitemlink(566) + " for you,";
 			mes "don't you?";
 			next;
 			mes "[Mali the Spicy]";
 			mes "Honestly, I've been really";
-			mes "busy ever since I opened this restaurant. If you really wish to taste my Tom Yum Goong, would";
+			mes "busy ever since I opened this restaurant. If you really wish to taste my " + mesitemlink(566) + ", would";
 			mes "you do something for me?";
 			next;
 			if (select("Sure!:Eh... I dunno.") == 1) {
 				mes "[Mali the Spicy]";
 				mes "First, would you get";
 				mes "the ingredients to make";
-				mes "Tom Yum Goong for me? I'll need some ^CE0000Shrimps^000000, ^CE0000Chiles^000000 and ^CE0000Lemons^000000.";
+				mes "" + mesitemlink(566) + " for me? I'll need some ^CE0000Shrimps^000000, ^CE0000Chiles^000000 and ^CE0000Lemons^000000.";
 				next;
 				mes "[Mali the Spicy]";
-				mes "Remember, Shrimp is the main ingredient of this dish. So, the fresher the Shrimp, the tastier your food will be.";
+				mes "Remember, " + mesitemlink(567) + " is the main ingredient of this dish. So, the fresher the " + mesitemlink(567) + ", the tastier your food will be.";
 				next;
 				select("Where can I find them?");
 				mes "[Mali the Spicy]";
@@ -2223,8 +2223,8 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				mes "a lot of them there.";
 				next;
 				mes "[Mali the Spicy]";
-				mes "However, you might have a hard time finding them since you haven't done that before. So just buy some Shrimp from the guy who sells";
-				mes "the freshest Shrimp around.";
+				mes "However, you might have a hard time finding them since you haven't done that before. So just buy some " + mesitemlink(567) + " from the guy who sells";
+				mes "the freshest " + mesitemlink(567) + " around.";
 				next;
 				mes "[Mali the Spicy]";
 				mes "Hmmm...";
@@ -2236,32 +2236,32 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				next;
 				mes "[Mali the Spicy]";
 				mes "His name is ^3131FFThongpool^000000.";
-				mes "He will be somewhere around the village selling Shrimps. Go and ask him to give you 20 Shrimps to cook Tom Yum Goong.";
+				mes "He will be somewhere around the village selling Shrimps. Go and ask him to give you 20 Shrimps to cook " + mesitemlink(566) + ".";
 				close;
 			}
 			mes "[Mali the Spicy]";
 			mes "I understand this might be difficult to do, but it's worth";
-			mes "a try if you really want to taste the best Tom Yum Goong.";
+			mes "a try if you really want to taste the best " + mesitemlink(566) + ".";
 			close;
 		}
 	} else if (tomyumgoong > 1 && tomyumgoong < 4) {
 		if (tomyumgoong == 2 && countitem(567) > 19) {
 			mes "[Mali the Spicy]";
 			mes "Errr...";
-			mes "What's wrong with these Shrimp?";
-			mes "They all have these scratches and rips in them! I can't believe Thongpool sold such bad Shrimp";
+			mes "What's wrong with these " + mesitemlink(567) + "?";
+			mes "They all have these scratches and rips in them! I can't believe Thongpool sold such bad " + mesitemlink(567) + "";
 			mes "to his customers!";
 			next;
 			mes "[Mali the Spicy]";
 			mes "I'm so sorry, but";
 			mes "I can't cook the best";
-			mes "Tom Yum Goong with";
-			mes "these Shrimp.";
+			mes "" + mesitemlink(566) + " with";
+			mes "these " + mesitemlink(567) + ".";
 			next;
 			mes "[Mali the Spicy]";
 			mes "I know it's an inconvenience, but would you go back to Thongpool";
-			mes "and ask him to give you the freshest Shrimp to cook the best";
-			mes "Tom Yum Goong?";
+			mes "and ask him to give you the freshest " + mesitemlink(567) + " to cook the best";
+			mes "" + mesitemlink(566) + "?";
 			close;
 		} else if (tomyumgoong == 3) {
 			if (countitem(567) > 19) {
@@ -2273,18 +2273,18 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				next;
 				emotion ET_BEST;
 				mes "[Mali the Spicy]";
-				mes "The freshest Shrimp that";
+				mes "The freshest " + mesitemlink(567) + " that";
 				mes "I've been looking for! Well done~";
-				mes "With these big and fresh Shrimp,";
-				mes "I can cook the best Tom Yum Goong for you! Thank you so much!";
+				mes "With these big and fresh " + mesitemlink(567) + ",";
+				mes "I can cook the best " + mesitemlink(566) + " for you! Thank you so much!";
 				delitem 567,20; //Prawn
 				next;
 				mes "[Mali the Spicy]";
-				mes "It will be a perfect food with the natural sweetness of the Shrimp, the sourness of Lemons and a little bit of fish sauce!";
+				mes "It will be a perfect food with the natural sweetness of the " + mesitemlink(567) + ", the sourness of Lemons and a little bit of fish sauce!";
 				next;
 				mes "[Mali the Spicy]";
 				mes "Oh... Right.";
-				mes "But we only have Shrimp.";
+				mes "But we only have " + mesitemlink(567) + ".";
 				mes "Now, I want you to bring";
 				mes "me some ^CE0000Lemons^000000.";
 				next;
@@ -2293,7 +2293,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 					changequest 8124,8125;
 					mes "[Mali the Spicy]";
 					mes "A few days ago, I saw a good";
-					mes "Lemon tree while taking a walk.";
+					mes "" + mesitemlink(568) + " tree while taking a walk.";
 					mes "But this tree belongs to an ordinary man who's not a Fruit Merchant.";
 					next;
 					mes "[Mali the Spicy]";
@@ -2306,11 +2306,11 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				emotion ET_ANGER;
 				mes "[Mali the Spicy]";
 				mes "What a stupid...!";
-				mes "If you quit just because you really hate sour flavors, you must not be that eager to have my Tom Yum Goong!";
+				mes "If you quit just because you really hate sour flavors, you must not be that eager to have my " + mesitemlink(566) + "!";
 				next;
 				mes "[Mali the Spicy]";
 				mes "Once you taste my";
-				mes "Tom Yum Goong, you'll";
+				mes "" + mesitemlink(566) + ", you'll";
 				mes "regret what you just said!";
 				close;
 			}
@@ -2401,7 +2401,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 		mes "Somehow, you've got";
 		mes "to get those high quality";
 		mes "Lemons so that I can make";
-		mes "some Tom Yum Goong!";
+		mes "some " + mesitemlink(566) + "!";
 		close;
 	} else if (tomyumgoong == 6) {
 		if (countitem(7286) > 29) {
@@ -2410,7 +2410,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 			mes "Where did you get these";
 			mes "bad ingredients?! Didn't";
 			mes "I tell you that my";
-			mes "Tom Yum Goong";
+			mes "" + mesitemlink(566) + "";
 			mes "requires the best?!";
 			close;
 		}
@@ -2418,7 +2418,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 		mes "I know you've been working hard to do me this favor. I hope you'll put forth that last little bit of effort to finish this.";
 		next;
 		mes "[Malli the Spicy]";
-		mes "Please go take a look in the Market. I don't doubt that it will be a good experience. After all, my fantastic Tom Yum Goong is waiting for you!";
+		mes "Please go take a look in the Market. I don't doubt that it will be a good experience. After all, my fantastic " + mesitemlink(566) + " is waiting for you!";
 		close;
 	} else if (tomyumgoong == 7) {
 		if (MaxWeight - Weight > 1499) {
@@ -2474,13 +2474,13 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				emotion ET_BEST;
 				mes "[Mali the Spicy]";
 				mes "Here's your";
-				mes "Tom Yum Goong!";
+				mes "" + mesitemlink(566) + "!";
 				mes "Ah~ This taste,";
 				mes "this scent... Yeah.";
 				mes "I know I did a good job.";
 				next;
 				mes "[Mali the Spicy]";
-				mes "Do you know what is the secret of Tom Yum Goong? It isn't simply just food. This has the power to heal you, and help you get into better shape.";
+				mes "Do you know what is the secret of " + mesitemlink(566) + "? It isn't simply just food. This has the power to heal you, and help you get into better shape.";
 				next;
 				mes "[Mali the Spicy]";
 				mes "Because...";
@@ -2490,11 +2490,11 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 				mes "[Mali the Spicy]";
 				mes "Okay...!";
 				mes "I'm giving you";
-				mes "10 Tom Yum Goong";
+				mes "10 " + mesitemlink(566) + "";
 				mes "free of charge~";
 				next;
 				mes "[Mali the Spicy]";
-				mes "Thank you for all the trouble that you have been though to get these ingredients. It would make me happy if you shared Tom Yum Goong with your friends.";
+				mes "Thank you for all the trouble that you have been though to get these ingredients. It would make me happy if you shared " + mesitemlink(566) + " with your friends.";
 				next;
 				mes "[Mali the Spicy]";
 				mes "Share the flavor of Ayothaya, and let them know how beautiful our land is. It was good to see you, take care now~";
@@ -2514,7 +2514,7 @@ ayo_in01,145,163,3	script	Cook#ayo	839,{
 	mes "Ah...!";
 	mes "So busy, so busy!";
 	mes "My customers never get tired of";
-	mes "the taste of my Tom Yum Goong!";
+	mes "the taste of my " + mesitemlink(566) + "!";
 	mes "Heh heh heh~!";
 	close;
 }
@@ -2532,11 +2532,11 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 		mes "[Thongpool]";
 		mes "Come adventurers,";
 		mes "take a look! I have";
-		mes "plenty of Shrimp!";
+		mes "plenty of " + mesitemlink(567) + "!";
 		next;
 		mes "[Thongpool]";
-		mes "You're looking for Shrimp,";
-		mes "aren't you? How many Shrimp";
+		mes "You're looking for " + mesitemlink(567) + ",";
+		mes "aren't you? How many " + mesitemlink(567) + "";
 		mes "do you need? Twenty? Forty?";
 		next;
 		if (select("I need Shrimp for Tom Yum Goong.:Err, they look expensive.") == 1) {
@@ -2547,11 +2547,11 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 			mes "[Thongpool]";
 			mes "After all,";
 			mes "you'll need a larger";
-			mes "amount of Shrimp to";
-			mes "cook Tom Yum Goong.";
+			mes "amount of " + mesitemlink(567) + " to";
+			mes "cook " + mesitemlink(566) + ".";
 			next;
 			mes "[Thongpool]";
-			mes "Oh yes, you will need 20 Shrimps for Ms. Mali's Tom Yum Goong.";
+			mes "Oh yes, you will need 20 Shrimps for Ms. Mali's " + mesitemlink(566) + ".";
 			mes "I'll even give you a discount:";
 			mes "11,000 zeny for 20 shrimps.";
 			mes "What do you say?";
@@ -2565,7 +2565,7 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 						emotion ET_BEST;
 						mes "[Thongpool]";
 						mes "Good, now you have the";
-						mes "freshest Shrimp in this village! It's time for you to go back and ask Ms. Mali to cook them for you.";
+						mes "freshest " + mesitemlink(567) + " in this village! It's time for you to go back and ask Ms. Mali to cook them for you.";
 						close;
 					}
 					mes "[Thongpool]";
@@ -2581,7 +2581,7 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 			}
 			mes "[Thongpool]";
 			mes "Well well well...";
-			mes "You might fill your hungry stomach with that many Jellopies but they wouldn't taste as good as my Shrimp!";
+			mes "You might fill your hungry stomach with that many Jellopies but they wouldn't taste as good as my " + mesitemlink(567) + "!";
 			close;
 		}
 		mes "[Thongpool]";
@@ -2589,7 +2589,7 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 		mes "Do you think";
 		mes "it's expensive?";
 		mes "But the fantastic taste";
-		mes "of Tom Yum Goong";
+		mes "of " + mesitemlink(566) + "";
 		mes "is priceless!";
 		close;
 	} else if (tomyumgoong == 3) {
@@ -2607,7 +2607,7 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 					getitem 567,20; //Prawn
 					mes "[Thongpool]";
 					mes "There you go~";
-					mes "The freshest Shrimp you can ever get in this village, and maybe even the world!";
+					mes "The freshest " + mesitemlink(567) + " you can ever get in this village, and maybe even the world!";
 					close;
 				}
 				mes "[Thongpool]";
@@ -2628,7 +2628,7 @@ ayothaya,153,86,5	script	Thongpool#ayo	843,{
 	}
 	mes "[Thongpool]";
 	mes "Welcome, welcome!";
-	mes "I've got the best Shrimp caught in the cleanest waters in the world~!";
+	mes "I've got the best " + mesitemlink(567) + " caught in the cleanest waters in the world~!";
 	close;
 }
 
@@ -2666,7 +2666,7 @@ ayothaya,121,240,7	script	Mr. Jun#ayo	842,1,1,{
 			close;
 		case 3:
 			mes "[Mr. Jun]";
-			mes "Oh, I am sorry....recently my lemon storage";
+			mes "Oh, I am sorry....recently my " + mesitemlink(568) + " storage";
 			mes "was attacked by ^3131FF'Leaf Cats'^000000 that are roaming around the Shrine.";
 			next;
 			mes "[Mr. Jun]";
@@ -2706,7 +2706,7 @@ OnTouch_:
 			next;
 			if (select("Yes, I will pay you.:No, thanks.") == 1) {
 				mes "[Mr. Jun]";
-				mes "I started growing this Lemon tree as a hobby, but I didn't expect to have such a good harvest of sweet,";
+				mes "I started growing this " + mesitemlink(568) + " tree as a hobby, but I didn't expect to have such a good harvest of sweet,";
 				mes "succulent Lemons.";
 				next;
 				mes "[Mr. Jun]";
@@ -2940,7 +2940,7 @@ ayothaya,213,94,7	script	Merchant#ayo	841,{
 		mes "Hello, there~";
 		mes "Are you looking for";
 		mes "ingredients to make";
-		mes "Tom Yum Goong?";
+		mes "" + mesitemlink(566) + "?";
 		next;
 		mes "[Merchant Thongdum]";
 		mes "Let's see...";
@@ -2960,7 +2960,7 @@ ayothaya,213,94,7	script	Merchant#ayo	841,{
 					mes "[Merchant Thongdum]";
 					mes "Thank you.";
 					mes "I hope you will enjoy";
-					mes "your Tom Yum Goong~";
+					mes "your " + mesitemlink(566) + "~";
 					close;
 				}
 				mes "[Merchant Thongdum]";
@@ -2996,7 +2996,7 @@ ayothaya,213,94,7	script	Merchant#ayo	841,{
 		mes "I thought I provided you";
 		mes "with enough ingredients, but";
 		mes "now that I think about it, I don't";
-		mes "know how much Tom Yum Goong";
+		mes "know how much " + mesitemlink(566) + "";
 		mes "you're making.";
 		next;
 		mes "[Merchant Thongdum]";

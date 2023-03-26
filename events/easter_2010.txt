@@ -390,7 +390,7 @@ prontera,204,297,3	script	Rina's Little Friend	463,{
 			set .@nPercentage, rand(1,100);
 			if (.@nPercentage <= 41) {
 				mes "[Rina's Little Friend]";
-				mes "Life is given to the egg.";
+				mes "Life is given to the " + mesitemlink(574) + ".";
 				mes "Aaaaah~ I got to take some rest.";
 				mes "Good bye~!";
 				if (.@nPercentage <= 12)
@@ -462,7 +462,7 @@ prontera,204,297,3	script	Rina's Little Friend	463,{
 			mes "I have a";
 			mes "special ability.";
 			mes "It's to give a special strength";
-			mes "to ^0000FFthe egg^000000.";
+			mes "to ^0000FFthe " + mesitemlink(574) + "^000000.";
 			next;
 			mes "[Rina's Little Friend]";
 			mes "Well, I cannot do that unlimitedly.";
@@ -471,9 +471,9 @@ prontera,204,297,3	script	Rina's Little Friend	463,{
 			next;
 			mes "[Rina's Little Friend]";
 			mes "And I cannot sure";
-			mes "to what the egg will be changed.";
+			mes "to what the " + mesitemlink(574) + " will be changed.";
 			mes "It may be end in failure";
-			mes "and it can be something like Pet Egg.";
+			mes "and it can be something like Pet " + mesitemlink(574) + ".";
 			next;
 			if(select("Ask the cost.:Stop listening because it feels like a trick.") == 2) {
 				mes "[Rina's Little Friend]";
@@ -486,7 +486,7 @@ prontera,204,297,3	script	Rina's Little Friend	463,{
 			mes "[Rina's Little Friend]";
 			mes "Do you want to make a deal?";
 			mes "You need";
-			mes "^0000FF1 Egg^000000, ^0000FF20 Light Granule^000000 and";
+			mes "^0000FF1 " + mesitemlink(574) + "^000000, ^0000FF20 " + mesitemlink(7938) + "^000000 and";
 			if (ADVJOB == 0) {
 				if (BaseLevel < 70)
 					mes "^B8860B400,000 Zeny.";
@@ -577,7 +577,7 @@ prontera,116,82,5	script	Traveler#01Easter	85,{
 	next;
 	mes "[Traveler]";
 	mes "She was carrying";
-	mes "^800080a big egg thing^000000.";
+	mes "^800080a big " + mesitemlink(574) + " thing^000000.";
 	mes "That's what I know.";
 	close;
 OnInit:

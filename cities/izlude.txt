@@ -158,7 +158,7 @@
 		mes "Aside from the dangers of the mountain itself, insanely vicious insects live there too. I mean, they'll just attack you for no reason.";
 		next;
 		mes "[Dega]";
-		mes "If you ever want to visit somewhere past Mt. Mjolnir, then you prepare yourself for the challenge.  Or you could walk around it.";
+		mes "If you ever want to visit somewhere past Mt. " + mesitemlink(1530) + ", then you prepare yourself for the challenge.  Or you could walk around it.";
 		close;
 	case 2:
 		mes "Some monsters in the world have the unique ability to sense mystical energy, and can detect Magic spells before they are cast.";
@@ -210,7 +210,7 @@
 				mes "them to run.";
 				next;
 				mes "[Dega]";
-				mes "If you've got an extra knife or sword, you could give it a shot. But it will be very difficult alone, don't you think?";
+				mes "If you've got an extra " + mesitemlink(1201) + " or sword, you could give it a shot. But it will be very difficult alone, don't you think?";
 				next;
 				break;
 			case 3:
@@ -231,11 +231,11 @@
 		mes "There are other cultures that have completely developed by living off of the sea. Of course, I'm talking about Amatsu.";
 		next;
 		mes "[Kylick]";
-		mes "I hear the cuisine there is really good! Although the idea of eating raw fish is new to me, I would love to go there, and try it just once!";
+		mes "I hear the cuisine there is really good! Although the idea of eating " + mesitemlink(544) + " is new to me, I would love to go there, and try it just once!";
 		close;
 	} else {
 		mes "[Kylick]";
-		mes "Don't you think Binoculars";
+		mes "Don't you think " + mesitemlink(2296) + "";
 		mes "are really COOL?! You can";
 		mes "see all sorts of places...!";
 		next;
@@ -416,7 +416,7 @@
 			mes "HaHa~ In fact, that was actually part of our job. But there were more and more hunters who came to us in order to get paid and it became too much to handle.";
 			next;
 			mes "[Soldier]";
-			mes "We had to work overtime every day. Ah, it was a nightmare...! Anyway, the government eventually made a wise decision in creating the Registration System.";
+			mes "We had to work overtime every day. Ah, it was a " + mesitemlink(7102) + "...! Anyway, the government eventually made a wise decision in creating the Registration System.";
 			next;
 			mes "[Soldier]";
 			mes "The Office of Prize Compensation only pays those who have the Registration. Of course, you'd have to be a merchant and stay in the same place all day long.";
@@ -438,7 +438,7 @@
 		mes "HaHa, in fact, that used to be part of our job. But there were more and more hunters who come in order to get paid, so it became too much to handle.";
 		next;
 		mes "[Soldier]";
-		mes "We had to work overtime every day. Ah, it was a nightmare...! Anyway, the government eventually made a wise decision in creating the Registration System.";
+		mes "We had to work overtime every day. Ah, it was a " + mesitemlink(7102) + "...! Anyway, the government eventually made a wise decision in creating the Registration System.";
 		next;
 		mes "[Soldier]";
 		mes "The Office of Prize Compensation only pays those who have the Registration. Of course, you'd have to be a merchant and stay in the same place all day long.";

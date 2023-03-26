@@ -55,63 +55,63 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 		switch(select("Raccoon Hat:Spore Hat:Wonder Nutshell:Ranbow Eggshell:Blush:Chef Hat:Candle:Cake Hat:End Conversation")) {
 		case 1:
 			mes "[Titicupe]";
-			mes "Raccoon Hat?";
-			mes "1 Kitty Band";
-			mes "20 Dragon Scale";
-			mes "200 Tough Scalelike Stem";
-			mes "300 Sea-otter Fur";
+			mes "" + mesitemlink(5033) + "?";
+			mes "1 " + mesitemlink(2213) + "";
+			mes "20 " + mesitemlink(1036) + "";
+			mes "200 " + mesitemlink(7012) + "";
+			mes "300 " + mesitemlink(7065) + "";
 			break;
 		case 2:
 			mes "[Titicupe]";
-			mes "Spore Hat?";
-			mes "850 Poison Spore";
-			mes "300 Burnt Tree";
-			mes "1 Tongue";
+			mes "" + mesitemlink(5029) + "?";
+			mes "850 " + mesitemlink(7033) + "";
+			mes "300 " + mesitemlink(7068) + "";
+			mes "1 " + mesitemlink(1015) + "";
 			break;
 		case 3:
 			mes "[Titicupe]";
-			mes "Wonder Nutshell?";
-			mes "1 Nut Shell";
-			mes "500 Wing of Dragonfly";
+			mes "" + mesitemlink(5050) + "?";
+			mes "1 " + mesitemlink(5037) + "";
+			mes "500 " + mesitemlink(7064) + "";
 			break;
 		case 4:
 			mes "[Titicupe]";
-			mes "Rainbow Eggshell?";
-			mes "1 Egg Shell";
-			mes "1 Cobaltblue Dyestuffs";
-			mes "50 Claw of Desert Wolf";
+			mes "" + mesitemlink(5039) + "?";
+			mes "1 " + mesitemlink(5015) + "";
+			mes "1 " + mesitemlink(978) + "";
+			mes "50 " + mesitemlink(7030) + "";
 			break;
 		case 5:
 			mes "[Titicupe]";
-			mes "Blush?!";
+			mes "" + mesitemlink(5040) + "?!";
 			mes "You!";
 			mes "You know something...";
 			mes "Heh heh~ Anyway";
-			mes "100 Alice's Apron";
+			mes "100 " + mesitemlink(7047) + "";
 			break;
 		case 6:
 			mes "[Titicupe]";
-			mes "Chef Hat?";
-			mes "120 Piece of Cake";
-			mes "1 White Dyestuffs";
-			mes "330 Feather";
-			mes "450 Dragon Scale";
+			mes "" + mesitemlink(5026) + "?";
+			mes "120 " + mesitemlink(539) + "";
+			mes "1 " + mesitemlink(982) + "";
+			mes "330 " + mesitemlink(949) + "";
+			mes "450 " + mesitemlink(1036) + "";
 			break;
 		case 7:
 			mes "[Titicupe]";
-			mes "Candle?";
-			mes "1 Bomb Wick";
-			mes "50 Matchstick";
-			mes "100 Royal Jelly";
+			mes "" + mesitemlink(5028) + "?";
+			mes "1 " + mesitemlink(2279) + "";
+			mes "50 " + mesitemlink(7035) + "";
+			mes "100 " + mesitemlink(526) + "";
 			break;
 		case 8:
 			mes "[Titicupe]";
-			mes "Cake Hat?";
-			mes "10 Candy";
-			mes "5 Candy Cane";
-			mes "15 Well-baked Cookie";
-			mes "20 Piece Of Cake";
-			mes "10 Steel";
+			mes "" + mesitemlink(5024) + "?";
+			mes "10 " + mesitemlink(529) + "";
+			mes "5 " + mesitemlink(530) + "";
+			mes "15 " + mesitemlink(538) + "";
+			mes "20 " + mesitemlink(539) + "";
+			mes "10 " + mesitemlink(999) + "";
 			break;
 		case 9:
 			mes "[Titicupe]";
@@ -130,7 +130,7 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 		next;
 		mes "[Titicupe]";
 		mes "I...";
-		mes "I love you";
+		mes "" + mesitemlink(6206) + "";
 		mes "Mister Snowman";
 		mes "Vending Machine.";
 		emotion ET_CHUPCHUP;
@@ -268,7 +268,7 @@ xmas,115,297,4	script	Vending Machine	111,{
 			mes "Oh, and tell a friend!^000000";
 			next;
 			mes "[Titicupe]";
-			mes "You got Blush?! Huh. I guess you really like looking glamourous~! I bet you really appreciate my genius now, huh?";
+			mes "You got " + mesitemlink(5040) + "?! Huh. I guess you really like looking glamourous~! I bet you really appreciate my genius now, huh?";
 			close;
 		}
 		break;
@@ -353,6 +353,6 @@ xmas,115,297,4	script	Vending Machine	111,{
 	next;
 	mes "[Titicupe]";
 	mes "I...";
-	mes "I guess a lot of people would do anything to get their hands on some Blush.";
+	mes "I guess a lot of people would do anything to get their hands on some " + mesitemlink(5040) + ".";
 	close;
 }

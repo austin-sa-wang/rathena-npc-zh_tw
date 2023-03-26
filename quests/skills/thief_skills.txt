@@ -92,11 +92,11 @@ moc_prydb1,154,128,4	script	Alcouskou	118,{
 				mes "I think it is important and vital";
 				mes "that we prepare a little sand.";
 				mes "What do you think? If you like it ";
-				mes "go and get five Fine Grit.";
+				mes "go and get five " + mesitemlink(7041) + ".";
 				next;
 				mes "[Alcouskou]";
 				mes "I am sure you eager to learn this";
-				mes "skill, but you must first gather five Fine Grit";
+				mes "skill, but you must first gather five " + mesitemlink(7041) + "";
 				mes "Until you have gathered them,";
 				mes "I cannot teach you this skill.";
 				mes "Don't be disappointed, hurry and gather them.";
@@ -117,7 +117,7 @@ moc_prydb1,154,128,4	script	Alcouskou	118,{
 				mes "sand.";
 				next;
 				mes "[Alcouskou]";
-				mes "I will take these five Fine Grit";
+				mes "I will take these five " + mesitemlink(7041) + "";
 				mes "and prepare them for you while I wait.";
 				close;
 			case 2:
@@ -217,7 +217,7 @@ moc_prydb1,154,128,4	script	Alcouskou	118,{
 		mes "practice for us to master.";
 		mes "If you wish to learn and practice,";
 		mes "you will need to prepare some items.";
-		mes "Prepare ^3355FF20 Grasshopper's Leg^";
+		mes "Prepare ^3355FF20 " + mesitemlink(940) + "^";
 		mes "to begin your training.";
 		next;
 		mes "[Alcouskou]";
@@ -314,7 +314,7 @@ moc_prydb1,154,128,4	script	Alcouskou	118,{
 		mes "And in lieu of a stone, try picking up";
 		mes " a ^3355FFZargon^000000 !";
 		mes "Would that be too little ?";
-		mes "Lets add ^3355FF5 Spawn^000000 !!";
+		mes "Lets add ^3355FF5 " + mesitemlink(908) + "^000000 !!";
 		mes "Show me your skill !";
 		mes "Retrieve these items by any means you see fit.";
 		close;
@@ -400,8 +400,8 @@ moc_prydb1,154,128,4	script	Alcouskou	118,{
 		mes "impossible with your skill . .";
 		next;
 		mes "[Alcouskou]";
-		mes "You will need two ^3355FF' Garlet '^000000";
-		mes "and two ^3355FF' Scell '^000000 to start with.";
+		mes "You will need two ^3355FF' " + mesitemlink(910) + " '^000000";
+		mes "and two ^3355FF' " + mesitemlink(911) + " '^000000 to start with.";
 		mes "Make sure they are similar to stones";
 		mes "and able to be thrown. When you";
 		mes "have gathered these items, I will be";
@@ -447,7 +447,7 @@ payon,91,77,3	script	Bag Seller	99,{
 		mes "area of Morocc. I know one there";
 		mes "that sends me thieves in need";
 		mes "of items I make such as a";
-		mes "^3355FF' Leather Bag of Infinity '^000000.";
+		mes "^3355FF' " + mesitemlink(7042) + " '^000000.";
 		mes "They visit my store often.";
 		close;
 	case 1:
@@ -476,22 +476,22 @@ payon,91,77,3	script	Bag Seller	99,{
 		}
 		mes "[RuRumuni]";
 		mes "Find Alcouskou of the thief guild";
-		mes "to place and order for a leather bag of infinity.";
-		mes "You should know that the leather bag of infinity";
+		mes "to place and order for a " + mesitemlink(7042) + ".";
+		mes "You should know that the " + mesitemlink(7042) + "";
 		mes "takes much time and skill to make.";
 		mes "In order to make such an item, you";
 		mes "must provide me with the materials.";
 		next;
 		mes "The items needed as materials are";
 		mes "these items. ..";
-		mes "^3355FF' Earthworm Peeling '^000000";
-		mes "^3355FF' Cobweb '^000000";
-		mes "^3355FF' Cactus Needle '^000000";
+		mes "^3355FF' " + mesitemlink(1055) + " '^000000";
+		mes "^3355FF' " + mesitemlink(1025) + " '^000000";
+		mes "^3355FF' " + mesitemlink(952) + " '^000000";
 		mes "I need one of each.";
 		close;
 	case 2:
 		mes "[RuRumuni]";
-		mes "Here is your leather bag of infinity.";
+		mes "Here is your " + mesitemlink(7042) + ".";
 		mes "Take this to the Thief guilds";
 		mes "Alcouskou and let him know ";
 		mes "that you are now ready to learn";

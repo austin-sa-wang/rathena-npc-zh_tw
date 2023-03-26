@@ -23,7 +23,7 @@ einbroch,72,202,4	script	Guide#ein::EinGuide	852,{
 	mes "[Einbroch Guide]";
 	mes "Welcome";
 	mes "to Einbroch,";
-	mes "the City of Steel.";
+	mes "the City of " + mesitemlink(999) + ".";
 	mes "Please ask me if you";
 	mes "have any questions.";
 	set .@loop1,1;

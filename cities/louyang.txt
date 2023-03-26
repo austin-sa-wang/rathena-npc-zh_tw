@@ -39,7 +39,7 @@
 		next;
 		mes "[Girl]";
 		mes "Luoyang has a long history";
-		mes "with stories of ancient magic and warriors. It's also rumored that many evil beasts roam the";
+		mes "with stories of " + mesitemlink(1573) + " and warriors. It's also rumored that many evil beasts roam the";
 		mes "Luoyang area.";
 		next;
 		mes "[Girl]";

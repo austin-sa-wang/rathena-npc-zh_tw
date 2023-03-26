@@ -46,8 +46,8 @@ prontera,111,99,5	script	Egg Salesman#prt::EggVendor	98,{
 			mes "[Egg Salesman]";
 			mes "Can you imagine a world";
 			mes "without eggs? There'd be";
-			mes "no bread, pastries, cake";
-			mes "or frosting... Ice cream";
+			mes "no " + mesitemlink(580) + ", pastries, cake";
+			mes "or frosting... " + mesitemlink(536) + "";
 			mes "would be a lot runnier...";
 			mes "Pranks wouldn't be as fun...";
 			next;
@@ -65,7 +65,7 @@ prontera,111,99,5	script	Egg Salesman#prt::EggVendor	98,{
 			mes "[Egg Salesman]";
 			mes "Great! How many do you";
 			mes "want? Remember that each";
-			mes "Chicken Egg is 500 zeny.";
+			mes "" + mesitemlink(7605) + " is 500 zeny.";
 			mes "Remember that you won't";
 			mes "always be able to buy";
 			mes "Chicken Eggs so easily!";
@@ -221,17 +221,17 @@ prontera,230,312,3	script	Nerlen#es07	79,{
 	switch(select("What do I need to make Holy Eggs?:I want to make Holy Eggs.:Maybe next time.")) {
 	case 1:
 		mes "[Nerlen]";
-		mes "For each Holy Egg";
+		mes "For each " + mesitemlink(12019) + "";
 		mes "that you want me to";
 		mes "make, you will need";
 		mes "to bring me...";
 		next;
 		mes "[Nerlen]";
-		mes "^4D4DFF1 White Herb^000000,";
-		mes "^4D4DFF1 Green Herb^000000,";
-		mes "^4D4DFF1 Yellow Herb^000000,";
-		mes "^4D4DFF1 Holy Water^000000, and";
-		mes "^4D4DFF1 Chicken Egg^000000.";
+		mes "^4D4DFF1 " + mesitemlink(509) + "^000000,";
+		mes "^4D4DFF1 " + mesitemlink(511) + "^000000,";
+		mes "^4D4DFF1 " + mesitemlink(508) + "^000000,";
+		mes "^4D4DFF1 " + mesitemlink(523) + "^000000, and";
+		mes "^4D4DFF1 " + mesitemlink(7605) + "^000000.";
 		close;
 	case 2:
 		mes "[Nerlen]";
@@ -267,14 +267,14 @@ prontera,230,312,3	script	Nerlen#es07	79,{
 					mes "have enough items to make";
 					mes "Holy Eggs. You need the";
 					mes "following for me to create";
-					mes "each Holy Egg for you.";
+					mes "each " + mesitemlink(12019) + " for you.";
 					next;
 					mes "[Nerlen]";
-					mes "^4D4DFF1 White Herb^000000,";
-					mes "^4D4DFF1 Green Herb^000000,";
-					mes "^4D4DFF1 Yellow Herb^000000,";
-					mes "^4D4DFF1 Holy Water^000000, and";
-					mes "^4D4DFF1 Chicken Egg^000000.";
+					mes "^4D4DFF1 " + mesitemlink(509) + "^000000,";
+					mes "^4D4DFF1 " + mesitemlink(511) + "^000000,";
+					mes "^4D4DFF1 " + mesitemlink(508) + "^000000,";
+					mes "^4D4DFF1 " + mesitemlink(523) + "^000000, and";
+					mes "^4D4DFF1 " + mesitemlink(7605) + "^000000.";
 					close;
 				}
 				else {
@@ -324,7 +324,7 @@ morocc,131,26,5	script	Secret Corps#egg	880,{
 		if (countitem(12019) > 0) {
 			mes "[Corps Member]";
 			mes "Oh, yes. That's it.";
-			mes "You have it. The egg you";
+			mes "You have it. The " + mesitemlink(574) + " you";
 			mes "hold has a secret power.";
 			mes "I think that... Yes. Someone";
 			mes "like you would understand";

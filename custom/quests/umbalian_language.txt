@@ -118,7 +118,7 @@ amatsu,267,189,4	script	Marie	744,{
 	emotion ET_QUESTION;
 	next;
 	mes "[Marie]";
-	mes "Oh wait, I see... he wants his reference scroll back am I right? Well, I'm kinda still using it buuut... I'll give it back if you can gimme a poring egg and an incubator. Those things are so cute!";
+	mes "Oh wait, I see... he wants his reference scroll back am I right? Well, I'm kinda still using it buuut... I'll give it back if you can gimme a " + mesitemlink(9001) + " and an incubator. Those things are so cute!";
 	close;
 
 L_NOT_GOT_QUEST:
@@ -132,7 +132,7 @@ M_NO:
 	close;
 
 L_DONE:
-	mes "Heyyy there, you have a poring egg and the pet incubator to go with it! Are those for me?";
+	mes "Heyyy there, you have a " + mesitemlink(9001) + " and the " + mesitemlink(643) + " to go with it! Are those for me?";
 	menu "Yep!",-, "Sorry, no.",M_DOH;
 
 	mes "[Marie]";

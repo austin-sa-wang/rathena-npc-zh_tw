@@ -2417,7 +2417,7 @@ morocc_in,12,156,3	script	Bankley	97,{
 	if(tu_swordman > 19){
 		mes "^3355FFBankley had a pitiable";
 		mes "expression on his face.^000000";
-		mes "^3355FFHis body is completely lifeless. There's a long, deep wound in his chest, and a blood drenched knife is clenched in his right hand.^000000";
+		mes "^3355FFHis body is completely lifeless. There's a long, deep wound in his chest, and a blood drenched " + mesitemlink(1201) + " is clenched in his right hand.^000000";
 		close;
 	}
 	if(tu_swordman == 19){
@@ -2427,7 +2427,7 @@ morocc_in,12,156,3	script	Bankley	97,{
 		mes "^3355FFHe's dead!^000000";
 		next;
 		mes "^3355FFBankley had a sad, pitiable expression on his face. Since the color is still fresh in his cheeks, he died only a little while ago.";
-		mes "^3355FFThere is a long, deep wound in his chest, and a blood drenched knife is clenched in his right hand.^000000";
+		mes "^3355FFThere is a long, deep wound in his chest, and a blood drenched " + mesitemlink(1201) + " is clenched in his right hand.^000000";
 		set tu_swordman, 20;
 		changequest 8225,8226;
 		close;

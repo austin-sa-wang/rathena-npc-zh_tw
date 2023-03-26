@@ -213,7 +213,7 @@ amatsu,179,107,4	script	John#ama	86,{
 	next;
 	mes "[John]";
 	mes "But recently, across the street,";
-	mes "the Sushi Master opened his shop.";
+	mes "the " + mesitemlink(551) + " Master opened his shop.";
 	mes "...";
 	mes "Now, my only customers are flies.";
 	next;

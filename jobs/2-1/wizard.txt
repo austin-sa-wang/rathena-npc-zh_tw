@@ -160,9 +160,9 @@ gef_tower,111,37,4	script	Wizard Guildsman	70,{
 				if (rand(2)) {
 					set WIZ_Q,1;
 					setquest 9013;
-					mes "^3355FFRed Gemstone^000000 10 each,";
-					mes "^3355FFBlue Gemstone^000000 10 each,";
-					mes "^3355FFYellow Gemstone^000000 10 each,";
+					mes "^3355FFRed " + mesitemlink(7300) + "^000000 10 each,";
+					mes "^3355FFBlue " + mesitemlink(7300) + "^000000 10 each,";
+					mes "^3355FFYellow " + mesitemlink(7300) + "^000000 10 each,";
 				}
 				else {
 					set WIZ_Q,2;
@@ -221,9 +221,9 @@ gef_tower,111,37,4	script	Wizard Guildsman	70,{
 		mes "Life's short enough as it is, so stop wasting your time and gather the items I told you before.";
 		next;
 		mes "[Catherine]";
-		mes "^3355FFRed Gemstone^000000 10 each,";
-		mes "^3355FFBlue Gemstone^000000 10 each,";
-		mes "^3355FFYellow Gemstone^000000 10 each,";
+		mes "^3355FFRed " + mesitemlink(7300) + "^000000 10 each,";
+		mes "^3355FFBlue " + mesitemlink(7300) + "^000000 10 each,";
+		mes "^3355FFYellow " + mesitemlink(7300) + "^000000 10 each,";
 		mes "Don't forget this time, and bring all the items, ok?...";
 		close;
 	}
@@ -284,14 +284,14 @@ gef_tower,111,37,4	script	Wizard Guildsman	70,{
 		next;
 		mes "[Catherine]";
 		mes "Let's see... Should I give you some hints as your senior?";
-		mes "But I'm a bit thirsty, so give me 1 Apple Juice, and we got a deal. ~Hehehe";
+		mes "But I'm a bit thirsty, so give me 1 " + mesitemlink(531) + ", and we got a deal. ~Hehehe";
 		next;
 		switch(select("Give me some hints, please.:I want to try again on my own!")) {
 		case 1:
 			if (countitem(531) > 0) {
 				delitem 531,1; //Apple_Juice
 				mes "[Catherine]";
-				mes "Yummers, Apple Juice is the best...";
+				mes "Yummers, " + mesitemlink(531) + " is the best...";
 				mes "Gulp gulp gulp... Haaaaaah... ~Hehe";
 				next;
 				mes "[Catherine]";
@@ -340,7 +340,7 @@ gef_tower,111,37,4	script	Wizard Guildsman	70,{
 			}
 			else {
 				mes "[Catherine]";
-				mes "Like I said, I'll think about it if you give me 1 Apple Juice.";
+				mes "Like I said, I'll think about it if you give me 1 " + mesitemlink(531) + ".";
 				mes "If not... Well, you can think about it on your own. Hey I don't make the rules here i just follow em! Can't argue with this one though. ~tehehehe";
 			}
 			break;
@@ -617,7 +617,7 @@ gef_tower,102,24,2	script	Gloomy Wizard	735,{
 			if (select("14:21:28:35") == 2)
 				set .@wizard_t,.@wizard_t+10;
 			mes "[Raulel]";
-			mes "7. Using Energy Coat, when you have 50% of your SP remaining, how much SP is used when hit, and what percentage is damage reduced by?";
+			mes "7. Using Energy " + mesitemlink(2309) + ", when you have 50% of your SP remaining, how much SP is used when hit, and what percentage is damage reduced by?";
 			next;
 			if (select("Damage 18% SP1.5%:Damage 18% SP2%:Damage 24% SP1.5%:Damage 24% SP2%") == 2)
 				set .@wizard_t,.@wizard_t+10;
@@ -1066,7 +1066,7 @@ job_wiz,50,165,4	script	Arena Assistant	700,{
 	next;
 	mes "[Arena Assistant]";
 	mes "Each person may take approximately 5 to 10 minutes.";
-	mes "If you would like to leave the arena, please log off anytime.";
+	mes "If you would like to leave the arena, please " + mesitemlink(7201) + " off anytime.";
 	close;
 
 OnInit:
@@ -1872,19 +1872,19 @@ gef_tower,107,36,4	script	White Dog#wiz	81,{
 		mes "I can't help you directly, but I can give you some advice.";
 		next;
 		mes "[Maria]";
-		mes "Well, you can find the Crystal Blue in Byalan Dungeon.";
+		mes "Well, you can find the " + mesitemlink(991) + " in Byalan Dungeon.";
 		mes "Cornutus, Kukre, Marina, Vadon...these monsters drop them frequently.";
 		next;
 		mes "[Maria]";
-		mes "You can get Green Live from insect type monsters.";
-		mes "Try hunting monsters like Horn, Mantis, or Vitata.";
+		mes "You can get " + mesitemlink(993) + " from insect type monsters.";
+		mes "Try hunting monsters like " + mesitemlink(947) + ", Mantis, or Vitata.";
 		next;
 		mes "[Maria]";
-		mes "Oh and *woof*, Red Blood. I heard you can get a lot of those from...";
+		mes "Oh and *woof*, " + mesitemlink(990) + ". I heard you can get a lot of those from...";
 		mes "Elder Willows, Metallers or Scorpions found in the desert would work well too.";
 		next;
 		mes "[Maria]";
-		mes "For Wind of Verdue. Hornet, Stainer, Steel Chonchon.";
+		mes "For Wind of Verdue. Hornet, Stainer, " + mesitemlink(999) + " Chonchon.";
 		mes "If you try just a bit, you can get them really easily.";
 		next;
 		mes "[Maria]";
@@ -1931,7 +1931,7 @@ gef_tower,107,36,4	script	White Dog#wiz	81,{
 		cutin "job_wizard_maria01",2;
 		mes "[Maria]";
 		mes "*BARK*...you gave up?";
-		mes "*Sigh*...How can you become a Wizard with such a weak heart?";
+		mes "*Sigh*...How can you become a Wizard with such a weak " + mesitemlink(7855) + "?";
 		next;
 		mes "[Maria]";
 		mes "You know that each room has monsters of the same attribute...";

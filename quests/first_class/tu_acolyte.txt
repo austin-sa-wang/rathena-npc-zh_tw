@@ -105,7 +105,7 @@ prt_church,179,15,1	script	Priest Praupin	4_M_MINISTER,{
 			mes "[Priest Praupin]";
 			mes "You have something";
 			mes "to give me? Oh yes, the";
-			mes "receipt! I was wondering";
+			mes "" + mesitemlink(6271) + "! I was wondering";
 			mes "what had happened. Thank";
 			mes "you for all of your trouble.";
 			next;
@@ -129,7 +129,7 @@ prt_church,179,15,1	script	Priest Praupin	4_M_MINISTER,{
 			close;
 		} else {
 			mes "You are such a good person,";
-			mes "a true child of the light. I hope that many others will benefit from the purity of your heart and mind.";
+			mes "a true child of the light. I hope that many others will benefit from the purity of your " + mesitemlink(7855) + " and mind.";
 			close;
 		}
 	case 25:
@@ -202,7 +202,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		close;
 	case 2:
 		mes "This castle, Saint Capitolina Convent, is a beautiful and peaceful place that brings";
-		mes "calm to any heart.";
+		mes "calm to any " + mesitemlink(7855) + ".";
 		next;
 		mes "[Asthe]";
 		mes "Well then...";
@@ -216,7 +216,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		if(select("One that supports others.:One that punishes evil.")==1){
 			mes "[Asthe]";
 			mes "Ah, you have such";
-			mes "a generous heart!";
+			mes "a generous " + mesitemlink(7855) + "!";
 			mes "Healing the pain of others and supporting your comrades in battle. You must have become an Acolyte in order to become a ^3131FFPriest^000000.";
 			next;
 			mes "[Asthe]";
@@ -252,7 +252,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		case 2:
 			mes "[Asthe]";
 			mes "^3131FFAqua Benedicta^000000 blesses";
-			mes "normal water and turns it into Holy Water. This is an important skill, but not considered one of the essentials that all Acolytes";
+			mes "normal water and turns it into " + mesitemlink(523) + ". This is an important skill, but not considered one of the essentials that all Acolytes";
 			mes "should know.";
 			next;
 			mes "[Asthe]";
@@ -279,7 +279,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		mes "[Asthe]";
 		mes "Just gather the";
 		mes "strength within your";
-		mes "heart into your hands...";
+		mes "" + mesitemlink(7855) + " into your hands...";
 		next;
 		mes "[Asthe]";
 		mes "HEAL !!";
@@ -311,7 +311,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 			mes "First ^0033FFstart fighting monsters around each town such as Prontera^000000. It'd be more convenient to fight the monsters here, but they might be too strong for you right now.";
 			next;
 			mes "[Asthe]";
-			mes "I'll change your Save Point so that you will respawn in the convent. Once you've learned Level 3 Heal, you can use a Butterfly Wing to return here.";
+			mes "I'll change your Save Point so that you will respawn in the convent. Once you've learned " + mesitemlink(12001) + ", you can use a " + mesitemlink(602) + " to return here.";
 			next;
 			mes "[Asthe]";
 			mes "You can also speak to ^3131FFPriest Praupin at the Prontera Church^000000";
@@ -392,7 +392,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		}
 		mes "Are you having";
 		mes "a hard time training";
-		mes "to learn Level 3 Heal?";
+		mes "to learn " + mesitemlink(12001) + "?";
 		mes "Please don't be discouraged.";
 		next;
 		mes "[Asthe]";
@@ -602,7 +602,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		mes "you can learn ^3131FFTeleport^000000. Teleport will instantly send you to a random spot on the map or to your Save Point.";
 		next;
 		mes "[Asthe]";
-		mes "After learning Level 2 Teleport, you can learn ^3131FFWarp Portal^000000 which will allow you to warp to a Memo Point, or saved destination, by consuming ^FF00001 Blue Gemstone^000000.";
+		mes "After learning Level 2 Teleport, you can learn ^3131FFWarp Portal^000000 which will allow you to warp to a Memo Point, or saved destination, by consuming ^FF00001 " + mesitemlink(717) + "^000000.";
 		next;
 		mes "[Asthe]";
 		mes "Once you have mastered Warp Portal you can ^3131FFremember three Memo Points^000000. You can't save Memo Points in in most fields or dungeons, but you can use the ^FF0000/memo^000000 command in";
@@ -668,7 +668,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		mes "The third one is from the Blacksmith Guild to the ^3131FFBlacksmith^000000 who makes weapons and armor for Monks. The fourth delivery goes to ^3131FFPriest Karven^000000 in the next building.";
 		next;
 		mes "[Asthe]";
-		mes "Oh, and this last delivery is a receipt for ^3131FFPriest Praupin^000000, the priest who told you about me.";
+		mes "Oh, and this last delivery is a " + mesitemlink(6271) + " for ^3131FFPriest Praupin^000000, the priest who told you about me.";
 		mes "Here you go, the letters and packages...";
 		if(MaxWeight - Weight < 2430){
 			next;
@@ -705,7 +705,7 @@ prt_monk,230,106,3	script	Asthe#tu	1_F_PRIEST,{
 		mes "The third one is from the Blacksmith Guild to the ^3131FFBlacksmith^000000 who makes weapons and armor for Monks. The fourth delivery goes to ^3131FFPriest Karven^000000 in the next building.";
 		next;
 		mes "[Asthe]";
-		mes "Oh, and this last delivery is a receipt for ^3131FFPriest Praupin^000000, the priest who told you about me. Alright, have a safe trip~";
+		mes "Oh, and this last delivery is a " + mesitemlink(6271) + " for ^3131FFPriest Praupin^000000, the priest who told you about me. Alright, have a safe trip~";
 		close;
 	case 23:
 		mes "Ah, you're finishing";
@@ -1207,7 +1207,7 @@ prt_monk,197,228,3	script	Veiner	4_M_ORIENT02,{
 		next;
 		mes "[Veiner]";
 		mes "This is...!";
-		mes "It's Handmade Chocolate";
+		mes "It's Handmade " + mesitemlink(558) + "";
 		mes "from my honey bunny!";
 		mes "Oh Bibi! You're the best!";
 		specialeffect EF_VALLENTINE;
@@ -1375,7 +1375,7 @@ prt_monk,219,164,3	script	Gloria#tu	4_F_SISTER,{
 			mes "[Gloria]";
 			mes "In order to use";
 			mes "Warp Portal, you need";
-			mes "one ^3131FFBlue Gemstone^000000.";
+			mes "one ^3131FFBlue " + mesitemlink(7300) + "^000000.";
 			mes "Is this to help me?";
 			mes "Wow, I'm touched!";
 			emotion ET_CRY;
@@ -1519,7 +1519,7 @@ prt_monk,153,210,3	script	Cleope Verce	4_F_SISTER,{
 					mes "Still, I had to be careful from their attacks. At that time they were pretty strong!";
 					break;
 				case 3:
-					mes "fight with ^3131FFgun shooting ghosts!^000000 Sure, they were scary, but beating them was a piece of cake if you have Pneuma!";
+					mes "fight with ^3131FFgun shooting ghosts!^000000 Sure, they were scary, but beating them was a " + mesitemlink(539) + " if you have Pneuma!";
 					break;
 				case 4:
 					mes "beat up those ^3131FFarrow shooting devils^000000 almost everyday in the castle west of Geffen. Boy, was there a lot of them back then.";

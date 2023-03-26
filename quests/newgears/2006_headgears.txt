@@ -79,8 +79,8 @@ rachel,91,273,8	script	?	930,{
 	mes "I can help you to safely hide from your enemies.";
 	next;
 	mes "[?]";
-	mes "Bring me ^FF00001 Black Dyestuffs^000000,";
-	mes "^FF0000100 Slick Paper^000000, ^FF000099 Sticky Mucus^000000,";
+	mes "Bring me ^FF00001 " + mesitemlink(983) + "^000000,";
+	mes "^FF0000100 " + mesitemlink(7111) + "^000000, ^FF000099 " + mesitemlink(938) + "^000000,";
 	mes "and ^FF0000100,000 zeny^000000.";
 	mes "Then I will help you, giggle giggle.";
 	next;
@@ -98,7 +98,7 @@ rachel,152,131,3	script	Sakjul	928,{
 	if (countitem(5172) > 0 && countitem(7063) > 99 && countitem(982) > 0) {
 		mes "[Sakjul]";
 		mes "Great, you have brought everything";
-		mes "to make ^FF0000Feather Beret^000000!";
+		mes "to make ^FF0000Feather " + mesitemlink(5172) + "^000000!";
 		mes "To reward for your labor,";
 		mes "I shall personally proceed with the hat creation.";
 		next;
@@ -132,8 +132,8 @@ rachel,152,131,3	script	Sakjul	928,{
 			mes "[Sakjul]";
 			mes "I did succeed in making the hat,";
 			mes "but I cannot let it fall into someone else's hand!";
-			mes "The essential of Feather Beret is";
-			mes "the precise angle of the beret and the feather,";
+			mes "The essential of " + mesitemlink(5170) + " is";
+			mes "the precise angle of the " + mesitemlink(5172) + " and the " + mesitemlink(949) + ",";
 			mes "but this hat's angle has become slightly crooked,";
 			mes "and the quality has become too poor to be my artwork!";
 			next;
@@ -156,7 +156,7 @@ rachel,152,131,3	script	Sakjul	928,{
 		getitem 5170,1; //Feather_Beret 
 		mes "[Sakjul]";
 		mes "Great, I have made it! Look at this beautiful coordination";
-		mes "between the feather and the beret,";
+		mes "between the " + mesitemlink(949) + " and the " + mesitemlink(5172) + ",";
 		mes "and you can feel moderation in the coordination.";
 		mes "I must say that this hat must be";
 		mes "one of the needful things for young men in nowadays.";
@@ -179,17 +179,17 @@ rachel,152,131,3	script	Sakjul	928,{
 		mes "Ah! I like your answer!";
 		mes "Lately, I found it very hard to see a diciplined young man like you.";
 		mes "Unfortunately, even you are not yet diciplined as well as I expect!";
-		mes "Hmm....Oh, yes, probably ^FF0000Feather Beret^000000";
+		mes "Hmm....Oh, yes, probably ^FF0000Feather " + mesitemlink(5172) + "^000000";
 		mes "might help you to look more diciplined.";
 		next;
 		mes "[Sakjul]";
 		mes "I like to compliment your attitude.";
-		mes "Thus, I am willing to create Feather Beret for you";
+		mes "Thus, I am willing to create " + mesitemlink(5170) + " for you";
 		mes "only if you bring me the materials to me. Understand?";
 		next;
 		mes "[Sakjul]";
-		mes "Materials are ^FF00001 Beret^000000, ^FF0000100 Soft Feather^000000,";
-		mes "and ^FF00001 White Dyestuffs^000000.";
+		mes "Materials are ^FF00001 " + mesitemlink(5172) + "^000000, ^FF0000100 " + mesitemlink(7063) + "^000000,";
+		mes "and ^FF00001 " + mesitemlink(982) + "^000000.";
 		mes "Make sure that you will remember all of them, and bring me";
 		mes "the exact amount of materials!";
 		next;
@@ -225,7 +225,7 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 			specialeffect EF_FORESTLIGHT2;
 			mes "[Ghenirhemin]";
 			mes "Ah...ahahaha, we've made it! We've made it!";
-			mes "Valkyre's Helm...We've recreated Valkyre's Helm,";
+			mes "Valkyre's " + mesitemlink(2228) + "...We've recreated Valkyre's " + mesitemlink(2228) + ",";
 			mes "a glorious godly armor!";
 			mes "Ah...does this mean...?";
 			next;
@@ -236,14 +236,14 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 			mes "[Ghenirhemin]";
 			mes "Thank you so much for giving me a chance to participate in this.";
 			mes "I am sure that my ancestors in heaven will be glad";
-			mes "to see this successful recreation of Valkyre's Helm.";
+			mes "to see this successful recreation of Valkyre's " + mesitemlink(2228) + ".";
 			mes "Hahahahaha!";
 			next;
 			mes "[Ghenirhemin]";
-			mes "Please take this helm.";
+			mes "Please take this " + mesitemlink(2228) + ".";
 			mes "As I promised, this is yours.";
 			mes "Please take pride in yourself, and";
-			mes "do not disgrace this Helm through evil doings.";
+			mes "do not disgrace this " + mesitemlink(2228) + " through evil doings.";
 			next;
 			set moza_valkylie,0;
 			getitem 5171,1; //Valkyrie_Helm
@@ -302,7 +302,7 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 		mes "Now, please hand them to me.";
 		mes "If I place them together in one place,";
 		mes "I am pretty sure that they will start";
-		mes "being fused into the helm with their own mysterious powers.";
+		mes "being fused into the " + mesitemlink(2228) + " with their own mysterious powers.";
 		next;
 		if (select("Give him the items.:Don't give him the items.") == 1) {
 			mes "[Ghenirhemin]";
@@ -335,16 +335,16 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 	else if (moza_valkylie == 2) {
 		mes "[Ghenirhemin]";
 		mes "Please bring me";
-		mes "^FF00001 Sage Worm Card, 1Argiope Card,";
-		mes "^FF00001 Dryad Card, 1 Wooden Golem Card,";
-		mes "^FF00001 Bongun Card, 1 Pirate Skeleton Card,";
-		mes "^FF00001 Marduk Card, 1 Hode Card,";
-		mes "^FF00001 Elder Card, 1 Nightmare Terror Card,^000000";
+		mes "^FF00001 " + mesitemlink(4219) + ", 1Argiope Card,";
+		mes "^FF00001 " + mesitemlink(4177) + ", 1 " + mesitemlink(4259) + ",";
+		mes "^FF00001 " + mesitemlink(4212) + ", 1 " + mesitemlink(4073) + ",";
+		mes "^FF00001 " + mesitemlink(4112) + ", 1 " + mesitemlink(4081) + ",";
+		mes "^FF00001 " + mesitemlink(4251) + ", 1 " + mesitemlink(4166) + ",^000000";
 		next;
 		mes "[Ghenirhemin]";
 		mes "^FF00001,000 Rune of the Darkness,";
-		mes "^FF00001,000 Bloody Rune,";
-		mes "^FF0000and the helm price, 10,000,000 zeny^000000.";
+		mes "^FF00001,000 " + mesitemlink(7563) + ",";
+		mes "^FF0000and the " + mesitemlink(2228) + " price, 10,000,000 zeny^000000.";
 		next;
 		mes "[Ghenirhemin]";
 		mes "It surely is a reasonable price considering that ";
@@ -365,10 +365,10 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 		mes "Yes, it is surely understandable.";
 		mes "If you have travelled many places,";
 		mes "and heard many stories, you would know what this is.";
-		mes "Yes, it is ^FF0000Valkyre's Helm^000000.";
+		mes "Yes, it is ^FF0000Valkyre's " + mesitemlink(2228) + "^000000.";
 		next;
 		mes "[Ghenirhemin]";
-		mes "A legendary helm only allowed to men";
+		mes "A legendary " + mesitemlink(2228) + " only allowed to men";
 		mes "who have transcended their limit.";
 		mes "A godly armor that is blessed with an incredible power.";
 		mes "Can you see now that my story is true?";
@@ -376,12 +376,12 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 		mes "[Ghenirhemin]";
 		mes "It has passed so many years, and thus";
 		mes "its power has become weakened,";
-		mes "but you can still feel something holy about the helm.";
+		mes "but you can still feel something holy about the " + mesitemlink(2228) + ".";
 		mes "Don't you think?";
 		next;
 		mes "[Ghenirhemin]";
-		mes "Well...I am not allowed to wear this helm.";
-		mes "Thus, if I find someone who is just perfect for this helm,";
+		mes "Well...I am not allowed to wear this " + mesitemlink(2228) + ".";
+		mes "Thus, if I find someone who is just perfect for this " + mesitemlink(2228) + ",";
 		mes "I am going to give this to him without any regret.";
 		next;
 		mes "[Ghenirhemin]";
@@ -395,7 +395,7 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 		mes "[Ghenirhemin]";
 		mes "So, what do you say?";
 		mes "I think that I have an eye for right men.";
-		mes "I feel that you will be able to fully recreate this Valkyre's Helm";
+		mes "I feel that you will be able to fully recreate this Valkyre's " + mesitemlink(2228) + "";
 		mes "as well as use it to its full potential.";
 		next;
 		if (select("Sure.:No, thanks.") == 1) {
@@ -406,28 +406,28 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 			mes "So, listen carefully.";
 			next;
 			mes "[Ghenirhemin]";
-			mes "First, we have to fully restore the helm's power.";
+			mes "First, we have to fully restore the " + mesitemlink(2228) + "'s power.";
 			mes "To do so, we must find monster cards";
 			mes "that possess mysterious powers.";
 			next;
 			mes "[Ghenirhemin]";
 			mes "That's not all. You know,";
 			mes "we can't just glue those monster cards";
-			mes "on the helm. Thus, we need a power that";
-			mes "enables us to fuse the cards and the helm into one.";
+			mes "on the " + mesitemlink(2228) + ". Thus, we need a power that";
+			mes "enables us to fuse the cards and the " + mesitemlink(2228) + " into one.";
 			next;
 			mes "[Ghenirhemin]";
 			mes "Ancient runes are perfect to supply the power,";
-			mes "especially we need Rune of the Darkness, and Bloody Rune.";
+			mes "especially we need Rune of the Darkness, and " + mesitemlink(7563) + ".";
 			mes "Perhaps, they were chosen because of their sealed dark power";
 			mes "and bloody sticky power? That's just my guess, hahahaha!";
 			next;
 			mes "[Ghenirhemin]";
-			mes "Once we successfully restore the helm's power,";
-			mes "you are expected to purchase the helm from me.";
+			mes "Once we successfully restore the " + mesitemlink(2228) + "'s power,";
+			mes "you are expected to purchase the " + mesitemlink(2228) + " from me.";
 			mes "As I said earlier, I am not going to";
 			mes "give away such a valuable thing with nothing in return.";
-			mes "It will also demonstrate your qualification to become the helm's owner.";
+			mes "It will also demonstrate your qualification to become the " + mesitemlink(2228) + "'s owner.";
 			next;
 			mes "[Ghenirhemin]";
 			mes "Basically, you have to bring me...";
@@ -435,16 +435,16 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 			mes "I suggest you to write down, and memorize them.";
 			next;
 			mes "Please bring me";
-			mes "^FF00001 Sage Worm Card, 1Argiope Card,";
-			mes "1 Dryad Card, 1 Wooden Golem Card,";
-			mes "1 Bongun Card, 1 Pirate Skeleton Card,";
-			mes "1 Marduk Card, 1 Hode Card,";
-			mes "1 Elder Card, 1 Nightmare Terror Card,^000000";
+			mes "^FF00001 " + mesitemlink(4219) + ", 1Argiope Card,";
+			mes "1 " + mesitemlink(4177) + ", 1 " + mesitemlink(4259) + ",";
+			mes "1 " + mesitemlink(4212) + ", 1 " + mesitemlink(4073) + ",";
+			mes "1 " + mesitemlink(4112) + ", 1 " + mesitemlink(4081) + ",";
+			mes "1 " + mesitemlink(4251) + ", 1 " + mesitemlink(4166) + ",^000000";
 			next;
 			mes "[Ghenirhemin]";
 			mes "^FF00001,000 Rune of the Darkness,";
-			mes "1,000 Bloody Rune,";
-			mes "and the helm price, 10,000,000 zeny^000000.";
+			mes "1,000 " + mesitemlink(7563) + ",";
+			mes "and the " + mesitemlink(2228) + " price, 10,000,000 zeny^000000.";
 			next;
 			mes "[Ghenirhemin]";
 			mes "It surely is a reasonable price considering that ";
@@ -463,7 +463,7 @@ hugel,147,103,3	script	Ghenirhemin	897,{
 		mes "Haha, I understand that";
 		mes "it is not an easy choice to make.";
 		mes "Take your time, my friend.";
-		mes "If you still don't want the helm, I respect your decision.";
+		mes "If you still don't want the " + mesitemlink(2228) + ", I respect your decision.";
 		close;
 	}
 	else if (Zeny > 9999999) {
@@ -589,24 +589,24 @@ payon,135,320,3	script	Chungwolmang	97,{
 		switch(select("Hahoe Mask:Bride Mask:Mythical Lion Mask")) {
 		case 1:
 			mes "[Chungwolmang]";
-			mes "Oh, yes, you want Hahoe Mask.";
-			mes "Then you need to bring... ^FF000020 Bookclip in Memory^000000,";
-			mes "^FF0000100 Cactus Needle^000000, and";
-			mes "^FF0000100 Mane^000000.";
+			mes "Oh, yes, you want " + mesitemlink(5176) + ".";
+			mes "Then you need to bring... ^FF000020 " + mesitemlink(7015) + "^000000,";
+			mes "^FF0000100 " + mesitemlink(952) + "^000000, and";
+			mes "^FF0000100 " + mesitemlink(1028) + "^000000.";
 			break;
 		case 2:
 			mes "[Chungwolmang]";
-			mes "Oh, yes, you want Bride Mask.";
-			mes "Then you need to bring... ^FF000020 Skirt of Virgin^000000,";
-			mes "^FF0000500 Fabric^000000, ^FF00002 Ancient Lips^000000,";
-			mes "and ^FF0000100 Squid Ink^000000.";
+			mes "Oh, yes, you want " + mesitemlink(5169) + ".";
+			mes "Then you need to bring... ^FF000020 " + mesitemlink(1049) + "^000000,";
+			mes "^FF0000500 " + mesitemlink(1059) + "^000000, ^FF00002 " + mesitemlink(1054) + "^000000,";
+			mes "and ^FF0000100 " + mesitemlink(1024) + "^000000.";
 			break;
 		case 3:
 			mes "[Chungwolmang]";
-			mes "Oh, yes, you want Mythical Lion Mask.";
-			mes "Then you need to bring... ^FF0000500 Horrendous Hair^000000,";
-			mes "^FF00002 Ancient Tooth^000000, and";
-			mes "^FF00001 Orange Dyestuffs^000000.";
+			mes "Oh, yes, you want " + mesitemlink(5177) + ".";
+			mes "Then you need to bring... ^FF0000500 " + mesitemlink(1048) + "^000000,";
+			mes "^FF00002 " + mesitemlink(1053) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(980) + "^000000.";
 			break;
 		}
 		mes "Bring the exact amount of materials, then I will give you the mask right away.";
@@ -614,7 +614,7 @@ payon,135,320,3	script	Chungwolmang	97,{
 	}
 	if (countitem(7201) > 499) && (countitem(7200) > 9 && moza_tal == 1) {
 		mes "[Chungwolmang]";
-		mes "Ah, Four Leaf Clover must bring me luck";
+		mes "Ah, " + mesitemlink(706) + " must bring me luck";
 		mes "because you came back faster than I thought! Wow...";
 		mes "Thank you so much, now I think that";
 		mes "I have fortune on my side. Hahaha!";
@@ -641,32 +641,32 @@ payon,135,320,3	script	Chungwolmang	97,{
 		mes "You know why? Because there is no one who can offer you";
 		mes "such a valuable item except me.";
 		mes "Anyhow, I can make 3 different masks:";
-		mes "Hahoe Mask, Bride Mask and Mythical Lion Mask.";
+		mes "" + mesitemlink(5176) + ", " + mesitemlink(5169) + " and " + mesitemlink(5177) + ".";
 		mes "Which one whould you like to have? Pick one.";
 		next;
 		switch(select("Hahoe Mask:Bride Mask:Mythical Lion Mask")) {
 		case 1:
 			mes "[Chungwolmang]";
-			mes "Great, you want Hahoe Mask, eh? That's easy!";
-			mes "Then you need to bring... ^FF000020 Bookclip in Memory^000000,";
-			mes "^FF0000100 Cactus Needle^000000, and";
-			mes "^FF0000100 Mane^000000.";
+			mes "Great, you want " + mesitemlink(5176) + ", eh? That's easy!";
+			mes "Then you need to bring... ^FF000020 " + mesitemlink(7015) + "^000000,";
+			mes "^FF0000100 " + mesitemlink(952) + "^000000, and";
+			mes "^FF0000100 " + mesitemlink(1028) + "^000000.";
 			mes "Bring the exact amount of materials, then I will give you the mask right away.";
 			break;
 		case 2:
 			mes "[Chungwolmang]";
-			mes "Great, you want Bride Mask, eh? That's easy!";
-			mes "Then you need to bring... ^FF000020 Skirt of Virgin^000000,";
-			mes "^FF0000500 Fabric^000000, ^FF00002 Ancient Lips^000000,";
-			mes "and ^FF0000100 Squid Ink^000000.";
+			mes "Great, you want " + mesitemlink(5169) + ", eh? That's easy!";
+			mes "Then you need to bring... ^FF000020 " + mesitemlink(1049) + "^000000,";
+			mes "^FF0000500 " + mesitemlink(1059) + "^000000, ^FF00002 " + mesitemlink(1054) + "^000000,";
+			mes "and ^FF0000100 " + mesitemlink(1024) + "^000000.";
 			mes "Bring the exact amount of materials, then I will give you the mask right away.";
 			break;
 		case 3:
 			mes "[Chungwolmang]";
-			mes "Great, you want Mythical Lion Mask, eh? That's easy!";
-			mes "Then you need to bring... ^FF0000500 Horrendous Hair^000000,";
-			mes "^FF00002 Ancient Tooth^000000, and";
-			mes "^FF00001 Orange Dyestuffs^000000.";
+			mes "Great, you want " + mesitemlink(5177) + ", eh? That's easy!";
+			mes "Then you need to bring... ^FF0000500 " + mesitemlink(1048) + "^000000,";
+			mes "^FF00002 " + mesitemlink(1053) + "^000000, and";
+			mes "^FF00001 " + mesitemlink(980) + "^000000.";
 			mes "Bring the exact amount of materials, then I will give you the mask right away.";
 			break;
 		}
@@ -689,22 +689,22 @@ payon,135,320,3	script	Chungwolmang	97,{
 		next;
 		mes "[Chungwolmang]";
 		mes "In the meantime, I am going to prepare";
-		mes "the work by using these Log and Elastic Band.";
+		mes "the work by using these " + mesitemlink(7201) + " and " + mesitemlink(7200) + ".";
 		mes "So come back as soon as you can, okay?";
 		close;
 	}
 	if (moza_tal == 1) {
 		mes "[Chungwolmang]";
 		mes "Umm...the things that I've asked you were";
-		mes "^FF0000500 Log^000000 and ^FF000010 Elastic Band^000000.";
+		mes "^FF0000500 " + mesitemlink(7201) + "^000000 and ^FF000010 " + mesitemlink(7200) + "^000000.";
 		mes "Thanks in advance.";
 		close;
 	}
 	if (countitem(706) > 0) {
 		mes "[Chungwolmang]";
 		mes "Ah...! Hey! I can tell something unique about you.";
-		mes "Do you have a Four Leaf Clover by any chance?";
-		mes "Do you mind if I ask you to give me the clover?";
+		mes "Do you have a " + mesitemlink(706) + " by any chance?";
+		mes "Do you mind if I ask you to give me the " + mesitemlink(705) + "?";
 		next;
 		mes "[Chungwolmang]";
 		mes "I am not asking you to give it to me for free.";
@@ -716,7 +716,7 @@ payon,135,320,3	script	Chungwolmang	97,{
 			mes "[Chungwolmang]";
 			mes "Oh! Thank you so much!";
 			mes "Muhahahahahaha! Now I will become a lucky guy!";
-			mes "With the clover, fortune will be on my side again!";
+			mes "With the " + mesitemlink(705) + ", fortune will be on my side again!";
 			next;
 			mes "[Chungwolmang]";
 			mes "Oh, right! I almost forgot.";
@@ -729,8 +729,8 @@ payon,135,320,3	script	Chungwolmang	97,{
 			mes "Please, show me your generosity~";
 			next;
 			mes "[Chungwolmang]";
-			mes "I need... ^FF0000500 Log^000000 and";
-			mes "^FF000010 Elastic Band^000000.";
+			mes "I need... ^FF0000500 " + mesitemlink(7201) + "^000000 and";
+			mes "^FF000010 " + mesitemlink(7200) + "^000000.";
 			mes "Will you be so kind to bring them to me?";
 			mes "In fact, I can't pay you back unless I have them.";
 			next;
@@ -756,8 +756,8 @@ payon,135,320,3	script	Chungwolmang	97,{
 	mes "I am not asking too much! I need one thing!";
 	next;
 	mes "[Chungwolmang]";
-	mes "I need a ^FF0000Four Leaf Clover^000000!";
-	mes "Somebody, please bring me a Four Leaf Clover!";
+	mes "I need a ^FF0000Four Leaf " + mesitemlink(705) + "^000000!";
+	mes "Somebody, please bring me a " + mesitemlink(706) + "!";
 	close;
 
 S_MakeMask:
@@ -792,7 +792,7 @@ S_MakeMask:
 		getitem .@item_id,1;
 		set moza_tal,0;
 		mes "[Chungwolmang]";
-		mes "Wow, it was a piece of cake!";
+		mes "Wow, it was a " + mesitemlink(539) + "!";
 		mes "You know, I am not an artisan only in title.";
 		mes "Hahaha, here, take your "+ getitemname(.@item_id) +".";
 		mes "I hope that you will wear it with pride, hahaha!";
@@ -816,7 +816,7 @@ payon_in03,139,124,3	script	Han Garam	88,{
 		mes "[Han Garam]";
 		mes "You came back faster than I expected.";
 		mes "Great, I am also highly motivated for the fact that";
-		mes "my Ayam will belong to someone like you,";
+		mes "my " + mesitemlink(5174) + " will belong to someone like you,";
 		mes "who are competent and trustworthy.";
 		next;
 		mes "[Han Garam]";
@@ -849,7 +849,7 @@ payon_in03,139,124,3	script	Han Garam	88,{
 			mes "[Han Garam]";
 			mes "I still feel good that I had a chance";
 			mes "to exercise my skills, you know. It was fun, too.";
-			mes "Please take this Ayam.";
+			mes "Please take this " + mesitemlink(5174) + ".";
 			mes "As I promised, this is my gift for you.";
 			next;
 			delitem 954,300; //Shining_Scales
@@ -865,8 +865,8 @@ payon_in03,139,124,3	script	Han Garam	88,{
 			mes "so I guess that it will happen when the time is right.";
 			next;
 			mes "[Han Garam]";
-			mes "Thank you so much! Please take my Ayam with care,";
-			mes "and be proud that you are the owner of Ayam!";
+			mes "Thank you so much! Please take my " + mesitemlink(5174) + " with care,";
+			mes "and be proud that you are the owner of " + mesitemlink(5174) + "!";
 			close;
 		}
 		mes "[Han Garam]";
@@ -878,7 +878,7 @@ payon_in03,139,124,3	script	Han Garam	88,{
 		mes "[Han Garam]";
 		mes "You came back faster than I expected.";
 		mes "Great, I am also highly motivated for the fact that";
-		mes "my Magistrate Hat will belong to someone like you,";
+		mes "my " + mesitemlink(5173) + " will belong to someone like you,";
 		mes "who are competent and trustworthy.";
 		next;
 		mes "[Han Garam]";
@@ -911,7 +911,7 @@ payon_in03,139,124,3	script	Han Garam	88,{
 			mes "[Han Garam]";
 			mes "I still feel good that I had a chance";
 			mes "to exercise my skills, you know. It was fun, too.";
-			mes "Please take this Magistrate Hat.";
+			mes "Please take this " + mesitemlink(5173) + ".";
 			mes "As I promised, this is my gift for you.";
 			next;
 			delitem 954,300; //Shining_Scales
@@ -927,8 +927,8 @@ payon_in03,139,124,3	script	Han Garam	88,{
 			mes "so I guess that it will happen when the time is right.";
 			next;
 			mes "[Han Garam]";
-			mes "Thank you so much! Please take my Magistrate Hat with care,";
-			mes "and be proud that you are the owner of Magistrate Hat!";
+			mes "Thank you so much! Please take my " + mesitemlink(5173) + " with care,";
+			mes "and be proud that you are the owner of " + mesitemlink(5173) + "!";
 			close;
 		}
 		mes "[Han Garam]";
@@ -938,15 +938,15 @@ payon_in03,139,124,3	script	Han Garam	88,{
 	}
 	else if (moza_korea == 2) {
 		mes "[Han Garam]";
-		mes "To make Ayam, I need";
-		mes "^FF0000300 Shining Scale^000000, ^FF00005 Cracked Diamond^000000,";
-		mes "^FF00001 Scarlet Dyestuffs^000000, and";
-		mes "^FF000050 Soft Silk^000000!";
+		mes "To make " + mesitemlink(5174) + ", I need";
+		mes "^FF0000300 " + mesitemlink(954) + "^000000, ^FF00005 " + mesitemlink(733) + "^000000,";
+		mes "^FF00001 " + mesitemlink(975) + "^000000, and";
+		mes "^FF000050 " + mesitemlink(7166) + "^000000!";
 		next;
 		mes "[Han Garam]";
-		mes "To make Magistrate Hat, I need";
-		mes "^FF0000300 Shining Scale^000000, ^FF00005 Cracked Diamond^000000,";
-		mes "^FF00001 Black Dyestuffs^000000, and ^FF00001 Slotted Hat^000000!";
+		mes "To make " + mesitemlink(5173) + ", I need";
+		mes "^FF0000300 " + mesitemlink(954) + "^000000, ^FF00005 " + mesitemlink(733) + "^000000,";
+		mes "^FF00001 " + mesitemlink(983) + "^000000, and ^FF00001 Slotted Hat^000000!";
 		next;
 		mes "[Han Garam]";
 		mes "...That's what I said.";
@@ -993,15 +993,15 @@ payon_in03,139,124,3	script	Han Garam	88,{
 		mes "I feel like that I am alreadying making one!";
 		next;
 		mes "[Han Garam]";
-		mes "To make Ayam, I need";
-		mes "^FF0000300 Shining Scale^000000, ^FF00005 Cracked Diamond^000000,";
-		mes "^FF00001 Scarlet Dyestuffs^000000, and";
-		mes "^FF000050 Soft Silk^000000!";
+		mes "To make " + mesitemlink(5174) + ", I need";
+		mes "^FF0000300 " + mesitemlink(954) + "^000000, ^FF00005 " + mesitemlink(733) + "^000000,";
+		mes "^FF00001 " + mesitemlink(975) + "^000000, and";
+		mes "^FF000050 " + mesitemlink(7166) + "^000000!";
 		next;
 		mes "[Han Garam]";
-		mes "To make Magistrate Hat, I need";
-		mes "^FF0000300 Shining Scale^000000, ^FF00005 Cracked Diamond^000000,";
-		mes "^FF00001 Black Dyestuffs^000000, and ^FF00001 Slotted Hat^000000!";
+		mes "To make " + mesitemlink(5173) + ", I need";
+		mes "^FF0000300 " + mesitemlink(954) + "^000000, ^FF00005 " + mesitemlink(733) + "^000000,";
+		mes "^FF00001 " + mesitemlink(983) + "^000000, and ^FF00001 Slotted Hat^000000!";
 		next;
 		mes "[Han Garam]";
 		mes "Anyone who brings these, I will create hat for him!";
@@ -1019,7 +1019,7 @@ payon_in03,139,124,3	script	Han Garam	88,{
 		mes "However, I still clearly remember";
 		mes "what I need, and how to make the hats.";
 		mes "So, you don't have to worry about that.";
-		mes "You know...are they Ayam and Magistrate Hat?";
+		mes "You know...are they " + mesitemlink(5174) + " and " + mesitemlink(5173) + "?";
 		next;
 		mes "[Han Garam]";
 		mes "You heard what materials I need, don't you?";

@@ -111,7 +111,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 		mes "Ahh, Now I'm just itching to imitating this armor and making a slot on other armors.";
 		next;
 		mes "[Boshuu]";
-		mes "If you have a regular non-slotted Arm Guard and a slotted Guard, I'll make the non-slotted one slotted at the cost of 10,000 Zeny.";
+		mes "If you have a regular non-slotted " + mesitemlink(2117) + " and a slotted Guard, I'll make the non-slotted one slotted at the cost of 10,000 Zeny.";
 		next;
 		mes "[Boshuu]";
 		mes "How 'bout it? Want to try?";
@@ -127,12 +127,12 @@ que_ng,28,50,3	script	Boshuu	709,{
 			mes "[Boshuu]";
 			mes "Oh ok.";
 			mes "I can't wait to begin.";
-			mes "If you bring me 1 Arm Guard";
+			mes "If you bring me 1 " + mesitemlink(2117) + "";
 			mes "1 Slotted Guard, and";
 			mes "10,000 Zeny..";
 			next;
 			mes "[Boshuu]";
-			mes "Then I'll slot your slotless Arm Guard.";
+			mes "Then I'll slot your slotless " + mesitemlink(2117) + ".";
 			mes "Come back when you have all the required materials.";
 			set ninbo,2;
 			close;
@@ -142,8 +142,8 @@ que_ng,28,50,3	script	Boshuu	709,{
 		if (countitem(2102) < 1 || countitem(2117) < 1){
 			mes "[Boshuu]";
 			mes "Hmm... It looks like you didn't bring me enough materials.";
-			mes "In order to create a Slotted Arm Guard, I need 1 Slotted Guard";
-			mes "1 Arm Guard, and 10,000 Zeny";
+			mes "In order to create a Slotted " + mesitemlink(2117) + ", I need 1 Slotted Guard";
+			mes "1 " + mesitemlink(2117) + ", and 10,000 Zeny";
 			mes "Come back when you're sure you have everything.";
 			close;
 		}
@@ -152,15 +152,15 @@ que_ng,28,50,3	script	Boshuu	709,{
 			mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 			next;
 			mes "[Boshuu]";
-			mes "In order to create a Slotted Arm Guard, I need 1 Guard[1]";
-			mes "1 Arm Guard, and 10,000 Zeny.";
+			mes "In order to create a Slotted " + mesitemlink(2117) + ", I need 1 Guard[1]";
+			mes "1 " + mesitemlink(2117) + ", and 10,000 Zeny.";
 			mes "Come back when you're sure you have everything.";
 			close;
 		}
 		mes "[Boshuu]";
 		mes "Oh, I see you're back with all the required materials.";
 		mes "But before I start, I must ask you one more time.";
-		mes "Do you want to give me the materials you've brought and receive a Slotted Arm Guard instead?";
+		mes "Do you want to give me the materials you've brought and receive a Slotted " + mesitemlink(2117) + " instead?";
 		next;
 		if(select("No:Yes") == 1){
 			mes "[Boshuu]";
@@ -179,7 +179,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 			}
 			mes "[Boshuu]";
 			mes "Here, it's finally complete.";
-			mes "I present to you a Slotted Arm Guard.";
+			mes "I present to you a Slotted " + mesitemlink(2117) + ".";
 			mes "Come and find me whenever you're ready to request more.";
 			delitem 2102,1;
 			delitem 2117,1;
@@ -194,7 +194,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 		set ninbo,0;
 		mes "[Boshuu]";
 		mes "Oh~ I see you've come back.";
-		mes "Is it because you need another slotted Arm Guard?";
+		mes "Is it because you need another slotted " + mesitemlink(2117) + "?";
 		next;
 		if(select("Nope, not really.:Yes, make me another one.") == 1){
 			mes "[Boshuu]";
@@ -205,9 +205,9 @@ que_ng,28,50,3	script	Boshuu	709,{
 			if (countitem(2102) < 1 || countitem(2117) < 1){
 				mes "[Boshuu]";
 				mes "Hmm... It looks like you didn't bring me enough materials.";
-				mes "In order to make a Slotted Arm Guard,";
+				mes "In order to make a Slotted " + mesitemlink(2117) + ",";
 				mes "I need 1 Slotted Guard";
-				mes "1 Arm Guard, and";
+				mes "1 " + mesitemlink(2117) + ", and";
 				mes "10,000 Zeny.";
 				mes "Come back when you're sure you have everything.";
 				close;
@@ -217,15 +217,15 @@ que_ng,28,50,3	script	Boshuu	709,{
 				mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 				next;
 				mes "[Boshuu]";
-				mes "In order to create one Slotted Arm Guard,";
-				mes "I need 1 Slotted Guard, 1 Arm Guard, and 10,000 Zeny.";
+				mes "In order to create one Slotted " + mesitemlink(2117) + ",";
+				mes "I need 1 Slotted Guard, 1 " + mesitemlink(2117) + ", and 10,000 Zeny.";
 				mes "Come back when you're sure you have everything.";
 				close;
 			}
 			mes "[Boshuu]";
 			mes "Oh, You've brought me the needed materials.";
 			mes "Before I begin, let me ask one final time...";
-			mes "Will you give me the materials you've gathered, and in turn, receive a slotted Arm Guard?";
+			mes "Will you give me the materials you've gathered, and in turn, receive a slotted " + mesitemlink(2117) + "?";
 			next;
 			if(select("No:Yes") == 1){
 				mes "[Boshuu]";
@@ -241,7 +241,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 				next;
 				mes "[Boshuu]";
 				mes "Here, it's finally complete.";
-				mes "I present to you a Slotted Arm Guard.";
+				mes "I present to you a Slotted " + mesitemlink(2117) + ".";
 				next;
 				if(countitem(2102) < 1 || countitem(2117) < 1 || Zeny < 10000){
 					mes "HACK DETECTED";
@@ -291,8 +291,8 @@ que_ng,28,50,3	script	Boshuu	709,{
 		mes "But at the sight of your shield, I feel like my sleeping spirit of creativity has awoken.";
 		next;
 		mes "[Boshuu]";
-		mes "I you want to, bring me an Arm Guard, a Slotted Guard, and 10,000 Zeny, and I'll make you a Slotted Arm Guard.";
-		mes "How 'bout it? Would you like to obtain a Slotted Arm Guard?";
+		mes "I you want to, bring me an " + mesitemlink(2117) + ", a Slotted Guard, and 10,000 Zeny, and I'll make you a Slotted " + mesitemlink(2117) + ".";
+		mes "How 'bout it? Would you like to obtain a Slotted " + mesitemlink(2117) + "?";
 		next;
 		if(select("No, I'd rather not.:Yes~!! Please make it for me!") == 1){
 			mes "[Boshuu]";
@@ -306,9 +306,9 @@ que_ng,28,50,3	script	Boshuu	709,{
 				mes "Hmm... It looks like you didn't bring me enough materials.";
 				next;
 				mes "[Boshuu]";
-				mes "In order to make a Slotted Arm Guard,";
+				mes "In order to make a Slotted " + mesitemlink(2117) + ",";
 				mes "I need 1 Slotted Guard";
-				mes "1 Arm Guard, and";
+				mes "1 " + mesitemlink(2117) + ", and";
 				mes "10,000 Zeny.";
 				mes "Come back when you're sure you have everything.";
 				close;
@@ -318,9 +318,9 @@ que_ng,28,50,3	script	Boshuu	709,{
 				mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 				next;
 				mes "[Boshuu]";
-				mes "In order to make a Slotted Arm Guard,";
+				mes "In order to make a Slotted " + mesitemlink(2117) + ",";
 				mes "I need 1 Slotted Guard";
-				mes "1 Arm Guard, and";
+				mes "1 " + mesitemlink(2117) + ", and";
 				mes "10,000 Zeny.";
 				mes "Come back when you're sure you have everything.";
 				close;
@@ -329,7 +329,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 			mes "Oh, You've brought me the needed materials.";
 			mes "Before I begin, let me ask one final time...";
 			mes "Will you give me the materials you've gathered,";
-			mes "and in turn, receive a Slotted Arm Guard?";
+			mes "and in turn, receive a Slotted " + mesitemlink(2117) + "?";
 			next;
 			if(select("No:Yes") == 1){
 				mes "[Boshuu]";
@@ -349,7 +349,7 @@ que_ng,28,50,3	script	Boshuu	709,{
 				}
 				mes "[Boshuu]";
 				mes "Here, it's finally complete.";
-				mes "I present to you a Slotted Arm Guard.";
+				mes "I present to you a Slotted " + mesitemlink(2117) + ".";
 				mes "If you ever want to ask me to make you more items, feel free to come back anytime.";
 				delitem 2102,1;
 				delitem 2117,1;
@@ -400,7 +400,7 @@ que_ng,28,45,3	script	Basshu	86,{
 		mes "I'm researching to see if shields can be enchanted with magic.";
 		next;
 		mes "[Basshu]";
-		mes "Do you happen to know a shield called the Mirror shield from overseas?";
+		mes "Do you happen to know a shield called the " + mesitemlink(2107) + " from overseas?";
 		mes "I'd love to see that item, but I can't get my hands on one.";
 		next;
 		mes "[Basshu]";
@@ -411,12 +411,12 @@ que_ng,28,45,3	script	Basshu	86,{
 			mes "[Basshu]";
 			mes "Ah~ I guess it was an impossible request.";
 			mes "I'm sorry.";
-			mes "If you ever find a Mirror shield and want to get rid of it, please come and see me.";
+			mes "If you ever find a " + mesitemlink(2107) + " and want to get rid of it, please come and see me.";
 			close;
 		}else{
 			mes "[Basshu]";
 			mes "Oh, thank you.";
-			mes "If you could really find me a Mirror Shield, I might get some really good ideas.";
+			mes "If you could really find me a " + mesitemlink(2107) + ", I might get some really good ideas.";
 			set ninbot,1;
 			close;
 		}
@@ -433,11 +433,11 @@ que_ng,28,45,3	script	Basshu	86,{
 		next;
 		mes "[Basshu]";
 		mes "This sure gets me excited.";
-		mes "If you have a normal Arm Guard, bring me your Arm Guard, and...";
+		mes "If you have a normal " + mesitemlink(2117) + ", bring me your " + mesitemlink(2117) + ", and...";
 		next;
 		mes "[Basshu]";
-		mes "1 Mirror Shield, and";
-		mes "20,000 Zeny, and I'll improve your Arm Guard into an Improved Arm Guard.";
+		mes "1 " + mesitemlink(2107) + ", and";
+		mes "20,000 Zeny, and I'll improve your " + mesitemlink(2117) + " into an Improved " + mesitemlink(2117) + ".";
 		next;
 		mes "[Basshu]";
 		mes "How about it? Would you like that?";
@@ -457,10 +457,10 @@ que_ng,28,45,3	script	Basshu	86,{
 			mes "I'm looking forward to this.";
 			next;
 			mes "[Basshu]";
-			mes "Bring me 1 Arm Guard,";
-			mes "1 Mirror Shield, and";
+			mes "Bring me 1 " + mesitemlink(2117) + ",";
+			mes "1 " + mesitemlink(2107) + ", and";
 			mes "20,000 Zeny,";
-			mes "and I'll make you an Improved Arm Guard.";
+			mes "and I'll make you an Improved " + mesitemlink(2117) + ".";
 			next;
 			mes "[Basshu]";
 			mes "Come and see me when you have everything ready.";
@@ -472,8 +472,8 @@ que_ng,28,45,3	script	Basshu	86,{
 		if(countitem(2107) < 1 || countitem(2117) < 1){
 			mes "[Basshu]";
 			mes "Hmm.. It looks like there aren't enough materials.";
-			mes "For an Improved Arm Guard, I require...";
-			mes "1 Mirror Shield, 1 Arm Guard";
+			mes "For an Improved " + mesitemlink(2117) + ", I require...";
+			mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + "";
 			mes "and 20,000 Zeny.";
 			mes "Come again when you have these materials.";
 			close;
@@ -481,8 +481,8 @@ que_ng,28,45,3	script	Basshu	86,{
 		if(Zeny < 20000){
 			mes "[Basshu]";
 			mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
-			mes "In order to create an Improved Arm Guard, I require...";
-			mes "1 Mirror Shield, 1 Arm Guard";
+			mes "In order to create an Improved " + mesitemlink(2117) + ", I require...";
+			mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + "";
 			mes "and 20,000 Zeny.";
 			mes "Come again when you have these materials.";
 			close;
@@ -494,11 +494,11 @@ que_ng,28,45,3	script	Basshu	86,{
 		mes "I'll ask one last time.";
 		next;
 		mes "[Basshu]";
-		mes "In trade of the magical defence of the Arm Guard increasing, the shield's ability to block physical attacks may inevitably decrease.";
+		mes "In trade of the magical defence of the " + mesitemlink(2117) + " increasing, the shield's ability to block physical attacks may inevitably decrease.";
 		next;
 		mes "[Basshu]";
 		mes "Will you give me the materials you've gathered";
-		mes "and in trade, receive an Improved Arm Guard?";
+		mes "and in trade, receive an Improved " + mesitemlink(2117) + "?";
 		next;
 		if(select("No:Yes") == 1){
 			mes "[Basshu]";
@@ -519,7 +519,7 @@ que_ng,28,45,3	script	Basshu	86,{
 			}
 			mes "[Basshu]";
 			mes "Here it is -- it's complete.";
-			mes "I've made you an Improved Arm Guard.";
+			mes "I've made you an Improved " + mesitemlink(2117) + ".";
 			mes "If you ever want me to create more items, come and ask me anytime.";
 			delitem 2107,1;
 			delitem 2117,1;
@@ -534,7 +534,7 @@ que_ng,28,45,3	script	Basshu	86,{
 		set ninbot,0;
 		mes "[Basshu]";
 		mes "Oh~ I see you've come back.";
-		mes "Are you here because you need an Improved Arm Guard?";
+		mes "Are you here because you need an Improved " + mesitemlink(2117) + "?";
 		next;
 		if(select("Nope, not really.:Yes, make me another one.") == 1){
 			mes "[Basshu]";
@@ -545,8 +545,8 @@ que_ng,28,45,3	script	Basshu	86,{
 			if(countitem(2107) < 1 || countitem(2117) < 1){
 				mes "[Basshu]";
 				mes "Hmm.. It looks like there aren't enough materials.";
-				mes "In order to make an Improved Arm Guard, I require...";
-				mes "1 Mirror Shield, 1 Arm Guard,";
+				mes "In order to make an Improved " + mesitemlink(2117) + ", I require...";
+				mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + ",";
 				mes "And 20,000 Zeny.";
 				mes "Come again when you have these materials.";
 				close;
@@ -554,8 +554,8 @@ que_ng,28,45,3	script	Basshu	86,{
 			if(Zeny < 20000){
 				mes "[Basshu]";
 				mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
-				mes "In order to make an Improved Arm Guard, I require...";
-				mes "1 Mirror Shield, 1 Arm Guard,";
+				mes "In order to make an Improved " + mesitemlink(2117) + ", I require...";
+				mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + ",";
 				mes "and 20,000 Zeny.";
 				mes "Come again when you have these materials.";
 				close;
@@ -566,10 +566,10 @@ que_ng,28,45,3	script	Basshu	86,{
 			mes "I'll ask one last time.";
 			next;
 			mes "[Basshu]";
-			mes "In trade of the magical defence of the Arm Guard increasing, the shield's ability to block physical attacks may inevitably decrease.";
+			mes "In trade of the magical defence of the " + mesitemlink(2117) + " increasing, the shield's ability to block physical attacks may inevitably decrease.";
 			next;
 			mes "[Basshu]";
-			mes "Will you give me the materials you've gathered to receive an Improved Arm Guard?";
+			mes "Will you give me the materials you've gathered to receive an Improved " + mesitemlink(2117) + "?";
 			next;
 			if(select("No:Yes") == 1){
 				mes "[Basshu]";
@@ -586,7 +586,7 @@ que_ng,28,45,3	script	Basshu	86,{
 				next;
 				mes "[Basshu]";
 				mes "Here it is -- it's complete.";
-				mes "I've made you an Improved Arm Guard";
+				mes "I've made you an Improved " + mesitemlink(2117) + "";
 				next;
 				if(countitem(2107) < 1 || countitem(2117) < 1 || Zeny < 20000){
 					mes "HACK DETECTED";
@@ -606,13 +606,13 @@ que_ng,28,45,3	script	Basshu	86,{
 		set ninbot,0;
 		mes "[Basshu]";
 		mes "Why~ That's~!";
-		mes "Is what you have there that shield which is called a 'Mirror Shield' overseas?";
+		mes "Is what you have there that shield which is called a '" + mesitemlink(2107) + "' overseas?";
 		next;
 		mes "[Basshu]";
 		mes "Excuse me, but may I take a look?";
 		next;
 		mes "[Basshu]";
-		mes "I knew it!! It is a Mirror Shield~!";
+		mes "I knew it!! It is a " + mesitemlink(2107) + "~!";
 		mes "There must be a way any shield can posess magical powers!!";
 		next;
 		mes "[Basshu]";
@@ -633,14 +633,14 @@ que_ng,28,45,3	script	Basshu	86,{
 		mes "I'm researching to see if shields can be enchanted with magic.";
 		next;
 		mes "[Basshu]";
-		mes "Therefore, I wanted to get an idea of how magic works on shields by studying a shield from overseas called the Mirror Shield, but I couldn't get my hands on one.";
+		mes "Therefore, I wanted to get an idea of how magic works on shields by studying a shield from overseas called the " + mesitemlink(2107) + ", but I couldn't get my hands on one.";
 		mes "What stress that had caused me.";
 		next;
 		mes "[Basshu]";
-		mes "But luckily, you, a traveller, happened to have a mirror shield, and now I feel my creative spirit burning lively inside.";
+		mes "But luckily, you, a traveller, happened to have a " + mesitemlink(2107) + ", and now I feel my creative spirit burning lively inside.";
 		next;
 		mes "[Basshu]";
-		mes "If you want, I will make you an Improved Arm Guard if you bring me 1 Arm Guard, 1 Mirror Shield, And 20,000 Zeny.";
+		mes "If you want, I will make you an Improved " + mesitemlink(2117) + " if you bring me 1 " + mesitemlink(2117) + ", 1 " + mesitemlink(2107) + ", And 20,000 Zeny.";
 		mes "Would you like to try using one?";
 		next;
 		if(select("No, I don't wanna!:Yeah~!! Hurry and make it for me!") == 1){
@@ -653,8 +653,8 @@ que_ng,28,45,3	script	Basshu	86,{
 			if(countitem(2107) < 1 || countitem(2117) < 1){
 				mes "[Basshu]";
 				mes "Hmm.. It looks like there aren't enough materials.";
-				mes "In order to create an Improved Arm Guard, I require...";
-				mes "1 Mirror Shield, 1 Arm Guard";
+				mes "In order to create an Improved " + mesitemlink(2117) + ", I require...";
+				mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + "";
 				mes "And 20,000 Zeny";
 				mes "Come again when you have these materials.";
 				close;
@@ -662,8 +662,8 @@ que_ng,28,45,3	script	Basshu	86,{
 			if(Zeny < 20000){
 				mes "[Basshu]";
 				mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
-				mes "In order to make an Improved Arm Guard, I require...";
-				mes "1 Mirror Shield, 1 Arm Guard,";
+				mes "In order to make an Improved " + mesitemlink(2117) + ", I require...";
+				mes "1 " + mesitemlink(2107) + ", 1 " + mesitemlink(2117) + ",";
 				mes "And 20,000 Zeny.";
 				mes "Come again when you have these materials.";
 				close;
@@ -675,11 +675,11 @@ que_ng,28,45,3	script	Basshu	86,{
 			mes "I'll ask one last time.";
 			next;
 			mes "[Basshu]";
-			mes "In trade of the magical defence of the Arm Guard increasing, the shield's ability to block physical attacks may inevitably decrease.";
+			mes "In trade of the magical defence of the " + mesitemlink(2117) + " increasing, the shield's ability to block physical attacks may inevitably decrease.";
 			next;
 			mes "[Basshu]";
 			mes "Will you give me the materials you've gathered";
-			mes "to receive an Improved Arm Guard?";
+			mes "to receive an Improved " + mesitemlink(2117) + "?";
 			next;
 			if(select("No:Yes") == 1){
 				mes "[Basshu]";
@@ -700,7 +700,7 @@ que_ng,28,45,3	script	Basshu	86,{
 				}
 				mes "[Basshu]";
 				mes "Here it is -- it's complete.";
-				mes "I've made you an Improved Arm Guard";
+				mes "I've made you an Improved " + mesitemlink(2117) + "";
 				mes "If you ever want me to create more items, come and ask me anytime.";
 				delitem 2107,1;
 				delitem 2117,1;
@@ -738,12 +738,12 @@ que_ng,27,18,3	script	Toshu	709,{
 	mes "I learned how to slot things from overseas, so I'm thinking about earning some money with that ability part time.";
 	next;
 	mes "[Toshu]";
-	mes "If you want, I can create a Slotted Improved Arm Guard if you bring me";
-	mes "1 Improved Arm Guard, 1 Slotted Buckler";
+	mes "If you want, I can create a Slotted Improved " + mesitemlink(2117) + " if you bring me";
+	mes "1 Improved " + mesitemlink(2117) + ", 1 Slotted " + mesitemlink(2103) + "";
 	mes "and 40,000 Zeny.";
 	next;
 	mes "[Toshu]";
-	mes "By the way, I'm sorry to say this, but there's a chance I might break your materials and fail slotting the Improved Arm Guard, so you might want to think about it.";
+	mes "By the way, I'm sorry to say this, but there's a chance I might break your materials and fail slotting the Improved " + mesitemlink(2117) + ", so you might want to think about it.";
 	mes "How 'bout it? Do we have a deal?";
 	next;
 	if(select("No. I don't want to do this.:Yes! Let's do this!") == 1){
@@ -756,8 +756,8 @@ que_ng,27,18,3	script	Toshu	709,{
 		if(countitem(2104) < 1 || countitem(2119) < 1){
 			mes "[Toshu]";
 			mes "It doesn't look like you brought me enough materials.";
-			mes "The required materials are 1 Slotted Buckler";
-			mes "1 Improved Arm Guard, and";
+			mes "The required materials are 1 Slotted " + mesitemlink(2103) + "";
+			mes "1 Improved " + mesitemlink(2117) + ", and";
 			mes "40,000 Zeny.";
 			mes "You must bring me the right number of materials and Zeny.";
 			mes "Don't forget that.";
@@ -767,8 +767,8 @@ que_ng,27,18,3	script	Toshu	709,{
 			mes "[Toshu]";
 			mes "It looks like you brought the right amount of materials.";
 			mes "However.. you didn't bring enough Zeny.";
-			mes "The required materials are 1 Slotted Buckler";
-			mes "1 Improved Arm Guard, and 40,000 Zeny.";
+			mes "The required materials are 1 Slotted " + mesitemlink(2103) + "";
+			mes "1 Improved " + mesitemlink(2117) + ", and 40,000 Zeny.";
 			mes "You must bring me the right number of materials and Zeny.";
 			mes "Don't forget that.";
 			close;
@@ -835,7 +835,7 @@ que_ng,27,18,3	script	Toshu	709,{
 					mes "[Toshu]";
 					mes "Hmm~~ Looks like everything went all right.";
 					mes "Here is your completed Slotted";
-					mes "Improved Arm Guard.";
+					mes "Improved " + mesitemlink(2117) + ".";
 					mes "I was nervous that it might fail, but hey, there's a reason why I'm called a Craftsman, right?";
 					mes "If you need me again, come and seek me.";
 					close;
@@ -922,7 +922,7 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 			mes "This sword has a legend that the more enemies you slay with it, the stronger it gets.";
 			next;
 			mes "[Kaibara]";
-			mes "The required materials are 30 Steel, one Old Hilt";
+			mes "The required materials are 30 " + mesitemlink(999) + ", one " + mesitemlink(7022) + "";
 			mes "and 20,000 Zeny.";
 			mes "Do you want me to create this item for you?";
 			next;
@@ -934,12 +934,12 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 			}else{
 				if(countitem(999) < 30 || countitem(7022) < 1){
 					mes "[Kaibara]";
-					mes "It looks like you need more materials before I can make you a Jitte.";
+					mes "It looks like you need more materials before I can make you a " + mesitemlink(13007) + ".";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create a Jitte, I require";
-					mes "^ff000030 Steel^000000, ";
-					mes "^f00001 Old Hilt^000000,";
+					mes "In order to create a " + mesitemlink(13007) + ", I require";
+					mes "^ff000030 " + mesitemlink(999) + "^000000, ";
+					mes "^f00001 " + mesitemlink(7022) + "^000000,";
 					mes "and ^ff000020,000 Zeny^000000.";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
@@ -949,9 +949,9 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 					mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create the Jitte, I require";
-					mes "^ff000030 Steel,^000000";
-					mes "^f00001 Old Hilt^000000,";
+					mes "In order to create the " + mesitemlink(13007) + ", I require";
+					mes "^ff000030 " + mesitemlink(999) + ",^000000";
+					mes "^f00001 " + mesitemlink(7022) + "^000000,";
 					mes "and ^ff000020,000 Zeny^000000.";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
@@ -963,15 +963,15 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 				mes "[Kaibara]";
 				mes "Hmm, very well.";
 				mes "I've checked your ingredients and fees.";
-				mes "Here is your completed Jitte.";
+				mes "Here is your completed " + mesitemlink(13007) + ".";
 				close;
 			}
 			break;
 		case 3:
 			mes "[Kaibara]";
 			mes "Hmm~ You've chose the ^ff0000Ashura[3]^000000.";
-			mes "In order to create an Ashura[3], I require ";
-			mes "25 Steel, 5 Worn-out Magic Scrolls";
+			mes "In order to create an " + mesitemlink(13023) + "[3], I require ";
+			mes "25 " + mesitemlink(999) + ", 5 Worn-out Magic Scrolls";
 			mes "And 32,000 Zeny.";
 			mes "Do you want me to create this item for you?";
 			next;
@@ -983,12 +983,12 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 			}else{
 				if(countitem(999) < 25 || countitem(7099) < 5){
 					mes "[Kaibara]";
-					mes "It looks like you don't have all the materials I need to create an Ashura[3] for you.";
+					mes "It looks like you don't have all the materials I need to create an " + mesitemlink(13023) + "[3] for you.";
 					next;
 					mes "[Kaibara]";
-					mes "I require ^ff000025 Steel,^000000";
+					mes "I require ^ff000025 " + mesitemlink(999) + ",^000000";
 					mes "^ff0000Five Worn-out Magic Scrolls,^000000";
-					mes "and ^ff0000 32,000 Zeny^000000 in order to create an Ashura[3].";
+					mes "and ^ff0000 32,000 Zeny^000000 in order to create an " + mesitemlink(13023) + "[3].";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
 				}
@@ -997,8 +997,8 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 					mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create an Ashura[3], I require the following materials - ";
-					mes "^ff000025 Steel,^000000";
+					mes "In order to create an " + mesitemlink(13023) + "[3], I require the following materials - ";
+					mes "^ff000025 " + mesitemlink(999) + ",^000000";
 					mes "^ff00005 Worn-out Magic Scrolls^000000,";
 					mes "and ^ff0000 32,000 Zeny^000000";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
@@ -1011,15 +1011,15 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 				mes "[Kaibara]";
 				mes "Hmm, very well.";
 				mes "I've checked your ingredients and fees.";
-				mes "Here is your completed Ashura[3].";
+				mes "Here is your completed " + mesitemlink(13023) + "[3].";
 				close;
 			}
 			break;
 		case 4:
 			mes "[Kaibara]";
 			mes "Hmm~ You've chose the ^ff0000Murasame^000000.";
-			mes "To create the Murasame, I require";
-			mes "30 Steel, 10 Aquamarines";
+			mes "To create the " + mesitemlink(13012) + ", I require";
+			mes "30 " + mesitemlink(999) + ", 10 Aquamarines";
 			mes "And 48,000 Zeny.";
 			mes "Do you want me to create this item for you?";
 			next;
@@ -1031,13 +1031,13 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 			}else{
 				if(countitem(999) < 30 || countitem(720) < 10){
 					mes "[Kaibara]";
-					mes "It looks like your short on materials for me to create you a Murasame.";
+					mes "It looks like your short on materials for me to create you a " + mesitemlink(13012) + ".";
 					next;
 					mes "[Kaibara]";
-					mes "I require ^ff000030 Steel^000000, ";
+					mes "I require ^ff000030 " + mesitemlink(999) + "^000000, ";
 					mes "^ff000010 Aquamarines^000000,";
 					mes "and ^ff000048,000 Zeny^000000";
-					mes "in order to create a Murasame.";
+					mes "in order to create a " + mesitemlink(13012) + ".";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
 				}
@@ -1046,8 +1046,8 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 					mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create a Murasame, I require..";
-					mes "^ff000030 Steel^000000, ";
+					mes "In order to create a " + mesitemlink(13012) + ", I require..";
+					mes "^ff000030 " + mesitemlink(999) + "^000000, ";
 					mes "^ff000010 Aquamarines^000000,";
 					mes "and ^ff000048,000 Zeny^000000.";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
@@ -1060,16 +1060,16 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 				mes "[Kaibara]";
 				mes "Hmm, very well.";
 				mes "I've checked your ingredients and fees.";
-				mes "Here is your completed Murasame.";
+				mes "Here is your completed " + mesitemlink(13012) + ".";
 				close;
 			}
 			break;
 		case 5:
 			mes "[Kaibara]";
 			mes "Hmm~ You've chose the ^ff0000Hakujin^000000.";
-			mes "In order to create a Hakujin, I require...";
+			mes "In order to create a " + mesitemlink(13014) + ", I require...";
 			mes "500 Skel-Bones, 5 Pearls";
-			mes "10 Level 3 Heal Scrolls";
+			mes "10 " + mesitemlink(12001) + " Scrolls";
 			mes "and 120,000 Zeny.";
 			mes "Do you want me to create this item for you?";
 			next;
@@ -1081,12 +1081,12 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 			}else{
 				if(countitem(932) < 500 || countitem(12001) < 10 || countitem(722) < 5){
 					mes "[Kaibara]";
-					mes "It looks like you're short on raw materials for me to be able to make you a Hakujin.";
+					mes "It looks like you're short on raw materials for me to be able to make you a " + mesitemlink(13014) + ".";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create a Hakujin, I require...";
+					mes "In order to create a " + mesitemlink(13014) + ", I require...";
 					mes "500 Skel-Bones, 5 Pearls";
-					mes "10 Level 3 Heal Scrolls";
+					mes "10 " + mesitemlink(12001) + " Scrolls";
 					mes "and 120,000 Zeny.";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
@@ -1096,9 +1096,9 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 					mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 					next;
 					mes "[Kaibara]";
-					mes "In order to create a Hakujin, I require...";
+					mes "In order to create a " + mesitemlink(13014) + ", I require...";
 					mes "500 Skel-Bones, 5 Pearls";
-					mes "10 Level 3 Heal Scrolls";
+					mes "10 " + mesitemlink(12001) + " Scrolls";
 					mes "and 120,000 Zeny.";
 					mes "Remember these needed materials, and come back after you're positive you have them all.";
 					close;
@@ -1111,7 +1111,7 @@ que_ng,72,34,3	script	Craftsman Kaibara	847,{
 				mes "[Kaibara]";
 				mes "Hmm, very well.";
 				mes "I've double checked the materials and Zeny you've brought.";
-				mes "Here is your completed Hakujin.";
+				mes "Here is your completed " + mesitemlink(13014) + ".";
 				close;
 			}
 			break;
@@ -1158,19 +1158,19 @@ M_BENEKI:
 	mes "[Tetsu]";
 	mes "Hmm~ You've chose the ^ff0000Fuuma Beneki^000000.";
 	mes "In order to make the Fuuma Beneki, I need";
-	mes "50 Steel, 20 Harpy Feather";
-	mes "5 Oridecon, and 90,000 Zeny.";
+	mes "50 " + mesitemlink(999) + ", 20 " + mesitemlink(7115) + "";
+	mes "5 " + mesitemlink(984) + ", and 90,000 Zeny.";
 	mes "Do you want me to create this item for you?";
 	next;
 	menu "Well .. erm .. it's kind of pricey.",M_NOPE,"Yes! Make it for me!",-;
 	
 	if(countitem(999)<50 || countitem(7115)<20 || countitem(984)<5){
 		mes "[Tetsu]";
-		mes "It looks like you haven't brought me enough materials to make you a Fuuma Shuriken Beneki.";
+		mes "It looks like you haven't brought me enough materials to make you a Fuuma " + mesitemlink(13250) + " Beneki.";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma shuriken Beneki, I require...";
-		mes "^ff000050 Steel,^000000";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Beneki, I require...";
+		mes "^ff000050 " + mesitemlink(999) + ",^000000";
 		mes "^ff000020 Harpy Feathers^000000,";
 		mes "^ff00005 Oridecons^000000,";
 		mes "and ^ff000090,000 Zeny^000000.";
@@ -1182,8 +1182,8 @@ M_BENEKI:
 		mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma Shuriken Beneki, I require...";
-		mes "^ff000050 Steel,^000000";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Beneki, I require...";
+		mes "^ff000050 " + mesitemlink(999) + ",^000000";
 		mes "^ff000020 Harpy Feathers^000000,";
 		mes "^ff00005 Oridecons^000000,";
 		mes "and ^ff000090,000 Zeny^000000.";
@@ -1198,15 +1198,15 @@ M_BENEKI:
 	mes "[Tetsu]";
 	mes "Hmm, very well.";
 	mes "Looks like you've brought me the correct amount of materials and Zeny";
-	mes "Here is your completed Fuuma Shuriken Beneki";
+	mes "Here is your completed Fuuma " + mesitemlink(13250) + " Beneki";
 	close;
 
 //=====================DAISHARIN========================
 M_DAIS:
 	mes "[Tetsu]";
-	mes "Hmm~ I see you've chose the ^ff0000Fuuma Shuriken Daisharin^000000.";
-	mes "Fuuma Shuriken Daisharin In order to create Fuuma Shuriken Daisharin, I require...";
-	mes "30 Steel, 100 Tassels";
+	mes "Hmm~ I see you've chose the ^ff0000Fuuma " + mesitemlink(13250) + " Daisharin^000000.";
+	mes "Fuuma " + mesitemlink(13250) + " Daisharin In order to create Fuuma " + mesitemlink(13250) + " Daisharin, I require...";
+	mes "30 " + mesitemlink(999) + ", 100 Tassels";
 	mes "2 Oridecons, and 40,000 Zeny.";
 	mes "Do you want me to create this item for you?";
 	next;
@@ -1214,11 +1214,11 @@ M_DAIS:
 
 	if(countitem(999)<30 || countitem(7301)<100 || countitem(984)<2){
 		mes "[Tetsu]";
-		mes "It looks like you haven't brought me enough materials to make you a Fuuma Shuriken Daisharin.";
+		mes "It looks like you haven't brought me enough materials to make you a Fuuma " + mesitemlink(13250) + " Daisharin.";
 		next;
 		mes "[Tetsu]";
-		mes "Fuuma Shuriken Daisharin, I require...";
-		mes "^ff000030 Steel^000000, ";
+		mes "Fuuma " + mesitemlink(13250) + " Daisharin, I require...";
+		mes "^ff000030 " + mesitemlink(999) + "^000000, ";
 		mes "^ff0000100 Tassels^000000,";
 		mes "^ff00002 Oridecons^000000,";
 		mes "and ^ff000040,000 Zeny^000000.";
@@ -1230,8 +1230,8 @@ M_DAIS:
 		mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 		next;
 		mes "[Tetsu]";
-		mes "Fuuma Shuriken Daisharin, I require...";
-		mes "^ff000030 Steel^000000, ";
+		mes "Fuuma " + mesitemlink(13250) + " Daisharin, I require...";
+		mes "^ff000030 " + mesitemlink(999) + "^000000, ";
 		mes "^ff0000100 Tassels^000000,";
 		mes "^ff00002 Oridecons^000000,";
 		mes "and ^ff000040,000 Zeny^000000.";
@@ -1246,15 +1246,15 @@ M_DAIS:
 	mes "[Tetsu]";
 	mes "Hmm, very well.";
 	mes "Looks like you've brought me the correct amount of materials and Zeny";
-	mes "Here is your completed Fuuma Shuriken Daisharin";
+	mes "Here is your completed Fuuma " + mesitemlink(13250) + " Daisharin";
 	close;
 
 //=====================DAISHARIN4========================
 M_DAIS4:
 	mes "[Tetsu]";
-	mes "Hmm~ I see you've chose the ^ff0000Fuuma Shuriken Daisharin[4]^000000.";
-	mes "In order to create Fuuma Shuriken Daisharin[4], I require...";
-	mes "20 Cracked Diamonds, 1 Fuuma Shuriken Daisharin";
+	mes "Hmm~ I see you've chose the ^ff0000Fuuma " + mesitemlink(13250) + " Daisharin[4]^000000.";
+	mes "In order to create Fuuma " + mesitemlink(13250) + " Daisharin[4], I require...";
+	mes "20 Cracked Diamonds, 1 Fuuma " + mesitemlink(13250) + " Daisharin";
 	mes "3 Oridecons, and 40,000 Zeny.";
 	mes "Do you want me to create this item for you?";
 	next;
@@ -1267,13 +1267,13 @@ M_DAIS4:
 
 	if(countitem(733)<20 || countitem(13301)<1 || countitem(984)<3){
 		mes "[Tetsu]";
-		mes "It looks like you haven't brought me enough materials to make you a Fuuma Shuriken Daisharin[4].";
+		mes "It looks like you haven't brought me enough materials to make you a Fuuma " + mesitemlink(13250) + " Daisharin[4].";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma Shuriken Daisharin[4], I require...";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Daisharin[4], I require...";
 		mes "^ff000020 Cracked Diamonds^000000,";
 		mes "^ff00003 Oridecons^000000,";
-		mes "1 Fuuma Shuriken Daisharin, and";
+		mes "1 Fuuma " + mesitemlink(13250) + " Daisharin, and";
 		mes "^ff000040,000 Zeny^000000.";
 		mes "Remember these needed materials, and come back after you're positive you have them all.";
 		close;
@@ -1283,10 +1283,10 @@ M_DAIS4:
 		mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma Shuriken Daisharin[4], I require...";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Daisharin[4], I require...";
 		mes "^ff000020 Cracked Diamonds^000000,";
 		mes "^ff00003 Oridecons^000000,";
-		mes "1 Fuuma Shuriken Daisharin, and";
+		mes "1 Fuuma " + mesitemlink(13250) + " Daisharin, and";
 		mes "^ff000040,000 Zeny^000000.";
 		mes "Remember these needed materials, and come back after you're positive you have them all.";
 		close;
@@ -1299,15 +1299,15 @@ M_DAIS4:
 	mes "[Tetsu]";
 	mes "Hmm, very well.";
 	mes "Looks like you've brought me the correct amount of materials and Zeny";
-	mes "Here is your completed Fuuma Shuriken Daisharin[4].";
+	mes "Here is your completed Fuuma " + mesitemlink(13250) + " Daisharin[4].";
 	close;
 
 //=====================REKKA========================
 M_REKKA:
 	mes "[Tetsu]";
-	mes "Hmm~ I see you've chose the ^ff0000Fuuma Shuriken Rekka^000000.";
-	mes "In order to create a Fuuma Shuriken Rekka, I require";
-	mes "50 Steel, 100 Live Coal";
+	mes "Hmm~ I see you've chose the ^ff0000Fuuma " + mesitemlink(13250) + " Rekka^000000.";
+	mes "In order to create a Fuuma " + mesitemlink(13250) + " Rekka, I require";
+	mes "50 " + mesitemlink(999) + ", 100 " + mesitemlink(7098) + "";
 	mes "100 Burning Hearts, 50 Burning Stones";
 	mes "and 78,000 Zeny.";
 	mes "Do you want me to create this item for you?";
@@ -1316,12 +1316,12 @@ M_REKKA:
 
 	if(countitem(999)<50 || countitem(7098)<100 || countitem(7097)<100 || countitem(7521)<50){
 		mes "[Tetsu]";
-		mes "It looks like you haven't brought me enough materials to make you a Fuuma Shuriken Rekka.";
+		mes "It looks like you haven't brought me enough materials to make you a Fuuma " + mesitemlink(13250) + " Rekka.";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma Shuriken Rekka, I require...";
-		mes "^ff000050 Steel^000000,^ff000050 Burning Stones^000000,";
-		mes "^ff0000100 Burning Hearts^000000,^ff0000100 Live Coal^000000,";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Rekka, I require...";
+		mes "^ff000050 " + mesitemlink(999) + "^000000,^ff000050 Burning Stones^000000,";
+		mes "^ff0000100 Burning Hearts^000000,^ff0000100 " + mesitemlink(7098) + "^000000,";
 		mes "and ^ff000078,000 Zeny^000000";
 		mes "Remember these needed materials, and come back after you're positive you have them all.";
 		close;
@@ -1331,9 +1331,9 @@ M_REKKA:
 		mes "Hmm.. You brought plenty of materials, but you're short on zeny.";
 		next;
 		mes "[Tetsu]";
-		mes "In order to create a Fuuma Shuriken Rekka, I require...";
-		mes "^ff000050 Steel^000000,^ff000050 Burning Stones^000000,";
-		mes "^ff0000100 Burning Hearts^000000,^ff0000100 Live Coal^000000,";
+		mes "In order to create a Fuuma " + mesitemlink(13250) + " Rekka, I require...";
+		mes "^ff000050 " + mesitemlink(999) + "^000000,^ff000050 Burning Stones^000000,";
+		mes "^ff0000100 Burning Hearts^000000,^ff0000100 " + mesitemlink(7098) + "^000000,";
 		mes "and ^ff000078,000 Zeny^000000";
 		mes "Remember these needed materials, and come back after you're positive you have them all.";
 		close;
@@ -1347,7 +1347,7 @@ M_REKKA:
 	mes "[Tetsu]";
 	mes "Hmm, very well.";
 	mes "Looks like you've brought me the correct amount of materials and Zeny";
-	mes "Here is your completed Fuuma Shuriken Rekka.";
+	mes "Here is your completed Fuuma " + mesitemlink(13250) + " Rekka.";
 	close;
 
 //=====================I'M SORRY========================
@@ -1360,7 +1360,7 @@ M_NOPE:
 M_CANCEL:
 	mes "[Tetsu]";
 	mes "What a shame.";
-	mes "I wanted to show you the weapons I put my heart and soul into making them.";
+	mes "I wanted to show you the weapons I put my " + mesitemlink(7855) + " and soul into making them.";
 	mes "If you ever have second thoughts, it's never too late to come back and ask.";
 	close;
 }

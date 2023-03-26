@@ -74,7 +74,7 @@ einbech,172,113,4	script	Nemuk#ein	855,{
 		mes "I really want to leave,";
 		mes "but it's just an empty";
 		mes "wish. My body is trapped";
-		mes "here while my heart longs";
+		mes "here while my " + mesitemlink(7855) + " longs";
 		mes "for a much better life. ^333333*Sigh*^000000";
 		mes "Is it hopeless? What can I do?";
 		close;
@@ -592,8 +592,8 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				next;
 				mes "[Shena]";
 				mes "If you defeat a Metalling,";
-				mes "it could drop Large Jellopy,";
-				mes "Iron Ore or even Iron. That";
+				mes "it could drop " + mesitemlink(7126) + ",";
+				mes "" + mesitemlink(1002) + " or even " + mesitemlink(998) + ". That";
 				mes "might be good to know, right?";
 				next;
 				mes "[Shena]";
@@ -626,7 +626,7 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				next;
 				mes "[Shena]";
 				mes "Minerals can defend themselves,";
-				mes "but they might drop Crystal Piece, Topaz or Emvertacon if you defeat one. There's also a slim chance that they may drop a rare jewel, but I'm not quite sure.";
+				mes "but they might drop Crystal Piece, " + mesitemlink(728) + " or Emvertacon if you defeat one. There's also a slim chance that they may drop a rare jewel, but I'm not quite sure.";
 				next;
 				mes "[Shena]";
 				mes "Are there any";
@@ -648,9 +648,9 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 				mes "[Shena]";
 				mes "If you can defeat";
 				mes "them, they'll drop";
-				mes "Old Pick, Lantern, Iron,";
-				mes "Steel, Coal, Flashlight";
-				mes "and Old Iron Plate.";
+				mes "" + mesitemlink(7318) + ", " + mesitemlink(1041) + ", " + mesitemlink(998) + ",";
+				mes "" + mesitemlink(999) + ", " + mesitemlink(1003) + ", " + mesitemlink(7327) + "";
+				mes "and Old " + mesitemlink(998) + " Plate.";
 				next;
 				mes "[Shena]";
 				mes "Did you want";
@@ -670,13 +670,13 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 					mes "Now, you know the importance";
 					mes "of recycling and preserving our";
 					mes "natural resources, right? Now,";
-					mes "it would do my heart good if you were to recycle the scrap iron";
+					mes "it would do my " + mesitemlink(7855) + " good if you were to recycle the scrap " + mesitemlink(998) + "";
 					mes "from those Old Stove monsters.";
 					next;
 					mes "[Shena]";
 					mes "Old Stoves will usually";
-					mes "drop Battered Pot, Burnt Tree,";
-					mes "Iron, Iron Ore and Old Iron Plate. But once in a while they might drop interesting items like Rusty Iron or even Dead Branch.";
+					mes "drop " + mesitemlink(10010) + ", " + mesitemlink(7068) + ",";
+					mes "" + mesitemlink(998) + ", " + mesitemlink(1002) + " and Old " + mesitemlink(998) + " Plate. But once in a while they might drop interesting items like " + mesitemlink(625) + " or even " + mesitemlink(604) + ".";
 					next;
 					break;
 				case 2:
@@ -703,8 +703,8 @@ einbech,46,107,6	script	Shena#ein::EinMonsters	846,{
 					next;
 					mes "[Shena]";
 					mes "Old Stoves will usually";
-					mes "drop Battered Pot, Burnt Tree,";
-					mes "Iron, Iron Ore and Old Iron Plate. But once in a while they might drop interesting items like Rusty Iron or even Dead Branch.";
+					mes "drop " + mesitemlink(10010) + ", " + mesitemlink(7068) + ",";
+					mes "" + mesitemlink(998) + ", " + mesitemlink(1002) + " and Old " + mesitemlink(998) + " Plate. But once in a while they might drop interesting items like " + mesitemlink(625) + " or even " + mesitemlink(604) + ".";
 					next;
 					break;
 				}
@@ -800,10 +800,10 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "formless monsters.";
 			next;
 			mes "[Jung]";
-			mes "Both of them drop Apple,";
-			mes "Dust Pollutant, Toxic Gas,";
-			mes "Poisonous Powder, Bacillus,";
-			mes "Mold Powder and Anodyne.";
+			mes "Both of them drop " + mesitemlink(512) + ",";
+			mes "" + mesitemlink(7320) + ", " + mesitemlink(7322) + ",";
+			mes "" + mesitemlink(7154) + ", " + mesitemlink(7119) + ",";
+			mes "Mold Powder and " + mesitemlink(605) + ".";
 			next;
 			mes "[Jung]";
 			mes "That's all for now.";
@@ -822,9 +822,9 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "kinds of minerals and ores.";
 			next;
 			mes "[Jung]";
-			mes "Pollcellio drops Jubilee,";
-			mes "Insect Antenna, Single Cell,";
-			mes "Moss of Morning Dew, Neon";
+			mes "Pollcellio drops " + mesitemlink(7312) + ",";
+			mes "Insect Antenna, " + mesitemlink(1052) + ",";
+			mes "Moss of " + mesitemlink(6105) + ", Neon";
 			mes "Liquid and a few other things";
 			mes "I can't quite remember.";
 			next;
@@ -843,7 +843,7 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "minerals that contain huge";
 			mes "amounts of energy actually";
 			mes "have souls? Obsidian is";
-			mes "one of these living rocks.";
+			mes "one of these living " + mesitemlink(2796) + ".";
 			next;
 			mes "[Jung]";
 			mes "Supposedly, just a piece of an Obsidian in a Jung Processor has enough energy to light up the night sky. Unfortunately, it's impossible to capture one alive and hunting them isn't so easy.";
@@ -852,8 +852,8 @@ einbech,148,242,5	script	Jung#ein	855,{
 			mes "Obsidian is a small,";
 			mes "shapeless monster that";
 			mes "drops Clear Jewel, Piece of";
-			mes "Black Crystal, Coal, Elunium,";
-			mes "Iron and Steel.";
+			mes "Black Crystal, " + mesitemlink(1003) + ", " + mesitemlink(985) + ",";
+			mes "" + mesitemlink(998) + " and " + mesitemlink(999) + ".";
 			next;
 			mes "[Jung]";
 			mes "That's all for Obsidian.";
@@ -928,7 +928,7 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "[Franz]";
 			mes "According to legend,";
 			mes "ancient giants snuck into";
-			mes "a mine to steal coal from";
+			mes "a mine to steal " + mesitemlink(1003) + " from";
 			mes "humans. But they made too";
 			mes "much noise while they were";
 			mes "digging and awoke Ungoliant.";
@@ -944,8 +944,8 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "Now, an adventurer that";
 			mes "managed to kill an Ungoliant";
 			mes "has told me that it drops Ant's";
-			mes "Jaw, Colorful Shell, Very Hard";
-			mes "Shell, Long Leg, Neon Liquid";
+			mes "Jaw, Colorful " + mesitemlink(935) + ", Very Hard";
+			mes "" + mesitemlink(935) + ", Long Leg, Neon Liquid";
 			mes "and Zilcon.";
 			close;
 		case 2:
@@ -995,7 +995,7 @@ einbech,148,246,5	script	Franz#ein	851,{
 			mes "According to adventurers";
 			mes "who have caught these bears,";
 			mes "they're small, neutral monsters";
-			mes "which drop Honey, Screw, Well-baked Cookie and Oridecon Hammer.";
+			mes "which drop Honey, Screw, " + mesitemlink(538) + " and " + mesitemlink(615) + ".";
 			next;
 			mes "[Franz]";
 			mes "That's all I know";

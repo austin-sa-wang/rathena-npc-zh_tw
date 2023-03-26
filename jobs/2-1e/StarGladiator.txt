@@ -48,7 +48,7 @@ payon,215,102,3	script	Moohyun#job_star	828,3,3,{
 				mes "as to what you want to be?";
 				next;
 				mes "[Moohyun]";
-				mes "If your heart isn't already";
+				mes "If your " + mesitemlink(7855) + " isn't already";
 				mes "set on it, why don't you become";
 				mes "a ^4D4DFFwarrior of the Sun, the Moon,^FFFFFF ^4D4DFF and the Stars^000000? Just consider it.";
 				next;
@@ -101,7 +101,7 @@ payon,215,102,3	script	Moohyun#job_star	828,3,3,{
 							mes "Alright, you can find Moogang";
 							mes "in Comodo, supposedly at the";
 							mes "place that's closest to the sky. In the meantime, I'll write a";
-							mes "letter of recommendation that";
+							mes "" + mesitemlink(7416) + " that";
 							mes "I'll send to him for you.";
 							set STGL_Q,1;
 							setquest 7007;
@@ -156,7 +156,7 @@ payon,215,102,3	script	Moohyun#job_star	828,3,3,{
 		else if (STGL_Q == 1) {
 			mes "[Moohyun]";
 			mes "I've already sent him my";
-			mes "letter of recommendation";
+			mes "" + mesitemlink(7416) + "";
 			mes "for you, so go ahead and";
 			mes "visit Moogang in Comodo.";
 			mes "He'll start training you to";
@@ -194,7 +194,7 @@ payon,215,102,3	script	Moohyun#job_star	828,3,3,{
 			mes "me, when you face difficulty in";
 			mes "life, obstacles to your goals,";
 			mes "how do you respond? What";
-			mes "does your heart feel, man?";
+			mes "does your " + mesitemlink(7855) + " feel, man?";
 			next;
 			mes "[Moohyun]";
 			mes "I know that Beeryu asked you";
@@ -214,7 +214,7 @@ payon,215,102,3	script	Moohyun#job_star	828,3,3,{
 				mes "[Moohyun]";
 				mes "Yes, that's it!";
 				mes "When your resolution";
-				mes "is backed by an iron will,";
+				mes "is backed by an " + mesitemlink(998) + " will,";
 				mes "you will have the patience";
 				mes "to weather out all things.";
 				mes "Show Beeryu your resolve...";
@@ -420,7 +420,7 @@ comodo,172,230,3	script	Wandering Master#job_sta	730,{
 				mes "^4D4DFFRough Wind^000000,";
 				mes "^4D4DFFGreat Nature^000000,";
 				mes "^4D4DFFMystic Frozen^000000 and";
-				mes "^4D4DFFFlame Heart^000000.";
+				mes "^4D4DFFFlame " + mesitemlink(7855) + "^000000.";
 				mes "Now go...";
 				set STGL_Q,2;
 				changequest 7007,7008;
@@ -503,7 +503,7 @@ comodo,172,230,3	script	Wandering Master#job_sta	730,{
 			mes "^4D4DFFRough Wind^000000,";
 			mes "^4D4DFFGreat Nature^000000,";
 			mes "^4D4DFFMystic Frozen^000000 and";
-			mes "^4D4DFFFlame Heart^000000.";
+			mes "^4D4DFFFlame " + mesitemlink(7855) + "^000000.";
 			mes "Now go...";
 			close;
 		}
@@ -590,7 +590,7 @@ comodo,172,230,3	script	Wandering Master#job_sta	730,{
 			next;
 			if (select("Yes, please.:Maybe later.") == 1) {
 				mes "[Moogang]";
-				mes "Don't lose heart...";
+				mes "Don't lose " + mesitemlink(7855) + "...";
 				mes "I expect that you will";
 				mes "achieve your goal of";
 				mes "becoming a Taekwon";
@@ -615,7 +615,7 @@ comodo,172,230,3	script	Wandering Master#job_sta	730,{
 			next;
 			if (select("Yes, please.:Maybe later.") == 1) {
 				mes "[Moogang]";
-				mes "Don't lose heart...";
+				mes "Don't lose " + mesitemlink(7855) + "...";
 				mes "I expect that you will";
 				mes "achieve your goal of";
 				mes "becoming a Taekwon";
@@ -905,7 +905,7 @@ job_star,29,33,0	script	Daru#job_star	59,{
 				mes "[Daru]";
 				mes "Mmm...";
 				mes "The answer should";
-				mes "come from your heart,";
+				mes "come from your " + mesitemlink(7855) + ",";
 				mes "rather than your mind.";
 				mes "Everyone needs something";
 				mes "from the sun. Let's see now...";
@@ -924,7 +924,7 @@ job_star,29,33,0	script	Daru#job_star	59,{
 			mes "its sands kissed by the Sun.";
 			mes "A marsh is a Lunar place,";
 			mes "its wolves driven by the Moon.";
-			mes "A deep cave is a Stellar place, its knights enchanted by Stars.^000000''";
+			mes "A deep cave is a " + mesitemlink(2294) + " place, its knights enchanted by Stars.^000000''";
 			next;
 			mes "[Daru]";
 			mes "Now, which of the";
@@ -1140,7 +1140,7 @@ job_star,95,33,0	script	Beeryu#job_star	106,{
 				break;
 			case 3:
 				mes "[Beeryu]";
-				mes "The Gold Moon...?";
+				mes "The " + mesitemlink(969) + " Moon...?";
 				mes "Ah, that is a moon of";
 				mes "affluence and wealth. Now,";
 				mes "to aspire to attain prosperity";
@@ -1232,7 +1232,7 @@ job_star,95,33,0	script	Beeryu#job_star	106,{
 			mes "its sands kissed by the Sun.";
 			mes "A marsh is a Lunar place,";
 			mes "its wolves driven by the Moon.";
-			mes "A deep cave is a Stellar place, its knights enchanted by Stars.^000000''";
+			mes "A deep cave is a " + mesitemlink(2294) + " place, its knights enchanted by Stars.^000000''";
 			next;
 			mes "[Beeryu]";
 			mes "According to these";
@@ -1499,7 +1499,7 @@ job_star,161,33,0	script	Cheehee#job_star	77,{
 			mes "its sands kissed by the Sun.";
 			mes "A marsh is a Lunar place,";
 			mes "its wolves driven by the Moon.";
-			mes "A deep cave is a Stellar place, its knights enchanted by Stars.^000000''";
+			mes "A deep cave is a " + mesitemlink(2294) + " place, its knights enchanted by Stars.^000000''";
 			next;
 			mes "[Cheehee]";
 			mes "Now...";

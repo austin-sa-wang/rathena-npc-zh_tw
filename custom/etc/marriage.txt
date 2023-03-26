@@ -137,7 +137,7 @@ function SF_Groom {
 		break;
 	case 4:
 		mes "["+@name$+"]";
-		mes "Your partner's wedding ring hasn't been retrieved yet. The ceremony will start as soon as you both have claimed your rings.";
+		mes "Your partner's " + mesitemlink(2634) + " hasn't been retrieved yet. The ceremony will start as soon as you both have claimed your rings.";
 		close;
 	case 5:
 		mes "["+@name$+"]";
@@ -173,7 +173,7 @@ function SF_Bride {
 		break;
 	case 4:
 		mes "["+@name$+"]";
-		mes "Your partner's wedding ring hasn't been retrieved yet. The ceremony will start as soon as you both have claimed your rings.";
+		mes "Your partner's " + mesitemlink(2634) + " hasn't been retrieved yet. The ceremony will start as soon as you both have claimed your rings.";
 		close;
 	case 5:
 		mes "["+@name$+"]";
@@ -277,7 +277,7 @@ function SF_RetrieveRingM {
 		mes "You don't seem to have enough space to carry the ring... go free up some space and come back to reclaim your partner's ring.";
 		close;
 	}
-	mes "Here's the wedding ring for your bride.";
+	mes "Here's the " + mesitemlink(2634) + " for your bride.";
 	if ($@wed_ring) delitem $@wed_ring,1;
 	set $wed_groom_progress,4;
 	
@@ -304,7 +304,7 @@ function SF_RetrieveRingF {
 		mes "You don't seem to have enough space to carry the ring... go free up some space and come back to reclaim your partner's ring.";
 		close;
 	}
-	mes "Here's the wedding ring for your groom.";
+	mes "Here's the " + mesitemlink(2634) + " for your groom.";
 	if ($@wed_ring) delitem $@wed_ring,1;
 	set $wed_bride_progress,4;
 
@@ -802,7 +802,7 @@ function SF_Procedure {
 		mes "But first, you need to get your rings ready.";
 		next;
 		mes "["+@name$+"]";
-		mes "Talk to the priest once more, and he will exchange your "+getitemname($@wed_ring)+" for a wedding ring. After you both have claimed the rings for exchanging, the ceremony will begin.";
+		mes "Talk to the priest once more, and he will exchange your "+getitemname($@wed_ring)+" for a " + mesitemlink(2634) + ". After you both have claimed the rings for exchanging, the ceremony will begin.";
 	}
 	next;
 	mes "["+@name$+"]";

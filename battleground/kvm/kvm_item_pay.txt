@@ -77,7 +77,7 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 				case 2:
 					mes "[Logistics]";
 					mes "You have selected the 'One-handed Sword' category.";
-					mes "There are 3 One-handed Swords: Glorious Flamberge, Glorious Rapier and Glorious Holy Avenger.";
+					mes "There are 3 One-handed Swords: " + mesitemlink(13416) + ", " + mesitemlink(13417) + " and " + mesitemlink(13418) + ".";
 					mes "If you want their details, please refer to the KVM Catalogue.";
 					mes "Please select one of them.";
 					next;
@@ -92,14 +92,14 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 				}
 			case 2:
 				mes "[Logistics]";
-				mes "You have selected the 'Staff/Mace/Axe/Shuriken' category.";
+				mes "You have selected the 'Staff/Mace/Axe/" + mesitemlink(13250) + "' category.";
 				mes "Please select a sub-category.";
 				next;
 				switch(select("Staff:Mace:One-handed Axe:Two-handed Axe:Shuriken")) {
 				case 1:
 					mes "[Logistics]";
 					mes "You have selected the 'Staff' category.";
-					mes "There are 3 Staffs: a Two-handed Weapon Glorious Destruction Staff, a One-handed Glorious Arc Wand and a Glorious Healing Staff.";
+					mes "There are 3 Staffs: a Two-handed Weapon " + mesitemlink(2002) + ", a One-handed " + mesitemlink(1640) + " and a Glorious " + mesitemlink(1625) + ".";
 					mes "If you want their details, please refer to the KVM Catalogue.";
 					mes "Please select one of them.";
 					next;
@@ -123,7 +123,7 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 				case 2:
 					mes "[Logistics]";
 					mes "You have selected the 'Katar' category.";
-					mes "There are 2 Katars: Glorious Bloody Roar and Glorious Jamadhar.";
+					mes "There are 2 Katars: " + mesitemlink(1281) + " and " + mesitemlink(1282) + ".";
 					mes "If you want their details, please refer to the KVM Catalogue.";
 					mes "Please select one of them.";
 					next;
@@ -143,7 +143,7 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 				case 1:
 					mes "[Logistics]";
 					mes "You have selected 'Book'.";
-					mes "There are 2 Books: Glorious Tablet and Glorious Apocalypse.";
+					mes "There are 2 Books: " + mesitemlink(1576) + " and " + mesitemlink(1577) + ".";
 					mes "If you want their details, please refer to the KVM Catalogue.";
 					mes "Please select one of them.";
 					next;
@@ -154,7 +154,7 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 				case 2:
 					mes "[Logistics]";
 					mes "You have selected the 'Knuckle' category.";
-					mes "There are 2 Knuckles: Glorious Claw and Glorious Fist.";
+					mes "There are 2 Knuckles: " + mesitemlink(1826) + " and " + mesitemlink(1827) + ".";
 					mes "If you want their details, please refer to the KVM Catalogue.";
 					mes "Please select one of them.";
 					next;
@@ -222,7 +222,7 @@ bat_room,151,144,3	script	KVM Logistic Officer#a	734,{
 		mes "Accessory rewards require 1,200 KVM points for each.";
 		next;
 		mes "[Logistics]";
-		mes "Kreiger Weapons are LV 4 Weapons, they can be upgraded and will have special effects: Slaughter, Destruction and Blessing.";
+		mes "Kreiger Weapons are LV 4 Weapons, they can be upgraded and will have special effects: " + mesitemlink(1367) + ", Destruction and Blessing.";
 		next;
 		mes "[Logistics]";
 		mes "When you can wear all 3 armors, you can have a special set of options.";

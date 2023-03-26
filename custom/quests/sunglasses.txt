@@ -36,14 +36,14 @@ alberta,88,193,5	script	Sunglasses Trader	73,{
 	next;
 	if(select("How much?:No way, I will find her myself!")==2) {
 		mes "[Sunglasses Trader]";
-		mes "Suit yourself, the Maker will not make you ^0000FFSlotted Sunglasses^000000 unless she knows that you are coming.";
+		mes "Suit yourself, the Maker will not make you ^0000FFSlotted " + mesitemlink(2201) + "^000000 unless she knows that you are coming.";
 		mes "Only I can tell her you are coming.";
 		next;
 		mes "[Sunglasses Trader]";
 		mes "Come back to me when you have given up. Hahaha...";
 		close; }
 	mes "[Sunglasses Trader]";
-	mes "In order for me to tell you information on ^0000FFSlotted Sunglasses^000000 you need to get me:";
+	mes "In order for me to tell you information on ^0000FFSlotted " + mesitemlink(2201) + "^000000 you need to get me:";
 	mes " - ^0000881 Carat Diamond^000000";
 	mes " - ^00008850 Feathers^000000";
 	mes " - ^000088100000z^000000";
@@ -75,7 +75,7 @@ moc_fild07,334,186,5	script	Maseph	702,{
 		mes "Lovely day, isn't it ?";
 		close; }
 	mes "Hello there.";
-	mes "You came for the ^000088Slotted Sunglasses^000000, right?";
+	mes "You came for the ^000088Slotted " + mesitemlink(2201) + "^000000, right?";
 	next;
 	if(select("Yes:No, sorry to bother you.")==2) {
 		mes "[Maseph]";
@@ -101,7 +101,7 @@ moc_fild07,334,186,5	script	Maseph	702,{
 	next;
 	mes "[Maseph]";
 	mes "Here you go, my friend.";
-	mes "Enjoy your ^000088Slotted Sunglasses^000000.";
+	mes "Enjoy your ^000088Slotted " + mesitemlink(2201) + "^000000.";
 	getitem 2202,1;
 	set SG_QUEST1,0;
 	close;

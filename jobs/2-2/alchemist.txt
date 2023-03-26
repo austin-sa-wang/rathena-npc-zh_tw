@@ -90,7 +90,7 @@ alde_alche,27,185,5	script	Alchemist Guildsman#am	744,{
 			next;
 			mes "[Parmy Gianino]";
 			mes "Most people think our final goal";
-			mes "is to create gold, but that's not the entire truth. We also want to create things like medicines";
+			mes "is to create " + mesitemlink(969) + ", but that's not the entire truth. We also want to create things like medicines";
 			mes "and new materials.";
 			next;
 			mes "[Parmy Gianino]";
@@ -187,7 +187,7 @@ alde_alche,27,185,5	script	Alchemist Guildsman#am	744,{
 				case 1:
 					set ALCH_Q,1;
 					setquest 2028;
-					mes "^551A8B7 Berserk Potions^000000.";
+					mes "^551A8B7 " + mesitemlink(1814) + " Potions^000000.";
 					break;
 				case 2:
 					set ALCH_Q,2;
@@ -226,7 +226,7 @@ alde_alche,27,185,5	script	Alchemist Guildsman#am	744,{
 			mes "Well now~!";
 			mes "You've brought an";
 			mes "Old Magic Book and";
-			mes "a Hammer of Blacksmith.";
+			mes "a " + mesitemlink(1005) + ".";
 			mes "We'll put these items";
 			mes "to good use.";
 			next;
@@ -546,7 +546,7 @@ alde_alche,175,107,3	script	Fastidious Alchemist#am	749,{
 			mes "[Raspuchin Gregory]";
 			mes "How much do";
 			mes "12 Red Potions,";
-			mes "1 Butterfly Wing";
+			mes "1 " + mesitemlink(602) + "";
 			mes "and 5 Fly Wings cost";
 			mes "after a 24 % discount?";
 			next;
@@ -556,17 +556,17 @@ alde_alche,175,107,3	script	Fastidious Alchemist#am	749,{
 			mes "What is the";
 			mes "total weight of";
 			mes "3 Scimiters, 2 Helms";
-			mes "and 1 Long Coat?";
+			mes "and 1 Long " + mesitemlink(2309) + "?";
 			next;
 			input .@input;
 			if (.@input != 450) set .@w_point,.@w_point+1;
 			mes "[Raspuchin Gregory]";
 			mes "What is the";
 			mes "total defense of";
-			mes "a Biretta, Mantle,";
-			mes "Opera Mask, Ribbon,";
-			mes "Muffler, Boots, and";
-			mes "Ear Muffs?";
+			mes "a " + mesitemlink(2216) + ", " + mesitemlink(2307) + ",";
+			mes "Opera Mask, " + mesitemlink(2208) + ",";
+			mes "" + mesitemlink(2503) + ", " + mesitemlink(2405) + ", and";
+			mes "" + mesitemlink(2283) + "?";
 			next;
 			input .@input;
 			if (.@input != 20) set .@w_point,.@w_point+1;
@@ -630,23 +630,23 @@ alde_alche,175,107,3	script	Fastidious Alchemist#am	749,{
 			mes "What is the";
 			mes "total weight of";
 			mes "3 Ring Pommel Sabers,";
-			mes "4 Caps, and 2 Boots?";
+			mes "4 Caps, and 2 " + mesitemlink(2405) + "?";
 			next;
 			input .@input;
 			if (.@input != 550) set .@w_point,.@w_point+1;
 			mes "[Raspuchin Gregory]";
 			mes "What is the";
 			mes "total defense of";
-			mes "a Buckler, Long Coat,";
-			mes "Gas Mask, Big Ribbon,";
-			mes "Cute Ribbon, Sakkat,";
-			mes "and Glasses?";
+			mes "a " + mesitemlink(2103) + ", Long " + mesitemlink(2309) + ",";
+			mes "" + mesitemlink(5005) + ", " + mesitemlink(2244) + ",";
+			mes "" + mesitemlink(2250) + ", " + mesitemlink(2280) + ",";
+			mes "and " + mesitemlink(2203) + "?";
 			next;
 			input .@input;
 			if (.@input != 16) set .@w_point,.@w_point+1;
 			mes "[Raspuchin Gregory]";
 			mes "How much profit do you";
-			mes "make if you buy Tights";
+			mes "make if you buy " + mesitemlink(2330) + "";
 			mes "at a 24 % discount and";
 			mes "sell it at 20 % of";
 			mes "the normal price?";
@@ -699,14 +699,14 @@ alde_alche,175,107,3	script	Fastidious Alchemist#am	749,{
 			mes "What is the";
 			mes "total weight of";
 			mes "2 Ring Pommel Sabers,";
-			mes "3 Caps, and 3 boots?";
+			mes "3 Caps, and 3 " + mesitemlink(2405) + "?";
 			next;
 			input .@input;
 			if (.@input != 480) set .@w_point,.@w_point+1;
 			mes "[Raspuchin Gregory]";
 			mes "What is the";
 			mes "total defense of";
-			mes "a Mirror Shield, Mr. Smile, Leather Jacket, Silk Robe, Wedding Veil, Muffler, and Eye Patch?";
+			mes "a " + mesitemlink(2107) + ", " + mesitemlink(2278) + ", Leather " + mesitemlink(2303) + ", " + mesitemlink(2321) + ", " + mesitemlink(2206) + ", " + mesitemlink(2503) + ", and " + mesitemlink(2212) + "?";
 			next;
 			input .@input;
 			if (.@input != 12) set .@w_point,.@w_point+1;
@@ -879,7 +879,7 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 		mes "Cultivating joy and happiness";
 		mes "is much like cultivating flowers.";
 		mes "If something is missing, the";
-		mes "flower will wilt away...";
+		mes "" + mesitemlink(712) + " will wilt away...";
 		next;
 		mes "[Darwin]";
 		mes "What brings you";
@@ -913,9 +913,9 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			mes "[Darwin]";
 			mes "^551A8B3 Medicine Bowls^000000,";
 			mes "^551A8B3 Empty Bottles^000000,";
-			mes "^551A8B1 Red Herb^000000,";
-			mes "^551A8B1 Yellow Herb^000000 and";
-			mes "^551A8B1 White Herb^000000.";
+			mes "^551A8B1 " + mesitemlink(507) + "^000000,";
+			mes "^551A8B1 " + mesitemlink(508) + "^000000 and";
+			mes "^551A8B1 " + mesitemlink(509) + "^000000.";
 			set ALCH_Q,7;
 			changequest 2032,2033;
 			next;
@@ -946,15 +946,15 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			next;
 			mes "[Darwin]";
 			mes "But yes...";
-			mes "It was a flower.";
+			mes "It was a " + mesitemlink(712) + ".";
 			mes "With its shine, it was said";
 			mes "to let you see paradise.";
-			mes "The ^551A8BIllusion Flower^000000...";
+			mes "The ^551A8BIllusion " + mesitemlink(712) + "^000000...";
 			next;
 			mes "[Darwin]";
 			mes "I even made";
 			mes "a Homunculus,";
-			mes "but no one believed that I could create new life from a flower...";
+			mes "but no one believed that I could create new life from a " + mesitemlink(712) + "...";
 			next;
 			mes "[Darwin]";
 			mes "Then...";
@@ -995,40 +995,40 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 		if (countitem(710) > 0) {
 			mes "[Darwin]";
 			mes "Wait.";
-			mes "That Illusion Flower.";
+			mes "That " + mesitemlink(710) + ".";
 			mes "How did you get that?";
 			next;
 			mes "[Darwin]";
 			mes "Where did you find it?!";
-			mes "The flower that slowly";
+			mes "The " + mesitemlink(712) + " that slowly";
 			mes "blooms under the";
 			mes "moonlight?";
 			mes "It's beautiful...!";
 			next;
 			mes "[Darwin]";
-			mes "Th-That flower...";
+			mes "Th-That " + mesitemlink(712) + "...";
 			mes "Please let me see it.";
-			mes "The Illusion Flower!";
+			mes "The " + mesitemlink(710) + "!";
 			mes "Uwaaaaaaah!!";
 			next;
 			mes "[Darwin]";
 			mes "Would you be so kind";
-			mes "as to let me have this flower?";
-			mes "I'm sure that this is the Moonlight Flower that I've been seeking!";
+			mes "as to let me have this " + mesitemlink(712) + "?";
+			mes "I'm sure that this is the Moonlight " + mesitemlink(712) + " that I've been seeking!";
 			next;
 			if (select("Sorry, I can't give it to you.:I brought it to give to you.") == 1) {
 				mes "[Darwin]";
 				mes "I understand.";
 				mes "You can't give";
 				mes "such a precious";
-				mes "flower to just anyone.";
+				mes "" + mesitemlink(712) + " to just anyone.";
 				mes "Well... It's okay.";
 				next;
 				mes "[Darwin]";
 				mes "It just brought back old memories. I shouldn't have asked in the first place. In any case, please bring what is needed for the experiment.";
 				next;
 				mes "[Darwin]";
-				mes "Please leave that flower";
+				mes "Please leave that " + mesitemlink(712) + "";
 				mes "somewhere else. It brings";
 				mes "back too many memories...";
 				close;
@@ -1037,7 +1037,7 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			mes "Are you";
 			mes "serious?!";
 			mes "Thank you!";
-			mes "Such a precious flower.";
+			mes "Such a precious " + mesitemlink(712) + ".";
 			mes "Ah, Harmona, my love...";
 			next;
 			mes "[Darwin]";
@@ -1102,16 +1102,16 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			mes "Seems like you have everything ready. As promised, I will teach you how to make simple medicine.";
 			next;
 			mes "[Darwin]";
-			mes "First, prepare the Medicine Bowl. Then, you put the Herbs inside, like this, and slowly crush them.";
+			mes "First, prepare the " + mesitemlink(7134) + ". Then, you put the Herbs inside, like this, and slowly crush them.";
 			next;
 			mes "[Darwin]";
 			mes "Pour small amounts";
 			mes "of clean water and stir";
-			mes "the mixture until it thickens.";
+			mes "the " + mesitemlink(974) + " until it thickens.";
 			mes "Afterwards, add some more Herbs.";
 			next;
 			mes "[Darwin]";
-			mes "That's how you make it. If you think you have enough, gently pour the mixture into an empty bottle.";
+			mes "That's how you make it. If you think you have enough, gently pour the " + mesitemlink(974) + " into an " + mesitemlink(713) + ".";
 			delitem 7134,3; //Medicine_Bowl
 			delitem 713,3; //Empty_Bottle
 			delitem 507,1; //Red_Herb
@@ -1155,7 +1155,7 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			case 3:
 				set .@w_point,.@w_point+1;
 				mes "[Darwin]";
-				mes "A Harp?";
+				mes "A " + mesitemlink(1909) + "?";
 				mes "And how would";
 				mes "you do that?";
 				next;
@@ -1246,7 +1246,7 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 				mes "......";
 				next;
 				mes "[Darwin]";
-				mes "You messed up the mixture";
+				mes "You messed up the " + mesitemlink(974) + "";
 				mes "since you didn't follow the procedure! Get some more ingredients so you can try it";
 				mes "again until you get it right.";
 				close;
@@ -1281,10 +1281,10 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 			next;
 			mes "[Darwin]";
 			mes "^551A8B3 Medicine Bowls^000000,";
-			mes "^551A8B3 Empty Bottle^000000,";
-			mes "^551A8B1 Red Herb^000000,";
-			mes "^551A8B1 Yellow Herb^000000 and";
-			mes "^551A8B1 White Herb^000000.";
+			mes "^551A8B3 " + mesitemlink(713) + "^000000,";
+			mes "^551A8B1 " + mesitemlink(507) + "^000000,";
+			mes "^551A8B1 " + mesitemlink(508) + "^000000 and";
+			mes "^551A8B1 " + mesitemlink(509) + "^000000.";
 			next;
 			mes "[Darwin]";
 			mes "Come back";
@@ -1302,7 +1302,7 @@ alde_alche,13,15,7	script	Studying Man#am	750,{
 		mes "[Darwin]";
 		mes "Aah...";
 		mes "Harmona, my love.";
-		mes "I can't even see the flower anymore. My soul quietly";
+		mes "I can't even see the " + mesitemlink(712) + " anymore. My soul quietly";
 		mes "withers as well..";
 		close;
 	}
@@ -1427,7 +1427,7 @@ alde_alche,79,19,5	script	Experiment Expert#am	748,{
 			mes "[Van Helmont]";
 			mes "Okay, I got it.";
 			mes "Go learn how to make";
-			mes "a Counteragent and Mixture";
+			mes "a " + mesitemlink(973) + " and " + mesitemlink(974) + "";
 			mes "from Molgenstein.";
 			next;
 			mes "[Van Helmont]";
@@ -1467,7 +1467,7 @@ alde_alche,79,19,5	script	Experiment Expert#am	748,{
 		close;
 	}
 	else if (ALCH_Q == 9) {
-		mes "Alright, if I make an incision here in the Tentacle, and add a Jellopy and Sticky Mucus solution into the... Where the hell did my Medicine Bowl go?";
+		mes "Alright, if I make an incision here in the " + mesitemlink(962) + ", and add a " + mesitemlink(909) + " and " + mesitemlink(938) + " solution into the... Where the hell did my " + mesitemlink(7134) + " go?";
 		next;
 		mes "[Van Helmont]";
 		mes "Did I use them all at a time like this?! I wonder if Nicholas has any left. Ugh, what a pain. Wait. Wait a minute...";
@@ -1502,13 +1502,13 @@ alde_alche,79,19,5	script	Experiment Expert#am	748,{
 			mes "[Van Helmont]";
 			mes "Which item is not";
 			mes "necessary to make";
-			mes "a Counteragent?";
+			mes "a " + mesitemlink(973) + "?";
 			next;
 			if (select("Karvodailnirol:Detrimindexta:Alcohol") != 1) set .@w_point,.@w_point+1;
 			mes "[Van Helmont]";
 			mes "What item is not";
 			mes "necessary to make";
-			mes "a Mixture?";
+			mes "a " + mesitemlink(974) + "?";
 			next;
 			if (select("Karvodailnirol:Detrimindexta:Alcohol") != 2) set .@w_point,.@w_point+1;
 			if (.@w_point > 0) {
@@ -1543,13 +1543,13 @@ alde_alche,79,19,5	script	Experiment Expert#am	748,{
 			mes "[Van Helmont]";
 			mes "What item do";
 			mes "you need to make";
-			mes "a Counteragent?";
+			mes "a " + mesitemlink(973) + "?";
 			next;
 			select("Feather:Sticky Mucus:Animal Gore");
 			mes "[Van Helmont]";
 			mes "What item do";
 			mes "you need to make";
-			mes "a Mixture?";
+			mes "a " + mesitemlink(974) + "?";
 			next;
 			select("Monster Feed:Ancient Lips:Rotten Bandage");
 			mes "[Van Helmont]";
@@ -1917,11 +1917,11 @@ alde_alche,145,19,1	script	Chief Researcher#am	57,{
 		set ALCH_Q,23;
 		changequest 2037,2038;
 		mes "[Nicholas Flamel]";
-		mes "1 Mixture,";
-		mes "5 Burnt Tree,";
-		mes "5 Fine Sand,";
-		mes "3 Rough Oridecon";
-		mes "and 3 Rough Elunium.";
+		mes "1 " + mesitemlink(974) + ",";
+		mes "5 " + mesitemlink(7068) + ",";
+		mes "5 " + mesitemlink(7043) + ",";
+		mes "3 " + mesitemlink(756) + "";
+		mes "and 3 " + mesitemlink(757) + ".";
 		getitem 974,1; //Mixture
 		getitem 7068,5; //Burn_Tree
 		getitem 7043,5; //Fine_Sand

@@ -184,7 +184,7 @@ N_JurJeramiah:
 	mes "^FF0000----------------^000000";
 	mes "Standard delivery quest.";
 	mes " ";
-	mes "Jeramiah ordered a Special Jur from our weapon shop.Your Job is to deliver it to him in the Assasin Temple.";
+	mes "Jeramiah ordered a Special " + mesitemlink(1250) + " from our weapon shop.Your Job is to deliver it to him in the Assasin Temple.";
 	getitem 1998,1; //Jeramiah's_Jur
 	set two_qset,2;
 	goto L_QuestGiven;
@@ -226,7 +226,7 @@ N_Delivery1:
 	mes "^FF0000----------------^000000";
 	mes "Standard drop off quest.";
 	mes " ";
-	mes "In this quest you need to deliver a mystery box to someone names ^FF0000Flank at the bridge between Aldebaran and Juno^000000.";
+	mes "In this quest you need to deliver a mystery " + mesitemlink(7948) + " to someone names ^FF0000Flank at the bridge between Aldebaran and Juno^000000.";
 	getitem 1082,1; //Delivery_Box_
 	set three_qset,2;
 	goto L_QuestGiven;
@@ -243,13 +243,13 @@ N_ProntCulvert:
 	goto L_QuestGiven;
 
 N_CoalMine:
-	mes "^FF0000Trouble at the Coal Mine^000000";
+	mes "^FF0000Trouble at the " + mesitemlink(1003) + " Mine^000000";
 	mes "^FF0000************************^000000";
 	mes "The fun...err...trouble never stops in Rune-Midgarts.";
 	mes " ";
-	mes "Recently there was an accident at the coal mines. There was a huge chasm that released some undead Evil Druids.";
+	mes "Recently there was an accident at the " + mesitemlink(1003) + " mines. There was a huge chasm that released some undead Evil Druids.";
 	next;
-	mes "The Evil Druids started to turn all the workers into the undead. We do not know why, but we do not want to find out, contact a man named Rudolfo outside the Coal Mines.";
+	mes "The Evil Druids started to turn all the workers into the undead. We do not know why, but we do not want to find out, contact a man named Rudolfo outside the " + mesitemlink(1003) + " Mines.";
 	set three_qset,4;
 	goto L_QuestGiven;
 
@@ -278,7 +278,7 @@ N_MWizard:
 	goto L_QuestGiven;
 
 N_Shoot:
-	mes "^FF0000Aww shoot!^000000";
+	mes "^FF0000Aww " + mesitemlink(711) + "!^000000";
 	mes "^FF0000----------^000000";
 	mes "A little girl is in trouble.";
 	mes " ";
@@ -347,7 +347,7 @@ N_JobList6:
 	mes "^FF0000------------------^000000";
 	mes "How ironic.";
 	mes " ";
-	mes "Deliver this Box to the Thieves guild.";
+	mes "Deliver this " + mesitemlink(7948) + " to the Thieves guild.";
 	getitem 1083,1; //Delivery_Box__
 	set six_qset,1;
 	goto L_QuestGiven;
@@ -366,7 +366,7 @@ N_Delivery2:
 	mes "^FF0000----------------^000000";
 	mes "Well most of what we do is run packages, this is no different from other's.";
 	mes " ";
-	mes "Take this box, DO NOT OPEN IT! To a little girl in Lutie named Chirach she should be around Santa.";
+	mes "Take this " + mesitemlink(7948) + ", DO NOT OPEN IT! To a little girl in Lutie named Chirach she should be around Santa.";
 	getitem 1083,1; //Delivery_Box__
 	set six_qset,3;
 	goto L_QuestGiven;
@@ -388,7 +388,7 @@ N_JobList7:
 	menu "Apple Juice",-,"Delivery",N_Delivery3,"^FF0000Golden Thief Bug^000000",N_GTB,"^FF0000Evil Pirates^000000",N_EvilPirates;
 	mes "^FF0000Apple Juice^000000";
 	mes "^FF0000-----------^000000";
-	mes "Can't say no to some good apple juice.";
+	mes "Can't say no to some good " + mesitemlink(531) + ".";
 	mes " ";
 	mes "There is a little girl up in Prontera Square a bit north from the fountain, go talk to her.";
 	set seven_qset,1;
@@ -399,7 +399,7 @@ N_Delivery3:
 	mes "^FF0000--------^000000";
 	mes "So many packages so little time.";
 	mes " ";
-	mes "Take this box to a man in Alberta named Charles.";
+	mes "Take this " + mesitemlink(7948) + " to a man in Alberta named Charles.";
 	getitem 1082,1; //Delivery_Box_
 	set seven_qset,2;
 	goto L_QuestGiven;
@@ -439,7 +439,7 @@ N_JobList8:
 N_Delivery4:
 	mes "^FF0000Another Delivery^000000";
 	mes "^FF0000----------------^000000";
-	mes "Well yah box delivering is in high demand,lots of lazy people.";
+	mes "Well yah " + mesitemlink(7948) + " delivering is in high demand,lots of lazy people.";
 	mes " ";
 	mes "Take this package to a man in Morocc named Klye.";
 	getitem 1081,1; //Delivery_Box
@@ -460,7 +460,7 @@ N_LostBeeds:
 	mes "^FF0000-------------^000000";
 	mes "Oh great I smell stupidity...";
 	mes " ";
-	mes "A little girl in Payon wants to talk to you, her name is Flower, What a stupid name,Hahaha.";
+	mes "A little girl in Payon wants to talk to you, her name is " + mesitemlink(712) + ", What a stupid name,Hahaha.";
 	set eight_qset,4;
 	goto L_QuestGiven;
 
@@ -470,7 +470,7 @@ N_JobList9:
 	mes "Ok you have a couple quests that can be done here.";
 	next;
 	menu "Smelly Box",-,"Payon Cave",N_PayonC,"^FF0000Sohee's Everywhere!^000000",N_Sohee,"^FF0000Moonlight Flower^000000",N_Moonlight;
-	mes "^FF0000Smelly Box^000000";
+	mes "^FF0000Smelly " + mesitemlink(7948) + "^000000";
 	mes "^FF0000----------^000000";
 	mes "Oh god please get this out of here fast.";
 	mes " ";
@@ -492,7 +492,7 @@ N_Sohee:
 	goto L_QuestGiven;
 
 N_Moonlight:
-	mes "^FF0000Moonlight Flower^000000";
+	mes "^FF0000Moonlight " + mesitemlink(712) + "^000000";
 	mes "^FF0000****************^000000" ;
 	mes "Hmmm seems a man named Jack wants to speak to you in the Archer Guild House.";
 	mes " ";
@@ -516,11 +516,11 @@ N_JobList10:
 	next;
 	menu "The Blank Box",-,"^FF0000Eddga^000000",N_Eddga,"^FF0000Phreeoni^000000",N_Phreeoni,"^FF0000Maya^000000",N_Maya;
 
-	mes "^FF0000The Blank Box^000000";
+	mes "^FF0000The Blank " + mesitemlink(7948) + "^000000";
 	mes "^FF0000-------------^000000";
 	mes "Package to Morocc";
 	mes " ";
-	mes "There is nothing written on this box but a notice to deliver it to a man Kreg.";
+	mes "There is nothing written on this " + mesitemlink(7948) + " but a notice to deliver it to a man Kreg.";
 	getitem 1082,1; //Delivery_Box_
 	set ten_qset,1;
 	goto L_QuestGiven;

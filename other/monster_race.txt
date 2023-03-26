@@ -268,7 +268,7 @@ p_track01,67,45,5	script	Medal Distributor#single	845,{
 		mes "If you've wagered on the";
 		mes "winning monster in a recent";
 		mes "race, then you can exchange";
-		mes "your game ticket here for";
+		mes "your " + mesitemlink(7859) + " here for";
 		mes "some Prize Medals.";
 		next;
 		mes "[Medal Distributor]";
@@ -308,7 +308,7 @@ p_track01,67,45,5	script	Medal Distributor#single	845,{
 					mes "[Medal Distributor]";
 					mes "Ah, "+strcharinfo(0)+".";
 					mes "You can exchange this";
-					mes "ticket for a Prize Medal by";
+					mes "ticket for a " + mesitemlink(7515) + " by";
 					mes "entering your ticket exchange";
 					mes "number now. Your ticket";
 					mes "exchange number is ^FF0000" + .@insa + "^000000.";
@@ -367,7 +367,7 @@ p_track01,67,45,5	script	Medal Distributor#single	845,{
 	mes "If you've wagered on the";
 	mes "winning monster in a recent";
 	mes "race, then you can exchange";
-	mes "your game ticket here for";
+	mes "your " + mesitemlink(7859) + " here for";
 	mes "some Prize Medals.";
 	next;
 	mes "[Medal Distributor]";
@@ -1321,8 +1321,8 @@ p_track02,73,22,1	script	Ticket Helper#2	899,{
 				}
 				mes "[Ticket Helper]";
 				mes "You've chosen";
-				mes "^0000FFMonster "+.@m+"^000000, "+.@string$[0];
-				mes .@string$[1]+".";
+				mes "^0000FFMonster "+.@m+"^000000, "+.@" + mesitemlink(7772) + "$[0];
+				mes .@" + mesitemlink(7772) + "$[1]+".";
 				mes "Are you sure you want";
 				mes "to choose this monster?";
 				next;
@@ -1557,7 +1557,7 @@ p_track02,67,45,5	script	Medal Distributor#medal	845,{
 	mes "If you've wagered on the";
 	mes "winning monster in a recent";
 	mes "race, then you can exchange";
-	mes "your game ticket here for";
+	mes "your " + mesitemlink(7859) + " here for";
 	mes "some Prize Medals.";
 	next;
 	if (!countitem(7514)) {
@@ -2018,14 +2018,14 @@ ein_in01,85,208,5	script	Ei'felle#repay01	854,{
 			mes "made a breakthrough in my";
 			mes "metal research! Look, I've";
 			mes "developed this Glittering";
-			mes "Jacket! It's lightweight and";
+			mes "" + mesitemlink(2303) + "! It's lightweight and";
 			mes "very durable, you see?";
 			next;
 			mes "[Ei'felle]";
 			mes "I wouldn't be able to have";
 			mes "completed this without your";
 			mes "help. Now, would you like to";
-			mes "receive this Glittering Jacket";
+			mes "receive this " + mesitemlink(2319) + "";
 			mes "as my way of repaying you?";
 			next;
 			if (select("Accept:Wait for Further Development") == 1) {
@@ -2075,7 +2075,7 @@ ein_in01,85,208,5	script	Ei'felle#repay01	854,{
 					mes "[Ei'felle]";
 					mes "Something else...?";
 					mes "Oh, you must mean";
-					mes "the Glittering Jacket that";
+					mes "the " + mesitemlink(2319) + " that";
 					mes "I developed earlier. After";
 					mes "all, I have any other items";
 					mes "to offer you for now...";
@@ -2134,7 +2134,7 @@ ein_in01,85,208,5	script	Ei'felle#repay01	854,{
 			mes "Something else?";
 			mes "Oh, alright then, would";
 			mes "you like to have a Glittering";
-			mes "Jacket, or a set of slotted";
+			mes "" + mesitemlink(2303) + ", or a set of slotted";
 			mes "elemental Armor? Please go";
 			mes "ahead and make your choice~";
 			next;
@@ -2249,7 +2249,7 @@ S_Reward:
 			mes "Believe that you are";
 			mes "becoming what you want";
 			mes "to be! B-believe... with";
-			mes "all of your freakin' heart!";
+			mes "all of your freakin' " + mesitemlink(7855) + "!";
 			emotion ET_HUK, playerattached();
 			emotion ET_HUK;
 			next;
@@ -2309,7 +2309,7 @@ S_Reward:
 			mes "t-totally... awesome!";
 			mes "You've gotta see it, and";
 			mes "you've gotta feel it in your";
-			mes "freakin' heart and mind!";
+			mes "freakin' " + mesitemlink(7855) + " and mind!";
 			emotion ET_HUK, playerattached();
 			emotion ET_HUK;
 			next;
@@ -2508,7 +2508,7 @@ S_Reward:
 		case 4:
 			mes "[Ei'felle]";
 			mes "Well, I've been able to";
-			mes "create a Glittering Jacket";
+			mes "create a " + mesitemlink(2319) + "";
 			mes "using the medals that you've";
 			mes "brought to me. But I just know";
 			mes "I can make something better";
@@ -2704,7 +2704,7 @@ hugel,71,83,4	script	Wayne	900,{
 		mes "Now, please choose";
 		mes "which of the following item";
 		mes "sets that you'd like to receive";
-		mes "in exchange for "+.@pm[.@m]+" Prize Medal."+((getarraysize(.@item_array)<3)?" Well, we have only 1 set, but...":"");
+		mes "in exchange for "+.@pm[.@m]+" " + mesitemlink(7515) + "."+((getarraysize(.@item_array)<3)?" Well, we have only 1 set, but...":"");
 		next;
 		.@m2 = ( select(.@items$) -1 ) *2;
 		if (countitem("Marvelous_Medal") < .@pm[.@m]) {
@@ -2891,7 +2891,7 @@ p_track01,69,31,1	script	Blacksmith Guildsman#sin	107,{
 	mes "Why can't I win at least";
 	mes "one of these races? Argh!";
 	mes "I can't go back until I get";
-	mes "at least one Prize Medal!";
+	mes "at least one " + mesitemlink(7515) + "!";
 	next;
 	mes "[Blacksmith Guildsman]";
 	mes "Yeah, I've been assigned";

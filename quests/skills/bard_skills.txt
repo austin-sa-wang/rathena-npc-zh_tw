@@ -81,7 +81,7 @@ prontera,174,328,3	script	Young Man#bard_q1	89,3,3,{
 				if (countitem(12112) > 0) {
 					mes "[Timid Young Man]";
 					mes "Oh~! Isn't that";
-					mes "a Tropical Sograt?";
+					mes "a " + mesitemlink(12112) + "?";
 					mes "That's my favorite";
 					mes "drink in all the world!";
 					if (qskill_bard == 9) {
@@ -164,8 +164,8 @@ prontera,174,328,3	script	Young Man#bard_q1	89,3,3,{
 							mes "struggling to keep myself from";
 							mes "leaping off that Bungee Jump.";
 							mes "But the more I resisted, the";
-							mes "more violently I'd flail toward";
-							mes "the edge. It was horrible!";
+							mes "more violently I'd " + mesitemlink(1510) + " toward";
+							mes "the " + mesitemlink(1132) + ". It was horrible!";
 							next;
 							mes "[Timid Young Man]";
 							mes "That was the most terrifying";
@@ -258,8 +258,8 @@ prontera,174,328,3	script	Young Man#bard_q1	89,3,3,{
 							mes "struggling to keep myself from";
 							mes "leaping off that Bungee Jump.";
 							mes "But the more I resisted, the";
-							mes "more violently I'd flail toward";
-							mes "the edge. It was horrible!";
+							mes "more violently I'd " + mesitemlink(1510) + " toward";
+							mes "the " + mesitemlink(1132) + ". It was horrible!";
 							next;
 							mes "[Timid Young Man]";
 							mes "That was the most terrifying";
@@ -459,7 +459,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 			if (countitem(7277) > 0) {
 				mes "[Riott]";
 				mes "Ah, you've brought me";
-				mes "a Munak Doll made by";
+				mes "a " + mesitemlink(7277) + " made by";
 				mes "Yao Jun, just like you said";
 				mes "you would. Ah yes, this is her";
 				mes "craftsmanship, impeccable";
@@ -481,7 +481,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 				mes "is the basis for mesmerization. Now listen to this incantation...";
 				next;
 				mes "[Riott]";
-				mes "''Toad's leg, Verit's heart,";
+				mes "''Toad's leg, Verit's " + mesitemlink(7855) + ",";
 				mes "spinning stars, spilling zeny,";
 				mes "hands and feet tied. Is this";
 				mes "voices yours, is this voice";
@@ -531,7 +531,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 			}
 			mes "[Riott]";
 			mes "Hmpf. Weren't able";
-			mes "to find me a Munak Doll";
+			mes "to find me a " + mesitemlink(7277) + "";
 			mes "yet? Well, don't worry, I'm";
 			mes "a patient man. Just try to get";
 			mes "one for me as soon as you can.";
@@ -563,7 +563,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 				mes "is the basis for mesmerization. Now listen to this incantation...";
 				next;
 				mes "[Riott]";
-				mes "''Toad's leg, Verit's heart,";
+				mes "''Toad's leg, Verit's " + mesitemlink(7855) + ",";
 				mes "spinning stars, spilling zeny,";
 				mes "hands and feet tied. Is this";
 				mes "voices yours, is this voice";
@@ -623,7 +623,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 				mes "[Riott]";
 				mes "Well, to make up for the";
 				mes "missing eggs, go and get ";
-				mes "me ^4D4DFF1 Munak Doll^000000. I know that";
+				mes "me ^4D4DFF1 " + mesitemlink(7277) + "^000000. I know that";
 				mes "Yao Jun's Munak Dolls are";
 				mes "masterpieces, and I am an";
 				mes "an avid collector of her work.";
@@ -673,7 +673,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 				else {
 					mes "Silver Seals that can only";
 					mes "be given by Errende. You";
-					mes "must be truly kind at heart";
+					mes "must be truly kind at " + mesitemlink(7855) + "";
 					mes "if he has offered to be your";
 					mes "friend. How about that?";
 				}
@@ -858,7 +858,7 @@ morocc_in,169,72,7	script	Spiteful-Looking Bard#bs	741,3,3,{
 			else {
 				mes "Silver Seals that can only";
 				mes "be given by Errende. You";
-				mes "must be truly kind at heart";
+				mes "must be truly kind at " + mesitemlink(7855) + "";
 				mes "if he has offered to be your";
 				mes "friend. How about that?";
 			}
@@ -1060,7 +1060,7 @@ morocc_in,178,73,3	script	Customer#bard_skill01	54,{
 	mes "I really like Ver... Uh, Ver...";
 	next;
 	mes "[Little Bit Drunken Guy]";
-	mes "Vermilion on the Beach?";
+	mes "" + mesitemlink(12113) + "?";
 	mes "Yeah, that's really good,";
 	mes "you'll pass out after just";
 	mes "having one shot! Yeah...";
@@ -1120,7 +1120,7 @@ morocc_in,175,70,7	script	Customer#bard_skill02	50,{
 	mes "I really like Ver... Uh, Ver...";
 	next;
 	mes "[Little Bit Drunken Guy]";
-	mes "Vermilion on the Beach?";
+	mes "" + mesitemlink(12113) + "?";
 	mes "Yeah, that's really good,";
 	mes "you'll pass out after just";
 	mes "having one shot! Yeah...";
@@ -1199,7 +1199,7 @@ morocc_in,166,76,7	script	Bartender#bard_qskill	46,{
 		}
 		mes "[Bartender]";
 		mes "Here you are,";
-		mes "1 Tropical Sograt.";
+		mes "1 " + mesitemlink(12112) + ".";
 		mes "It tastes sweet and";
 		mes "mild, but if you're not";
 		mes "careful, you'll pass out";
@@ -1267,7 +1267,7 @@ function	script	F_BardSkillYhelle	{
 		mes "presense, the hen";
 		mes "quickly ran away.^000000";
 		if (qskill_bard > 1 && qskill_bard < 7) {
-			mes "^3355FFYou found ^3333331 Egg^3355FF in the";
+			mes "^3355FFYou found ^3333331 " + mesitemlink(574) + "^3355FF in the";
 			mes "place where Yhelle the";
 			mes "Hen was roosting.^000000";
 			set qskill_bard,qskill_bard+1;

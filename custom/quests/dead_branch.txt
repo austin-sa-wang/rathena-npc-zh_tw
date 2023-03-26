@@ -25,7 +25,7 @@ niflheim,204,179,3	script	Mister Mobry	121,{
 	next;
 
 	mes "[Mister Mobry]";
-	mes "I can create a spirited branch... That is, if you can provide me with the correct materials...";
+	mes "I can create a spirited " + mesitemlink(13150) + "... That is, if you can provide me with the correct materials...";
 	next;
 	goto L_MENU;
 
@@ -35,9 +35,9 @@ L_MENU:
 	mes "[Mister Mobry]";
 	mes "Mwehehe... I see you want to control tree spirits am I right? Ok... I need:";
 	mes "^1354453 Logs^000000";
-	mes "^1354451 Wooden Heart^000000";
-	mes "^1354455 Trunk^000000";
-	mes "^1354451 Wooden Gnarl^000000";
+	mes "^1354451 " + mesitemlink(7189) + "^000000";
+	mes "^1354455 " + mesitemlink(1019) + "^000000";
+	mes "^1354451 " + mesitemlink(7222) + "^000000";
 	next;
 	goto L_MENU;
 
@@ -46,7 +46,7 @@ M_FIND:
 	mes "You can find the following items from certain monsters heheh...";
 	mes "^135445Logs can be found off of Tree Golems.^000000";
 	mes "^135445Wooden Hearts the essence of Tree Golems.^000000";
-	mes "^135445Trunks? Seriously, think wood...^000000";
+	mes "^135445Trunks? Seriously, think " + mesitemlink(6008) + "...^000000";
 	mes "^135445Wooden Gnarl... Gibbet...^000000";
 	next;
 	goto L_MENU;
@@ -59,8 +59,8 @@ L_NOLOG:
 
 L_NOHEART:
 	mes "[Mister Mobry]";
-	mes "The ^135445Wooden Heart^000000 is the essence of the spirit.";
-	mes "Get me one wooden heart and I'll make you the spirit...";
+	mes "The ^135445Wooden " + mesitemlink(7855) + "^000000 is the essence of the spirit.";
+	mes "Get me one " + mesitemlink(7189) + " and I'll make you the spirit...";
 	close;
 
 L_NOTRUNK:
