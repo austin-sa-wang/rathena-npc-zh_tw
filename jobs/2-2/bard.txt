@@ -61,7 +61,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		else if(Class == Job_Novice) {
 			cutin "job_bard_aiolo01",2;
 			mes "[Lalo]";
-			mes "The sadness that overcomes my " + mesitemlink(7855) + ".. ";
+			mes "The sadness that overcomes my " + mesitemlink(7855, false) + ".. ";
 			mes "It will not reside..";
 			mes "Is this the reason behind my troubles,";
 			mes "is this why I am weak,";
@@ -104,7 +104,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		case 1:
 			mes "[Lalo]";
 			mes "Hahaha! Of course!";
-			mes "if you sing with a happy " + mesitemlink(7855) + ", your voice always gets better.";
+			mes "if you sing with a happy " + mesitemlink(7855, false) + ", your voice always gets better.";
 			next;
 			mes "[Lalo]";
 			mes "But, to Bards your voice is your life.";
@@ -126,7 +126,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 			mes "When thousands of eyes open in the night sky";
 			mes "The castle's fire will burn with power.^000000";
 			next;
-			mes "^000088I can hear.. the beating of my " + mesitemlink(7855) + ".";
+			mes "^000088I can hear.. the beating of my " + mesitemlink(7855, false) + ".";
 			mes "I can feel.. the blood rushing through my veins.";
 			mes ".. and the weight of my armor.";
 			mes "I can see.. my enemies.^000000";
@@ -137,7 +137,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 			mes "This day will never come again!^000000";
 			next;
 			mes "^000088Shake the sky and roar through the land.";
-			mes "Make my " + mesitemlink(7855) + " pound again!";
+			mes "Make my " + mesitemlink(7855, false) + " pound again!";
 			mes "Let the trumpets sound, and castle walls ring.";
 			mes "This moment will never come again!^000000";
 			next;
@@ -204,12 +204,12 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "I'll help you become a Bard then.";
 				next;
 				mes "[Lalo]";
-				mes "But before that... do you think you can bring me a " + mesitemlink(712) + "?";
-				mes "I need to smell the scent of a " + mesitemlink(712) + " to feel like teaching.";
+				mes "But before that... do you think you can bring me a " + mesitemlink(712, false) + "?";
+				mes "I need to smell the scent of a " + mesitemlink(712, false) + " to feel like teaching.";
 				next;
 				mes "[Lalo]";
-				mes "It doesn't really matter which " + mesitemlink(712) + ", but try to bring one that I like.";
-				mes "And don't just buy any random " + mesitemlink(712) + ", ok?";
+				mes "It doesn't really matter which " + mesitemlink(712, false) + ", but try to bring one that I like.";
+				mes "And don't just buy any random " + mesitemlink(712, false) + ", ok?";
 				set BARD_Q,2;
 				changequest 3000,3001;
 				close2;
@@ -252,12 +252,12 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		cutin "job_bard_aiolo01",2;
 		mes "[Lalo]";
 		mes "Welcome! Archer friend.";
-		mes "Did you bring a " + mesitemlink(712) + "? Let me see.";
+		mes "Did you bring a " + mesitemlink(712, false) + "? Let me see.";
 		next;
 		mes "[Lalo]";
 		//Good Flowers
 		if (countitem(629) > 0) {
-			mes "Ooh! It's a " + mesitemlink(629) + "!";
+			mes "Ooh! It's a " + mesitemlink(629, false) + "!";
 			mes "It's full of my memories...";
 			next;
 			delitem 629,1; //Singing Flower
@@ -267,42 +267,42 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		}
 		else if(countitem(703) > 0) {
 			mes "Aah... the cute Hinelle...";
-			mes "It doesn't have a scent but it's a very moderate cute " + mesitemlink(712) + ".";
+			mes "It doesn't have a scent but it's a very moderate cute " + mesitemlink(712, false) + ".";
 			next;
 			delitem 703,1; //Hinalle
 			mes "[Lalo]";
 			mes "The leaves gave me strength when I used to fall.";
-			mes "I really like this " + mesitemlink(712) + ", thank you.";
+			mes "I really like this " + mesitemlink(712, false) + ", thank you.";
 		}
 		else if(countitem(704) > 0) {
-			mes "" + mesitemlink(704) + "... This is a rare " + mesitemlink(712) + ".";
+			mes "" + mesitemlink(704, false) + "... This is a rare " + mesitemlink(712, false) + ".";
 			mes "How'd you get it? Rather skilled, eh?";
 			next;
 			delitem 704,1; //Aloe
 			mes "[Lalo]";
-			mes "The leaves are good and " + mesitemlink(704) + " Vera is delicious, too..";
-			mes "but it's defnitely the most beautiful when it's a " + mesitemlink(712) + ".";
+			mes "The leaves are good and " + mesitemlink(704, false) + " Vera is delicious, too..";
+			mes "but it's defnitely the most beautiful when it's a " + mesitemlink(712, false) + ".";
 		}
 		else if(countitem(708) > 0) {
-			mes "" + mesitemlink(708) + "... You can forget about all your hardships with one of these.";
+			mes "" + mesitemlink(708, false) + "... You can forget about all your hardships with one of these.";
 			mes "Nice to see it in such a long time!";
 			next;
 			delitem 708,1; //Ment
 			mes "[Lalo]";
-			mes "I heard you can make " + mesitemlink(605) + " with it...";
+			mes "I heard you can make " + mesitemlink(605, false) + " with it...";
 			mes "But that would be a slight waste.. thanks!";
 		}
 		else if(countitem(709) > 0) {
-			mes "Ooh, isn't this an " + mesitemlink(709) + "?";
-			mes "It's a dangerous yet beautiful " + mesitemlink(712) + "...";
+			mes "Ooh, isn't this an " + mesitemlink(709, false) + "?";
+			mes "It's a dangerous yet beautiful " + mesitemlink(712, false) + "...";
 			next;
 			delitem 709,1; //Izidor
 			mes "[Lalo]";
 			mes "The deep purple charms a person.. ";
-			mes "Thank you, I really like this " + mesitemlink(712) + ".";
+			mes "Thank you, I really like this " + mesitemlink(712, false) + ".";
 		}
 		else if(countitem(748) > 0) {
-			mes "Ooh, a " + mesitemlink(748) + ". The strong " + mesitemlink(712) + " that doesn't wither.";
+			mes "Ooh, a " + mesitemlink(748, false) + ". The strong " + mesitemlink(712, false) + " that doesn't wither.";
 			mes "Great to give to a girlfriend.";
 			next;
 			delitem 748,1; //Witherless_Rose
@@ -311,17 +311,17 @@ comodo,226,123,5	script	Wandering Bard	741,{
 			mes "Haha, it should be ok.. right?";
 		}
 		else if(countitem(749) > 0 ) {
-			mes "" + mesitemlink(749) + "... you can't really call this a " + mesitemlink(712) + ",";
+			mes "" + mesitemlink(749, false) + "... you can't really call this a " + mesitemlink(712, false) + ",";
 			mes "But it is still beautiful... a clear Rose.";
 			next;
 			delitem 749,1; //Frozen_Rose
 			mes "[Lalo]";
-			mes "You can call it a " + mesitemlink(712) + " even though it doesn't have a scent anymore.";
+			mes "You can call it a " + mesitemlink(712, false) + " even though it doesn't have a scent anymore.";
 			mes "Then I'll greatly take this.";
 		}
 		else if(countitem(710) > 0) {
-			mes "Oh, isn't this an " + mesitemlink(710) + "!?";
-			mes "Wow, how did you obtain such a rare " + mesitemlink(712) + "!!";
+			mes "Oh, isn't this an " + mesitemlink(710, false) + "!?";
+			mes "Wow, how did you obtain such a rare " + mesitemlink(712, false) + "!!";
 			next;
 			delitem 710,1; //Illusion_Flower
 			mes "[Lalo]";
@@ -331,23 +331,23 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		//Bad Flowers
 		else if(countitem(712) > 0) {
 			cutin "job_bard_aiolo02",2;
-			mes "Eh? This is just a normal " + mesitemlink(712) + ".";
+			mes "Eh? This is just a normal " + mesitemlink(712, false) + ".";
 			mes "I like it... but it's not enough.";
 			next;
 			mes "[Lalo]";
-			mes "You can get this " + mesitemlink(712) + " from the girl in Prontera.";
-			mes "Please bring me a different " + mesitemlink(712) + ".";
+			mes "You can get this " + mesitemlink(712, false) + " from the girl in Prontera.";
+			mes "Please bring me a different " + mesitemlink(712, false) + ".";
 			close2;
 			cutin "job_bard_aiolo02",255;
 			end;
 		}
 		else if(countitem(744) > 0) {
-			mes "Oh no, you brought a " + mesitemlink(744) + "?";
+			mes "Oh no, you brought a " + mesitemlink(744, false) + "?";
 			mes "You can't bring me something like this.";
 			next;
 			mes "[Lalo]";
 			mes "Go give this to a graduating Sage or something.";
-			mes "Since it's great as that kind of gift... Bring a different " + mesitemlink(712) + ".";
+			mes "Since it's great as that kind of gift... Bring a different " + mesitemlink(712, false) + ".";
 			close2;
 			cutin "job_bard_aiolo01",255;
 			end;
@@ -355,17 +355,17 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		else if(countitem(745) > 0) {
 			cutin "job_bard_aiolo02",2;
 			mes "Oy oy... did you go to a wedding or something?";
-			mes "What do you expect a guy to do with a " + mesitemlink(745) + "?";
+			mes "What do you expect a guy to do with a " + mesitemlink(745, false) + "?";
 			next;
 			mes "[Lalo]";
 			mes "It's not me. Go give it to a lady or something.";
-			mes "This isn't the type of " + mesitemlink(712) + " I wanted.";
+			mes "This isn't the type of " + mesitemlink(712, false) + " I wanted.";
 			close2;
 			cutin "job_bard_aiolo02",255;
 			end;
 		}
 		else if(countitem(2207) > 0) {
-			mes "Mmm... a " + mesitemlink(2207) + ".";
+			mes "Mmm... a " + mesitemlink(2207, false) + ".";
 			mes "It's nice... but this isn't good enough.";
 			next;
 			mes "[Lalo]";
@@ -382,7 +382,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 			next;
 			mes "[Lalo]";
 			mes "if you were trying to be funny, it was a good attempt...";
-			mes "but bring a normal " + mesitemlink(712) + " now.";
+			mes "but bring a normal " + mesitemlink(712, false) + " now.";
 			close2;
 			cutin "job_bard_aiolo02",255;
 			end;
@@ -390,7 +390,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 		else {
 			cutin "job_bard_aiolo02",2;
 			mes "Hmm? What... you didnt' bring anything.";
-			mes "Didn't I ask you to bring a " + mesitemlink(712) + "?";
+			mes "Didn't I ask you to bring a " + mesitemlink(712, false) + "?";
 			next;
 			mes "[Lalo]";
 			mes "Well... if you want to learn on your own, then so be it.";
@@ -750,7 +750,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.^000000";
 				mes "Give strength to the warriors!";
 				mes "Shake the sky and roar through the land.";
-				mes "Make my " + mesitemlink(7855) + " pound again!";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!";
 				mes "Let the castle walls ring.";
 				mes "This day will never come again!";
 				next;
@@ -761,7 +761,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.";
 				mes "Give strength to the warriors!^000000";
 				mes "Shake the sky and roar through the land.";
-				mes "Make my " + mesitemlink(7855) + " pound again!";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!";
 				mes "Let the castle walls ring.";
 				mes "This day will never come again!";
 				next;
@@ -772,7 +772,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.";
 				mes "Give strength to the warriors!";
 				mes "Shake the sky and roar through the land.^000000";
-				mes "Make my " + mesitemlink(7855) + " pound again!";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!";
 				mes "Let the castle walls ring.";
 				mes "This day will never come again!";
 				next;
@@ -783,7 +783,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.";
 				mes "Give strength to the warriors!";
 				mes "Shake the sky and roar through the land.";
-				mes "Make my " + mesitemlink(7855) + " pound again!^000000";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!^000000";
 				mes "Let the castle walls ring.";
 				mes "This day will never come again!";
 				next;
@@ -794,7 +794,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.";
 				mes "Give strength to the warriors!";
 				mes "Shake the sky and roar through the land.";
-				mes "Make my " + mesitemlink(7855) + " pound again!";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!";
 				mes "Let the castle walls ring.^000000";
 				mes "This day will never come again!";
 				next;
@@ -805,7 +805,7 @@ comodo,226,123,5	script	Wandering Bard	741,{
 				mes "^3377FFLouder, louder, louder.";
 				mes "Give strength to the warriors!";
 				mes "Shake the sky and roar through the land.";
-				mes "Make my " + mesitemlink(7855) + " pound again!";
+				mes "Make my " + mesitemlink(7855, false) + " pound again!";
 				mes "Let the castle walls ring.";
 				mes "This day will never come again!^000000";
 				next;

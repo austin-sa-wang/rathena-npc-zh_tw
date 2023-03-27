@@ -106,7 +106,7 @@
 			mes "by Odin's will.";
 			next;
 			mes "[Michael Halig]";
-			mes "Possessing the ^3355FFChivalry Emblem^000000 and ^3355FFHand of God^000000 is seen as a sign that you have been called to become a Crusader.";
+			mes "Possessing the ^3355FF" + mesitemlink(1004, false) + "^000000 and ^3355FF" + mesitemlink(1009, false) + "^000000 is seen as a sign that you have been called to become a Crusader.";
 			next;
 			mes "[Michael Halig]";
 			mes "After obtaining those items and passing our tests, you too, can become a Crusader.";
@@ -159,7 +159,7 @@
 					close;
 				}
 				mes "[Michael Halig]";
-				mes "Mmm. I can't discern whether or not you have the " + mesitemlink(7855) + " to become a Crusader. However, if you have the will and put forth the effort, you may have what it takes.";
+				mes "Mmm. I can't discern whether or not you have the " + mesitemlink(7855, false) + " to become a Crusader. However, if you have the will and put forth the effort, you may have what it takes.";
 				next;
 				mes "[Michael Halig]";
 				mes "Now...";
@@ -342,7 +342,7 @@
 		mes "then please leave. A tranquil state of mind is essential in self training...";
 		next;
 		mes "[Murnak Mijoul]";
-		mes "I wish to improve the sense of serenity in my " + mesitemlink(7855) + " in preparation for the Holy War that is to come. So please, do not disturb me.";
+		mes "I wish to improve the sense of serenity in my " + mesitemlink(7855, false) + " in preparation for the Holy War that is to come. So please, do not disturb me.";
 		close;
 	}
 	else if(CRUS_Q == 4) {
@@ -363,7 +363,7 @@
 			next;
 			if(getequipid(EQI_ACC_L) != 2608 && getequipid(EQI_ACC_R) != 2608) {
 				mes "[Murnak Mijoul]";
-				mes "Hmm. You wish to become a Crusader, but do not wear a " + mesitemlink(2608) + "? I have no business with you if you cannot uphold our customs.";
+				mes "Hmm. You wish to become a Crusader, but do not wear a " + mesitemlink(2608, false) + "? I have no business with you if you cannot uphold our customs.";
 				close;
 			}
 			mes "[Murnak Mijoul]";
@@ -390,7 +390,7 @@
 			end;
 		}
 		mes "[Murnak Mijoul]";
-		mes "You seem to have a lot of time on your hands. Why don't you do something more productive, like pick " + mesitemlink(909) + " off the streets or something?";
+		mes "You seem to have a lot of time on your hands. Why don't you do something more productive, like pick " + mesitemlink(909, false) + " off the streets or something?";
 		close;
 	}
 	else if(CRUS_Q == 5) {
@@ -405,7 +405,7 @@
 			if(getequipid(EQI_ACC_L) != 2608 && getequipid(EQI_ACC_R) != 2608) {
 				mes "[Murnak Mijoul]";
 				mes "Wait...";
-				mes "Where have you left your " + mesitemlink(2608) + "? You can't let that lie around just anywhere. We are supposed to be warriors of holiness.";
+				mes "Where have you left your " + mesitemlink(2608, false) + "? You can't let that lie around just anywhere. We are supposed to be warriors of holiness.";
 				next;
 				mes "[Murnak Mijoul]";
 				mes "Carelessly losing things is an attitude for mere Swordsmen. If you really want to retake the test, you must respect the Crusader traditions.";
@@ -581,13 +581,13 @@ prt_church,95,127,3	script	Crusader	745,{
 				set .@cru_t,.@cru_t+10;
 
 			mes "[Gabriel Valentine]";
-			mes "9. What is the name of the shield in which a " + mesitemlink(4090) + " has been inserted?";
+			mes "9. What is the name of the shield in which a " + mesitemlink(4090, false) + " has been inserted?";
 			next;
 			if (select("Atomic Shield:Amulet Shield:Hypnotic Shield:Homeroth Shield") == 2)
 				set .@cru_t,.@cru_t+10;
 
 			mes "[Gabriel Valentine]";
-			mes "10. Which of the following monsters does not drop " + mesitemlink(934) + "?";
+			mes "10. Which of the following monsters does not drop " + mesitemlink(934, false) + "?";
 			next;
 			if (select("Munak:Ghoul:Mummy:Soldier Skeleton") == 1)
 				set .@cru_t,.@cru_t+10;
@@ -642,7 +642,7 @@ prt_church,95,127,3	script	Crusader	745,{
 				set .@cru_t,.@cru_t+10;
 
 			mes "[Gabriel Valentine]";
-			mes "9. What effect does the " + mesitemlink(4113) + " have?";
+			mes "9. What effect does the " + mesitemlink(4113, false) + " have?";
 			next;
 			if (select("Increase defense against Shadow attacks by 30 %:Increase defense against poison attacks by 30 %:Increase defense against Ghost attacks by 30 %:Increase defense against Neutral attacks by 30 %") == 3)
 				set .@cru_t,.@cru_t+10;
@@ -661,7 +661,7 @@ prt_church,95,127,3	script	Crusader	745,{
 				set .@cru_t,.@cru_t+10;
 
 			mes "[Gabriel Valentine]";
-			mes "2. If your INT is 30, including INT bonuses from quipment, at level 55, how much HP does " + mesitemlink(12002) + " recover?";
+			mes "2. If your INT is 30, including INT bonuses from quipment, at level 55, how much HP does " + mesitemlink(12002, false) + " recover?";
 			next;
 			if (select("396:440:484:528") == 2)
 				set .@cru_t,.@cru_t+10;
@@ -673,7 +673,7 @@ prt_church,95,127,3	script	Crusader	745,{
 				set .@cru_t,.@cru_t+10;
 
 			mes "[Gabriel Valentine]";
-			mes "4. Which of the following spears can attack " + mesitemlink(7102) + ", which is endowed with the Ghost attribute?";
+			mes "4. Which of the following spears can attack " + mesitemlink(7102, false) + ", which is endowed with the Ghost attribute?";
 			next;
 			if (select("Lance:Bill Guisarme:Cresent scythe:Zephyrus") == 4)
 				set .@cru_t,.@cru_t+10;
@@ -868,7 +868,7 @@ prt_church,95,127,3	script	Crusader	745,{
 			next;
 			mes "[Bliant Piyord]";
 			mes "To take the battle test, bring";
-			mes "1 ^3355FFHoly Water^000000. This will be used to purify you prior to taking the test.";
+			mes "1 ^3355FF" + mesitemlink(523, false) + "^000000. This will be used to purify you prior to taking the test.";
 			if(checkquest(3013) != -1) {
 				changequest 3013,3014;
 			}
@@ -891,17 +891,17 @@ prt_church,95,127,3	script	Crusader	745,{
 		if (select("I would like to begin.:Give me some time to prepare.") == 1) {
 			if(getequipid(EQI_ACC_L) != 2608 && getequipid(EQI_ACC_R) != 2608) {
 				mes "[Bliant Piyord]";
-				mes "Just a second, you do not have a " + mesitemlink(2608) + " equipped. As a Crusader, you must always have a " + mesitemlink(2608) + " on your person.";
+				mes "Just a second, you do not have a " + mesitemlink(2608, false) + " equipped. As a Crusader, you must always have a " + mesitemlink(2608, false) + " on your person.";
 				next;
 				mes "[Bliant Piyord]";
 				mes "Come back and take";
 				mes "the test after you";
-				mes "have a " + mesitemlink(2608) + ".";
+				mes "have a " + mesitemlink(2608, false) + ".";
 				close;
 			}
 			else if(countitem(523) < 1) {
 				mes "[Bliant Piyord]";
-				mes "For the battle test, please prepare one ^3355FFHoly water^000000.";
+				mes "For the battle test, please prepare one ^3355FF" + mesitemlink(523, false) + "^000000.";
 				mes "I told you just to purify the candidates.";
 				next;
 				mes "[Bliant Piyord]";
@@ -914,7 +914,7 @@ prt_church,95,127,3	script	Crusader	745,{
 			mes "Then, I'll start";
 			mes "the test. You will";
 			mes "be purified with the";
-			mes "" + mesitemlink(523) + " you prepared.";
+			mes "" + mesitemlink(523, false) + " you prepared.";
 			next;
 			mes "[Bliant Piyord]";
 			mes "...............";
@@ -931,13 +931,13 @@ prt_church,95,127,3	script	Crusader	745,{
 			end;
 		}
 		mes "[Bliant Piyord]";
-		mes "Prepare 1 ^3355FFHoly Water^000000 to take the battle test. As I've said, it will be used to purify you prior to taking the test.";
+		mes "Prepare 1 ^3355FF" + mesitemlink(523, false) + "^000000 to take the battle test. As I've said, it will be used to purify you prior to taking the test.";
 		next;
 		mes "[Bliant Piyord]";
 		mes "Come back and take";
 		mes "the test after you";
 		mes "have prepared";
-		mes "1 " + mesitemlink(523) + ".";
+		mes "1 " + mesitemlink(523, false) + ".";
 		mes "I shall be";
 		mes "waiting.";
 		close;

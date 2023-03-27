@@ -37,7 +37,7 @@ ama_in02,61,27,7	script	Alchemist#ama	749,{
 	mes "If you are here for tourism,";
 	mes "enjoy your day off, then go back to your hometown.";
 	mes "Keekeekee... Or else,";
-	mes "I will let you taste my " + mesitemlink(7136) + "...!";
+	mes "I will let you taste my " + mesitemlink(7136, false) + "...!";
 	next;
 	if (select("Please, excuse me:Do you need help?") == 1) {
 		mes "[Laspuchin Gregory]";
@@ -121,7 +121,7 @@ ama_in02,61,27,7	script	Alchemist#ama	749,{
 			mes "Keheheh, You know something.";
 			mes "I don't have many of these so";
 			mes "I can't just get 8 of yours.";
-			mes "If you want to change them to " + mesitemlink(996) + ",";
+			mes "If you want to change them to " + mesitemlink(996, false) + ",";
 			mes "bring me 4 more stones. 8 + 4 = 12...";
 			mes "Requires ^0000FF12^000000 stones.";
 			next;

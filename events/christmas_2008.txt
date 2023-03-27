@@ -96,7 +96,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 			case 3:
 				if (iROxmas08carol == 3) {
 					mes "[Caroller]";
-					mes "Ah, a music " + mesitemlink(7948) + " is useful.";
+					mes "Ah, a music " + mesitemlink(7948, false) + " is useful.";
 					next;
 					mes "[Caroller]";
 					mes "Though we can't all play it around the village as we planned, it's cool that you carry it.";
@@ -198,7 +198,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 						close;
 					}
 					mes "[Caroller]";
-					mes "Maybe, it's quite hard to make a jukebox for the villages, but a music " + mesitemlink(7948) + " might be possible.";
+					mes "Maybe, it's quite hard to make a jukebox for the villages, but a music " + mesitemlink(7948, false) + " might be possible.";
 					next;
 					mes "[Caroller]";
 					mes "We need the ^0000FFSinging Crystal Pieces^000000 that the monsters ate up.";
@@ -248,7 +248,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 				mes "The rumor 'round here is, Lutie's designer made these costumes.";
 				next;
 				mes "[Caroller]";
-				mes "Every year, adventurers challenge to attack Antonio the fake Santa, but there's no way to catch up to him due to his hat and costume!";
+				mes "Every year, adventurers challenge to attack Antonio the fake Santa, but there's no way to catch up to him due to his " + mesitemlink(2220, false) + " and costume!";
 				next;
 				mes "[Caroller]";
 				mes "Are there some special abilities within them?";
@@ -283,7 +283,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 	if (iROxmas08carol == 1) {
 		if (countitem(6092) < 6) {
 			mes "[Caroller]";
-			mes "Maybe, it's quite hard to make a jukebox for the villages, but a music " + mesitemlink(7948) + " might be possible.";
+			mes "Maybe, it's quite hard to make a jukebox for the villages, but a music " + mesitemlink(7948, false) + " might be possible.";
 			next;
 			mes "[Caroller]";
 			mes "We need the ^0000FFSinging Crystal Pieces^000000 that the monsters ate up.";
@@ -320,13 +320,13 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 			mes "Six!!";
 			next;
 			mes "[Caroller]";
-			mes "All right! We can start to make our music " + mesitemlink(7948) + " with crystal fragments.";
+			mes "All right! We can start to make our music " + mesitemlink(7948, false) + " with crystal fragments.";
 			next;
 			mes "[Caroller]";
-			mes "We would amplify the sounds of the crystal fragments to sound through the music " + mesitemlink(7948) + ".";
+			mes "We would amplify the sounds of the crystal fragments to sound through the music " + mesitemlink(7948, false) + ".";
 			next;
 			mes "[Caroller]";
-			mes "You know, a music " + mesitemlink(7948) + " that sounds like a jukebox!";
+			mes "You know, a music " + mesitemlink(7948, false) + " that sounds like a jukebox!";
 			next;
 			mes "[Caroller]";
 			mes "It's handy. You can carry it, as well as listen to sweet carols anywhere.";
@@ -334,7 +334,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 			next;
 			mes "[Caroller]";
 			mes "So, we need more of some materials.";
-			mes "^0000FF10 " + mesitemlink(1019) + ", 1 " + mesitemlink(1005) + ", 1 " + mesitemlink(7312) + ", 10 " + mesitemlink(938) + ", " + mesitemlink(732) + "^000000!";
+			mes "^0000FF10 " + mesitemlink(1019, false) + ", 1 " + mesitemlink(1005, false) + ", 1 " + mesitemlink(7312, false) + ", 10 " + mesitemlink(938, false) + ", " + mesitemlink(732, false) + "^000000!";
 			next;
 			delitem 6092,6;
 			emotion ET_OK;
@@ -349,12 +349,12 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 	if (iROxmas08carol == 2) {
 		if (countitem(1019) < 10 || countitem(1005) < 1 || countitem(7312) < 1 || countitem(938) < 10 || countitem(732) < 1) {
 			mes "[Caroller]";
-			mes "We can make a music " + mesitemlink(7948) + " with Singing Crystal Pieces.";
+			mes "We can make a music " + mesitemlink(7948, false) + " with Singing Crystal Pieces.";
 			mes "It's handy, you can hear carols anywhere. Sounds cool?";
 			next;
 			mes "[Caroller]";
 			mes "So, we need more of some materials.";
-			mes "^0000FF10 " + mesitemlink(1019) + ", 1 " + mesitemlink(1005) + ", 1 " + mesitemlink(7312) + ", 10 " + mesitemlink(938) + ", " + mesitemlink(732) + "^000000!";
+			mes "^0000FF10 " + mesitemlink(1019, false) + ", 1 " + mesitemlink(1005, false) + ", 1 " + mesitemlink(7312, false) + ", 10 " + mesitemlink(938, false) + ", " + mesitemlink(732, false) + "^000000!";
 			next;
 			emotion ET_OK;
 			mes "[Caroller]";
@@ -376,20 +376,20 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 			next;
 			mes "[Caroller]";
 			mes "Good!";
-			mes "No need to hesitate! Let's get started to make our music " + mesitemlink(7948) + ".";
+			mes "No need to hesitate! Let's get started to make our music " + mesitemlink(7948, false) + ".";
 			next;
 			mes "[Caroller]";
 			specialeffect EF_REPAIRWEAPON;
-			mes "Blacksmith hammers on " + mesitemlink(1019) + "... and we shape the frame.";
+			mes "Blacksmith hammers on " + mesitemlink(1019, false) + "... and we shape the frame.";
 			next;
 			mes "[Caroller]";
 			//(effect - stones from ground?)
-			mes "Please use the Singing Crystal Pieces for a column, the Diamond as a prop, and the " + mesitemlink(938) + " as glue.";
+			mes "Please use the Singing Crystal Pieces for a column, the Diamond as a prop, and the " + mesitemlink(938, false) + " as glue.";
 			next;
 			mes "[Caroller]";
 			specialeffect EF_HIT2;
 			mes "And now...";
-			mes "we decorate with a " + mesitemlink(7312) + "...";
+			mes "we decorate with a " + mesitemlink(7312, false) + "...";
 			next;
 			mes "[Caroller]";
 			specialeffect EF_SUFFRAGIUM;
@@ -406,8 +406,8 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 			mes "You did as I requested, so I will give you gifts, as promised.";
 			next;
 			mes "[Caroller]";
-			mes "One, is this music " + mesitemlink(7948) + ".";
-			mes "Please play this music " + mesitemlink(7948) + " all over the villages!";
+			mes "One, is this music " + mesitemlink(7948, false) + ".";
+			mes "Please play this music " + mesitemlink(7948, false) + " all over the villages!";
 			next;
 			mes "[Caroller]";
 			mes "Another present is a Christmas cake especially shaped like your name!";
@@ -474,7 +474,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 	
 	case 3:
 		mes "[Santa Claus]";
-		mes "A " + mesitemlink(644) + "! That sounds good!";
+		mes "A " + mesitemlink(644, false) + "! That sounds good!";
 		mes "It's so exciting to open gift boxes when you wake up on Christmas morning!!!";
 		next;
 		mes "[Santa Claus]";
@@ -495,7 +495,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 		if (select("No, thanks.:Yes, I would.") == 1) {
 			mes "[Santa Claus]";
 			mes "Aww, don't be afraid.";
-			mes "If you've been a little naughty this year I won't stuff your stockings with " + mesitemlink(1003) + ".";
+			mes "If you've been a little naughty this year I won't stuff your stockings with " + mesitemlink(1003, false) + ".";
 			next;
 			mes "[Santa Claus]";
 			mes "I will stay here throughout the Christmas season, just visit me when you change your mind.";
@@ -520,7 +520,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 		next;
 		mes "[Santa Claus]";
 		mes "It's quite simple.";
-		mes "I will pick one of three cards: " + mesitemlink(4001) + ", " + mesitemlink(4047) + ", and " + mesitemlink(4054) + ".";
+		mes "I will pick one of three cards: " + mesitemlink(4001, false) + ", " + mesitemlink(4047, false) + ", and " + mesitemlink(4054, false) + ".";
 		mes "Guess which card I pick and you're a winner!";
 		next;
 		mes "[Santa Claus]";
@@ -703,7 +703,7 @@ prontera,226,306,4	script	Caroller#iROxmas08	79,{
 		mes "...";
 		next;
 		mes "[Santa Claus]";
-		mes "You should open your " + mesitemlink(7855) + " to the spirit of Christmas!";
+		mes "You should open your " + mesitemlink(7855, false) + " to the spirit of Christmas!";
 		mes "Once you do, I know you'll be able to think of something.";
 		close;
 	}
@@ -774,7 +774,7 @@ xmas_in,89,92,4	script	Louise Kim#iROxmas08	714,{
 	}
 	mes "[Louise Kim]";
 	mes "All right, you're cool!!";
-	mes "You need to bring me: ^0000FFCotton Shirt, 3 " + mesitemlink(501) + ", " + mesitemlink(523) + ", 4 " + mesitemlink(7175) + ", " + mesitemlink(7174) + "^000000.";
+	mes "You need to bring me: ^0000FF" + mesitemlink(2301, false) + ", 3 " + mesitemlink(501, false) + ", " + mesitemlink(523, false) + ", 4 " + mesitemlink(7175, false) + ", " + mesitemlink(7174, false) + "^000000.";
 	next;
 	mes "[Louise Kim]";
 	mes "If you bring me all that stuff, I can make you a glamorous Santa costume.";
@@ -795,7 +795,7 @@ xmas_in,89,92,4	script	Louise Kim#iROxmas08	714,{
 		mes "Let's not delay.";
 		mes "I will show you my limitless ability.";
 		next;
-		mes "-She pours everything in a " + mesitemlink(7482) + "-";
+		mes "-She pours everything in a " + mesitemlink(7482, false) + "-";
 		mes "-even the shirt goes in!-";
 		mes "-She takes it out with skill-";
 		mes "-and many blessings she sings.-";
@@ -806,12 +806,12 @@ xmas_in,89,92,4	script	Louise Kim#iROxmas08	714,{
 		mes "By artist, Louise Kim!";
 		mes "All over the world will be blessed tonight!";
 		next;
-		mes "-Pour " + mesitemlink(501) + " in another " + mesitemlink(7482) + "-";
+		mes "-Pour " + mesitemlink(501, false) + " in another " + mesitemlink(7482, false) + "-";
 		mes "-then stir all of its parts.-";
 		mes "-Put the cotton shirts in-";
 		mes "-and dye it for grateful hearts.-";
 		mes "-Thread by thread-";
-		mes "-" + mesitemlink(7772) + " by " + mesitemlink(7772) + "-";
+		mes "-" + mesitemlink(7772, false) + " by " + mesitemlink(7772, false) + "-";
 		mes "-Count your blessings and sing!-";
 		next;
 		specialeffect EF_GLORIA;

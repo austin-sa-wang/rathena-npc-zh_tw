@@ -47,7 +47,7 @@ prontera,146,91,5	script	Pandit chacha#child07	61,{
 		mes "[Pandit chacha]";
 		mes "Look. This is a child Potion.";
 		mes "The weight is just 1 but recover much HP.";
-		mes "If you want to get more, bring the 1 " + mesitemlink(745) + " and 1 " + mesitemlink(748) + ".";
+		mes "If you want to get more, bring the 1 " + mesitemlink(745, false) + " and 1 " + mesitemlink(748, false) + ".";
 		close;
 	} else if (oversea_event9 == 1) {
 		if (countitem(745) > 0 && countitem(748) > 0) {
@@ -55,7 +55,7 @@ prontera,146,91,5	script	Pandit chacha#child07	61,{
 			mes "Ahha!!";
 			mes "You have remembered my beautiful composition.";
 			mes "You did good work.";
-			mes "Could you give me 1 " + mesitemlink(745) + " and 1 " + mesitemlink(748) + "? ";
+			mes "Could you give me 1 " + mesitemlink(745, false) + " and 1 " + mesitemlink(748, false) + "? ";
 			next;
 			if(select("Not yet.:Sure, take it.") == 1) {
 				mes "[Pandit chacha]";
@@ -75,7 +75,7 @@ prontera,146,91,5	script	Pandit chacha#child07	61,{
 			end;
 		}
 		mes "[Pandit chacha]";
-		mes "Little adventurers, you should bring the 1 " + mesitemlink(745) + " and 1 " + mesitemlink(748) + ".";
+		mes "Little adventurers, you should bring the 1 " + mesitemlink(745, false) + " and 1 " + mesitemlink(748, false) + ".";
 		mes "If you bring these stuffs I will exchange them for child Potion. ";
 		close;
 	}

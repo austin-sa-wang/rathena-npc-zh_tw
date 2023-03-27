@@ -36,7 +36,7 @@ prt_in,253,168,4	script	Alora	862,{
 	setarray .@hg_7[1], 2256, 5217;
 
 	mes "[Alora]";
-	mes "Hello, I can change your headgear's color if you bring me a " + mesitemlink(6220) + ".";
+	mes "Hello, I can change your headgear's color if you bring me a " + mesitemlink(6220, false) + ".";
 	next;
 	mes "[Alora]";
 	mes "Do you have a headgear that you would like to dye?";

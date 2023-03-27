@@ -29,7 +29,7 @@ prontera,156,172,4	script	Tine	58,{
 	next;
 	specialeffect EF_HITBODY;
 	mes "[Tine]";
-	mes "Some married " + mesitemlink(558) + " lovers almost double their experience at trainings!";
+	mes "Some married " + mesitemlink(558, false) + " lovers almost double their experience at trainings!";
 	mes "But everything isn't so simply...";
 	next;
 	menu "Wow! Tell me more!",M_INFO,"Marri... what?",-;
@@ -44,14 +44,14 @@ prontera,156,172,4	script	Tine	58,{
 
 M_INFO:
 	mes "[Tine]";
-	mes "The magic effect possesses only handmade " + mesitemlink(558) + " from grand-grand-grand-whoever recipes!";
+	mes "The magic effect possesses only handmade " + mesitemlink(558, false) + " from grand-grand-grand-whoever recipes!";
 	next;
 	mes "[Tine]";
-	mes "It being known that Black Handmade " + mesitemlink(558) + " works on married guys... And the White one on the married girls!";
-	mes "If you lose your " + mesitemlink(2634) + "... then alas, it won't work on you.";
+	mes "It being known that Black Handmade " + mesitemlink(558, false) + " works on married guys... And the White one on the married girls!";
+	mes "If you lose your " + mesitemlink(2634, false) + "... then alas, it won't work on you.";
 	next;
 	mes "[Tine]";
-	mes "On having a " + mesitemlink(558) + ", you should put off your ring then... put it back... And if your partner is online, then magic would last till the next hour!";
+	mes "On having a " + mesitemlink(558, false) + ", you should put off your ring then... put it back... And if your partner is online, then magic would last till the next hour!";
 	next;
 	mes "[Tine]";
 	mes "Rumors bark that guys and gals have +50% EXP bonuses on FIVE different races of the monsters... Excluding bloody bosses, of course.";
@@ -80,16 +80,16 @@ alberta,26,243,4	script	Stephen#val1	58,{
 	mes "A tasty treat not easily found in Midgard....";
 	next;
 	mes "[Stephen]";
-	mes "" + mesitemlink(558) + "!";
-	mes "That's right, don't you love " + mesitemlink(558) + ".... I do.";
+	mes "" + mesitemlink(558, false) + "!";
+	mes "That's right, don't you love " + mesitemlink(558, false) + ".... I do.";
 	mes "And you are in luck, because I'm selling them for only 5,000 zeny a piece!";
 	next;
 	menu "I want some chocolate!",M_CHOCO,"No thanks.",-;
 
 	mes "[Stephen]";
-	mes "You don't want any " + mesitemlink(558) + "?";
+	mes "You don't want any " + mesitemlink(558, false) + "?";
 	mes "I'm telling you! You'll regret it!";
-	mes "You better get some now... you won't come across " + mesitemlink(558) + " like this ever again!";
+	mes "You better get some now... you won't come across " + mesitemlink(558, false) + " like this ever again!";
 	mes "Think it over and visit me again sometime.";
 	close;
 
@@ -112,7 +112,7 @@ M_CHOCO:
 	mes "[Stephen]";
 	mes "There you go!";
 	mes "You can give that to someone as a gift, or enjoy it yourself!";
-	mes "Mmm....sweet " + mesitemlink(558) + "...";
+	mes "Mmm....sweet " + mesitemlink(558, false) + "...";
 	mes "Visit me anytime...!";
 	close;
 
@@ -131,15 +131,15 @@ L_NOTENO:
 // Jainie -- Gives information about Valentine Event ------------------------
 alberta,29,243,4	script	Jainie#val1	53,{
 	mes "[Jainie]";
-	mes "You know what? The " + mesitemlink(558) + " that my boyfriend sells are from me!";
-	mes "I made them by myself. Now I need some " + mesitemlink(519) + " for my special " + mesitemlink(561) + ".";
+	mes "You know what? The " + mesitemlink(558, false) + " that my boyfriend sells are from me!";
+	mes "I made them by myself. Now I need some " + mesitemlink(519, false) + " for my special " + mesitemlink(561, false) + ".";
 	next;
 	mes "[Jainie]";
 	mes "You know ... In certain countries, there's a tradition of presenting chocolates to a person that you love...";
 	mes "They call it ^3355FFValentine's Day^000000.";
 	next;
 	mes "[Jainie]";
-	mes "So I gave him my delicious " + mesitemlink(558) + "...";
+	mes "So I gave him my delicious " + mesitemlink(558, false) + "...";
 	mes "And then he made me cook a lot more...";
 	mes "And now he is selling them to everyone.";
 	mes "I guess he really enjoyed it.";
@@ -152,7 +152,7 @@ alberta,29,243,4	script	Jainie#val1	53,{
 	menu "I want some white chocolate!",M_CHOCO,"No thanks.",-;
 
 	mes "[Jainie]";
-	mes "You don't like " + mesitemlink(561) + "?";
+	mes "You don't like " + mesitemlink(561, false) + "?";
 	mes "Then buy some Stephen's black one!";
 	close;
 
@@ -160,7 +160,7 @@ M_CHOCO:
 	mes "[Jainie]";
 	mes "I can't sell you more then 5 at once....but, if you really need more....";
 	mes "you can come back again.";
-	mes "So how many do you want? 1 portion is 4500z + 1 " + mesitemlink(519) + ".";
+	mes "So how many do you want? 1 portion is 4500z + 1 " + mesitemlink(519, false) + ".";
 	next;
 	set @needmon,0;
 	input @flag_num;
@@ -175,7 +175,7 @@ M_CHOCO:
 	mes "[Jainie]";
 	mes "There you go!";
 	mes "You can give that to someone as a gift, or enjoy it yourself!";
-	mes "Mmm... sweet " + mesitemlink(558) + "...";
+	mes "Mmm... sweet " + mesitemlink(558, false) + "...";
 	mes "Visit me anytime...!";
 	close;
 
@@ -192,7 +192,7 @@ L_NOTENO:
 
 L_NOMILK:
 	mes "[Jainie]";
-	mes "You need "+@flag_num+" " + mesitemlink(519) + " for "+@flag_num+" portions of my special " + mesitemlink(561) + "...";
+	mes "You need "+@flag_num+" " + mesitemlink(519, false) + " for "+@flag_num+" portions of my special " + mesitemlink(561, false) + "...";
 	close;
 }
 
@@ -208,13 +208,13 @@ prt_castle,54,34,4	script	Carl Orleans#val1	47,{
 	next;
 	if (countitem(558)<3) {
 		mes "[Carl Orleans]";
-		mes "I'm sorry you do not have enough " + mesitemlink(558) + " Bars to do this.";
+		mes "I'm sorry you do not have enough " + mesitemlink(558, false) + " Bars to do this.";
 		if(rand(2))mes "They say Stephen from Alberta used to sell good Chocolate.";
 		close;
 	}
 	delitem 558,3;
 	mes "[Carl Orleans]";
-	mes "You got 3 pieces of pure " + mesitemlink(558) + " I see.";
+	mes "You got 3 pieces of pure " + mesitemlink(558, false) + " I see.";
 	mes "Give them to me...";
 	next;
 	mes "[Carl Orleans]";
@@ -228,7 +228,7 @@ prt_castle,54,34,4	script	Carl Orleans#val1	47,{
 	mes "[Carl Orleans]";
 	mes "Here.";
 	if(rand(2))close;
-	mes "I hope you give it to someone special, because its a special " + mesitemlink(558) + ".";
+	mes "I hope you give it to someone special, because its a special " + mesitemlink(558, false) + ".";
 	mes "As you know... only I can create this.";
 	next;
 	mes "[Carl Orleans]";
@@ -241,13 +241,13 @@ M_WHITE:
 	next;
 	if (countitem(561)<3) {
 		mes "[Carl Orleans]";
-		mes "I'm sorry you do not have enough " + mesitemlink(561) + " Bars to do this.";
+		mes "I'm sorry you do not have enough " + mesitemlink(561, false) + " Bars to do this.";
 		if(rand(2))mes "They say Jainie from Alberta used to sell good White Chocolate.";
 		close;
 	}
 	delitem 561,3;
 	mes "[Carl Orleans]";
-	mes "You got 3 pieces of pure " + mesitemlink(561) + " I see.";
+	mes "You got 3 pieces of pure " + mesitemlink(561, false) + " I see.";
 	mes "Give them to me...";
 	next;
 	mes "[Carl Orleans]";
@@ -261,7 +261,7 @@ M_WHITE:
 	mes "[Carl Orleans]";
 	mes "Here.";
 	if(rand(2))close;
-	mes "I hope you give it to someone special, because its a special " + mesitemlink(558) + ".";
+	mes "I hope you give it to someone special, because its a special " + mesitemlink(558, false) + ".";
 	mes "As you know... only I can create this.";
 	next;
 	mes "[Carl Orleans]";
@@ -270,7 +270,7 @@ M_WHITE:
 
 M_END:
 	mes "[Carl Orleans]";
-	mes "Oh.. well, if you want me to make some of my special handmade " + mesitemlink(558) + "....";
+	mes "Oh.. well, if you want me to make some of my special handmade " + mesitemlink(558, false) + "....";
 	mes "You will need to give me at least ^0000FF 3 Chocolates^000000 or ^0000FF 3 White Chocolates^000000.";
 	if(rand(2))close;
 	next;

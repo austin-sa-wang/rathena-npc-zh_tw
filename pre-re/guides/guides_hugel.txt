@@ -84,7 +84,7 @@ hugel,98,56,3	script	Hugel Guide Granny#huge	863,0,0,{
 				case 7:
 					mes "[Hugel Guide Granny]";
 					mes "The party supplies shop is around the center of village.";
-					mes "Make sure that you will not use any " + mesitemlink(12018) + " stuffs near other people, because it is dangerous, you know?";
+					mes "Make sure that you will not use any " + mesitemlink(12018, false) + " stuffs near other people, because it is dangerous, you know?";
 					if (.@compass_check)
 						viewpoint 1,91,105,8,0xFF99FF;
 					break;

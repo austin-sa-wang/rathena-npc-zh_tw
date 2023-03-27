@@ -467,7 +467,7 @@ gon_in,152,35,4	script	Hostess#gon	702,{
 		mes "to help our chief.";
 		mes "Please do your best for him!";
 		mes "Everyone in the village has";
-		mes "been on " + mesitemlink(1132) + "...";
+		mes "been on " + mesitemlink(1132, false) + "...";
 		next;
 		mes "[Mei Yen Fang]";
 		mes "Do you see that guy over there";
@@ -2518,7 +2518,7 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 					mes "...............";
 					mes "A sword?";
 					mes "I don't remember when the last";
-					mes "time I worked with " + mesitemlink(999) + " was.";
+					mes "time I worked with " + mesitemlink(999, false) + " was.";
 					mes "Hmm...";
 					mes "May I see the sword?";
 					next;
@@ -2784,7 +2784,7 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 				mes "to find out whether I can repair it or not.";
 				next;
 				mes "^0000FFYou Show the pieces of the";
-				mes "" + mesitemlink(6071) + " to Aumgarl.";
+				mes "" + mesitemlink(6071, false) + " to Aumgarl.";
 				mes "....................";
 				mes "Aumgarl took a careful look";
 				mes "at the pieces for awhile...^000000";
@@ -2829,11 +2829,11 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 				mes "this is what I will need-";
 				next;
 				mes "[Aumgarl]";
-				mes "^FF00FF One " + mesitemlink(986) + "";
+				mes "^FF00FF One " + mesitemlink(986, false) + "";
 				mes "2 Rough Oridecons";
 				mes "5 Broken Swords";
 				mes "2 Steels";
-				mes "1 " + mesitemlink(1005) + "";
+				mes "1 " + mesitemlink(1005, false) + "";
 				mes "2 Star Crumbs";
 				mes "5 Live Coals^000000";
 				next;
@@ -2867,7 +2867,7 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 				mes "to find out whether I can repair it or not.";
 				next;
 				mes "^0000FFYou show the pieces of the";
-				mes "" + mesitemlink(6071) + " to Aumgarl.";
+				mes "" + mesitemlink(6071, false) + " to Aumgarl.";
 				mes "....................";
 				mes "Aumgarl took a careful look";
 				mes "at the pieces for a while...^000000";
@@ -2913,11 +2913,11 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 				mes "this is what I will need-";
 				next;
 				mes "[Aumgarl]";
-				mes "^FF00FF One " + mesitemlink(986) + "";
+				mes "^FF00FF One " + mesitemlink(986, false) + "";
 				mes "2 Rough Oridecons";
 				mes "5 Broken Swords";
 				mes "2 Steels";
-				mes "1 " + mesitemlink(1005) + "";
+				mes "1 " + mesitemlink(1005, false) + "";
 				mes "2 Star Crumbs";
 				mes "5 Live Coals^000000";
 				next;
@@ -2951,11 +2951,11 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 			mes "Here's the list again-";
 			next;
 			mes "[Aumgarl]";
-			mes "^FF00FF 1 " + mesitemlink(986) + "";
+			mes "^FF00FF 1 " + mesitemlink(986, false) + "";
 			mes "2 Rough Oridecons";
 			mes "5 Broken Swords";
 			mes "2 Steels";
-			mes "1 " + mesitemlink(1005) + "";
+			mes "1 " + mesitemlink(1005, false) + "";
 			mes "2 Star Crumbs";
 			mes "5 Live Coals^000000";
 			next;
@@ -3048,7 +3048,7 @@ geffen_in,106,106,7	script	Girl#gnbs2	716,{
 				mes "^0030FFMy body...repeatedly turns cold and";
 				mes "hot... I'm not sweating at all...";
 				mes "....But I'm paralyzed...often";
-				mes "often..and...my " + mesitemlink(7855) + " beats...";
+				mes "often..and...my " + mesitemlink(7855, false) + " beats...";
 				mes "...irregularly.^000000";
 				next;
 				mes "[Lyroo]";
@@ -3487,7 +3487,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 				mes "[Cylrnel]";
 				mes "^FF00002 Yggdrasil Seeds";
 				mes "3 Aloes";
-				mes "1 " + mesitemlink(748) + "";
+				mes "1 " + mesitemlink(748, false) + "";
 				mes "10 Witch Starsands";
 				mes "5 Burning Hearts";
 				mes "5 Ice Cubics";
@@ -3501,7 +3501,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 				mes "[Cylrnel]";
 				mes "^FF00002 Yggdrasil Seeds";
 				mes "3 Aloes";
-				mes "1 " + mesitemlink(748) + "";
+				mes "1 " + mesitemlink(748, false) + "";
 				mes "10 Witch Starsands";
 				mes "5 Burning Hearts";
 				mes "5 Ice Cubics";
@@ -3509,8 +3509,8 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 			}
 			else {
 				mes "[Cylrnel]";
-				mes "^FF00001 " + mesitemlink(608) + "";
-				mes "1 " + mesitemlink(704) + "";
+				mes "^FF00001 " + mesitemlink(608, false) + "";
+				mes "1 " + mesitemlink(704, false) + "";
 				mes "5 Witch Starsands";
 				mes "3 Burning Hearts";
 				mes "3 Ice Cubics";
@@ -3522,8 +3522,8 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 				mes "We need...";
 				next;
 				mes "[Cylrnel]";
-				mes "^FF00001 " + mesitemlink(608) + "";
-				mes "1 " + mesitemlink(704) + "";
+				mes "^FF00001 " + mesitemlink(608, false) + "";
+				mes "1 " + mesitemlink(704, false) + "";
 				mes "5 Witch Starsands";
 				mes "3 Burning Hearts";
 				mes "3 Ice Cubics";
@@ -3579,7 +3579,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 			next;
 			mes "[Cylrnel]";
 			mes "^FF00001 Seed of Yggdrasil";
-			mes "1 " + mesitemlink(704) + "";
+			mes "1 " + mesitemlink(704, false) + "";
 			mes "5 Witch Starsands";
 			mes "3 Burning Hearts";
 			mes "3 Ice Cubics";
@@ -3634,7 +3634,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 			mes "[Cylrnel]";
 			mes "^FF00002 Yggdrasil Seeds";
 			mes "3 Aloes";
-			mes "1 " + mesitemlink(748) + "";
+			mes "1 " + mesitemlink(748, false) + "";
 			mes "10 Witch Starsands";
 			mes "5 Burning Hearts";
 			mes "5 Ice Cubics";
@@ -3709,7 +3709,7 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		mes "[Han Ran Jiao]";
 		mes "Oh no! What will I do?!";
 		mes "I can't believe I dropped";
-		mes "my irreplaceable " + mesitemlink(1201) + "! Ahhhhhh!";
+		mes "my irreplaceable " + mesitemlink(1201, false) + "! Ahhhhhh!";
 		next;
 		if (BaseLevel >= 20) {
 			set nakha,1;
@@ -3725,7 +3725,7 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		mes "[Han Ran Jiao]";
 		mes "Oh no! What will I do?";
 		mes "I can't believe I dropped";
-		mes "my irreplaceable " + mesitemlink(1201) + "! Ahhhhhh!";
+		mes "my irreplaceable " + mesitemlink(1201, false) + "! Ahhhhhh!";
 		next;
 		mes "[Han Ran Jiao]";
 		mes "I need to go down to get it";
@@ -3741,22 +3741,22 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		mes "Hmm?";
 		next;
 		mes "[Han Ran Jiao]";
-		mes "That...that " + mesitemlink(1201) + "!";
-		mes "That's my ancestor's sacred " + mesitemlink(1201) + "";
+		mes "That...that " + mesitemlink(1201, false) + "!";
+		mes "That's my ancestor's sacred " + mesitemlink(1201, false) + "";
 		mes "that I accidentally dropped from";
 		mes "here! Where did you get it!?";
 		next;
 		mes "[Han Ran Jiao]";
-		mes "I dropped that " + mesitemlink(1201) + " from being";
+		mes "I dropped that " + mesitemlink(1201, false) + " from being";
 		mes "careless. It belongs to one of my";
 		mes "ancestors. I know it looks like";
-		mes "a cheap " + mesitemlink(1201) + "...";
+		mes "a cheap " + mesitemlink(1201, false) + "...";
 		next;
 		mes "[Han Ran Jiao]";
 		mes "But it has been in the";
 		mes "family for a very long time.";
 		mes "Would you please return that";
-		mes "" + mesitemlink(1201) + " to me?";
+		mes "" + mesitemlink(1201, false) + " to me?";
 		next;
 		if (select("Return the knife.:Refuse.") == 1) {
 			set nakha,3;
@@ -3785,7 +3785,7 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		mes "[Han Ran Jiao]";
 		mes "Oh no! What will I do?";
 		mes "I can't believe I dropped";
-		mes "my irreplaceable " + mesitemlink(1201) + "! Ahhhhhh!";
+		mes "my irreplaceable " + mesitemlink(1201, false) + "! Ahhhhhh!";
 		next;
 		mes "[Han Ran Jiao]";
 		mes "I need to go down to get it";
@@ -3810,7 +3810,7 @@ OnTouch_:
 		mes " ";
 		mes "Something was hidden beneath the leaves...^000000";
 		mes " ";
-		mes "- You have found an old " + mesitemlink(1201) + " -";
+		mes "- You have found an old " + mesitemlink(1201, false) + " -";
 		close2;
 		getitem 1201,1; //Knife
 	}

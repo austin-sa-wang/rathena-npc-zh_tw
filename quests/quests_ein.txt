@@ -84,13 +84,13 @@ einbech,97,167,5	script	Cavitar	847,{
 				mes "[Cavitar]";
 				mes "Let me check the items";
 				mes "that you brought before";
-				mes "I give you an " + mesitemlink(984) + ".";
+				mes "I give you an " + mesitemlink(984, false) + ".";
 				next;
 				if ((MaxWeight - Weight) > 2399) {
 					mes "[Cavitar]";
 					mes "Good, you brought";
 					mes "everything! Now let me";
-					mes "give you this " + mesitemlink(984) + ".";
+					mes "give you this " + mesitemlink(984, false) + ".";
 					mes "I'm sorry that I can't offer";
 					mes "you much more than this.";
 					next;
@@ -123,13 +123,13 @@ einbech,97,167,5	script	Cavitar	847,{
 				mes "things. Let me tell you";
 				mes "what you need to bring";
 				mes "once again so that I can";
-				mes "give you 1 " + mesitemlink(984) + ".";
+				mes "give you 1 " + mesitemlink(984, false) + ".";
 				next;
 				mes "[Cavitar]";
-				mes "40 " + mesitemlink(7126) + ",";
-				mes "10 " + mesitemlink(1011) + ",";
-				mes "3 " + mesitemlink(1003) + " and";
-				mes "10 " + mesitemlink(912) + ".";
+				mes "40 " + mesitemlink(7126, false) + ",";
+				mes "10 " + mesitemlink(1011, false) + ",";
+				mes "3 " + mesitemlink(1003, false) + " and";
+				mes "10 " + mesitemlink(912, false) + ".";
 				mes "Please don't";
 				mes "forget this.";
 				close;
@@ -140,14 +140,14 @@ einbech,97,167,5	script	Cavitar	847,{
 			mes "Let me remind";
 			mes "you of what you";
 			mes "need to trade for";
-			mes "1 " + mesitemlink(984) + " in";
+			mes "1 " + mesitemlink(984, false) + " in";
 			mes "case you've forgotten.";
 			next;
 			mes "[Cavitar]";
-			mes "40 " + mesitemlink(7126) + ",";
-			mes "10 " + mesitemlink(1011) + ",";
-			mes "3 " + mesitemlink(1003) + " and";
-			mes "10 " + mesitemlink(912) + ".";
+			mes "40 " + mesitemlink(7126, false) + ",";
+			mes "10 " + mesitemlink(1011, false) + ",";
+			mes "3 " + mesitemlink(1003, false) + " and";
+			mes "10 " + mesitemlink(912, false) + ".";
 			mes "Come back";
 			mes "whenever you're ready.";
 			close;
@@ -320,16 +320,16 @@ einbech,97,167,5	script	Cavitar	847,{
 									next;
 									mes "[Cavitar]";
 									mes "Still, I'd be happy";
-									mes "to trade you 1 " + mesitemlink(984) + "";
+									mes "to trade you 1 " + mesitemlink(984, false) + "";
 									mes "if you can bring me some";
 									mes "items. How does that sound?";
 									next;
 									mes "[Cavitar]";
 									mes "Would you bring me";
-									mes "40 " + mesitemlink(7126) + ",";
-									mes "10 " + mesitemlink(1011) + ",";
-									mes "3 " + mesitemlink(1003) + " and";
-									mes "10 " + mesitemlink(912) + "?";
+									mes "40 " + mesitemlink(7126, false) + ",";
+									mes "10 " + mesitemlink(1011, false) + ",";
+									mes "3 " + mesitemlink(1003, false) + " and";
+									mes "10 " + mesitemlink(912, false) + "?";
 									next;
 									switch(select("Sure~!:No, thanks.")) {
 									case 1:
@@ -373,16 +373,16 @@ einbech,97,167,5	script	Cavitar	847,{
 								next;
 								mes "[Cavitar]";
 								mes "Still, I'd be happy";
-								mes "to trade you 1 " + mesitemlink(984) + "";
+								mes "to trade you 1 " + mesitemlink(984, false) + "";
 								mes "if you can bring me some";
 								mes "items. How does that sound?";
 								next;
 								mes "[Cavitar]";
 								mes "Would you bring me";
-								mes "40 " + mesitemlink(7126) + ",";
-								mes "10 " + mesitemlink(1011) + ",";
-								mes "3 " + mesitemlink(1003) + " and";
-								mes "10 " + mesitemlink(912) + "?";
+								mes "40 " + mesitemlink(7126, false) + ",";
+								mes "10 " + mesitemlink(1011, false) + ",";
+								mes "3 " + mesitemlink(1003, false) + " and";
+								mes "10 " + mesitemlink(912, false) + "?";
 								next;
 								switch(select("Sure~!:No, thanks.")) {
 						 		case 1:
@@ -496,12 +496,12 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "what I do for business.";
 					mes "Now, as for what I do for";
 					mes "^EEA9B8pleasure^000000, well, please don't";
-					mes "hesitate to ask, sugar honey~ ";
+					mes "hesitate to ask, sugar " + mesitemlink(518, false) + "~ ";
 					next;
 					break;
 				case 2:
 					mes "[Uwe]";
-					mes "Only continuous effort will lead you to success. I guess that means you've learned your lesson, sugar honey~";
+					mes "Only continuous effort will lead you to success. I guess that means you've learned your lesson, sugar " + mesitemlink(518, false) + "~";
 					next;
 					break;
 				}
@@ -521,7 +521,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "I had these lying";
 				mes "around, so why don't";
 				mes "you take them, sugar";
-				mes "honey? They're not very";
+				mes "" + mesitemlink(518, false) + "? They're not very";
 				mes "pricey, but they're useful";
 				mes "in doing some smithing.";
 				next;
@@ -543,12 +543,12 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "you cutie adventurer~";
 				next;
 				mes "[Uwe]";
-				mes "So, sugar honey,";
+				mes "So, sugar " + mesitemlink(518, false) + ",";
 				mes "how is it going with";
 				mes "the little favor I asked";
 				mes "you about last time?";
 				mes "Did you already forget";
-				mes "the 6 " + mesitemlink(7126) + "?";
+				mes "the 6 " + mesitemlink(7126, false) + "?";
 				next;
 				switch(select("There you go.:I want to quit.:Can I do it later?")) {
 				case 1:
@@ -565,7 +565,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						}
 						mes "[Uwe]";
 						mes "Thank you ^EEA9B8so^000000 much!";
-						mes "Here's the " + mesitemlink(1003) + " I promised~";
+						mes "Here's the " + mesitemlink(1003, false) + " I promised~";
 						mes "Oh, and take these Mini Furnaces. They were just lying around, so you know, I thought, well, why don't you take them? *Tee hee hee~*";
 						delitem 7126,6; //Large_Jellopy
 						set ein_cook,219;
@@ -681,7 +681,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					else {
 						mes "[Uwe]";
 						mes "^666666You didn't bring";
-						mes "any " + mesitemlink(7126) + "...?^000000.";
+						mes "any " + mesitemlink(7126, false) + "...?^000000.";
 						set ein_cook,219;
 						next;
 						mes "[Uwe]";
@@ -739,7 +739,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						if (countitem(7126) > 5) {
 							mes "[Uwe]";
 							mes "Thank you ^EEA9B8so^000000 much!";
-							mes "Here's the " + mesitemlink(1003) + " I promised~";
+							mes "Here's the " + mesitemlink(1003, false) + " I promised~";
 							mes "Oh, and take these Mini Furnaces. They were just lying around, so you know, I thought, well, why don't you take them? *Tee hee hee~*";
 							delitem 7126,6; //Large_Jellopy
 							set ein_cook,219;
@@ -803,7 +803,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 								mes "Okay.";
 								mes "Anyway~!";
 								mes "When you do get all";
-								mes "that " + mesitemlink(7126) + ",";
+								mes "that " + mesitemlink(7126, false) + ",";
 								mes "just come back to me.";
 								if (Sex == SEX_MALE) {
 									mes "...you ^EEA9B8naughty boy^000000.";
@@ -825,7 +825,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						else {
 							mes "[Uwe]";
 							mes "^666666You didn't bring";
-							mes "any " + mesitemlink(7126) + "...?^000000.";
+							mes "any " + mesitemlink(7126, false) + "...?^000000.";
 							set ein_cook,219;
 							next;
 							mes "[Uwe]";
@@ -879,7 +879,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 			case 1:
 				mes "[Uwe]";
 				mes "Is this a forge?";
-				mes "Oh, sugar honey,";
+				mes "Oh, sugar " + mesitemlink(518, false) + ",";
 				mes "you haven't been here";
 				mes "before, haven't you?";
 				next;
@@ -908,14 +908,14 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "[Uwe]";
 					mes "...";
 					mes "......";
-					mes "......" + mesitemlink(7855) + "?";
+					mes "......" + mesitemlink(7855, false) + "?";
 					next;
 					mes "[Uwe]";
 					mes "Na-na-na-na-noooo~";
-					mes "If a " + mesitemlink(7855) + " was all you";
+					mes "If a " + mesitemlink(7855, false) + " was all you";
 					mes "needed to cook or forge,";
 					mes "then anyone can make and";
-					mes "upgrade a " + mesitemlink(1163) + ", right?";
+					mes "upgrade a " + mesitemlink(1163, false) + ", right?";
 					next;
 					mes "[Uwe]";
 					mes "What you really need";
@@ -956,7 +956,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "[Uwe]";
 					mes "Speaking of ingredients,";
 					mes "someone just gave me some";
-					mes "" + mesitemlink(999) + ". Why don't you have 2 of";
+					mes "" + mesitemlink(999, false) + ". Why don't you have 2 of";
 					mes "them as my little way of saying, ''Welcome to Einbroch, cutie~!''";
 					set ein_cook,3;
 					getitem 998,2; //Iron
@@ -1023,7 +1023,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "some new hammers today.";
 					mes "Why don't you have one as";
 					mes "my way of saying ''Welcome";
-					mes "to Einbroch, sugar honey~''";
+					mes "to Einbroch, sugar " + mesitemlink(518, false) + "~''";
 					set ein_cook,7;
 					getitem 613,1; //Iron_Hammer
 					break;
@@ -1146,7 +1146,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -1196,7 +1196,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					switch(select("Heart:Skills:Tools:Cancel.")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -1259,7 +1259,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -1309,7 +1309,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					switch(select("Heart:Ingredients:Tools:Cancel")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -1375,7 +1375,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -1426,7 +1426,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					switch(select("Heart:Ingredients:Skills:Cancel.")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -1541,7 +1541,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					switch(select("Heart:Ingredients:Skills:Tools:Cancel.")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -1639,7 +1639,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -1719,7 +1719,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				switch(select("Then why are you here?:But I like the city life~")) {
 				case 1:
 					mes "[Uwe]";
-					mes "Well, sugar honey,";
+					mes "Well, sugar " + mesitemlink(518, false) + ",";
 					mes "I've been waiting for";
 					mes "someone. But... It looks";
 					mes "like that person won't be";
@@ -1789,7 +1789,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				switch(select("Heart:Ingredients:Skills:Tools:Cancel.")) {
 				case 1:
 					mes "[Uwe]";
-					mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+					mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 					mes "you need passion and desire";
 					mes "to create something special.";
 					mes "Every smith and cook knows that";
@@ -1887,7 +1887,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "In the end, the best";
 					mes "tools are the ones you're";
 					mes "most comfortable with using.";
-					mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+					mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 					mes "a little novice chef~";
 					next;
 					mes "[Uwe]";
@@ -1948,7 +1948,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				switch(select("Then why are you here?:But I like the city life~")) {
 				case 1:
 					mes "[Uwe]";
-					mes "Well, sugar honey,";
+					mes "Well, sugar " + mesitemlink(518, false) + ",";
 					mes "I've been waiting for someone. But... It looks like that person won't be coming back anyway.";
 					next;
 					mes "[Uwe]";
@@ -1973,12 +1973,12 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "[Uwe]";
 				mes "Cooking utensils?";
 				mes "Well, they're usually";
-				mes "made out of ^0000FFJubilee^000000,";
+				mes "made out of ^0000FF" + mesitemlink(7312, false) + "^000000,";
 				mes "a crystallization dropped";
 				mes "from mineral monsters.";
 				next;
 				mes "[Uwe]";
-				mes "" + mesitemlink(7312) + " is too soft";
+				mes "" + mesitemlink(7312, false) + " is too soft";
 				mes "to make weapons, but";
 				mes "it conducts heat very well";
 				mes "so it's perfect for making";
@@ -1991,8 +1991,8 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "[Uwe]";
 				mes "If you don't mind,";
 				mes "would you please give me";
-				mes "30 ^0000FFJubilee^000000 and 4 ^0000FFLarge " + mesitemlink(909) + "^000000.";
-				mes "Then, I'll trade you 1 " + mesitemlink(1003) + " for all of those. How does it sound?";
+				mes "30 ^0000FF" + mesitemlink(7312, false) + "^000000 and 4 ^0000FF" + mesitemlink(7126, false) + "^000000.";
+				mes "Then, I'll trade you 1 " + mesitemlink(1003, false) + " for all of those. How does it sound?";
 				next;
 				switch(select("Sure.:No, thanks.")) {
 				case 1:
@@ -2024,7 +2024,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "[Uwe]";
 					mes "I understand.";
 					mes "You might not have all";
-					mes "that " + mesitemlink(7312) + " and " + mesitemlink(7126) + "";
+					mes "that " + mesitemlink(7312, false) + " and " + mesitemlink(7126, false) + "";
 					mes "I'm asking for at the moment,";
 					mes "anyway. But if you do get them, would visit me again, cutie?";
 					close;
@@ -2051,7 +2051,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "Mmmm...";
 				mes "I know!";
 				mes "Let's celebrate!";
-				mes "Here sugar honey,";
+				mes "Here sugar " + mesitemlink(518, false) + ",";
 				mes "have some of these";
 				mes "cookies I just baked~";
 				next;
@@ -2198,7 +2198,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "[Uwe]";
 					mes "Oh, that is such";
 					mes "a good decision,";
-					mes "sugar honey! Oh, you";
+					mes "sugar " + mesitemlink(518, false) + "! Oh, you";
 					mes "cutie adventurers are";
 					mes "so precious, so lovable.";
 					mes "^333333*Tee hee hee~*^000000";
@@ -2220,7 +2220,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				switch(select("Heart:Ingredients:Skills:Tools:Cancel.")) {
 				case 1:
 					mes "[Uwe]";
-					mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+					mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 					mes "you need passion and desire";
 					mes "to create something special.";
 					mes "Every smith and cook knows that";
@@ -2306,7 +2306,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "In the end, the best";
 					mes "tools are the ones you're";
 					mes "most comfortable with using.";
-					mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+					mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 					mes "a little novice chef~";
 					next;
 					mes "[Uwe]";
@@ -2407,7 +2407,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "[Uwe]";
 						mes "Oh, that is such";
 						mes "a good decision,";
-						mes "sugar honey! Oh, you";
+						mes "sugar " + mesitemlink(518, false) + "! Oh, you";
 						mes "cutie adventurers are";
 						mes "so precious, so lovable.";
 						mes "^333333*Tee hee hee~*^000000";
@@ -2453,7 +2453,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					switch(select("Heart:Ingredients:Skills:Tools:Cancel.")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -2539,7 +2539,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -2567,7 +2567,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				case 4:
 					mes "[Uwe]";
 					mes "Alright then,";
-					mes "sugar honey.";
+					mes "sugar " + mesitemlink(518, false) + ".";
 					mes "Take care~";
 					mes "Hohohohoho~";
 					close;
@@ -2581,12 +2581,12 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "you cutie adventurer~";
 				next;
 				mes "[Uwe]";
-				mes "So, sugar honey,";
+				mes "So, sugar " + mesitemlink(518, false) + ",";
 				mes "how is it going with";
 				mes "the little favor I asked";
 				mes "you about last time?";
 				mes "Did you already forget";
-				mes "the 6 " + mesitemlink(7126) + "?";
+				mes "the 6 " + mesitemlink(7126, false) + "?";
 				next;
 				switch(select("Talk about Einbroch.:Ask him to forge a Weapon.:Give him the Materials.:Cancel.")) {
 				case 1:
@@ -2645,7 +2645,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "[Uwe]";
 						mes "Oh, that is such";
 						mes "a good decision,";
-						mes "sugar honey! Oh, you";
+						mes "sugar " + mesitemlink(518, false) + "! Oh, you";
 						mes "cutie adventurers are";
 						mes "so precious, so lovable.";
 						mes "^333333*Tee hee hee~*^000000";
@@ -2686,7 +2686,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					if (countitem(7126) > 5) {
 						mes "[Uwe]";
 						mes "Thank you ^EEA9B8so^000000 much!";
-						mes "Here's the " + mesitemlink(1003) + " I promised~";
+						mes "Here's the " + mesitemlink(1003, false) + " I promised~";
 						delitem 7126,6; //Large_Jellopy
 						set ein_cook,ein_cook+100;
 						getitem 1003,1; //Coal
@@ -2701,23 +2701,23 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						}
 						else {
 							mes "This isn't enough";
-							mes "" + mesitemlink(7126) + "...!";
+							mes "" + mesitemlink(7126, false) + "...!";
 						}
 						mes "Next time, be sure";
-						mes "to bring 6 " + mesitemlink(7126) + ",";
+						mes "to bring 6 " + mesitemlink(7126, false) + ",";
 						mes "okay? Don't forget, cutie~";
 						close;
 					}
 					mes "[Uwe]";
 					mes "Now, I can't teach you everything about cooking, but I will give you some good advice for beginners.";
 					mes "I hope you pay attention, sugar";
-					mes "honey. Now what would you like";
+					mes "" + mesitemlink(518, false) + ". Now what would you like";
 					mes "to hear more about? Hmm...?";
 					next;
 					switch(select("Heart:Materials:Skills:Tools:Cancel.")) {
 					case 1:
 						mes "[Uwe]";
-						mes "Ah, " + mesitemlink(7855) + ". Just like forging,";
+						mes "Ah, " + mesitemlink(7855, false) + ". Just like forging,";
 						mes "you need passion and desire";
 						mes "to create something special.";
 						mes "Every smith and cook knows that";
@@ -2815,7 +2815,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "In the end, the best";
 						mes "tools are the ones you're";
 						mes "most comfortable with using.";
-						mes "In fact, I still use the old " + mesitemlink(1201) + " I used back when I was just";
+						mes "In fact, I still use the old " + mesitemlink(1201, false) + " I used back when I was just";
 						mes "a little novice chef~";
 						next;
 						mes "[Uwe]";
@@ -2832,7 +2832,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					case 5:
 						mes "[Uwe]";
 						mes "Alright then,";
-						mes "sugar honey.";
+						mes "sugar " + mesitemlink(518, false) + ".";
 						mes "Take care~";
 						mes "Hohohohoho~";
 						close;
@@ -2841,7 +2841,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				case 4:
 					mes "[Uwe]";
 					mes "Alright then,";
-					mes "sugar honey.";
+					mes "sugar " + mesitemlink(518, false) + ".";
 					mes "Take care~";
 					mes "Hohohohoho~";
 					close;
@@ -2909,7 +2909,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "[Uwe]";
 						mes "Oh, that is such";
 						mes "a good decision,";
-						mes "sugar honey! Oh, you";
+						mes "sugar " + mesitemlink(518, false) + "! Oh, you";
 						mes "cutie adventurers are";
 						mes "so precious, so lovable.";
 						mes "^333333*Tee hee hee~*^000000";
@@ -2975,11 +2975,11 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "^333333*Titter~*^000000 I don't need";
 					mes "much to make some";
 					mes "cooking utensils. Bring";
-					mes "6 ^0000FFLarge " + mesitemlink(909) + "^000000. That's it!";
+					mes "6 ^0000FF" + mesitemlink(7126, false) + "^000000. That's it!";
 					next;
 					mes "[Uwe]";
 					mes "In return, I will give you";
-					mes "1 " + mesitemlink(1003) + " and some useful";
+					mes "1 " + mesitemlink(1003, false) + " and some useful";
 					mes "cooking advice for novices.";
 					mes "I give this advice for free to";
 					mes "my smithing colleages, though...";
@@ -3019,7 +3019,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				mes "[Uwe]";
 				set ein_cook,1000;
 				mes "Is this a forge?";
-				mes "Oh, sugar honey,";
+				mes "Oh, sugar " + mesitemlink(518, false) + ",";
 				mes "you haven't been here";
 				mes "before, haven't you?";
 				next;
@@ -3098,7 +3098,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 						mes "[Uwe]";
 						mes "Oh, that is such";
 						mes "a good decision,";
-						mes "sugar honey! Oh, you";
+						mes "sugar " + mesitemlink(518, false) + "! Oh, you";
 						mes "cutie adventurers are";
 						mes "so precious, so lovable.";
 						mes "^333333*Tee hee hee~*^000000";
@@ -3164,11 +3164,11 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 					mes "^333333*Titter~*^000000 I don't need";
 					mes "much to make some";
 					mes "cooking utensils. Bring";
-					mes "6 ^0000FFLarge " + mesitemlink(909) + "^000000. That's it!";
+					mes "6 ^0000FF" + mesitemlink(7126, false) + "^000000. That's it!";
 					next;
 					mes "[Uwe]";
 					mes "In return, I will give you";
-					mes "1 " + mesitemlink(1003) + " and some useful";
+					mes "1 " + mesitemlink(1003, false) + " and some useful";
 					mes "cooking advice for novices.";
 					mes "I give this advice for free to";
 					mes "my smithing colleages, though...";
@@ -3192,7 +3192,7 @@ einbroch,215,180,6	script	Uwe Kleine#ein	85,{
 				case 4:
 					mes "[Uwe]";
 					mes "Take care,";
-					mes "sugar honey~";
+					mes "sugar " + mesitemlink(518, false) + "~";
 					mes "Ho ho ho!";
 					close;
 				}
@@ -3597,7 +3597,7 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "at least";
 		mes "20 ^FF0000Flexible Tubes^000000,";
 		mes "10 ^FF0000Rusty Screw^000000 and";
-		mes "10 ^FF0000Used " + mesitemlink(998) + " Plate^000000";
+		mes "10 ^FF0000Used " + mesitemlink(998, false) + " Plate^000000";
 		mes "to repair this factory.";
 		next;
 		mes "[Zelmeto]";
@@ -3640,7 +3640,7 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "just get";
 		mes "20 ^FF0000Flexible Tube^000000,";
 		mes "10 ^FF0000Rusty Screw^000000 and";
-		mes "10 ^FF0000Used " + mesitemlink(998) + " Plate^000000,";
+		mes "10 ^FF0000Used " + mesitemlink(998, false) + " Plate^000000,";
 		mes "we could make those repairs.";
 		next;
 		changequest 8030,8031;
@@ -3757,13 +3757,13 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "[Zelmeto]";
 		mes "This time, you need";
 		mes "to inspect an outdoor";
-		mes "" + mesitemlink(2268) + " that is located far";
+		mes "" + mesitemlink(2268, false) + " that is located far";
 		mes "outside of the factory.";
 		next;
 		mes "[Zelmeto]";
 		mes "Since there aren't any";
 		mes "other machines in that";
-		mes "area, that " + mesitemlink(2268) + " shouldn't";
+		mes "area, that " + mesitemlink(2268, false) + " shouldn't";
 		mes "be too hard to find.";
 		close;
 	}
@@ -3782,7 +3782,7 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "some of the other machines.";
 		next;
 		mes "[Zelmeto]";
-		mes "Now, there's a " + mesitemlink(2268) + " inside";
+		mes "Now, there's a " + mesitemlink(2268, false) + " inside";
 		mes "this factory that I want you";
 		mes "to look at. Many of our pipes";
 		mes "aren't in the best condition,";
@@ -3790,7 +3790,7 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "be severely damaged.";
 		next;
 		mes "[Zelmeto]";
-		mes "Now, the " + mesitemlink(2268) + " I want";
+		mes "Now, the " + mesitemlink(2268, false) + " I want";
 		mes "you to inspect is located";
 		mes "near those large caultrons";
 		mes "of molten metal. You should";
@@ -3941,7 +3941,7 @@ ein_in01,67,242,3	script	Zelmeto	851,{
 		mes "[Zelmeto]";
 		mes "There are 3 automatic";
 		mes "pressure governors which";
-		mes "" + mesitemlink(1354) + " the bent " + mesitemlink(998) + " plates";
+		mes "" + mesitemlink(1354, false) + " the bent " + mesitemlink(998, false) + " plates";
 		mes "from above to flatten them. It";
 		mes "seems that one of them may";
 		mes "have some kind of problem.";
@@ -4082,7 +4082,7 @@ ein_in01,49,232,3	script	2nd Control Panel#ins	111,{
 		mes "^3355FFIt's the 2nd control panel";
 		mes "Zelmeto asked you to inspect.";
 		mes "It looks totally broken: screws";
-		mes "are missing, and the " + mesitemlink(998) + " cover";
+		mes "are missing, and the " + mesitemlink(998, false) + " cover";
 		mes "has been bent open, revealing";
 		mes "a tangled mess of wires inside.^000000";
 		close;
@@ -4146,7 +4146,7 @@ ein_in01,100,266,3	script	Pipe#ins	111,{
 			changequest 8025,8026;
 		set EinFactory,10;
 		mes "^3355FFThe inspection of this";
-		mes "" + mesitemlink(2268) + " didn't take very long.";
+		mes "" + mesitemlink(2268, false) + " didn't take very long.";
 		mes "It's bloated and worn out";
 		mes "from long durations of ";
 		mes "being overloaded with";
@@ -4530,7 +4530,7 @@ einbech,165,105,7	script	Buender Hikeman#ein	847,{
 		mes "off in his chair. Judging";
 		mes "from the look of discomfort";
 		mes "on his face, he seems to be";
-		mes "having a " + mesitemlink(7102) + ".";
+		mes "having a " + mesitemlink(7102, false) + ".";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Excuse me...";
@@ -4656,7 +4656,7 @@ einbech,165,105,7	script	Buender Hikeman#ein	847,{
 			mes "["+strcharinfo(0)+"]";
 			mes "^333333If I mention that";
 			mes "what they found was";
-			mes "the Ymir " + mesitemlink(7855) + " Piece,";
+			mes "the Ymir " + mesitemlink(7855, false) + " Piece,";
 			mes "Hikeman might end up";
 			mes "getting hunted down, so";
 			mes "I better not say anything.^000000";
@@ -4664,7 +4664,7 @@ einbech,165,105,7	script	Buender Hikeman#ein	847,{
 			mes "["+strcharinfo(0)+"]";
 			mes "^333333Why are those men";
 			mes "so obsessed with that";
-			mes "Ymir " + mesitemlink(7855) + " Piece? Is it";
+			mes "Ymir " + mesitemlink(7855, false) + " Piece? Is it";
 			mes "really worth this kind of";
 			mes "cruelty? Whoever they are,";
 			mes "their intentions can't be good.";
@@ -4723,7 +4723,7 @@ einbech,165,105,7	script	Buender Hikeman#ein	847,{
 		mes "off in his chair. Judging";
 		mes "from the look of discomfort";
 		mes "on his face, he seems to be";
-		mes "having a " + mesitemlink(7102) + ".";
+		mes "having a " + mesitemlink(7102, false) + ".";
 		cutin "ein_hicman",255;
 		close;
 	}
@@ -5183,7 +5183,7 @@ ein_in01,231,163,7	script	Sick Old Man#ein	849,{
 		if (.@input$ == "Ymir") {
 			mes "[Shinokas]";
 			mes "Y-Ymir...?";
-			mes "The h-" + mesitemlink(7855) + " of Ymir?";
+			mes "The h-" + mesitemlink(7855, false) + " of Ymir?";
 			mes "The power to control";
 			mes "the world... We really";
 			mes "did find something";
@@ -5399,7 +5399,7 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 		next;
 		mes "[Drunken Man]";
 		mes "Let's do it!";
-		mes "^3131FFYmir's " + mesitemlink(7855) + "^000000 is";
+		mes "^3131FFYmir's " + mesitemlink(7855, false) + "^000000 is";
 		mes "on my side! GO!";
 		emotion ET_GO;
 		next;
@@ -5510,14 +5510,14 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 		case 1:
 			mes "[Drunken Man]";
 			mes "What...?";
-			mes "Ymir's " + mesitemlink(7855) + "?";
+			mes "Ymir's " + mesitemlink(7855, false) + "?";
 			mes "How do you know";
 			mes "about that? ^333333*Hiccup*^000000";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "Y-you...!";
 			mes "You were just yelling,";
-			mes "''Ymir's " + mesitemlink(7855) + " is on my";
+			mes "''Ymir's " + mesitemlink(7855, false) + " is on my";
 			mes "side,'' while you were";
 			mes "gambling with those Apples!";
 			next;
@@ -5532,7 +5532,7 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 			mes "supposed to be talking";
 			mes "about this. As head of";
 			mes "the Laboratory, I'm sworn";
-			mes "to secrecy about Ymir's " + mesitemlink(7855) + ".";
+			mes "to secrecy about Ymir's " + mesitemlink(7855, false) + ".";
 			next;
 			mes "[Drunken Man]";
 			mes "But what do I care?!";
@@ -5551,7 +5551,7 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 			next;
 			mes "[Drunken Man]";
 			mes "Yeah, we're researching";
-			mes "Ymir's " + mesitemlink(7855) + ". It was found";
+			mes "Ymir's " + mesitemlink(7855, false) + ". It was found";
 			mes "a long time ago in ^3131FFEinbech^000000";
 			mes "and it's in our lab now.";
 			next;
@@ -5575,7 +5575,7 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 			mes "hooked up to all those";
 			mes "wires in the Laboratory";
 			mes "must have been a piece";
-			mes "of ^3131FFYmir's " + mesitemlink(7855) + "^333333. I better";
+			mes "of ^3131FFYmir's " + mesitemlink(7855, false) + "^333333. I better";
 			mes "tell Shinokas about this.)^000000";
 			changequest 2076,2077;
 			set Shinokas_Quest,9;
@@ -5610,7 +5610,7 @@ airplane,31,77,5	script	Drunken Man#ein	853,{
 		next;
 		mes "[Drunken Man]";
 		mes "Let's do it!";
-		mes "^3131FFYmir's " + mesitemlink(7855) + "^000000 is";
+		mes "^3131FFYmir's " + mesitemlink(7855, false) + "^000000 is";
 		mes "on my side! GO!";
 		emotion ET_GO;
 		next;
@@ -5863,7 +5863,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 		mes "How is it like?";
 		mes "Going wherever you";
 		mes "please, following your";
-		mes "" + mesitemlink(7855) + "'s true desire?";
+		mes "" + mesitemlink(7855, false) + "'s true desire?";
 		mes "What I would give to";
 		mes "be able to do that...";
 		close;
@@ -5982,7 +5982,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 		mes "[Calla]";
 		mes "Oh...?";
 		mes "He asked you to";
-		mes "deliver this " + mesitemlink(712) + "";
+		mes "deliver this " + mesitemlink(712, false) + "";
 		mes "to me? How sweet~";
 		mes "Thank you very much,";
 		mes "kind adventurer~";
@@ -6001,7 +6001,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 			mes "Ah, " + strcharinfo(0) + "!";
 			mes "Such a lovely name~";
 			mes "I promise that I won't ever";
-			mes "forget it. Oh, and if you pass by Einbech, would you thank Klitzer for the " + mesitemlink(712) + " for me please?";
+			mes "forget it. Oh, and if you pass by Einbech, would you thank Klitzer for the " + mesitemlink(712, false) + " for me please?";
 			next;
 			mes "[Calla]";
 			mes "A-and... And...";
@@ -6039,7 +6039,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 		next;
 		mes "[Calla]";
 		mes "Would you please";
-		mes "take this " + mesitemlink(1901) + " and";
+		mes "take this " + mesitemlink(1901, false) + " and";
 		mes "try to make it to Klitzer";
 		mes "this time? Thank you";
 		mes "for your help~";
@@ -6082,7 +6082,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 		mes "[Calla]";
 		mes "Well, maybe I can't see";
 		mes "him, but would you give";
-		mes "my " + mesitemlink(1901) + " to Klitzer for me?";
+		mes "my " + mesitemlink(1901, false) + " to Klitzer for me?";
 		mes "I used to play this for him";
 		mes "all the time...";
 		next;
@@ -6121,7 +6121,7 @@ ein_in01,31,138,3	script	Calla#ein	90,{
 		mes "How is it like?";
 		mes "Going wherever you";
 		mes "please, following your";
-		mes "" + mesitemlink(7855) + "'s true desire?";
+		mes "" + mesitemlink(7855, false) + "'s true desire?";
 		mes "What I would give to";
 		mes "be able to do that...";
 		close;
@@ -6152,7 +6152,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		mes "What's that you've got";
 		mes "there? I've seen something";
 		mes "like that before. It's called";
-		mes "a " + mesitemlink(7170) + ", right? Something";
+		mes "a " + mesitemlink(7170, false) + ", right? Something";
 		mes "like that would be perfect!";
 		next;
 		switch(select("Give it to him.:Ignore Him.")) {
@@ -6213,7 +6213,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		case 2:
 			mes "[Klitzer]";
 			mes "But how can I get";
-			mes "a " + mesitemlink(7170) + "? Ooh, I hope";
+			mes "a " + mesitemlink(7170, false) + "? Ooh, I hope";
 			mes "it doesn't cost too much";
 			mes "zeny or I won't be able to";
 			mes "get one of those soon...";
@@ -6234,7 +6234,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		mes "or revealing. Can't let her";
 		mes "think I'm wild, immature or";
 		mes "unpredictable. Should I";
-		mes "wear suspenders or a " + mesitemlink(2627) + "?!";
+		mes "wear suspenders or a " + mesitemlink(2627, false) + "?!";
 		close;
 	}
 	if (EIN_LOVERQ == 14) {
@@ -6299,7 +6299,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 	if (EIN_LOVERQ == 6) {
 		mes "[Klitzer]";
 		mes "You've given her";
-		mes "the " + mesitemlink(712) + "? That's";
+		mes "the " + mesitemlink(712, false) + "? That's";
 		mes "great! Thank you,";
 		mes "thank you so mu--";
 		next;
@@ -6356,7 +6356,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		mes "[Klitzer]";
 		mes "Anyway, please";
 		mes "remember to bring";
-		mes "Calla ^FF00001 " + mesitemlink(712) + "^000000 for me.";
+		mes "Calla ^FF00001 " + mesitemlink(712, false) + "^000000 for me.";
 		mes "It doesn't need to be";
 		mes "fancy, an ordinary one";
 		mes "should be just fine.";
@@ -6370,7 +6370,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		mes "lost love? ^333333*Siiiiigh...*^000000";
 		next;
 		mes "[Klitzer]";
-		mes "Hey, this " + mesitemlink(1901) + "...";
+		mes "Hey, this " + mesitemlink(1901, false) + "...";
 		mes "Calla used to play";
 		mes "such beautiful music";
 		mes "on this for me. Did";
@@ -6393,7 +6393,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		next;
 		mes "[Klitzer]";
 		mes "All you need to do is";
-		mes "just give her ^FF00001 " + mesitemlink(712) + "^000000.";
+		mes "just give her ^FF00001 " + mesitemlink(712, false) + "^000000.";
 		mes "I don't have the zeny and";
 		mes "I don't think I'm welcome";
 		mes "at Kapellthaine Manor.";
@@ -6434,7 +6434,7 @@ ein_in01,200,101,5	script	Klitzer#ein	854,{
 		next;
 		mes "[Klitzer]";
 		mes "Would you please bring";
-		mes "1 " + mesitemlink(712) + " to Calla for me?";
+		mes "1 " + mesitemlink(712, false) + " to Calla for me?";
 		mes "I'm sorry for troubling you... ";
 		close;
 	}
@@ -6540,7 +6540,7 @@ OnTouch_:
 		mes "[Megass]";
 		mes "That's...";
 		mes "That's my";
-		mes "daughter's " + mesitemlink(1901) + ".";
+		mes "daughter's " + mesitemlink(1901, false) + ".";
 		mes "I gave that to her";
 		mes "for her sweet sixteen...";
 		next;
@@ -6622,7 +6622,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "My apologies~";
 		next;
 		mes "[Satra]";
-		mes "You've brought so much " + mesitemlink(1003) + "";
+		mes "You've brought so much " + mesitemlink(1003, false) + "";
 		mes "to me, I'm convinced that you're much more diligent than those";
 		mes "languid peasants in Einbech.";
 		mes "I appreciate that you've labored so much to win my favor.";
@@ -6771,7 +6771,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "[Satra]";
 		mes "Oh, that was scrumptious!";
 		mes "If you wish to pay me another";
-		mes "visit, don't forget to bring some " + mesitemlink(1003) + " with you. Tah tah~";
+		mes "visit, don't forget to bring some " + mesitemlink(1003, false) + " with you. Tah tah~";
 		close;
 	}
 	if (EIN_LOVERQ == 11) {
@@ -6807,7 +6807,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "[Satra]";
 		mes "My word!";
 		mes "Why are you carrying";
-		mes "all of that dirty " + mesitemlink(1003) + "";
+		mes "all of that dirty " + mesitemlink(1003, false) + "";
 		mes "with you? You poor,";
 		mes "impoverished thing.";
 		next;
@@ -6849,7 +6849,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "The next time you wish to have";
 		mes "an audience with me, it would";
 		mes "behoove you to bring another";
-		mes "gift of " + mesitemlink(1003) + ". Toodles~";
+		mes "gift of " + mesitemlink(1003, false) + ". Toodles~";
 		close;
 	}
 	if (EIN_LOVERQ == 10) {
@@ -6879,7 +6879,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 	if ((EIN_LOVERQ == 9) && (countitem(1003) > 9)) {
 		mes "[Satra]";
 		mes "My, you've already";
-		mes "brought the " + mesitemlink(1003) + "?";
+		mes "brought the " + mesitemlink(1003, false) + "?";
 		mes "How charmingly";
 		mes "prompt you are~";
 		next;
@@ -6907,7 +6907,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "find some use for these.";
 		mes "I'm afraid the gift I've asked";
 		mes "from you isn't very practical.";
-		mes "How is " + mesitemlink(1003) + " usually used?";
+		mes "How is " + mesitemlink(1003, false) + " usually used?";
 		mes "Ah, I have a novel idea!";
 		next;
 		mes "[Satra]";
@@ -6921,7 +6921,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		mes "[Satra]";
 		mes "In any case, if you";
 		mes "bring me more of that";
-		mes "" + mesitemlink(1003) + ", you would be even";
+		mes "" + mesitemlink(1003, false) + ", you would be even";
 		mes "more favored by me and";
 		mes "you'll become a recipient";
 		mes "of my good graces. Ho ho~";
@@ -6945,7 +6945,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		next;
 		mes "[Satra]";
 		mes "Einbech exists to provide";
-		mes "my family with " + mesitemlink(1003) + " and";
+		mes "my family with " + mesitemlink(1003, false) + " and";
 		mes "materials from their mines.";
 		mes "It's a natural law: workers";
 		mes "must be led by a chosen few.";
@@ -7010,7 +7010,7 @@ ein_in01,31,151,3	script	Satra#ein	850,{
 		next;
 		mes "[Satra]";
 		mes "Einbech exists to provide";
-		mes "my family with " + mesitemlink(1003) + " and";
+		mes "my family with " + mesitemlink(1003, false) + " and";
 		mes "materials from their mines.";
 		mes "It's a natural law: workers";
 		mes "must be led by a chosen few.";
@@ -7114,8 +7114,8 @@ ein_in01,191,102,5	script	Kaijeta#ein	846,{
 		next;
 		mes "[Kaijeta]";
 		mes "A man should wear nice";
-		mes "clothes, like a " + mesitemlink(2320) + "";
-		mes "or a " + mesitemlink(7170) + ", for important";
+		mes "clothes, like a " + mesitemlink(2320, false) + "";
+		mes "or a " + mesitemlink(7170, false) + ", for important";
 		mes "meetings and special occasions.";
 		mes "Hopefully, he'll learn that soon.";
 		close;
@@ -7133,8 +7133,8 @@ ein_in01,191,102,5	script	Kaijeta#ein	846,{
 		changequest 8086,8087;
 		mes "[Kaijeta]";
 		mes "A man should wear nice";
-		mes "clothes, like a " + mesitemlink(2320) + "";
-		mes "or a " + mesitemlink(7170) + ", for important";
+		mes "clothes, like a " + mesitemlink(2320, false) + "";
+		mes "or a " + mesitemlink(7170, false) + ", for important";
 		mes "meetings and special occasions.";
 		mes "Hopefully, he'll learn that soon.";
 		close;
@@ -7174,7 +7174,7 @@ ein_in01,191,102,5	script	Kaijeta#ein	846,{
 		mes "Still, I'm quite baffled!";
 		mes "I raised my son to have more";
 		mes "guts than to wallow in misery";
-		mes "when his " + mesitemlink(7855) + "'s broken. And";
+		mes "when his " + mesitemlink(7855, false) + "'s broken. And";
 		mes "I still have no idea how he got together with such a rich woman.";
 		next;
 		set EIN_LOVERQ,8;

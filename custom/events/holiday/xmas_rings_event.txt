@@ -27,7 +27,7 @@ prontera,156,174,4	script	Snower	713,{
 		mes "They have magic power only from 8 December till 8 January.";
 		next;
 		mes "[Snower]";
-		mes "By the way, just put on Santa's Hat to discover their true power.";
+		mes "By the way, just put on Santa's " + mesitemlink(2220, false) + " to discover their true power.";
 		next;
 		mes "[Snower]";
 		mes "If you put on both rings their power would be doubled.";
@@ -183,12 +183,12 @@ izlu2dun,133,160,2	script	Snoowy	714,{
 	emotion ET_THANKS;
 	mes "Oh... the whole marine folk send you their thanks! They love presents so much!!!";
 	if (rand(2))
-		mes "Didn't you know that Santa's Hat reveals the real power of the rings?";
+		mes "Didn't you know that Santa's " + mesitemlink(2220, false) + " reveals the real power of the rings?";
 	close;
 
 M_END:
 	mes "[Snoowy]";
-	mes "I'd exchange a " + mesitemlink(969) + " magic ring for 3 gift boxes...";
+	mes "I'd exchange a " + mesitemlink(969, false) + " magic ring for 3 gift boxes...";
 	emotion ET_SWEAT;
 	close;
 }

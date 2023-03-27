@@ -90,7 +90,7 @@ payon_in01,193,30,4	script	Rice Mill Grandma#rat	78,{
 	else if ((lunar_rat >= 1 && lunar_rat <= 2) || lunar_rat == 4) {
 		if (countitem(7770) >= 1 && lunar_rat == 2) {
 			mes "Oh, is that the";
-			mes "" + mesitemlink(7770) + " my son made?";
+			mes "" + mesitemlink(7770, false) + " my son made?";
 			mes "Would you let me have it?";
 			mes "Please wait here a moment,";
 			mes "and I'll make you some pastry~";
@@ -101,7 +101,7 @@ payon_in01,193,30,4	script	Rice Mill Grandma#rat	78,{
 		else if (lunar_rat == 4) {
 			if (countitem(7770) >= 1) {
 				mes "Oh, is that the";
-				mes "" + mesitemlink(7770) + " my son made?";
+				mes "" + mesitemlink(7770, false) + " my son made?";
 				mes "Would you let me have it?";
 				mes "Please wait here a moment,";
 				mes "and I'll make you some pastry~";
@@ -164,7 +164,7 @@ payon_in01,193,30,4	script	Rice Mill Grandma#rat	78,{
 		next;
 		mes "[Rice Mill Grandma]";
 		mes "Thank you for the";
-		mes "" + mesitemlink(7770) + "! I'll be";
+		mes "" + mesitemlink(7770, false) + "! I'll be";
 		mes "sure to make something";
 		mes "delicious for you if you";
 		mes "bring me more, okay?";
@@ -175,7 +175,7 @@ payon_in01,193,30,4	script	Rice Mill Grandma#rat	78,{
 payon,215,127,4	script	Rice Mill Man#rat	54,{
 	mes "[Rice Mill Man]";
 	if (!lunar_rat) {
-		mes "Breaks my " + mesitemlink(7855) + "...";
+		mes "Breaks my " + mesitemlink(7855, false) + "...";
 		mes "My mom spends all this";
 		mes "time preparing rice for";
 		mes "the new year, and it's all";
@@ -195,7 +195,7 @@ payon,215,127,4	script	Rice Mill Man#rat	54,{
 		if (countitem(7869) < 1) {
 			mes "If you bring me some";
 			mes "Rice Pouches, then I can";
-			mes "pound into into " + mesitemlink(7770) + ".";
+			mes "pound into into " + mesitemlink(7770, false) + ".";
 			mes "You're here to help out my";
 			mes "mother, right? Thanks,";
 			mes "I really appreciate that.";
@@ -215,7 +215,7 @@ payon,215,127,4	script	Rice Mill Man#rat	54,{
 		next;
 		mes "[Rice Mill Man]";
 		mes "All done. Here, this";
-		mes "" + mesitemlink(7770) + " is ready to";
+		mes "" + mesitemlink(7770, false) + " is ready to";
 		mes "be made into pastries";
 		mes "Would you please bring";
 		mes "this to my mother?";
@@ -247,7 +247,7 @@ payon,126,113,4	script	Miss Lunar#rat	719,{
 	else if (lunar_rat >= 4) {
 		mes "Oh, hello! I'm selling";
 		mes "special rice cakes made";
-		mes "from " + mesitemlink(7770) + ". You can";
+		mes "from " + mesitemlink(7770, false) + ". You can";
 		mes "eat it yourself, or feed it";
 		mes "to your New Year Doll if";
 		mes "you have one as a pet.";

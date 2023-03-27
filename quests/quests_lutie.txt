@@ -55,63 +55,63 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 		switch(select("Raccoon Hat:Spore Hat:Wonder Nutshell:Ranbow Eggshell:Blush:Chef Hat:Candle:Cake Hat:End Conversation")) {
 		case 1:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5033) + "?";
-			mes "1 " + mesitemlink(2213) + "";
-			mes "20 " + mesitemlink(1036) + "";
-			mes "200 " + mesitemlink(7012) + "";
-			mes "300 " + mesitemlink(7065) + "";
+			mes "" + mesitemlink(5033, false) + "?";
+			mes "1 " + mesitemlink(2213, false) + "";
+			mes "20 " + mesitemlink(1036, false) + "";
+			mes "200 " + mesitemlink(7012, false) + "";
+			mes "300 " + mesitemlink(7065, false) + "";
 			break;
 		case 2:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5029) + "?";
-			mes "850 " + mesitemlink(7033) + "";
-			mes "300 " + mesitemlink(7068) + "";
-			mes "1 " + mesitemlink(1015) + "";
+			mes "" + mesitemlink(5029, false) + "?";
+			mes "850 " + mesitemlink(7033, false) + "";
+			mes "300 " + mesitemlink(7068, false) + "";
+			mes "1 " + mesitemlink(1015, false) + "";
 			break;
 		case 3:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5050) + "?";
-			mes "1 " + mesitemlink(5037) + "";
-			mes "500 " + mesitemlink(7064) + "";
+			mes "" + mesitemlink(5050, false) + "?";
+			mes "1 " + mesitemlink(5037, false) + "";
+			mes "500 " + mesitemlink(7064, false) + "";
 			break;
 		case 4:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5039) + "?";
-			mes "1 " + mesitemlink(5015) + "";
-			mes "1 " + mesitemlink(978) + "";
-			mes "50 " + mesitemlink(7030) + "";
+			mes "" + mesitemlink(5039, false) + "?";
+			mes "1 " + mesitemlink(5015, false) + "";
+			mes "1 " + mesitemlink(978, false) + "";
+			mes "50 " + mesitemlink(7030, false) + "";
 			break;
 		case 5:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5040) + "?!";
+			mes "" + mesitemlink(5040, false) + "?!";
 			mes "You!";
 			mes "You know something...";
 			mes "Heh heh~ Anyway";
-			mes "100 " + mesitemlink(7047) + "";
+			mes "100 " + mesitemlink(7047, false) + "";
 			break;
 		case 6:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5026) + "?";
-			mes "120 " + mesitemlink(539) + "";
-			mes "1 " + mesitemlink(982) + "";
-			mes "330 " + mesitemlink(949) + "";
-			mes "450 " + mesitemlink(1036) + "";
+			mes "" + mesitemlink(5026, false) + "?";
+			mes "120 " + mesitemlink(539, false) + "";
+			mes "1 " + mesitemlink(982, false) + "";
+			mes "330 " + mesitemlink(949, false) + "";
+			mes "450 " + mesitemlink(1036, false) + "";
 			break;
 		case 7:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5028) + "?";
-			mes "1 " + mesitemlink(2279) + "";
-			mes "50 " + mesitemlink(7035) + "";
-			mes "100 " + mesitemlink(526) + "";
+			mes "" + mesitemlink(5028, false) + "?";
+			mes "1 " + mesitemlink(2279, false) + "";
+			mes "50 " + mesitemlink(7035, false) + "";
+			mes "100 " + mesitemlink(526, false) + "";
 			break;
 		case 8:
 			mes "[Titicupe]";
-			mes "" + mesitemlink(5024) + "?";
-			mes "10 " + mesitemlink(529) + "";
-			mes "5 " + mesitemlink(530) + "";
-			mes "15 " + mesitemlink(538) + "";
-			mes "20 " + mesitemlink(539) + "";
-			mes "10 " + mesitemlink(999) + "";
+			mes "" + mesitemlink(5024, false) + "?";
+			mes "10 " + mesitemlink(529, false) + "";
+			mes "5 " + mesitemlink(530, false) + "";
+			mes "15 " + mesitemlink(538, false) + "";
+			mes "20 " + mesitemlink(539, false) + "";
+			mes "10 " + mesitemlink(999, false) + "";
 			break;
 		case 9:
 			mes "[Titicupe]";
@@ -130,7 +130,7 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 		next;
 		mes "[Titicupe]";
 		mes "I...";
-		mes "" + mesitemlink(6206) + "";
+		mes "" + mesitemlink(6206, false) + "";
 		mes "Mister Snowman";
 		mes "Vending Machine.";
 		emotion ET_CHUPCHUP;
@@ -268,7 +268,7 @@ xmas,115,297,4	script	Vending Machine	111,{
 			mes "Oh, and tell a friend!^000000";
 			next;
 			mes "[Titicupe]";
-			mes "You got " + mesitemlink(5040) + "?! Huh. I guess you really like looking glamourous~! I bet you really appreciate my genius now, huh?";
+			mes "You got " + mesitemlink(5040, false) + "?! Huh. I guess you really like looking glamourous~! I bet you really appreciate my genius now, huh?";
 			close;
 		}
 		break;
@@ -353,6 +353,6 @@ xmas,115,297,4	script	Vending Machine	111,{
 	next;
 	mes "[Titicupe]";
 	mes "I...";
-	mes "I guess a lot of people would do anything to get their hands on some " + mesitemlink(5040) + ".";
+	mes "I guess a lot of people would do anything to get their hands on some " + mesitemlink(5040, false) + ".";
 	close;
 }

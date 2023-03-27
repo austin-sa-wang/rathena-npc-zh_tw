@@ -29,7 +29,7 @@
 		mes " ";
 		mes "2. To the one who can ";
 		mes "overcome all trials";
-		mes "and destroy the " + mesitemlink(714) + ",";
+		mes "and destroy the " + mesitemlink(714, false) + ",";
 		mes "the king will endow the one with";
 		mes "ownership of this castle.";
 		close;
@@ -58,7 +58,7 @@
 	mes "2. The guild Master of ^ff0000"+GetGuildName(.@GID)+"^000000 Guild is";
 	mes "^ff0000"+GetGuildMaster(.@GID)+"^000000";
 	mes "If there is anyone who objects to this,";
-	mes "prove your strength and honor with a " + mesitemlink(999) + " blade in your hand.";
+	mes "prove your strength and honor with a " + mesitemlink(999, false) + " blade in your hand.";
 	close;
 
 OnRecvCastleG04:

@@ -47,7 +47,7 @@ pay_arche,86,129,6	script	Archer	732,{
 N_QuestStart:
 	mes "[Kieth]";
 	if (countitem(1072) < 1) {
-		mes "Weren't you supposed to deliver me a " + mesitemlink(7948) + "? Where is it?";
+		mes "Weren't you supposed to deliver me a " + mesitemlink(7948, false) + "? Where is it?";
 		close;
 	}
 	mes "Ahh, you must be from the Treasure Hunter Agency. Do you have my bow??";
@@ -83,7 +83,7 @@ N_QuestComp:
 N_QuestStart:
 	mes "[Billy-Bob]";
 	mes "Those Bastard Bugs are Everywhere!!!";
-	mes "You must be from the guild! OK, bring me 20 Worm Peelings, 20 Jellopies, 20 " + mesitemlink(914) + " and 20 Clovers.";
+	mes "You must be from the guild! OK, bring me 20 Worm Peelings, 20 Jellopies, 20 " + mesitemlink(914, false) + " and 20 Clovers.";
 	close;
 }
 //1-4
@@ -160,7 +160,7 @@ in_moc_16,15,30,6	script	Jeramiah	730,{
 N_QuestComp:
 	mes "[Jeramiah]";
 	mes "Ahh hello, you must be from the Treasure Hunter Guild.";
-	mes "Do you have my " + mesitemlink(1250) + "? Ahh good good. Thank you.";
+	mes "Do you have my " + mesitemlink(1250, false) + "? Ahh good good. Thank you.";
 	mes "Here have this Treasure Hunter Token.";
 	delitem 1998,1;
 	set two_qset,0;
@@ -169,8 +169,8 @@ N_QuestComp:
 	close;
 N_QuestStart:
 	mes "[Jeramiah]";
-	mes "So your the one that is supposed to bring my " + mesitemlink(1250) + "?";
-	mes "So where's my " + mesitemlink(1250) + "?";
+	mes "So your the one that is supposed to bring my " + mesitemlink(1250, false) + "?";
+	mes "So where's my " + mesitemlink(1250, false) + "?";
 	close;
 }
 //2-3;
@@ -182,7 +182,7 @@ prt_fild07,316,263,6	script	Marsh Man	84,{
 	close;
 N_QuestComp:
 	mes "[Lenith]";
-	mes "Oh hello, OH you have my honey, my bees and I thank you.";
+	mes "Oh hello, OH you have my " + mesitemlink(518, false) + ", my bees and I thank you.";
 	mes " ";
 	mes "Here have these 2 Treasure Hunter Tokens.";
 	delitem 518,20;
@@ -195,7 +195,7 @@ N_QuestStart:
 	mes "Hello, my name is Lenith and I have a quest for you.";
 	mes "Well recently a bunch of stupid bears stole the supers off all my bee's nests...Stupid bears.";
 	mes " ";
-	mes "What I need you to do is find me some more honey so these bee's can get through the winter. I will need about 20 Honey.";
+	mes "What I need you to do is find me some more " + mesitemlink(518, false) + " so these bee's can get through the winter. I will need about 20 " + mesitemlink(518, false) + ".";
 	close;
 }
 //2-4;
@@ -222,7 +222,7 @@ N_QuestStart:
 	mes "Ok here is whats happening, I don't know what started it but there is a strange Ronan Skeleton running around the woods 2 East from here.";
 	next;
 	mes "[Molly]";
-	mes "We have try to kill him in the past but it was not...ummm...It was a bad idea. What I want you to do is go there and bring me back his " + mesitemlink(7005) + " as proof of you killing him.";
+	mes "We have try to kill him in the past but it was not...ummm...It was a bad idea. What I want you to do is go there and bring me back his " + mesitemlink(7005, false) + " as proof of you killing him.";
 	mes " ";
 	mes "Good Luck";
 	close;
@@ -315,7 +315,7 @@ mjolnir_02,87,357,6	script	Man#01	51,{
 	if (three_qset == 4 && countitem(1041) > 49) goto N_QuestComp;
 	if (three_qset == 4) goto N_QuestStart;
 	mes "[Rudolfo]";
-	mes "Danger, the " + mesitemlink(1003) + " Mine is now a hostile area.";
+	mes "Danger, the " + mesitemlink(1003, false) + " Mine is now a hostile area.";
 	close;
 N_QuestComp:
 	mes "[Rudolfo]";
@@ -332,9 +332,9 @@ N_QuestStart:
 	mes "[Rudolfo]";
 	mes "Hello, you must be from the Treasure Hunter Guild.";
 	mes " ";
-	mes "They must have filled you in on what is happening on the lower levels of this " + mesitemlink(1003) + " Mine, I know its disturbing and we are still trying to figure out why and how 2 Evil Druids got down there.";
+	mes "They must have filled you in on what is happening on the lower levels of this " + mesitemlink(1003, false) + " Mine, I know its disturbing and we are still trying to figure out why and how 2 Evil Druids got down there.";
 	mes " ";
-	mes "Well what I want you to do is bring me 50 " + mesitemlink(1041) + "'s as proof that you have cleaned some of them out, any loot you find down there you may keep other then what I have asked you to get for me.";
+	mes "Well what I want you to do is bring me 50 " + mesitemlink(1041, false) + "'s as proof that you have cleaned some of them out, any loot you find down there you may keep other then what I have asked you to get for me.";
 	close;
 }
 ///////Job list 4///////
@@ -419,7 +419,7 @@ N_QuestStart:
 	mes "Hello person!!";
 	mes "You have come to help me? Yes, yes.";
 	mes " ";
-	mes "Ok I don't want to talk about it but I need you to fine me 20 " + mesitemlink(711) + "'s";
+	mes "Ok I don't want to talk about it but I need you to fine me 20 " + mesitemlink(711, false) + "'s";
 	mes "Thank you!";
 	close;
 }
@@ -449,7 +449,7 @@ N_QuestComp:
 N_QuestStart:
 	mes "[Czhore]";
 	mes "Hello friend";
-	mes "I know this may sound stupid but ever since I was a boy I have dreamed of having an " + mesitemlink(714) + "...";
+	mes "I know this may sound stupid but ever since I was a boy I have dreamed of having an " + mesitemlink(714, false) + "...";
 	mes "As I know I look old, I have just never been able to find one, now that I am retired from the Treasure Hunter Guild there is no more action for me...";
 	mes " ";
 	mes "If you can get me one I shall reward you.";
@@ -520,7 +520,7 @@ geffen,57,130,6	script	Blond Girl	724,{
 	close;
 N_QuestComp:
 	mes "[Blond Girl]";
-	mes "Oh are these my " + mesitemlink(712) + "! To bad I don't want them anymore...";
+	mes "Oh are these my " + mesitemlink(712, false) + "! To bad I don't want them anymore...";
 	mes " ";
 	mes "You can keep them is you want.";
 	next;
@@ -685,7 +685,7 @@ N_QuestComp:
 	close;
 N_QuestStart:
 	mes "[Girl]";
-	mes "Hi mister person. Can you get me some " + mesitemlink(531) + "?";
+	mes "Hi mister person. Can you get me some " + mesitemlink(531, false) + "?";
 	mes "I want 5 of them.";
 	close;
 N_QuestStart2:
@@ -720,7 +720,7 @@ function	script	seven_qset-3	{
 	mes "[Sewer Management]";
 	mes "Well there have been reports of a Golden Thief Bug running around the bottom on the Culvert";
 	mes " ";
-	mes "Bring me 1 " + mesitemlink(969) + " Bar from him.";
+	mes "Bring me 1 " + mesitemlink(969, false) + " Bar from him.";
 	close;
 N_QuestComp2:
 	mes "[Sewer Management]";
@@ -756,7 +756,7 @@ N_QuestStart:
 	mes "[Scarlet]";
 	mes "Good your here. Ok there are reports of an old captain named Drake aborted this ship. Kill Him!";
 	mes " ";
-	mes "Bring me his " + mesitemlink(1126) + " as proof!";
+	mes "Bring me his " + mesitemlink(1126, false) + " as proof!";
 	close;
 }
 ///////Job list 8///////
@@ -764,7 +764,7 @@ N_QuestStart:
 function	script	eight_qset1	{
 	if (eight_qset == 1 && countitem(532) > 4) goto N_QuestComp2;
 	mes "[Girl]";
-	mes "Hi mister person. Can you get me some " + mesitemlink(532) + "?";
+	mes "Hi mister person. Can you get me some " + mesitemlink(532, false) + "?";
 	mes "I want 5 of them.";
 	close;
 N_QuestComp2:
@@ -826,7 +826,7 @@ N_QuestStart:
 	mes "Hello,the reason why I brought you here was because of a very strange monster known as Baphomet.";
 	mes "People say that Baphomet guilds the gate to the under-world but I don't believe them, Kill Baphomet!";
 	mes " ";
-	mes "Bring me his " + mesitemlink(923) + "!";
+	mes "Bring me his " + mesitemlink(923, false) + "!";
 	close;
 }
 //8-4;
@@ -864,7 +864,7 @@ geffen_in,168,124,6	script	Mage	48,{
 	close;
 N_QuestComp:
 	mes "[Mage]";
-	mes "Thank you for this delivery. Sorry about the smell, Its a " + mesitemlink(7948) + " of Toad Tongues";
+	mes "Thank you for this delivery. Sorry about the smell, Its a " + mesitemlink(7948, false) + " of Toad Tongues";
 	next;
 	mes "[Mage]";
 	mes "Here take this Treasure Token as a reward.";
@@ -875,7 +875,7 @@ N_QuestComp:
 	close;
 N_QuestStart:
 	mes "[Mage]";
-	mes "Hello "+strcharinfo(0)+", Where is my " + mesitemlink(7948) + " of Toad Tongues?.";
+	mes "Hello "+strcharinfo(0)+", Where is my " + mesitemlink(7948, false) + " of Toad Tongues?.";
 	close;
 }
 //9-2;
@@ -903,7 +903,7 @@ N_QuestStart:
 	mes "[School Girl]";
 	mes "The strange thing about what happened was that the children inside did not seem to die from the flames. They have taken over the entire 3rd floor of Payon Cave.";
 	mes " ";
-	mes "Bring me 20 " + mesitemlink(1020) + "!";
+	mes "Bring me 20 " + mesitemlink(1020, false) + "!";
 	close;
 }
 //9-3
@@ -927,7 +927,7 @@ N_QuestComp:
 	close;
 N_QuestStart:
 	mes "[Jack]";
-	mes "Well I don't know much about this, it has to do with the deepest regions of Payon Cave. We don't know much because no one ever seems to make it back alive. We suspect a monster we call the Moonlight " + mesitemlink(712) + "";
+	mes "Well I don't know much about this, it has to do with the deepest regions of Payon Cave. We don't know much because no one ever seems to make it back alive. We suspect a monster we call the Moonlight " + mesitemlink(712, false) + "";
 	mes " ";
 	mes "Bring me back 1 Nine Tales!";
 	close;
@@ -937,7 +937,7 @@ N_QuestStart2:
 	mes "[Jack]";
 	mes "Hello, we need you to investigate some crap in the 3rd level of Payon.";
 	mes " ";
-	mes "Bring me back 40 " + mesitemlink(901) + "'s.";
+	mes "Bring me back 40 " + mesitemlink(901, false) + "'s.";
 	close;
 N_QuestComp2:
 	mes "[Jack]";
@@ -1020,9 +1020,9 @@ N_QuestComp:
 	close;
 N_QuestStart:
 	mes "[Caral]";
-	mes "Phreeoni the Pink " + mesitemlink(914) + " is terrorizing little novices! He must be stopped, KILL HIM!";
+	mes "Phreeoni the Pink " + mesitemlink(914, false) + " is terrorizing little novices! He must be stopped, KILL HIM!";
 	mes " ";
-	mes "Bring me back 1 " + mesitemlink(1015) + "!";
+	mes "Bring me back 1 " + mesitemlink(1015, false) + "!";
 	close;
 }
 //10-4
@@ -1047,6 +1047,6 @@ N_QuestStart:
 	mes "[Jeni]";
 	mes "This half naked freak need an army to take down, now its your job,good luck.";
 	mes " ";
-	mes "Bring me back 1 " + mesitemlink(1096) + "!";
+	mes "Bring me back 1 " + mesitemlink(1096, false) + "!";
 	close;
 }

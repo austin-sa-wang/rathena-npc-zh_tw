@@ -22,7 +22,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 	if(countitem(519) > 49 && countitem(7031) > 49 && countitem(548) > 49 && countitem(539) > 49)
 	{
 		mes "[Kasis]";
-		mes "" + mesitemlink(519) + ", " + mesitemlink(548) + ",";
+		mes "" + mesitemlink(519, false) + ", " + mesitemlink(548, false) + ",";
 		mes "Old Frying Pans,";
 		mes "Pieces of Cake...";
 		mes "Th-that's everything";
@@ -44,7 +44,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 				mes "Of course! Why don't";
 				mes "you treat yourself to";
 				mes "my specialty, Kasis's";
-				mes "" + mesitemlink(5107) + "? It looks";
+				mes "" + mesitemlink(5107, false) + "? It looks";
 				mes "simple, but it actually";
 				mes "requires great skill to make.";
 				next;
@@ -84,7 +84,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 				next;
 				mes "^3355FFAs if entranced,";
 				mes "Kasis continues to";
-				mes "stare at the " + mesitemlink(519) + ", " + mesitemlink(548) + "";
+				mes "stare at the " + mesitemlink(519, false) + ", " + mesitemlink(548, false) + "";
 				mes "Old Frying Pans and Pieces";
 				mes "of Cake that you are carrying.^000000";
 				next;
@@ -94,10 +94,10 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 						mes "[Kasis]";
 						mes "Really? Is it alright";
 						mes "with you for me to have";
-						mes "all of this " + mesitemlink(519) + ", " + mesitemlink(548) + ",";
+						mes "all of this " + mesitemlink(519, false) + ", " + mesitemlink(548, false) + ",";
 						mes "Pieces of Cake and these";
 						mes "Old Frying Pans? Oh, bless";
-						mes "your kind " + mesitemlink(7855) + ", adventurer~";
+						mes "your kind " + mesitemlink(7855, false) + ", adventurer~";
 						next;
 						mes "[Kasis]";
 						mes "Finally, I can treat my";
@@ -111,7 +111,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 						mes "Of course! Why don't";
 						mes "you treat yourself to";
 						mes "my specialty, Kasis's";
-						mes "" + mesitemlink(5107) + "? It looks";
+						mes "" + mesitemlink(5107, false) + "? It looks";
 						mes "simple, but it actually";
 						mes "requires great skill to make.";
 						next;
@@ -143,7 +143,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 	mes "[Kasis]";
 	mes "I'm sorry, but we're closed";
 	mes "right now. Unfortunately, we";
-	mes "don't have any more " + mesitemlink(580) + "";
+	mes "don't have any more " + mesitemlink(580, false) + "";
 	mes "in stock. ^333333*Siiiiiiiiigh...*^000000";
 	next;
 	switch( select( "Is something wrong?", "End Conversation." ) )
@@ -186,8 +186,8 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 					mes "[Kasis]";
 					mes "Would you";
 					mes "please get me";
-					mes "^4D4DFF50 " + mesitemlink(519) + "^000000,";
-					mes "^4D4DFF50 " + mesitemlink(548) + "^000000,";
+					mes "^4D4DFF50 " + mesitemlink(519, false) + "^000000,";
+					mes "^4D4DFF50 " + mesitemlink(548, false) + "^000000,";
 					mes "^4D4DFF50 Pieces of Cake^000000 and";
 					mes "^4D4DFF50 Old Frying Pans^000000?";
 					next;
@@ -221,7 +221,7 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 			mes "[Kasis]";
 			mes "Anyway, please come";
 			mes "again. Hopefully, we'll";
-			mes "have some good " + mesitemlink(580) + "";
+			mes "have some good " + mesitemlink(580, false) + "";
 			mes "in stock next time, okay?";
 			close;
 	}
@@ -388,7 +388,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 				mes "[Strange Guy]";
 				mes "How did I know?";
 				mes "Elementary, my friend.";
-				mes "There was an " + mesitemlink(6069) + "";
+				mes "There was an " + mesitemlink(6069, false) + "";
 				mes "of clues for me to make";
 				mes "that sort of simple deduction.";
 				close;
@@ -430,11 +430,11 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 			mes "a level of intelligence that";
 			mes "is comparable to my own by";
 			mes "joining the Young Detective's";
-			mes "" + mesitemlink(1501) + ". To become a member, you just need one essential article.";
+			mes "" + mesitemlink(1501, false) + ". To become a member, you just need one essential article.";
 			next;
 			mes "[Morris]";
 			mes "Yes, you will need the";
-			mes "^0000FFRenown Detective's " + mesitemlink(2226) + "^000000!";
+			mes "^0000FF" + mesitemlink(5108, false) + "^000000!";
 			mes "Luckily, I'm giving them";
 			mes "away for a relatively small";
 			mes "material cost, but you must";
@@ -444,13 +444,13 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 			mes "Simply bring me";
 			mes "^0000FF10 Magnifiers^000000,";
 			mes "^0000FF1887 Tassels^000000,";
-			mes "^0000FF1 Slotted " + mesitemlink(5114) + "^000000";
+			mes "^0000FF1 Slotted " + mesitemlink(5114, false) + "^000000";
 			mes "and ^0000FF1,887 zeny^000000. That's all!";
 			next;
 			mes "[Morris]";
 			mes "But first, let me warn you";
 			mes "not to bring a ^FF0000slotted Bucket";
-			mes "Hat with a card compounded to";
+			mes "" + mesitemlink(2220, false) + " with a card compounded to";
 			mes "it, or any upgraded Bucket Hats. I'm not responsible for any";
 			mes "loss resulting from that.";
 			next;
@@ -469,10 +469,10 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 		mes "[Morris]";
 		mes "So, did you want to";
 		mes "buy, er, receive this";
-		mes "" + mesitemlink(5108) + "";
+		mes "" + mesitemlink(5108, false) + "";
 		mes "and become an honored";
 		mes "member of the Young";
-		mes "Detective's " + mesitemlink(1501) + "?";
+		mes "Detective's " + mesitemlink(1501, false) + "?";
 		next;
 		mes "[Morris]";
 		mes "Remember, make sure";
@@ -484,8 +484,8 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 		next;
 		mes "[Morris]";
 		mes "Now, if you have only";
-		mes "1 " + mesitemlink(5114) + ", we can begin.";
-		mes "Young Detective's " + mesitemlink(1501) + "... Salute! ";
+		mes "1 " + mesitemlink(5114, false) + ", we can begin.";
+		mes "Young Detective's " + mesitemlink(1501, false) + "... Salute! ";
 		next;
 		switch( select( "Salute.", "Whatever..." ) )
 		{
@@ -503,7 +503,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "[Morris]";
 					mes "Wait. You don't have";
 					mes "enough Magnifiers. You";
-					mes "do want to join this " + mesitemlink(1501) + ",";
+					mes "do want to join this " + mesitemlink(1501, false) + ",";
 					mes "don't you? Did you need to";
 					mes "hear the requirements again?";
 					set @lhzhatfailed,1;
@@ -523,7 +523,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "Magnifiers. Check.";
 					mes "Tassels... Check.";
 					mes "Hm. You're missing";
-					mes "the slotted " + mesitemlink(5114) + ".";
+					mes "the slotted " + mesitemlink(5114, false) + ".";
 					mes "You were so close...";
 					set @lhzhatfailed,1;
 					next;
@@ -533,7 +533,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "[Morris]";
 					mes "Magnifiers. Check.";
 					mes "Tassels... Check.";
-					mes "Slotted " + mesitemlink(5114) + ". Got it.";
+					mes "Slotted " + mesitemlink(5114, false) + ". Got it.";
 					mes "Hey. Where's the zeny?!";
 					mes "That's the most important,";
 					mes "er, qualification of all!";
@@ -546,7 +546,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "^333333*Sigh*^000000 You need";
 					mes "^0000FF10 Magnifiers^000000,";
 					mes "^0000FF1887 Tassels^000000,";
-					mes "^0000FF1 Slotted " + mesitemlink(5114) + "^000000";
+					mes "^0000FF1 Slotted " + mesitemlink(5114, false) + "^000000";
 					mes "and ^0000FF1,887 zeny^000000. That's all!";
 					emotion ET_FRET;
 					next;
@@ -555,21 +555,21 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "that you need this time, okay?";
 					mes "I'll be waiting to welcome";
 					mes "you into the elite ranks of ";
-					mes "the Young Detective's " + mesitemlink(1501) + ".";
+					mes "the Young Detective's " + mesitemlink(1501, false) + ".";
 					close;
 				}
 				mes "[Morris]";
 				mes "Magnifiers. Check.";
 				mes "Tassels... Check.";
-				mes "Slotted " + mesitemlink(5114) + ". Got it.";
+				mes "Slotted " + mesitemlink(5114, false) + ". Got it.";
 				mes "Aaaand zeny. Heh heh. Perfect.";
 				next;
 				mes "[Morris]";
 				mes "Great, that's everything!";
-				mes "Welcome to the " + mesitemlink(1501) + "! Here's";
-				mes "your " + mesitemlink(5108) + ",";
+				mes "Welcome to the " + mesitemlink(1501, false) + "! Here's";
+				mes "your " + mesitemlink(5108, false) + ",";
 				mes "so wear it with pride as you";
-				mes "take an active part in our " + mesitemlink(1501) + "'s";
+				mes "take an active part in our " + mesitemlink(1501, false) + "'s";
 				mes "activities and promotion!";
 				delitem 7301,1887;
 				delitem 5120,1;
@@ -584,7 +584,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 						mes "[Morris]";
 						mes "Of course, isn't it obvious?";
 						mes "As a member, one of your duties";
-						mes "will be to sing accolades of this " + mesitemlink(1501) + " so that more members";
+						mes "will be to sing accolades of this " + mesitemlink(1501, false) + " so that more members";
 						mes "will join and earn their own";
 						mes "Renown Detective's Caps.";
 						next;
@@ -592,7 +592,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 						mes "Alright, scurry off";
 						mes "now and proudly display";
 						mes "your new, rakishly stylish";
-						mes "" + mesitemlink(5108) + "";
+						mes "" + mesitemlink(5108, false) + "";
 						mes "to all of your friends!";
 						close;
 					case 2:
@@ -600,7 +600,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 						mes "Alright, scurry off";
 						mes "now and proudly display";
 						mes "your new, rakishly stylish";
-						mes "" + mesitemlink(5108) + "";
+						mes "" + mesitemlink(5108, false) + "";
 						mes "to all of your friends!";
 						close;
 				}
@@ -610,7 +610,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 				mes "the \"Test of Respect.\"";
 				mes "You don't deserve the";
 				mes "honor of wearing the";
-				mes "Renowned Detective's " + mesitemlink(2226) + "!";
+				mes "Renowned Detective's " + mesitemlink(2226, false) + "!";
 				close;
 		}
 	}
@@ -619,7 +619,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 		mes "[Morris]";
 		mes "Have you come to me";
 		mes "in order to obtain another";
-		mes "" + mesitemlink(5108) + "?";
+		mes "" + mesitemlink(5108, false) + "?";
 		mes "I realize that such a stylish";
 		mes "headgear is in high demand.";
 		next;
@@ -633,10 +633,10 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 		next;
 		mes "[Morris]";
 		mes "As a proud member of";
-		mes "the Young Detective's " + mesitemlink(1501) + ",";
+		mes "the Young Detective's " + mesitemlink(1501, false) + ",";
 		mes "did you bring everything";
 		mes "you need in order to earn";
-		mes "a " + mesitemlink(5108) + "?";
+		mes "a " + mesitemlink(5108, false) + "?";
 		next;
 		switch( select( "I'm not sure~", "Sure!" ) )
 		{
@@ -654,7 +654,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 				mes "Remember...";
 				mes "^0000FF10 Magnifiers^000000,";
 				mes "^0000FF1887 Tassels^000000,";
-				mes "^0000FF1 Slotted " + mesitemlink(5114) + "^000000";
+				mes "^0000FF1 Slotted " + mesitemlink(5114, false) + "^000000";
 				mes "and ^0000FF1,887 zeny^000000. Okay?";
 				close;
 			case 2:
@@ -690,7 +690,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "Magnifiers. Check.";
 					mes "Tassels... Check.";
 					mes "Hm. You're missing";
-					mes "the slotted " + mesitemlink(5114) + ".";
+					mes "the slotted " + mesitemlink(5114, false) + ".";
 					mes "You were so close...";
 					set @lhzhatfailed,1;
 					next;
@@ -700,7 +700,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "[Morris]";
 					mes "Magnifiers. Check.";
 					mes "Tassels... Check.";
-					mes "Slotted " + mesitemlink(5114) + ". Got it.";
+					mes "Slotted " + mesitemlink(5114, false) + ". Got it.";
 					mes "Hey. Where's the zeny?!";
 					mes "That's the most important,";
 					mes "er, qualification of all!";
@@ -713,7 +713,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "Remember...";
 					mes "^0000FF10 Magnifiers^000000,";
 					mes "^0000FF1887 Tassels^000000,";
-					mes "^0000FF1 Slotted " + mesitemlink(5114) + "^000000";
+					mes "^0000FF1 Slotted " + mesitemlink(5114, false) + "^000000";
 					mes "and ^0000FF1,887 zeny^000000. Okay?";
 					emotion ET_FRET;
 					close;
@@ -721,13 +721,13 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 				mes "[Morris]";
 				mes "Magnifiers. Check.";
 				mes "Tassels... Check.";
-				mes "Slotted " + mesitemlink(5114) + ". Got it.";
+				mes "Slotted " + mesitemlink(5114, false) + ". Got it.";
 				mes "Aaaand zeny. Heh heh. Perfect.";
 				next;
 				mes "[Morris]";
 				mes "Great! You've just qualified";
 				mes "to own yet another Renowned";
-				mes "Detective's " + mesitemlink(2226) + ". Congratulations! Now, let me collect all of these";
+				mes "Detective's " + mesitemlink(2226, false) + ". Congratulations! Now, let me collect all of these";
 				mes "goods and zeny from you...";
 				delitem 7301,1887;
 				delitem 5120,1;
@@ -739,7 +739,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 				mes "[Morris]";
 				mes "Hahaha! It's what";
 				mes "I expect from one of";
-				mes "our Junior " + mesitemlink(969) + " Members!";
+				mes "our Junior " + mesitemlink(969, false) + " Members!";
 				mes "How does it feel like to be";
 				mes "the cream of the cream of";
 				mes "the crop? Great, isn't it?";
@@ -761,9 +761,9 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 	{
 		mes "[Kid]";
 		mes "Oh! You brought me";
-		mes "some " + mesitemlink(526) + " to";
+		mes "some " + mesitemlink(526, false) + " to";
 		mes "eat, as well as everything";
-		mes "I need to make a " + mesitemlink(5110) + ".";
+		mes "I need to make a " + mesitemlink(5110, false) + ".";
 		mes "Okay, let me get started on that right away. Just a moment...";
 		next;
 		mes "...";
@@ -771,17 +771,17 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 		next;
 		mes "[Kid]";
 		mes "Damn.";
-		mes "That " + mesitemlink(526) + "";
+		mes "That " + mesitemlink(526, false) + "";
 		mes "was frickin' delicious!";
 		mes "Now I can make your";
-		mes "" + mesitemlink(5110) + ". Let's see";
+		mes "" + mesitemlink(5110, false) + ". Let's see";
 		mes "here. Ah, here we go...";
 		next;
 		mes "[Kid]";
 		mes "It's done!";
 		mes "Now, you're the";
 		mes "proud owner of your";
-		mes "very own " + mesitemlink(5110) + "!";
+		mes "very own " + mesitemlink(5110, false) + "!";
 		mes "I hope you're happy with";
 		mes "yourself. Travel safe, okay?";
 		delitem 526,1;
@@ -815,7 +815,7 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 					{
 						mes "[Kid]";
 						mes "If you would, do you think";
-						mes "you can get some " + mesitemlink(526) + "";
+						mes "you can get some " + mesitemlink(526, false) + "";
 						mes "that I can give to my mom? The old lady next door says that it's";
 						mes "really nutritious and helps you get better faster if you're sick.";
 						next;
@@ -823,20 +823,20 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 						mes "My mom would be mad";
 						mes "at me if she found out";
 						mes "I was begging for it, but";
-						mes "" + mesitemlink(526) + " is too expensive";
+						mes "" + mesitemlink(526, false) + " is too expensive";
 						mes "for me to get without any help!";
 						close;
 					}
 					mes "[Kid]";
 					mes "Oh, would it be alright";
-					mes "if I have this " + mesitemlink(526) + "?";
+					mes "if I have this " + mesitemlink(526, false) + "?";
 					mes "It would really help my mom";
 					mes "feel better. Thanks so much~";
 					delitem 526,1;
 					next;
 					mes "[Kid]";
 					mes "Hey, to pay you back, why";
-					mes "don't I make a " + mesitemlink(5110) + "";
+					mes "don't I make a " + mesitemlink(5110, false) + "";
 					mes "for you? I learned how to make";
 					mes "one when my baby brother was";
 					mes "born. But first, I'll need some";
@@ -845,10 +845,10 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 					mes "[Kid]";
 					mes "Would you";
 					mes "please bring";
-					mes "^3131FF1 " + mesitemlink(7270) + "^000000,";
-					mes "^3131FF1 " + mesitemlink(941) + "^000000 and";
-					mes "^3131FF1 " + mesitemlink(10004) + "^000000? Oh, and one";
-					mes "more ^3131FFRoyal Jelly^000000 for me~";
+					mes "^3131FF1 " + mesitemlink(7270, false) + "^000000,";
+					mes "^3131FF1 " + mesitemlink(941, false) + "^000000 and";
+					mes "^3131FF1 " + mesitemlink(10004, false) + "^000000? Oh, and one";
+					mes "more ^3131FF" + mesitemlink(526, false) + "^000000 for me~";
 					close;
 				case 2:
 					mes "[Kid]";
@@ -879,15 +879,15 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 		mes "[Metelle]";
 		mes "Oh, hello, what's this?";
 		mes "You're carrying 1 Black";
-		mes "Dyestuffs, 1 " + mesitemlink(749) + ",";
+		mes "Dyestuffs, 1 " + mesitemlink(749, false) + ",";
 		mes "999 Tiger Panties and even";
 		mes "50,000 zeny with you. That's";
-		mes "enough to make a " + mesitemlink(5115) + "...";
+		mes "enough to make a " + mesitemlink(5115, false) + "...";
 		next;
 		mes "[Metelle]";
 		mes "Um, would you mind letting";
 		mes "me have those items so that";
-		mes "I can make a " + mesitemlink(5115) + "?";
+		mes "I can make a " + mesitemlink(5115, false) + "?";
 		mes "I'd never be able to gather";
 		mes "those things on my own...";
 		next;
@@ -897,7 +897,7 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 				mes "[Metelle]";
 				mes "Oh, thank you so much!";
 				mes "I've always wanted to make";
-				mes "this hat and try it on, even";
+				mes "this " + mesitemlink(2220, false) + " and try it on, even";
 				mes "if it's just once. But don't";
 				mes "worry, I'll give it to you~";
 				mes "Now please next; a moment...";
@@ -914,7 +914,7 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 				mes "^333333*Whew!*^000000";
 				mes "Finally, it's done!";
 				mes "Now, if you don't mind,";
-				mes "let me try this hat on";
+				mes "let me try this " + mesitemlink(2220, false) + " on";
 				mes "for just a little while.";
 				delitem 983,1;
 				delitem 7267,999;
@@ -934,7 +934,7 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 				next;
 				mes "[Metelle]";
 				mes "Here, please take";
-				mes "this " + mesitemlink(5115) + ". I really";
+				mes "this " + mesitemlink(5115, false) + ". I really";
 				mes "hope that you'll enjoy it";
 				mes "as much as I do. Well then,";
 				mes "be safe in your travels, okay?";
@@ -946,7 +946,7 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 				mes "favor from someone I just";
 				mes "met. I hope you understand";
 				mes "how much I really want to";
-				mes "make that " + mesitemlink(5115) + "...";
+				mes "make that " + mesitemlink(5115, false) + "...";
 				close;
 		}
 	}
@@ -960,25 +960,25 @@ einbech,70,222,5	script	Metelle#LhzHat	91,{
 	mes "[Metelle]";
 	mes "Of course, it's an";
 	mes "impossible dream,";
-	mes "but with this " + mesitemlink(5115) + ",";
+	mes "but with this " + mesitemlink(5115, false) + ",";
 	mes "you can at least enjoy the";
 	mes "sensation of freedom that";
 	mes "a bird in flight must feel.";
 	next;
 	mes "[Metelle]";
 	mes "If you would like";
-	mes "a hat like this, I would";
+	mes "a " + mesitemlink(2220, false) + " like this, I would";
 	mes "need to have some items";
 	mes "that I don't think I can ever";
 	mes "obtain on my very own.";
 	next;
 	mes "[Metelle]";
-	mes "^FF00001 " + mesitemlink(983) + "^000000,";
+	mes "^FF00001 " + mesitemlink(983, false) + "^000000,";
 	mes "^FF0000999 Tiger Panties^000000,";
-	mes "^FF00001 " + mesitemlink(749) + "^000000 and";
+	mes "^FF00001 " + mesitemlink(749, false) + "^000000 and";
 	mes "^FF000050,000 zeny^000000. If you can";
 	mes "bring those to me, I shall";
-	mes "make you a " + mesitemlink(5115) + ".";
+	mes "make you a " + mesitemlink(5115, false) + ".";
 	close;
 
 }
@@ -1002,7 +1002,7 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 				mes "what I need to bleach the blood";
 				mes "red hue from these Witherless";
 				mes "Roses and adorn these flowers";
-				mes "with eternal elegance. May I use these items to make a " + mesitemlink(5117) + "?";
+				mes "with eternal elegance. May I use these items to make a " + mesitemlink(5117, false) + "?";
 				next;
 				switch( select( "Yes", "No" ) )
 				{
@@ -1032,7 +1032,7 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 						mes "Please remember to wear";
 						mes "your hair in an elegant and";
 						mes "refined manner when wearing";
-						mes "the " + mesitemlink(5117) + " so as not to disgrace these beautiful flowers.";
+						mes "the " + mesitemlink(5117, false) + " so as not to disgrace these beautiful flowers.";
 						delitem 731,10;
 						delitem 748,3;
 						delitem 982,1;
@@ -1043,9 +1043,9 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 					case 2:
 						mes "[Margaret Mary]";
 						mes "White roses with thorns";
-						mes "makes my " + mesitemlink(7855) + " beat with";
+						mes "makes my " + mesitemlink(7855, false) + " beat with";
 						mes "unceasing trepidation. What";
-						mes "if I prick my " + mesitemlink(1811) + " and shed";
+						mes "if I prick my " + mesitemlink(1811, false) + " and shed";
 						mes "blood on its snow white petals?";
 						close;
 				}
@@ -1061,25 +1061,25 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 			mes "[Margaret Mary]";
 			mes "Do you love roses as well?";
 			mes "If you like, I can make a";
-			mes "^3131FFMystic Rose^000000 that you can wear";
-			mes "upon your " + mesitemlink(2235) + ". It's not easy";
+			mes "^3131FF" + mesitemlink(5117, false) + "^000000 that you can wear";
+			mes "upon your " + mesitemlink(2235, false) + ". It's not easy";
 			mes "for me to create, but I believe that you would enjoy it greatly.";
 			next;
 			mes "[Margaret Mary]";
 			mes "Please bring me";
 			mes "^3131FF10 2 Carat Diamonds^000000,";
 			mes "^3131FF3 Witherless Roses^000000,";
-			mes "^3131FF1 " + mesitemlink(982) + "^000000 and";
+			mes "^3131FF1 " + mesitemlink(982, false) + "^000000 and";
 			mes "^3131FF50,000 zeny^000000 if you would";
-			mes "like to have a " + mesitemlink(5117) + ".";
+			mes "like to have a " + mesitemlink(5117, false) + ".";
 			close;
 
 		case 2:
 			mes "[Margaret Mary]";
 			mes "White roses with thorns";
-			mes "makes my " + mesitemlink(7855) + " beat with";
+			mes "makes my " + mesitemlink(7855, false) + " beat with";
 			mes "unceasing trepidation. What";
-			mes "if I prick my " + mesitemlink(1811) + " and shed";
+			mes "if I prick my " + mesitemlink(1811, false) + " and shed";
 			mes "blood on its snow white petals?";
 			close;
 	}
@@ -1134,9 +1134,9 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "[Achiha]";
 				mes "I do have a hobby,";
 				mes "though. Once in a while,";
-				mes "I'll sew a hat. Do you think";
+				mes "I'll sew a " + mesitemlink(2220, false) + ". Do you think";
 				mes "an adventurer like you would";
-				mes "want to have a hat I made?";
+				mes "want to have a " + mesitemlink(2220, false) + " I made?";
 				next;
 				switch( select( "Er, I dunno.", "Sure." ) )
 				{
@@ -1159,7 +1159,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 					case 2:
 						mes "[Achiha]";
 						mes "Really? Well, I can sew";
-						mes "together a ^0000FFRed Bonnet^000000.";
+						mes "together a ^0000FF" + mesitemlink(5109, false) + "^000000.";
 						mes "It reminds most people";
 						mes "of a baby's bonnet, but";
 						mes "it does look good on";
@@ -1175,10 +1175,10 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 						next;
 						mes "[Achiha]";
 						mes "Just bring";
-						mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-						mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-						mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-						mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+						mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+						mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+						mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+						mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 						mes "^0000FF50,000 zeny^000000.";
 						next;
 						mes "[Achiha]";
@@ -1186,7 +1186,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 						mes "to just sit and relax";
 						mes "a little bit longer. But";
 						mes "if you want me to make";
-						mes "a hat for you, come back";
+						mes "a " + mesitemlink(2220, false) + " for you, come back";
 						mes "with those materials, okay?";
 						set LHZBTQ,2;
 						close;
@@ -1214,15 +1214,15 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "[Achiha]";
 				mes "What are you talking";
 				mes "about? Oh, you mean the";
-				mes "" + mesitemlink(5109) + "? Well, I guess";
+				mes "" + mesitemlink(5109, false) + "? Well, I guess";
 				mes "I can make one. But I think";
 				mes "I need some materials first.";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+				mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 				mes "^0000FF50,000 zeny^000000.";
 				mes "That's what I need.";
 				next;
@@ -1243,7 +1243,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 		mes "Oh, good, you're here.";
 		mes "I've been waiting for you.";
 		mes "Did you bring everything that";
-		mes "you need to make a ^0000FFRed Bonnet^000000?";
+		mes "you need to make a ^0000FF" + mesitemlink(5109, false) + "^000000?";
 		next;
 		switch( select( "Yes.", "I forgot what I need." ) )
 		{
@@ -1259,10 +1259,10 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 					mes "you need to bring?";
 					next;
 					mes "[Achiha]";
-					mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+					mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 					mes "^0000FF50,000 zeny^000000. Come back";
 					mes "when you're ready, okay?";
 					close;
@@ -1277,7 +1277,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Well, I'm finished.";
 				mes "^333333*Yawn*^000000 And now I'm";
 				mes "even more tired. Here,";
-				mes "take this " + mesitemlink(5109) + ".";
+				mes "take this " + mesitemlink(5109, false) + ".";
 				mes "I hope you like it~";
 				mes "I think I'll relax now...";
 				delitem 10015,1;
@@ -1289,7 +1289,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				set LHZBTQ,3;
 				next;
 				mes "[Achiha]";
-				mes "I hope you will enjoy the hat~";
+				mes "I hope you will enjoy the " + mesitemlink(2220, false) + "~";
 				close;
 			case 2:
 				mes "[Achiha]";
@@ -1300,10 +1300,10 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Oh next;, I remember now...";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+				mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 				mes "^0000FF50,000 zeny^000000. Come back";
 				mes "when you're ready, okay?";
 				close;
@@ -1332,10 +1332,10 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 					mes "you need to bring?";
 					next;
 					mes "[Achiha]";
-					mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-					mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+					mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+					mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 					mes "^0000FF50,000 zeny^000000. Come back";
 					mes "when you're ready, okay?";
 					close;
@@ -1350,7 +1350,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Well, I'm finished.";
 				mes "^333333*Yawn*^000000 And now I'm";
 				mes "even more tired. Here,";
-				mes "take this " + mesitemlink(5109) + ".";
+				mes "take this " + mesitemlink(5109, false) + ".";
 				mes "I hope you like it~";
 				mes "I think I'll relax now...";
 				delitem 10015,1;
@@ -1361,7 +1361,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				getitem 5109,1;
 				next;
 				mes "[Achiha]";
-				mes "I hope you will enjoy the hat~";
+				mes "I hope you will enjoy the " + mesitemlink(2220, false) + "~";
 				close;
 			case 2:
 				mes "[Achiha]";
@@ -1372,10 +1372,10 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Oh next;, I remember now...";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF1 " + mesitemlink(10015) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(10007) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(975) + "^000000,";
-				mes "^0000FF1 " + mesitemlink(5032) + "^000000 and";
+				mes "^0000FF1 " + mesitemlink(10015, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(10007, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(975, false) + "^000000,";
+				mes "^0000FF1 " + mesitemlink(5032, false) + "^000000 and";
 				mes "^0000FF50,000 zeny^000000. Come back";
 				mes "when you're ready, okay?";
 				close;
@@ -1485,8 +1485,8 @@ gl_prison1,137,138,5	script	Zealotus#LhzHat	1200,{
 		next;
 		mes "[Zealotus]";
 		mes "I will need";
-		mes "^3131FF1 " + mesitemlink(7263) + "^000000,";
-		mes "^3131FF1 " + mesitemlink(660) + "^000000 and";
+		mes "^3131FF1 " + mesitemlink(7263, false) + "^000000,";
+		mes "^3131FF1 " + mesitemlink(660, false) + "^000000 and";
 		mes "^3131FF30 Worn-Out Magic Scrolls^000000.";
 		mes "Then, I can grant you a measure";
 		mes "of my power as I've promised.";
@@ -1505,14 +1505,14 @@ gl_prison1,137,138,5	script	Zealotus#LhzHat	1200,{
 			mes "human. Let's begin...";
 			next;
 			mes "^3355FFZealotus takes the red";
-			mes "" + mesitemlink(5028) + " you've given her and";
+			mes "" + mesitemlink(5028, false) + " you've given her and";
 			mes "drips the wax into her open";
-			mes "palm. The " + mesitemlink(7263) + " begins";
+			mes "palm. The " + mesitemlink(7263, false) + " begins";
 			mes "to glow with an eerie light.^000000";
 			next;
 			mes "[Zealotus]";
 			mes "Now, place your index";
-			mes "" + mesitemlink(1811) + " into my palm so";
+			mes "" + mesitemlink(1811, false) + " into my palm so";
 			mes "that we may complete the";
 			mes "final step of this contract...";
 			next;
@@ -1532,7 +1532,7 @@ gl_prison1,137,138,5	script	Zealotus#LhzHat	1200,{
 					mes "I, Zealotus, as ruler";
 					mes "of this realm, seal this";
 					mes "eternal contract with this";
-					mes "" + mesitemlink(660) + ".";
+					mes "" + mesitemlink(660, false) + ".";
 					next;
 					mes "[Zealotus]";
 					mes "" + strcharinfo(0) + " will";
@@ -1560,8 +1560,8 @@ gl_prison1,137,138,5	script	Zealotus#LhzHat	1200,{
 		}
 		mes "[Zealotus]";
 		mes "I will need";
-		mes "^3131FF1 " + mesitemlink(7263) + "^000000,";
-		mes "^3131FF1 " + mesitemlink(660) + "^000000 and";
+		mes "^3131FF1 " + mesitemlink(7263, false) + "^000000,";
+		mes "^3131FF1 " + mesitemlink(660, false) + "^000000 and";
 		mes "^3131FF30 Worn-Out Magic Scrolls^000000.";
 		mes "Then, I can grant you a measure";
 		mes "of my power as I've promised.";
@@ -2004,9 +2004,9 @@ gl_prison1,100,48,5	script	Rybio#LhzHat	1201,{
 	{
 		mes "[Rybio]";
 		mes "You know, I usually just";
-		mes "run up and " + mesitemlink(1526) + " like crazy";
+		mes "run up and " + mesitemlink(1526, false) + " like crazy";
 		mes "once I see you humans, but";
-		mes "my " + mesitemlink(7855) + "'s not in it today, so";
+		mes "my " + mesitemlink(7855, false) + "'s not in it today, so";
 		mes "I'm gonna give you just one";
 		mes "chance to run for your life.";
 		next;
@@ -2120,7 +2120,7 @@ airport,148,41,3	script	Freight Manager#toast	852,{
 	if (isequipped(5107) || countitem(5107)) {
 		mes "[Kirishu]";
 		mes "Wait a sec, that";
-		mes "" + mesitemlink(5107) + "! You must";
+		mes "" + mesitemlink(5107, false) + "! You must";
 		mes "be the guy who helped out";
 		mes "my buddy, Kasis. I owe you";
 		mes "my gratitude since without your help, I wouldn't eat lunch!";
@@ -2199,7 +2199,7 @@ airport,148,41,3	script	Freight Manager#toast	852,{
 						next;
 						cutin "ein_soldier.bmp",1;
 						mes "[Kirishu]";
-						mes "" + mesitemlink(548) + "~";
+						mes "" + mesitemlink(548, false) + "~";
 						close2;
 						cutin "",255;
 						end;

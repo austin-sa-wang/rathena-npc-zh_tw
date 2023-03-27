@@ -182,12 +182,12 @@ ein_fild01,43,249,0	script	Local Villager#hunt	898,{
 							mes "It doesn't look like you have enough.";
 							next;
 							mes "[Local Villager]";
-							mes "I need to see that you have gathered ^FF000050 " + mesitemlink(7119) + "^000000, and then I can reward you.";
+							mes "I need to see that you have gathered ^FF000050 " + mesitemlink(7119, false) + "^000000, and then I can reward you.";
 							close;
 						}
 					case 2:
 						mes "[Local Villager]";
-						mes "I need to see that you have gathered ^FF000050 " + mesitemlink(7119) + "^000000, and then I can reward you.";
+						mes "I need to see that you have gathered ^FF000050 " + mesitemlink(7119, false) + "^000000, and then I can reward you.";
 						close;
 					}
 				case 2:

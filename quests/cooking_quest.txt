@@ -89,7 +89,7 @@
 			mes "at me so? Is it the Morocc";
 			mes "silk shirt I am wearing, my";
 			mes "hair styled by Madam Veronica,";
-			mes "or my brand name " + mesitemlink(2503) + "";
+			mes "or my brand name " + mesitemlink(2503, false) + "";
 			mes "refined by Monsieur Antonio?";
 			next;
 			cutin "orleans_7",0;
@@ -192,7 +192,7 @@
 		mes "Allow me to introduce";
 		mes "myself to you, amour.";
 		mes "I am your ever faithful";
-		mes "servant whose " + mesitemlink(7855) + " is";
+		mes "servant whose " + mesitemlink(7855, false) + " is";
 		mes "enraptured by your gaze.";
 		mes "My name is Charles Orleans.";
 		next;
@@ -324,7 +324,7 @@
 			set cooking_q,1;
 			mes "[Charles Orleans]";
 			mes "Ahhh, how about";
-			mes "'" + mesitemlink(12041) + "?'";
+			mes "'" + mesitemlink(12041, false) + "?'";
 			mes "To the uninitiated, it may";
 			mes "seem to be a disgusting dish,";
 			mes "but trust me, its exquisite taste is pure pleasure for your palate.";
@@ -332,8 +332,8 @@
 			mes "[Charles Orleans]";
 			mes "Now, please bring";
 			mes "^4D4DFF5 Grasshopper Legs^000000,";
-			mes "^4D4DFF1 " + mesitemlink(7457) + "^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(7031) + "^000000.";
+			mes "^4D4DFF1 " + mesitemlink(7457, false) + "^000000, and";
+			mes "^4D4DFF1 " + mesitemlink(7031, false) + "^000000.";
 			mes "Then, we can begin.";
 			goto L_End;
 		}
@@ -341,7 +341,7 @@
 			set cooking_q,2;
 			mes "[Charles Orleans]";
 			mes "Ah, I've got it!";
-			mes "Let's make ''" + mesitemlink(533) + "";
+			mes "Let's make ''" + mesitemlink(533, false) + "";
 			mes "Herbal Tea.'' The weather";
 			mes "is perfect right now for";
 			mes "a cool, refreshing drink.";
@@ -359,23 +359,23 @@
 			mes "[Charles Orleans]";
 			mes "I've got it~";
 			mes "We can make";
-			mes "''" + mesitemlink(12061) + ".''";
+			mes "''" + mesitemlink(12061, false) + ".''";
 			mes "Please bring me the";
 			mes "following ingredients so";
 			mes "that we can begin the lesson.";
 			next;
 			mes "[Charles Orleans]";
-			mes "^4D4DFF1 Honey^000000,";
+			mes "^4D4DFF1 " + mesitemlink(518, false) + "^000000,";
 			mes "^4D4DFF2 Grapes^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(501) + "^000000.";
+			mes "^4D4DFF1 " + mesitemlink(501, false) + "^000000.";
 			goto L_End;
 		}
 		else if (.@cook_m1 == 4) {
 			set cooking_q,4;
 			mes "[Charles Orleans]";
 			mes "Mmm, why don't we";
-			mes "make ''Frog " + mesitemlink(574) + " and";
-			mes "" + mesitemlink(1024) + " Soup?'' Those";
+			mes "make ''Frog " + mesitemlink(574, false) + " and";
+			mes "" + mesitemlink(1024, false) + " Soup?'' Those";
 			mes "bereft of gourmet taste may";
 			mes "think it's disgusting, but it's";
 			mes "actually quite scrumptious.";
@@ -383,9 +383,9 @@
 			mes "[Charles Orleans]";
 			mes "Well then,";
 			mes "please bring me";
-			mes "^4D4DFF1 " + mesitemlink(577) + "^000000,";
+			mes "^4D4DFF1 " + mesitemlink(577, false) + "^000000,";
 			mes "^4D4DFF10 Spawns^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(1024) + "^000000.";
+			mes "^4D4DFF1 " + mesitemlink(1024, false) + "^000000.";
 			goto L_End;
 		}
 		else if (.@cook_m1 == 5) {
@@ -402,14 +402,14 @@
 			mes "We'll need";
 			mes "^4D4DFF10 Green Herbs^000000,";
 			mes "^4D4DFF10 Nippers^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(503) + "^000000.";
+			mes "^4D4DFF1 " + mesitemlink(503, false) + "^000000.";
 			goto L_End;
 		}
 		set cooking_q,6;
 		mes "[Charles Orleans]";
 		mes "Ooh, you know what";
 		mes "would be scrumptious?";
-		mes "''" + mesitemlink(12066) + ".'' Yes,";
+		mes "''" + mesitemlink(12066, false) + ".'' Yes,";
 		mes "that sounds perfect! Please";
 		mes "bring these ingredients so";
 		mes "that I can teach you this dish.";
@@ -418,7 +418,7 @@
 		mes "We'll need";
 		mes "^4D4DFF1 Frying Pan^000000,";
 		mes "^4D4DFF5 Yoyo Tails^000000, and";
-		mes "^4D4DFF1 " + mesitemlink(7457) + "^000000.";
+		mes "^4D4DFF1 " + mesitemlink(7457, false) + "^000000.";
 		goto L_End;
 	}
 	else if (cooking_q == 1) {
@@ -437,7 +437,7 @@
 			mes "Scrub the Grasshopper Legs";
 			mes "as cleanly as you can before";
 			mes "placing them in the Frying Pan.";
-			mes "Afterwards, pour half a bottle of " + mesitemlink(7457) + " and fry the legs at";
+			mes "Afterwards, pour half a bottle of " + mesitemlink(7457, false) + " and fry the legs at";
 			mes "high heat for about 20 minutes.";
 			next;
 			mes "[Charles Orleans]";
@@ -468,7 +468,7 @@
 			mes "[Charles Orleans]";
 			mes "Hurry and bring me";
 			mes "the ingredients to make";
-			mes "" + mesitemlink(12041) + "!";
+			mes "" + mesitemlink(12041, false) + "!";
 			mes "If a restaurant patron had";
 			mes "ordered this, then you'd";
 			mes "already be making him wait!";
@@ -495,7 +495,7 @@
 			mes "[Charles Orleans]";
 			mes "You extract the juice";
 			mes "from the Grapes like this--";
-			mes "we can't use pre-made Grape";
+			mes "we can't use pre-made " + mesitemlink(514, false) + "";
 			mes "Juice for the sake of freshness. Then, you need to boil the Red";
 			mes "Potions in a bain-marie...";
 			next;
@@ -525,7 +525,7 @@
 			mes "[Charles Orleans]";
 			mes "What are you doing?";
 			mes "Hurry and bring me the";
-			mes "ingredients for " + mesitemlink(533) + "";
+			mes "ingredients for " + mesitemlink(533, false) + "";
 			mes "Herbal Tea! At a real restaurant, you'd never be able to take your";
 			mes "time like this! Quickly, now!";
 			goto L_End;
@@ -553,13 +553,13 @@
 			mes "First, skin the Grapes";
 			mes "and extract the seeds. Then,";
 			mes "blend the Grapes with the";
-			mes "Honey. Take this blended";
-			mes "" + mesitemlink(974) + " and carefully stir";
-			mes "it into the " + mesitemlink(501) + "...";
+			mes "" + mesitemlink(518, false) + ". Take this blended";
+			mes "" + mesitemlink(974, false) + " and carefully stir";
+			mes "it into the " + mesitemlink(501, false) + "...";
 			next;
 			mes "[Charles Orleans]";
 			mes "When the pulp is fully";
-			mes "mixed into the " + mesitemlink(501) + ",";
+			mes "mixed into the " + mesitemlink(501, false) + ",";
 			mes "you'll be finished. Now, go";
 			mes "and try making it yourself.";
 			mes "Right, that's good. Yes...";
@@ -587,17 +587,17 @@
 			mes "What's taking you so";
 			mes "long? You should have";
 			mes "brought me the ingredients";
-			mes "to make " + mesitemlink(12061) + "";
+			mes "to make " + mesitemlink(12061, false) + "";
 			mes "a while ago. Hurry it up!";
 			goto L_End;
 		}
 		mes "[Charles Orleans]";
 		mes "You're having trouble";
-		mes "finding some Honey for the";
-		mes "" + mesitemlink(12061) + ", aren't you?";
+		mes "finding some " + mesitemlink(518, false) + " for the";
+		mes "" + mesitemlink(12061, false) + ", aren't you?";
 		mes "Just go and hunt some bears,";
 		mes "they're always carrying some";
-		mes "of that Honey around.";
+		mes "of that " + mesitemlink(518, false) + " around.";
 		goto L_End;
 	}
 	else if (cooking_q == 4) {
@@ -613,10 +613,10 @@
 			cutin "orleans_6",0;
 			mes "[Charles Orleans]";
 			mes "Mill the grain until";
-			mes "it's a fine " + mesitemlink(7604) + ", then";
-			mes "boil the " + mesitemlink(1024) + " at";
+			mes "it's a fine " + mesitemlink(7604, false) + ", then";
+			mes "boil the " + mesitemlink(1024, false) + " at";
 			mes "medium heat. Once it";
-			mes "bubbles, pour in the " + mesitemlink(7604) + ".";
+			mes "bubbles, pour in the " + mesitemlink(7604, false) + ".";
 			next;
 			mes "[Charles Orleans]";
 			mes "Keep stirring, slowly";
@@ -648,7 +648,7 @@
 			mes "What are you doing?";
 			mes "You're supposed to be";
 			mes "preparing ingredients";
-			mes "for Frog " + mesitemlink(574) + " and " + mesitemlink(7768) + "";
+			mes "for Frog " + mesitemlink(574, false) + " and " + mesitemlink(7768, false) + "";
 			mes "Ink Soup right now!";
 			goto L_End;
 		}
@@ -736,7 +736,7 @@
 			mes "Pluck the hair from the";
 			mes "tails and rinse them well";
 			mes "under cold water. Pour half";
-			mes "a bottle of " + mesitemlink(7457) + " unto";
+			mes "a bottle of " + mesitemlink(7457, false) + " unto";
 			mes "a preheated pan, and then";
 			mes "quickly fry the tails.";
 			next;
@@ -1172,7 +1172,7 @@
 				switch(.@old_book) {
 				case 1:
 					mes "Ah, so you're done";
-					mes "with the " + mesitemlink(7472) + ".";
+					mes "with the " + mesitemlink(7472, false) + ".";
 					mes "That's good, that means you're";
 					mes "ready to graduate from the most";
 					mes "basic of basics. From now on,";
@@ -1181,7 +1181,7 @@
 				case 2:
 					mes "Ah, so what did you";
 					mes "think of the recipes in";
-					mes "the " + mesitemlink(7473) + "?";
+					mes "the " + mesitemlink(7473, false) + "?";
 					mes "Homestyle cooking may be";
 					mes "simple, but it should never";
 					mes "be neglected by chefs.";
@@ -1195,14 +1195,14 @@
 					break;
 				case 4:
 					mes "So you've finished the";
-					mes "" + mesitemlink(7475) + ". That's";
+					mes "" + mesitemlink(7475, false) + ". That's";
 					mes "no small feat! You've got to";
 					mes "use very strange ingredients";
 					mes "to create delicious cuisine!";
 					break;
 				case 5:
 					mes "You're done with the";
-					mes "" + mesitemlink(7476) + "? Good";
+					mes "" + mesitemlink(7476, false) + "? Good";
 					mes "work: most beginners don't";
 					mes "even get this far. I suppose";
 					mes "you'll want to review some";
@@ -1225,12 +1225,12 @@
 				mes "my family was destitute to";
 				mes "the point where we live off";
 				mes "leftover vegetables. Even";
-				mes "" + mesitemlink(528) + " was a prime";
+				mes "" + mesitemlink(528, false) + " was a prime";
 				mes "delicacy back in those days.";
 				next;
 				mes "[Charles Orleans]";
 				mes "Back then, my father would";
-				mes "always serve us " + mesitemlink(535) + ".";
+				mes "always serve us " + mesitemlink(535, false) + ".";
 				mes "I grew sick of it as a boy, but";
 				mes "now it brings back memories";
 				mes "of those days of innocence.";
@@ -1270,7 +1270,7 @@
 				mes "you cannot enjoy tea without";
 				mes "crackers or cookies. Please";
 				mes "bring me 5 Well-Baked Cookies";
-				mes "to borrow my " + mesitemlink(7473) + ".";
+				mes "to borrow my " + mesitemlink(7473, false) + ".";
 				if (countitem(538) > 4) {
 					next;
 					if (select("Give Cookies and Current Cookbook:Cancel") == 1) {
@@ -1302,9 +1302,9 @@
 				mes "You know that specialty";
 				mes "dish from Amatsu? I've";
 				mes "been craving that lately.";
-				mes "Please bring me 5 " + mesitemlink(551) + ",";
+				mes "Please bring me 5 " + mesitemlink(551, false) + ",";
 				mes "and I'll let you borrow a";
-				mes "" + mesitemlink(7474) + ", okay?";
+				mes "" + mesitemlink(7474, false) + ", okay?";
 				if (countitem(551) > 4) {
 					next;
 					if (select("Give Sushi and Current Cookbook:Cancel")) {
@@ -1318,7 +1318,7 @@
 					}
 					else {
 						mes "[Charles Orleans]";
-						mes "Ahhh, " + mesitemlink(551) + "...";
+						mes "Ahhh, " + mesitemlink(551, false) + "...";
 						mes "It's one of the few";
 						mes "things I don't know";
 						mes "how to make extremely";
@@ -1334,9 +1334,9 @@
 				mes "Oh, I'm in the mood for";
 				mes "some cuisine from Kunlun.";
 				mes "Would you bring me some of";
-				mes "that delicious " + mesitemlink(553) + "? 5 would";
+				mes "that delicious " + mesitemlink(553, false) + "? 5 would";
 				mes "be perfect. Then, I'll let you";
-				mes "borrow my " + mesitemlink(7475) + ".";
+				mes "borrow my " + mesitemlink(7475, false) + ".";
 				if (countitem(553) > 4) {
 					next;
 					if (select("Give Bao and Current Cookbook:Cancel") == 1) {
@@ -1344,7 +1344,7 @@
 						mes "[Charles Orleans]";
 						mes "Great, you actually";
 						mes "brought them! These";
-						mes "" + mesitemlink(553) + " look especially";
+						mes "" + mesitemlink(553, false) + " look especially";
 						mes "scrumptious! I can't";
 						mes "wait to have a taste!";
 						next;
@@ -1354,7 +1354,7 @@
 						mes "Oh...";
 						mes "It's been so long";
 						mes "since I've had a taste";
-						mes "of that delicious " + mesitemlink(553) + ".";
+						mes "of that delicious " + mesitemlink(553, false) + ".";
 						mes "I'd cook it myself, but";
 						mes "I don't know the secret!";
 						goto L_End;
@@ -1370,7 +1370,7 @@
 				mes "They're a tasty ingredient with";
 				mes "unignorable health value. Bring";
 				mes "me 10 of those, and you can";
-				mes "borrow a " + mesitemlink(7476) + ".";
+				mes "borrow a " + mesitemlink(7476, false) + ".";
 				if (countitem(711) > 9) {
 					next;
 					if (select("Give Shoots and Current Cookbook:Quit") == 1) {
@@ -1580,7 +1580,7 @@ L_End:
 			mes "committed to cooking. You";
 			mes "might want to show your";
 			mes "dedication with the proper";
-			mes "attire... like a " + mesitemlink(5026) + ".";
+			mes "attire... like a " + mesitemlink(5026, false) + ".";
 			next;
 			mes "[Madeleine Chu]";
 			mes "But yes, Sir Charles";
@@ -1605,9 +1605,9 @@ L_End:
 			mes "[Madeleine Chu]";
 			mes "Oh! You'll need";
 			mes "^4D4DFF5 Grasshopper Legs^000000,";
-			mes "^4D4DFF1 " + mesitemlink(7457) + "^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(7031) + "^000000 to make";
-			mes "" + mesitemlink(12041) + ".";
+			mes "^4D4DFF1 " + mesitemlink(7457, false) + "^000000, and";
+			mes "^4D4DFF1 " + mesitemlink(7031, false) + "^000000 to make";
+			mes "" + mesitemlink(12041, false) + ".";
 			break;
 
 		case 2:
@@ -1615,24 +1615,24 @@ L_End:
 			mes "Oh! You'll need";
 			mes "^4D4DFF3 Grapes^000000, and";
 			mes "^4D4DFF2 Red Potions^000000 for";
-			mes "" + mesitemlink(12046) + ".";
+			mes "" + mesitemlink(12046, false) + ".";
 			break;
 
 		case 3:
 			mes "[Madeleine Chu]";
 			mes "Oh! You'll need";
-			mes "^4D4DFF1 Honey^000000,";
+			mes "^4D4DFF1 " + mesitemlink(518, false) + "^000000,";
 			mes "^4D4DFF2 Grapes^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(501) + "^000000.";
+			mes "^4D4DFF1 " + mesitemlink(501, false) + "^000000.";
 			break;
 
 		case 4:
 			mes "[Madeleine Chu]";
 			mes "Oh! You'll need";
-			mes "^4D4DFF1 " + mesitemlink(577) + "^000000,";
+			mes "^4D4DFF1 " + mesitemlink(577, false) + "^000000,";
 			mes "^4D4DFF10 Spawns^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(1024) + "^000000 for Frog";
-			mes "" + mesitemlink(574) + " and " + mesitemlink(1024) + " soup.";
+			mes "^4D4DFF1 " + mesitemlink(1024, false) + "^000000 for Frog";
+			mes "" + mesitemlink(574, false) + " and " + mesitemlink(1024, false) + " soup.";
 			break;
 
 		case 5:
@@ -1640,8 +1640,8 @@ L_End:
 			mes "Oh! You'll need";
 			mes "^4D4DFF10 Green Herbs^000000,";
 			mes "^4D4DFF10 Nippers^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(503) + "^000000 for";
-			mes "" + mesitemlink(12051) + ".";
+			mes "^4D4DFF1 " + mesitemlink(503, false) + "^000000 for";
+			mes "" + mesitemlink(12051, false) + ".";
 			break;
 
 		case 6:
@@ -1649,8 +1649,8 @@ L_End:
 			mes "Oh! You'll need";
 			mes "^4D4DFF1 Frying Pan^000000,";
 			mes "^4D4DFF5 Yoyo Tails^000000, and";
-			mes "^4D4DFF1 " + mesitemlink(7457) + "^000000 for";
-			mes "" + mesitemlink(12066) + ".";
+			mes "^4D4DFF1 " + mesitemlink(7457, false) + "^000000 for";
+			mes "" + mesitemlink(12066, false) + ".";
 			break;
 		}
 		next;
@@ -1727,7 +1727,7 @@ L_End:
 				mes "[Madeleine Chu]";
 				mes "Oh, I'm sorry, but you";
 				mes "don't have enough skills";
-				mes "to use a " + mesitemlink(12126) + ".";
+				mes "to use a " + mesitemlink(12126, false) + ".";
 				mes "Please practice some more";
 				mes "with the Outdoor Cooking";
 				mes "Kits first, alright?";
@@ -1847,7 +1847,7 @@ L_End:
 			mes "Oh, so have you met";
 			mes "my friend Chulsoo?";
 			mes "You brought him the";
-			mes "" + mesitemlink(12111) + ", right?";
+			mes "" + mesitemlink(12111, false) + ", right?";
 			mes "I'd be disappointed if";
 			mes "you lost it or sold it...";
 			next;
@@ -1882,7 +1882,7 @@ L_End:
 			mes "I'm sure you must have";
 			mes "hidden it somewhere.";
 			mes "Anyway, please deliver that";
-			mes "" + mesitemlink(12111) + " to Chulsoo.";
+			mes "" + mesitemlink(12111, false) + " to Chulsoo.";
 			close;
 		}
 	}
@@ -1949,7 +1949,7 @@ L_End:
 				mes "Well, I only have two";
 				mes "types of cooking kits,";
 				mes "although there is a superior";
-				mes "" + mesitemlink(12127) + " that";
+				mes "" + mesitemlink(12127, false) + " that";
 				mes "real experts, like Sir Charles,";
 				mes "use. Amazing, isn't it?";
 				next;
@@ -2185,7 +2185,7 @@ payon,209,127,3	script	Servant	88,{
 	else if (cooking_q == 9) {
 		mes "[Chulsoo]";
 		mes "How would you like";
-		mes "to buy a " + mesitemlink(550) + "?";
+		mes "to buy a " + mesitemlink(550, false) + "?";
 		mes "It's only 200 zeny, but";
 		mes "it's oh-so-delicious~";
 		next;
@@ -2195,7 +2195,7 @@ payon,209,127,3	script	Servant	88,{
 				mes "[Chulsoo]";
 				mes "Oh, I'm sorry, but";
 				mes "you don't have enough";
-				mes "money to buy a " + mesitemlink(550) + "...";
+				mes "money to buy a " + mesitemlink(550, false) + "...";
 				mes "Still, it should be easy to";
 				mes "raise 200 zeny, right?";
 				close;
@@ -2205,7 +2205,7 @@ payon,209,127,3	script	Servant	88,{
 			mes "[Chulsoo]";
 			mes "Thank you very";
 			mes "much! I hope you";
-			mes "enjoy your " + mesitemlink(550) + "~";
+			mes "enjoy your " + mesitemlink(550, false) + "~";
 			close;
 
 		case 2:
@@ -2213,7 +2213,7 @@ payon,209,127,3	script	Servant	88,{
 			mes "Are you sure about";
 			mes "that? You won't get";
 			mes "the chance to have a";
-			mes "" + mesitemlink(550) + " this delicious";
+			mes "" + mesitemlink(550, false) + " this delicious";
 			mes "anywhere else. Oh well,";
 			mes "that means more for me~";
 			close;
@@ -2313,7 +2313,7 @@ payon,209,127,3	script	Servant	88,{
 			mes "Wait, wait...";
 			mes "I don't have it!";
 			mes "Where did I put";
-			mes "that " + mesitemlink(12111) + "?";
+			mes "that " + mesitemlink(12111, false) + "?";
 			close;
 		}
 	}
@@ -2344,7 +2344,7 @@ payon,209,127,3	script	Servant	88,{
 		mes "I was forgetting the most";
 		mes "important ingredient, and that";
 		mes "it was possible to make things";
-		mes "like " + mesitemlink(12066) + " delicious. But I can't believe that nonsense!";
+		mes "like " + mesitemlink(12066, false) + " delicious. But I can't believe that nonsense!";
 		next;
 		mes "[Chulsoo]";
 		mes "In the end, I ran away.";
@@ -2357,7 +2357,7 @@ payon,209,127,3	script	Servant	88,{
 	else {
 		mes "[Chulsoo]";
 		mes "How would you like";
-		mes "to buy a " + mesitemlink(550) + "?";
+		mes "to buy a " + mesitemlink(550, false) + "?";
 		mes "It's only 200 zeny, but";
 		mes "it's oh-so-delicious~";
 		next;
@@ -2366,7 +2366,7 @@ payon,209,127,3	script	Servant	88,{
 				mes "[Chulsoo]";
 				mes "Oh, I'm sorry, but";
 				mes "you don't have enough";
-				mes "money to buy a " + mesitemlink(550) + "...";
+				mes "money to buy a " + mesitemlink(550, false) + "...";
 				mes "Still, it should be easy to";
 				mes "raise 200 zeny, right?";
 				close;
@@ -2376,14 +2376,14 @@ payon,209,127,3	script	Servant	88,{
 			mes "[Chulsoo]";
 			mes "Thank you very";
 			mes "much! I hope you";
-			mes "enjoy your " + mesitemlink(550) + "~";
+			mes "enjoy your " + mesitemlink(550, false) + "~";
 			close;
 		}
 		mes "[Chulsoo]";
 		mes "Are you sure about";
 		mes "that? You won't get";
 		mes "the chance to have a";
-		mes "" + mesitemlink(550) + " this delicious";
+		mes "" + mesitemlink(550, false) + " this delicious";
 		mes "anywhere else. Oh well,";
 		mes "that means more for me~";
 		close;

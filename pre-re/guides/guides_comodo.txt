@@ -46,7 +46,7 @@ function	script	F_CmdGuide	{
 		mes "Please refer to the cross mark,";
 		mes "^FF6633+^000000, on your Mini-Map to find the";
 		mes "Casino, a haven for rest for";
-		mes "weary travlers and the " + mesitemlink(7855) + "";
+		mes "weary travlers and the " + mesitemlink(7855, false) + "";
 		mes "of Comodo's nightlife.";
 		close;
 	case 2:
@@ -86,7 +86,7 @@ function	script	F_CmdGuide	{
 		viewpoint 1,136,202,5,0xFF5555;
 		mes "Please refer to the cross mark,";
 		mes "^FF5555+^000000, on your Mini-Map to find the";
-		mes "Western " + mesitemlink(13150) + " of the Kafra";
+		mes "Western " + mesitemlink(13150, false) + " of the Kafra";
 		mes "Corporation. They offer some";
 		mes "pretty important services that you may want to check out later.";
 		close;

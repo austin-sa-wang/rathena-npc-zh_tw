@@ -405,7 +405,7 @@ comodo,210,154,2	script	Suspicious Guy#cmd	2_M_THIEFMASTER,{
 		mes "It seems we share the same line of work, you and me. Heh heh, lemme give you a hot tip.";
 		next;
 		mes "[Cain]";
-		mes "I've been charging other people for this information, but since, shall we say, we work in the same professional field, I don't have the " + mesitemlink(7855) + " to take your zeny.";
+		mes "I've been charging other people for this information, but since, shall we say, we work in the same professional field, I don't have the " + mesitemlink(7855, false) + " to take your zeny.";
 		next;
 		mes "[Cain]";
 		mes "You see that lady over there?";
@@ -413,7 +413,7 @@ comodo,210,154,2	script	Suspicious Guy#cmd	2_M_THIEFMASTER,{
 		next;
 		mes "[Cain]";
 		mes "I'm talkin' rare items.";
-		mes "I took the liberty of sneaking a peek at what she owns, and saw she's got a helmet with goat horns and even a " + mesitemlink(2235) + "! She's so rich it's ridiculous!";
+		mes "I took the liberty of sneaking a peek at what she owns, and saw she's got a helmet with goat horns and even a " + mesitemlink(2235, false) + "! She's so rich it's ridiculous!";
 		next;
 		mes "[Cain]";
 		mes "The buzz that's been going around is that she's got a cache of rare equipment and weapons too! So whaddya say? Wanna be partners in crime and rob her house?";
@@ -454,7 +454,7 @@ comodo,210,154,2	script	Suspicious Guy#cmd	2_M_THIEFMASTER,{
 			next;
 			mes "[Cain]";
 			mes "I'm talkin' rare items.";
-			mes "I took the liberty of sneaking a peek at what she owns, and saw she's got a helmet with goat horns and even a " + mesitemlink(2235) + "! She's so rich it's ridiculous!";
+			mes "I took the liberty of sneaking a peek at what she owns, and saw she's got a helmet with goat horns and even a " + mesitemlink(2235, false) + "! She's so rich it's ridiculous!";
 			next;
 			mes "[Cain]";
 			mes "There's a chance that rare equipment and weapons might be yours! She'll give anything for a 3 carat diamond. So if you have any of those, you might as well see her.";

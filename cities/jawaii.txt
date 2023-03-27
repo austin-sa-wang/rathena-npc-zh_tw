@@ -126,7 +126,7 @@ jawaii,188,218,7	script	Tavern Lady#Jawaii	80,{
 		next;
 	}
 	mes "[Lady]";
-	mes "Even though I work there, I still can't believe that kind of place exists! I mean, I thought " + mesitemlink(970) + " was outlawed in the Rune-Midgarts Kingdom!";
+	mes "Even though I work there, I still can't believe that kind of place exists! I mean, I thought " + mesitemlink(970, false) + " was outlawed in the Rune-Midgarts Kingdom!";
 	next;
 	mes "[Lady]";
 	mes "I have no idea how singles are";
@@ -149,7 +149,7 @@ jawaii,220,235,3	script	Jawaii Resident#heart	724,{
 	mes "place in Jawaii?";
 	next;
 	mes "[Jawa Jawa]";
-	mes "It's '" + mesitemlink(7855) + " Island,' which is just a little north of here. The water surrounding " + mesitemlink(7855) + " Island is not that deep, so you can just walk across if you're careful.";
+	mes "It's '" + mesitemlink(7855, false) + " Island,' which is just a little north of here. The water surrounding " + mesitemlink(7855, false) + " Island is not that deep, so you can just walk across if you're careful.";
 	next;
 	mes "[Jawa Jawa]";
 	mes "That's the best place to share an intimate moment with the person";
@@ -315,7 +315,7 @@ jawaii,108,199,5	script	Employee#antroom	74,{
 jawaii,107,189,5	script	Employee#horoom	93,{
 	mes "[Sharkie Rania]";
 	mes "I'll take you";
-	mes "to the Honey Room.";
+	mes "to the " + mesitemlink(518, false) + " Room.";
 	mes "It costs 1,000 zeny.";
 	next;
 	mes "[Sharkie Rania]";
@@ -384,7 +384,7 @@ jawaii,112,173,7	script	Employee#villroom	93,{
 	}
 	mes "[Larks Rania]";
 	mes "No problem~";
-	mes "If you like, you may wish to check the Honey Room. Although the roomkeeper, Sharkie, is a shy girl, the room is really beautiful.";
+	mes "If you like, you may wish to check the " + mesitemlink(518, false) + " Room. Although the roomkeeper, Sharkie, is a shy girl, the room is really beautiful.";
 	close;
 }
 
@@ -398,7 +398,7 @@ jawaii,214,168,5	script	Honeymoon Helper#Jawaii	71,{
 	mes "Why don't you make the best of your time here, and make a lot of sweet memories that you will cherish for years to come?";
 	next;
 	mes "[Helper]";
-	mes "Mementos that remind you of your happy times can be your most precious possessions. Like your " + mesitemlink(2634) + ", for instance, or the " + mesitemlink(7170) + " and " + mesitemlink(2338) + " worn during your wedding ceremony...";
+	mes "Mementos that remind you of your happy times can be your most precious possessions. Like your " + mesitemlink(2634, false) + ", for instance, or the " + mesitemlink(7170, false) + " and " + mesitemlink(2338, false) + " worn during your wedding ceremony...";
 	next;
 	mes "[Helper]";
 	mes "Even if the wedding ceremony";
@@ -406,7 +406,7 @@ jawaii,214,168,5	script	Honeymoon Helper#Jawaii	71,{
 	next;
 	mes "[Helper]";
 	mes "Its name is...";
-	mes "'" + mesitemlink(681) + "'!!";
+	mes "'" + mesitemlink(681, false) + "'!!";
 	next;
 	mes "[Helper]";
 	mes "It will instantly bring you to the wedding hall with magic power!";
@@ -424,7 +424,7 @@ jawaii,214,168,5	script	Honeymoon Helper#Jawaii	71,{
 			mes "special to the both of you.";
 			close;
 		}
-		mes "'" + mesitemlink(681) + "' is 50,000 zeny. But don't seem to have enough money with you right now. Maybe you and your partner could help each other to buy the " + mesitemlink(681) + "?";
+		mes "'" + mesitemlink(681, false) + "' is 50,000 zeny. But don't seem to have enough money with you right now. Maybe you and your partner could help each other to buy the " + mesitemlink(681, false) + "?";
 		close;
 	}
 	mes "[Helper]";
@@ -644,7 +644,7 @@ jawaii_in,30,98,4	script	Employee#jaw7	724,{
 		next;
 		mes "[Employee Amy]";
 		mes "How about...";
-		mes "" + mesitemlink(519) + " and cookies?";
+		mes "" + mesitemlink(519, false) + " and cookies?";
 		mes "Gin and tonic?";
 		mes "Jackie Tucker";
 		mes "and Chris Chan...?";
@@ -733,7 +733,7 @@ jawaii_in,15,104,0	script	Waitress#jawaii	80,{
 		case 1:
 			mes "[Waitress]";
 			mes "You can have";
-			mes "1 " + mesitemlink(517) + " for 1,000 zeny.";
+			mes "1 " + mesitemlink(517, false) + " for 1,000 zeny.";
 			mes "Would you like one?";
 			next;
 			if (select("Yes.:Wha--! It's too expensive!") == 1) {
@@ -758,7 +758,7 @@ jawaii_in,15,104,0	script	Waitress#jawaii	80,{
 		case 2:
 			mes "[Waitress]";
 			mes "You can have";
-			mes "1 " + mesitemlink(503) + "";
+			mes "1 " + mesitemlink(503, false) + "";
 			mes "at 1,000 zeny.";
 			mes "Would you like one?";
 			next;
@@ -983,9 +983,9 @@ jawaii_in,28,124,0	script	Bartender#jaw	46,{
 				mes "a '^0000FFWhite Margarita'^000000?'";
 				next;
 				mes "[Bartender]";
-				mes "You will smell a sourish " + mesitemlink(568) + " scent which makes your mouth water. As you taste it, you will be filled with a pleasant, comforting warmth that spreads throughout your body.";
+				mes "You will smell a sourish " + mesitemlink(568, false) + " scent which makes your mouth water. As you taste it, you will be filled with a pleasant, comforting warmth that spreads throughout your body.";
 				next;
-				mes "^3355FFYou receive a fancy cocktail glass with salt and " + mesitemlink(568) + " juice sprinkled on the rim. Its sour scent does make your mouth water. How could something so appetizing be dangerous?";
+				mes "^3355FFYou receive a fancy cocktail glass with salt and " + mesitemlink(568, false) + " juice sprinkled on the rim. Its sour scent does make your mouth water. How could something so appetizing be dangerous?";
 				next;
 				mes "[Bartender]";
 				mes "It has a sweet and sour taste so it's favored by female customers";
@@ -1005,7 +1005,7 @@ jawaii_in,28,124,0	script	Bartender#jaw	46,{
 			mes "^3355FFYou received a simple glass containing a gray liquid. Although it smells faintly sweet, it looks like industrial strength liquor. It's time to summon your courage and take a sip~";
 			next;
 			mes "[Bartender]";
-			mes "That drink is bitter and sweet, just like life. Taste it with your " + mesitemlink(1015) + ", don't drink it all at once.";
+			mes "That drink is bitter and sweet, just like life. Taste it with your " + mesitemlink(1015, false) + ", don't drink it all at once.";
 			next;
 			mes "^3355FFYou slowly drank some";
 			mes "of your Gunslinger drink.^000000";
@@ -1046,10 +1046,10 @@ jawaii_in,28,124,0	script	Bartender#jaw	46,{
 
 		case 4:
 			callsub S_KillChar,2,.@roof_jaw;
-			mes "This is for one who wants to relive wild, youthful days, honor those who have fought for justice and liberty, or just to drink " + mesitemlink(970) + " until they vomit stomach acid.";
+			mes "This is for one who wants to relive wild, youthful days, honor those who have fought for justice and liberty, or just to drink " + mesitemlink(970, false) + " until they vomit stomach acid.";
 			mes "for one who wants to remember people fighting for liberty...";
 			next;
-			mes "^3355FFYou receive a tumbler filled with brown liquid. It a has a very thick, machine like smell. It kind of reminds you of " + mesitemlink(7204) + ".^000000";
+			mes "^3355FFYou receive a tumbler filled with brown liquid. It a has a very thick, machine like smell. It kind of reminds you of " + mesitemlink(7204, false) + ".^000000";
 			next;
 			mes "[Bartender]";
 			mes "It might look too big to drink at once, but I suggest that you finish it in one gulp. If you drink it slowly, you'll pass out.";

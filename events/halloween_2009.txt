@@ -32,42 +32,42 @@ prontera,152,192,5	script	Pumpkin Hat Researcher	712,{
 		close;
 	}
 	mes "[Pumpkin Hat Researcher]";
-	mes "Say do you like " + mesitemlink(535) + " Pies?";
+	mes "Say do you like " + mesitemlink(535, false) + " Pies?";
 	next;
 	mes "[Pumpkin Hat Researcher]";
-	mes "I'm a " + mesitemlink(535) + " Hat researcher, Why don't you listen to my story?";
+	mes "I'm a " + mesitemlink(535, false) + " " + mesitemlink(2220, false) + " researcher, Why don't you listen to my story?";
 	next;
 	while(1) {
 		switch(select("Listen to the story.:Ask about Pumpkin Hat.:Get a Pumpkin Hat.:Stop the conversation.")) {
 			case 1:
 				mes "[Pumpkin Hat Researcher]";
-				mes "I've been studying about an upgraded " + mesitemlink(535) + " Hat.";
+				mes "I've been studying about an upgraded " + mesitemlink(535, false) + " " + mesitemlink(2220, false) + ".";
 				mes "I have discovered that it is a very simple process.";
 				next;
 				mes "[Pumpkin Hat Researcher]";
 				mes "The process is quite simple.";
-				mes "If you bring me ^4a4aff20 " + mesitemlink(1062) + "^000000 I can show you.";
+				mes "If you bring me ^4a4aff20 " + mesitemlink(1062, false) + "^000000 I can show you.";
 				mes "Isn't that a tempting proposal?";
 				next;
 				break;
 			case 2:
 				mes "[Pumpkin Hat Researcher]";
-				mes "This upgraded " + mesitemlink(535) + " hat is powerful stuff!";
+				mes "This upgraded " + mesitemlink(535, false) + " " + mesitemlink(2220, false) + " is powerful stuff!";
 				next;
 				mes "[Pumpkin Hat Researcher]";
-				mes "It can make a " + mesitemlink(6097) + " that restores a large percentage of HP & SP using condensed energy to the person who wears it.";
+				mes "It can make a " + mesitemlink(6097, false) + " that restores a large percentage of HP & SP using condensed energy to the person who wears it.";
 				next;
 				mes "[Pumpkin Hat Researcher]";
-				mes "All you need is ^4a4aff20 " + mesitemlink(1062) + "^000000s.";
+				mes "All you need is ^4a4aff20 " + mesitemlink(1062, false) + "^000000s.";
 				next;
 				break;
 			case 3:
 				mes "[Pumpkin Hat Researcher]";
-				mes "Do you want to get " + mesitemlink(535) + " Pies? Okay, let me count the Jack o' Pumpkins you've brought.";
+				mes "Do you want to get " + mesitemlink(535, false) + " Pies? Okay, let me count the Jack o' Pumpkins you've brought.";
 				next;
 				if(countitem(1062) < 20) {
 					mes "[Pumpkin Hat Researcher]";
-					mes "I need ^4a4aff20 " + mesitemlink(1062) + "^000000.";
+					mes "I need ^4a4aff20 " + mesitemlink(1062, false) + "^000000.";
 					mes "I'm not an alchemist or a wizard to create something from nothing.";
 					next;
 					mes "[Pumpkin Hat Researcher]";
@@ -77,7 +77,7 @@ prontera,152,192,5	script	Pumpkin Hat Researcher	712,{
 					break;
 				}else{
 					mes "[Pumpkin Hat Researcher]";
-					mes "I hope this will be useful to you. Don't forget to wear it while fighting to get your " + mesitemlink(535) + " Pies.";
+					mes "I hope this will be useful to you. Don't forget to wear it while fighting to get your " + mesitemlink(535, false) + " Pies.";
 					delitem 1062,20;	// Jack o' Pumpkin
 					getitem 5668,1;		// Weird Pumpkin Hat
 					next;
@@ -131,7 +131,7 @@ OnTouch:
 				close;
 			}else{
 				mes "[Trick or Treater]";
-				mes "At least a " + mesitemlink(529) + ", a " + mesitemlink(530) + " or a " + mesitemlink(538) + " is all I ask for a treat.";
+				mes "At least a " + mesitemlink(529, false) + ", a " + mesitemlink(530, false) + " or a " + mesitemlink(538, false) + " is all I ask for a treat.";
 				mes "Fine. I have no choice but to trick you!";
 				sc_start SC_Stun,5000,0;
 				close;
@@ -152,7 +152,7 @@ OnTouch:
 				close;
 			}else{
 				mes "[Trick or Treater]";
-				mes "At least a " + mesitemlink(529) + ", a " + mesitemlink(530) + " or a " + mesitemlink(538) + " is all I ask for a treat.";
+				mes "At least a " + mesitemlink(529, false) + ", a " + mesitemlink(530, false) + " or a " + mesitemlink(538, false) + " is all I ask for a treat.";
 				mes "Fine. I have no choice but to trick you!";
 				sc_start SC_Stun,5000,0;
 				close;
@@ -173,14 +173,14 @@ OnTouch:
 				close;
 			}else{
 				mes "[Trick or Treater]";
-				mes "At least a " + mesitemlink(529) + ", a " + mesitemlink(530) + " or a " + mesitemlink(538) + " is all I ask for a treat.";
+				mes "At least a " + mesitemlink(529, false) + ", a " + mesitemlink(530, false) + " or a " + mesitemlink(538, false) + " is all I ask for a treat.";
 				mes "Fine. I have no choice but to trick you!";
 				sc_start SC_Stun,5000,0;
 				close;
 			}
 		case 4:
 			mes "[Trick or Treater]";
-			mes "At least a " + mesitemlink(529) + ", a " + mesitemlink(530) + " or a " + mesitemlink(538) + " is all I ask for a treat.";
+			mes "At least a " + mesitemlink(529, false) + ", a " + mesitemlink(530, false) + " or a " + mesitemlink(538, false) + " is all I ask for a treat.";
 			mes "Fine. I have no choice but to trick you!";
 			sc_start SC_Stun,5000,0;
 			close;
@@ -237,7 +237,7 @@ prontera,220,72,5	duplicate(09Treats)	Trick or Treater#iRO8	706,2,2
 				mes "Sounds interesting huh?";
 				next;
 				mes "[Halloween Wizard]";
-				mes "If you bring me " + mesitemlink(1059) + ", Jack o' Pumpkins, Worn " + mesitemlink(1059) + ", or Crushed Pumpkins I can summon the monsters.";
+				mes "If you bring me " + mesitemlink(1059, false) + ", Jack o' Pumpkins, Worn " + mesitemlink(1059, false) + ", or Crushed Pumpkins I can summon the monsters.";
 				next;
 				break;
 			case 2:

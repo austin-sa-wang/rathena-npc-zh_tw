@@ -175,7 +175,7 @@ nif_in,190,112,5	script	Deviruchi#divorce	738,{
 			mes "your wife's nagging, and";
 			mes "how great it would be to";
 			mes "finally free yourself of the";
-			mes "old ball and " + mesitemlink(1519) + "~";
+			mes "old ball and " + mesitemlink(1519, false) + "~";
 		}
 		else {
 			mes "how horrible your husband is,";

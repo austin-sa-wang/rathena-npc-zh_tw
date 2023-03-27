@@ -218,7 +218,7 @@ gonryun,268,88,3	script	Liang Zhun Bu#gon	776,{
 gonryun,118,111,5	script	Qian Yuen Shuang#gon	89,{
 	mes "[Qian Yuen Shuang]";
 	mes "The chief of this town is a man";
-	mes "who opens his " + mesitemlink(7855) + " to others.";
+	mes "who opens his " + mesitemlink(7855, false) + " to others.";
 	mes "However, I have heard that there";
 	mes "are some people who don't like his personality...";
 	next;
@@ -316,7 +316,7 @@ gon_in,73,82,5	script	Ji Chung Zhe#gon	778,{
 gon_in,173,27,3	script	Yu Jiu Xia#gon	774,{
 	mes "[Yu Jiu Xia]";
 	mes "Geez, just as I thought.";
-	mes "They won't sell " + mesitemlink(970) + " to me.";
+	mes "They won't sell " + mesitemlink(970, false) + " to me.";
 	mes "Maybe its cuz I'm too young...";
 	mes "Hmmm...I wonder how it tastes...";
 	next;

@@ -33,7 +33,7 @@ manuk,304,195,5	script	Soldier#ep13pa829	454,{
 manuk,274,239,5	script	Soldier#ep13_2	455,{
 	if (isequipped(2782) == 1) {
 		mes "[Injured Manuk Soldier]";
-		mes "I can't absorb " + mesitemlink(6224) + " Essence anymore because of my fatal injury.";
+		mes "I can't absorb " + mesitemlink(6224, false) + " Essence anymore because of my fatal injury.";
 		mes "Those wicked fairies attacked me and left me like this.";
 		close;
 		mes "[Injured Manuk Soldier]";
@@ -160,7 +160,7 @@ manuk,218,163,3	script	Galtun#ep13_2_1	450,{
 manuk,266,199,5	script	Galtun#ep13_2_2	450,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Galtun]";
-		mes "I can relax now that we have those piles of " + mesitemlink(6224) + ".";
+		mes "I can relax now that we have those piles of " + mesitemlink(6224, false) + ".";
 		mes "But I am also worried that we can spend them in a short time.";
 		close;
 	}
@@ -185,7 +185,7 @@ manuk,225,129,5	script	Benknee#ep13_2_2	449,{
 	}
 	else {
 		mes "[Benknee]";
-		mes "" + mesitemlink(553) + " j pj a sd";
+		mes "" + mesitemlink(553, false) + " j pj a sd";
 		mes "Gi oh as d";
 		mes "Ya sd Yrt sd ad";
 		mes "Bq we ojj jd";
@@ -363,7 +363,7 @@ man_in01,336,128,5	script	Worker#ep13bsg5	454,{
 man_in01,283,288,3	script	Worker#ep13bsg6	454,{
 	if (isequipped(2782) == 1) {
 		mes "[Worker]";
-		mes "It is fortunate to have lots of fine quality " + mesitemlink(6224) + " today.";
+		mes "It is fortunate to have lots of fine quality " + mesitemlink(6224, false) + " today.";
 		next;
 		mes "[Worker]";
 		mes "This is all that is left for us.";
@@ -456,7 +456,7 @@ manuk,293,203,3	script	Manuk Piom#tre4	454,{
 	if ((isequipped(2782) == 1) && (ep13_2_rhea == 100)) {
 		mes "[Manuk Piom]";
 		mes "Hey, Be careful!";
-		mes "This mineral is " + mesitemlink(6224) + " which is the life of our tribe.";
+		mes "This mineral is " + mesitemlink(6224, false) + " which is the life of our tribe.";
 		mes "If you don't handle the stone carefully, you'll be in trouble!";
 		close;
 	}
@@ -522,7 +522,7 @@ man_in01,68,187,0	script	Worker#ep13bs1	454,{
 		mes "It should be time to turn it around now.";
 		next;
 		mes "[Worker]";
-		mes "Hardrock Mammoth " + mesitemlink(11706) + " should be eaten slightly raw!";
+		mes "Hardrock Mammoth " + mesitemlink(11706, false) + " should be eaten slightly raw!";
 		close;
 	}
 	else {

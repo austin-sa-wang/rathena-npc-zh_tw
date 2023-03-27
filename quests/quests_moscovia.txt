@@ -165,7 +165,7 @@ moscovia,171,71,3	script	Berbayeff#npc	4_M_RUSMAN2,{
 		mes "Surely, this must be";
 		mes "a great discovery!";
 		mes "Don't you think??";
-		mes "Doesn't your " + mesitemlink(7855) + " shout out in";
+		mes "Doesn't your " + mesitemlink(7855, false) + " shout out in";
 		mes "hopes of adventuring out to the island?";
 		next;
 		mes "[Berbayeff]";
@@ -307,7 +307,7 @@ moscovia,135,49,5	script	Mr. Ibanoff#npc	4_M_RUSBALD,{
 			next;
 			mes "[Mr. Ibanoff]";
 			mes "Now, I'm so tired;";
-			mes "my body and my " + mesitemlink(7855) + ".";
+			mes "my body and my " + mesitemlink(7855, false) + ".";
 			mes "I get reminded of fond";
 			mes "memories just by looking at the sea...";
 			next;
@@ -446,7 +446,7 @@ moscovia,135,49,5	script	Mr. Ibanoff#npc	4_M_RUSBALD,{
 			next;
 			mes "[Mr. Ibanoff]";
 			mes "The materials needed are:";
-			mes "^0000FFStrange " + mesitemlink(999) + " Piece 10, " + mesitemlink(7317) + " 10, " + mesitemlink(7325) + " 5, " + mesitemlink(7312) + " 10^000000.";
+			mes "^0000FF" + mesitemlink(7167, false) + " 10, " + mesitemlink(7317, false) + " 10, " + mesitemlink(7325, false) + " 5, " + mesitemlink(7312, false) + " 10^000000.";
 			next;
 			mes "[Mr. Ibanoff]";
 			mes "When you've prepared all the";
@@ -521,7 +521,7 @@ moscovia,135,49,5	script	Mr. Ibanoff#npc	4_M_RUSBALD,{
 		next;
 		mes "[Mr. Ibanoff]";
 		mes "The materials needed are:";
-		mes "^0000FFStrange " + mesitemlink(999) + " Piece 10, " + mesitemlink(7317) + " 10, " + mesitemlink(7325) + " 5, " + mesitemlink(7312) + " 10^000000.";
+		mes "^0000FF" + mesitemlink(7167, false) + " 10, " + mesitemlink(7317, false) + " 10, " + mesitemlink(7325, false) + " 5, " + mesitemlink(7312, false) + " 10^000000.";
 		close;
 	} else if (mos_whale_edq == 4) {
 		mes "[Mr. Ibanoff]";
@@ -1410,7 +1410,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 		mes "make a new one.";
 		next;
 		mes "[Aged Stranger]";
-		mes "The materials are ^0000FFLog 30, " + mesitemlink(7197) + " 20, " + mesitemlink(7106) + " 20, " + mesitemlink(7065) + " 10^000000.";
+		mes "The materials are ^0000FF" + mesitemlink(7201, false) + " 30, " + mesitemlink(7197, false) + " 20, " + mesitemlink(7106, false) + " 20, " + mesitemlink(7065, false) + " 10^000000.";
 		next;
 		mes "[Aged Stranger]";
 		mes "I won't move the island, so you can";
@@ -1435,7 +1435,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 			next;
 			mes "[Aged Stranger]";
 			mes "You should bring these materials:";
-			mes "^0000FFLog 30, " + mesitemlink(7197) + " 20, " + mesitemlink(7106) + " 20, " + mesitemlink(7065) + " 10^000000.";
+			mes "^0000FF" + mesitemlink(7201, false) + " 30, " + mesitemlink(7197, false) + " 20, " + mesitemlink(7106, false) + " 20, " + mesitemlink(7065, false) + " 10^000000.";
 			close;
 		}
 		mes "[Aged Stranger]";
@@ -1471,7 +1471,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 		}
 		mes "[Aged Stranger]";
 		mes "Ugh... We need more materials...";
-		mes "We need ^0000FFLog 30, " + mesitemlink(7197) + " 20, " + mesitemlink(7106) + " 20, " + mesitemlink(7065) + " 10^000000.";
+		mes "We need ^0000FF" + mesitemlink(7201, false) + " 30, " + mesitemlink(7197, false) + " 20, " + mesitemlink(7106, false) + " 20, " + mesitemlink(7065, false) + " 10^000000.";
 		next;
 		mes "[Aged Stranger]";
 		mes "What will you do? Will you go back";
@@ -1484,7 +1484,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 			next;
 			mes "[Aged Stranger]";
 			mes "You should bring these materials:";
-			mes "^0000FFLog 30, " + mesitemlink(7197) + " 20, " + mesitemlink(7106) + " 20, " + mesitemlink(7065) + " 10^000000.";
+			mes "^0000FF" + mesitemlink(7201, false) + " 30, " + mesitemlink(7197, false) + " 20, " + mesitemlink(7106, false) + " 20, " + mesitemlink(7065, false) + " 10^000000.";
 			close;
 		}
 		mes "[Aged Stranger]";
@@ -1504,7 +1504,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 			mes "[Aged Stranger]";
 			mes "I have succeeded in making the";
 			mes "instrument! Here you are. It's yours.";
-			mes "This instrument is called a " + mesitemlink(2707) + ".";
+			mes "This instrument is called a " + mesitemlink(2707, false) + ".";
 			mes "This is a traditional instrument";
 			mes "which comes from a faraway land of";
 			mes "the ancestors of Moscovia.";
@@ -1532,8 +1532,8 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 		callsub S_AS_2,1;
 	} else if (mos_whale_edq == 36) {
 		mes "[Aged Stranger]";
-		mes "Are you ready to learn the " + mesitemlink(2707) + "?";
-		mes "Please equip the " + mesitemlink(2707) + ".";
+		mes "Are you ready to learn the " + mesitemlink(2707, false) + "?";
+		mes "Please equip the " + mesitemlink(2707, false) + ".";
 		next;
 		if (isequipped(2707)) {
 			mes "[Aged Stranger]";
@@ -1578,11 +1578,11 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 		next;
 		mes "[Aged Stranger]";
 		mes "Tell me again when you are prepared";
-		mes "to play the " + mesitemlink(2707) + " correctly.";
+		mes "to play the " + mesitemlink(2707, false) + " correctly.";
 		close;
 	} else if (mos_whale_edq == 37) {
 		mes "[Aged Stranger]";
-		mes "Are you ready to learn the " + mesitemlink(2707) + "?";
+		mes "Are you ready to learn the " + mesitemlink(2707, false) + "?";
 		next;
 		if (isequipped(2707)) {
 			mes "[Aged Stranger]";
@@ -1616,7 +1616,7 @@ mosk_fild01,86,104,3	script	Aged Stranger#npc	4_M_GUSLIMAN,{
 		next;
 		mes "[Aged Stranger]";
 		mes "Tell me again when you are prepared";
-		mes "to play the " + mesitemlink(2707) + " correctly.";
+		mes "to play the " + mesitemlink(2707, false) + " correctly.";
 		close;
 	} else if (mos_whale_edq == 38)
 		callsub S_AS_2,0;
@@ -1706,7 +1706,7 @@ S_AS_1:
 		specialeffect2 EF_EXIT;
 		mes "[Aged Stranger]";
 		mes "Oh! You are good at playing the";
-		mes "" + mesitemlink(2707) + "! In such a short time... you";
+		mes "" + mesitemlink(2707, false) + "! In such a short time... you";
 		mes "are great!";
 		next;
 		mes "[Aged Stranger]";
@@ -1716,7 +1716,7 @@ S_AS_1:
 		next;
 		mes "[Aged Stranger]";
 		mes "Now go back to the mainland and";
-		mes "play the " + mesitemlink(2707) + " for our dear Csar.";
+		mes "play the " + mesitemlink(2707, false) + " for our dear Csar.";
 		next;
 		mes "[Aged Stranger]";
 		mes "With your ability to play, surely";
@@ -1752,7 +1752,7 @@ S_AS_2:
 			mes "You are my friend now,";
 			mes "and you have this instrument.";
 			mes "Whenever you want to come back";
-			mes "here again, just play the " + mesitemlink(2707) + "";
+			mes "here again, just play the " + mesitemlink(2707, false) + "";
 			mes "at the docks of Moscovia.";
 			next;
 			mes "[Aged Stranger]";
@@ -1763,7 +1763,7 @@ S_AS_2:
 			next;
 			mes "[Aged Stranger]";
 			mes "This island... this whale... can";
-			mes "perceive the sound of a " + mesitemlink(2707) + " from";
+			mes "perceive the sound of a " + mesitemlink(2707, false) + " from";
 			mes "an endless distance away.";
 			next;
 			mes "[Aged Stranger]";
@@ -1792,7 +1792,7 @@ S_AS_2:
 			next;
 			mes "[Aged Stranger]";
 			mes "Okay. If you are ready to play the";
-			mes "" + mesitemlink(2707) + ", let me know.";
+			mes "" + mesitemlink(2707, false) + ", let me know.";
 			mos_whale_edq = 36;
 			close;	
 		case 3:
@@ -1801,7 +1801,7 @@ S_AS_2:
 			next;
 			mes "[Aged Stranger]";
 			mes "Whenever you want to come back here";
-			mes "again, play the " + mesitemlink(2707) + " at the docks";
+			mes "again, play the " + mesitemlink(2707, false) + " at the docks";
 			mes "of Moscovia.";
 			next;
 			mes "[Aged Stranger]";
@@ -1812,7 +1812,7 @@ S_AS_2:
 			next;
 			mes "[Aged Stranger]";
 			mes "This island... this whale... can";
-			mes "perceive the sound of a " + mesitemlink(2707) + " from";
+			mes "perceive the sound of a " + mesitemlink(2707, false) + " from";
 			mes "an endless distance away.";
 			next;
 			mes "[Aged Stranger]";
@@ -2169,7 +2169,7 @@ mosk_in,131,92,3	script	Csar Alexsay III#npc	4_M_RUSKING,7,7,{
 			next;
 			mes "[Prime Minister Dmitree]";
 			mes "Actually, Csar, I believe it is";
-			mes "called a " + mesitemlink(2707) + ".";
+			mes "called a " + mesitemlink(2707, false) + ".";
 			next;
 			mes "[Csar Alexsay III]";
 			mes "Oh. Prime Minister, is this the";
@@ -2284,7 +2284,7 @@ mosk_in,131,92,3	script	Csar Alexsay III#npc	4_M_RUSKING,7,7,{
 			mes "Oh... Is this instrument... a Gooselri?";
 			next;
 			mes "[Prime Minister Dmitree]";
-			mes "Actually, Csar, I believe it is called a " + mesitemlink(2707) + ".";
+			mes "Actually, Csar, I believe it is called a " + mesitemlink(2707, false) + ".";
 			next;
 			mes "[Csar Alexsay III]";
 			mes "Oh. Prime Minister, is this the";
@@ -2310,7 +2310,7 @@ mosk_in,131,92,3	script	Csar Alexsay III#npc	4_M_RUSKING,7,7,{
 			mes "Play it right away. I wonder about its sound.";
 			next;
 			soundeffect "mos_gusli1.wav",0;
-			mes "-When the music of the " + mesitemlink(2707) + " is";
+			mes "-When the music of the " + mesitemlink(2707, false) + " is";
 			mes "played, all the people in the";
 			mes "Csar's Palace fall in with the tune.-";
 			next;
@@ -2581,7 +2581,7 @@ mosk_in,127,89,3	script	Prime Minister Dmitree#m	4_M_RUSMAN1,{
 		close;
 	} else if (mos_whale_edq == 41) {
 		mes "[Prime Minister Dmitree]";
-		mes "Your " + mesitemlink(2707) + " performance was so touching.";
+		mes "Your " + mesitemlink(2707, false) + " performance was so touching.";
 		mes "Unforgettable! Whenever you are here, please allow us to hear that tune again.";
 		close;
 	}
@@ -2611,7 +2611,7 @@ OnTouch:
 		if (isequipped(2707)) {
 			soundeffect "mos_gusli2.wav",0;
 			mes "-Slowly, your hands are on the";
-			mes "" + mesitemlink(2707) + ", and the playing starts...";
+			mes "" + mesitemlink(2707, false) + ", and the playing starts...";
 			mes "reminding you of the melody which";
 			mes "the aged stranger had played...-";
 			next;
@@ -2629,12 +2629,12 @@ OnTouch:
 		} else {
 			mes "["+strcharinfo(0)+"]";
 			mes "Oh my goodness... Slipped right out";
-			mes "of my mind... to forget equipping the " + mesitemlink(2707) + ".";
+			mes "of my mind... to forget equipping the " + mesitemlink(2707, false) + ".";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "The aged stranger said that when I";
 			mes "want to go to Whale Island again, I";
-			mes "should play the " + mesitemlink(2707) + " from this place...";
+			mes "should play the " + mesitemlink(2707, false) + " from this place...";
 		}
 		close;
 	}
@@ -2982,15 +2982,15 @@ mosk_in,148,274,1	script	Anna#mos	4_F_RUSCHILD,{
 					emotion ET_HNG;
 					mes "[Anna]";
 					mes "(giggle) He's a fool and has no friends.";
-					mes "But among our villagers, the lady of ^3131FFInn '" + mesitemlink(7763) + " Tree'^000000 has held Mikhail dear.";
+					mes "But among our villagers, the lady of ^3131FFInn '" + mesitemlink(7763, false) + " Tree'^000000 has held Mikhail dear.";
 					next;
 					mes "[Anna]";
 					mes "I have no idea anymore.";
 					next;
-					mes "- Anna sticks her " + mesitemlink(1015) + " out. -";
+					mes "- Anna sticks her " + mesitemlink(1015, false) + " out. -";
 					next;
 					mes "["+strcharinfo(0)+"]";
-					mes "It's the only clue, I guess I'll go to ^3131FFInn '" + mesitemlink(7763) + " Tree'^000000?";
+					mes "It's the only clue, I guess I'll go to ^3131FFInn '" + mesitemlink(7763, false) + " Tree'^000000?";
 					if (mos_swan == 2) {
 						mos_swan = 3;
 						changequest 18060,18061;
@@ -3025,7 +3025,7 @@ mosk_in,148,274,1	script	Anna#mos	4_F_RUSCHILD,{
 					mes "[Anna]";
 					mes "Hmm ~ ~ ~ ~ ";
 					next;
-					mes "- Anna frowns at me and sticks out her " + mesitemlink(1015) + ".";
+					mes "- Anna frowns at me and sticks out her " + mesitemlink(1015, false) + ".";
 					mes "She doesn't want to talk to me -";
 					close;
 			}
@@ -3033,7 +3033,7 @@ mosk_in,148,274,1	script	Anna#mos	4_F_RUSCHILD,{
 		}
 	} else if (mos_swan == 3) {
 		mes "["+strcharinfo(0)+"]";
-		mes "Ok, I got a clue from Anna and one thing that I have to do is go to ^3131FFInn '" + mesitemlink(7763) + " Tree'^000000.";
+		mes "Ok, I got a clue from Anna and one thing that I have to do is go to ^3131FFInn '" + mesitemlink(7763, false) + " Tree'^000000.";
 		close;
 	} else if (mos_swan < 12) {
 		mes "[Anna]";
@@ -3102,27 +3102,27 @@ mosk_in,161,279,3	duplicate(Bed#mos1)	Bed#mos2	HIDDEN_NPC
 //----------------------------------------------------------------------------
 mosk_in,205,268,3	script	Fire pot#mos	HIDDEN_NPC,{
 	if (!mos_swan) {
-		mes "- It's a fire " + mesitemlink(7482) + " to heat the room or bake something -";
+		mes "- It's a fire " + mesitemlink(7482, false) + " to heat the room or bake something -";
 		close;
 	} else if (mos_swan == 1) {
-		mes "- It's a fire " + mesitemlink(7482) + " that is used when Gallina bakes hotcakes.";
+		mes "- It's a fire " + mesitemlink(7482, false) + " that is used when Gallina bakes hotcakes.";
 		mes "It seems that this has not been used for a long time.";
 		mes "I think I should ask his family where he might have fun off to -";
 		mos_swan = 2;
 		close;
 	} else if (mos_swan < 11) {
-		mes "- It's a fire " + mesitemlink(7482) + " that is used when Gallina bakes hotcakes.";
+		mes "- It's a fire " + mesitemlink(7482, false) + " that is used when Gallina bakes hotcakes.";
 		mes "It seems that it was used a long time ago. -";
 		close;
 	} else if (mos_swan == 11) {
-		mes "- It's a fire " + mesitemlink(7482) + " that is used when Gallina bakes hotcakes.";
+		mes "- It's a fire " + mesitemlink(7482, false) + " that is used when Gallina bakes hotcakes.";
 		mes "It seems that it was used a long time ago. -";
 		next;
 		if(select("Check other things:Look it over") == 1) {
 			mes "- You decide to check out other things -";
 			close;
 		}
-		mes "- You come near the " + mesitemlink(7482) + " to look it over. -";
+		mes "- You come near the " + mesitemlink(7482, false) + " to look it over. -";
 		next;
 		mes " .............. ";
 		mes " .............. ";
@@ -3135,14 +3135,14 @@ mosk_in,205,268,3	script	Fire pot#mos	HIDDEN_NPC,{
 		mes " .............. ";
 		mes " .............. ";
 		next;
-		mes "- As you look it over very carefully, you find some pieces of " + mesitemlink(580) + " on the floor around the fire " + mesitemlink(7482) + "! -";
+		mes "- As you look it over very carefully, you find some pieces of " + mesitemlink(580, false) + " on the floor around the fire " + mesitemlink(7482, false) + "! -";
 		next;
 		switch(select("Mikhail is in the fire pot.:Mikhail is around the fire pot.:There's nothing between pieces of bread and Mikhail.")) {
 			case 1:
 				mes "["+strcharinfo(0)+"]";
 				mes "I finally found him.";
 				next;
-				mes "- You put your arm into the hole of the fire " + mesitemlink(7482) + ". -";
+				mes "- You put your arm into the hole of the fire " + mesitemlink(7482, false) + ". -";
 				next;
 				mes "- Something makes a rustling sound. -";
 				next;
@@ -3204,7 +3204,7 @@ mosk_in,205,268,3	script	Fire pot#mos	HIDDEN_NPC,{
 				mes "[Mikhail]";
 				mes "No! No, I can't!!";
 				next;
-				mes "- A small-white hand comes out of the fire " + mesitemlink(7482) + " and grabs your ankle -";
+				mes "- A small-white hand comes out of the fire " + mesitemlink(7482, false) + " and grabs your ankle -";
 				next;
 				mes "[Mikhail]";
 				mes "No...I'm afraid that Mom will punish me...";
@@ -3227,10 +3227,10 @@ mosk_in,205,268,3	script	Fire pot#mos	HIDDEN_NPC,{
 				changequest 18064,18065;
 				close;
 			case 2:
-				mes "- I guess he's near the fire " + mesitemlink(7482) + ". Where can I find him? -";
+				mes "- I guess he's near the fire " + mesitemlink(7482, false) + ". Where can I find him? -";
 				close;
 			case 3:
-				mes "- I guess pieces of " + mesitemlink(580) + " have nothing to do with Mikhail. -";
+				mes "- I guess pieces of " + mesitemlink(580, false) + " have nothing to do with Mikhail. -";
 				close;
 		}
 	} else if (mos_swan == 12) {
@@ -3282,7 +3282,7 @@ mosk_in,205,268,3	script	Fire pot#mos	HIDDEN_NPC,{
 		changequest 18068,18069;
 		close;
 	}
-	mes "- It's a fire " + mesitemlink(7482) + " to heat the room or bake something -";
+	mes "- It's a fire " + mesitemlink(7482, false) + " to heat the room or bake something -";
 	close;
 }
 
@@ -3299,7 +3299,7 @@ OnEnable:
 //----------------------------------------------------------------------------
 mosk_in,135,191,5	script	Landlord#mos	4_F_RUSWOMAN3,{
 	mes "[Landlord]";
-	mes "Oh, welcome to the Inn '" + mesitemlink(7763) + " Tree'.";
+	mes "Oh, welcome to the Inn '" + mesitemlink(7763, false) + " Tree'.";
 	mes "It is the most comfortable and calmest place in all of Moscovia.";
 	next;
 	if (mos_swan == 4 || mos_swan == 5) {
@@ -3312,8 +3312,8 @@ mosk_in,135,191,5	script	Landlord#mos	4_F_RUSWOMAN3,{
 			switch(select("Ask her about the inn:Ask her about Mikhail.:End the conversation")) {
 			case 1:
 				mes "[Landlord]";
-				mes "The name of our inn came from a big " + mesitemlink(512) + " tree which is outside of the village.";
-				mes "I hope our inn will be the most famous place in Moscovia like the " + mesitemlink(512) + " tree that distinguishes itself in the thick " + mesitemlink(6008) + ".";
+				mes "The name of our inn came from a big " + mesitemlink(512, false) + " tree which is outside of the village.";
+				mes "I hope our inn will be the most famous place in Moscovia like the " + mesitemlink(512, false) + " tree that distinguishes itself in the thick " + mesitemlink(6008, false) + ".";
 				next;
 				break;
 			case 2:
@@ -3370,7 +3370,7 @@ mosk_in,135,191,5	script	Landlord#mos	4_F_RUSWOMAN3,{
 				mes "When you need to take a rest, where will you go?";
 				next;
 				mes "[Landlord]";
-				mes "You should come back here to Inn '" + mesitemlink(7763) + " Tree'. Ok?";
+				mes "You should come back here to Inn '" + mesitemlink(7763, false) + " Tree'. Ok?";
 				mes "I'll offer you better service next time.";
 				close;
 			}
@@ -3699,7 +3699,7 @@ mosk_in,147,202,3	script	Victor#mos	4_M_RUSMAN2,{
 		next;
 		mes "[Victor]";
 		mes "I said to him, 'you can never, ever go there' and told him to go back home.";
-		mes "He asked for the impossible so I calmed him down with some " + mesitemlink(580) + ".";
+		mes "He asked for the impossible so I calmed him down with some " + mesitemlink(580, false) + ".";
 		next;
 		mes "[Victor]";
 		mes "He was already white with fear that he broke his mother's matrushka. Do you think that he would go there?";
@@ -3743,7 +3743,7 @@ mosk_in,147,202,3	script	Victor#mos	4_M_RUSMAN2,{
 		mes "If you go deep into its forest, you can find a swamp where sticky weeds are growing.";
 		next;
 		mes "[Victor]";
-		mes "You should bring ^3131FF'10 sticky herbs'^000000 and ^3131FF 1 " + mesitemlink(7134) + "^000000 to me.";
+		mes "You should bring ^3131FF'10 sticky herbs'^000000 and ^3131FF 1 " + mesitemlink(7134, false) + "^000000 to me.";
 		mos_swan = 13;
 		changequest 18065,18066;
 		close;
@@ -3751,7 +3751,7 @@ mosk_in,147,202,3	script	Victor#mos	4_M_RUSMAN2,{
 		mes "[Victor]";
 		mes "If you want to make adhesives";
 		mes "get 10 sticky herbs and";
-		mes "1 " + mesitemlink(7134) + " for me.";
+		mes "1 " + mesitemlink(7134, false) + " for me.";
 		mes "Those sticky herbs are growing in the swamp. It may be dangerous but that shouldn't be a problem for you?";
 		close;
 	} else if (mos_swan == 23) {
@@ -3783,7 +3783,7 @@ mosk_in,147,202,3	script	Victor#mos	4_M_RUSMAN2,{
 		}
 		mes "[Victor]";
 		mes "He's annoying me so much. Give me the materials!";
-		mes "Oh dear? What are those things? I said 10 sticky herbs and 1 " + mesitemlink(7134) + "!!";
+		mes "Oh dear? What are those things? I said 10 sticky herbs and 1 " + mesitemlink(7134, false) + "!!";
 		next;
 		mes "[Victor]";
 		mes "Even though I'm always in the pub, I have my own business... !";
@@ -3861,14 +3861,14 @@ mosk_dun03,153,90,3	script	Bubbling Swamp#mos1	CLEAR_NPC,{
 		mes "- You stretch out to find sticky herbs. -";
 		next;
 		if (rand(1,10) < 6) {
-			mes "- You have pricked your " + mesitemlink(1811) + " on a " + mesitemlink(7763) + ". -";
+			mes "- You have pricked your " + mesitemlink(1811, false) + " on a " + mesitemlink(7763, false) + ". -";
 			getitem 7763,1;
 			mos_swan++;
 			if (mos_swan == 23)
 				changequest 18066,18067;
 			close;
 		}
-		mes "- You have pricked your " + mesitemlink(1811) + " on a " + mesitemlink(511) + ". -";
+		mes "- You have pricked your " + mesitemlink(1811, false) + " on a " + mesitemlink(511, false) + ". -";
 		getitem 511,1;
 		close;
 	}
@@ -3915,7 +3915,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 			if (countitem(7031) && countitem(519) > 1 && countitem(504) > 1 && countitem(548) && countitem(1019) && countitem(518)) {
 				mes "[Larissa]";
 				mes "Let me check if you have all the ingredients.";
-				mes "A frying pan, " + mesitemlink(519) + "... potion that softens the dough, " + mesitemlink(548) + "..honey..and firewood.";
+				mes "A frying pan, " + mesitemlink(519, false) + "... potion that softens the dough, " + mesitemlink(548, false) + ".." + mesitemlink(518, false) + "..and firewood.";
 				mes "Perfect!";
 				next;
 				mes "[Larissa]";
@@ -3924,7 +3924,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 				mes "It can be mixed well with this sieve.";
 				next;
 				mes "[Larissa]";
-				mes "What should I do with the wheat " + mesitemlink(7604) + "?";
+				mes "What should I do with the wheat " + mesitemlink(7604, false) + "?";
 				next;
 				switch(select("Turn it down.:Pass it through a sieve.:Press it with your fist.")) {
 					case 1:
@@ -3945,7 +3945,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 				next;
 				mes "[Larissa]";
 				mes "That way, it will mix well.";
-				mes "And then I'm adding an " + mesitemlink(574) + ", some " + mesitemlink(519) + " and a " + mesitemlink(504) + ".";
+				mes "And then I'm adding an " + mesitemlink(574, false) + ", some " + mesitemlink(519, false) + " and a " + mesitemlink(504, false) + ".";
 				mes "What next?";
 				next;
 				if(select("Stir it up with great speed.:Do the same as she said.") == 1) {
@@ -3977,7 +3977,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 				next;
 				mes "[Larissa]";
 				mes "Ok, turn it over. Oh it looks delicious";
-				mes "What should I top it with? First I put some " + mesitemlink(548) + " but the rest is up to you...";
+				mes "What should I top it with? First I put some " + mesitemlink(548, false) + " but the rest is up to you...";
 				next;
 				switch(select("Caviar:Mushrooms:Honey:Strawberry jam:Sour cream")) {
 					case 1:
@@ -3995,13 +3995,13 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 						break;
 					case 3:
 						mes "[Larissa]";
-						mes "Ok, honey syrup goes perfectly with pancakes.";
+						mes "Ok, " + mesitemlink(518, false) + " syrup goes perfectly with pancakes.";
 						mes "Here we go. It's all done!";
 						setarray .@n, 593,1;
 						break;
 					case 4:
 						mes "[Larissa]";
-						mes "Who could get sick of pancakes with " + mesitemlink(578) + " jam?";
+						mes "Who could get sick of pancakes with " + mesitemlink(578, false) + " jam?";
 						mes "Hoohoo it tastes sweet too.";
 						mes "Here we go. It's all done!";
 						setarray .@n, 592,1;
@@ -4025,7 +4025,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 			mes "It's still not enough. You need to get all of the things that we don't have now.";
 			next;
 			mes "[Larissa]";
-			mes "I need ^4d4dff1 " + mesitemlink(7031) + " , 2 bottles of " + mesitemlink(519) + " , 2 " + mesitemlink(504) + ", 1 " + mesitemlink(548) + ", 1 " + mesitemlink(1019) + ", 1 Honey ^000000.";
+			mes "I need ^4d4dff1 " + mesitemlink(7031, false) + " , 2 bottles of " + mesitemlink(519, false) + " , 2 " + mesitemlink(504, false) + ", 1 " + mesitemlink(548, false) + ", 1 " + mesitemlink(1019, false) + ", 1 " + mesitemlink(518, false) + " ^000000.";
 			mes "We can bake our pancake when we get all of those.";
 			close;
 		}
@@ -4049,7 +4049,7 @@ mosk_in,211,259,5	script	Larissa#mos_01	4_F_RUSWOMAN2,{
 moscovia,208,182,7	script	Acorn Dealer#mos	4_M_RUSMAN1,{
 	mes "[Acorn Dealer]";
 	mes "We have very fresh acorns. Everyone will like them!";
-	mes "You can buy one " + mesitemlink(1026) + " for 100zeny!";
+	mes "You can buy one " + mesitemlink(1026, false) + " for 100zeny!";
 	next;
 	if(select("Buy one.:What can I use them for?") == 2) {
 		mes "[Acorn Dealer]";
@@ -4127,13 +4127,13 @@ OnTouch:
 			case 1:
 				mes "- You take one of acorns out and hold it out to the squirrel. -";
 				next;
-				mes "- It cocked it's ears up and begins to nibble the " + mesitemlink(1026) + " quickly. -";
+				mes "- It cocked it's ears up and begins to nibble the " + mesitemlink(1026, false) + " quickly. -";
 				next;
 				mes "- It makes a crunching sound -";
 				mes "- It makes a crunching sound -";
 				mes "- It makes a crunching sound -";
 				next;
-				mes "- After eating the " + mesitemlink(1026) + " up, the squirrel dances around wildly. Suddenly it curls its body and throws something up with a spit-spit sound -";
+				mes "- After eating the " + mesitemlink(1026, false) + " up, the squirrel dances around wildly. Suddenly it curls its body and throws something up with a spit-spit sound -";
 				delitem 1026,20;
 				.@cyworld = rand(1,1000);
 				.@stworld = rand(1,150);
@@ -4209,7 +4209,7 @@ OnTouch:
 				close;
 		}
 	}
-	mes "- The squirrel looks at the " + mesitemlink(1026) + " which you held for a while but it turned its head with indifference. -";
+	mes "- The squirrel looks at the " + mesitemlink(1026, false) + " which you held for a while but it turned its head with indifference. -";
 	close;
 }
 mosk_fild01,113,108,5	script	#mos_sq	1104,{ end; }
@@ -4388,7 +4388,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "Ah, here it is... I found it!";
 		mes "Hoook~ Hoook~";
 		next;
-		mes "-What a dusty " + mesitemlink(11004) + "!-";
+		mes "-What a dusty " + mesitemlink(11004, false) + "!-";
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "Well, open your ears.";
@@ -4405,7 +4405,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "Sniff, sniff.";
-		mes "5 " + mesitemlink(908) + "...";
+		mes "5 " + mesitemlink(908, false) + "...";
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "eh... and...";
@@ -4414,7 +4414,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "[Baba Yaga, the Horrible]";
 		mes "Let me see...";
 		mes "a glue, no, to cast a spell";
-		mes "10 " + mesitemlink(938) + "...";
+		mes "10 " + mesitemlink(938, false) + "...";
 		next;
 		if(select("...Are you sure?:A glue? You want me to kill you?!") == 1) {
 			mes "[Baba Yaga, the Horrible]";
@@ -4433,7 +4433,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 			mes "Ehhh, terrible.";
 			mes "Hey, relax your hand and";
 			mes "keep writing.";
-			mes "Forget the " + mesitemlink(938) + "...";
+			mes "Forget the " + mesitemlink(938, false) + "...";
 		}
 		next;
 		mes "[Baba Yaga, the Horrible]";
@@ -4445,7 +4445,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "essential.";
 		next;
 		mes "[Baba Yaga, the Horrible]";
-		mes "10 " + mesitemlink(1061) + "";
+		mes "10 " + mesitemlink(1061, false) + "";
 		mes "10 Fine Grits...";
 		mes "Hooook, hooook~";
 		mes "Ekkkk, what a dusty book!";
@@ -4453,8 +4453,8 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "[Baba Yaga, the Horrible]";
 		mes "Next is for";
 		mes "something hot.";
-		mes "1 " + mesitemlink(1051) + "";
-		mes "5 " + mesitemlink(990) + ",";
+		mes "1 " + mesitemlink(1051, false) + "";
+		mes "5 " + mesitemlink(990, false) + ",";
 		mes "and 10 Burning Hearts.";
 		next;
 		mes "[Baba Yaga, the Horrible]";
@@ -4469,16 +4469,16 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 			next;
 			mes "[Baba Yaga, the Horrible]";
 			mes "^ff000020 Grasshopper's Legs,";
-			mes "5 " + mesitemlink(908) + ",";
-			mes "20 " + mesitemlink(7006) + ",";
-			mes "10 " + mesitemlink(938) + ",";
-			mes "10 " + mesitemlink(1061) + "^000000...";
+			mes "5 " + mesitemlink(908, false) + ",";
+			mes "20 " + mesitemlink(7006, false) + ",";
+			mes "10 " + mesitemlink(938, false) + ",";
+			mes "10 " + mesitemlink(1061, false) + "^000000...";
 			next;
 			mes "[Baba Yaga, the Horrible]";
-			mes "^ff000010 " + mesitemlink(7041) + ",";
-			mes "1 " + mesitemlink(1051) + ",";
-			mes "5 " + mesitemlink(990) + ",";
-			mes "10 " + mesitemlink(7097) + "^000000 and,";
+			mes "^ff000010 " + mesitemlink(7041, false) + ",";
+			mes "1 " + mesitemlink(1051, false) + ",";
+			mes "5 " + mesitemlink(990, false) + ",";
+			mes "10 " + mesitemlink(7097, false) + "^000000 and,";
 			mes "a 1, 2, or 3 carat";
 			mes "^ff00001 Diamond^000000.";
 			mos_nowinter = 6;
@@ -4489,15 +4489,15 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 			next;
 			mes "[Baba Yaga, the Horrible]";
 			mes "^ff000020 Grasshopper's Legs,";
-			mes "5 " + mesitemlink(908) + ",";
-			mes "20 " + mesitemlink(7006) + ",";
-			mes "10 " + mesitemlink(1061) + "^000000...";
+			mes "5 " + mesitemlink(908, false) + ",";
+			mes "20 " + mesitemlink(7006, false) + ",";
+			mes "10 " + mesitemlink(1061, false) + "^000000...";
 			next;
 			mes "[Baba Yaga, the Horrible]";
-			mes "^ff000010 " + mesitemlink(7041) + ",";
-			mes "1 " + mesitemlink(1051) + ",";
-			mes "5 " + mesitemlink(990) + ",";
-			mes "10 " + mesitemlink(7097) + "^000000 and,";
+			mes "^ff000010 " + mesitemlink(7041, false) + ",";
+			mes "1 " + mesitemlink(1051, false) + ",";
+			mes "5 " + mesitemlink(990, false) + ",";
+			mes "10 " + mesitemlink(7097, false) + "^000000 and,";
 			mes "a 1, 2, or 3 carat";
 			mes "^ff0000Diamond^000000.";
 			mos_nowinter = 7;
@@ -4593,16 +4593,16 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "^ff000020 Grasshopper's Legs,";
-		mes "5 " + mesitemlink(908) + ",";
+		mes "5 " + mesitemlink(908, false) + ",";
 		mes "20 Wings Of Red Bat";
 		if (mos_nowinter == 6)
-			mes "10 " + mesitemlink(938) + ",";
+			mes "10 " + mesitemlink(938, false) + ",";
 		mes "10 Witch Starsand^000000...";
 		next;
 		mes "[Baba Yaga, the Horrible]";
-		mes "^ff000010 " + mesitemlink(7041) + ",";
-		mes "1 " + mesitemlink(1051) + ",";
-		mes "5 " + mesitemlink(990) + "";
+		mes "^ff000010 " + mesitemlink(7041, false) + ",";
+		mes "1 " + mesitemlink(1051, false) + ",";
+		mes "5 " + mesitemlink(990, false) + "";
 		mes "10 Burning Hearts^000000 and";
 		mes "a 1, 2, or 3 carat";
 		mes "^ff0000Diamond^000000.";
@@ -4621,7 +4621,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "[Baba Yaga, the Horrible]";
 		mes "Unless you want to be killed,";
 		mes "you'd better forget";
-		mes "the " + mesitemlink(7761) + ", cough!";
+		mes "the " + mesitemlink(7761, false) + ", cough!";
 		close;
 	} else if (mos_nowinter == 9) {
 		if (countitem(7761)) {// Magic_Gourd_Bottle
@@ -4689,7 +4689,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		mes "[Baba Yaga, the Horrible]";
 		mes "Unless you want to be killed";
 		mes "you'd better forget";
-		mes "the " + mesitemlink(7761) + ", cough!";
+		mes "the " + mesitemlink(7761, false) + ", cough!";
 		close;
 	} else if (mos_nowinter == 10) {
 		mes "[Baba Yaga, the Horrible]";
@@ -4792,7 +4792,7 @@ mosk_in,215,46,5	script	Baba Yaga, the Horrible	4_F_BABAYAGA,7,7,{
 		next;
 		mes "[Baba Yaga, the Horrible]";
 		mes "Here, according to the book";
-		mes "put the materials in the " + mesitemlink(7482) + " and";
+		mes "put the materials in the " + mesitemlink(7482, false) + " and";
 		mes "boil them for some time.";
 		close;
 	} else if (mos_nowinter == 17) {
@@ -4945,7 +4945,7 @@ OnTouch:
 //----------------------------------------------------------------------------
 mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 	if (mos_nowinter == 15) {
-		mes "-Beside the " + mesitemlink(7482) + ",";
+		mes "-Beside the " + mesitemlink(7482, false) + ",";
 		mes "There is an unusually large book.";
 		mes "The letters are in disarray and";
 		mes "some of them, I can't understand.";
@@ -4989,7 +4989,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "are embodied and become reality.";
 		mes "Now, practice one of the spells for weather.";
 		mes "You have to go to a damp and deserted place,";
-		mes "and have a " + mesitemlink(7482) + " of melting materials";
+		mes "and have a " + mesitemlink(7482, false) + " of melting materials";
 		mes "along with the spirit of the caster.";
 		mes "The next spells should be conducted";
 		mes "through the exact process.";
@@ -5011,13 +5011,13 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		next;
 		mes "^0000ffSeasonal Magic^000000:^ff0000Eternal Summer^000000";
 		mes "First of all, you need to put and";
-		mes "mix the first 3 things in a pre-heated " + mesitemlink(7482) + ".";
+		mes "mix the first 3 things in a pre-heated " + mesitemlink(7482, false) + ".";
 		mes "The extended arms of those who stalk at night,";
-		mes "The rotten " + mesitemlink(974) + " of plants and animals,";
+		mes "The rotten " + mesitemlink(974, false) + " of plants and animals,";
 		mes "and the limbs of one going forward,";
 		mes "who wants to run backward.";
 		mes "This first stage should be complete.";
-		mes "Just after this stage, the " + mesitemlink(974) + "";
+		mes "Just after this stage, the " + mesitemlink(974, false) + "";
 		mes "will barely show any alteration.";
 		mes "After this, you must add the liquid";
 		mes "that aids all life and stir 20 times.";
@@ -5027,7 +5027,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "something is wrong, you must stop and start over.";
 		mes "Following these precise steps are";
 		mes "most important when working on magic.";
-		mes "Next, 2 things must be put in the " + mesitemlink(7482) + ".";
+		mes "Next, 2 things must be put in the " + mesitemlink(7482, false) + ".";
 		mes "First, objects that are seen when";
 		mes "looking at the night sky.";
 		mes "Second the pretty mass of earth,";
@@ -5042,7 +5042,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "brains of a marine sphere,";
 		mes "the organ of passion,";
 		mes "and a stone that cannot be cut.";
-		mes "Once the final ingredient is placed in the " + mesitemlink(7482) + ",";
+		mes "Once the final ingredient is placed in the " + mesitemlink(7482, false) + ",";
 		mes "It will be over.";
 		mes "The solution must be sprinkled at";
 		mes "the place where you want to affect,";
@@ -5086,7 +5086,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 			mes "are embodied and become reality.";
 			mes "Now, practice one of the spells for weather.";
 			mes "You have to go to a damp and deserted place,";
-			mes "and have a " + mesitemlink(7482) + " of melting materials";
+			mes "and have a " + mesitemlink(7482, false) + " of melting materials";
 			mes "along with the spirit of the caster.";
 			mes "The next spells should be conducted";
 			mes "through the exact process.";
@@ -5100,13 +5100,13 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 			next;
 			mes "^0000ffSeasonal Magic^000000:^ff0000Eternal Summer^000000";
 			mes "First of all, you need to put and";
-			mes "mix the first 3 things in a pre-heated " + mesitemlink(7482) + ".";
+			mes "mix the first 3 things in a pre-heated " + mesitemlink(7482, false) + ".";
 			mes "The extended arms of those who stalk at night,";
-			mes "The rotten " + mesitemlink(974) + " of plants and animals,";
+			mes "The rotten " + mesitemlink(974, false) + " of plants and animals,";
 			mes "and the limbs of one going forward,";
 			mes "who wants to run backward.";
 			mes "This first stage should be complete.";
-			mes "Just after this stage, the " + mesitemlink(974) + "";
+			mes "Just after this stage, the " + mesitemlink(974, false) + "";
 			mes "will barely show any alteration.";
 			mes "After this, you must add the liquid";
 			mes "that aids all life and stir 20 times.";
@@ -5116,7 +5116,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 			mes "something is wrong, you must stop and start over.";
 			mes "Following these precise steps are";
 			mes "most important when working on magic.";
-			mes "Next, 2 things must be put in the " + mesitemlink(7482) + ".";
+			mes "Next, 2 things must be put in the " + mesitemlink(7482, false) + ".";
 			mes "First, objects that are seen when";
 			mes "looking at the night sky.";
 			mes "Second the pretty mass of earth,";
@@ -5131,7 +5131,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 			mes "brains of a marine sphere,";
 			mes "the organ of passion,";
 			mes "and a stone that cannot be cut.";
-			mes "Once the final ingredient is placed in the " + mesitemlink(7482) + ",";
+			mes "Once the final ingredient is placed in the " + mesitemlink(7482, false) + ",";
 			mes "It will be over.";
 			mes "The solution must be sprinkled at";
 			mes "the place where you want to affect,";
@@ -5140,13 +5140,13 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		}
 		mes "^0000ffSeasonal Magic^000000:^ff0000Eternal Summer^000000";
 		mes "First of all, you need to put and";
-		mes "mix the first 3 things in a pre-heated " + mesitemlink(7482) + ".";
+		mes "mix the first 3 things in a pre-heated " + mesitemlink(7482, false) + ".";
 		mes "The extended arms of those who stalk at night,";
-		mes "The rotten " + mesitemlink(974) + " of plants and animals,";
+		mes "The rotten " + mesitemlink(974, false) + " of plants and animals,";
 		mes "and the limbs of one going forward,";
 		mes "who wants to run backward.";
 		mes "This first stage should be complete.";
-		mes "Just after this stage, the " + mesitemlink(974) + "";
+		mes "Just after this stage, the " + mesitemlink(974, false) + "";
 		mes "will barely show any alteration.";
 		mes "After this, you must add the liquid";
 		mes "that aids all life and stir 20 times.";
@@ -5156,7 +5156,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "something is wrong, you must stop and start over.";
 		mes "Following these precise steps are";
 		mes "most important when working on magic.";
-		mes "Next, 2 things must be put in the " + mesitemlink(7482) + ".";
+		mes "Next, 2 things must be put in the " + mesitemlink(7482, false) + ".";
 		mes "First, objects that are seen when";
 		mes "looking at the night sky.";
 		mes "Second the pretty mass of earth,";
@@ -5171,7 +5171,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 		mes "brains of a marine sphere,";
 		mes "the organ of passion,";
 		mes "and a stone that cannot be cut.";
-		mes "Once the final ingredient is placed in the " + mesitemlink(7482) + ",";
+		mes "Once the final ingredient is placed in the " + mesitemlink(7482, false) + ",";
 		mes "It will be over.";
 		mes "The solution must be sprinkled at";
 		mes "the place where you want to affect,";
@@ -5192,7 +5192,7 @@ mosk_in,217,45,0	script	#book_russia	HIDDEN_NPC,{
 //----------------------------------------------------------------------------
 mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 	if (mos_nowinter != 16) end;
-	mes "-It is a very dirty " + mesitemlink(7482) + ".";
+	mes "-It is a very dirty " + mesitemlink(7482, false) + ".";
 	mes "Something is boiling";
 	mes "Baba Yaga might have done something";
 	mes "with it.";
@@ -5201,7 +5201,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 	setarray .@menu$[0], "Powder Of Wing Of Bat","Liquid Of Spawn","Grasshopper's Leg","Starsand Of Witch","Fine Grit";
 	.@implode$ = implode( .@menu$,":" );
 	while( .@nankai < 3 ) {
-		mes "-Something is still being boiled in the " + mesitemlink(7482) + ".";
+		mes "-Something is still being boiled in the " + mesitemlink(7482, false) + ".";
 		mes "What am I going to do?-";
 		next;
 		switch(select("Put the materials in it.:Pour water in it.:Stir it up.:It is over!")) {
@@ -5219,13 +5219,13 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 				if (.@m >= 3)
 					specialeffect EF_POISONHIT;
 				.@nankai++;
-				mes "-I put the "+ .@menu$[.@m] +" in the " + mesitemlink(7482) + ".";
+				mes "-I put the "+ .@menu$[.@m] +" in the " + mesitemlink(7482, false) + ".";
 				mes "Its smell slightly changes.-";
 				break;
 			case 2:
 				specialeffect EF_POISONHIT;
 				.@nankai++;
-				mes "-I pour water in the " + mesitemlink(7482) + " a little.";
+				mes "-I pour water in the " + mesitemlink(7482, false) + " a little.";
 				mes "The liquid has become thin.";
 				mes "No other remarkable changes";
 				mes "have happened.-";
@@ -5285,7 +5285,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 			else
 				specialeffect EF_POISONHIT;
 			.@nankai++;
-			mes "-I put the "+ .@menu$[.@m] +" in the " + mesitemlink(7482) + ".";
+			mes "-I put the "+ .@menu$[.@m] +" in the " + mesitemlink(7482, false) + ".";
 			if (.@m <= 2)
 				mes "It's smell drastically changes.-";
 			else
@@ -5293,7 +5293,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 			break;
 		case 2:
 			if (.@nankai == 3) {
-				mes "-I pour water in the " + mesitemlink(7482) + " a little.";
+				mes "-I pour water in the " + mesitemlink(7482, false) + " a little.";
 				mes "The boiling sounds stronger as if";
 				mes "something in the cloudy liquid";
 				mes "has changed.-";
@@ -5301,7 +5301,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 				.@maho++;
 			} else {
 				specialeffect EF_POISONHIT;
-				mes "-I pour water in the " + mesitemlink(7482) + " and, the liquid gets thin.-";
+				mes "-I pour water in the " + mesitemlink(7482, false) + " and, the liquid gets thin.-";
 			}
 			.@nankai++;
 			break;
@@ -5361,7 +5361,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 	mes "............";
 	next;
 	mes "-The smell of the liquid boiling in";
-	mes "the " + mesitemlink(7482) + " has changed enough.";
+	mes "the " + mesitemlink(7482, false) + " has changed enough.";
 	mes "Let's go on to the next stage.-";
 	next;
 	setarray .@menu2$, "Witched Starsand","Fine Grit","Detonator","Red Blood","Burning Heart";
@@ -5386,7 +5386,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 					if (.@m <= 1)
 						specialeffect EF_POISONHIT;
 					.@nankai++;
-					mes "-I put the "+ .@menu2$[.@m] +" in the " + mesitemlink(7482) + ".";
+					mes "-I put the "+ .@menu2$[.@m] +" in the " + mesitemlink(7482, false) + ".";
 					if (.@m <= 1)
 						mes "Its smell slightly changes.-";
 					else
@@ -5400,7 +5400,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 						specialeffect EF_SMOKE; 
 					}
 					.@nankai++;
-					mes "-I put "+((.@m == 5)?"a":"the")+" "+ .@menu3$[.@m] +" in the " + mesitemlink(7482) + ".";
+					mes "-I put "+((.@m == 5)?"a":"the")+" "+ .@menu3$[.@m] +" in the " + mesitemlink(7482, false) + ".";
 					if (.@m == 5)
 						mes "The solution alters in color.-";
 					else
@@ -5409,7 +5409,7 @@ mosk_in,221,43,0	script	#bowl	HIDDEN_NPC,{
 				break;
 			case 2:
 				.@nankai++;
-				mes "-I pour water in the " + mesitemlink(7482) + " a little.";
+				mes "-I pour water in the " + mesitemlink(7482, false) + " a little.";
 				mes "The smell gets better.-";
 				break;
 			case 3:
@@ -5574,7 +5574,7 @@ moscovia,233,204,3	script	A Young Man#mos2	4_M_RUSMAN2,{
 	}
 	mes "[Fedor]";
 	mes "Finally, winter is over.";
-	mes "" + mesitemlink(10035) + " is coming";
+	mes "" + mesitemlink(10035, false) + " is coming";
 	mes "to my mind...";
 	close;
 }
@@ -5627,7 +5627,7 @@ moscovia,255,203,3	script	A Little Boy#mos4	4_M_RUSCHILD,{
 			mes "Don't you have any colleague?";
 			mes "I heard that the heroes in epics were tall,";
 			mes "but, why are you so small?";
-			mes "Where is your " + mesitemlink(969) + "-shining sword?";
+			mes "Where is your " + mesitemlink(969, false) + "-shining sword?";
 			mes "I heard that the armor glittered white,";
 			mes "but, why don't you have on the armor?";
 			mes "Won't you go for another adventure?";
@@ -5667,7 +5667,7 @@ moscovia,255,203,3	script	A Little Boy#mos4	4_M_RUSCHILD,{
 	mes "[Vasili]";
 	mes "Tell me your exciting story.";
 	mes "Have you fought a dragon?";
-	mes "Where is your " + mesitemlink(969) + "-shining sword and shield?";
+	mes "Where is your " + mesitemlink(969, false) + "-shining sword and shield?";
 	mes "Where?";
 	close;
 }
@@ -5680,7 +5680,7 @@ moscovia,204,188,5	script	A Lady#mos5	4_F_RUSWOMAN1,{
 			if (rand(1,100) > 70) {
 				mes "Yes, I feel good.";
 				mes "When it gets warm, sunflowers bloom.";
-				mes "The " + mesitemlink(2253) + " is the symbol";
+				mes "The " + mesitemlink(2253, false) + " is the symbol";
 				mes "of this province.";
 				next;
 				specialeffect2 EF_SUMMONSLAVE;
@@ -5696,13 +5696,13 @@ moscovia,204,188,5	script	A Lady#mos5	4_F_RUSWOMAN1,{
 			}
 			mes "Yes, I feel good.";
 			mes "When it gets warm, sunflowers bloom.";
-			mes "The " + mesitemlink(2253) + " is the symbol";
+			mes "The " + mesitemlink(2253, false) + " is the symbol";
 			mes "of this province.";
 			close;
 		}
 	}
 	mes "[Katya]";
-	mes "The " + mesitemlink(10035) + " has come~";
+	mes "The " + mesitemlink(10035, false) + " has come~";
 	next;
 	mes "[Katya]";
 	mes "A million sunflowers are blooming~";
@@ -5996,7 +5996,7 @@ moscovia,211,215,5	script	A Young Man#mos12	4_M_RUSMAN1,{
 moscovia,149,112,3	script	A Man#mos13	4_M_RUSBALD,{
 	mes "[Lev]";
 	mes "I was once like you,";
-	mes "with a hot " + mesitemlink(7855) + " and cool reason,";
+	mes "with a hot " + mesitemlink(7855, false) + " and cool reason,";
 	mes "adventuring everywhere and";
 	mes "coping with all the troubles...";
 	if (mos_nowinter == 10) {
@@ -6177,7 +6177,7 @@ mosk_dun03,225,233,0	script	Pile of skeletons#Magic	HIDDEN_NPC,5,5,{
 
 OnTouch:
 	if (mos_nowinter == 8) {
-		mes "-She said that the " + mesitemlink(7761) + " that";
+		mes "-She said that the " + mesitemlink(7761, false) + " that";
 		mes "can hold people's speech";
 		mes "is around here.-";
 		next;
@@ -6245,16 +6245,16 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 	mes "A special souvenir for visiting Moscovia...?";
 	next;
 	mes "[Irina]";
-	mes "For you, let's make a " + mesitemlink(5243) + " hat.";
-	mes "The " + mesitemlink(5243) + " has practicality and";
+	mes "For you, let's make a " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + ".";
+	mes "The " + mesitemlink(5243, false) + " has practicality and";
 	mes "it's spruce! Do you want one?";
 	next;
 	if(select("Learn about the Shafka.:Make a Shafka hat.") == 1) {
 		mes "[Irina]";
 		mes "When I look at you, you seem to";
 		mes "want to put on something of a thick";
-		mes "" + mesitemlink(6020) + " hat on your head, out in this";
-		mes "temperature. A " + mesitemlink(5243) + "!";
+		mes "" + mesitemlink(6020, false) + " " + mesitemlink(2220, false) + " on your head, out in this";
+		mes "temperature. A " + mesitemlink(5243, false) + "!";
 		next;
 		mes "[Irina]";
 		mes "If you've come here for the first";
@@ -6263,9 +6263,9 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 		mes "long and cold in Moscovia.";
 		next;
 		mes "[Irina]";
-		mes "A " + mesitemlink(5243) + " hat is especially";
+		mes "A " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + " is especially";
 		mes "necessary to live here during the";
-		mes "cold seasons. Without this hat, you";
+		mes "cold seasons. Without this " + mesitemlink(2220, false) + ", you";
 		mes "may not endure a winter!";
 		next;
 		mes "[Irina]";
@@ -6273,18 +6273,18 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 		mes "ended and the sun is shining... But";
 		mes "someday the winter will come again.";
 		mes "So, for preparation, you should";
-		mes "keep a " + mesitemlink(5243) + " hat handy.";
+		mes "keep a " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + " handy.";
 		next;
 		mes "[Irina]";
 		mes "Don't worry about keeping warm if";
-		mes "you're wearing a " + mesitemlink(5243) + " hat. Even";
+		mes "you're wearing a " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + ". Even";
 		mes "during the coldest weather... You";
 		mes "can roll around in the snow and the";
-		mes "" + mesitemlink(5243) + " still keeps you warm!";
+		mes "" + mesitemlink(5243, false) + " still keeps you warm!";
 		close;
 	}
 	mes "[Irina]";
-	mes "Do you want to make a " + mesitemlink(5243) + " hat?";
+	mes "Do you want to make a " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + "?";
 	mes "Heheh. Good idea!";
 	mes "That's a good task.";
 	mes "You will be grateful forever.";
@@ -6292,14 +6292,14 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 	mes "[Irina]";
 	mes "If you bring the materials,";
 	mes "we can make one immediately!";
-	mes "The materials are: ^0000FFNine Tails 20, " + mesitemlink(7038) + " 10, " + mesitemlink(7166) + " 10, " + mesitemlink(7065) + " 20, " + mesitemlink(7217) + " 1^000000.";
+	mes "The materials are: ^0000FF" + mesitemlink(1022, false) + " 20, " + mesitemlink(7038, false) + " 10, " + mesitemlink(7166, false) + " 10, " + mesitemlink(7065, false) + " 20, " + mesitemlink(7217, false) + " 1^000000.";
 	if (isbegin_quest(18121) == 0)
 		setquest 18121;
 	next;
 	if (countitem(1022) > 19 && countitem(7038) > 9 && countitem(7166) > 9 && countitem(7065) > 19 && countitem(7217)) {
 		mes "[Irina]";
 		mes "You did well.";
-		mes "Give me the materials. I will make the " + mesitemlink(5243) + ".";
+		mes "Give me the materials. I will make the " + mesitemlink(5243, false) + ".";
 		next;
 		delitem 1022,20; //Fox_Tail
 		delitem 7038,10; //Yarn
@@ -6313,7 +6313,7 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 		mes "Do you like it?";
 		next;
 		mes "[Irina]";
-		mes "If you need a " + mesitemlink(5243) + " hat,";
+		mes "If you need a " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + ",";
 		mes "come to me whenever,";
 		mes "with the materials.";
 		mes "I will make it.";
@@ -6325,15 +6325,15 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 	}
 	mes "[Irina]";
 	mes "Ah... You lack some materials. We";
-	mes "can't make the " + mesitemlink(5243) + " hat with just";
+	mes "can't make the " + mesitemlink(5243, false) + " " + mesitemlink(2220, false) + " with just";
 	mes "these materials.";
 	next;
 	mes "[Irina]";
 	mes "If you bring the right materials, I";
-	mes "will make a " + mesitemlink(5243) + " immediately.";
+	mes "will make a " + mesitemlink(5243, false) + " immediately.";
 	next;
 	mes "[Irina]";
-	mes "The materials are: ^0000FFNine Tails 20, " + mesitemlink(7038) + " 10, " + mesitemlink(7166) + " 10, " + mesitemlink(7065) + " 20, " + mesitemlink(7217) + " 1^000000.";
+	mes "The materials are: ^0000FF" + mesitemlink(1022, false) + " 20, " + mesitemlink(7038, false) + " 10, " + mesitemlink(7166, false) + " 10, " + mesitemlink(7065, false) + " 20, " + mesitemlink(7217, false) + " 1^000000.";
 	close;
 }
 
@@ -6697,10 +6697,10 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 		next;
 		mes "[Gray Wolf]";
 		mes "First, you need to find a way to get her out of there.";
-		mes "I've heard about a '^0000ffGolden Key^000000' that can open anything. There is a keymaker in town.";
+		mes "I've heard about a '^0000ff" + mesitemlink(7493, false) + "^000000' that can open anything. There is a keymaker in town.";
 		next;
 		mes "[Gray Wolf]";
-		mes "As you see, I look like a monster so I am not able to go there. I want you to find this keymaker and ask about the '^0000ffGolden Key^000000'.";
+		mes "As you see, I look like a monster so I am not able to go there. I want you to find this keymaker and ask about the '^0000ff" + mesitemlink(7493, false) + "^000000'.";
 		next;
 		mes "[Girl's Voice]";
 		mes "Please don't forget about me.";
@@ -6711,10 +6711,10 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 	} else if (rhea_rus_main > 5 && rhea_rus_main < 8) {
 		mes "[Girl's Voice]";
 		mes "Help me get out of here.";
-		mes "I hope you can help me find that '^0000ffGolden Key^000000' that can open anything.";
+		mes "I hope you can help me find that '^0000ff" + mesitemlink(7493, false) + "^000000' that can open anything.";
 		next;
 		mes "[Girl's Voice]";
-		mes "I've heard about a keymaker in Moscovia who knows how to make a '^0000ffGolden Key^000000'.";
+		mes "I've heard about a keymaker in Moscovia who knows how to make a '^0000ff" + mesitemlink(7493, false) + "^000000'.";
 		close;
 	} else if (rhea_rus_main == 8) {
 		if (rhea_rus_quiz < 3) {
@@ -6727,7 +6727,7 @@ mosk_dun01,45,259,0	script	Wall#rus04	HIDDEN_NPC,{
 			mes "Did you get the key?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "...I need " + mesitemlink(7879) + ". I heard that I was able to get it from Marozka. He....";
+			mes "...I need " + mesitemlink(7879, false) + ". I heard that I was able to get it from Marozka. He....";
 			next;
 			mes "[Girl's Voice]";
 			mes "Marozka... He is the owner of winter and dwells in the deep underground. He won't let just anyone see him.";
@@ -7205,10 +7205,10 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		next;
 		select("Excuse me...");
 		mes "["+ strcharinfo(0) +"]";
-		mes "Excuse me, have you heard of a keymaker who knows how to make a '^0000ffGolden Key^000000'?";
+		mes "Excuse me, have you heard of a keymaker who knows how to make a '^0000ff" + mesitemlink(7493, false) + "^000000'?";
 		next;
 		mes "[The Blacksmith]";
-		mes "Hmm, are you an adventurer? Who told you about the '^0000ffGolden Key^000000'?";
+		mes "Hmm, are you an adventurer? Who told you about the '^0000ff" + mesitemlink(7493, false) + "^000000'?";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "Ah, in fact...";
@@ -7218,14 +7218,14 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		mes "- and Gray Wolf -";
 		next;
 		mes "[The Blacksmith]";
-		mes "Well, then... The keymaker for the '^0000ffGolden Key^000000'.";
+		mes "Well, then... The keymaker for the '^0000ff" + mesitemlink(7493, false) + "^000000'.";
 		mes "You are very lucky to have asked me about this.";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "W, what do you mean...?";
 		next;
 		mes "[The Blacksmith]";
-		mes "I'm the only one in this town that knows what materials are needed to make the '^0000ffGolden Key^000000'! Bahaha!";
+		mes "I'm the only one in this town that knows what materials are needed to make the '^0000ff" + mesitemlink(7493, false) + "^000000'! Bahaha!";
 		next;
 		mes "[The Blacksmith]";
 		mes "I guess you think that getting the materials will be easy huh?";
@@ -7240,7 +7240,7 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		mes "If you choose to take it.";
 		next;
 		mes "[The Blacksmith]";
-		mes "Your " + mesitemlink(2405) + " will be worn";
+		mes "Your " + mesitemlink(2405, false) + " will be worn";
 		mes "out after this journey.";
 		mes "What do you think?";
 		mes "Would you like to try?";
@@ -7250,14 +7250,14 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		next;
 		mes "[The Blacksmith]";
 		mes "Bahaha! I like you!";
-		mes "Ok, first, bring me ^0000ff25 " + mesitemlink(999) + "^000000. I'm not going anywhere so come back here when you have them.";
+		mes "Ok, first, bring me ^0000ff25 " + mesitemlink(999, false) + "^000000. I'm not going anywhere so come back here when you have them.";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "Ok so that's the first thing you need for the '" + mesitemlink(7493) + "' right?";
+		mes "Ok so that's the first thing you need for the '" + mesitemlink(7493, false) + "' right?";
 		next;
 		mes "[The Blacksmith]";
 		mes "Bahahaha~";
-		mes "I promise you, I'll explain when you bring the ^0000ff25 " + mesitemlink(999) + "^000000 to me. Please just get the " + mesitemlink(999) + " and come back.";
+		mes "I promise you, I'll explain when you bring the ^0000ff25 " + mesitemlink(999, false) + "^000000 to me. Please just get the " + mesitemlink(999, false) + " and come back.";
 		rhea_rus_main = 7;
 		// changequest 8140,8141;
 		close;
@@ -7269,7 +7269,7 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 			mes "[The Blacksmith]";
 			mes "Ok then, wait here.";
 			next;
-			mes "- He melts the " + mesitemlink(999) + " -";
+			mes "- He melts the " + mesitemlink(999, false) + " -";
 			mes "- and begins to forge -";
 			mes "- it into something !! -";
 			next;
@@ -7282,26 +7282,26 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 			mes "Ah?! This is?!!";
 			next;
 			mes "[The Blacksmith]";
-			mes "Strong " + mesitemlink(999) + " " + mesitemlink(2405) + "!";
+			mes "Strong " + mesitemlink(999, false) + " " + mesitemlink(2405, false) + "!";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "The Golden!!.........................";
 			mes "....................Eh, what?";
 			next;
 			mes "[The Blacksmith]";
-			mes "Bahaha~ Didn't I tell you? A long journey awaits you. These " + mesitemlink(2405) + " will help you on your long journey.";
+			mes "Bahaha~ Didn't I tell you? A long journey awaits you. These " + mesitemlink(2405, false) + " will help you on your long journey.";
 			next;
 			mes "[The Blacksmith]";
 			mes "When they have worn out, you will know that your journey is near it's end.";
 			next;
 			mes "[The Blacksmith]";
-			mes "^ff0000You must always wear these " + mesitemlink(2405) + " while gathering the materials for the '" + mesitemlink(7493) + "'.^000000";
+			mes "^ff0000You must always wear these " + mesitemlink(2405, false) + " while gathering the materials for the '" + mesitemlink(7493, false) + "'.^000000";
 			next;
 			mes "[The Blacksmith]";
 			mes "Ok, I'll tell you what materials you need to get. I can make the key anytime if you get them to me.";
 			next;
 			mes "[The Blacksmith]";
-			mes "You need ^0000ff2 " + mesitemlink(724) + ", 3 " + mesitemlink(969) + ", 1 " + mesitemlink(7877) + ", 2 " + mesitemlink(7878) + ", 10 " + mesitemlink(7879) + "^000000 to make the key.";
+			mes "You need ^0000ff2 " + mesitemlink(724, false) + ", 3 " + mesitemlink(969, false) + ", 1 " + mesitemlink(7877, false) + ", 2 " + mesitemlink(7878, false) + ", 10 " + mesitemlink(7879, false) + "^000000 to make the key.";
 			// changequest 8141,8142;
 			next;
 			mes "[The Blacksmith]";
@@ -7318,7 +7318,7 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 			close;
 		}
 		mes "[The Blacksmith]";
-		mes "What are you doing? First, you must get me ^0000ff25 " + mesitemlink(999) + "^000000.";
+		mes "What are you doing? First, you must get me ^0000ff25 " + mesitemlink(999, false) + "^000000.";
 		next;
 		mes "[The Blacksmith]";
 		mes "The faster you get me the materials, The faster you can help Maria Morebna.";
@@ -7333,10 +7333,10 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 				}
 				mes "[The Blacksmith]";
 				mes "So, you got all the materials. I can't believe it.";
-				mes "You did your best until your " + mesitemlink(2405) + " were worn out, didn't you?";
+				mes "You did your best until your " + mesitemlink(2405, false) + " were worn out, didn't you?";
 				next;
 				mes "["+ strcharinfo(0) +"]";
-				mes "Yes, you know, it's not very comfortable walking around in " + mesitemlink(999) + " " + mesitemlink(2405) + " all day!";
+				mes "Yes, you know, it's not very comfortable walking around in " + mesitemlink(999, false) + " " + mesitemlink(2405, false) + " all day!";
 				next;
 				mes "[The Blacksmith]";
 				mes "Bahaha~ Ok, well done.";
@@ -7375,26 +7375,26 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 					delitem 2430,1;
 				else {
 					mes "The forest is dangerous. Be very careful in there!";
-					mes "Ah, and your " + mesitemlink(999) + " " + mesitemlink(2405) + "..?";
+					mes "Ah, and your " + mesitemlink(999, false) + " " + mesitemlink(2405, false) + "..?";
 					next;
 					mes "[The Blacksmith]";
 					mes "Where are they?";
 					close;
 				}
 				mes "The forest is dangerous. Be very careful in there!";
-				mes "Ah and you shouldn't be needing those " + mesitemlink(999) + " " + mesitemlink(2405) + " anymore. Good luck!";
+				mes "Ah and you shouldn't be needing those " + mesitemlink(999, false) + " " + mesitemlink(2405, false) + " anymore. Good luck!";
 				rhea_rus_main = 9;
 				// changequest 8142,8158;
 				close;
 			}
 		}
 		mes "[The Blacksmith]";
-		mes "You need ^0000ff2 " + mesitemlink(724) + ", 3 " + mesitemlink(969) + ", 1 " + mesitemlink(7877) + ", 2 " + mesitemlink(7878) + ", 10 " + mesitemlink(7879) + "^000000 to make the key.";
+		mes "You need ^0000ff2 " + mesitemlink(724, false) + ", 3 " + mesitemlink(969, false) + ", 1 " + mesitemlink(7877, false) + ", 2 " + mesitemlink(7878, false) + ", 10 " + mesitemlink(7879, false) + "^000000 to make the key.";
 		next;
 		switch(select("Red Ring?:Lusalka's Hair?:Golden Thread?")) {
 			case 1:
 				mes "[The Blacksmith]";
-				mes "The " + mesitemlink(7877) + " has powerful enchanting powers. I had one before, but I gave it to my friend, Vassili, as a gift.";
+				mes "The " + mesitemlink(7877, false) + " has powerful enchanting powers. I had one before, but I gave it to my friend, Vassili, as a gift.";
 				next;
 				mes "[The Blacksmith]";
 				mes "I think it would be odd to ask him to give it back to me. So uh you've got to ask him if he would give it to you.";
@@ -7402,7 +7402,7 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 			case 2:
 				mes "[The Blacksmith]";
 				mes "It's said that a bride who drowns to death just before her wedding becomes Lusalka, the aqua fairy.";
-				mes "You must find " + mesitemlink(7878) + ".";
+				mes "You must find " + mesitemlink(7878, false) + ".";
 				next;
 				mes "[The Blacksmith]";
 				mes "I heard that a young maid has been lost recently.";
@@ -7414,10 +7414,10 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 				break;
 			case 3:
 				mes "[The Blacksmith]";
-				mes "" + mesitemlink(7879) + " is made from " + mesitemlink(969) + " by using a special spinning wheel technique. I don't know exactly how it's done. But I know who does.";
+				mes "" + mesitemlink(7879, false) + " is made from " + mesitemlink(969, false) + " by using a special spinning wheel technique. I don't know exactly how it's done. But I know who does.";
 				next;
 				mes "[The Blacksmith]";
-				mes "Find a man named Marozka. He is the only one who knows how to use the spinning wheel to make the " + mesitemlink(7879) + ".";
+				mes "Find a man named Marozka. He is the only one who knows how to use the spinning wheel to make the " + mesitemlink(7879, false) + ".";
 				next;
 				mes "[The Blacksmith]";
 				mes "Maria should know where he is.";
@@ -7425,7 +7425,7 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		}
 		next;
 		mes "[The Blacksmith]";
-		mes "Ah, and... You still have the " + mesitemlink(2405) + " that I made right? ^ff0000Without them, you cannot get anything for the key, I swear. You must put on them.^000000";
+		mes "Ah, and... You still have the " + mesitemlink(2405, false) + " that I made right? ^ff0000Without them, you cannot get anything for the key, I swear. You must put on them.^000000";
 		next;
 		mes "[The Blacksmith]";
 		mes "Well, you know what to do now. I will be waiting here.";
@@ -7442,10 +7442,10 @@ moscovia,178,127,0	script	The Blacksmith#rus06	1_M_SMITH,{
 		close;
 	} else if (rhea_rus_main > 9 && rhea_rus_main < 52) {
 		mes "[The Blacksmith]";
-		mes "He is in his cabin deep inside of the forest. There, the keymaker of the " + mesitemlink(7493) + " is living.";
+		mes "He is in his cabin deep inside of the forest. There, the keymaker of the " + mesitemlink(7493, false) + " is living.";
 		next;
 		mes "[The Blacksmith]";
-		mes "The " + mesitemlink(7493) + " is able to release Maria. Good luck!";
+		mes "The " + mesitemlink(7493, false) + " is able to release Maria. Good luck!";
 		close;
 	} else if (rhea_rus_main > 51) {
 		mes "[The Blacksmith]";
@@ -7502,7 +7502,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 			input .@input$;
 			if (.@input$ == "Red Ring") {
 				mes "[Vassili Grandpapa]";
-				mes "" + mesitemlink(7877) + "?! Why are you looking for that?";
+				mes "" + mesitemlink(7877, false) + "?! Why are you looking for that?";
 				next;
 			} else {
 				mes "[Vassili Grandpapa]";
@@ -7539,11 +7539,11 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 			mes "Anyway, Mashenka was such a kind and tender daughter. On cold winter nights, when I came back home late, she would wait for me with a hot bowl of my favorite stew.";
 			next;
 			mes "[Vassili Grandpapa]";
-			mes "How couldn't I be touched by such kindness? So, I gave the " + mesitemlink(7877) + " to her as a gift.";
+			mes "How couldn't I be touched by such kindness? So, I gave the " + mesitemlink(7877, false) + " to her as a gift.";
 			mes "I can still remember how happy she was when I gave it to her.";
 			next;
 			mes "[Vassili Grandpapa]";
-			mes "She disappeared soon... after Now all I have is Ryubaba. She is also pretty and smart but nothing can relieve the sadnesss in my " + mesitemlink(7855) + " from losing Mashenka...";
+			mes "She disappeared soon... after Now all I have is Ryubaba. She is also pretty and smart but nothing can relieve the sadnesss in my " + mesitemlink(7855, false) + " from losing Mashenka...";
 			rhea_rus_ring = 1;
 			// setquest 8143;
 			close;
@@ -7552,7 +7552,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 			mes "I can still remember how happy she was when I gave it to her.";
 			next;
 			mes "[Vassili Grandpapa]";
-			mes "She disappeared soon... after Now all I have is Ryubaba. She is also pretty and smart but nothing can relieve the sadnesss in my " + mesitemlink(7855) + " from losing Mashenka...";
+			mes "She disappeared soon... after Now all I have is Ryubaba. She is also pretty and smart but nothing can relieve the sadnesss in my " + mesitemlink(7855, false) + " from losing Mashenka...";
 			close;
 		} else if (rhea_rus_ring == 8) {
 			if (getequipid(EQI_SHOES) != 2429 && getequipid(EQI_SHOES) != 2430) {
@@ -7567,11 +7567,11 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 			mes "...Listen to... this.";
 			next;
 			if (countitem(7883)) {// Pointed_Wooden_Flute
-				mes "- You play the flute -";
+				mes "- You play the f" + mesitemlink(1905, false) + " -";
 				next;
 				mes "^ff0000Red ring that my father gave me^000000";
 				mes "^ff0000Red ring that my father gave me^000000";
-				mes "^ff0000The " + mesitemlink(7877) + " enchanted^000000";
+				mes "^ff0000The " + mesitemlink(7877, false) + " enchanted^000000";
 				mes "^ff0000For the loveliest daughter^000000";
 				next;
 				mes "^ff0000Red ring bringing up jealousy^000000";
@@ -7580,7 +7580,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 				mes "^ff0000My sister envies^000000";
 				next;
 				mes "^ff0000Cold hand tightening my neck^000000";
-				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855) + "^000000";
+				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855, false) + "^000000";
 				mes "^ff0000Cold marsh swallowing my body^000000";
 				mes "^ff0000Red ring taken away^000000";
 				mes "^ff0000Red ring enchanted^000000";
@@ -7593,7 +7593,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 				next;
 				mes "[Vassili Grandpapa]";
 				mes "No... this isn't true?";
-				mes "Don't try to trick me... Why are you telling... That flute is... Mashenka...";
+				mes "Don't try to trick me... Why are you telling... That f" + mesitemlink(1905, false) + " is... Mashenka...";
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "Isn't this.. isn't this Mashenka's voice?";
@@ -7626,14 +7626,14 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 				mes "...Uh... I'm so sorry...";
 				next;
 				mes "[Vassili Grandpapa]";
-				mes "... Can you please... play the flute again?";
+				mes "... Can you please... play the f" + mesitemlink(1905, false) + " again?";
 				next;
-				mes "- You play the flute -";
+				mes "- You play the f" + mesitemlink(1905, false) + " -";
 				mes "- with Mashenka's voice -";
 				next;
 				mes "^ff0000Red ring that my father gave me^000000";
 				mes "^ff0000Red ring that my father gave me^000000";
-				mes "^ff0000The " + mesitemlink(7877) + " enchanted^000000";
+				mes "^ff0000The " + mesitemlink(7877, false) + " enchanted^000000";
 				mes "^ff0000For the loveliest daughter^000000";
 				next;
 				mes "^ff0000Red ring bringing up jealousy^000000";
@@ -7642,7 +7642,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 				mes "^ff0000My sister envies^000000";
 				next;
 				mes "^ff0000Cold hand tightening my neck^000000";
-				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855) + "^000000";
+				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855, false) + "^000000";
 				mes "^ff0000Cold marsh swallowing my body^000000";
 				mes "^ff0000Red ring taken away^000000";
 				mes "^ff0000Red ring enchanted^000000";
@@ -7708,7 +7708,7 @@ moscovia,206,81,0	script	Vassili Grandpapa#rus07	4_M_05,{
 			mes "...What did you say?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Ehh?! This is weird. Where is the flute?!";
+			mes "Ehh?! This is weird. Where is the f" + mesitemlink(1905, false) + "?!";
 			emotion ET_HUK, playerattached();
 			close;
 		} else if (rhea_rus_ring == 9) {
@@ -7851,7 +7851,7 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 			input .@input$;
 			mes "[Ryubaba]";
 			if (.@input$ == "Red Ring") {
-				mes "A " + mesitemlink(7877) + "?!";
+				mes "A " + mesitemlink(7877, false) + "?!";
 				next;
 			} else { 
 				mes "Heh, what are you talking about? What is that?";
@@ -7893,11 +7893,11 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 			mes "... Listen to this song.";
 			next;
 			if (countitem(7883) > 0) {// Pointed_Wooden_Flute
-				mes "- You play the flute -";
+				mes "- You play the f" + mesitemlink(1905, false) + " -";
 				next;
 				mes "^ff0000Red ring that my father gave me^000000";
 				mes "^ff0000Red ring that my father gave me^000000";
-				mes "^ff0000The " + mesitemlink(7877) + " enchanted^000000";
+				mes "^ff0000The " + mesitemlink(7877, false) + " enchanted^000000";
 				mes "^ff0000For the loveliest daughter^000000";
 				next;
 				mes "^ff0000Red ring bringing up jealousy^000000";
@@ -7906,7 +7906,7 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 				mes "^ff0000My sister envies^000000";
 				next;
 				mes "^ff0000Cold hand tightening my neck^000000";
-				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855) + "^000000";
+				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855, false) + "^000000";
 				mes "^ff0000Cold marsh swallowing my body^000000";
 				mes "^ff0000Red ring taken away^000000";
 				mes "^ff0000Red ring enchanted^000000";
@@ -7931,7 +7931,7 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 				next;
 				mes "[Ryubaba]";
 				mes "No!!!";
-				mes "Give me that flute!";
+				mes "Give me that f" + mesitemlink(1905, false) + "!";
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "No! Your father has to know!";
@@ -7947,7 +7947,7 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 				mes "I have been always worried that someone would find out... He has been feeling bad ever since what happened. How much worse would he feel if he knew the truth...?";
 				next;
 				mes "[Ryubaba]";
-				mes "Could you please ignore this? Give me that flute... Ah... The " + mesitemlink(7877) + "? How about exchanging it for the ring? Don't you need this?";
+				mes "Could you please ignore this? Give me that f" + mesitemlink(1905, false) + "... Ah... The " + mesitemlink(7877, false) + "? How about exchanging it for the ring? Don't you need this?";
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "But...";
@@ -8021,7 +8021,7 @@ moscovia,213,216,3	script	Ryubaba#rus08	4_F_RUSWOMAN2,{
 				close;
 			}
 			mes "["+ strcharinfo(0) +"]";
-			mes "...!? Where is the flute!?";
+			mes "...!? Where is the f" + mesitemlink(1905, false) + "!?";
 			emotion ET_HUK, playerattached();
 			close;
 		} else if (rhea_rus_ring == 8) {
@@ -8107,7 +8107,7 @@ moscovia,223,210,3	script	Little Boy#rus09	4_M_RUSCHILD,{
 				close;
 			}
 			mes "[Little Boy]";
-			mes "I love " + mesitemlink(529) + " and cookies most.";
+			mes "I love " + mesitemlink(529, false) + " and cookies most.";
 			close;
 		} else if (rhea_rus_ring == 3) {
 			mes "[Little Boy]";
@@ -8165,7 +8165,7 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 			mes "Ah, right! While you're searching, can you gather some Pointed Branches for me? Could you please get me ^0000ff25 Pointed Branches^000000?";
 			next;
 			mes "[Shepherdess]";
-			mes "I am an excellent flute player! If you get me enough Pointed Branches, I will make a flute from them and play beautiful music for you. Please~!";
+			mes "I am an excellent f" + mesitemlink(1905, false) + " player! If you get me enough Pointed Branches, I will make a f" + mesitemlink(1905, false) + " from them and play beautiful music for you. Please~!";
 			rhea_rus_ring = 6;
 			// changequest 8144,8145;
 			close;
@@ -8180,21 +8180,21 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 				mes "Wow, did you get the Pointed Branches!?";
 				next;
 				mes "[Shepherdess]";
-				mes "Ok! I will make a flute and play you the most beautiful music you've ever heard!";
+				mes "Ok! I will make a f" + mesitemlink(1905, false) + " and play you the most beautiful music you've ever heard!";
 				next;
 				mes "- She begins to cut and trim -";
 				mes "- the Pointed Branches and -";
-				mes "- finally makes a good flute! -";
+				mes "- finally makes a good f" + mesitemlink(1905, false) + "! -";
 				next;
 				mes "[Shepherdess]";
 				mes "Ok, good! Let me play it to test its sound!";
 				next;
 				mes "- She closes her eyes -";
-				mes "- and plays the flute -";
+				mes "- and plays the f" + mesitemlink(1905, false) + " -";
 				next;
 				mes "^ff0000Red ring that my father gave me^000000";
 				mes "^ff0000Red ring that my father gave me^000000";
-				mes "^ff0000The " + mesitemlink(7877) + " enchanted^000000";
+				mes "^ff0000The " + mesitemlink(7877, false) + " enchanted^000000";
 				mes "^ff0000For the loveliest daughter^000000";
 				next;
 				mes "^ff0000Red ring bringing up jealousy^000000";
@@ -8203,7 +8203,7 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 				mes "^ff0000My sister envies^000000";
 				next;
 				mes "^ff0000Cold hand tightening my neck^000000";
-				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855) + "^000000";
+				mes "^ff0000Cold eyes tightening my " + mesitemlink(7855, false) + "^000000";
 				mes "^ff0000Cold marsh swallowing my body^000000";
 				mes "^ff0000Red ring taken away^000000";
 				mes "^ff0000Red ring enchanted^000000";
@@ -8211,13 +8211,13 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 				emotion ET_HUK, playerattached();
 				next;
 				mes "[Shepherdess]";
-				mes "W, what is this? Horrible! Why did this flute play a voice?";
+				mes "W, what is this? Horrible! Why did this f" + mesitemlink(1905, false) + " play a voice?";
 				next;
 				mes "[Shepherdess]";
 				mes "I've never seen this before! This doesn't feel right! You! Take this away!";
 				next;
 				mes "- ^0000ffShepherdess gives me the^000000 -";
-				mes "- ^0000ff'Pointed " + mesitemlink(7883) + "'!!^000000 -";
+				mes "- ^0000ff'Pointed " + mesitemlink(7883, false) + "'!!^000000 -";
 				delitem 7882,25;
 				rhea_rus_ring = 7;
 				getitem 7883,1;// Pointed_Wooden_Flute
@@ -8232,11 +8232,11 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 			mes "Ah, right! While you're searching, can you gather some Pointed Branches for me? Could you please get me ^0000ff50 Pointed Branches^000000?";
 			next;
 			mes "[Shepherdess]";
-			mes "I am an excellent flute player! If you get me enough Pointed Branches, I will make a flute from them and play beautiful music for you. Please~!";
+			mes "I am an excellent f" + mesitemlink(1905, false) + " player! If you get me enough Pointed Branches, I will make a f" + mesitemlink(1905, false) + " from them and play beautiful music for you. Please~!";
 			close;
 		} else if (rhea_rus_ring > 6) {
 			mes "[Shepherdess]";
-			mes "I will never play a flute made from the Pointed Branches around the marsh ever again!";
+			mes "I will never play a f" + mesitemlink(1905, false) + " made from the Pointed Branches around the marsh ever again!";
 			close;
 		}
 	}
@@ -8256,7 +8256,7 @@ mosk_fild02,157,233,0	script	Shepherdess#rus10	1_F_04,{
 		if (countitem(7882) < 50) {// Pointed_Branch
 			if (rand(1,3) == 2) {
 				mes "- I avoid the thorns and -";
-				mes "- cut off a " + mesitemlink(13150) + "!! -";
+				mes "- cut off a " + mesitemlink(13150, false) + "!! -";
 				getitem 7882,1;
 				donpcevent strnpcinfo(0) +"::OnDisable";
 				close;
@@ -8353,13 +8353,13 @@ moscovia,166,145,1	script	Worried Mother#rus19	4_F_RUSWOMAN3,{
 			mes "Lusalka is a good aqua nymph but is not completely harmless. Her stare will seriously hurt anyone who makes eye contact with her.";
 			next;
 			mes "[Worried Mother]";
-			mes "You must have something to protect yourself from Lusalka. '^0000ffHoly Water^000000' will protect you from Lusalka'a gaze.";
+			mes "You must have something to protect yourself from Lusalka. '^0000ff" + mesitemlink(523, false) + "^000000' will protect you from Lusalka'a gaze.";
 			next;
 			mes "[Worried Mother]";
 			mes "And Lusalka is nocturnal. You should be able to find her from ^ff00005 pm to 6 am PST^000000.";
 			next;
 			mes "[Worried Mother]";
-			mes "Don't forget. You have to bring '^0000ffHoly Water^000000' with you, and find her from ^ff00005 pm to 6 am PST^000000.";
+			mes "Don't forget. You have to bring '^0000ff" + mesitemlink(523, false) + "^000000' with you, and find her from ^ff00005 pm to 6 am PST^000000.";
 			next;
 			mes "[Worried Mother]";
 			mes "I'm not sure where she would be but it has to be somewhere near water. Please, find where my daughter is. I beg of you.";
@@ -8371,13 +8371,13 @@ moscovia,166,145,1	script	Worried Mother#rus19	4_F_RUSWOMAN3,{
 			mes "Lusalka is a good aqua nymph but is not completely harmless. Her stare will seriously hurt anyone who makes eye contact with her.";
 			next;
 			mes "[Worried Mother]";
-			mes "You must have something to protect yourself from Lusalka. '^0000ffHoly Water^000000' will protect you from Lusalka'a gaze.";
+			mes "You must have something to protect yourself from Lusalka. '^0000ff" + mesitemlink(523, false) + "^000000' will protect you from Lusalka'a gaze.";
 			next;
 			mes "[Worried Mother]";
 			mes "And Lusalka is nocturnal. You should be able to find her from ^ff00005 pm to 6 am PST^000000.";
 			next;
 			mes "[Worried Mother]";
-			mes "Don't forget. You have to bring '^0000ffHoly Water^000000' with you, and find her from ^ff00005 pm to 6 am PST^000000.";
+			mes "Don't forget. You have to bring '^0000ff" + mesitemlink(523, false) + "^000000' with you, and find her from ^ff00005 pm to 6 am PST^000000.";
 			next;
 			mes "[Worried Mother]";
 			mes "I'm not sure where she would be but it has to be somewhere near water. Please, find where my daughter is. I beg of you.";
@@ -8461,7 +8461,7 @@ OnTouch_:
 		mes "- the wet hair in front of you -";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "...This.. is " + mesitemlink(7878) + "?";
+		mes "...This.. is " + mesitemlink(7878, false) + "?";
 		mes "Ah, right.. I came here to get her hair.";
 		next;
 		mes "- You pick up the hair -";
@@ -8518,7 +8518,7 @@ mosk_fild02,124,202,3	script	Lusalka#rus23	4_F_RUSGREEN,{
 				next;
 				mes "[Lusalka]";
 				mes "Nighttime for the aqua nymph.";
-				mes "Haven't you heard that Lusalka's stare can kill people. If you didn't have the '" + mesitemlink(523) + "', you would surely have died.";
+				mes "Haven't you heard that Lusalka's stare can kill people. If you didn't have the '" + mesitemlink(523, false) + "', you would surely have died.";
 				next;
 				select("I am an adventurer and...");
 				mes "[Lusalka]";
@@ -9059,14 +9059,14 @@ OnTouch_:
 			mes "Who dares to come into my cave!";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Are you Marozka? Maria sent me! I need your '" + mesitemlink(7879) + "' to make a '" + mesitemlink(7493) + "' to release her from the wall!";
+			mes "Are you Marozka? Maria sent me! I need your '" + mesitemlink(7879, false) + "' to make a '" + mesitemlink(7493, false) + "' to release her from the wall!";
 			next;
 			mes "[Voice unidentified]";
-			mes "...To make a '" + mesitemlink(7493) + "'?";
+			mes "...To make a '" + mesitemlink(7493, false) + "'?";
 			mes "Do you think that you are right for this job?";
 			next;
 			mes "[Voice unidentified]";
-			mes "You must be fighting against 'Koshei' if you are asking about the '" + mesitemlink(7493) + "' and Maria! Do you think that you are strong enough to fight against him?";
+			mes "You must be fighting against 'Koshei' if you are asking about the '" + mesitemlink(7493, false) + "' and Maria! Do you think that you are strong enough to fight against him?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "Of course I'm strong enough!";
@@ -9076,11 +9076,11 @@ OnTouch_:
 			mes "But, I need to test you to see if you truly are capable.";
 			next;
 			mes "[Voice unidentified]";
-			mes "In this cave, there is a 'Stone Furnace' and an '" + mesitemlink(512) + " Tree'.";
-			mes "You can escape from the cave with ^0000ff100 Well Baked Cookies^000000 from the Stone Furnace and ^0000ff100 Apples^000000 from the " + mesitemlink(512) + " Tree.";
+			mes "In this cave, there is a 'Stone Furnace' and an '" + mesitemlink(512, false) + " Tree'.";
+			mes "You can escape from the cave with ^0000ff100 Well Baked Cookies^000000 from the Stone Furnace and ^0000ff100 Apples^000000 from the " + mesitemlink(512, false) + " Tree.";
 			next;
 			mes "[Voice unidentified]";
-			mes "It won't be easy. Monsters are wandering around the Stone Furnace and the " + mesitemlink(512) + " Tree.";
+			mes "It won't be easy. Monsters are wandering around the Stone Furnace and the " + mesitemlink(512, false) + " Tree.";
 			next;
 			mes "[Voice unidentified]";
 			mes "Show me what you can do.";
@@ -9216,7 +9216,7 @@ mosk_fild02,243,270,0	script	Marozka#rus31	4_M_LGTGRAND,{
 			mes ".....................you came.";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Are you Marozka? Here, I've proven to you my strength now can you make me the '" + mesitemlink(7879) + "'?";
+			mes "Are you Marozka? Here, I've proven to you my strength now can you make me the '" + mesitemlink(7879, false) + "'?";
 			mes "I need it to get Maria out of that wall.";
 			next;
 			mes "- You put the cookies and -";
@@ -9224,7 +9224,7 @@ mosk_fild02,243,270,0	script	Marozka#rus31	4_M_LGTGRAND,{
 			mes "- and he slowly utters -";
 			next;
 			mes "[Marozka]";
-			mes "As you've heard, to make the '" + mesitemlink(7879) + "' is very difficult and takes a very long time.";
+			mes "As you've heard, to make the '" + mesitemlink(7879, false) + "' is very difficult and takes a very long time.";
 			next;
 			mes "[Marozka]";
 			mes "I will begin making it now... let me see... Could you please come back to me in an hour?";
@@ -9237,19 +9237,19 @@ mosk_fild02,243,270,0	script	Marozka#rus31	4_M_LGTGRAND,{
 			if (rus_time01 != gettime(DT_HOUR) || rus_time02 != gettime(DT_DAYOFWEEK)) {
 				mes "[Marozka]";
 				mes "Ah, just in time.";
-				mes "I have finally finished making the '" + mesitemlink(7879) + "'. Just wait one more second and it'll be ready.";
+				mes "I have finally finished making the '" + mesitemlink(7879, false) + "'. Just wait one more second and it'll be ready.";
 				rhea_rus_quiz = 28;
 				close;
 			}
 			mes "[Marozka]";
-			mes "As you've heard, to make the '" + mesitemlink(7879) + "' is very difficult and takes a very long time.";
+			mes "As you've heard, to make the '" + mesitemlink(7879, false) + "' is very difficult and takes a very long time.";
 			next;
 			mes "[Marozka]";
 			mes "I will begin making it now... let me see... Could you please come back to me in an hour?";
 			close;
 		} else if (rhea_rus_quiz == 28) {
 			mes "[Marozka]";
-			mes "As promised, here's the '" + mesitemlink(7879) + "'.";
+			mes "As promised, here's the '" + mesitemlink(7879, false) + "'.";
 			mes "So, you are really going to fight Koshei the Immportal, eh?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
@@ -9262,7 +9262,7 @@ mosk_fild02,243,270,0	script	Marozka#rus31	4_M_LGTGRAND,{
 			mes "Koshei will be extremely hostile to you because you are helping Maria.";
 			next;
 			mes "[Marozka]";
-			mes "Do you still want the " + mesitemlink(7879) + "? Ok, I will give it to you! But, there is one more test.";
+			mes "Do you still want the " + mesitemlink(7879, false) + "? Ok, I will give it to you! But, there is one more test.";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "One more test?";
@@ -9324,7 +9324,7 @@ mosk_fild02,243,270,0	script	Marozka#rus31	4_M_LGTGRAND,{
 				next;
 			} else {
 				mes "[Marozka]";
-				mes "I told you before that I wouldn't give you the " + mesitemlink(7879) + " until you got all questions correct.";
+				mes "I told you before that I wouldn't give you the " + mesitemlink(7879, false) + " until you got all questions correct.";
 				next;
 				mes "[Marozka]";
 				mes "It is not too late to try again. With wisdom comes patience.";
@@ -9366,7 +9366,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "Why are you here, you yummy looking human? If you lotter around here any longer, I will make myself some tasty human soup! Hehehehehe";
 		next;
 		mes "["+ .@player_name$ +"]";
-		mes "I, ah, I.. " + mesitemlink(969) + ".. golden...";
+		mes "I, ah, I.. " + mesitemlink(969, false) + ".. golden...";
 		next;
 		mes "[Baba Yaga]";
 		mes "What are you babbling about?";
@@ -9411,10 +9411,10 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "Ho, you are protected by a Protection Spell. You are no ordinary kid.";
 		next;
 		mes "["+ .@player_name$ +"]";
-		mes "I heard that you are able to make the '" + mesitemlink(7493) + "' and that's why I am here!";
+		mes "I heard that you are able to make the '" + mesitemlink(7493, false) + "' and that's why I am here!";
 		next;
 		mes "[Baba Yaga]";
-		mes "'" + mesitemlink(7493) + "'? Why do you need it?";
+		mes "'" + mesitemlink(7493, false) + "'? Why do you need it?";
 		next;
 		mes "["+ .@player_name$ +"]";
 		mes "I need it to release Maria Mobrena from her dark wall prison.";
@@ -9439,10 +9439,10 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			next;
 		} else {
 			mes "[Baba Yaga]";
-			mes "What? I cannot make you the '" + mesitemlink(7493) + "' without the materials.";
+			mes "What? I cannot make you the '" + mesitemlink(7493, false) + "' without the materials.";
 			next;
 			mes "[Baba Yaga]";
-			mes "Go and find ^0000ff2 " + mesitemlink(724) + ", 3 " + mesitemlink(969) + ", 1 " + mesitemlink(7877) + ", 2 " + mesitemlink(7878) + ", 10 " + mesitemlink(7879) + "^000000!";
+			mes "Go and find ^0000ff2 " + mesitemlink(724, false) + ", 3 " + mesitemlink(969, false) + ", 1 " + mesitemlink(7877, false) + ", 2 " + mesitemlink(7878, false) + ", 10 " + mesitemlink(7879, false) + "^000000!";
 			close;
 		}
 		mes "[Baba Yaga]";
@@ -9462,11 +9462,11 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "- at you carefully -";
 		next;
 		mes "[Baba Yaga]";
-		mes "Hmmm, you look energetic and strong. Ok, while I make the '" + mesitemlink(7493) + "', you must first do a favor for me!";
+		mes "Hmmm, you look energetic and strong. Ok, while I make the '" + mesitemlink(7493, false) + "', you must first do a favor for me!";
 		next;
 		if (BaseClass == Job_Archer) {
 			mes "[Baba Yaga]";
-			mes "My cow has run away. Find her and cast a Return Spell on her. The spell is '^ff0000Good feed is orange-flavored^000000'. You sould remember it.";
+			mes "My cow has run away. Find her and cast a Return Spell on her. The spell is '^ff0000Good feed is " + mesitemlink(582, false) + "-flavored^000000'. You sould remember it.";
 			next;
 			mes "[Baba Yaga]";
 			mes "Ok! Move, move! You better be quick or I will find a way to punish you. Ehehehehehe.";
@@ -9475,7 +9475,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			close;
 		} else if (BaseClass == Job_Acolyte) {
 			mes "[Baba Yaga]";
-			mes "Behind my house, there is noisy coffin. It has been so nosiy recently that I can't sleep. Silence it.";
+			mes "Behind my house, there is noisy cof" + mesitemlink(951, false) + ". It has been so nosiy recently that I can't sleep. Silence it.";
 			next;
 			mes "[Baba Yaga]";
 			mes "Ok! Move, move! You better be quick or I will find a way to punish you. Ehehehehehe.";
@@ -9520,7 +9520,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		close;
 	} else if (rhea_rus_main > 10 && rhea_rus_main < 16) {
 		mes "[Baba Yaga]";
-		mes "My cow has run away. Find her and cast a Return Spell on her. The spell is '^ff0000Good feed is orange-flavored^000000'. You sould remember it.";
+		mes "My cow has run away. Find her and cast a Return Spell on her. The spell is '^ff0000Good feed is " + mesitemlink(582, false) + "-flavored^000000'. You sould remember it.";
 		next;
 		mes "[Baba Yaga]";
 		mes "Ok! Move, move! You better be quick or I will find a way to punish you. Ehehehehehe.";
@@ -9640,7 +9640,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "I have done your favor! I got the cow!";
 		next;
 		mes "[Baba Yaga]";
-		mes "Oh, great. I just finished making the '" + mesitemlink(7493) + "'!";
+		mes "Oh, great. I just finished making the '" + mesitemlink(7493, false) + "'!";
 		next;
 		mes "[Baba Yaga]";
 		mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9650,13 +9650,13 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		close;
 	} else if (rhea_rus_main == 42) {
 		mes "["+ strcharinfo(0) +"]";
-		mes "I have done your favor! The coffin is now silenced!";
+		mes "I have done your favor! The cof" + mesitemlink(951, false) + " is now silenced!";
 		next;
 		mes "[Baba Yaga]";
 		mes "Oh, yes. I can sleep at night now. Kehehehehe.";
 		next;
 		mes "[Baba Yaga]";
-		mes "You are on time. I just finished making the '" + mesitemlink(7493) + "'!";
+		mes "You are on time. I just finished making the '" + mesitemlink(7493, false) + "'!";
 		next;
 		mes "[Baba Yaga]";
 		mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9673,7 +9673,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			mes "Oh, yes. They are expensive ones. Those bad pirates.. Kehehehehe.";
 			next;
 			mes "[Baba Yaga]";
-			mes "You are on time. I just finished making the '" + mesitemlink(7493) + "'!";
+			mes "You are on time. I just finished making the '" + mesitemlink(7493, false) + "'!";
 			next;
 			mes "[Baba Yaga]";
 			mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9700,7 +9700,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "I have done your favor. Give me the key!";
 		next;
 		mes "[Baba Yaga]";
-		mes "Oh, yes, you violent tempered child. I just finished making the '" + mesitemlink(7493) + "'.";
+		mes "Oh, yes, you violent tempered child. I just finished making the '" + mesitemlink(7493, false) + "'.";
 		next;
 		mes "[Baba Yaga]";
 		mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9716,7 +9716,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "Oh, yes. That irritating ghost is gone. Kehehehehe.";
 		next;
 		mes "[Baba Yaga]";
-		mes "You are on time. I just finished making the '" + mesitemlink(7493) + "'!";
+		mes "You are on time. I just finished making the '" + mesitemlink(7493, false) + "'!";
 		next;
 		mes "[Baba Yaga]";
 		mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9733,7 +9733,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "Ooh, yes. Well done. My flying broom was getting old. Kehehehehe.";
 		next;
 		mes "[Baba Yaga]";
-		mes "You are on time. I just finished making the '" + mesitemlink(7493) + "'!";
+		mes "You are on time. I just finished making the '" + mesitemlink(7493, false) + "'!";
 		next;
 		mes "[Baba Yaga]";
 		mes "Here, help Maria with this key and watch out for Koshei. He is very dangerous. Kehehehehehe.";
@@ -9769,10 +9769,10 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "Water to enliven Maria...";
 		next;
 		mes "[Baba Yaga]";
-		mes "'Living Water'... I just need the ingredients.  I need ^0000ff1 " + mesitemlink(523) + "^000000 and ^0000ff2 Yggdrasil Leaves^000000.";
+		mes "'Living Water'... I just need the ingredients.  I need ^0000ff1 " + mesitemlink(523, false) + "^000000 and ^0000ff2 Yggdrasil Leaves^000000.";
 		next;
 		mes "[Baba Yaga]";
-		mes "And 'Dead Water'.. I need ^0000ff1 " + mesitemlink(12020) + "^000000 and ^0000ff10 " + mesitemlink(703) + " Leaflets^000000.";
+		mes "And 'Dead Water'.. I need ^0000ff1 " + mesitemlink(12020, false) + "^000000 and ^0000ff10 " + mesitemlink(703, false) + " Leaflets^000000.";
 		next;
 		mes "[Baba Yaga]";
 		mes "Bring them to me quickly! Time is running out!";
@@ -9787,23 +9787,23 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			mes "[Baba Yaga]";
 			mes "Ok, let's make the 'Living Water' first...";
 			next;
-			mes "- Baba Yaga brings a big " + mesitemlink(7482) + ", -";
-			mes "- pours the " + mesitemlink(523) + " in it, -";
+			mes "- Baba Yaga brings a big " + mesitemlink(7482, false) + ", -";
+			mes "- pours the " + mesitemlink(523, false) + " in it, -";
 			mes "- puts the Yggdrasil Leaves -";
 			mes "- in it and stirs them up -";
 			mes "- as it casts strange spells -";
 			next;
 			mes "[Baba Yaga]";
-			mes "Yg~ Yg~ Yggdrasil~ Yggdrasil has lots of " + mesitemlink(998) + "~";
+			mes "Yg~ Yg~ Yggdrasil~ Yggdrasil has lots of " + mesitemlink(998, false) + "~";
 			specialeffect EF_PHARMACY_OK;
 			next;
 			mes "[Baba Yaga]";
 			mes "Here, I made the 'Living Water' so now let's make the 'Dead Water'...";
 			next;
 			mes "- Baba Yaga pours the cursed -";
-			mes "- water in another " + mesitemlink(7482) + ", then -";
-			mes "- pounds the " + mesitemlink(703) + " leaflets, -";
-			mes "- puts their juice in the " + mesitemlink(7482) + " -";
+			mes "- water in another " + mesitemlink(7482, false) + ", then -";
+			mes "- pounds the " + mesitemlink(703, false) + " leaflets, -";
+			mes "- puts their juice in the " + mesitemlink(7482, false) + " -";
 			mes "- and stirs them together -";
 			mes "- as it casts strange spells -";
 			next;
@@ -9834,10 +9834,10 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			close;
 		}
 		mes "[Baba Yaga]";
-		mes "'Living Water'... I just need the ingredients.  I need ^0000ff1 " + mesitemlink(523) + "^000000 and ^0000ff2 Yggdrasil Leaves^000000.";
+		mes "'Living Water'... I just need the ingredients.  I need ^0000ff1 " + mesitemlink(523, false) + "^000000 and ^0000ff2 Yggdrasil Leaves^000000.";
 		next;
 		mes "[Baba Yaga]";
-		mes "And 'Dead Water'.. I need ^0000ff1 " + mesitemlink(12020) + "^000000 and ^0000ff10 " + mesitemlink(703) + " Leaflets^000000.";
+		mes "And 'Dead Water'.. I need ^0000ff1 " + mesitemlink(12020, false) + "^000000 and ^0000ff10 " + mesitemlink(703, false) + " Leaflets^000000.";
 		next;
 		mes "[Baba Yaga]";
 		mes "Bring them to me quickly! Time is running out!";
@@ -9869,7 +9869,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 		mes "So that's when I decided that if you could subdue Koshei, it would be the only way to release Maria instead of using her to maintain the seal.";
 		next;
 		mes "[Baba Yaga]";
-		mes "So, that is why I helped you out by making the '" + mesitemlink(7493) + "'.";
+		mes "So, that is why I helped you out by making the '" + mesitemlink(7493, false) + "'.";
 		next;
 		mes "[Baba Yaga]";
 		mes "Koshei is still alive, but he is weaker than before. So I don't need to use Maria anymore to seal Koshei.";
@@ -9924,7 +9924,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			mes "With your materials, I can make ^0000ff"+ .@total +"^000000 "+ getitemname(.@item) +".";
 			next;
 			mes "[Baba Yaga]";
-			mes "How many do you want me to make? "+ .@" + mesitemlink(7772) + "$ +". Kehehehehe.";
+			mes "How many do you want me to make? "+ .@" + mesitemlink(7772, false) + "$ +". Kehehehehe.";
 			next;
 			while(1) {
 				input .@input;
@@ -9951,7 +9951,7 @@ mosk_dun02,48,214,5	script	Baba Yaga#rus32	4_F_BABAYAGA,{
 			next;
 			mes "- Baba Yaga grinds the "+ getitemname(.@item_req[3]) +" -";
 			mes "- and pours the "+ getitemname(.@item_req[0]) +" -";
-			mes "- into the " + mesitemlink(7134) + ", -";
+			mes "- into the " + mesitemlink(7134, false) + ", -";
 			mes "- boils and cools it down -";
 			mes "- and puts it in the Test Tube -";
 			next;
@@ -10086,7 +10086,7 @@ mosk_dun02,65,232,0	script	Noisy Coffin#rus36	4_NFCOFFIN,{
 		if (rhea_rus_main < 16) close;
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "Ehh, that's one noisy coffin.";
+		mes "Ehh, that's one noisy cof" + mesitemlink(951, false) + ".";
 		next;
 		mes "[Noisy Coffin]";
 		mes "I was alive! I was alive!";
@@ -10142,9 +10142,9 @@ mosk_dun02,65,232,0	script	Noisy Coffin#rus36	4_NFCOFFIN,{
 			case 3:
 				if (countitem(523)) {
 					mes "["+ strcharinfo(0) +"]";
-					mes "If you don't shut up, I will pour " + mesitemlink(523) + " on you!";
+					mes "If you don't shut up, I will pour " + mesitemlink(523, false) + " on you!";
 					next;
-					mes "- You open the bottle of " + mesitemlink(523) + " and pour it around the coffin carefully !! -";
+					mes "- You open the bottle of " + mesitemlink(523, false) + " and pour it around the cof" + mesitemlink(951, false) + " carefully !! -";
 					specialeffect EF_SPHERE;
 					next;
 					mes "[Noisy Coffin]";
@@ -10162,7 +10162,7 @@ mosk_dun02,65,232,0	script	Noisy Coffin#rus36	4_NFCOFFIN,{
 					}
 				} else {
 					mes "["+ strcharinfo(0) +"]";
-					mes "Yeah, where's the " + mesitemlink(523) + "?";
+					mes "Yeah, where's the " + mesitemlink(523, false) + "?";
 					next;
 					mes "["+ strcharinfo(0) +"]";
 					mes "...... I don't have any...";
@@ -10177,7 +10177,7 @@ mosk_dun02,65,232,0	script	Noisy Coffin#rus36	4_NFCOFFIN,{
 				mes "...If you don't shut up...";
 				mes "......I will kick you!!";
 				next;
-				mes "- You close your eyes, take a deep breathe and kick the coffin with the might of God !! -";
+				mes "- You close your eyes, take a deep breathe and kick the cof" + mesitemlink(951, false) + " with the might of God !! -";
 				next;
 				mes "[Noisy Coffin]";
 				if (rhea_rus_main == 19) {
@@ -10255,7 +10255,7 @@ treasure01,165,58,0	script	Old Treasure Box#rus37	HIDDEN_NPC,{
 		mes "- It is locked -";
 		close;
 	} else if (rhea_rus_main == 25) {
-		mes "- Around the locked " + mesitemlink(7948) + ", a women having snakes on her head is engraved -";
+		mes "- Around the locked " + mesitemlink(7948, false) + ", a women having snakes on her head is engraved -";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "Does this work...";
@@ -10280,7 +10280,7 @@ treasure01,165,58,0	script	Old Treasure Box#rus37	HIDDEN_NPC,{
 		mes "- You wave your arms and cover your eyes. The mirror inside your bag reflects the light from her eyes accidentally !! -";
 		specialeffect EF_FLASHER;
 		next;
-		mes "- The light reflected goes to the woman shape and fumes comes from the " + mesitemlink(7948) + " and it opens !! -";
+		mes "- The light reflected goes to the woman shape and fumes comes from the " + mesitemlink(7948, false) + " and it opens !! -";
 		next;
 		mes "- ^0000ff You find Baba Yaga's spoon !!^000000 -";
 		// changequest 8167,8168;
@@ -10288,7 +10288,7 @@ treasure01,165,58,0	script	Old Treasure Box#rus37	HIDDEN_NPC,{
 		getitem 7880,1;
 		close;
 	} else if (rhea_rus_main == 43) {
-		mes "- The " + mesitemlink(7444) + " where you found the silver spoons -";
+		mes "- The " + mesitemlink(7444, false) + " where you found the silver spoons -";
 		close;
 	}
 	end;
@@ -10393,11 +10393,11 @@ treasure01,98,119,0	script	Dirty Wall#rus39	HIDDEN_NPC,{
 
 treasure01,61,183,0	script	Old_Wooden_Box#rus40	HIDDEN_NPC,{
 	if (rhea_rus_main == 23) {
-		mes "- Something is glimmering inside of the " + mesitemlink(7948) + " -";
+		mes "- Something is glimmering inside of the " + mesitemlink(7948, false) + " -";
 		next;
 		select("Put hand inside the box");
 		if (rand(1,7) == 4) {
-			mes "- You take out something glimmering from the " + mesitemlink(7948) + " -";
+			mes "- You take out something glimmering from the " + mesitemlink(7948, false) + " -";
 			next;
 			mes "- ^0000ffYou find the handle of a broken key !!^000000 -";
 			rhea_rus_main = 24;
@@ -10406,10 +10406,10 @@ treasure01,61,183,0	script	Old_Wooden_Box#rus40	HIDDEN_NPC,{
 		}
 		mes "- You try to put your hand inside it but the gap is too small to do it -";
 		next;
-		mes "- You ruin the " + mesitemlink(7948) + " a little -";
+		mes "- You ruin the " + mesitemlink(7948, false) + " a little -";
 		close;
 	} else if (rhea_rus_main > 23 && rhea_rus_main < 26) {
-		mes "- The old " + mesitemlink(7948) + " that contained the handle of a broken key -";
+		mes "- The old " + mesitemlink(7948, false) + " that contained the handle of a broken key -";
 		close;
 	}
 	end;
@@ -10417,12 +10417,12 @@ treasure01,61,183,0	script	Old_Wooden_Box#rus40	HIDDEN_NPC,{
 
 treasure01,27,115,0	script	Opened Treasure Chest#41	HIDDEN_NPC,{
 	if (rhea_rus_main == 24) {
-		mes "- You open the " + mesitemlink(7948) + ", junk is in it -";
+		mes "- You open the " + mesitemlink(7948, false) + ", junk is in it -";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "... Should I search this...?";
 		next;
-		mes "- You sigh and stretch your hand into the " + mesitemlink(7948) + " -";
+		mes "- You sigh and stretch your hand into the " + mesitemlink(7948, false) + " -";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "...!? What is this?!";
@@ -10453,7 +10453,7 @@ treasure01,27,115,0	script	Opened Treasure Chest#41	HIDDEN_NPC,{
 		// changequest 8166,8167;
 		close;
 	} else if (rhea_rus_main > 24 && rhea_rus_main < 26) {
-		mes "- The junk " + mesitemlink(7948) + " containig the piece of the broken key -";
+		mes "- The junk " + mesitemlink(7948, false) + " containig the piece of the broken key -";
 		close;
 	}
 	end;
@@ -10584,7 +10584,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 		mes "When I was alive, I always stayed still, but now it's too boring...";
 		next;
 		mes "[House Ghost]";
-		mes "I can't even drink my favorite " + mesitemlink(519) + "... Being a ghost is too inconvenient.";
+		mes "I can't even drink my favorite " + mesitemlink(519, false) + "... Being a ghost is too inconvenient.";
 		next;
 		if(select("Can I play with you?:So what can I do for you?") == 1) {
 			mes "[House Ghost]";
@@ -10601,7 +10601,7 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 	} else if (rhea_rus_main == 33) {
 		.@player_name$ = strcharinfo(0);
 		mes "[House Ghost]";
-		mes "Hehe, what about a card game? I have an Angeling, Ghostring and a " + mesitemlink(4001) + ".";
+		mes "Hehe, what about a card game? I have an Angeling, Ghostring and a " + mesitemlink(4001, false) + ".";
 		mes "All you have to do is just guess which card I pick up!";
 		next;
 		mes "[House Ghost]";
@@ -10708,11 +10708,11 @@ mosk_dun02,57,220,0	script	House Ghost Jar#rus43	HIDDEN_NPC,{
 		next;
 		if (countitem(519)) {
 			mes "["+ .@player_name$ +"]";
-			mes "You said you like " + mesitemlink(519) + ". Here, take this.";
+			mes "You said you like " + mesitemlink(519, false) + ". Here, take this.";
 			next;
 		} else {
 			mes "["+ .@player_name$ +"]";
-			mes "You said you like " + mesitemlink(519) + ". Here, take.. Eh?";
+			mes "You said you like " + mesitemlink(519, false) + ". Here, take.. Eh?";
 			next;
 			mes "["+ .@player_name$ +"]";
 			mes "W, where is this? Wait here. I will bring it soon!!";
@@ -10854,7 +10854,7 @@ pay_dun04,163,186,0	script	Ghost Tree#rus45	HIDDEN_NPC,{
 		mes "Ok, then, listen to them.";
 		next;
 		mes "[Kafra Roxie]";
-		mes "I am not good at running but " + mesitemlink(7147) + " won over me and I won over Blossom.";
+		mes "I am not good at running but " + mesitemlink(7147, false) + " won over me and I won over Blossom.";
 		next;
 		mes "[Kafra Blossom]";
 		mes "I think that the smaller you are, the less the air disturbs you. Curly Sue was so fast that I couldn't follow her.";
@@ -10913,17 +10913,17 @@ pay_dun04,163,186,0	script	Ghost Tree#rus45	HIDDEN_NPC,{
 		mes "The second question. Listen carefully and answer!";
 		next;
 		mes "[Ghost Tree]";
-		mes "One day, you, "+ .@player_name$ +", upgraded your '" + mesitemlink(5022) + "', your ancestral treasure.";
+		mes "One day, you, "+ .@player_name$ +", upgraded your '" + mesitemlink(5022, false) + "', your ancestral treasure.";
 		next;
 		mes "["+ .@player_name$ +"]";
 		mes "Eh? I didn't...";
 		next;
 		mes "[Ghost Tree]";
 		mes "Shut up! Listen to me!";
-		mes "While Aragam, Antonio, Hermanthorn, and Holgren, 4 blacksmiths, upgraded the '" + mesitemlink(5022) + "' in turn, it was broken!";
+		mes "While Aragam, Antonio, Hermanthorn, and Holgren, 4 blacksmiths, upgraded the '" + mesitemlink(5022, false) + "' in turn, it was broken!";
 		next;
 		mes "[Ghost Tree]";
-		mes "The stauts of '" + mesitemlink(5022) + "' was +7. Here, you guess who broke it!";
+		mes "The stauts of '" + mesitemlink(5022, false) + "' was +7. Here, you guess who broke it!";
 		next;
 		mes "[Aragam]";
 		mes "I heard that Holgren upraded it up to +7. It was overpace.";
@@ -10938,7 +10938,7 @@ pay_dun04,163,186,0	script	Ghost Tree#rus45	HIDDEN_NPC,{
 		mes "I did it after Aragam!";
 		next;
 		mes "[Ghost Tree]";
-		mes "Have you heard all of them? Who broke the '" + mesitemlink(5022) + "'?!";
+		mes "Have you heard all of them? Who broke the '" + mesitemlink(5022, false) + "'?!";
 		next;
 		input .@input$;
 		mes "["+ .@player_name$ +"]";

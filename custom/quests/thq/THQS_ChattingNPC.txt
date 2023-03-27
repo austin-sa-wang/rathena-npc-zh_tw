@@ -49,7 +49,7 @@ N_Member:
 yuno_in01,33,162,3	script	Smile Helper	92,{
 	mes "[Smile Gal]";
 	mes "Oh man...I am so sick of";
-	mes "trading " + mesitemlink(2278) + " masks for crap.";
+	mes "trading " + mesitemlink(2278, false) + " masks for crap.";
 	mes " ";
 	mes "You ask me for one and you'll find yourself 10 pounds lighter!";
 	close;

@@ -136,7 +136,7 @@ prontera,153,353,4	script	Messenger#prince1	105,{
 		mes "I want you to go to the Prontera Royal Court to help in the next King's selection.";
 		next;
 		mes "[Messenger]";
-		mes "I will stay here to find other adventurers. May your " + mesitemlink(7855) + " bring great glory to Rune-Midgarts!";
+		mes "I will stay here to find other adventurers. May your " + mesitemlink(7855, false) + " bring great glory to Rune-Midgarts!";
 		close;
 	}
 	else {
@@ -523,7 +523,7 @@ prt_castle,117,163,5	script	Inspector#prince	755,{
 				next;
 				mes "[Inspector]";
 				mes "Let's continue our talk";
-				mes "after getting the 2 " + mesitemlink(1064) + ".";
+				mes "after getting the 2 " + mesitemlink(1064, false) + ".";
 				mes "Ciao...";
 				close;
 			}
@@ -534,7 +534,7 @@ prt_castle,117,163,5	script	Inspector#prince	755,{
 		mes "Ahh, you came to meet me before huh? I guess you've already been to Glastheim.";
 		next;
 		mes "[Inspector]";
-		mes "Do you have the 2 " + mesitemlink(1064) + " I mentioned?";
+		mes "Do you have the 2 " + mesitemlink(1064, false) + " I mentioned?";
 		next;
 		if (countitem(1064) > 1) {
 			mes "[Inspector]";
@@ -935,7 +935,7 @@ prt_castle,117,163,5	script	Inspector#prince	755,{
 	else if (nk_prince == 7) {
 		mes "[Inspector]";
 		mes "How is it going?";
-		mes "Grading someone is not a " + mesitemlink(539) + ". It's real hard work indeed. You do the hard work for our country.";
+		mes "Grading someone is not a " + mesitemlink(539, false) + ". It's real hard work indeed. You do the hard work for our country.";
 		next;
 		if ((nkprince_eisen == 15) && (checkquest(10025) == 0 || checkquest(10025) == 1)) {
 			mes "-I tell him about the Ahrum and Ernst accident.-";
@@ -1165,7 +1165,7 @@ prt_castle,274,372,4	script	Servant#hans	48,{
 			emotion ET_SURPRISE;
 			mes "[Hans]";
 			mes "Ah, Prince!";
-			mes "You can cut your " + mesitemlink(1811) + "!";
+			mes "You can cut your " + mesitemlink(1811, false) + "!";
 			next;
 			mes "[Erich]";
 			mes ".........";
@@ -1743,7 +1743,7 @@ prt_castle,364,375,4	script	Prince#peter	987,{
 			if (checkquest(10014) == 0 || checkquest(10014) == 1) {
 				mes "[Peter]";
 				mes "As you said.";
-				mes "I've heard that her life is like a " + mesitemlink(712) + " when I lost it.";
+				mes "I've heard that her life is like a " + mesitemlink(712, false) + " when I lost it.";
 				mes "I will go see her on my own.";
 				next;
 				mes "[Peter]";
@@ -1843,13 +1843,13 @@ prt_castle,364,375,4	script	Prince#peter	987,{
 					mes "Then I have a favor to ask of you... Can you listen to my story?";
 					next;
 					mes "[Peter]";
-					mes "Originally, I didn't like growing a " + mesitemlink(2240) + "... but I had one opportunity to change... My thoughts recently are that someone has offered me the chance.";
+					mes "Originally, I didn't like growing a " + mesitemlink(2240, false) + "... but I had one opportunity to change... My thoughts recently are that someone has offered me the chance.";
 					next;
 					mes "[Peter]";
-					mes "It is because of an unknown " + mesitemlink(7801) + "...";
+					mes "It is because of an unknown " + mesitemlink(7801, false) + "...";
 					next;
 					mes "[Peter]";
-					mes "What she told me in the letter was that my image was too sharp, and if I grew my " + mesitemlink(2240) + ", the contour of my face would be quite hidden; and it would look far better.";
+					mes "What she told me in the letter was that my image was too sharp, and if I grew my " + mesitemlink(2240, false) + ", the contour of my face would be quite hidden; and it would look far better.";
 					next;
 					mes "[Peter]";
 					mes "I want to repay her.";
@@ -2104,10 +2104,10 @@ prt_castle,314,373,4	script	Prince#eisen	983,{
 			next;
 			mes "- swish. - ";
 			next;
-			mes "- Ahrum casually throws a " + mesitemlink(1231) + " to Ernst.-";
+			mes "- Ahrum casually throws a " + mesitemlink(1231, false) + " to Ernst.-";
 			next;
 			mes "[Ernst]";
-			mes "Eh?... What's this about?... A " + mesitemlink(1231) + " of Walter family?...Why?";
+			mes "Eh?... What's this about?... A " + mesitemlink(1231, false) + " of Walter family?...Why?";
 			next;
 			mes "[Ahrum]";
 			mes "Now this is perfect timing. Even our witness is here! Ern, you remember our promise clearly, right?";
@@ -2724,10 +2724,10 @@ prt_castle,314,371,0	script	Prince#another_ern	985,{
 		next;
 		mes "- swish. - ";
 		next;
-		mes "- Ahrum casually throws a " + mesitemlink(1231) + " to Ernst.-";
+		mes "- Ahrum casually throws a " + mesitemlink(1231, false) + " to Ernst.-";
 		next;
 		mes "[Ernst]";
-		mes "Eh?... What's this about?... A " + mesitemlink(1231) + " of Walter family?...Why?";
+		mes "Eh?... What's this about?... A " + mesitemlink(1231, false) + " of Walter family?...Why?";
 		next;
 		mes "[Ahrum]";
 		mes "Now this is perfect timing. Even our witness is here! Ern, you remember our promise clearly, right?";
@@ -3083,7 +3083,7 @@ prt_castle,286,201,7	script	Prince#eisen3	983,{
 	mes "You have come here to offend me? Do you think you can beat me, Eigen Ahrum?!";
 	next;
 	mes "[Ahrum]";
-	mes "Fight? That's so rubbish. I don't care for it. I just came here to " + mesitemlink(711) + " what I want to say to you. I don't even feel like fighting with you. I am leaving!";
+	mes "Fight? That's so rubbish. I don't care for it. I just came here to " + mesitemlink(711, false) + " what I want to say to you. I don't even feel like fighting with you. I am leaving!";
 	next;
 	mes "[Helmut]";
 	mes "Hold on, coward! Are you fleeing now?! Such a coward! Let's finish our battle!";
@@ -3523,7 +3523,7 @@ OnTouch:
 		mes "..............";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "" + mesitemlink(519) + " is all spilt.";
+		mes "" + mesitemlink(519, false) + " is all spilt.";
 		mes "Just forget about it.";
 		next;
 		mes "[" + strcharinfo(0) + "]";

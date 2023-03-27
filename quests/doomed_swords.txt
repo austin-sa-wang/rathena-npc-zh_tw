@@ -68,7 +68,7 @@ prt_in,162,11,2	script	Ghatu#magum	86,{
 		mes "[Ghatu]";
 		mes "But I suppose blacksmiths";
 		mes "can never really give up the";
-		mes "" + mesitemlink(1354) + ". If you can manage to";
+		mes "" + mesitemlink(1354, false) + ". If you can manage to";
 		mes "find him, perhaps you can ask";
 		mes "him to forge something for you?";
 		set event_magum,5;
@@ -102,7 +102,7 @@ prt_in,162,11,2	script	Ghatu#magum	86,{
 		mes "[Ghatu]";
 		mes "But I suppose blacksmiths";
 		mes "can never really give up the";
-		mes "" + mesitemlink(1354) + ". If you can manage to";
+		mes "" + mesitemlink(1354, false) + ". If you can manage to";
 		mes "find him, perhaps you can ask";
 		mes "him to forge something for you?";
 		set event_magum,5;
@@ -122,7 +122,7 @@ prontera,197,188,2	script	Veeyop#magum	50,{
 	if (dmdswrd_Q2 & 1) {
 		mes "[Veeyop]";
 		mes "You know, talking";
-		mes "about " + mesitemlink(1138) + " and";
+		mes "about " + mesitemlink(1138, false) + " and";
 		mes "the death of Baldur just...";
 		mes "It didn't occur to me until";
 		mes "now just how morbid it all";
@@ -131,7 +131,7 @@ prontera,197,188,2	script	Veeyop#magum	50,{
 	}
 	mes "[Veeyop]";
 	mes "Have you heard the";
-	mes "legend of " + mesitemlink(1138) + "?";
+	mes "legend of " + mesitemlink(1138, false) + "?";
 	mes "It's a tree, known for being";
 	mes "the only thing able to harm";
 	mes "Baldur, god of light. In fact,";
@@ -143,12 +143,12 @@ prontera,197,188,2	script	Veeyop#magum	50,{
 	mes "someone actually forged";
 	mes "a sword so powerful, it's";
 	mes "worthy of the name,";
-	mes "''" + mesitemlink(1138) + ".''";
+	mes "''" + mesitemlink(1138, false) + ".''";
 	next;
 	mes "[Veeyop]";
 	mes "There's only one person";
 	mes "in the world who can forge";
-	mes "that " + mesitemlink(1138) + " sword. I...";
+	mes "that " + mesitemlink(1138, false) + " sword. I...";
 	mes "I think he used to live in";
 	mes "Prontera, but then he moved";
 	mes "away for some weird reason.";
@@ -162,7 +162,7 @@ morocc,281,178,2	script	Cetsu#magum	97,{
 	if (dmdswrd_Q2 & 2) {
 		mes "[Cetsu]";
 		mes "I keep thinking about";
-		mes "" + mesitemlink(1237) + ", and it occurred";
+		mes "" + mesitemlink(1237, false) + ", and it occurred";
 		mes "to me that the spell used to";
 		mes "to endow that dagger with its";
 		mes "strength probably isn't magic";
@@ -172,7 +172,7 @@ morocc,281,178,2	script	Cetsu#magum	97,{
 		mes "There's all sorts of";
 		mes "creepy stories going";
 		mes "around. I even hear";
-		mes "that the " + mesitemlink(1237) + "";
+		mes "that the " + mesitemlink(1237, false) + "";
 		mes "might have some";
 		mes "sort of weird curse?";
 		close;
@@ -181,7 +181,7 @@ morocc,281,178,2	script	Cetsu#magum	97,{
 	mes "You know, there are";
 	mes "stories of an incredibly";
 	mes "powerful dagger that's";
-	mes "stronger than " + mesitemlink(999) + ".";
+	mes "stronger than " + mesitemlink(999, false) + ".";
 	mes "I think it was made";
 	mes "out of ogre teeth?";
 	next;
@@ -193,7 +193,7 @@ morocc,281,178,2	script	Cetsu#magum	97,{
 	mes "a special spell or something.";
 	next;
 	mes "[Cetsu]";
-	mes "This dagger, the " + mesitemlink(1237) + ",";
+	mes "This dagger, the " + mesitemlink(1237, false) + ",";
 	mes "can only be made by one person";
 	mes "in the entire world. This guy used to live in Prontera, but then he";
 	mes "moved away for some reason.";
@@ -214,7 +214,7 @@ izlude_in,173,88,2	script	Nain#magum	102,{
 	if (dmdswrd_Q2 == 4) {
 		mes "[Nain]";
 		mes "It doesn't matter how";
-		mes "powerful the " + mesitemlink(1169) + "";
+		mes "powerful the " + mesitemlink(1169, false) + "";
 		mes "is: if it were to end up in";
 		mes "my hands, I would get rid";
 		mes "of it right away. I'd never risk losing my mind to that curse...";
@@ -226,10 +226,10 @@ izlude_in,173,88,2	script	Nain#magum	102,{
 	mes "the criminals that had been";
 	mes "sentenced to death. That";
 	mes "accursed blade is known";
-	mes "as the " + mesitemlink(1169) + ".";
+	mes "as the " + mesitemlink(1169, false) + ".";
 	next;
 	mes "[Nain]";
-	mes "As the " + mesitemlink(1169) + " slayed";
+	mes "As the " + mesitemlink(1169, false) + " slayed";
 	mes "more criminals, the rage and";
 	mes "bloodlust of its victims began";
 	mes "to accumulate upon the blade.";
@@ -237,7 +237,7 @@ izlude_in,173,88,2	script	Nain#magum	102,{
 	next;
 	mes "[Nain]";
 	mes "The last person to wield";
-	mes "the " + mesitemlink(1169) + " almost lost";
+	mes "the " + mesitemlink(1169, false) + " almost lost";
 	mes "his mind to the sword. He saved himself by giving it to a talented";
 	mes "blacksmith who would destroy it for him, thus saving his soul.";
 	next;
@@ -247,7 +247,7 @@ izlude_in,173,88,2	script	Nain#magum	102,{
 	mes "city of Prontera, but rumor has";
 	mes "it that if you can find him, he";
 	mes "can forge that accursed";
-	mes "" + mesitemlink(1169) + " anew...";
+	mes "" + mesitemlink(1169, false) + " anew...";
 	if (event_magum == 1)
 		set event_magum,5;
 	set dmdswrd_Q2,dmdswrd_Q2 | 4;
@@ -364,7 +364,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Do you understand the curse";
-					mes "on that sword? The " + mesitemlink(1138) + "";
+					mes "on that sword? The " + mesitemlink(1138, false) + "";
 					mes "derives its dark power from the";
 					mes "twig that was used to kill Baldur, god of light. Let me relate the";
 					mes "story as briefly as I can...";
@@ -396,7 +396,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "Of all the beings and objects";
 					mes "in the universe, Freya only";
 					mes "neglected to ask one tree to";
-					mes "make this oath: the " + mesitemlink(1138) + ". Freyja believed it was far too";
+					mes "make this oath: the " + mesitemlink(1138, false) + ". Freyja believed it was far too";
 					mes "small and insignificant to ask.";
 					next;
 					mes "[Mysterious Blacksmith]";
@@ -418,20 +418,20 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "[Mysterious Blacksmith]";
 					mes "Freyja suspected nothing and";
 					mes "told Loki about the secret of";
-					mes "" + mesitemlink(1138) + ". The next time the gods played their game of throwing";
-					mes "objects at Baldur, Loki was there with a small " + mesitemlink(1138) + " twig.";
+					mes "" + mesitemlink(1138, false) + ". The next time the gods played their game of throwing";
+					mes "objects at Baldur, Loki was there with a small " + mesitemlink(1138, false) + " twig.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Then, to compound his";
 					mes "treachery, Loki tricked";
 					mes "Hod, Baldur's blind twin";
 					mes "brother, into throwing the";
-					mes "twig into Baldur's " + mesitemlink(7855) + ". And";
+					mes "twig into Baldur's " + mesitemlink(7855, false) + ". And";
 					mes "so, the god of light was slain.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Over the years,";
-					mes "" + mesitemlink(1138) + " has been";
+					mes "" + mesitemlink(1138, false) + " has been";
 					mes "fashioned into the sword";
 					mes "that you may be familiar";
 					mes "with today. Its power is";
@@ -446,18 +446,18 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "items. They'll make sense...";
 					next;
 					mes "[Mysterious Blacksmith]";
-					mes "^0099FF1 " + mesitemlink(7018) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7019) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7020) + "^000000 and";
-					mes "^0099FF1 " + mesitemlink(7021) + "^000000.";
+					mes "^0099FF1 " + mesitemlink(7018, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7019, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7020, false) + "^000000 and";
+					mes "^0099FF1 " + mesitemlink(7021, false) + "^000000.";
 					mes "That is what I need.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I'm not asking for much.";
 					mes "You are only bringing the raw";
 					mes "materials to forge the sword,";
-					mes "and an " + mesitemlink(714) + " to prove your";
+					mes "and an " + mesitemlink(714, false) + " to prove your";
 					mes "worthiness to me. I will wait";
 					mes "for your return, adventurer.";
 					set dmdswrd_Q2,dmdswrd_Q2 | 8;
@@ -467,7 +467,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				mes "[Mysterious Blacksmith]";
 				mes "Just by looking at you,";
 				mes "I can tell that you don't know";
-				mes "enough about the " + mesitemlink(1138) + "";
+				mes "enough about the " + mesitemlink(1138, false) + "";
 				mes "to fully understand all of the";
 				mes "risks that come with wielding that sword. Yes, you're too green.";
 				next;
@@ -501,29 +501,29 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "fair to warn you that";
 					mes "the power of the curse";
 					mes "is such that the more you";
-					mes "use the " + mesitemlink(1237) + ", the more it burns away at your very soul...";
+					mes "use the " + mesitemlink(1237, false) + ", the more it burns away at your very soul...";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I am willing to forge";
-					mes "the " + mesitemlink(1237) + " if you can";
+					mes "the " + mesitemlink(1237, false) + " if you can";
 					mes "prove worthy to wield its";
 					mes "power and provide all of the";
 					mes "materials I need to create it.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I will need...";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
 					mes "^0099FF100 Ogre Teeth^000000,";
 					mes "^0099FF10 Blades of Darkness^000000,";
 					mes "^0099FF5 Cursed Rubies^000000 and";
-					mes "^0099FF1 " + mesitemlink(6071) + " Handle^000000.";
+					mes "^0099FF1 " + mesitemlink(6071, false) + " Handle^000000.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I don't need the";
-					mes "" + mesitemlink(714) + " to create";
+					mes "" + mesitemlink(714, false) + " to create";
 					mes "the accursed sword, but I do";
 					mes "require you to prove that you";
-					mes "are worthy of the " + mesitemlink(1237) + "'s";
+					mes "are worthy of the " + mesitemlink(1237, false) + "'s";
 					mes "power. Can you truly handle it?";
 					set dmdswrd_Q2,dmdswrd_Q2 | 16;
 					set event_magum,6;
@@ -535,7 +535,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				mes "for, do you? I won't create";
 				mes "that kind of weapon for any";
 				mes "ignorant fool. Learn more about";
-				mes "" + mesitemlink(1237) + " before you ask again!";
+				mes "" + mesitemlink(1237, false) + " before you ask again!";
 				close;
 			case 3:
 				if (dmdswrd_Q2 & 4) {
@@ -554,7 +554,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "regret of the slain.";
 					next;
 					mes "[Mysterious Blacksmith]";
-					mes "Over time, the " + mesitemlink(1169) + "";
+					mes "Over time, the " + mesitemlink(1169, false) + "";
 					mes "accumulated a truly dreadful";
 					mes "power from the hatred of those";
 					mes "it had killed. However, he who";
@@ -570,17 +570,17 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "[Mysterious Blacksmith]";
 					mes "Just bring me...";
 					mes "^0099FF50 Amulets^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF2 " + mesitemlink(1169) + "'s Gloves^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF2 " + mesitemlink(1169, false) + "'s Gloves^000000,";
 					mes "^0099FF10 Bloody Edges^000000 and";
 					mes "^0099FF3 Necklaces of Oblivion^000000.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Those are the items I need";
 					mes "to create a sword imbued with";
-					mes "evil power. As for the " + mesitemlink(714) + ", consider it my test to see if you";
+					mes "evil power. As for the " + mesitemlink(714, false) + ", consider it my test to see if you";
 					mes "are truly capable of wielding";
-					mes "the accursed " + mesitemlink(1169) + "...";
+					mes "the accursed " + mesitemlink(1169, false) + "...";
 					set dmdswrd_Q2,dmdswrd_Q2 | 32;
 					set event_magum,6;
 					close;
@@ -589,7 +589,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				mes "Do you even know what";
 				mes "you are asking of me...?";
 				mes "Fool! Go and learn more";
-				mes "about the " + mesitemlink(1169) + "! Then,";
+				mes "about the " + mesitemlink(1169, false) + "! Then,";
 				mes "maybe you'll understand how";
 				mes "dangerous that sword truly is!";
 				close;
@@ -621,17 +621,17 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 			case 1:
 				if ((dmdswrd_Q2 & 1) || (dmdswrd_Q2 & 8)) {
 					mes "[Mysterious Blacksmith]";
-					mes "^0099FF1 " + mesitemlink(7018) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7019) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7020) + "^000000 and";
-					mes "^0099FF1 " + mesitemlink(7021) + "^000000.";
+					mes "^0099FF1 " + mesitemlink(7018, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7019, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7020, false) + "^000000 and";
+					mes "^0099FF1 " + mesitemlink(7021, false) + "^000000.";
 					mes "That is what I need.";
 					close;
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "Hmm. You don't understand";
-				mes "enough about " + mesitemlink(1138) + " for";
+				mes "enough about " + mesitemlink(1138, false) + " for";
 				mes "me to risk forging that sword";
 				mes "for you. Think again: which";
 				mes "sword did you ask me to create?";
@@ -640,16 +640,16 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				if ((dmdswrd_Q2 & 2) || (dmdswrd_Q2 & 16)) {
 					mes "[Mysterious Blacksmith]";
 					mes "I will need...";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
 					mes "^0099FF100 Ogre Teeth^000000,";
 					mes "^0099FF10 Blades of Darkness^000000,";
 					mes "^0099FF5 Cursed Rubies^000000 and";
-					mes "^0099FF1 " + mesitemlink(6071) + " Handle^000000.";
+					mes "^0099FF1 " + mesitemlink(6071, false) + " Handle^000000.";
 					close;
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "Hmm. You don't know enough";
-				mes "about the " + mesitemlink(1237) + " for me to";
+				mes "about the " + mesitemlink(1237, false) + " for me to";
 				mes "risk forging it for you. Learn";
 				mes "more about that dagger if you";
 				mes "really want to possess it...";
@@ -659,15 +659,15 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "[Mysterious Blacksmith]";
 					mes "Just bring me...";
 					mes "^0099FF50 Amulets^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF2 " + mesitemlink(1169) + "'s Gloves^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF2 " + mesitemlink(1169, false) + "'s Gloves^000000,";
 					mes "^0099FF10 Bloody Edges^000000 and";
 					mes "^0099FF3 Necklaces of Oblivion^000000.";
 					close;
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "You don't know anything";
-				mes "about the " + mesitemlink(1169) + ". Learn";
+				mes "about the " + mesitemlink(1169, false) + ". Learn";
 				mes "more about that sword before";
 				mes "you consider asking me to";
 				mes "forge that monstrocity.";
@@ -690,7 +690,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 			case 1:
 				if (dmdswrd_Q2 & 8) {
 					mes "[Mysterious Blacksmith]";
-					mes "" + mesitemlink(1138) + ". Hm.";
+					mes "" + mesitemlink(1138, false) + ". Hm.";
 					mes "Let me make sure";
 					mes "that you brought";
 					mes "everything I need to";
@@ -700,15 +700,15 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "[Mysterious Blacksmith]";
 						mes "Well, well.";
 						mes "You've forgotten";
-						mes "to bring ^0099FF1 " + mesitemlink(7018) + "^000000,";
+						mes "to bring ^0099FF1 " + mesitemlink(7018, false) + "^000000,";
 						mes "the embodiment of the";
-						mes "" + mesitemlink(1138) + " twig used to kill Baldur. Hurry and bring it...";
+						mes "" + mesitemlink(1138, false) + " twig used to kill Baldur. Hurry and bring it...";
 						close;
 					}
 					if (countitem(7019) < 1) {
 						mes "[Mysterious Blacksmith]";
 						mes "Hm. You forgot to bring";
-						mes "^0099FF1 " + mesitemlink(7019) + "^000000. We need";
+						mes "^0099FF1 " + mesitemlink(7019, false) + "^000000. We need";
 						mes "that to imbue the sword with";
 						mes "immense, evil power. Go and";
 						mes "find that as quickly as you can!";
@@ -717,7 +717,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					if (countitem(7020) < 1) {
 						mes "[Mysterious Blacksmith]";
 						mes "Hm, you still need to";
-						mes "bring ^0099FF1 " + mesitemlink(7020) + "^000000";
+						mes "bring ^0099FF1 " + mesitemlink(7020, false) + "^000000";
 						mes "to instill the power of misery";
 						mes "and grave portent to this blade...";
 						close;
@@ -735,9 +735,9 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "[Mysterious Blacksmith]";
 						mes "You have everything";
 						mes "I require to forge the";
-						mes "" + mesitemlink(1138) + ", but you must";
+						mes "" + mesitemlink(1138, false) + ", but you must";
 						mes "still prove yourself capable";
-						mes "of wielding it. Bring ^0099FF1 " + mesitemlink(714) + "^000000 and I will recognize your worth.";
+						mes "of wielding it. Bring ^0099FF1 " + mesitemlink(714, false) + "^000000 and I will recognize your worth.";
 						close;
 					}
 					if (countitem(7018) > 0 && countitem(7019) > 0 && countitem(7020) > 0 && countitem(7021) > 0 && countitem(714) > 0) {
@@ -746,7 +746,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "All seems to be in readiness.";
 						mes "Give me a minute to summon";
 						mes "the dark power to forge the";
-						mes "forbidden sword, " + mesitemlink(1138) + ".";
+						mes "forbidden sword, " + mesitemlink(1138, false) + ".";
 						next;
 						mes "[Mysterious Blacksmith]";
 						mes "I... I never thought";
@@ -767,7 +767,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "be consumed by the";
 						mes "power of that sword!";
 						mes "By all means, resist";
-						mes "" + mesitemlink(1138) + "'s tragic curse!";
+						mes "" + mesitemlink(1138, false) + "'s tragic curse!";
 						close;
 					}
 				}
@@ -780,7 +780,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Do you understand the curse";
-					mes "on that sword? The " + mesitemlink(1138) + "";
+					mes "on that sword? The " + mesitemlink(1138, false) + "";
 					mes "derives its dark power from the";
 					mes "twig that was used to kill Baldur, god of light. Let me relate the";
 					mes "story as briefly as I can...";
@@ -812,7 +812,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "Of all the beings and objects";
 					mes "in the universe, Freya only";
 					mes "neglected to ask one tree to";
-					mes "make this oath: the " + mesitemlink(1138) + ". Freyja believed it was far too";
+					mes "make this oath: the " + mesitemlink(1138, false) + ". Freyja believed it was far too";
 					mes "small and insignificant to ask.";
 					next;
 					mes "[Mysterious Blacksmith]";
@@ -834,20 +834,20 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "[Mysterious Blacksmith]";
 					mes "Freyja suspected nothing and";
 					mes "told Loki about the secret of";
-					mes "" + mesitemlink(1138) + ". The next time the gods played their game of throwing";
-					mes "objects at Baldur, Loki was there with a small " + mesitemlink(1138) + " twig.";
+					mes "" + mesitemlink(1138, false) + ". The next time the gods played their game of throwing";
+					mes "objects at Baldur, Loki was there with a small " + mesitemlink(1138, false) + " twig.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Then, to compound his";
 					mes "treachery, Loki tricked";
 					mes "Hod, Baldur's blind twin";
 					mes "brother, into throwing the";
-					mes "twig into Baldur's " + mesitemlink(7855) + ". And";
+					mes "twig into Baldur's " + mesitemlink(7855, false) + ". And";
 					mes "so, the god of light was slain.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Over the years,";
-					mes "" + mesitemlink(1138) + " has been";
+					mes "" + mesitemlink(1138, false) + " has been";
 					mes "fashioned into the sword";
 					mes "that you may be familiar";
 					mes "with today. Its power is";
@@ -862,18 +862,18 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "items. They'll make sense...";
 					next;
 					mes "[Mysterious Blacksmith]";
-					mes "^0099FF1 " + mesitemlink(7018) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7019) + "^000000,";
-					mes "^0099FF1 " + mesitemlink(7020) + "^000000 and";
-					mes "^0099FF1 " + mesitemlink(7021) + "^000000.";
+					mes "^0099FF1 " + mesitemlink(7018, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7019, false) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(7020, false) + "^000000 and";
+					mes "^0099FF1 " + mesitemlink(7021, false) + "^000000.";
 					mes "That is what I need.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I'm not asking for much.";
 					mes "You are only bringing the raw";
 					mes "materials to forge the sword,";
-					mes "and an " + mesitemlink(714) + " to prove your";
+					mes "and an " + mesitemlink(714, false) + " to prove your";
 					mes "worthiness to me. I will wait";
 					mes "for your return, adventurer.";
 					set dmdswrd_Q2,dmdswrd_Q2 | 8;
@@ -881,7 +881,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "Hm. If you truly want";
-				mes "" + mesitemlink(1138) + ", I advise you";
+				mes "" + mesitemlink(1138, false) + ", I advise you";
 				mes "to learn more about it. You";
 				mes "must know the risks involved";
 				mes "in wielding that sort of power...";
@@ -890,7 +890,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 				if (dmdswrd_Q2 & 16) {
 					mes "[Mysterious Blacksmith]";
 					mes "You want to me";
-					mes "to forge " + mesitemlink(1237) + ".";
+					mes "to forge " + mesitemlink(1237, false) + ".";
 					mes "First, let me check";
 					mes "if you brought all";
 					mes "the items I require.";
@@ -901,7 +901,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "^0099FF100 Ogre Teeth^000000 to";
 						mes "create a blade that can";
 						mes "withstand the might of the";
-						mes "" + mesitemlink(1237) + "'s curse magic.";
+						mes "" + mesitemlink(1237, false) + "'s curse magic.";
 						mes "Go and bring them soon.";
 						close;
 					}
@@ -909,7 +909,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "[Mysterious Blacksmith]";
 						mes "In order to place";
 						mes "the curse that grants";
-						mes "the " + mesitemlink(1237) + " its immense";
+						mes "the " + mesitemlink(1237, false) + " its immense";
 						mes "power, I need you to bring";
 						mes "^0099FF5 Cursed Rubies^000000. Hurry";
 						mes "and bring them to me soon.";
@@ -920,7 +920,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "Hm. I still need";
 						mes "^0099FF10 Blades of Darkness^000000";
 						mes "in order to for me to forge";
-						mes "the " + mesitemlink(1237) + ". Bring those";
+						mes "the " + mesitemlink(1237, false) + ". Bring those";
 						mes "here as soon as you can.";
 						close;
 					}
@@ -928,9 +928,9 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "[Mysterious Blacksmith]";
 						mes "Hm. You almost have";
 						mes "everything ready, but";
-						mes "I'll need ^0099FF1 " + mesitemlink(6071) + "";
+						mes "I'll need ^0099FF1 " + mesitemlink(6071, false) + "";
 						mes "Handle^000000 in order to forge";
-						mes "the " + mesitemlink(1237) + ". Hurry and";
+						mes "the " + mesitemlink(1237, false) + ". Hurry and";
 						mes "bring me one of those...";
 						close;
 					}
@@ -939,7 +939,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "You have everything I need";
 						mes "to create the sword, but I won't forge it until you prove that you";
 						mes "are capable of controlling its";
-						mes "power. Bring me 1 " + mesitemlink(714) + "";
+						mes "power. Bring me 1 " + mesitemlink(714, false) + "";
 						mes "as proof of your worthiness.";
 						close;
 					}
@@ -948,7 +948,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "I see that you have";
 						mes "come fully prepared.";
 						mes "Perhaps you have grave";
-						mes "need of " + mesitemlink(1237) + "'s power.";
+						mes "need of " + mesitemlink(1237, false) + "'s power.";
 						mes "Give me a moment as I forge";
 						mes "this accursed sword for you...";
 						next;
@@ -956,7 +956,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "There, it's finished!";
 						mes "Now hurry and take it!";
 						mes "I, I don't want to handle";
-						mes "the " + mesitemlink(1237) + " longer than";
+						mes "the " + mesitemlink(1237, false) + " longer than";
 						mes "I have to! You'll understand";
 						mes "soon enough once you use it...";
 						delitem 7002,100; //Ogre_Tooth
@@ -969,9 +969,9 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "[Mysterious Blacksmith]";
 						mes "I know that you might";
 						mes "have good intentions for";
-						mes "" + mesitemlink(1237) + "'s power, but do";
+						mes "" + mesitemlink(1237, false) + "'s power, but do";
 						mes "not overestimate yourself!";
-						mes "Always be wary of " + mesitemlink(1237) + ",";
+						mes "Always be wary of " + mesitemlink(1237, false) + ",";
 						mes "and don't let it eat your soul!";
 						close;
 					}
@@ -997,36 +997,36 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "fair to warn you that";
 					mes "the power of the curse";
 					mes "is such that the more you";
-					mes "use the " + mesitemlink(1237) + ", the more it burns away at your very soul...";
+					mes "use the " + mesitemlink(1237, false) + ", the more it burns away at your very soul...";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I am willing to forge";
-					mes "the " + mesitemlink(1237) + " if you can";
+					mes "the " + mesitemlink(1237, false) + " if you can";
 					mes "prove worthy to wield its";
 					mes "power and provide all of the";
 					mes "materials I need to create it.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I will need...";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
 					mes "^0099FF100 Ogre Teeth^000000,";
 					mes "^0099FF10 Blades of Darkness^000000,";
 					mes "^0099FF5 Cursed Rubies^000000 and";
-					mes "^0099FF1 " + mesitemlink(6071) + " Handle^000000.";
+					mes "^0099FF1 " + mesitemlink(6071, false) + " Handle^000000.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "I don't need the";
-					mes "" + mesitemlink(714) + " to create";
+					mes "" + mesitemlink(714, false) + " to create";
 					mes "the accursed sword, but I do";
 					mes "require you to prove that you";
-					mes "are worthy of the " + mesitemlink(1237) + "'s";
+					mes "are worthy of the " + mesitemlink(1237, false) + "'s";
 					mes "power. Can you truly handle it?";
 					set dmdswrd_Q2,dmdswrd_Q2 | 16;
 					close;
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "Hm. I can't even consider";
-				mes "forging " + mesitemlink(1237) + " for you";
+				mes "forging " + mesitemlink(1237, false) + " for you";
 				mes "when you know so very little";
 				mes "about it. You better learn more";
 				mes "about that sword before you";
@@ -1035,7 +1035,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 			case 3:
 				if (dmdswrd_Q2 & 32) {
 					mes "[Mysterious Blacksmith]";
-					mes "The " + mesitemlink(1169) + " sword.";
+					mes "The " + mesitemlink(1169, false) + " sword.";
 					mes "Let me see if you've come";
 					mes "prepared to wield that blade";
 					mes "with your own two hands...";
@@ -1043,9 +1043,9 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					if (countitem(7017) < 2) {
 						mes "[Mysterious Blacksmith]";
 						mes "Hm. In order for me";
-						mes "to forge the " + mesitemlink(1169) + ",";
+						mes "to forge the " + mesitemlink(1169, false) + ",";
 						mes "I need you to bring me";
-						mes "^0099FF2 " + mesitemlink(1169) + "'s Gloves^000000.";
+						mes "^0099FF2 " + mesitemlink(1169, false) + "'s Gloves^000000.";
 						close;
 					}
 					if (countitem(7024) < 10) {
@@ -1060,7 +1060,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					if (countitem(1008) < 3) {
 						mes "[Mysterious Blacksmith]";
 						mes "In order to enchant";
-						mes "the " + mesitemlink(1169) + " with";
+						mes "the " + mesitemlink(1169, false) + " with";
 						mes "its dark power, I will";
 						mes "need you to bring me";
 						mes "^0099FF3 Necklaces of Oblivion^000000.";
@@ -1073,18 +1073,18 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "bring me ^0099FF50 Amulets^000000. I need";
 						mes "those in order to imbue the";
 						mes "incredible energies that";
-						mes "give the " + mesitemlink(1169) + " its";
+						mes "give the " + mesitemlink(1169, false) + " its";
 						mes "monstrous strength...";
 						close;
 					}
 					if (countitem(714) < 1) {
 						mes "[Mysterious Blacksmith]";
 						mes "You have everything I need";
-						mes "to forge the " + mesitemlink(1169) + ", but";
+						mes "to forge the " + mesitemlink(1169, false) + ", but";
 						mes "I'm still unsure of whether you";
 						mes "are capable of handling its";
 						mes "power. My fears will be allayed";
-						mes "if you bring ^0099FF1 " + mesitemlink(714) + "^000000.";
+						mes "if you bring ^0099FF1 " + mesitemlink(714, false) + "^000000.";
 						close;
 					}
 					if (countitem(7017) > 1 && countitem(7024) > 9 && countitem(1008) > 2 && countitem(609) > 49 && countitem(714) > 0) {
@@ -1094,7 +1094,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 						mes "I asked. Give me a moment";
 						mes "while I summon the dark";
 						mes "forces required to forge";
-						mes "the " + mesitemlink(1169) + "...";
+						mes "the " + mesitemlink(1169, false) + "...";
 						next;
 						mes "[Mysterious Blacksmith]";
 						mes "It's been a long time";
@@ -1126,7 +1126,7 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "regret of the slain.";
 					next;
 					mes "[Mysterious Blacksmith]";
-					mes "Over time, the " + mesitemlink(1169) + "";
+					mes "Over time, the " + mesitemlink(1169, false) + "";
 					mes "accumulated a truly dreadful";
 					mes "power from the hatred of those";
 					mes "it had killed. However, he who";
@@ -1142,24 +1142,24 @@ pay_fild08,218,283,2	script	Mysterious Man#magum	89,{
 					mes "[Mysterious Blacksmith]";
 					mes "Just bring me...";
 					mes "^0099FF50 Amulets^000000,";
-					mes "^0099FF1 " + mesitemlink(714) + "^000000,";
-					mes "^0099FF2 " + mesitemlink(1169) + "'s Gloves^000000,";
+					mes "^0099FF1 " + mesitemlink(714, false) + "^000000,";
+					mes "^0099FF2 " + mesitemlink(1169, false) + "'s Gloves^000000,";
 					mes "^0099FF10 Bloody Edges^000000 and";
 					mes "^0099FF3 Necklaces of Oblivion^000000.";
 					next;
 					mes "[Mysterious Blacksmith]";
 					mes "Those are the items I need";
 					mes "to create a sword imbued with";
-					mes "evil power. As for the " + mesitemlink(714) + ", consider it my test to see if you";
+					mes "evil power. As for the " + mesitemlink(714, false) + ", consider it my test to see if you";
 					mes "are truly capable of wielding";
-					mes "the accursed " + mesitemlink(1169) + "...";
+					mes "the accursed " + mesitemlink(1169, false) + "...";
 					set dmdswrd_Q2,dmdswrd_Q2 | 4;
 					close;
 				}
 				mes "[Mysterious Blacksmith]";
 				mes "Hmpf. I don't think";
 				mes "you understand enough";
-				mes "about the " + mesitemlink(1169) + " to";
+				mes "about the " + mesitemlink(1169, false) + " to";
 				mes "ask me to forge it. You better";
 				mes "learn more about that accursed";
 				mes "sword if you really want it...";

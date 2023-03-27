@@ -205,11 +205,11 @@ new_1-1,53,114,4	script	Shion#nv1	727,{
 		mes "Hm...?";
 		mes "What are you";
 		mes "still doing here?";
-		mes "Oh, you used a ^3355FFButterfly Wing^000000, didn't you?";
+		mes "Oh, you used a ^3355FF" + mesitemlink(602, false) + "^000000, didn't you?";
 		next;
 		mes "[Shion]";
 		mes "No, no, no~";
-		mes "You're supposed to use the " + mesitemlink(602) + " when you want to go back to a town ^666666after^000000 completing your training here, alright?";
+		mes "You're supposed to use the " + mesitemlink(602, false) + " when you want to go back to a town ^666666after^000000 completing your training here, alright?";
 		next;
 		mes "[Shion]";
 		mes "Now, let me send";
@@ -314,7 +314,7 @@ new_1-1,53,114,4	script	Shion#nv1	727,{
 			next;
 			mes "[Shion]";
 			mes "Do you know how to move?";
-			mes "Left click on a spot, and you'll walk over to that spot. " + mesitemlink(539) + ", huh?";
+			mes "Left click on a spot, and you'll walk over to that spot. " + mesitemlink(539, false) + ", huh?";
 			next;
 			mes "[Shion]";
 			mes "So go for it!";
@@ -551,7 +551,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			}
 			next;
 			mes "[Kris]";
-			mes "Now, why don't you speak to Edwin? He will teach you more regarding the basic use of Skills. Ah, and let me give you a small present: a " + mesitemlink(2352) + "!";
+			mes "Now, why don't you speak to Edwin? He will teach you more regarding the basic use of Skills. Ah, and let me give you a small present: a " + mesitemlink(2352, false) + "!";
 			set nov_get_item02,12;
 			getitem 2352,1; //Novice_Plate
 			close;
@@ -733,7 +733,7 @@ new_1-2,83,111,3	script	Skill Tutor#nv	753,{
 			mes "my famous fatal blow!";
 			next;
 			mes "[Cecil]";
-			mes "I'm just pulling your " + mesitemlink(1519) + "!";
+			mes "I'm just pulling your " + mesitemlink(1519, false) + "!";
 			mes "I actually just teach you how to use your skills. I still live for power, though.";
 			next;
 			mes "[Cecil]";
@@ -980,7 +980,7 @@ new_1-2,115,111,3	script	Item Tutor#nv	726,{
 			mes "In the Inventory Window, you'll see 3 tabs labeled ^3355FFitem^000000, ^3355FFequip^000000 and ^3355FFetc^000000. Items that can be consumed are under the ^4A708Bitem^000000 tab.";
 			next;
 			mes "[Alice]";
-			mes "Now, would you click the ^4A708Bitem^000000 tab in the Inventory Window? I just gave you a " + mesitemlink(569) + ". You can drink it by double-clicking it. Go ahead, try it!";
+			mes "Now, would you click the ^4A708Bitem^000000 tab in the Inventory Window? I just gave you a " + mesitemlink(569, false) + ". You can drink it by double-clicking it. Go ahead, try it!";
 			set nov_get_item04,10;
 			getitem 569,1; //Novice_Potion
 			percentheal -50,0;
@@ -1024,7 +1024,7 @@ new_1-2,115,111,3	script	Item Tutor#nv	726,{
 			mes "[Alice]";
 			mes "Got them? Good.";
 			mes "Now, double-click";
-			mes "on the " + mesitemlink(2414) + "";
+			mes "on the " + mesitemlink(2414, false) + "";
 			mes "I just gave you to";
 			mes "put them on.";
 			set nov_get_item04,12;
@@ -1100,7 +1100,7 @@ new_1-2,115,111,3	script	Item Tutor#nv	726,{
 			mes "that will help you during the Field Combat Training.";
 			next;
 			mes "[Alice]";
-			mes "However, ^ff0000do not use the " + mesitemlink(601) + " or " + mesitemlink(602) + "^000000 in these Training Grounds or you could be stuck here forever. Those items are for when you graduate, okay?";
+			mes "However, ^ff0000do not use the " + mesitemlink(601, false) + " or " + mesitemlink(602, false) + "^000000 in these Training Grounds or you could be stuck here forever. Those items are for when you graduate, okay?";
 			set nov_get_item04,15;
 			getitem 601,10; //Wing_Of_Fly
 			getitem 602,2; //Wing_Of_Butterfly
@@ -1450,7 +1450,7 @@ new_1-2,118,108,3	script	Kafra Employee#nv1	117,{
 				mes "When you talk to a Kafra Employee and ask for the Save Service, the location of where you will revive, after being defeated in battle, will be changed.";
 				next;
 				mes "[Kafra Employee]";
-				mes "Your Respawn Point is always the last place where you have saved. Using a " + mesitemlink(602) + " will return you to the place where you";
+				mes "Your Respawn Point is always the last place where you have saved. Using a " + mesitemlink(602, false) + " will return you to the place where you";
 				mes "last saved.";
 				next;
 				mes "[Kafra Employoee]";
@@ -1593,7 +1593,7 @@ new_1-2,161,182,5	script	Instructor#nv	92,{
 			next;
 			mes "[Edwin]";
 			mes "HP stands for 'health points.'";
-			mes "When your HP is reduced to 0, you will faint and be unable to fight. You can either return to your " + mesitemlink(908) + " point, or wait for someone to revive you.";
+			mes "When your HP is reduced to 0, you will faint and be unable to fight. You can either return to your " + mesitemlink(908, false) + " point, or wait for someone to revive you.";
 			next;
 			mes "[Edwin]";
 			mes "If you die in the fields or dungeons, you will receive";
@@ -1704,8 +1704,8 @@ new_1-2,161,182,5	script	Instructor#nv	92,{
 			next;
 			mes "[Edwin]";
 			mes "In the Equipment Window,";
-			mes "you will see the items currently equipped on your character. In the very beginning, every character is equipped with a " + mesitemlink(1201) + " and";
-			mes "a " + mesitemlink(2301) + ".";
+			mes "you will see the items currently equipped on your character. In the very beginning, every character is equipped with a " + mesitemlink(1201, false) + " and";
+			mes "a " + mesitemlink(2301, false) + ".";
 			next;
 			mes "[Edwin]";
 			mes "There are 2 ways to change your equipment. Double-click equipment in the Inventory Window or click and drag an item into the";
@@ -3094,7 +3094,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 				break;
 			}
 			mes "[Hanson]";
-			mes "You happened to accidentally slip your " + mesitemlink(1015) + " in the middle of a conversation. How do you cope with this situation?";
+			mes "You happened to accidentally slip your " + mesitemlink(1015, false) + " in the middle of a conversation. How do you cope with this situation?";
 			next;
 			switch(select("Pretend it's a joke.:Change the subject.:Analyze it.:Apologize honestly.")) {
 			case 1:
@@ -3330,11 +3330,11 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I will teleport you to the Swordman Association.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000335 " + mesitemlink(7059) + "^000000";
-					mes "^0000335 " + mesitemlink(7060) + "^000000";
+					mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000335 " + mesitemlink(7060, false) + "^000000";
 					////mes "^000099100 zeny^000000";
-					mes "^0000331 " + mesitemlink(1104) + "^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000331 " + mesitemlink(1104, false) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					set nov_3_swordman,40;
 					getitem 7059,5; //Cargo_Free_Ticket
@@ -3349,10 +3349,10 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 					next;
 					mes "[Hanson]";
-					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1104) + "' is a weapon that will be very useful once you become a Swordman.";
+					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1104, false) + "' is a weapon that will be very useful once you become a Swordman.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1104) + " with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1104, false) + " with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "The town you will be sent to is called Izlude which is a satellite of Prontera. The Swordman Association is located in the West of town. Please remember this.";
@@ -3397,12 +3397,12 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I'll teleport you to the Mage town.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000335 " + mesitemlink(7059) + "^000000";
-					mes "^0000335 " + mesitemlink(7060) + "^000000";
+					mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000335 " + mesitemlink(7060, false) + "^000000";
 					////mes "^000099100 zeny^000000";
-					mes "^0000331 " + mesitemlink(1601) + "^000000";
-					mes "^0000331 " + mesitemlink(1204) + "^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000331 " + mesitemlink(1601, false) + "^000000";
+					mes "^0000331 " + mesitemlink(1204, false) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					//---------------------------------------------------------------------------------------------------------------------------------------------------
 					set nov_3_swordman,40;
@@ -3420,13 +3420,13 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 					next;
 					mes "[Hanson]";
-					mes "'Zeny' is the currency of Midgard. That '" + mesitemlink(1204) + "' has been given to you so that you can fight monsters before you become a Mage.";
+					mes "'Zeny' is the currency of Midgard. That '" + mesitemlink(1204, false) + "' has been given to you so that you can fight monsters before you become a Mage.";
 					next;
 					mes "[Hanson]";
-					mes "Once you become a Mage, you can use the '" + mesitemlink(1601) + "' that has been given to you. It will be very useful during your early days as a Mage.";
+					mes "Once you become a Mage, you can use the '" + mesitemlink(1601, false) + "' that has been given to you. It will be very useful during your early days as a Mage.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your Level 1 weapons with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your Level 1 weapons with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "The town you will arrive is named 'Geffen'.";
@@ -3469,12 +3469,12 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I will teleport you to the merchant town.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000334 " + mesitemlink(7059) + "^000000";
-					mes "^0000334 " + mesitemlink(7060) + "^000000";
-					mes "^0000334 " + mesitemlink(7061) + "^000000";
+					mes "^0000334 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000334 " + mesitemlink(7060, false) + "^000000";
+					mes "^0000334 " + mesitemlink(7061, false) + "^000000";
 					////mes "^000099100 zeny^000000";
-					mes "^0000331 " + mesitemlink(1351) + "^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000331 " + mesitemlink(1351, false) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					//---------------------------------------------------------------------------------------------------------------------------------------------------
 					set nov_3_swordman,40;
@@ -3492,10 +3492,10 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 					next;
 					mes "[Hanson]";
-					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1351) + "' will come in handy once you become a Merchant.";
+					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1351, false) + "' will come in handy once you become a Merchant.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1351) + " with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1351, false) + " with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "The town you will be sent to is named Alberta. The Merchant Guild is located to the SouthWest within Alberta. Please remember this.";
@@ -3547,11 +3547,11 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I'll teleport you to the Thief town.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000335 " + mesitemlink(7059) + "^000000";
-					mes "^0000335 " + mesitemlink(7060) + "^000000";
+					mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000335 " + mesitemlink(7060, false) + "^000000";
 					////mes "^000099100 Zeny^000000";
-					mes "^0000331 " + mesitemlink(1207) + "^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000331 " + mesitemlink(1207, false) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					//---------------------------------------------------------------------------------------------------------------------------------------------------
 					set nov_3_swordman,40;
@@ -3568,10 +3568,10 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 					next;
 					mes "[Hanson]";
-					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1207) + "' is a weapon that will be very useful once you become a Thief.";
+					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1207, false) + "' is a weapon that will be very useful once you become a Thief.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1207) + " with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1207, false) + " with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "The town you will be sent to is named Morocc. The Thief Guild is in the first underground floor of the pyramid NorthWest of Morocc. Remember this.";
@@ -3608,11 +3608,11 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I'll teleport you to the Archer town.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000335 " + mesitemlink(7059) + "^000000";
-					mes "^0000335 " + mesitemlink(7060) + "^000000";
+					mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000335 " + mesitemlink(7060, false) + "^000000";
 					////mes "^000099100 Zeny^000000";
-					mes "^0000331 " + mesitemlink(1704) + "^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000331 " + mesitemlink(1704, false) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					//---------------------------------------------------------------------------------------------------------------------------------------------------
 					set nov_3_swordman,40;
@@ -3629,10 +3629,10 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 					next;
 					mes "[Hanson]";
-					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1704) + "' is a weapon that will be very useful once you become an Archer.";
+					mes "'Zeny' is the currency of Midgard. '" + mesitemlink(1704, false) + "' is a weapon that will be very useful once you become an Archer.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1704) + " with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your " + mesitemlink(1704, false) + " with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "The town you will be sent to is named Payon. The Archer Guild is located to the NorthWest in town. Please remember this.";
@@ -3668,7 +3668,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 				mes "You're always eager to help others, which is why you're so well liked.";
 				next;
 				mes "[Hanson]";
-				mes "For you who are kind of " + mesitemlink(7855) + ", ^696969Acolyte^000000 is the most suitable job.";
+				mes "For you who are kind of " + mesitemlink(7855, false) + ", ^696969Acolyte^000000 is the most suitable job.";
 				next;
 				mes "[Hanson]";
 				mes "So, would you like to accept our recommendation or would you like to choose a job on your own?";
@@ -3680,11 +3680,11 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "After you receive all the supplies, I'll teleport you behind the Sanctuary.";
 					next;
 					mes "^660000List of Supplies^000000";
-					mes "^0000335 " + mesitemlink(7059) + "^000000";
-					mes "^0000335 " + mesitemlink(7060) + "^000000";
+					mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+					mes "^0000335 " + mesitemlink(7060, false) + "^000000";
 					////mes "^000099100 Zeny^000000";
 					mes "^0000331 Mace^000000";
-					mes "^0000337 " + mesitemlink(1010) + "^000000";
+					mes "^0000337 " + mesitemlink(1010, false) + "^000000";
 					next;
 					//---------------------------------------------------------------------------------------------------------------------------------------------------
 					set nov_3_swordman,40;
@@ -3704,7 +3704,7 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 					mes "'Zeny' is the currency of Midgard. 'Mace' is a weapon that will be very useful once you become an Acolyte.";
 					next;
 					mes "[Hanson]";
-					mes "'" + mesitemlink(1010) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your Mace with this " + mesitemlink(1010) + ", please visit a forge in one of the towns.";
+					mes "'" + mesitemlink(1010, false) + "' is an ore which can be used to upgrade lvl 1 weapons. To strengthen your Mace with this " + mesitemlink(1010, false) + ", please visit a forge in one of the towns.";
 					next;
 					mes "[Hanson]";
 					mes "You have chosen to be an Acolyte. The town you will be sent to is named Prontera. The Sanctuary is NorthEast in Prontera. Please remember this.";
@@ -3921,9 +3921,9 @@ S_UserJobchoice:
 	mes "to the chosen town.";
 	next;
 	mes "^660000List of Supplies^000000";
-	mes "^0000335 " + mesitemlink(7059) + "^000000";
-	mes "^0000335 " + mesitemlink(7060) + "^000000";
-	mes "^0000331 " + mesitemlink(2305) + "^000000";
+	mes "^0000335 " + mesitemlink(7059, false) + "^000000";
+	mes "^0000335 " + mesitemlink(7060, false) + "^000000";
+	mes "^0000331 " + mesitemlink(2305, false) + "^000000";
 	////mes "^000099100 Zeny^000000";
 	next;
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3941,7 +3941,7 @@ S_UserJobchoice:
 	mes "Free tickets for Kafra storage and transportation can be used for Kafra storage and teleport services.";
 	next;
 	mes "[Hanson]";
-	mes "'Zeny' is the currency of Midgard. The '" + mesitemlink(2305) + "' will come in handy once you become a " + .@Jobs$[@menu] + ".";
+	mes "'Zeny' is the currency of Midgard. The '" + mesitemlink(2305, false) + "' will come in handy once you become a " + .@Jobs$[@menu] + ".";
 	next;
 	mes "[Hanson]";
 	mes "You will now";

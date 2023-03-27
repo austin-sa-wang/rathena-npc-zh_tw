@@ -247,8 +247,8 @@ prt_church,111,112,1	script	Sister Linus	79,{
 				mes "[Sister Linus]";
 				mes "Um, but if you fail to";
 				mes "learn Redemptio, you'll";
-				mes "lose 1 " + mesitemlink(523) + " and";
-				mes "1 " + mesitemlink(717) + " and";
+				mes "lose 1 " + mesitemlink(523, false) + " and";
+				mes "1 " + mesitemlink(717, false) + " and";
 				mes "you'll have to try it again...";
 				close;
 			}
@@ -268,8 +268,8 @@ prt_church,111,112,1	script	Sister Linus	79,{
 					mes "brought everything that you";
 					mes "need to learn Redemptio.";
 					mes "Are you ready to try it? If you";
-					mes "fail, you'll lose 1 " + mesitemlink(523) + "";
-					mes "and 1 " + mesitemlink(717) + ", okay?";
+					mes "fail, you'll lose 1 " + mesitemlink(523, false) + "";
+					mes "and 1 " + mesitemlink(717, false) + ", okay?";
 					next;
 					mes "[Sister Linus]";
 					mes "Now, please";

@@ -117,7 +117,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "much starving to death now...";
 					next;
 					mes "[Tourist]";
-					mes "Could you please get me some " + mesitemlink(517) + "?";
+					mes "Could you please get me some " + mesitemlink(517, false) + "?";
 					mes "I know I'm asking you too much,";
 					mes "but I'm pretty much penniless";
 					mes "so I don't really have much";
@@ -168,7 +168,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "much starving to death now...";
 					next;
 					mes "[Tourist]";
-					mes "Could you please get me some " + mesitemlink(517) + "?";
+					mes "Could you please get me some " + mesitemlink(517, false) + "?";
 					mes "I know I'm asking you too much,";
 					mes "but I'm pretty much penniless";
 					mes "so I don't really have much";
@@ -219,7 +219,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "[Tourist]";
 					mes "I appreciate that you're";
 					mes "helping me out of the";
-					mes "goodness of your " + mesitemlink(7855) + ",";
+					mes "goodness of your " + mesitemlink(7855, false) + ",";
 					mes "but...";
 					next;
 					mes "[Tourist]";
@@ -227,7 +227,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Cheap?! You can feed";
 					mes "a starving man more";
 					mes "than this...bring me";
-					mes "more " + mesitemlink(517) + "!";
+					mes "more " + mesitemlink(517, false) + "!";
 					close;
 				}
 				else if (countitem(517) > 10) {
@@ -239,7 +239,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Geez, you want I should";
 					mes "choke myself to death?";
 					mes "I can't eat all of this!";
-					mes "Bring me less " + mesitemlink(517) + ", yeah?";
+					mes "Bring me less " + mesitemlink(517, false) + ", yeah?";
 					close;
 				}
 			}
@@ -254,7 +254,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "[Tourist]";
 					mes "I appreciate that you're";
 					mes "helping me out of the";
-					mes "goodness of your " + mesitemlink(7855) + ",";
+					mes "goodness of your " + mesitemlink(7855, false) + ",";
 					mes "but...";
 					next;
 					mes "[Tourist]";
@@ -262,7 +262,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Cheap?! You can feed";
 					mes "a starving man more";
 					mes "than this...bring me";
-					mes "more " + mesitemlink(517) + "!";
+					mes "more " + mesitemlink(517, false) + "!";
 					close;
 				}
 				else if (countitem(517) > 20) {
@@ -274,7 +274,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Geez, you want I should";
 					mes "choke myself to death?";
 					mes "I can't eat all of this!";
-					mes "Bring me less " + mesitemlink(517) + ", yeah?";
+					mes "Bring me less " + mesitemlink(517, false) + ", yeah?";
 					close;
 				}
 			}
@@ -289,7 +289,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "[Tourist]";
 					mes "I appreciate that you're";
 					mes "helping me out of the";
-					mes "goodness of your " + mesitemlink(7855) + ",";
+					mes "goodness of your " + mesitemlink(7855, false) + ",";
 					mes "but...";
 					next;
 					mes "[Tourist]";
@@ -297,7 +297,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Cheap?! You can feed";
 					mes "a starving man more";
 					mes "than this...bring me";
-					mes "more " + mesitemlink(517) + "!";
+					mes "more " + mesitemlink(517, false) + "!";
 					close;
 				}
 				else if (countitem(517) > 40) {
@@ -305,14 +305,14 @@ alberta,43,244,0	script	Tourist#thai	99,{
 					mes "Geez, you want I should";
 					mes "choke myself to death?";
 					mes "I can't eat all of this!";
-					mes "Bring me less " + mesitemlink(517) + ", yeah?";
+					mes "Bring me less " + mesitemlink(517, false) + ", yeah?";
 					close;
 				}
 			}
 			set thai_head,4;
 			mes "^3355FFHe seemed to have been";
 			mes "starving for a long time.";
-			mes "He ate all the " + mesitemlink(517) + " I gave him";
+			mes "He ate all the " + mesitemlink(517, false) + " I gave him";
 			mes "and it was all gone in a flash.^000000";
 			if (countitem(538) > 0) {
 				mes "^0000FF...Oh my! He took my cookies without even asking and ate all of those too!!^000000";
@@ -544,7 +544,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 			mes "Mahahahahahaha!!";
 			next;
 			mes "[Tourist]";
-			mes "*Drools*...I love " + mesitemlink(558) + "!";
+			mes "*Drools*...I love " + mesitemlink(558, false) + "!";
 			next;
 			mes "[Tourist]";
 			mes "Wait...";
@@ -601,7 +601,7 @@ alberta,43,244,0	script	Tourist#thai	99,{
 				mes "You know, I'm beginning";
 				mes "to feel like...";
 				mes "you're pullin' my";
-				mes "" + mesitemlink(1519) + "...";
+				mes "" + mesitemlink(1519, false) + "...";
 				set thai_head,1;
 				close;
 			}
@@ -681,7 +681,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 			mes "......";
 			mes "*Sigh* For now, I have a favor to";
 			mes "ask of you. Could you bring me";
-			mes "^0000FF1 " + mesitemlink(636) + "^000000?";
+			mes "^0000FF1 " + mesitemlink(636, false) + "^000000?";
 			set thai_head,7;
 			next;
 			mes "[Jacob]";
@@ -710,7 +710,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 				mes "What's this, Daddy?";
 				next;
 				mes "[Jacob]";
-				mes "This is called " + mesitemlink(636) + "~";
+				mes "This is called " + mesitemlink(636, false) + "~";
 				mes "With this, I can get you a Munak~";
 				next;
 				mes "[Tommy]";
@@ -791,7 +791,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 						mes "I wish Baphomet would take you somewhere and eat you!!";
 						next;
 						mes "[Jacob]";
-						mes "" + mesitemlink(711) + "...Tommy, Tommy...";
+						mes "" + mesitemlink(711, false) + "...Tommy, Tommy...";
 						mes "Listen to me....";
 						next;
 						mes "[Tommy]";
@@ -827,7 +827,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 					mes "I wish Baphomet will take you somewhere and eat you!!";
 					next;
 					mes "[Jacob]";
-					mes "" + mesitemlink(711) + "...Tommy, Tommy...";
+					mes "" + mesitemlink(711, false) + "...Tommy, Tommy...";
 					mes "Listen to me....";
 					next;
 					mes "[Tommy]";
@@ -856,7 +856,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 			mes "^FF0000Munak Munak Munak Munak!!^000000";
 			next;
 			mes "[Jacob]";
-			mes "*Sigh*...that's my boy. Please get me a " + mesitemlink(636) + " as soon as you can!";
+			mes "*Sigh*...that's my boy. Please get me a " + mesitemlink(636, false) + " as soon as you can!";
 			close;
 		case 8:
 			if (rand(1,1000) == 792) {
@@ -867,7 +867,7 @@ moc_ruins,105,62,4	script	Jacob#thai	50,{
 				mes "....*Sigh* Okay.";
 				mes "I will give you a chance";
 				mes "to make up for your mistake.";
-				mes "Please get me a " + mesitemlink(636) + " as soon as you can.";
+				mes "Please get me a " + mesitemlink(636, false) + " as soon as you can.";
 				set thai_head,7;
 				close;
 			}
@@ -1381,10 +1381,10 @@ comodo,68,195,0	script	Old Man#thai	120,{
 			mes "That is...";
 			next;
 			mes "[Elder Creek]";
-			mes "10 " + mesitemlink(7054) + ",";
-			mes "15 " + mesitemlink(965) + ",";
-			mes "10 " + mesitemlink(964) + "";
-			mes "and 50 " + mesitemlink(7053) + ".";
+			mes "10 " + mesitemlink(7054, false) + ",";
+			mes "15 " + mesitemlink(965, false) + ",";
+			mes "10 " + mesitemlink(964, false) + "";
+			mes "and 50 " + mesitemlink(7053, false) + ".";
 			next;
 			mes "[Elder Creek]";
 			mes "Well, I am collecting those as my hobby.";
@@ -1457,10 +1457,10 @@ comodo,68,195,0	script	Old Man#thai	120,{
 			mes "I want...";
 			next;
 			mes "[Elder Creek]";
-			mes "10 " + mesitemlink(7054) + ",";
-			mes "15 " + mesitemlink(965) + ",";
-			mes "10 " + mesitemlink(964) + " and";
-			mes "50 " + mesitemlink(7053) + ".";
+			mes "10 " + mesitemlink(7054, false) + ",";
+			mes "15 " + mesitemlink(965, false) + ",";
+			mes "10 " + mesitemlink(964, false) + " and";
+			mes "50 " + mesitemlink(7053, false) + ".";
 			close;
 		}
 	}

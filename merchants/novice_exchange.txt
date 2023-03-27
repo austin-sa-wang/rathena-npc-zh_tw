@@ -30,13 +30,13 @@ prontera,123,102,5	script	Merchant#pron	85,{
 	mes "[Merchant]";
 	mes "Good day!";
 	mes "Have you collected any";
-	mes "items like Shells or " + mesitemlink(914) + "?";
+	mes "items like Shells or " + mesitemlink(914, false) + "?";
 	mes "What about Jellopies? Oh yeah,";
 	mes "I need those for something.";
 	next;
 	mes "[Merchant]";
 	mes "Of course, I won't ask you";
-	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501) + " for 5 Shells, 10 " + mesitemlink(914) + ",";
+	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501, false) + " for 5 Shells, 10 " + mesitemlink(914, false) + ",";
 	mes "or 10 Jellopies?";
 	next;
 	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
@@ -92,7 +92,7 @@ morocc,180,259,3	script	Merchant#Morocc	85,{
 	next;
 	mes "[Merchant]";
 	mes "Of course, I won't ask you";
-	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501) + " for 5 Shells, 7 Feathers of Bird";
+	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501, false) + " for 5 Shells, 7 Feathers of Bird";
 	mes "or 10 Jellopies?";
 	next;
 	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
@@ -149,7 +149,7 @@ payon,200,134,5	script	Merchant#pay	85,{
 	next;
 	mes "[Merchant]";
 	mes "Of course, I won't ask you";
-	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501) + " for 6 Tree Roots or 10 Jellopies?";
+	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501, false) + " for 6 Tree Roots or 10 Jellopies?";
 	next;
 	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
 	case 1:
@@ -197,13 +197,13 @@ aldebaran,152,63,5	script	Merchant#alde	85,{
 	mes "[Merchant]";
 	mes "Good day!";
 	mes "Have you collected any";
-	mes "Worm Peelings or " + mesitemlink(916) + "?";
+	mes "Worm Peelings or " + mesitemlink(916, false) + "?";
 	mes "How about Jellopies? Oh yeah,";
 	mes "I need those for something.";
 	next;
 	mes "[Merchant]";
 	mes "Of course, I won't ask you";
-	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501) + " for 1 " + mesitemlink(955) + ", 7 " + mesitemlink(916) + ", or 10 Jellopies?";
+	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501, false) + " for 1 " + mesitemlink(955, false) + ", 7 " + mesitemlink(916, false) + ", or 10 Jellopies?";
 	next;
 	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
 	case 1:
@@ -260,7 +260,7 @@ geffen,173,88,5	script	Merchant#geff	85,{
 	next;
 	mes "[Merchant]";
 	mes "Of course, I won't ask you";
-	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501) + " for 5 Shells or 6 Chrysalises, or 10 Jellopies?";
+	mes "to give me that stuff for free. What about if I trade a " + mesitemlink(501, false) + " for 5 Shells or 6 Chrysalises, or 10 Jellopies?";
 	next;
 	switch(select("Sure!:I think it's a rip-off!:No, thanks.")) {
 	case 1:
@@ -333,7 +333,7 @@ function	script	F_PotExchange	{
 			next;
 			mes "[Merchant]";
 			mes "Now, I can trade you";
-			mes "a minimum of 1 " + mesitemlink(501) + "";
+			mes "a minimum of 1 " + mesitemlink(501, false) + "";
 			mes "and a maximum of 100 Red Potions";
 			mes "at one time. If you change your";
 			mes "mind, just enter '0' to cancel.";

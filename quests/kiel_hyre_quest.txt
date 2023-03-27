@@ -352,7 +352,7 @@ yuno_in01,35,179,4	script	Pub Master#kh	46,5,5,{
 					mes "[Vandt]";
 					mes "I'm glad to hear that.";
 					mes "Well then, please take this";
-					mes "bottle of " + mesitemlink(7487) + " to";
+					mes "bottle of " + mesitemlink(7487, false) + " to";
 					mes "Mrs. ^ff0000Lecollane^000000 in the Kiel";
 					mes "Hyre Academy. I'll pay you";
 					mes "once you finish the job, okay?";
@@ -457,18 +457,18 @@ OnTouch:
 yuno,217,114,6	script	Little Kid#kh	96,{
 	mes "[Cezu]"; 
 	if (KielHyreQuest < 6) {
-		mes "Fresh, crunchy " + mesitemlink(5391) + "!";
+		mes "Fresh, crunchy " + mesitemlink(5391, false) + "!";
 		mes "If you want some, come";
 		mes "and get some tooooast~";
 		close;
 	}
 	else if (KielHyreQuest == 6) {
 		if (KHToastGirlEnd < 1) {
-			mes "Fresh, crunchy " + mesitemlink(5391) + "!";
+			mes "Fresh, crunchy " + mesitemlink(5391, false) + "!";
 			mes "If you want some, come";
 			mes "and get some tooooast~";
 			mes "Oh! Hi hi~ Did you want";
-			mes "to buy some yummy " + mesitemlink(5391) + "?";
+			mes "to buy some yummy " + mesitemlink(5391, false) + "?";
 			next;
 			switch(select("I'm here for Elly:No, thanks")) {
 			case 1:
@@ -485,12 +485,12 @@ yuno,217,114,6	script	Little Kid#kh	96,{
 				mes "out of ingredients too!";
 				mes "But I can't really leave";
 				mes "to get some more. What if";
-				mes "people need to buy " + mesitemlink(5391) + "?";
+				mes "people need to buy " + mesitemlink(5391, false) + "?";
 				mes "Listen, can you help me out?";
 				next;
 				mes "[Cezu]"; 
 				mes "Would you please go get";
-				mes "some " + mesitemlink(7604) + " and eggs for me";
+				mes "some " + mesitemlink(7604, false) + " and eggs for me";
 				mes "from the ^3355FFLighthalzen Windmill^000000";
 				mes "Then, when you come back, I can";
 				mes "divide the ingredients, and you";
@@ -516,7 +516,7 @@ yuno,217,114,6	script	Little Kid#kh	96,{
 			mes "Would you please go to";
 			mes "the Lighthalzen Windmill";
 			mes "and tell them that Cezu needs";
-			mes "lots of " + mesitemlink(7604) + " and lots of eggs!";
+			mes "lots of " + mesitemlink(7604, false) + " and lots of eggs!";
 			mes "Then, bring all the stuff over";
 			mes "to me as soon as you can~";
 			close;
@@ -525,7 +525,7 @@ yuno,217,114,6	script	Little Kid#kh	96,{
 			mes "Hey, you're back with the";
 			mes "ingredients! Thank you so";
 			mes "much, I really needed these!";
-			mes "Now please give this " + mesitemlink(7604) + "";
+			mes "Now please give this " + mesitemlink(7604, false) + "";
 			mes "and these eggs to Elly, and";
 			mes "send her my regards. See you~";
 			delitem 7488,1; //Delivery_Package
@@ -537,7 +537,7 @@ yuno,217,114,6	script	Little Kid#kh	96,{
 	//KHToastGirlEnd no longer needed-- deleting.
 	if (KielHyreQuest > 6) set KHToastGirlEnd,0;
 	mes "Hot, fresh and";
-	mes "cruuuunchy " + mesitemlink(5391) + "!";
+	mes "cruuuunchy " + mesitemlink(5391, false) + "!";
 	mes "Come and get some!";
 	close;
 }
@@ -577,7 +577,7 @@ lighthalzen,366,299,4	script	Windmill Owner#kh	46,{
 		case 1:
 			mes "[Mills]";
 			mes "Oh, Cezu from the";
-			mes "" + mesitemlink(5391) + " stand? Okay,";
+			mes "" + mesitemlink(5391, false) + " stand? Okay,";
 			mes "I've got everything";
 			mes "that kid needs right";
 			mes "here. There's eggs inside,";
@@ -639,7 +639,7 @@ lighthalzen,366,289,2	script	Windmill Owner's Helper	97,{
 	else {
 		mes "[Cutz]";
 		mes "Hey, you're from";
-		mes "Cezu's " + mesitemlink(5391) + " stand,";
+		mes "Cezu's " + mesitemlink(5391, false) + " stand,";
 		mes "right? How is cute";
 		mes "little Cezu doing?";
 		close;
@@ -1050,16 +1050,16 @@ kh_school,179,39,0	script	Cute Student#kh	895,{
 			mes "^3355FF7 Milks^000000,";
 			mes "^3355FF5 Cacaos^000000,";
 			mes "^3355FF2 Cheeses^000000,";
-			mes "^3355FF1 " + mesitemlink(574) + "^000000, and";
-			mes "^3355FF1 Bag of " + mesitemlink(7604) + "^000000.";
+			mes "^3355FF1 " + mesitemlink(574, false) + "^000000, and";
+			mes "^3355FF1 Bag of " + mesitemlink(7604, false) + "^000000.";
 			next;
 			mes "[Elly]";
 			mes "Let's see... You can";
 			mes "get Wine from a pub in";
 			mes "Juno, Cacaos from hunting";
-			mes "Yoyos, and you can get " + mesitemlink(7604) + "";
+			mes "Yoyos, and you can get " + mesitemlink(7604, false) + "";
 			mes "and Eggs from the girl that";
-			mes "runs the " + mesitemlink(5391) + " Stand in Juno.";
+			mes "runs the " + mesitemlink(5391, false) + " Stand in Juno.";
 			next;
 			mes "[Elly]";
 			mes "Good luck, getting";
@@ -1090,17 +1090,17 @@ kh_school,179,39,0	script	Cute Student#kh	895,{
 			mes "^3355FF7 Milks^000000,";
 			mes "^3355FF5 Cacaos^000000,";
 			mes "^3355FF2 Cheeses^000000,";
-			mes "^3355FF1 " + mesitemlink(574) + "^000000, and";
-			mes "^3355FF1 Bag of " + mesitemlink(7604) + "^000000.";
+			mes "^3355FF1 " + mesitemlink(574, false) + "^000000, and";
+			mes "^3355FF1 Bag of " + mesitemlink(7604, false) + "^000000.";
 			next;
 			cutin "kh_elly01",2;
 			mes "[Elly]";
 			mes "Let's see... You can";
 			mes "get Wine from a pub in";
 			mes "Juno, Cacaos from hunting";
-			mes "Yoyos, and you can get " + mesitemlink(7604) + "";
+			mes "Yoyos, and you can get " + mesitemlink(7604, false) + "";
 			mes "and Eggs from the girl that";
-			mes "runs the " + mesitemlink(5391) + " Stand in Juno.";
+			mes "runs the " + mesitemlink(5391, false) + " Stand in Juno.";
 		}
 		else {
 			cutin "kh_elly02",2;
@@ -1236,7 +1236,7 @@ kh_school,179,39,0	script	Cute Student#kh	895,{
 		mes "[Elly]";
 		mes "Would you go back to his";
 		mes "cottage one more time? Here,";
-		mes "you can use this " + mesitemlink(7489) + ".";
+		mes "you can use this " + mesitemlink(7489, false) + ".";
 		mes "That way, you can just go";
 		mes "inside and talk to him~";
 		getitem 7489,1; //Villa_Spare_Key
@@ -1282,7 +1282,7 @@ kh_school,179,39,0	script	Cute Student#kh	895,{
 		mes "classmates, since they may";
 		mes "be influenced by Kiehl.";
 		mes " ";
-		mes "Be careful, and " + mesitemlink(6206) + ".";
+		mes "Be careful, and " + mesitemlink(6206, false) + ".";
 		mes " ";
 		mes "--Grandpa^000000";
 		next;
@@ -1503,13 +1503,13 @@ yuno_fild08,69,185,0	script	Window#kh	111,{
 		mes "find a ladder to enter her";
 		mes "window, you probably won't";
 		mes "find one. You might be able";
-		mes "to climb up that water " + mesitemlink(2268) + "...^000000";
+		mes "to climb up that water " + mesitemlink(2268, false) + "...^000000";
 		next;
 		switch(select("Climb Water Pipe:Find Another Way")) {
 		case 1:
 			if (rand(1,3) == 2) {
 				mes "^3355FFYou climbed up the";
-				mes "water " + mesitemlink(2268) + ", and sneaked";
+				mes "water " + mesitemlink(2268, false) + ", and sneaked";
 				mes "into Elly's room successfully.^000000";
 				close2;
 				warp "kh_school",185,185;
@@ -1517,7 +1517,7 @@ yuno_fild08,69,185,0	script	Window#kh	111,{
 			}
 			else {
 				mes "^3355FFYou tried to climb";
-				mes "the water " + mesitemlink(2268) + ", but";
+				mes "the water " + mesitemlink(2268, false) + ", but";
 				mes "you ended up falling";
 				mes "and bumping your head.^000000";
 				percentheal -10,0;
@@ -1527,7 +1527,7 @@ yuno_fild08,69,185,0	script	Window#kh	111,{
 			mes "^3355FFThere must be some";
 			mes "other way to get into";
 			mes "Elly's room, aside from";
-			mes "climbing up this water " + mesitemlink(2268) + "...^000000";
+			mes "climbing up this water " + mesitemlink(2268, false) + "...^000000";
 			close;
 
 		}
@@ -1602,7 +1602,7 @@ kh_school,178,180,4	script	Elly	895,{
 				mes ".............";
 				next;
 				mes "^3355FFAs soon as you said those";
-				mes "words, a ^000000Small " + mesitemlink(7493) + "^3355FF";
+				mes "words, a ^000000Small " + mesitemlink(7493, false) + "^3355FF";
 				mes "and a ^000000Button^3355FF drop from Elly's";
 				mes "hands. It looks like she woke";
 				mes "up, but only for an instant.^000000";
@@ -1631,23 +1631,23 @@ kh_school,178,180,4	script	Elly	895,{
 	else if (KielHyreQuest == 34) {
 		if (countitem(7491) < 1) {
 			//Missing text, needs another run through.
-			mes "^3355FFMaybe the " + mesitemlink(7493) + "^000000";
+			mes "^3355FFMaybe the " + mesitemlink(7493, false) + "^000000";
 			mes "unlocks something in the^000000";
 			mes "Cottage. Let's take another look.^000000";
 			close;
 		}
 		else {
 			mes "^3355FFIt looks like Elly's";
-			mes "" + mesitemlink(7493) + " might fit";
+			mes "" + mesitemlink(7493, false) + " might fit";
 			mes "into the keyhole on the";
-			mes "Grey " + mesitemlink(7948) + " you found inside";
+			mes "Grey " + mesitemlink(7948, false) + " you found inside";
 			mes "Kiel Hyre's Cottage.^000000";
 			next;
 			mes "^3355FFYou successfully open the";
-			mes "Grey " + mesitemlink(7948) + " with the " + mesitemlink(7493) + ",";
-			mes "and find a " + mesitemlink(7495) + ", along";
+			mes "Grey " + mesitemlink(7948, false) + " with the " + mesitemlink(7493, false) + ",";
+			mes "and find a " + mesitemlink(7495, false) + ", along";
 			mes "with a folded note, inside the";
-			mes "Grey " + mesitemlink(7948) + ". You quickly read";
+			mes "Grey " + mesitemlink(7948, false) + ". You quickly read";
 			mes "the note's contents...^000000";
 			next;
 			mes "Dearest Elly,";
@@ -1660,7 +1660,7 @@ kh_school,178,180,4	script	Elly	895,{
 			mes "Whether I live depends on you.";
 			mes "^FFFFFF_^000000";
 			mes "You'll already learn if you";
-			mes "meet " + mesitemlink(740) + ", but I want to tell";
+			mes "meet " + mesitemlink(740, false) + ", but I want to tell";
 			mes "you myself: you're not human.";
 			mes "You'll learn the details if you";
 			mes "enter the factory by using the";
@@ -1684,7 +1684,7 @@ kh_school,178,180,4	script	Elly	895,{
 	else if (KielHyreQuest >= 36) {
 		mes "^3355FFThis is where you";
 		mes "discovered the note";
-		mes "locked inside the Grey " + mesitemlink(7948) + ".";
+		mes "locked inside the Grey " + mesitemlink(7948, false) + ".";
 		mes "The following message was";
 		mes "written in the note by Elly's";
 		mes "grandfather, Kiel Hyre.^000000";
@@ -1699,7 +1699,7 @@ kh_school,178,180,4	script	Elly	895,{
 		mes "Whether I live depends on you.";
 		mes "^FFFFFF_^000000";
 		mes "You'll already learn if you";
-		mes "meet " + mesitemlink(740) + ", but I want to tell";
+		mes "meet " + mesitemlink(740, false) + ", but I want to tell";
 		mes "you myself: you're not human.";
 		mes "You'll learn the details if you";
 		mes "enter the factory by using the";
@@ -1871,7 +1871,7 @@ yuno_fild08,71,170,0	script	Grave#kh	111,{
 			if (.@KHInput$ == "Yellow Keycard") {
 				mes "^3355FFAn electronic confirmation";
 				mes "chime sounds once you insert";
-				mes "the " + mesitemlink(7492) + ", followed by";
+				mes "the " + mesitemlink(7492, false) + ", followed by";
 				mes "an automated voice that asks:^000000";
 				next;
 				mes "[Security System]";
@@ -1935,7 +1935,7 @@ yuno_fild08,71,170,0	script	Grave#kh	111,{
 			switch(select("Use the ^0000FFLuxurious Keycard^000000:Ignore")) {
 			case 1:
 				mes "Once you use the";
-				mes "" + mesitemlink(7509) + ",";
+				mes "" + mesitemlink(7509, false) + ",";
 				mes "a secret path opens^000000";
 				next;
 				switch(select("Enter:cancel")) {
@@ -2199,7 +2199,7 @@ kh_vila,16,175,0	script	Box#khp1	111,{
 	mes "^FFFFFF##^000000*Tasty-Nutricious-Delicious*";
 	mes "*Cute Pet Doof Vending Machine*";
 	mes "The best food for your Cute Pets";
-	mes "that is superior to the " + mesitemlink(537) + "";
+	mes "that is superior to the " + mesitemlink(537, false) + "";
 	mes "you can buy in the market!";
 	mes "^FFFFFF_^000000";
 	mes "Price: 1,100 zeny (cheap!)";
@@ -2216,7 +2216,7 @@ kh_vila,16,175,0	script	Box#khp1	111,{
 		else {
 			mes "^3355FFOh no...!^000000";
 			mes "^3355FF1,100 zeny seems kind";
-			mes "of expensive for " + mesitemlink(537) + ",";
+			mes "of expensive for " + mesitemlink(537, false) + ",";
 			mes "but if it's better than the";
 			mes "normal stuff, it might";
 			mes "be worth a shot.^000000";
@@ -2225,7 +2225,7 @@ kh_vila,16,175,0	script	Box#khp1	111,{
 			mes "There's nothing";
 			mes "special about it";
 			mes "at all! It's just";
-			mes "normal " + mesitemlink(537) + "!";
+			mes "normal " + mesitemlink(537, false) + "!";
 			set Zeny, Zeny-1100;
 			getitem 537,1;	//Pet_Food
 			close;
@@ -2242,7 +2242,7 @@ kh_vila,16,175,0	script	Box#khp1	111,{
 // Cottage interior, kitchen; Apple Box (Useless?)
 //----------------------------------------------------------------------------
 kh_vila,30,184,0	script	Apple Box#khp1	111,{
-	mes "^3355FFYou find a " + mesitemlink(7948) + " filled with";
+	mes "^3355FFYou find a " + mesitemlink(7948, false) + " filled with";
 	mes "ripe, delicious apples.^000000";
 	next;
 	switch(select("Take the box:Leave it")) {
@@ -2250,17 +2250,17 @@ kh_vila,30,184,0	script	Apple Box#khp1	111,{
 		mes "^3355FFNo...! Wait!";
 		mes "Something's wrong!";
 		mes "Whatever you do,";
-		mes "don't take this " + mesitemlink(7948) + "!^000000";
+		mes "don't take this " + mesitemlink(7948, false) + "!^000000";
 		next;
 		mes "^3355FFAnd so, your inner";
 		mes "voice, your Jungian";
 		mes "shadow if you will,";
 		mes "prevented you from";
-		mes "taking the " + mesitemlink(7948) + ".^000000";
+		mes "taking the " + mesitemlink(7948, false) + ".^000000";
 		close;
 	case 2: 
 		mes "^3355FFSomething is wrong";
-		mes "with this " + mesitemlink(7948) + " of apples.^000000";
+		mes "with this " + mesitemlink(7948, false) + " of apples.^000000";
 		close;
 	}
 }
@@ -2301,7 +2301,7 @@ kh_vila,44,126,0	script	Map#khp1	111,{
 		}
 	}
 	else  if ((KHCottagePoem1 == 2) && (KielHyreQuest < 30)) {
-		mes "^3355FFYou bring the " + mesitemlink(7482) + " of";
+		mes "^3355FFYou bring the " + mesitemlink(7482, false) + " of";
 		mes "steaming hot liquid";
 		mes "close to the world map.";
 		mes "As the paste on the wall";
@@ -2320,8 +2320,8 @@ kh_vila,44,126,0	script	Map#khp1	111,{
 		mes "as cold as the poles.";
 		mes "When the well is dried";
 		mes "and the earth is cracked,";
-		mes "the path to " + mesitemlink(659) + ", a";
-		mes "" + mesitemlink(7855) + " as transparent as";
+		mes "the path to " + mesitemlink(659, false) + ", a";
+		mes "" + mesitemlink(7855, false) + " as transparent as";
 		mes "crystal, will be open.^000000";
 		next;
 		mes "^3355FFI'll have to fight four";
@@ -2353,8 +2353,8 @@ kh_vila,44,126,0	script	Map#khp1	111,{
 			mes "as cold as the poles.";
 			mes "When the well is dried";
 			mes "and the earth is cracked,";
-			mes "the path to " + mesitemlink(659) + ", a";
-			mes "" + mesitemlink(7855) + " as transparent as";
+			mes "the path to " + mesitemlink(659, false) + ", a";
+			mes "" + mesitemlink(7855, false) + " as transparent as";
 			mes "crystal, will be open.^000000";
 			next;
 			mes "^3355FFI'll have to fight four";
@@ -2384,13 +2384,13 @@ kh_vila,44,126,0	script	Map#khp1	111,{
 //----------------------------------------------------------------------------
 kh_vila,33,184,0	script	Pot#khp1	111,{
 	if (KHCottagePoem1 < 1) {
-		mes "^3355FFYou've found a " + mesitemlink(7482) + "";
+		mes "^3355FFYou've found a " + mesitemlink(7482, false) + "";
 		mes "filled with boiling,";
 		mes "steaming liquid.^000000";
 		close;
 	}
 	else if (KHCottagePoem1 == 1) {
-		mes "^3355FFYou've found a " + mesitemlink(7482) + "";
+		mes "^3355FFYou've found a " + mesitemlink(7482, false) + "";
 		mes "filled with boiling,";
 		mes "steaming liquid.";
 		mes "Steam... That you could";
@@ -2400,7 +2400,7 @@ kh_vila,33,184,0	script	Pot#khp1	111,{
 		switch(select("Try it.:That? That won't work!")) {
 		case 1:
 			mes "^3355FFYou picked up the";
-			mes "boiling " + mesitemlink(7482) + ", but";
+			mes "boiling " + mesitemlink(7482, false) + ", but";
 			mes "slightly burned your";
 			mes "hands by accident.";
 			set KHCottagePoem1,2;
@@ -2415,7 +2415,7 @@ kh_vila,33,184,0	script	Pot#khp1	111,{
 	}
 	else if ((KHCottagePoem1 > 1) || (KielHyreQuest >= 30)){
 		mes "^3355FFThis is where you";
-		mes "picked up the " + mesitemlink(7482) + " filled";
+		mes "picked up the " + mesitemlink(7482, false) + " filled";
 		mes "with steaming hot liquid.^000000";
 		close;
 	}
@@ -2456,7 +2456,7 @@ kh_vila,14,55,0	script	Calabash#khp1	111,{
 			mes "calabash, and gently";
 			mes "feel around with your";
 			mes "fingers until you retrieve";
-			mes "an " + mesitemlink(7329) + ".^000000";
+			mes "an " + mesitemlink(7329, false) + ".^000000";
 			getitem 7329,1; //Old_Bronze_Key
 			close;
 		case 3:
@@ -2469,7 +2469,7 @@ kh_vila,14,55,0	script	Calabash#khp1	111,{
 		mes "^3355FFThis is the expensive";
 		mes "looking calabash from";
 		mes "which you've obtained";
-		mes "the " + mesitemlink(7329) + ".";
+		mes "the " + mesitemlink(7329, false) + ".";
 		mes "It's useless to you now.^000000";
 		close;
 	}
@@ -2481,12 +2481,12 @@ kh_vila,14,55,0	script	Calabash#khp1	111,{
 kh_vila,39,41,0	script	Pool#khp1	111,{
 	if ((KHCottagePoem1 < 3) && (KielHyreQuest < 30)) {
 		mes "^3355FFYou find a fancy pool";
-		mes "filled with " + mesitemlink(7868) + ".^000000";
+		mes "filled with " + mesitemlink(7868, false) + ".^000000";
 		close;
 	}
 	else if ((KHCottagePoem1 == 3) && (KielHyreQuest < 30)) {
 		mes "^3355FFYou find a fancy pool";
-		mes "filled with " + mesitemlink(7868) + ",";
+		mes "filled with " + mesitemlink(7868, false) + ",";
 		mes "along with a conscpicuous";
 		mes "lion statue with two handles.^000000";
 		next;
@@ -2537,7 +2537,7 @@ kh_vila,39,41,0	script	Pool#khp1	111,{
 						mes "this button. Your enemies";
 						mes "must have hidden it carefully";
 						mes "for you to find: it must be";
-						mes "some sort of nefarious " + mesitemlink(1065) + ".^000000";
+						mes "some sort of nefarious " + mesitemlink(1065, false) + ".^000000";
 						close;
 					}
 				}
@@ -2582,7 +2582,7 @@ OnTouch:
 			switch(select("Give Pet Food:It won't work!")) {
 			case 1:
 				mes "^3355FFYou gingerly throw the";
-				mes "" + mesitemlink(537) + " towards the dog.";
+				mes "" + mesitemlink(537, false) + " towards the dog.";
 				mes "Its tail shakes violently as";
 				mes "it devours the food. You'd";
 				mes "better pass this dog now";
@@ -2659,7 +2659,7 @@ kh_vila,115,186,0	script	Drawer#khp1	111,{
 	}
 	else {
 		mes "^3355FFThis is where you";
-		mes "found the " + mesitemlink(7492) + ".";
+		mes "found the " + mesitemlink(7492, false) + ".";
 		mes "This drawer is now empty.^000000";
 		close;
 	}
@@ -2670,27 +2670,27 @@ kh_vila,115,186,0	script	Drawer#khp1	111,{
 //----------------------------------------------------------------------------
 kh_vila,107,126,0	script	Box#khp2	111,{
 	if ((countitem(7329) < 1) && (countitem(7516) < 1) && (countitem(7491) < 1) && (KielHyreQuest < 38)) {
-		mes "^3355FFA solid " + mesitemlink(7948) + " is laid";
+		mes "^3355FFA solid " + mesitemlink(7948, false) + " is laid";
 		mes "on the floor in which";
-		mes "a smaller, locked " + mesitemlink(7948) + "";
+		mes "a smaller, locked " + mesitemlink(7948, false) + "";
 		mes "has been placed inside.^000000";
 		close;
 	}
 	else if ((countitem(7329) >= 1) && (countitem(7516) < 1) && (countitem(7491) < 1) && (KielHyreQuest < 38)) {
-		mes "^3355FFA solid " + mesitemlink(7948) + " is laid";
+		mes "^3355FFA solid " + mesitemlink(7948, false) + " is laid";
 		mes "on the floor in which";
-		mes "a smaller, locked " + mesitemlink(7948) + "";
+		mes "a smaller, locked " + mesitemlink(7948, false) + "";
 		mes "has been placed inside.";
 		mes "Perhaps you can use your";
-		mes "" + mesitemlink(7329) + " to unlock it.^000000";
+		mes "" + mesitemlink(7329, false) + " to unlock it.^000000";
 		next;
 		switch(select("Use Old Bronze Key:No, it'll never work.")) {
 		case 1:
 			mes "^3355FFYour hunch paid off!";
-			mes "The " + mesitemlink(7329) + " really";
-			mes "did unlock that " + mesitemlink(7948) + "! You";
-			mes "open the inner " + mesitemlink(7948) + " and";
-			mes "obtain the " + mesitemlink(7516) + "";
+			mes "The " + mesitemlink(7329, false) + " really";
+			mes "did unlock that " + mesitemlink(7948, false) + "! You";
+			mes "open the inner " + mesitemlink(7948, false) + " and";
+			mes "obtain the " + mesitemlink(7516, false) + "";
 			mes "that was locked inside.";
 			getitem 7516,1; //Green_Key_Card
 			delitem 7329,1; //Old_Bronze_Key
@@ -2705,9 +2705,9 @@ kh_vila,107,126,0	script	Box#khp2	111,{
 		}
 	}
 	else {
-		mes "^3355FFThis is the " + mesitemlink(7948) + " from";
+		mes "^3355FFThis is the " + mesitemlink(7948, false) + " from";
 		mes "which you've obtained";
-		mes "the " + mesitemlink(7516) + ".^000000";
+		mes "the " + mesitemlink(7516, false) + ".^000000";
 		close;
 	}
 }
@@ -2729,17 +2729,17 @@ kh_vila,181,138,0	script	Bookshelf#khp1	111,{
 			mes "book's pages, and don't";
 			mes "find anything particularly";
 			mes "interesting. However, you";
-			mes "notice a " + mesitemlink(999) + " surface behind the";
+			mes "notice a " + mesitemlink(999, false) + " surface behind the";
 			mes "shelf as you place the book back.^000000";
 			next;
 			switch(select("Examine the steel surface:Ignore")) {
 			case 1:
 				mes "^3355FFYou remove more of the";
 				mes "shelf's books to reveal";
-				mes "that the " + mesitemlink(999) + " surface is";
+				mes "that the " + mesitemlink(999, false) + " surface is";
 				mes "part of a safe hidden behind";
 				mes "the bookshelf. There are two";
-				mes "keyholes on the " + mesitemlink(999) + " safe.^000000";
+				mes "keyholes on the " + mesitemlink(999, false) + " safe.^000000";
 				next;
 				switch(select("Try all your keys:Cancel")) {
 				case 1:
@@ -2781,8 +2781,8 @@ kh_vila,181,138,0	script	Bookshelf#khp1	111,{
 						if (.@KHFirstKeyhole == 2) && (.@KHSecondKeyhole == 1) {
 							mes "^3355FFThe safe opens with";
 							mes "a click, and you see";
-							mes "a Grey " + mesitemlink(7948) + " inside.";
-							mes "You take the Grey " + mesitemlink(7948) + "";
+							mes "a Grey " + mesitemlink(7948, false) + " inside.";
+							mes "You take the Grey " + mesitemlink(7948, false) + "";
 							mes "with you, hoping that it";
 							mes "will come in handy later.^000000";
 							delitem 7489,1; //Villa_Spare_Key
@@ -2909,10 +2909,10 @@ kh_vila,123,170,0	script	Medicine Chest#khp1	111,{
 				next;
 				mes "[Poem]";
 				mes "The first snake is made of";
-				mes "" + mesitemlink(999) + ", but I used my rage";
+				mes "" + mesitemlink(999, false) + ", but I used my rage";
 				mes "to destroy it. The second";
 				mes "snake is made of magic,";
-				mes "but my love pierced its " + mesitemlink(7855) + ".";
+				mes "but my love pierced its " + mesitemlink(7855, false) + ".";
 				next;
 				mes "[Poem]";
 				mes "The third snake is flesh";
@@ -2977,10 +2977,10 @@ kh_vila,123,170,0	script	Medicine Chest#khp1	111,{
 		case 2:
 			mes "[Poem]";
 			mes "The first snake is made of";
-			mes "" + mesitemlink(999) + ", but I used my rage";
+			mes "" + mesitemlink(999, false) + ", but I used my rage";
 			mes "to destroy it. The second";
 			mes "snake is made of magic,";
-			mes "but my love pierced its " + mesitemlink(7855) + ".";
+			mes "but my love pierced its " + mesitemlink(7855, false) + ".";
 			next;
 			mes "[Poem]";
 			mes "The third snake is flesh";
@@ -3546,8 +3546,8 @@ kh_school,122,186,4	script	Beautiful Lady#kh6	894,{
 		mes "^3355FFYou tell Allysia where^000000";
 		mes "^3355FFKiel Hyre has been locked^000000";
 		mes "^3355FFup, and give her the metal^000000";
-		mes "^3355FFfragment that Kiel Hyre handed^000000";
-		mes "^3355FFto you. She took " + mesitemlink(7094) + "^000000";
+		mes "^3355FF" + mesitemlink(7094, false) + " that Kiel Hyre handed^000000";
+		mes "^3355FFto you. She took " + mesitemlink(7094, false) + "^000000";
 		mes "^3355FFand wore it around her wrist.^000000";
 		next;
 		mes "[Allysia]";
@@ -3555,7 +3555,7 @@ kh_school,122,186,4	script	Beautiful Lady#kh6	894,{
 		mes "confirmed. B_2_3 area.";
 		mes "Vital signs are normal.";
 		mes "Envelope received. Sending";
-		mes "modified " + mesitemlink(740) + " Designs...";
+		mes "modified " + mesitemlink(740, false) + " Designs...";
 		next;
 		mes "[Allysia]";
 		mes "Alright, I've recieved";
@@ -3580,7 +3580,7 @@ kh_school,122,186,4	script	Beautiful Lady#kh6	894,{
 		mes "keycards for security reasons.";
 		mes "Secondly, meet me at the Kiel";
 		mes "Hyre Mansion in Lighthalzen.";
-		mes "Present the " + mesitemlink(7493) + " to";
+		mes "Present the " + mesitemlink(7493, false) + " to";
 		mes "be admitted to the premises.";
 		delitem 7492,1; //Yellow_Key_Card
 		delitem 7495,1; //Blue_Key_Card
@@ -3649,7 +3649,7 @@ kh_dun01,166,223,0	script	Mechanical Device#kh::KHKeyardReader	111,{
 		input .@KHInput$;
 		if (.@KHInput$ == "Red Keycard") {
 			mes "^3355FFThe door opens once";
-			mes "you insert the " + mesitemlink(7496) + ".^000000";
+			mes "you insert the " + mesitemlink(7496, false) + ".^000000";
 			close2;
 			warp "kh_dun01",170,227;
 			end;
@@ -3734,7 +3734,7 @@ OnTouch:
 		next;
 		mes "^3355FFKiel Hyre slid";
 		mes "a strange metal";
-		mes "" + mesitemlink(7094) + " through";
+		mes "" + mesitemlink(7094, false) + " through";
 		mes "the gap between the";
 		mes "door and the floor.^000000";
 		getitem 7497,1; //Steel_Piece
@@ -3771,7 +3771,7 @@ kh_dun01,44,203,0	script	Entrance Device#khd2::KHAccess	111,{
 		input .@KHInput$;
 		if (.@KHInput$ == "Luxurious Keycard") {
 			mes "^3355FFAs you insert the";
-			mes "" + mesitemlink(7509) + "";
+			mes "" + mesitemlink(7509, false) + "";
 			mes "into the keycard slot,";
 			mes "the door swings open";
 			mes "to reveal a long flight";
@@ -4076,7 +4076,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "You know, I was looking";
 		mes "through this deserted house";
 		mes "in Juno, and discovered";
-		mes "an " + mesitemlink(7014) + " of a woman";
+		mes "an " + mesitemlink(7014, false) + " of a woman";
 		mes "that looks just like Allysia.";
 		next;
 		cutin "kh_kyel02",2;
@@ -4097,7 +4097,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "["+strcharinfo(0)+"]";
 		mes "I don't think it's just";
 		mes "a coincidence. The woman";
-		mes "in that thirty year " + mesitemlink(7014) + "";
+		mes "in that thirty year " + mesitemlink(7014, false) + "";
 		mes "was also named Allysia, and she";
 		mes "worked at Orsimier street";
 		mes "in Juno. Does that ring a bell?";
@@ -4134,11 +4134,11 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "betrothed to some other";
 		mes "woman, and he ended up";
 		mes "marrying his fiancee, thus";
-		mes "breaking Allysia's " + mesitemlink(7855) + ".";
+		mes "breaking Allysia's " + mesitemlink(7855, false) + ".";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Feeling betrayed, her";
-		mes "" + mesitemlink(7855) + " broken, Allysia jumped";
+		mes "" + mesitemlink(7855, false) + " broken, Allysia jumped";
 		mes "into a river. Then, you decided";
 		mes "to get revenge on Rosimier, so";
 		mes "you ended up joining";
@@ -4172,7 +4172,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "Kiel Hyre, I found this";
 		mes "portrait of you as a young";
 		mes "man from the house of the";
-		mes "man that bought " + mesitemlink(7508) + ".";
+		mes "man that bought " + mesitemlink(7508, false) + ".";
 		mes "I even spoke to the fisherman";
 		mes "that discovered Allysia's body.";
 		next;
@@ -4393,7 +4393,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "You already know that";
 		mes "she was found dead the";
 		mes "next day. But what really";
-		mes "broke my " + mesitemlink(7855) + " was that";
+		mes "broke my " + mesitemlink(7855, false) + " was that";
 		mes "she held that ring so tightly";
 		mes "in her hand, even in death...";
 		next;
@@ -4541,16 +4541,16 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		next;
 		mes "[Kiel Hyre]";
 		mes "When you find him, I want";
-		mes "you to take " + mesitemlink(7508) + "";
-		mes "out of his " + mesitemlink(7855) + ". If you";
+		mes "you to take " + mesitemlink(7508, false) + "";
+		mes "out of his " + mesitemlink(7855, false) + ". If you";
 		mes "remove it, that should stop";
-		mes "him from going " + mesitemlink(1814) + ".";
+		mes "him from going " + mesitemlink(1814, false) + ".";
 		next;
 		select("Allysia's Ring?");
 		mes "[Kiel Hyre]";
 		mes "Yes... Her ring is the";
 		mes "beginning of everything";
-		mes "I put that in his " + mesitemlink(7855) + " so";
+		mes "I put that in his " + mesitemlink(7855, false) + " so";
 		mes "that I'd never forget what";
 		mes "the Rosimiers did to me.";
 		next;
@@ -4570,7 +4570,7 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "he won't be able to use his";
 		mes "body's full power. While he's";
 		mes "weakened, open up his chest";
-		mes "and get the ring from his " + mesitemlink(7855) + ".";
+		mes "and get the ring from his " + mesitemlink(7855, false) + ".";
 		next;
 		mes "[Kiel Hyre]";
 		mes "Let me know once";
@@ -4612,13 +4612,13 @@ kh_mansion,22,28,4	script	Kiel Hyre#kh	903,{
 		mes "You're back...!";
 		mes "So were you able";
 		mes "to retrieve Allysia's";
-		mes "Ring from Kiehl's " + mesitemlink(7855) + "?";
+		mes "Ring from Kiehl's " + mesitemlink(7855, false) + "?";
 		next;
 		if (countitem(7508) < 1) {
 			mes "[Kiel Hyre]";
 			mes "You mean... You don't have it?";
-			mes "Please, retrieve " + mesitemlink(7508) + "";
-			mes "from Kiehl's " + mesitemlink(7855) + "!";
+			mes "Please, retrieve " + mesitemlink(7508, false) + "";
+			mes "from Kiehl's " + mesitemlink(7855, false) + "!";
 			next;
 			enablenpc "Kiehl_Room_Warp";
 			donpcevent "Kiehl_Room_Warp::OnEnable";
@@ -4724,7 +4724,7 @@ kh_mansion,18,30,4	script	Allysia	894,{
 				mes "of Kiel Hyre's First Generation";
 				mes "robots. I was constructed using";
 				mes "a heavy mechanical framework,";
-				mes "a robotic " + mesitemlink(7855) + ", and chemically";
+				mes "a robotic " + mesitemlink(7855, false) + ", and chemically";
 				mes "synthesized skin covering.";
 				next;
 				mes "[Allysia]";
@@ -4798,7 +4798,7 @@ kh_mansion,18,30,4	script	Allysia	894,{
 				mes "[Allysia]";
 				mes "With their organic bodies";
 				mes "and advanced artificial hearts";
-				mes "made from imitation Ymir " + mesitemlink(7855) + "";
+				mes "made from imitation Ymir " + mesitemlink(7855, false) + "";
 				mes "Pieces, they can experience";
 				mes "physiologic phenomena";
 				mes "just like ordinary humans.";
@@ -5351,7 +5351,7 @@ yuno,250,132,0	script	Old Lady#kh	711,{
 			mes "supposed to give it to just";
 			mes "anyone, but I can tell that";
 			mes "you're working with Allysia's";
-			mes "best interests at " + mesitemlink(7855) + ".";
+			mes "best interests at " + mesitemlink(7855, false) + ".";
 			next;
 			mes "[Old Lady]";
 			mes "However, you've got to";
@@ -5488,7 +5488,7 @@ kh_rossi,23,23,0	script	Table#khr2	111,{
 	else{
 		mes "^3355FFThis was the desk in";
 		mes "which you obtained the";
-		mes "Rosimier " + mesitemlink(7499) + ".";
+		mes "Rosimier " + mesitemlink(7499, false) + ".";
 		mes "Its drawers are empty now.^000000";
 		close;
 	}
@@ -5525,13 +5525,13 @@ kh_rossi,92,40,0	script	Shelf#khr	111,{
 			next;
 			switch(select("Use Key:Pass")) {
 			case 1:
-				mes "^3355FFWhich " + mesitemlink(7948) + " do you";
+				mes "^3355FFWhich " + mesitemlink(7948, false) + " do you";
 				mes "want to try to open?^000000";
 				next;
 				switch(select("First Box:Second Box")) {
 				case 1:
 					mes "^3355FFYou use the Master Key to";
-					mes "unlock the " + mesitemlink(7948) + ", and obtain";
+					mes "unlock the " + mesitemlink(7948, false) + ", and obtain";
 					mes "a portait of a woman that";
 					mes "looks just like Kiel Hyre's";
 					mes "assistant, Allysia.^000000";
@@ -5545,11 +5545,11 @@ kh_rossi,92,40,0	script	Shelf#khr	111,{
 					cutin "",255;
 					end;
 				case 2:
-					mes "^3355FFThis " + mesitemlink(7948) + " is empty.^000000";
+					mes "^3355FFThis " + mesitemlink(7948, false) + " is empty.^000000";
 					close;
 				}
 			case 2:
-				mes "^3355FFThis " + mesitemlink(7948) + " is empty.^000000";
+				mes "^3355FFThis " + mesitemlink(7948, false) + " is empty.^000000";
 				close;
 			}
 		}
@@ -5564,7 +5564,7 @@ kh_rossi,92,40,0	script	Shelf#khr	111,{
 		mes "^3355FFYou've found a woman's";
 		mes "portrait in one of the";
 		mes "boxes on this shelf.";
-		mes "This " + mesitemlink(7948) + " is now empty.^000000";
+		mes "This " + mesitemlink(7948, false) + " is now empty.^000000";
 		close;
 	}
 }
@@ -5615,7 +5615,7 @@ kh_rossi,144,286,0	script	Desk#khr3	111,{
 			mes "It's written by James, and";
 			mes "mentions that he wants to";
 			mes "marry Allysia, and that she";
-			mes "received an " + mesitemlink(7288) + ".^000000";
+			mes "received an " + mesitemlink(7288, false) + ".^000000";
 			close;
 		case 4:
 			mes "......";
@@ -5708,7 +5708,7 @@ kh_rossi,154,286,0	script	Bed#khr	111,{
 		case 2:
 			mes "^3355FFYou search underneath";
 			mes "the bed, and find an empty";
-			mes "" + mesitemlink(7288) + " " + mesitemlink(7948) + ".^000000";
+			mes "" + mesitemlink(7288, false) + " " + mesitemlink(7948, false) + ".^000000";
 			close;
 		}
 	}
@@ -5739,7 +5739,7 @@ yuno_fild12,232,222,0	script	Old Fisherman	709,{
 		mes "how much you love handouts,";
 		mes "but you're not getting any.";
 		mes "Now, if you bring me some";
-		mes "" + mesitemlink(544) + ", I'd be more friendly~";
+		mes "" + mesitemlink(544, false) + ", I'd be more friendly~";
 		if (countitem(544) >= 10)  {
 			next;
 			mes "[Fisherman]";
@@ -5921,12 +5921,12 @@ OnMyMobDead:
 kh_kiehl01,13,40,0	script	Flower Vase#kh1	111,{
 	if (KielHyreQuest < 74) {
 		mes "^3355FFYou found";
-		mes "a " + mesitemlink(712) + " vase.^000000";
+		mes "a " + mesitemlink(712, false) + " vase.^000000";
 		close;
 	}
 	if (KielHyreQuest >= 74) {
 		mes "^3355FFYou found";
-		mes "a " + mesitemlink(712) + " vase.^000000";
+		mes "a " + mesitemlink(712, false) + " vase.^000000";
 		next;
 		switch(select("Pick Up Vase:Break Vase:Turn Vase Upside-down")) {
 		case 1:
@@ -5949,7 +5949,7 @@ kh_kiehl01,13,40,0	script	Flower Vase#kh1	111,{
 			mes "''The rabbit often";
 			mes "observes the door";
 			mes "The night eats the";
-			mes "pickled orange.''";
+			mes "pickled " + mesitemlink(582, false) + ".''";
 			close;
 		}
 	}
@@ -5962,7 +5962,7 @@ kh_kiehl01,13,40,0	script	Flower Vase#kh1	111,{
 		mes "''The rabbit often";
 		mes "observes the door.";
 		mes "The night eats the";
-		mes "pickled orange.''";
+		mes "pickled " + mesitemlink(582, false) + ".''";
 		close;
 	}
 }
@@ -5982,7 +5982,7 @@ kh_kiehl01,19,25,0	script	Box#kh1	111,{
 		close;
 	}
 	if (KielHyreQuest < 74) {
-		mes "^3355FFYou found a " + mesitemlink(7948) + " with";
+		mes "^3355FFYou found a " + mesitemlink(7948, false) + " with";
 		mes "a button for each letter";
 		mes "of the alphabet on top of it.^000000";
 		next;
@@ -5992,7 +5992,7 @@ kh_kiehl01,19,25,0	script	Box#kh1	111,{
 	}
 	if (KielHyreQuest >= 74) {
 		if (countitem(7505) < 1) {
-			mes "^3355FFYou found a " + mesitemlink(7948) + " with";
+			mes "^3355FFYou found a " + mesitemlink(7948, false) + " with";
 			mes "a button for each letter";
 			mes "of the alphabet on top of it.^000000";
 			next;
@@ -6001,7 +6001,7 @@ kh_kiehl01,19,25,0	script	Box#kh1	111,{
 				mes "^3355FFAs soon as you enter the";
 				mes "password, the nearby door";
 				mes "emits a pleasant chiming";
-				mes "sound, and the " + mesitemlink(7948) + " pops";
+				mes "sound, and the " + mesitemlink(7948, false) + " pops";
 				mes "open to reveal a small key.^000000";
 				getitem 7505,1; //Toy_Key
 				close;
@@ -6013,12 +6013,12 @@ kh_kiehl01,19,25,0	script	Box#kh1	111,{
 		}
 		else {
 			mes "^3355FFThis is where you";
-			mes "found the " + mesitemlink(7505) + "^000000";
+			mes "found the " + mesitemlink(7505, false) + "^000000";
 			close;
 		}
 	}
 	else{
-		mes "^3355FFThe " + mesitemlink(7948) + " is wide";
+		mes "^3355FFThe " + mesitemlink(7948, false) + " is wide";
 		mes "open, and there";
 		mes "is nothing in it.^000000";
 		close;
@@ -6041,7 +6041,7 @@ kh_kiehl01,44,33,0	script	Big Door#BigDoorKHQ1	111,{
 		if (.@KHInput$ == "Black Keycard") {
 			if (countitem(7506) >= 1) {
 				mes "^3355FFYou insert the";
-				mes "" + mesitemlink(7506) + " into the";
+				mes "" + mesitemlink(7506, false) + " into the";
 				mes "slot, and successfully";
 				mes "unlock and open the door.^000000";
 				delitem 7506,1; //Black_Key_Card
@@ -6165,7 +6165,7 @@ kh_kiehl01,77,108,0	script	Big Door#BigDoorKHQ3	111,{
 		if (.@KHInput$ == "Black Keycard") {
 			if (countitem(7506) >= 1) {
 				mes "^3355FFYou insert the";
-				mes "" + mesitemlink(7506) + " into the";
+				mes "" + mesitemlink(7506, false) + " into the";
 				mes "slot, and successfully";
 				mes "unlock and open the door.^000000";
 				delitem 7506,1; //Black_Key_Card
@@ -6228,7 +6228,7 @@ kh_kiehl01,42,177,0	script	Big Door#BigDoorKHQ4	111,{
 		if (.@KHInput$ == "Black Keycard") {
 			if (countitem(7506) >= 2) {
 				mes "^3355FFYou insert the";
-				mes "" + mesitemlink(7506) + " into the";
+				mes "" + mesitemlink(7506, false) + " into the";
 				mes "slot, and successfully";
 				mes "unlock and open the door.^000000";
 				delitem 7506,2; //Black_Key_Card
@@ -6372,24 +6372,24 @@ kh_kiehl01,166,187,0	script	Big Door#BigDoorKHQ5	111,{
 				if (countitem(7507) >= 1) {
 					if (KielHyreQuest < 92) {
 						mes "^3355FFYou insert one end of";
-						mes "a " + mesitemlink(7507) + " into the";
+						mes "a " + mesitemlink(7507, false) + " into the";
 						mes "door's gap in a strenuous";
 						mes "effort to pry the door open";
 						mes "The gap widens a little bit,";
 						mes "but you break one of your";
-						mes "Solid " + mesitemlink(998) + " Pieces.^000000";
+						mes "Solid " + mesitemlink(998, false) + " Pieces.^000000";
 						delitem 7507,1; //Hard_Piece_of_Steel
 						set KielHyreQuest,KielHyreQuest+2;
 						close;
 					}
 					else if (KielHyreQuest == 92) {
 						mes "^3355FFWith a mighty heave,";
-						mes "you pry a Solid " + mesitemlink(998) + "";
+						mes "you pry a Solid " + mesitemlink(998, false) + "";
 						mes "Piece into the door jamb,";
 						mes "and fling the door wide open";
 						mes "Unable the withstand the";
 						mes "awesome force, this Solid";
-						mes "" + mesitemlink(998) + " Piece shatters into dust.^000000";
+						mes "" + mesitemlink(998, false) + " Piece shatters into dust.^000000";
 						delitem 7507,1; //Hard_Piece_of_Steel
 						set KielHyreQuest,94;
 						close;
@@ -6397,7 +6397,7 @@ kh_kiehl01,166,187,0	script	Big Door#BigDoorKHQ5	111,{
 				}
 				else {
 					mes "^3355FFIf only you had a Solid";
-					mes "" + mesitemlink(998) + " Piece you could use to";
+					mes "" + mesitemlink(998, false) + " Piece you could use to";
 					mes "pry open this door.^000000";
 					close;
 				}
@@ -6961,7 +6961,7 @@ kh_kiehl02,50,52,4	script	Kiehl#Original	902,{
 	if (KielHyreQuest == 104) {
 		cutin "kh_kiel02",2;
 		mes "^3355FFYou retrieve the";
-		mes "ring from the " + mesitemlink(7855) + " of";
+		mes "ring from the " + mesitemlink(7855, false) + " of";
 		mes "Kiehl's old robotic body.^000000";
 		getitem 7508,1; //Elysia_Ring
 		set KielHyreQuest,106;

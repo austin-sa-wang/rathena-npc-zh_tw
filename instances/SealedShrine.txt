@@ -120,10 +120,10 @@ monk_test,309,146,3	script	Friar Patrick#edq	412,{
 						mes "Okay... I'll adjust the shrine's seal so that you and your group can enter.";
 						next;
 						mes "[Friar Patrick]";
-						mes "You will see a sign when the seal has broken. Please wait until " + mesitemlink(2644) + " appears...";
+						mes "You will see a sign when the seal has broken. Please wait until " + mesitemlink(2644, false) + " appears...";
 						next;
 						mes "[Friar Patrick]";
-						mes "When you see " + mesitemlink(2644) + ", put your hands on the gravestone... Then you can move inside.";
+						mes "When you see " + mesitemlink(2644, false) + ", put your hands on the gravestone... Then you can move inside.";
 						next;
 						mes "[Friar Patrick]";
 						mes "One thing that you should remember is... Anyone who enters this shrine will be cursed by Baphomet and cannot enter or leave while they are cursed.";
@@ -298,7 +298,7 @@ prt_monk,261,91,3	script	Rust Blackhand#edq	826,{
 			mes "I'll tell you the ingredients one more time, so please gather them correctly.";
 			next;
 			mes "[Rust Blackhand]";
-			mes "^0000FFCursed " + mesitemlink(750) + ", Magestic Goat, 30 " + mesitemlink(7799) + ", 50 " + mesitemlink(7798) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
+			mes "^0000FF" + mesitemlink(6004, false) + ", Magestic Goat, 30 " + mesitemlink(7799, false) + ", 50 " + mesitemlink(7798, false) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
 			close;
 		}
 	}
@@ -315,13 +315,13 @@ prt_monk,261,91,3	script	Rust Blackhand#edq	826,{
 			mes "Cool... I'll help you make the evil doll useful. What? What can I do?";
 			next;
 			mes "[Rust Blackhand]";
-			mes "I can make the strong and large horns of the wicked devil Baphomet for you. A " + mesitemlink(2228) + " that has his immense power.";
+			mes "I can make the strong and large horns of the wicked devil Baphomet for you. A " + mesitemlink(2228, false) + " that has his immense power.";
 			next;
 			mes "[Rust Blackhand]";
 			mes "It is called the ^4d4dffGigantic Magestic Goat^000000. You'll realize that the Magestic Goat you're familiar with is nothing in comparison.";
 			next;
 			mes "[Rust Blackhand]";
-			mes "The " + mesitemlink(6004) + " is the most important ingredient... I'll make you if you want. What would you like to do?";
+			mes "The " + mesitemlink(6004, false) + " is the most important ingredient... I'll make you if you want. What would you like to do?";
 			next;
 			switch(select("I want to make one!:I don't need one.")) {
 			case 1:
@@ -329,16 +329,16 @@ prt_monk,261,91,3	script	Rust Blackhand#edq	826,{
 				mes "kkk... Yes, wise men take their chances when the opportunity comes. I'll tell you the ingredients. Don't forget, and bring them all.";
 				next;
 				mes "[Rust Blackhand]";
-				mes "^0000FFCursed " + mesitemlink(750) + ", Magestic Goat, 30 " + mesitemlink(7799) + ", 50 " + mesitemlink(7798) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
+				mes "^0000FF" + mesitemlink(6004, false) + ", Magestic Goat, 30 " + mesitemlink(7799, false) + ", 50 " + mesitemlink(7798, false) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
 				next;
 				mes "[Rust Blackhand]";
-				mes "You can get the Magestic Goat from the weak Baphomet in the Labyrinth Forest. " + mesitemlink(7799) + " and " + mesitemlink(7798) + " are from the Incarnation of Morocc.";
+				mes "You can get the Magestic Goat from the weak Baphomet in the Labyrinth Forest. " + mesitemlink(7799, false) + " and " + mesitemlink(7798, false) + " are from the Incarnation of Morocc.";
 				next;
 				mes "[Rust Blackhand]";
 				mes "I'm sure that you can get the ingredients because you sealed the real Baphomet. Can't you? kkk...";
 				next;
 				mes "[Rust Blackhand]";
-				mes "You'll never know how great this hat is until you get one. If you understood, go and get the ingredients.";
+				mes "You'll never know how great this " + mesitemlink(2220, false) + " is until you get one. If you understood, go and get the ingredients.";
 				if (isbegin_quest(3042))
 					changequest 3042,3043;
 				else
@@ -387,16 +387,16 @@ prt_monk,261,91,3	script	Rust Blackhand#edq	826,{
 				mes "kkk... Yes, wise men take their chances when the opportunity comes. I'll tell you the ingredients. Don't forget, and bring them all.";
 				next;
 				mes "[Rust Blackhand]";
-				mes "^0000FFCursed " + mesitemlink(750) + ", Magestic Goat, 30 " + mesitemlink(7799) + ", 50 " + mesitemlink(7798) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
+				mes "^0000FF" + mesitemlink(6004, false) + ", Magestic Goat, 30 " + mesitemlink(7799, false) + ", 50 " + mesitemlink(7798, false) + "^000000, and the most important, production cost is ^0000FF990000^000000 Zeny.";
 				next;
 				mes "[Rust Blackhand]";
-				mes "You can get the Magestic Goat from the weak Baphomet in the Labyrinth Forest. " + mesitemlink(7799) + " and " + mesitemlink(7798) + " are from the Incarnation of Morocc.";
+				mes "You can get the Magestic Goat from the weak Baphomet in the Labyrinth Forest. " + mesitemlink(7799, false) + " and " + mesitemlink(7798, false) + " are from the Incarnation of Morocc.";
 				next;
 				mes "[Rust Blackhand]";
 				mes "I'm sure that you can get the ingredients because you sealed the real Baphomet. Can't you? kkk...";
 				next;
 				mes "[Rust Blackhand]";
-				mes "You'll never know how great this hat is until you get one. If you understood, go and get the ingredients.";
+				mes "You'll never know how great this " + mesitemlink(2220, false) + " is until you get one. If you understood, go and get the ingredients.";
 				//recall_completequest 3043
 				if (isbegin_quest(3042))
 					changequest 3042,3043;
@@ -600,10 +600,10 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 		mes "I must be substantialized within the next hour. To reach the Main Altar underground, you must help me perform the ceremony for opening each seal.";
 		next;
 		mes "[Ancient Hero's Soul]";
-		mes "Now I'll tell you what should you do. First, collect ^0000FFEssence of Fire^000000 from the torches on the graves...";
+		mes "Now I'll tell you what should you do. First, collect ^0000FF" + mesitemlink(6001, false) + "^000000 from the torches on the graves...";
 		next;
 		mes "[Ancient Hero's Soul]";
-		mes "Second, all members who will enter the underground must carry a symbol, called the " + mesitemlink(6002) + ".";
+		mes "Second, all members who will enter the underground must carry a symbol, called the " + mesitemlink(6002, false) + ".";
 		next;
 		while(1) {
 			cutin "ins_cata_champ_n",2;
@@ -614,13 +614,13 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 				mes "You can see the torches here and there. These torches are the essence of Thor, the god of Thunder. They are inherited from our predecessors to stop the darkness of Baphomet...";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "To open the sealed underground gate, I must be purified by the ^0000FFEssence of Fire^000000 which has the " + mesitemlink(5495) + ". Collect ^0000FF10 " + mesitemlink(6001) + "^000000 from the torches.";
+				mes "To open the sealed underground gate, I must be purified by the ^0000FF" + mesitemlink(6001, false) + "^000000 which has the " + mesitemlink(5495, false) + ". Collect ^0000FF10 " + mesitemlink(6001, false) + "^000000 from the torches.";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "One thing you must remember is... ^0000FFEssence of Fire^000000 can only be collected by the Inheritor of Faith.";
+				mes "One thing you must remember is... ^0000FF" + mesitemlink(6001, false) + "^000000 can only be collected by the Inheritor of Faith.";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "I'll give the token of the Inheritor of Faith to the party leader. Only the party leader can collect the ^0000FFEssence of Fire^000000.";
+				mes "I'll give the token of the Inheritor of Faith to the party leader. Only the party leader can collect the ^0000FF" + mesitemlink(6001, false) + "^000000.";
 				next;
 				break;
 			case 2:
@@ -638,30 +638,30 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 				mes "The apostles are cloning themselves to fill the shrine with their evil energy. They are the monsters here in this catacomb.";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "Kill the Apostles. They can only be distinguished from their clones because they will possess a ^0000FFToken of Apostle^000000...";
+				mes "Kill the Apostles. They can only be distinguished from their clones because they will possess a ^0000FF" + mesitemlink(6002, false) + "^000000...";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "If each party member possesses a ^0000FFToken of Apostle^000000, Baphomet will not be able to perceive your entrance to the Main Altar underground.";
+				mes "If each party member possesses a ^0000FF" + mesitemlink(6002, false) + "^000000, Baphomet will not be able to perceive your entrance to the Main Altar underground.";
 				next;
 				mes "[Ancient Hero's Soul]";
 				mes "If Baphomet perceives you when you pass through the sealed gate, he may release his tremendous magical power. Then, this abbey will be demolished.";
 				next;
 				mes "[Ancient Hero's Soul]";
-				mes "Kill the apostles and get the ^0000FFToken of Apostle^000000.";
+				mes "Kill the apostles and get the ^0000FF" + mesitemlink(6002, false) + "^000000.";
 				next;
 				break;
 			case 3:
 				set .@ins_baphomet_1f_3,.@ins_baphomet_1f_3+1;
 				if (is_party_leader(.@party_id) == true) {
 					mes "[Ancient Hero's Soul]";
-					mes "You look like the leader of this party. You need to go and get ^0000FF10 " + mesitemlink(6001) + "^000000 from the torches.";
+					mes "You look like the leader of this party. You need to go and get ^0000FF10 " + mesitemlink(6001, false) + "^000000 from the torches.";
 					next;
 					mes "[Ancient Hero's Soul]";
-					mes "Now I'll carve you the symbol which shows you're a inheritor of faith. Be aware that no one in your party but you can collect the " + mesitemlink(6001) + ".";
+					mes "Now I'll carve you the symbol which shows you're a inheritor of faith. Be aware that no one in your party but you can collect the " + mesitemlink(6001, false) + ".";
 					next;
 					specialeffect2 EF_HOLYHIT;
 					mes "[Ancient Hero's Soul]";
-					mes "You should also carry a ^0000FFToken of Apostle^000000, so find one for yourself too.";
+					mes "You should also carry a ^0000FF" + mesitemlink(6002, false) + "^000000, so find one for yourself too.";
 					next;
 					mes "[Ancient Hero's Soul]";
 					mes "When all of you are ready to go, let me know. I'll open the sealed gate when you're ready.";
@@ -672,7 +672,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 					mes "Make sure that your party leader has listened to my explanation of what you and your companions must do.";
 					next;
 					mes "[Ancient Hero's Soul]";
-					mes "Kill the Apostles of Baphomet and find their ^0000FFToken of Apostle^000000.";
+					mes "Kill the Apostles of Baphomet and find their ^0000FF" + mesitemlink(6002, false) + "^000000.";
 					next;
 					mes "[Ancient Hero's Soul]";
 					mes "It might be better to kill all of them because there is no way to differentiate them from their clones.";
@@ -697,7 +697,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 					mes "It may be difficult but I wish you luck braving the perils of this catacomb.";
 					next;
 					mes "[Ancient Hero's Soul]";
-					mes "Remember, you need to collect ^0000FF10 " + mesitemlink(6001) + "^000000 from the torches and the ^0000FFToken of Apostle^000000 from the Apostles of Baphomet.";
+					mes "Remember, you need to collect ^0000FF10 " + mesitemlink(6001, false) + "^000000 from the torches and the ^0000FF" + mesitemlink(6002, false) + "^000000 from the Apostles of Baphomet.";
 					next;
 				}
 				break;
@@ -724,7 +724,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 	else if (('ins_baphomet == 3) && is_party_leader(.@party_id) == true) {
 		cutin "ins_cata_champ_n",2;
 		mes "[Ancient Hero's Soul]";
-		mes "Did you get 10 ^0000FFEssence of Fire^000000 and ^0000FFToken of Apostle^000000?";
+		mes "Did you get 10 ^0000FF" + mesitemlink(6001, false) + "^000000 and ^0000FF" + mesitemlink(6002, false) + "^000000?";
 		next;
 		if ((countitem(6001) > 9) && (countitem(6002) > 0)) {
 			delitem 6001,countitem(6001); //Essence_Of_Fire
@@ -734,7 +734,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 		}
 		else {
 			mes "[Ancient Hero's Soul]";
-			mes "Not ready yet? You should prepare 10 ^0000FFEssence of Fire^000000 and ^0000FFToken of Apostle^000000.";
+			mes "Not ready yet? You should prepare 10 ^0000FF" + mesitemlink(6001, false) + "^000000 and ^0000FF" + mesitemlink(6002, false) + "^000000.";
 		}
 		close2;
 		cutin "",255;
@@ -743,7 +743,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 	else if ('ins_baphomet == 3) {
 		cutin "ins_cata_champ_n",2;
 		mes "[Ancient Hero's Soul]";
-		mes "Do you have a ^0000FFToken of Apostle^000000?";
+		mes "Do you have a ^0000FF" + mesitemlink(6002, false) + "^000000?";
 		next;
 		if (countitem(6002) > 0) {
 			set 'ins_baphomet,4;
@@ -752,7 +752,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 		}
 		else {
 			mes "[Ancient Hero's Soul]";
-			mes "Not ready yet? You should prepare ^0000FFToken of Apostle^000000.";
+			mes "Not ready yet? You should prepare ^0000FF" + mesitemlink(6002, false) + "^000000.";
 		}
 		close2;
 		cutin "",255;
@@ -761,7 +761,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 	else if (('ins_baphomet == 4) && is_party_leader(.@party_id) == true) {
 		cutin "ins_cata_champ_n",2;
 		mes "[Ancient Hero's Soul]";
-		mes "Are you ready? I opened the sealed gate. To pass the gate, you should carry a ^0000FFToken of Apostle^000000.";
+		mes "Are you ready? I opened the sealed gate. To pass the gate, you should carry a ^0000FF" + mesitemlink(6002, false) + "^000000.";
 		next;
 		set 'ins_baphomet,5;
 		specialeffect EF_TELEPORTATION;
@@ -782,7 +782,7 @@ OnInstanceInit: // Temporary fix for @reloadscript.
 	else if ('ins_baphomet == 4) {
 		cutin "ins_cata_champ_n",2;
 		mes "[Ancient Hero's Soul]";
-		mes "Are you ready? I opened the sealed gate. To pass the gate, you should carry a ^0000FFToken of Apostle^000000.";
+		mes "Are you ready? I opened the sealed gate. To pass the gate, you should carry a ^0000FF" + mesitemlink(6002, false) + "^000000.";
 		next;
 		mes "[Ancient Hero's Soul]";
 		mes "I'll complete opening the sealed gate when your representative tells me that you're ready.";
@@ -821,7 +821,7 @@ OnTouch:
 	}
 	else {
 		mes "[Ancient Hero's Soul]";
-		mes "Where is your " + mesitemlink(6002) + "? I said you should carry the " + mesitemlink(6002) + " to pass this gate.";
+		mes "Where is your " + mesitemlink(6002, false) + "? I said you should carry the " + mesitemlink(6002, false) + " to pass this gate.";
 		close;
 	}
 
@@ -895,11 +895,11 @@ OnInstanceInit:
 			close;
 		}
 		else if (('ins_baphomet == 3) && (countitem(6001) > 10)) {
-			mes "You have 10 " + mesitemlink(6001) + " already, so you don't need to collect any more.";
+			mes "You have 10 " + mesitemlink(6001, false) + " already, so you don't need to collect any more.";
 			close;
 		}
 		else {
-			mes "You don't need to collect " + mesitemlink(6001) + " anymore.";
+			mes "You don't need to collect " + mesitemlink(6001, false) + " anymore.";
 			close;
 		}
 	}
@@ -907,7 +907,7 @@ OnInstanceInit:
 		mes "A huge torch appearing as if it can burn everything is bobbing up and down in front of me..";
 		next;
 		mes "[Unknown Voice]";
-		mes "You are not a inheritor of faith. Do not desecrate the " + mesitemlink(6001) + " with your disrespectful hands.";
+		mes "You are not a inheritor of faith. Do not desecrate the " + mesitemlink(6001, false) + " with your disrespectful hands.";
 		specialeffect2 EF_FIRESPLASHHIT;
 		percentheal -50,0;
 		close;

@@ -157,7 +157,7 @@ alberta,83,96,5	script	Necko	98,7,7,{
 		mes "There are some things needed to do so.";
 		next;
 		mes "[Necko]";
-		mes "7 Pearls, 1 bottle of " + mesitemlink(532) + ",";
+		mes "7 Pearls, 1 bottle of " + mesitemlink(532, false) + ",";
 		mes "and 50 mushroom spores!";
 		mes "Then I'll scorch your vocal chord!";
 		next;
@@ -252,7 +252,7 @@ alberta,119,221,6	script	Charlron	107,{
 				next;
 				mes "[Charlron]";
 				mes "50 Trunks.";
-				mes "10 " + mesitemlink(998) + ".";
+				mes "10 " + mesitemlink(998, false) + ".";
 				mes "20 Animal Skins.";
 				mes "I need at least these things";
 				mes "to change your cart.";
@@ -286,7 +286,7 @@ alberta,119,221,6	script	Charlron	107,{
 				mes "But, since it's the first time";
 				mes "you need to prepare some materials.";
 				mes "50 Trunks!";
-				mes "10 " + mesitemlink(998) + "!";
+				mes "10 " + mesitemlink(998, false) + "!";
 				mes "20 Animal skins!";
 				mes "-bring these please!";
 				next;
@@ -389,7 +389,7 @@ alberta,119,221,6	script	Charlron	107,{
 					else if (countitem(532) > 0) {
 						mes "[Gershaun]";
 						mes "Ooh!";
-						mes "It's " + mesitemlink(532) + "!";
+						mes "It's " + mesitemlink(532, false) + "!";
 						mes "Thank you very much!";
 						mes "...............Kaah!";
 						delitem 532,1; //Banana_Juice
@@ -401,7 +401,7 @@ alberta,119,221,6	script	Charlron	107,{
 						mes "Ah! You are still attached";
 						mes "to Cart Revolution!";
 						mes "Ok then. Considering you brought";
-						mes "the " + mesitemlink(532) + ", I'll teach you.";
+						mes "the " + mesitemlink(532, false) + ", I'll teach you.";
 						next;
 						mes "[Gershaun]";
 						mes "It's not hard to teach you";
@@ -411,10 +411,10 @@ alberta,119,221,6	script	Charlron	107,{
 						next;
 						mes "[Gershaun]";
 						mes "First I need 20 Irons to make the cart";
-						mes "durable. Then 30 " + mesitemlink(938) + " to absorb";
+						mes "durable. Then 30 " + mesitemlink(938, false) + " to absorb";
 						mes "the shock.";
 						mes "And about 20 Fly Wings and 5 Tentacles?";
-						mes "And 2 bottles of " + mesitemlink(533) + " for me!";
+						mes "And 2 bottles of " + mesitemlink(533, false) + " for me!";
 						next;
 						mes "[Gershaun]";
 						mes "Just bring those.";
@@ -428,7 +428,7 @@ alberta,119,221,6	script	Charlron	107,{
 					mes "Mmm!";
 					mes "Nothing can be done without a refreshing drink!";
 					mes "How about starting a conversation";
-					mes "with at least a bottle of " + mesitemlink(532) + "?";
+					mes "with at least a bottle of " + mesitemlink(532, false) + "?";
 					close;
 				}
 				if (.@care_random == 2) {
@@ -461,7 +461,7 @@ alberta,119,221,6	script	Charlron	107,{
 					else if (countitem(532) > 0) {
 						mes "[Gershaun]";
 						mes "Ooh!";
-						mes "It's " + mesitemlink(532) + "!";
+						mes "It's " + mesitemlink(532, false) + "!";
 						mes "Thanks a lot!";
 						mes "...............Kaaah!";
 						delitem 532,1; //Banana_Juice
@@ -473,7 +473,7 @@ alberta,119,221,6	script	Charlron	107,{
 						mes "Ah! You're still attached";
 						mes "to Cart Revolution!";
 						mes "Ok then. Considering you brought";
-						mes "the " + mesitemlink(532) + ", I'll teach you.";
+						mes "the " + mesitemlink(532, false) + ", I'll teach you.";
 						next;
 						mes "[Gershaun]";
 						mes "It's not hard to teach you";
@@ -483,10 +483,10 @@ alberta,119,221,6	script	Charlron	107,{
 						next;
 						mes "[Gershaun]";
 						mes "First I need 20 Irons to make the cart";
-						mes "durable. Then 30 " + mesitemlink(938) + " to absorb";
+						mes "durable. Then 30 " + mesitemlink(938, false) + " to absorb";
 						mes "the shock.";
 						mes "And about 20 Fly Wings and 5 Tentacles?";
-						mes "And 2 bottles of " + mesitemlink(533) + " for me!";
+						mes "And 2 bottles of " + mesitemlink(533, false) + " for me!";
 						next;
 						mes "[Gershaun]";
 						mes "Bring these to me.";
@@ -501,7 +501,7 @@ alberta,119,221,6	script	Charlron	107,{
 					mes "Mmm!";
 					mes "Nothing's free nowadays!";
 					mes "How about trying to start a conversation";
-					mes "by offering a bottle of " + mesitemlink(532) + " or something?";
+					mes "by offering a bottle of " + mesitemlink(532, false) + " or something?";
 					close;
 				}
 				if (.@care_random == 3) {
@@ -534,7 +534,7 @@ alberta,119,221,6	script	Charlron	107,{
 					else if (countitem(532) > 0) {
 						mes "[Gershaun]";
 						mes "Ooh!";
-						mes "It's " + mesitemlink(532) + "!";
+						mes "It's " + mesitemlink(532, false) + "!";
 						mes "Thanks a lot!";
 						mes "...............Kaaah!";
 						delitem 532,1; //Banana_Juice
@@ -546,7 +546,7 @@ alberta,119,221,6	script	Charlron	107,{
 						mes "Ah! You're still attached";
 						mes "to Cart Revolution!";
 						mes "Ok then. Considering you brought";
-						mes "the " + mesitemlink(532) + ", I'll teach you.";
+						mes "the " + mesitemlink(532, false) + ", I'll teach you.";
 						next;
 						mes "[Gershaun]";
 						mes "It's not hard to teach you";
@@ -556,10 +556,10 @@ alberta,119,221,6	script	Charlron	107,{
 						next;
 						mes "[Gershaun]";
 						mes "First I need 20 Irons to make the cart";
-						mes "durable. Then 30 " + mesitemlink(938) + " to absorb";
+						mes "durable. Then 30 " + mesitemlink(938, false) + " to absorb";
 						mes "the shock.";
 						mes "And about 20 Fly Wings and 5 Tentacles?";
-						mes "And 2 bottles of " + mesitemlink(533) + " for me!";
+						mes "And 2 bottles of " + mesitemlink(533, false) + " for me!";
 						next;
 						mes "[Gershaun]";
 						mes "Just bring those.";
@@ -573,7 +573,7 @@ alberta,119,221,6	script	Charlron	107,{
 					mes "Mmm!";
 					mes "Nothing can be done without a refreshing drink!";
 					mes "How about starting a conversation";
-					mes "with at least a bottle of " + mesitemlink(532) + "?";
+					mes "with at least a bottle of " + mesitemlink(532, false) + "?";
 					close;
 				}
 			case 2:
@@ -708,7 +708,7 @@ alberta,119,221,6	script	Charlron	107,{
 					mes "Stupid boy!";
 				}
 				mes "It's way to early for you to";
-				mes "even put your hands on " + mesitemlink(551) + "!";
+				mes "even put your hands on " + mesitemlink(551, false) + "!";
 				close;
 			}
 		}

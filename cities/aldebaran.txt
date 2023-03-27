@@ -104,7 +104,7 @@ aldebaran,81,61,4	script	Shell Gathering Lady#ald	101,{
 		mes "[Joanne]";
 		mes "Have you heard";
 		mes "of Ambernite?";
-		mes "That " + mesitemlink(935) + " monster";
+		mes "That " + mesitemlink(935, false) + " monster";
 		mes "is pretty tough~";
 		next;
 		mes "[Joanne]";
@@ -147,21 +147,21 @@ aldebaran,46,129,4	script	Canal Guy#alde	97,{
 
 aldebaran,67,154,4	script	Forest Guy#alde	98,{
 	mes "[Isenberg]";
-	mes "Mt. " + mesitemlink(1530) + " and Payon Forest.";
+	mes "Mt. " + mesitemlink(1530, false) + " and Payon Forest.";
 	mes "Both of those places are tough";
 	mes "to travel through.";
 	next;
 	switch(select("Mt.Mjolnir?:Payon Forest...?:End Conversation")) {
 	case 1:
 		mes "[Isenberg]";
-		mes "To arrive here from Prontera or Geffen, you've got to cross the " + mesitemlink(1530) + " Mountains.";
+		mes "To arrive here from Prontera or Geffen, you've got to cross the " + mesitemlink(1530, false) + " Mountains.";
 		next;
 		mes "[Isenberg]";
 		mes "If you've made it here by foot without using the Kafra Teleportation service,";
 		mes "then good job!";
 		next;
 		mes "[Isenberg]";
-		mes "The " + mesitemlink(1530) + " Mountains are really steep, and it's full of aggressive and hostile monsters. So it's always a risk to travel through there alone.";
+		mes "The " + mesitemlink(1530, false) + " Mountains are really steep, and it's full of aggressive and hostile monsters. So it's always a risk to travel through there alone.";
 		close;
 	case 2:
 		mes "[Isenberg]";
@@ -218,12 +218,12 @@ aldebaran,90,170,4	script	Slot Guy#alde	47,{
 
 aldebaran,117,181,4	script	Phracon Guy#alde	48,{
 	mes "[Joy]";
-	mes "Level 1 weapons, which are the lowest grade, need a metal named ^3355FFPhracon^000000 in order to be upgraded.";
+	mes "Level 1 weapons, which are the lowest grade, need a metal named ^3355FF" + mesitemlink(1010, false) + "^000000 in order to be upgraded.";
 	next;
 	switch(select("About Phracon:Advice about Phracon:End Conversation")) {
 	case 1:
 		mes "[Joy]";
-		mes "" + mesitemlink(1010) + " is a pretty common metal and can be found all over the Midgard continent.";
+		mes "" + mesitemlink(1010, false) + " is a pretty common metal and can be found all over the Midgard continent.";
 		next;
 		mes "[Joy]";
 		mes "Although it lacks the strength of other metals, it's easy to find and obtain. You can get Phracons by killing monsters or by buying them in Forging Shops in towns.";
@@ -236,7 +236,7 @@ aldebaran,117,181,4	script	Phracon Guy#alde	48,{
 		mes "Well, I hear lots of monsters carry Phracons and will drop them once killed. Why don't you go hunting for them?";
 		next;
 		mes "[Joy]";
-		mes "It shouldn't be too difficult. Once I found a " + mesitemlink(1010) + " that dropped after killing a Bebe Savage! But if you're desperate, you can always buy them at the Forging Shop.";
+		mes "It shouldn't be too difficult. Once I found a " + mesitemlink(1010, false) + " that dropped after killing a Bebe Savage! But if you're desperate, you can always buy them at the Forging Shop.";
 		close;
 	case 3:
 		mes "[Joy]";
@@ -255,7 +255,7 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 		mes "Most people don't know that there was an oriental form of Alchemy that developed in Payon.";
 		next;
 		mes "[Chemirre]";
-		mes "These Payon Alchemists were able to create " + mesitemlink(969) + " out of different materials. However, Payon Alchemy never advanced as much as the Alchemy in Al De Baran.";
+		mes "These Payon Alchemists were able to create " + mesitemlink(969, false) + " out of different materials. However, Payon Alchemy never advanced as much as the Alchemy in Al De Baran.";
 		next;
 		mes "[Chemirre]";
 		mes "Materials for Alchemy in Payon were scarse and interest in that field eventually waned. Now, you can only study Alchemy here in Al De Baran.";
@@ -279,11 +279,11 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 		mes "[Chemirre]";
 		mes "you can only insert a monster card to an item";
 		mes "that satisfies the card's location requirement.";
-		mes "For instance, let's say, you have obtained a " + mesitemlink(4001) + ".";
+		mes "For instance, let's say, you have obtained a " + mesitemlink(4001, false) + ".";
 		next;
 		mes "[Chemirre]";
 		mes "When you right click on the card, you will see";
-		mes "its ability as " + mesitemlink(4751) + " and Perfect Dodge+1";
+		mes "its ability as " + mesitemlink(4751, false) + " and Perfect Dodge+1";
 		mes "and its location as 'Armor'. ";
 		next;
 		mes "[Chemirre]";
@@ -318,7 +318,7 @@ aldebaran,121,231,4	script	Alchemy Guy#alde	49,{
 
 aldebaran,86,228,4	script	Little Kid#alde	62,{
 	mes "[Bebe]";
-	mes "A while ago I went out for a walk toward Mt. " + mesitemlink(1530) + " with my pet Savage Bebe. His name is NukNuk!";
+	mes "A while ago I went out for a walk toward Mt. " + mesitemlink(1530, false) + " with my pet Savage Bebe. His name is NukNuk!";
 	mes "We got attacked, but luckily we weren't hurt.";
 	next;
 	switch(select("Attacked?:About Mt.Mjolnir:End Conversation")) {
@@ -327,14 +327,14 @@ aldebaran,86,228,4	script	Little Kid#alde	62,{
 		mes "I was walking up a narrow path, and out of the blue, a giant and ugly plant started to attack me and NukNuk!";
 		next;
 		mes "[Bebe]";
-		mes "I was so surprised, so me and NukNuk had to run away. I threw " + mesitemlink(2796) + " at it, but I don't think I hurt it. It must have been really strong!";
+		mes "I was so surprised, so me and NukNuk had to run away. I threw " + mesitemlink(2796, false) + " at it, but I don't think I hurt it. It must have been really strong!";
 		next;
 		mes "[Bebe]";
-		mes "What really surprised me was the plant that attacked me was a huge " + mesitemlink(712) + " with the face of a person! So, look out for those. They're dangerous!";
+		mes "What really surprised me was the plant that attacked me was a huge " + mesitemlink(712, false) + " with the face of a person! So, look out for those. They're dangerous!";
 		close;
 	case 2:
 		mes "[Bebe]";
-		mes "Even though people are fascinated by the scenic beauty of Mt. " + mesitemlink(1530) + ", it's full of dangerous monsters!";
+		mes "Even though people are fascinated by the scenic beauty of Mt. " + mesitemlink(1530, false) + ", it's full of dangerous monsters!";
 		next;
 		mes "[Bebe]";
 		mes "There are Flowers, Insects, Bees, Butterflies and Moths that are big enough to kill you if you're not careful!";
@@ -352,11 +352,11 @@ aldebaran,86,228,4	script	Little Kid#alde	62,{
 
 aldebaran,159,242,4	script	Insect Guy#alde	119,{
 	mes "[Stromme]";
-	mes "Even to a strong Swordman, the Insects or Mt. " + mesitemlink(1530) + " pose a considerable threat. You've got to know your enemy before engaging it in battle!";
+	mes "Even to a strong Swordman, the Insects or Mt. " + mesitemlink(1530, false) + " pose a considerable threat. You've got to know your enemy before engaging it in battle!";
 	next;
 	if (select("About Insects:End Conversation") == 1) {
 		mes "[Stromme]";
-		mes "Honey Bees, Butterflies and Moths seem like simple creatures, but that doesn't mean you should underestimate them.";
+		mes "" + mesitemlink(518, false) + " Bees, Butterflies and Moths seem like simple creatures, but that doesn't mean you should underestimate them.";
 		next;
 		mes "[Stromme]";
 		mes "These Insects have evolved over time, and can counter attacks from threats like you adventurers!";
@@ -375,7 +375,7 @@ aldebaran,159,242,4	script	Insect Guy#alde	119,{
 	mes "No matter how harmless and pretty insects are,";
 	mes "take heed to not touch them.";
 	mes "They are extremely strong unlike their innocent looking.";
-	mes "Don't belittle the livings in the Mt. " + mesitemlink(1530) + ".";
+	mes "Don't belittle the livings in the Mt. " + mesitemlink(1530, false) + ".";
 	close;
 }
 
@@ -397,10 +397,10 @@ aldebaran,60,70,4	script	Sylvia#alde	69,{
 		mes "If you right-click the equippable item in the Item Inventory, you'll see that it is Unidentified and that Appraisal is needed. What to do?";
 		next;
 		mes "[Sylvia]";
-		mes "Well, in that case, you've gotta use ^3355FF " + mesitemlink(611) + "^000000!";
+		mes "Well, in that case, you've gotta use ^3355FF " + mesitemlink(611, false) + "^000000!";
 		next;
 		mes "[Sylvia]";
-		mes "Even without a Blacksmith, Alchemist or Merchant in your party, you can appraise your equipment! Of course, a " + mesitemlink(611) + " is consumed each time you use one...";
+		mes "Even without a Blacksmith, Alchemist or Merchant in your party, you can appraise your equipment! Of course, a " + mesitemlink(611, false) + " is consumed each time you use one...";
 		close;
 	}
 	mes "[Sylvia]";
@@ -483,7 +483,7 @@ aldebaran,212,122,4	script	Citizen#alde	97,{
 		mes "Ah, now I remember! Just a few days ago, I saw a really interesting looking monster! It was a Poring with Angel's wings!";
 		next;
 		mes "[Gavin]";
-		mes "I swear! He was jumping around somewhere near Mt. " + mesitemlink(1530) + " with some ordinary Porings. I think he was, like, their leader.";
+		mes "I swear! He was jumping around somewhere near Mt. " + mesitemlink(1530, false) + " with some ordinary Porings. I think he was, like, their leader.";
 		close;
 	}
 	mes "[Gavin]";
@@ -546,7 +546,7 @@ aldeba_in,232,241,4	script	RS125#alde	48,{
 	mes "however, I hope you will not be afraid of me. I am as humane as you are.";
 	next;
 	mes "[RS125]";
-	mes "I may have a machine " + mesitemlink(7855) + " and I may disturb you with loud noises from the " + mesitemlink(7855) + ",";
+	mes "I may have a machine " + mesitemlink(7855, false) + " and I may disturb you with loud noises from the " + mesitemlink(7855, false) + ",";
 	mes "that will never stop me from running for future of Al De Baran.";
 	next;
 	if (select("Listen to his story.:End Conversation") == 1) {
@@ -568,7 +568,7 @@ aldeba_in,232,241,4	script	RS125#alde	48,{
 		next;
 		mes "[RS125]";
 		mes "My brother couldn't accept the fact that he lost the game";
-		mes "so he did too much of practice and had a serious " + mesitemlink(7855) + " attack.";
+		mes "so he did too much of practice and had a serious " + mesitemlink(7855, false) + " attack.";
 		mes "He is still in bed.";
 		next;
 		mes "[RS125]";
@@ -708,10 +708,10 @@ aldeba_in,156,179,4	script	Master#alde	61,{
 		mes "Her long, straight hair, like silk from the East, is her charm point. Direct from Payon, it's Candidate Number Three: ^555555Jasmine^000000!";
 		next;
 		mes "[Master]";
-		mes "A tomboy with bright orange, shortly cut hair. Candidate Number Four: ^1133DDRoxie^000000!";
+		mes "A tomboy with bright " + mesitemlink(582, false) + ", shortly cut hair. Candidate Number Four: ^1133DDRoxie^000000!";
 		next;
 		mes "[Master]";
-		mes "Intelligent, sophisticated and never seen without her luxurious " + mesitemlink(2203) + ". It's Candidate Number Five: ^33FF55Leilah^000000!";
+		mes "Intelligent, sophisticated and never seen without her luxurious " + mesitemlink(2203, false) + ". It's Candidate Number Five: ^33FF55Leilah^000000!";
 		next;
 		mes "[Master]";
 		mes "Pretty, cute and fresh faced. Although She looks young and immature,She's the best staff!";
@@ -786,8 +786,8 @@ aldeba_in,84,166,4	script	Kafra Service#alde	117,{
 			mes "[Kafra Pavianne]";
 			mes "Let's see...";
 			if (countitem(1084) == 1) {
-				mes "You have 1 " + mesitemlink(1084) + ".";
-				mes "You can sell that pass to us for 2000 zeny. Would you like to sell this " + mesitemlink(1084) + " back to the Kafra Corporation?";
+				mes "You have 1 " + mesitemlink(1084, false) + ".";
+				mes "You can sell that pass to us for 2000 zeny. Would you like to sell this " + mesitemlink(1084, false) + " back to the Kafra Corporation?";
 			}
 			else {
 				mes "You have "+ countitem(1084) +" Kafra Passes.";
@@ -930,7 +930,7 @@ aldeba_in,24,245,4	script	Kafra Jasmine#alde	115,{
 		mes "Punk.";
 		next;
 		mes "[Kafra Jasmine]";
-		mes "I was a member of the Kafra " + mesitemlink(13104) + " before joining the Kafra Service Team. My specialty was ^990000Magnum Break^000000, so if you know what's good for you, don't mess with me.";
+		mes "I was a member of the Kafra " + mesitemlink(13104, false) + " before joining the Kafra Service Team. My specialty was ^990000Magnum Break^000000, so if you know what's good for you, don't mess with me.";
 		next;
 		mes "[Kafra Jasmine]";
 		mes "I'm trying my best to live as quietly and as femininely as I can, so don't make me break your knuckles! You got it?!";
@@ -1219,7 +1219,7 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 						mes "First Prize!";
 						mes "Your very own";
 						next;
-						mes "set of " + mesitemlink(2328) + "!";
+						mes "set of " + mesitemlink(2328, false) + "!";
 						mes "Today must be your";
 						mes "lucky day, adventurer!";
 					}
@@ -1244,19 +1244,19 @@ aldeba_in,79,161,7	script	Kafra Employee#reserve1	4_F_KAFRA3,{
 						getitem 2201,1;// Sunglasses
 						mes "Third Prize!";
 						mes "Your very own pair";
-						mes "of suave " + mesitemlink(2201) + "!";
-						mes "It'll give you an " + mesitemlink(1132) + " in";
+						mes "of suave " + mesitemlink(2201, false) + "!";
+						mes "It'll give you an " + mesitemlink(1132, false) + " in";
 						mes "the war of looking cool,";
 						mes "or when playing poker~";
 					}
 					else if (.@choose_prize <= 19) {
 						getitem 2226,1;// Cap
 						mes "Second Prize!";
-						mes "A... " + mesitemlink(2226) + "? Hmmm,";
+						mes "A... " + mesitemlink(2226, false) + "? Hmmm,";
 						mes "these have pretty good";
 						mes "Defense, but I'm not so";
 						mes "sure of how fashionable";
-						mes "this hat is. Oh well...";
+						mes "this " + mesitemlink(2220, false) + " is. Oh well...";
 					}
 					else if (.@choose_prize == 20) {
 						getitem 505,3;// Blue_Potion
@@ -1359,7 +1359,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					getitem 645,15;// Center_Potion
 					mes "The 3rd~~";
 					mes "The 3rd prize!";
-					mes "The prize is ^00FF0015 " + mesitemlink(645) + "~^000000";
+					mes "The prize is ^00FF0015 " + mesitemlink(645, false) + "~^000000";
 					next;
 					mes "[Kafra Employee]";
 					mes "We always use this when we need to concentrate on something.";
@@ -1378,7 +1378,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					getitem 608,1;// Seed_Of_Yggdrasil
 					mes "Whoa~!! The first... The First!!!";
 					mes "Congratulations~~ You got the 1st prize~";
-					mes "The prize is ^00FF001 " + mesitemlink(608) + "~^000000";
+					mes "The prize is ^00FF001 " + mesitemlink(608, false) + "~^000000";
 					next;
 					mes "[Kafra Employee]";
 					mes "I guess you spent entire luck for this lottery chance~";
@@ -1401,14 +1401,14 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					mes "The prize is ^00FF0015 Awakening Potions~^000000";
 					next;
 					mes "[Kafra Employee]";
-					mes "An " + mesitemlink(656) + " is better than a " + mesitemlink(645) + "!";
+					mes "An " + mesitemlink(656, false) + " is better than a " + mesitemlink(645, false) + "!";
 					mes "Overdose is not good for your body~";
 				}
 				else if (.@choose_prize < 20) {
 					getitem 657,10;// Berserk_Potion
 					mes "The 2nd~~";
 					mes "The 3rd prize~~";
-					mes "The prize is ^00FF0010 " + mesitemlink(1814) + " Potions~^000000";
+					mes "The prize is ^00FF0010 " + mesitemlink(1814, false) + " Potions~^000000";
 					next;
 					mes "[Kafra Employee]";
 					mes "Overdose may cause madness~";
@@ -1419,7 +1419,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					mes "Whoa~!! The first... The First!!!";
 					mes "Congratulations~~ You got the 1st prize~";
 					mes "The prize is ^00FF001 Yggdrasilberry~^000000";
-					mes "The prize is ^00FF001 " + mesitemlink(608) + "~^000000";
+					mes "The prize is ^00FF001 " + mesitemlink(608, false) + "~^000000";
 					next;
 					mes "[Kafra Employee]";
 					mes "I guess you spent entire luck for this lottery chance~";
@@ -1449,7 +1449,7 @@ aldeba_in,88,161,3	script	Kafra Employee#reserve2	4_F_KAFRA3,{
 					getitem 526,10;// Royal_Jelly
 					mes "The 2nd~~";
 					mes "The 3rd prize~~";
-					mes "The prize is ^00FF001 " + mesitemlink(608) + "~^000000";
+					mes "The prize is ^00FF001 " + mesitemlink(608, false) + "~^000000";
 					mes "The prize is ^00FF0010 Royal Jellies~^000000";
 					next;
 					mes "[Kafra Employee]";

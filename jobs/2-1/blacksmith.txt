@@ -65,7 +65,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 	}
 	mes "[Altiregen]";
 	mes "Welcome!";
-	mes "We are Workers of " + mesitemlink(999) + ",";
+	mes "We are Workers of " + mesitemlink(999, false) + ",";
 	mes "the Blacksmith Guild.";
 	next;
 	mes "[Altiregen]";
@@ -134,7 +134,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 	else if (BaseJob == Job_Blacksmith) {
 		mes "[Altiregen]";
 		mes "Oh! Long time no see.";
-		mes "Have you come to purchase supplies from Christopher? These days I'm stuck behind this desk. My body's itching to strike the ol' " + mesitemlink(986) + ".";
+		mes "Have you come to purchase supplies from Christopher? These days I'm stuck behind this desk. My body's itching to strike the ol' " + mesitemlink(986, false) + ".";
 		close;
 	}
 	else if (BaseJob == Job_Merchant) {
@@ -435,7 +435,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 						set .@black_q,.@black_q+10;
 					mes "[Geschupenschte]";
 					mes "2. How much Zeny";
-					mes "is one " + mesitemlink(909) + " worth?";
+					mes "is one " + mesitemlink(909, false) + " worth?";
 					next;
 					if (select("1 Zeny:2 Zeny:3 Zeny:4 Zeny") == 3)
 						set .@black_q,.@black_q+10;
@@ -482,7 +482,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 						set .@black_q,.@black_q+10;
 					mes "[Geschupenschte]";
 					mes "9. What monster does";
-					mes "NOT drop " + mesitemlink(1002) + "?";
+					mes "NOT drop " + mesitemlink(1002, false) + "?";
 					next;
 					if (select("Chon Chon:Steel Chon Chon:Zerom:Anolian") == 4)
 						set .@black_q,.@black_q+10;
@@ -629,7 +629,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 				mes "[Geschupenschte]";
 				mes "Wait...";
 				mes "Didn't I tell you";
-				mes "to get 3 " + mesitemlink(999) + "?";
+				mes "to get 3 " + mesitemlink(999, false) + "?";
 				next;
 				mes "[Geschupenschte]";
 				mes "Oh, I guess it was";
@@ -668,7 +668,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 				mes "All done...";
 				switch(BSMITH_Q) {
 				case 9:
-					mes "Okay, now take this to ^8E6B23Baisulist^000000 in Geffen of Rune-Midgarts Kingdom. Simply deliver it and bring me the " + mesitemlink(6271) + ".";
+					mes "Okay, now take this to ^8E6B23Baisulist^000000 in Geffen of Rune-Midgarts Kingdom. Simply deliver it and bring me the " + mesitemlink(6271, false) + ".";
 					getitem 1610,1; //Arc_Wand
 					if (checkquest(2003) != -1) {
 						changequest 2003,2008;
@@ -678,11 +678,11 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "Hmm...?";
 					mes "What's that look for?";
 					mes "This is not a normal";
-					mes "" + mesitemlink(1610) + "! Look closely";
+					mes "" + mesitemlink(1610, false) + "! Look closely";
 					mes "at the handle...";
 					next;
 					mes "^3355FFThe handle reads:";
-					mes "'Super " + mesitemlink(1610) + "";
+					mes "'Super " + mesitemlink(1610, false) + "";
 					mes "of Geschupenschte";
 					mes "Mark 2.' It does seem";
 					mes "to have a completely";
@@ -693,7 +693,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Baisulist^000000 in Geffen of Rune-Midgarts Kingdom,";
 					break;
 				case 10:
-					mes "Okay, now take this to ^8E6B23Wickebine^000000 in Morocc of Rune-Midgarts Kingdom. Simply deliver it and bring me the " + mesitemlink(6271) + ".";
+					mes "Okay, now take this to ^8E6B23Wickebine^000000 in Morocc of Rune-Midgarts Kingdom. Simply deliver it and bring me the " + mesitemlink(6271, false) + ".";
 					getitem 1219,1; //Gladius
 					if (checkquest(2004) != -1) {
 						changequest 2004,2009;
@@ -703,11 +703,11 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "Hmm...?";
 					mes "What's that look for?";
 					mes "This is not a normal";
-					mes "" + mesitemlink(1219) + "! Look closely";
+					mes "" + mesitemlink(1219, false) + "! Look closely";
 					mes "at the handle...";
 					next;
 					mes "^3355FFThe handle reads:";
-					mes "'Super " + mesitemlink(1219) + "";
+					mes "'Super " + mesitemlink(1219, false) + "";
 					mes "of Geschupenschte";
 					mes "Mark 2.' It does seem";
 					mes "to have a completely";
@@ -718,7 +718,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Wickebine^000000 in Morocc of Rune-Midgarts Kingdom,";
 					break;
 				case 11:
-					mes "Okay, now take this to ^8E6B23Krongast^000000 in Lighthalzen. Simply deliver it and bring me the " + mesitemlink(6271) + ".";
+					mes "Okay, now take this to ^8E6B23Krongast^000000 in Lighthalzen. Simply deliver it and bring me the " + mesitemlink(6271, false) + ".";
 					getitem 1119,1; //Tsurugi
 					if (checkquest(2005) != -1) {
 						changequest 2005,2010;
@@ -728,13 +728,13 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "Hmm...?";
 					mes "What's that look for?";
 					mes "This is not a normal";
-					mes "" + mesitemlink(1119) + "! Look closely";
+					mes "" + mesitemlink(1119, false) + "! Look closely";
 					mes "at the blade...";
 					next;
 					mes "^3355FFThe blade reads:";
 					mes "'Fine-edged";
 					mes "Geschupenschte";
-					mes "" + mesitemlink(1119) + " Special.'";
+					mes "" + mesitemlink(1119, false) + " Special.'";
 					mes "It does seem to feel";
 					mes "completely different";
 					mes "than normal Tsurugis...^000000";
@@ -744,7 +744,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Krongast^000000 in Lighthalzen";
 					break;
 				case 12:
-					mes "Okay, now take this to ^8E6B23Talpiz^000000 in Payon of Rune-Midgarts Kingdom. Simply deliver this and bring me the " + mesitemlink(6271) + ".";
+					mes "Okay, now take this to ^8E6B23Talpiz^000000 in Payon of Rune-Midgarts Kingdom. Simply deliver this and bring me the " + mesitemlink(6271, false) + ".";
 					getitem 1713,1; //Arbalest
 					if (checkquest(2006) != -1) {
 						changequest 2006,2011;
@@ -754,12 +754,12 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "Hmm...?";
 					mes "What's that look for?";
 					mes "This is not a normal";
-					mes "" + mesitemlink(1713) + "! Look closely";
+					mes "" + mesitemlink(1713, false) + "! Look closely";
 					mes "at the bow...";
 					next;
 					mes "^3355FFThe bow reads:";
 					mes "Geschupenschte";
-					mes "" + mesitemlink(1713) + " Luxury Edition.";
+					mes "" + mesitemlink(1713, false) + " Luxury Edition.";
 					mes "It does seem more luxurious";
 					mes "than regular Arbalests.^000000";
 					next;
@@ -768,7 +768,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Talpiz^000000 in Payon of Rune-Midgarts Kindgom,";
 					break;
 				case 13:
-					mes "Okay, now take this to ^8E6B23Bismarc^000000 in Hugel. Simply deliver this and bring back the " + mesitemlink(6271) + ".";
+					mes "Okay, now take this to ^8E6B23Bismarc^000000 in Hugel. Simply deliver this and bring back the " + mesitemlink(6271, false) + ".";
 					getitem 1122,1; //Ring_Pommel_Saber
 					if (checkquest(2007) != -1) {
 						changequest 2007,2012;
@@ -778,13 +778,13 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "Hmm...?";
 					mes "What's that look for?";
 					mes "This is not a normal";
-					mes "" + mesitemlink(1122) + "!";
+					mes "" + mesitemlink(1122, false) + "!";
 					mes "Look closely at";
 					mes "the handle...";
 					next;
 					mes "^3355FFThe handle reads:";
 					mes "'Green Herbal";
-					mes "" + mesitemlink(1122) + "";
+					mes "" + mesitemlink(1122, false) + "";
 					mes "of Geschupenschte";
 					mes "Mark 2.' It does seem";
 					mes "to have a completely";
@@ -798,7 +798,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Bismarc^000000 in Hugel";
 				}
 				mes "and don't forget";
-				mes "the " + mesitemlink(6271) + "!";
+				mes "the " + mesitemlink(6271, false) + "!";
 				close;
 			}
 			else {
@@ -838,20 +838,20 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 			mes "[Geschupenschte]";
 			if (BSMITH_Q == 9) {
 				mes "In Geffen, at the";
-				mes "11 o'clock direction from the town center, you will find ^8E6B23Baisulist^000000. And don't forget the " + mesitemlink(6271) + ".";
+				mes "11 o'clock direction from the town center, you will find ^8E6B23Baisulist^000000. And don't forget the " + mesitemlink(6271, false) + ".";
 			}
 			else if (BSMITH_Q == 10) {
 				mes "Find the Swordmace";
-				mes "dealer ^8E6B23Wickebine^000000 in Morocc. And don't forget the " + mesitemlink(6271) + ".";
+				mes "dealer ^8E6B23Wickebine^000000 in Morocc. And don't forget the " + mesitemlink(6271, false) + ".";
 			}
 			else if (BSMITH_Q == 11) {
-				mes "In Lighthalzen, 6 o'clock direction from the town center, you will find ^8E6B23Krongast^000000 near the weapon shop. And don't forget the " + mesitemlink(6271) + ".";
+				mes "In Lighthalzen, 6 o'clock direction from the town center, you will find ^8E6B23Krongast^000000 near the weapon shop. And don't forget the " + mesitemlink(6271, false) + ".";
 			}
 			else if (BSMITH_Q == 12) {
-				mes "In Payon, at the 5 o'clock direction from the town center, you will find ^8E6B23Talpiz^000000. And don't forget the " + mesitemlink(6271) + ".";
+				mes "In Payon, at the 5 o'clock direction from the town center, you will find ^8E6B23Talpiz^000000. And don't forget the " + mesitemlink(6271, false) + ".";
 			}
 			else {
-				mes "In Hugel, at the 1 o'clock direction from the town center, you will find ^8E6B23Bismarc^000000 near the airship. And don't forget the " + mesitemlink(6271) + ".";
+				mes "In Hugel, at the 1 o'clock direction from the town center, you will find ^8E6B23Bismarc^000000 near the airship. And don't forget the " + mesitemlink(6271, false) + ".";
 			}
 			close;
 		}
@@ -861,7 +861,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 			mes "Have you";
 			mes "completed";
 			mes "the delivery?";
-			mes "Let's see that " + mesitemlink(6271) + "~";
+			mes "Let's see that " + mesitemlink(6271, false) + "~";
 			next;
 			if (select("Yes sir, here it is.:Receipt? I, uh, have it somewhere.") == 1) {
 				if (countitem(1073) > 0) {
@@ -901,11 +901,11 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 				mes "[Geschupenschte]";
 				mes "You mean...";
 				mes "You didn't get";
-				mes "a " + mesitemlink(6271) + "?";
+				mes "a " + mesitemlink(6271, false) + "?";
 				mes "What...?";
 				next;
 				mes "[Geschupenschte]";
-				mes "A " + mesitemlink(6271) + " is";
+				mes "A " + mesitemlink(6271, false) + " is";
 				mes "a Merchant's best friend!";
 				mes "It's necessary to your job!";
 				mes "You'll have to start your";
@@ -914,9 +914,9 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 			}
 			mes "[Geschupenschte]";
 			mes "Return when you";
-			mes "find the " + mesitemlink(6271) + "~";
+			mes "find the " + mesitemlink(6271, false) + "~";
 			mes "You didn't forget";
-			mes "to receive a " + mesitemlink(6271) + ".";
+			mes "to receive a " + mesitemlink(6271, false) + ".";
 			mes "Right...?";
 			close;
 		}
@@ -954,7 +954,7 @@ geffen,46,164,1	script	Baisulist#BLS	69,{
 		mes "Oh, hello!";
 		mes "Have you come";
 		mes "to deliver my";
-		mes "" + mesitemlink(1610) + "?";
+		mes "" + mesitemlink(1610, false) + "?";
 		next;
 		mes "[Baisulist]";
 		mes "You sure this is what I ordered, right? I mean, if it's been used,";
@@ -981,7 +981,7 @@ geffen,46,164,1	script	Baisulist#BLS	69,{
 		mes "[Baisulist]";
 		mes "Please wait";
 		mes "a second, let";
-		mes "me give you a " + mesitemlink(6271) + "~";
+		mes "me give you a " + mesitemlink(6271, false) + "~";
 		next;
 		getitem 1073,1; //Merchant_Voucher_1
 		mes "[Baisulist]";
@@ -1018,7 +1018,7 @@ geffen,46,164,1	script	Baisulist#BLS	69,{
 		next;
 		mes "[Baisulist]";
 		mes "When will I get";
-		mes "my special " + mesitemlink(1610) + "?";
+		mes "my special " + mesitemlink(1610, false) + "?";
 		close;
 	}
 }
@@ -1032,14 +1032,14 @@ morocc,27,112,4	script	Wickebine#BLS	725,{
 		next;
 		mes "[Wickebine]";
 		mes "This is what I ordered, right?";
-		mes "I don't want any used or old " + mesitemlink(1219) + " that you might have!";
+		mes "I don't want any used or old " + mesitemlink(1219, false) + " that you might have!";
 		next;
 		if (select("Whoops, not that one.:I guarantee you it is new.") == 1) {
 			cutin "Job_Black_hucke03",2;
 			mes "[Wickebine]";
 			mes "Oooh...!";
 			mes "Hurry up";
-			mes "with my " + mesitemlink(1219) + "~";
+			mes "with my " + mesitemlink(1219, false) + "~";
 			next;
 			mes "- She seems to be upset. -";
 			close2;
@@ -1078,7 +1078,7 @@ morocc,27,112,4	script	Wickebine#BLS	725,{
 		getitem 1073,1; //Merchant_Voucher_1
 		emotion ET_THROB;
 		mes "[Wickebine]";
-		mes "Here's the " + mesitemlink(6271) + ".";
+		mes "Here's the " + mesitemlink(6271, false) + ".";
 		mes "I think you did";
 		mes "a good job.";
 		mapannounce "morocc","Thanks for delivering, " + strcharinfo(0) + "~!",bc_map;
@@ -1164,12 +1164,12 @@ lighthalzen,209,80,4	script	Krongast#BLS	734,{
 		mes "[Krongast]";
 		mes "Okay then.";
 		mes "Let me give";
-		mes "you a " + mesitemlink(6271) + ".";
+		mes "you a " + mesitemlink(6271, false) + ".";
 		next;
 		getitem 1073,1; //Merchant_Voucher_1
 		mes "[Krongast]";
 		mes "Here is";
-		mes "your " + mesitemlink(6271) + ".";
+		mes "your " + mesitemlink(6271, false) + ".";
 		mes "Thank you for";
 		mes "your business!";
 		mapannounce "lighthalzen",strcharinfo(0)+"... Thank you for the delivery.",bc_map;
@@ -1192,7 +1192,7 @@ lighthalzen,209,80,4	script	Krongast#BLS	734,{
 		mes "[Krongast]";
 		mes "When will the sword";
 		mes "I ordered finally arrive?";
-		mes "I need to try my ultimate skill, ^2F4F4FFine " + mesitemlink(1132) + "^000000 with it.";
+		mes "I need to try my ultimate skill, ^2F4F4FFine " + mesitemlink(1132, false) + "^000000 with it.";
 		next;
 		mes "[Krongast]";
 		mes "Ahhhhhhh!";
@@ -1210,7 +1210,7 @@ payon,214,79,4	script	Talpiz#BLS	59,{
 		mes "The package I ordered?";
 		next;
 		mes "[Talpiz]";
-		mes "Um, this is what I ordered, right? I don't want an " + mesitemlink(1713) + " that's been used before.";
+		mes "Um, this is what I ordered, right? I don't want an " + mesitemlink(1713, false) + " that's been used before.";
 		next;
 		if (select("Whoops, this is a used one.:I'm sure it's new.") == 1) {
 			mes "[Talpiz]";
@@ -1233,7 +1233,7 @@ payon,214,79,4	script	Talpiz#BLS	59,{
 		mes "Very nice!!";
 		next;
 		mes "[Talpiz]";
-		mes "This is truly a quality made custom item. I love how there is a case for an " + mesitemlink(2212) + "! I really reallly love this~";
+		mes "This is truly a quality made custom item. I love how there is a case for an " + mesitemlink(2212, false) + "! I really reallly love this~";
 		next;
 		mes "[Talpiz]";
 		mes "Thank you!";
@@ -1244,7 +1244,7 @@ payon,214,79,4	script	Talpiz#BLS	59,{
 		mes "[Talpiz]";
 		mes "Here!";
 		mes "Please take";
-		mes "your " + mesitemlink(6271) + ".";
+		mes "your " + mesitemlink(6271, false) + ".";
 		mes "I really appreciate";
 		mes "your hard work.";
 		mapannounce "payon","Thanks, " +strcharinfo(0)+ ", you really delivered. Everytime I look at this, I love it even more~",bc_map;
@@ -1265,7 +1265,7 @@ payon,214,79,4	script	Talpiz#BLS	59,{
 		mes "order arrive?";
 		next;
 		mes "[Talpiz]";
-		mes "A custom made " + mesitemlink(1713) + "";
+		mes "A custom made " + mesitemlink(1713, false) + "";
 		mes "with a quality case to hold your eye patches. Only one person can make something like that...";
 		next;
 		mes "[Talpiz]";
@@ -1282,7 +1282,7 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 		mes "Sweet God...";
 		mes "Have you sent";
 		mes "an angel...?";
-		mes "Is that the " + mesitemlink(1122) + "";
+		mes "Is that the " + mesitemlink(1122, false) + "";
 		mes "I ordered? It's my only hope...";
 		next;
 		mes "[Bismarc]";
@@ -1311,7 +1311,7 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 		delitem 1122,1; //Ring_Pommel_Saber
 		mes "^3355FFBismarc stabs";
 		mes "himself, repeatedly,";
-		mes "with the " + mesitemlink(1122) + "";
+		mes "with the " + mesitemlink(1122, false) + "";
 		mes "that has been imbued with";
 		mes "the power of Green Herbs.^000000";
 		next;
@@ -1334,13 +1334,13 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 		mes "*Gasp Gasp*";
 		mes "*Whew* Okay,";
 		mes "I can feel the";
-		mes "" + mesitemlink(6128) + " working now.";
+		mes "" + mesitemlink(6128, false) + " working now.";
 		mes "Just what I needed.";
 		next;
 		getitem 1073,1; //Merchant_Voucher_1
 		mes "[Bismarc]";
 		mes "Here is";
-		mes "your " + mesitemlink(6271) + ".";
+		mes "your " + mesitemlink(6271, false) + ".";
 		mes "T-take it...!";
 		mes "It's yours!";
 		mapannounce "hugel","Thanks, " +strcharinfo(0)+ ", for the delivery. You saved my life...",bc_map;
@@ -1367,7 +1367,7 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 		next;
 		mes "[Bismarc]";
 		mes "When is the";
-		mes "" + mesitemlink(6128) + " gonna";
+		mes "" + mesitemlink(6128, false) + " gonna";
 		mes "get here?!";
 		close;
 	}
@@ -1445,7 +1445,7 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 				mes "[Mitehmaeeuh]";
 				mes "1. Which of the";
 				mes "following monsters";
-				mes "drops " + mesitemlink(999) + "?";
+				mes "drops " + mesitemlink(999, false) + "?";
 				next;
 				if (select("Zerom:Chon Chon:Skel Worker:Requiem") == 3)
 					set .@blackss_te,.@blackss_te+20;
@@ -1473,9 +1473,9 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 				if (select("Fire Property:Water Property:Earth Property:Wind Property") == 2)
 					set .@blackss_te,.@blackss_te+20;
 				mes "[Mitehmaeeuh]";
-				mes "5. How many " + mesitemlink(1002) + "";
+				mes "5. How many " + mesitemlink(1002, false) + "";
 				mes "is required to make";
-				mes "1 " + mesitemlink(999) + "?";
+				mes "1 " + mesitemlink(999, false) + "?";
 				next;
 				if (select("5 Iron Ore :4 Iron Ore:3 Iron Ore:6 Iron Ore") == 1)
 					set .@blackss_te,.@blackss_te+20;
@@ -1539,20 +1539,20 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 				mes "You just passed!";
 				next;
 				mes "[Mitehmaeeuh]";
-				mes "However, don't let your early success make you overconfident. A Blacksmith's life isn't a picnic. As proof that you have passed the test, I give you this " + mesitemlink(1005) + ".";
+				mes "However, don't let your early success make you overconfident. A Blacksmith's life isn't a picnic. As proof that you have passed the test, I give you this " + mesitemlink(1005, false) + ".";
 				set BSMITH_Q,17;
 				getitem 1005,1; //Hammer_Of_Blacksmith
 				changequest 2014,2015;
 				next;
 				mes "[Mitehmaeeuh]";
-				mes "Take this " + mesitemlink(1354) + "";
+				mes "Take this " + mesitemlink(1354, false) + "";
 				mes "of Blacksmith and go back to the Altiregen. Okay then? I wish you the best of luck!";
 				close;
 			}
 			mes "You failed! You better study up before coming back here.";
 			next;
 			mes "[Mitehmaeeuh]";
-			mes "With your knowledge, or lack thereof, you'll just end up hurting yourself holding a " + mesitemlink(1354) + "!";
+			mes "With your knowledge, or lack thereof, you'll just end up hurting yourself holding a " + mesitemlink(1354, false) + "!";
 			close;
 		}
 		mes "[Mitehmaeeuh]";
@@ -1571,7 +1571,7 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 		mes "Why don't you go back to Mr.Altiregen?";
 		next;
 		mes "[Mitehmaeeuh]";
-		mes "Don't forget to bring the " + mesitemlink(1005) + " with you!";
+		mes "Don't forget to bring the " + mesitemlink(1005, false) + " with you!";
 		next;
 		mes "[Mitehmaeeuh]";
 		mes "Oh, also make sure that you have no skill point left before you change your job~";
@@ -1584,7 +1584,7 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 		mes "and now I have to deal with the smog in this Einbroch!";
 		next;
 		mes "[Mitehmaeeuh]";
-		mes "But, I must admit that this is the perfect place for Blacksmiths because we have an " + mesitemlink(6069) + " of crafting material supplies as well as highly developed equipment.";
+		mes "But, I must admit that this is the perfect place for Blacksmiths because we have an " + mesitemlink(6069, false) + " of crafting material supplies as well as highly developed equipment.";
 		next;
 		mes "[Mitehmaeeuh]";
 		mes "We, Blacksmiths are trying our best to forge the best of the best weapons.";

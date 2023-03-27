@@ -73,15 +73,15 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 			mes "[Bazo]";
 			mes "First, I'll need";
 			mes "some basic materials.";
-			mes "10 " + mesitemlink(969) + ",";
-			mes "50 " + mesitemlink(999) + " and";
-			mes "10 " + mesitemlink(714) + ".";
+			mes "10 " + mesitemlink(969, false) + ",";
+			mes "50 " + mesitemlink(999, false) + " and";
+			mes "10 " + mesitemlink(714, false) + ".";
 			next;
 			mes "[Bazo]";
 			mes "Then, I'll need some rare ore to enchant this product. The product's trait will depend on the ore that you use.";
 			next;
 			mes "[Bazo]";
-			mes "Please bring me 30 of either " + mesitemlink(7295) + ", " + mesitemlink(7294) + " or " + mesitemlink(7291) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
+			mes "Please bring me 30 of either " + mesitemlink(7295, false) + ", " + mesitemlink(7294, false) + " or " + mesitemlink(7291, false) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
 			set lv4_weapon,1;
 			close;
 		case 2:
@@ -132,21 +132,21 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 		next;
 		mes "[Bazo]";
 		if (lv4_weapon == 5) {
-			mes "" + mesitemlink(1141) + "!";
+			mes "" + mesitemlink(1141, false) + "!";
 			mes "This sword was born to be yours!";
 			mes "Congratulations and hopefully it will be useful to you.";
 			set lv4_weapon,0;
 			getitem 1141,1; //Immaterial_Sword
 		}
 		else if (lv4_weapon == 6) {
-			mes "" + mesitemlink(1526) + "!";
+			mes "" + mesitemlink(1526, false) + "!";
 			mes "This mace was born to be yours!";
 			mes "Congratulations and hopefully it will be useful to you.";
 			set lv4_weapon,0;
 			getitem 1526,1; //Slash
 		}
 		else if (lv4_weapon == 7) {
-			mes "" + mesitemlink(1527) + "!";
+			mes "" + mesitemlink(1527, false) + "!";
 			mes "This mace was born to be yours!";
 			mes "Congratulations and hopefully it will be useful to you.";
 			set lv4_weapon,0;
@@ -374,7 +374,7 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 		}
 		else {
 			mes "[Bazo]";
-			mes "Please bring me 30 " + mesitemlink(7295) + ", " + mesitemlink(7294) + " or " + mesitemlink(7291) + ". You must";
+			mes "Please bring me 30 " + mesitemlink(7295, false) + ", " + mesitemlink(7294, false) + " or " + mesitemlink(7291, false) + ". You must";
 			mes "have forgotten to bring any of those, so please go back and get them so we can begin.";
 			close;
 		}
@@ -386,15 +386,15 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 		mes "[Bazo]";
 		mes "First, I'll need";
 		mes "some basic materials.";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + " and";
-		mes "10 " + mesitemlink(714) + ".";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + " and";
+		mes "10 " + mesitemlink(714, false) + ".";
 		next;
 		mes "[Bazo]";
 		mes "Then, I'll need some rare ore to enchant this product. The product's trait will depend on the ore that you use.";
 		next;
 		mes "[Bazo]";
-		mes "Please bring me 30 of either " + mesitemlink(7295) + ", " + mesitemlink(7294) + " or " + mesitemlink(7291) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
+		mes "Please bring me 30 of either " + mesitemlink(7295, false) + ", " + mesitemlink(7294, false) + " or " + mesitemlink(7291, false) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
 		close;
 	}
 	mes "[Bazo]";
@@ -442,15 +442,15 @@ umbala,117,285,3	script	Bazo#lv4	85,{
 		mes "[Bazo]";
 		mes "First, I'll need";
 		mes "some basic materials.";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + " and";
-		mes "10 " + mesitemlink(714) + ".";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + " and";
+		mes "10 " + mesitemlink(714, false) + ".";
 		next;
 		mes "[Bazo]";
 		mes "Then, I'll need some rare ore to enchant this product. The product's trait will depend on the ore that you use.";
 		next;
 		mes "[Bazo]";
-		mes "Please bring me 30 of either " + mesitemlink(7295) + ", " + mesitemlink(7294) + " or " + mesitemlink(7291) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
+		mes "Please bring me 30 of either " + mesitemlink(7295, false) + ", " + mesitemlink(7294, false) + " or " + mesitemlink(7291, false) + ". Well then, I wish you luck in finding those things and I'll be waiting for you~";
 		set lv4_weapon,1;
 		close;
 	case 2:
@@ -521,13 +521,13 @@ umbala,163,257,3	script	Hibilaithan#lv4	785,{
 			next;
 			mes "[Hibilaithan]";
 			mes "Now, I'll need";
-			mes "10 " + mesitemlink(969) + ",";
-			mes "50 " + mesitemlink(999) + " and";
-			mes "10 " + mesitemlink(714) + "";
+			mes "10 " + mesitemlink(969, false) + ",";
+			mes "50 " + mesitemlink(999, false) + " and";
+			mes "10 " + mesitemlink(714, false) + "";
 			mes "for the basic materials.";
 			next;
 			mes "[Hibilaithan]";
-			mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292) + ", " + mesitemlink(7297) + " or " + mesitemlink(7296) + ". Just bring me 30 of one of those kinds of ores.";
+			mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292, false) + ", " + mesitemlink(7297, false) + " or " + mesitemlink(7296, false) + ". Just bring me 30 of one of those kinds of ores.";
 			next;
 			mes "[Hibilaithan]";
 			mes "Okay, I wish you good luck! In the meantime, I shall relax here and wait for your return.";
@@ -576,17 +576,17 @@ umbala,163,257,3	script	Hibilaithan#lv4	785,{
 		next;
 		mes "[Hibilaithan]";
 		if (lv4_weapon == 12) {
-			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1225) + "!";
+			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1225, false) + "!";
 			set lv4_weapon,0;
 			getitem 1225,1; //Mail_Breaker
 		}
 		else if (lv4_weapon == 13) {
-			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1224) + "!";
+			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1224, false) + "!";
 			set lv4_weapon,0;
 			getitem 1224,1; //Sword_Breaker
 		}
 		else if (lv4_weapon == 14) {
-			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1367) + "!";
+			mes "Ooh, this is a huge success! But of course, since it's my handiwork, that goes without saying. Hey, this is a weapon... Some sort of... " + mesitemlink(1367, false) + "!";
 			set lv4_weapon,0;
 			getitem 1367,1; //Slaughter
 		}
@@ -829,8 +829,8 @@ umbala,163,257,3	script	Hibilaithan#lv4	785,{
 			next;
 			mes "[Hibilaithan]";
 			mes "Please bring 30 of";
-			mes "either, " + mesitemlink(7297) + ", " + mesitemlink(7292) + "";
-			mes "or " + mesitemlink(7296) + " since we need";
+			mes "either, " + mesitemlink(7297, false) + ", " + mesitemlink(7292, false) + "";
+			mes "or " + mesitemlink(7296, false) + " since we need";
 			mes "one of those kinds of ores";
 			mes "for me to start crafting.";
 			close;
@@ -839,13 +839,13 @@ umbala,163,257,3	script	Hibilaithan#lv4	785,{
 	if (lv4_weapon == 8) {
 		mes "[Hibilaithan]";
 		mes "Now, I'll need";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + " and";
-		mes "10 " + mesitemlink(714) + "";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + " and";
+		mes "10 " + mesitemlink(714, false) + "";
 		mes "for the basic materials.";
 		next;
 		mes "[Hibilaithan]";
-		mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292) + ", " + mesitemlink(7297) + " or " + mesitemlink(7296) + ". Just bring me 30 of one of those kinds of ores.";
+		mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292, false) + ", " + mesitemlink(7297, false) + " or " + mesitemlink(7296, false) + ". Just bring me 30 of one of those kinds of ores.";
 		next;
 		mes "[Hibilaithan]";
 		mes "Okay, I wish you good luck! In the meantime, I shall relax here and wait for your return.";
@@ -895,13 +895,13 @@ umbala,163,257,3	script	Hibilaithan#lv4	785,{
 		next;
 		mes "[Hibilaithan]";
 		mes "Now, I'll need";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + " and";
-		mes "10 " + mesitemlink(714) + "";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + " and";
+		mes "10 " + mesitemlink(714, false) + "";
 		mes "for the basic materials.";
 		next;
 		mes "[Hibilaithan]";
-		mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292) + ", " + mesitemlink(7297) + " or " + mesitemlink(7296) + ". Just bring me 30 of one of those kinds of ores.";
+		mes "I'll also need some rare ore to endow my creation with power. " + mesitemlink(7292, false) + ", " + mesitemlink(7297, false) + " or " + mesitemlink(7296, false) + ". Just bring me 30 of one of those kinds of ores.";
 		next;
 		mes "[Hibilaithan]";
 		mes "Okay, I wish you good luck! In the meantime, I shall relax here and wait for your return.";
@@ -969,14 +969,14 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 			mes "to bring me so that I may craft something for you. I shall need...";
 			next;
 			mes "[Tabezthan]";
-			mes "10 " + mesitemlink(969) + ",";
-			mes "50 " + mesitemlink(999) + "";
-			mes "and 10 " + mesitemlink(714) + "";
+			mes "10 " + mesitemlink(969, false) + ",";
+			mes "50 " + mesitemlink(999, false) + "";
+			mes "and 10 " + mesitemlink(714, false) + "";
 			mes "for the basic materials.";
 			mes "I'll also need a rare ore to enchant my creation.";
 			next;
 			mes "[Tabezthan]";
-			mes "In addition, please bring me 30 of either " + mesitemlink(7290) + ", " + mesitemlink(7289) + " or " + mesitemlink(7293) + ". Depending on the ore that you choose, my creation will possess a different trait.";
+			mes "In addition, please bring me 30 of either " + mesitemlink(7290, false) + ", " + mesitemlink(7289, false) + " or " + mesitemlink(7293, false) + ". Depending on the ore that you choose, my creation will possess a different trait.";
 			next;
 			mes "[Tabezthan]";
 			mes "Please be aware that I do not know exactly what item will be produced. There are too many factors in alchemy and there is a limit to anyone's knowledge.";
@@ -1025,19 +1025,19 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 		mes "[Tabezthan]";
 		if (lv4_weapon == 19) {
 			mes "I don't believe it!";
-			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1134) + "!";
+			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1134, false) + "!";
 			set lv4_weapon,0;
 			getitem 1134,1; //Scissores_Sword
 		}
 		else if (lv4_weapon == 20) {
 			mes "I don't believe it!";
-			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1139) + "!";
+			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1139, false) + "!";
 			set lv4_weapon,0;
 			getitem 1139,1; //Tale_Fing_
 		}
 		else if (lv4_weapon == 21) {
 			mes "I don't believe it!";
-			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1365) + "!";
+			mes "This is such an incredibly rare weapon! Yes, I remember its name from what my late father told me. This is... " + mesitemlink(1365, false) + "!";
 			set lv4_weapon,0;
 			getitem 1365,1; //Sabbath
 		}
@@ -1148,7 +1148,7 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 		mes "[Tabezthan]";
 		mes "Umm...";
 		mes "You do not seem to";
-		mes "have enough " + mesitemlink(7293) + ".";
+		mes "have enough " + mesitemlink(7293, false) + ".";
 		mes "Please try to gather at";
 		mes "least 30 of them and then";
 		mes "return to me.";
@@ -1269,7 +1269,7 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 		else {
 			mes "[Tabezthan]";
 			mes "Hmmm...";
-			mes "It doesn't look like it. Remember, I need 30 of either " + mesitemlink(7290) + ", " + mesitemlink(7289) + " or " + mesitemlink(7293) + " before I can begin crafting.";
+			mes "It doesn't look like it. Remember, I need 30 of either " + mesitemlink(7290, false) + ", " + mesitemlink(7289, false) + " or " + mesitemlink(7293, false) + " before I can begin crafting.";
 			close;
 		}
 	}
@@ -1277,13 +1277,13 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 		mes "[Tabezthan]";
 		mes "[Tabezthan]";
 		mes "Bring me...";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + "";
-		mes "and 10 " + mesitemlink(714) + ".";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + "";
+		mes "and 10 " + mesitemlink(714, false) + ".";
 		mes "I'll also need a rare ore to enchant my creation.";
 		next;
 		mes "[Tabezthan]";
-		mes "In addition, please bring me 30 of either " + mesitemlink(7290) + ", " + mesitemlink(7289) + " or " + mesitemlink(7293) + ". Depending on the ore that you choose, my creation will possess a different trait.";
+		mes "In addition, please bring me 30 of either " + mesitemlink(7290, false) + ", " + mesitemlink(7289, false) + " or " + mesitemlink(7293, false) + ". Depending on the ore that you choose, my creation will possess a different trait.";
 		close;
 	}
 	mes "[Tabezthan]";
@@ -1320,14 +1320,14 @@ um_in,156,77,5	script	Tabezthan#lv4	788,{
 		mes "to bring me so that I may craft something for you. I shall need...";
 		next;
 		mes "[Tabezthan]";
-		mes "10 " + mesitemlink(969) + ",";
-		mes "50 " + mesitemlink(999) + "";
-		mes "and 10 " + mesitemlink(714) + "";
+		mes "10 " + mesitemlink(969, false) + ",";
+		mes "50 " + mesitemlink(999, false) + "";
+		mes "and 10 " + mesitemlink(714, false) + "";
 		mes "for the basic materials.";
 		mes "I'll also need a rare ore to enchant my creation.";
 		next;
 		mes "[Tabezthan]";
-		mes "In addition, please bring me 30 of either " + mesitemlink(7290) + ", " + mesitemlink(7289) + " or " + mesitemlink(7293) + ". Depending on the ore that you choose, my creation will possess a different trait.";
+		mes "In addition, please bring me 30 of either " + mesitemlink(7290, false) + ", " + mesitemlink(7289, false) + " or " + mesitemlink(7293, false) + ". Depending on the ore that you choose, my creation will possess a different trait.";
 		next;
 		mes "[Tabezthan]";
 		mes "Please be aware that I do not know exactly what item will be produced. There are too many factors in alchemy and there is a limit to anyone's knowledge.";
@@ -1350,7 +1350,7 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 55) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7296) + ", " + mesitemlink(7294) + " and " + mesitemlink(7290) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7296, false) + ", " + mesitemlink(7294, false) + " and " + mesitemlink(7290, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1361,8 +1361,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 54) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7295) + ", " + mesitemlink(7291) + "";
-		mes "and " + mesitemlink(7292) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7295, false) + ", " + mesitemlink(7291, false) + "";
+		mes "and " + mesitemlink(7292, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1384,8 +1384,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		if (rand(1,2) == 1) {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7295) + ", " + mesitemlink(7291) + "";
-			mes "and " + mesitemlink(7292) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7295, false) + ", " + mesitemlink(7291, false) + "";
+			mes "and " + mesitemlink(7292, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1397,7 +1397,7 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		else {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7296) + ", " + mesitemlink(7294) + " and " + mesitemlink(7290) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7296, false) + ", " + mesitemlink(7294, false) + " and " + mesitemlink(7290, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1430,8 +1430,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 45) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7294) + ",";
-		mes "" + mesitemlink(7297) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7294, false) + ",";
+		mes "" + mesitemlink(7297, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1443,8 +1443,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 46) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7290) + ",";
-		mes "Citrine and " + mesitemlink(7296) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7290, false) + ",";
+		mes "Citrine and " + mesitemlink(7296, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1467,8 +1467,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		if (rand(1,2) == 1) {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7294) + ",";
-			mes "" + mesitemlink(7297) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7294, false) + ",";
+			mes "" + mesitemlink(7297, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1480,8 +1480,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		else {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7290) + ",";
-			mes "Citrine and " + mesitemlink(7296) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7290, false) + ",";
+			mes "Citrine and " + mesitemlink(7296, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1511,8 +1511,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 37) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7297) + ",";
-		mes "" + mesitemlink(7291) + " and " + mesitemlink(7295) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7297, false) + ",";
+		mes "" + mesitemlink(7291, false) + " and " + mesitemlink(7295, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1523,8 +1523,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 36) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7292) + ",";
-		mes "" + mesitemlink(7289) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7292, false) + ",";
+		mes "" + mesitemlink(7289, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1546,8 +1546,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		if (rand(1,2) == 1) {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7292) + ",";
-			mes "" + mesitemlink(7289) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7292, false) + ",";
+			mes "" + mesitemlink(7289, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1559,8 +1559,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		else {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7297) + ",";
-			mes "" + mesitemlink(7291) + " and " + mesitemlink(7295) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7297, false) + ",";
+			mes "" + mesitemlink(7291, false) + " and " + mesitemlink(7295, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1572,7 +1572,7 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	}
 	if ((lv4_weapon == 31) || (lv4_weapon == 32)) {
 		mes "[Bill Thayer]";
-		mes "All of my sons broke my " + mesitemlink(7855) + " by dying too young. I remember that I always used to tell them: 'Enjoy your youth. ^333333Live without regret.^000000'";
+		mes "All of my sons broke my " + mesitemlink(7855, false) + " by dying too young. I remember that I always used to tell them: 'Enjoy your youth. ^333333Live without regret.^000000'";
 		set lv4_weapon,32;
 		next;
 		mes "[Bill Thayer]";
@@ -1582,8 +1582,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 27) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7294) + ",";
-		mes "" + mesitemlink(7289) + " and " + mesitemlink(7291) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7294, false) + ",";
+		mes "" + mesitemlink(7289, false) + " and " + mesitemlink(7291, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1594,8 +1594,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 	if (lv4_weapon == 28) {
 		mes "[Bill Thayer]";
 		mes "Hmm...";
-		mes "You'll need 30 " + mesitemlink(7290) + ",";
-		mes "" + mesitemlink(7296) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+		mes "You'll need 30 " + mesitemlink(7290, false) + ",";
+		mes "" + mesitemlink(7296, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 		next;
 		mes "[Bill Thayer]";
 		mes "^333333*Sniff*^000000";
@@ -1617,8 +1617,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		if (rand(1,2) == 1) {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7294) + ",";
-			mes "" + mesitemlink(7289) + " and " + mesitemlink(7291) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7294, false) + ",";
+			mes "" + mesitemlink(7289, false) + " and " + mesitemlink(7291, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1630,8 +1630,8 @@ aldebaran,178,239,3	script	Bill Thayer#lv4	712,{
 		else {
 			mes "[Bill Thayer]";
 			mes "Hmm...";
-			mes "You'll need 30 " + mesitemlink(7290) + ",";
-			mes "" + mesitemlink(7296) + " and " + mesitemlink(7293) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
+			mes "You'll need 30 " + mesitemlink(7290, false) + ",";
+			mes "" + mesitemlink(7296, false) + " and " + mesitemlink(7293, false) + ". I'm sure those are the materials you need, but I have no idea what the end product is supposed to be...";
 			next;
 			mes "[Bill Thayer]";
 			mes "^333333*Sniff*^000000";
@@ -1757,11 +1757,11 @@ niflheim,240,193,3	script	Kayron#lv4	794,{
 			mes "that got me killed! I almost";
 			mes "can't believe it! I created";
 			if (lv4_weapon == 29) {
-				mes "this... " + mesitemlink(1364) + "!";
+				mes "this... " + mesitemlink(1364, false) + "!";
 				getitem 1364,1; //Great_Axe
 			}
 			else {
-				mes "this... " + mesitemlink(1469) + "!";
+				mes "this... " + mesitemlink(1469, false) + "!";
 				getitem 1469,1; //Longinus's_Spear
 			}
 			set lv4_weapon,0;
@@ -1784,11 +1784,11 @@ niflheim,240,193,3	script	Kayron#lv4	794,{
 			mes "that got me killed! I almost";
 			mes "can't believe it! I created";
 			if (lv4_weapon == 29) {
-				mes "this... " + mesitemlink(1369) + "!";
+				mes "this... " + mesitemlink(1369, false) + "!";
 				getitem 1369,1; //Guillotine
 			}
 			else {
-				mes "this... " + mesitemlink(1470) + "!";
+				mes "this... " + mesitemlink(1470, false) + "!";
 				getitem 1470,1; //Brionac
 			}
 			set lv4_weapon,0;
@@ -2014,10 +2014,10 @@ niflheim,240,193,3	script	Kayron#lv4	794,{
 		next;
 		mes "[Kayron]";
 		mes "So far, I know I'll need";
-		mes "2 " + mesitemlink(1005) + "";
-		mes "1 " + mesitemlink(989) + "";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + ".";
+		mes "2 " + mesitemlink(1005, false) + "";
+		mes "1 " + mesitemlink(989, false) + "";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + ".";
 		next;
 		mes "[Kayron]";
 		mes "I know there were a few more";
@@ -2038,10 +2038,10 @@ niflheim,240,193,3	script	Kayron#lv4	794,{
 		next;
 		mes "[Kayron]";
 		mes "So far, I know I'll need";
-		mes "2 " + mesitemlink(1005) + "";
-		mes "1 " + mesitemlink(989) + "";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + ".";
+		mes "2 " + mesitemlink(1005, false) + "";
+		mes "1 " + mesitemlink(989, false) + "";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + ".";
 		next;
 		mes "[Kayron]";
 		mes "Bring those items to me first. I'm pretty sure there was something else I'll be needing, but I can't seem to remember. This memory";
@@ -2211,11 +2211,11 @@ niflheim,99,268,5	script	Reyghema#lv4	794,{
 			mes "I died trying to make this,";
 			mes "but I finally finished it!";
 			if (lv4_weapon == 38) {
-				mes "This is... " + mesitemlink(1814) + "!";
+				mes "This is... " + mesitemlink(1814, false) + "!";
 				getitem 1814,1; //Berserk
 			}
 			else {
-				mes "This is... " + mesitemlink(1416) + "!";
+				mes "This is... " + mesitemlink(1416, false) + "!";
 				getitem 1416,1; //Tjungkuletti
 			}
 			set lv4_weapon,0;
@@ -2237,11 +2237,11 @@ niflheim,99,268,5	script	Reyghema#lv4	794,{
 			mes "I died trying to make this,";
 			mes "but I finally finished it!";
 			if (lv4_weapon == 38) {
-				mes "This is... the " + mesitemlink(1720) + "!";
+				mes "This is... the " + mesitemlink(1720, false) + "!";
 				getitem 1720,1; //Bow_Of_Rudra
 			}
 			else {
-				mes "This is... " + mesitemlink(1415) + "! Weee~ I made it!";
+				mes "This is... " + mesitemlink(1415, false) + "! Weee~ I made it!";
 				getitem 1415,1; //Skewer
 			}
 			set lv4_weapon,0;
@@ -2471,10 +2471,10 @@ niflheim,99,268,5	script	Reyghema#lv4	794,{
 		mes "to, write it all down.";
 		next;
 		mes "[Reyghema]";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(710) + "";
-		mes "and 20 " + mesitemlink(969) + "...";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(710, false) + "";
+		mes "and 20 " + mesitemlink(969, false) + "...";
 		next;
 		mes "[Reyghema]";
 		mes "There were a few more critically important things, but I can't seem to recall them right now...";
@@ -2485,10 +2485,10 @@ niflheim,99,268,5	script	Reyghema#lv4	794,{
 		mes "Alright, you're back. I remember most of the things I'll be needing. Go ahead and note this down.";
 		next;
 		mes "[Reyghema]";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(710) + "";
-		mes "and 20 " + mesitemlink(969) + "...";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(710, false) + "";
+		mes "and 20 " + mesitemlink(969, false) + "...";
 		next;
 		mes "[Reyghema]";
 		mes "There were a few other";
@@ -2681,11 +2681,11 @@ niflheim,187,280,3	script	Hein#lv4	795,{
 			mes "work is complete!";
 			mes "This weapon's name";
 			if (lv4_weapon == 47) {
-				mes "is " + mesitemlink(1132) + "!";
+				mes "is " + mesitemlink(1132, false) + "!";
 				getitem 1132,1; //Edge
 			}
 			else {
-				mes "is " + mesitemlink(1166) + "!";
+				mes "is " + mesitemlink(1166, false) + "!";
 				getitem 1166,1; //Dragon_Slayer
 			}
 			set lv4_weapon,0;
@@ -2699,11 +2699,11 @@ niflheim,187,280,3	script	Hein#lv4	795,{
 			mes "work is complete!";
 			mes "This weapon's name";
 			if (lv4_weapon == 47) {
-				mes "is " + mesitemlink(1137) + "!";
+				mes "is " + mesitemlink(1137, false) + "!";
 				getitem 1137,1; //Excalibur
 			}
 			else {
-				mes "is " + mesitemlink(1167) + "!";
+				mes "is " + mesitemlink(1167, false) + "!";
 				getitem 1167,1; //Schweizersabel
 			}
 			set lv4_weapon,0;
@@ -2923,10 +2923,10 @@ niflheim,187,280,3	script	Hein#lv4	795,{
 	if (lv4_weapon == 43) {
 		mes "[Hein]";
 		mes "For sure I'll need";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + "...";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + "...";
 		next;
 		mes "[Hein]";
 		mes "So for now,";
@@ -2945,10 +2945,10 @@ niflheim,187,280,3	script	Hein#lv4	795,{
 		next;
 		mes "[Hein]";
 		mes "Alright, I'll need...";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + "...";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + "...";
 		next;
 		mes "[Hein]";
 		mes "There were 3 other things,";
@@ -3123,7 +3123,7 @@ niflheim,331,72,3	script	Waltboughst#lv4	795,{
 			mes "[Waltboughst]";
 			mes "Waltboughst never fails!";
 			if (lv4_weapon == 56) {
-				mes "With my skill and your luck, there was zero probability for failure. Behold... " + mesitemlink(1140) + "!";
+				mes "With my skill and your luck, there was zero probability for failure. Behold... " + mesitemlink(1140, false) + "!";
 				getitem 1140,1; //Byeorrun_Gum
 			}
 			else {
@@ -3153,11 +3153,11 @@ niflheim,331,72,3	script	Waltboughst#lv4	795,{
 			mes "[Waltboughst]";
 			mes "Waltboughst never fails!";
 			if (lv4_weapon == 56) {
-				mes "With my skill and your luck, there was zero probability for failure. Behold... " + mesitemlink(1228) + "!";
+				mes "With my skill and your luck, there was zero probability for failure. Behold... " + mesitemlink(1228, false) + "!";
 				getitem 1228,1; //Combat_Knife
 			}
 			else {
-				mes "With my skill and your luck, there was zero probability for failure. Behold..." + mesitemlink(1528) + "!!";
+				mes "With my skill and your luck, there was zero probability for failure. Behold..." + mesitemlink(1528, false) + "!!";
 				getitem 1528,1; //Grand_Cross
 			}
 			set lv4_weapon,0;
@@ -3362,7 +3362,7 @@ niflheim,331,72,3	script	Waltboughst#lv4	795,{
 		mes "[Waltboughst]";
 		mes "Why can't I remember...?!";
 		mes "A good weaponsmith is supposed";
-		mes "to know these things by " + mesitemlink(7855) + "!";
+		mes "to know these things by " + mesitemlink(7855, false) + "!";
 		mes "When I was alive, I had no such recall problems...";
 		next;
 		mes "[Waltboughst]";
@@ -3388,10 +3388,10 @@ niflheim,331,72,3	script	Waltboughst#lv4	795,{
 		mes "[Waltboughst]";
 		mes "For now, bring";
 		mes "the basic things...";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + "...";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + "...";
 		close;
 	}
 	if (lv4_weapon == 51) {
@@ -3401,10 +3401,10 @@ niflheim,331,72,3	script	Waltboughst#lv4	795,{
 		mes "[Waltboughst]";
 		mes "For now, bring";
 		mes "the basic things...";
-		mes "1 " + mesitemlink(989) + ",";
-		mes "2 " + mesitemlink(1005) + ",";
-		mes "1 " + mesitemlink(710) + " and";
-		mes "20 " + mesitemlink(969) + "...";
+		mes "1 " + mesitemlink(989, false) + ",";
+		mes "2 " + mesitemlink(1005, false) + ",";
+		mes "1 " + mesitemlink(710, false) + " and";
+		mes "20 " + mesitemlink(969, false) + "...";
 		next;
 		mes "[Waltboughst]";
 		mes "There were a few other necessary materials, but I need some time to focus and remember what they were.";

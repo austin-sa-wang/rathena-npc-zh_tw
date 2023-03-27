@@ -81,63 +81,63 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 				case 1:
 					mes "[Dwarf Grunburti]";
 					mes "I will need...";
-					mes "^0000FF4 " + mesitemlink(7073) + "";
-					mes "4 " + mesitemlink(7077) + "";
-					mes "3 " + mesitemlink(7088) + "";
-					mes "3 " + mesitemlink(7090) + "";
-					mes "3 " + mesitemlink(7092) + "";
-					mes "2 " + mesitemlink(726) + "";
-					mes "3 " + mesitemlink(722) + "";
-					mes "10 " + mesitemlink(727) + "";
-					mes "5 " + mesitemlink(724) + "";
-					mes "20 " + mesitemlink(969) + "^000000";
-					mes "1 " + mesitemlink(2603) + "^000000...";
+					mes "^0000FF4 " + mesitemlink(7073, false) + "";
+					mes "4 " + mesitemlink(7077, false) + "";
+					mes "3 " + mesitemlink(7088, false) + "";
+					mes "3 " + mesitemlink(7090, false) + "";
+					mes "3 " + mesitemlink(7092, false) + "";
+					mes "2 " + mesitemlink(726, false) + "";
+					mes "3 " + mesitemlink(722, false) + "";
+					mes "10 " + mesitemlink(727, false) + "";
+					mes "5 " + mesitemlink(724, false) + "";
+					mes "20 " + mesitemlink(969, false) + "^000000";
+					mes "1 " + mesitemlink(2603, false) + "^000000...";
 					next;
 					mes "[Dwarf Grunburti]";
-					mes "However, the time for me to create this " + mesitemlink(2630) + " has not yet come. You'll have to wait until the seals are released. Mwahahaha!";
+					mes "However, the time for me to create this " + mesitemlink(2630, false) + " has not yet come. You'll have to wait until the seals are released. Mwahahaha!";
 					close;
 				case 2:
 					mes "[Dwarf Grunburti]";
 					mes "I will need...";
-					mes "^0000FF1 " + mesitemlink(7058) + "";
-					mes "20 " + mesitemlink(969) + "";
-					mes "10 " + mesitemlink(726) + "";
-					mes "10 " + mesitemlink(984) + "";
-					mes "1 " + mesitemlink(2627) + "^000000";
+					mes "^0000FF1 " + mesitemlink(7058, false) + "";
+					mes "20 " + mesitemlink(969, false) + "";
+					mes "10 " + mesitemlink(726, false) + "";
+					mes "10 " + mesitemlink(984, false) + "";
+					mes "1 " + mesitemlink(2627, false) + "^000000";
 					next;
 					mes "[Dwarf Grunburti]";
-					mes "However, the seals on " + mesitemlink(2629) + " have not yet been released. Until then, you'll have to wait! Bwahahaha!";
+					mes "However, the seals on " + mesitemlink(2629, false) + " have not yet been released. Until then, you'll have to wait! Bwahahaha!";
 					close;
 				case 3:
 					mes "[Dwarf Grunburti]";
 					mes "I will need...";
-					mes "^0000FF3 " + mesitemlink(7076) + "";
-					mes "5 " + mesitemlink(7079) + "";
+					mes "^0000FF3 " + mesitemlink(7076, false) + "";
+					mes "5 " + mesitemlink(7079, false) + "";
 					mes "3 Sprit of Fish";
 					mes "4 Amblem of the Sun God";
-					mes "3 " + mesitemlink(7087) + "";
-					mes "20 " + mesitemlink(969) + "";
-					mes "10 " + mesitemlink(985) + "";
-					mes "1 Slotted " + mesitemlink(2405) + "^000000";
+					mes "3 " + mesitemlink(7087, false) + "";
+					mes "20 " + mesitemlink(969, false) + "";
+					mes "10 " + mesitemlink(985, false) + "";
+					mes "1 Slotted " + mesitemlink(2405, false) + "^000000";
 					next;
 					mes "[Dwarf Grunburti]";
-					mes "But even so, I can't create " + mesitemlink(2410) + " until the seals have been broken. Otherwise, you're out of luck, human. Hahaha~!";
+					mes "But even so, I can't create " + mesitemlink(2410, false) + " until the seals have been broken. Otherwise, you're out of luck, human. Hahaha~!";
 					close;
 				case 4:
 					mes "[Dwarf Grunburti]";
 					mes "I will need...";
-					mes "^0000FF2 " + mesitemlink(7074) + "";
-					mes "4 " + mesitemlink(7075) + "";
-					mes "5 " + mesitemlink(7078) + "";
-					mes "5 " + mesitemlink(7089) + "";
-					mes "5 " + mesitemlink(7091) + "";
-					mes "20 " + mesitemlink(984) + "";
-					mes "5 " + mesitemlink(985) + "";
-					mes "40 " + mesitemlink(969) + "";
-					mes "1 " + mesitemlink(1522) + "^000000";
+					mes "^0000FF2 " + mesitemlink(7074, false) + "";
+					mes "4 " + mesitemlink(7075, false) + "";
+					mes "5 " + mesitemlink(7078, false) + "";
+					mes "5 " + mesitemlink(7089, false) + "";
+					mes "5 " + mesitemlink(7091, false) + "";
+					mes "20 " + mesitemlink(984, false) + "";
+					mes "5 " + mesitemlink(985, false) + "";
+					mes "40 " + mesitemlink(969, false) + "";
+					mes "1 " + mesitemlink(1522, false) + "^000000";
 					next;
 					mes "[Dwarf Grunburti]";
-					mes "But I can't even create a replica of " + mesitemlink(1530) + " if the seals are still in place. Until they're released, you'll just have to wait. Bwahaha!";
+					mes "But I can't even create a replica of " + mesitemlink(1530, false) + " if the seals are still in place. Until they're released, you'll just have to wait. Bwahaha!";
 					close;
 				}
 			} 
@@ -165,7 +165,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 		mes "Although it is very humiliating to present my valuable skills to a human being...";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "All the seals have been released, and he who holds the " + mesitemlink(714) + " is chosen by destiny. I have no choice but to respect you.";
+		mes "All the seals have been released, and he who holds the " + mesitemlink(714, false) + " is chosen by destiny. I have no choice but to respect you.";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "First of all, I shall confirm whether or not you have brought all the necessary materials to forge a godly item! I hate it when humans come here without any purpose!";
@@ -175,7 +175,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 			mes "Hmm...";
 			mes "I guess you";
 			mes "want to have";
-			mes "^0000FFBrisingamen^000000!";
+			mes "^0000FF" + mesitemlink(2630, false) + "^000000!";
 			next;
 		}
 		else if ((countitem(7058) > 0) && (countitem(969) > 19) && (countitem(726) > 9) && (countitem(984) > 9) && (countitem(2627) > 0)){ //Gullraifnir Gold Blue_Jewel Oridecon Belt 
@@ -183,7 +183,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 			mes "Hmm...";
 			mes "I guess you";
 			mes "want to have";
-			mes "^0000FFMegingjard^000000!";
+			mes "^0000FF" + mesitemlink(2629, false) + "^000000!";
 			next;
 		}
 		else if ((countitem(7076) > 2) && (countitem(7079) > 4) && (countitem(7083) > 2) && (countitem(7086) > 3) && (countitem(7087) > 2) && (countitem(969) > 19) && (countitem(985) > 9) && (countitem(2406) > 0)) {
@@ -191,7 +191,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 			mes "Hmm...";
 			mes "I guess you";
 			mes "want to have";
-			mes "^0000FFSleipnir^000000!";
+			mes "^0000FF" + mesitemlink(2410, false) + "^000000!";
 			next;
 		}
 		else if ((countitem(7074) > 1) && (countitem(7075) > 3) && (countitem(7078) > 4) && (countitem(7089) > 4) && (countitem(7091) > 4) && (countitem(984) > 19) && (countitem(985) > 4) && (countitem(969) > 39) && (countitem(1522) > 0)) {
@@ -199,7 +199,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 			mes "Hmm...";
 			mes "I guess you";
 			mes "want to have";
-			mes "^0000FFMjolnir^000000!";
+			mes "^0000FF" + mesitemlink(1530, false) + "^000000!";
 			next;
 		}
 		else {
@@ -225,17 +225,17 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 			case 1:
 				mes "[Dwarf Grunburti]";
 				mes "I will need...";
-				mes "^0000FF4 " + mesitemlink(7073) + "";
-				mes "4 " + mesitemlink(7077) + "";
-				mes "3 " + mesitemlink(7088) + "";
-				mes "3 " + mesitemlink(7090) + "";
-				mes "3 " + mesitemlink(7092) + "";
-				mes "2 " + mesitemlink(726) + "";
-				mes "3 " + mesitemlink(722) + "";
-				mes "10 " + mesitemlink(727) + "";
-				mes "5 " + mesitemlink(724) + "";
-				mes "20 " + mesitemlink(969) + "^000000";
-				mes "1 " + mesitemlink(2603) + "^000000...";
+				mes "^0000FF4 " + mesitemlink(7073, false) + "";
+				mes "4 " + mesitemlink(7077, false) + "";
+				mes "3 " + mesitemlink(7088, false) + "";
+				mes "3 " + mesitemlink(7090, false) + "";
+				mes "3 " + mesitemlink(7092, false) + "";
+				mes "2 " + mesitemlink(726, false) + "";
+				mes "3 " + mesitemlink(722, false) + "";
+				mes "10 " + mesitemlink(727, false) + "";
+				mes "5 " + mesitemlink(724, false) + "";
+				mes "20 " + mesitemlink(969, false) + "^000000";
+				mes "1 " + mesitemlink(2603, false) + "^000000...";
 				next;
 				mes "[Dwarf Grunburti]";
 				mes "Hmmm, but now";
@@ -246,18 +246,18 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 				mes "[Dwarf Grunburti]";
 				mes "Hurry...!";
 				mes "Once I forge";
-				mes "" + mesitemlink(2630) + ",";
+				mes "" + mesitemlink(2630, false) + ",";
 				mes "the seals will";
 				mes "activate again!";
 				close;
 			case 2:
 				mes "[Dwarf Grunburti]";
 				mes "I will need...";
-				mes "^0000FF1 " + mesitemlink(7058) + "";
-				mes "20 " + mesitemlink(969) + "";
-				mes "10 " + mesitemlink(726) + "";
-				mes "10 " + mesitemlink(984) + "";
-				mes "1 " + mesitemlink(2627) + "^000000";
+				mes "^0000FF1 " + mesitemlink(7058, false) + "";
+				mes "20 " + mesitemlink(969, false) + "";
+				mes "10 " + mesitemlink(726, false) + "";
+				mes "10 " + mesitemlink(984, false) + "";
+				mes "1 " + mesitemlink(2627, false) + "^000000";
 				next;
 				mes "[Dwarf Grunburti]";
 				mes "Hmmm, but now";
@@ -268,21 +268,21 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 				mes "[Dwarf Grunburti]";
 				mes "Hurry...!";
 				mes "Once I forge";
-				mes "" + mesitemlink(2629) + ",";
+				mes "" + mesitemlink(2629, false) + ",";
 				mes "the seals will";
 				mes "activate again!";
 				close;
 			case 3:
 				mes "[Dwarf Grunburti]";
 				mes "I will need...";
-				mes "^0000FF3 " + mesitemlink(7076) + "";
-				mes "5 " + mesitemlink(7079) + "";
+				mes "^0000FF3 " + mesitemlink(7076, false) + "";
+				mes "5 " + mesitemlink(7079, false) + "";
 				mes "3 Sprit of Fish";
 				mes "4 Amblem of the Sun God";
-				mes "3 " + mesitemlink(7087) + "";
-				mes "20 " + mesitemlink(969) + "";
-				mes "10 " + mesitemlink(985) + "";
-				mes "1 Slotted " + mesitemlink(2405) + "^000000";
+				mes "3 " + mesitemlink(7087, false) + "";
+				mes "20 " + mesitemlink(969, false) + "";
+				mes "10 " + mesitemlink(985, false) + "";
+				mes "1 Slotted " + mesitemlink(2405, false) + "^000000";
 				next;
 				mes "[Dwarf Grunburti]";
 				mes "Hmmm, but now";
@@ -293,21 +293,21 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 				mes "[Dwarf Grunburti]";
 				mes "Hurry...!";
 				mes "Once I forge";
-				mes "" + mesitemlink(2410) + ",";
+				mes "" + mesitemlink(2410, false) + ",";
 				mes "the seals will";
 				mes "activate again!";
 				close;
 			case 4:
 				mes "[Dwarf Grunburti]";
 				mes "I will need...";
-				mes "^0000FF2 " + mesitemlink(7074) + "";
-				mes "4 " + mesitemlink(7075) + "";
-				mes "5 " + mesitemlink(7078) + "";
-				mes "5 " + mesitemlink(7089) + "";
-				mes "5 " + mesitemlink(7091) + "";
-				mes "20 " + mesitemlink(984) + "";
-				mes "5 " + mesitemlink(985) + "";
-				mes "40 " + mesitemlink(969) + "";
+				mes "^0000FF2 " + mesitemlink(7074, false) + "";
+				mes "4 " + mesitemlink(7075, false) + "";
+				mes "5 " + mesitemlink(7078, false) + "";
+				mes "5 " + mesitemlink(7089, false) + "";
+				mes "5 " + mesitemlink(7091, false) + "";
+				mes "20 " + mesitemlink(984, false) + "";
+				mes "5 " + mesitemlink(985, false) + "";
+				mes "40 " + mesitemlink(969, false) + "";
 				next;
 				mes "[Dwarf Grunburti]";
 				mes "Hmmm, but now";
@@ -318,7 +318,7 @@ gld_dun01,28,85,0	script	Grunburti#1::GodDwarf	826,{
 				mes "[Dwarf Grunburti]";
 				mes "Hurry...!";
 				mes "Once I forge";
-				mes "the " + mesitemlink(1530) + ",";
+				mes "the " + mesitemlink(1530, false) + ",";
 				mes "the seals will";
 				mes "activate again!";
 				close;
@@ -403,14 +403,14 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 		mes "How did one of you";
 		mes "stupid humans get in";
 		mes "here?! Only those who";
-		mes "hold the " + mesitemlink(714) + " can";
+		mes "hold the " + mesitemlink(714, false) + " can";
 		mes "even think of entering";
 		mes "this place...!";
 		close;
 	}
 	mes "[Dwarf Grunburti]";
 	mes "It's incredibly";
-	mes "humiliating to do work for a human. But since destiny has chosen you as the bearer of an " + mesitemlink(714) + ", I have no choice but to oblige your requests.";
+	mes "humiliating to do work for a human. But since destiny has chosen you as the bearer of an " + mesitemlink(714, false) + ", I have no choice but to oblige your requests.";
 	next;
 	mes "[Dwarf Grunburti]";
 	mes "We only have";
@@ -431,31 +431,31 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 	switch(select("Brisingamen:Megingjard:Sleipnir:Mjolnir")) {
 	case 1:
 		mes "[Dwarf Grunburti]";
-		mes "B-" + mesitemlink(2630) + "?!";
+		mes "B-" + mesitemlink(2630, false) + "?!";
 		mes "I've never expected";
 		mes "such insolence...!";
-		mes "This " + mesitemlink(2603) + " will never have any meaning in my eyes unless it's worn by the goddess Freya.";
+		mes "This " + mesitemlink(2603, false) + " will never have any meaning in my eyes unless it's worn by the goddess Freya.";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "But who am I to judge your worthiness? These treasures";
-		mes "select their owners with their own will. Let's see if " + mesitemlink(2630) + " will find you worthy!";
+		mes "select their owners with their own will. Let's see if " + mesitemlink(2630, false) + " will find you worthy!";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "Once again, I need following materials in order to reproduce";
 		mes "this godly treasure...";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "^0000FF4 " + mesitemlink(7073) + "";
-		mes "4 " + mesitemlink(7077) + "";
-		mes "3 " + mesitemlink(7088) + "";
-		mes "3 " + mesitemlink(7090) + "";
-		mes "3 " + mesitemlink(7092) + "";
-		mes "2 " + mesitemlink(726) + "";
-		mes "3 " + mesitemlink(722) + "";
-		mes "10 " + mesitemlink(727) + "";
-		mes "5 " + mesitemlink(724) + "";
-		mes "20 " + mesitemlink(969) + "";
-		mes "1 " + mesitemlink(2603) + "^000000";
+		mes "^0000FF4 " + mesitemlink(7073, false) + "";
+		mes "4 " + mesitemlink(7077, false) + "";
+		mes "3 " + mesitemlink(7088, false) + "";
+		mes "3 " + mesitemlink(7090, false) + "";
+		mes "3 " + mesitemlink(7092, false) + "";
+		mes "2 " + mesitemlink(726, false) + "";
+		mes "3 " + mesitemlink(722, false) + "";
+		mes "10 " + mesitemlink(727, false) + "";
+		mes "5 " + mesitemlink(724, false) + "";
+		mes "20 " + mesitemlink(969, false) + "";
+		mes "1 " + mesitemlink(2603, false) + "^000000";
 		next;
 		switch(select("Make Brisingamen.:Cancel.")) {
 		case 1:
@@ -498,7 +498,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				set $God4,0;
 				announce "[Brisingamen] has come into the hands of [" + strcharinfo(0) + "], master of the [" + getguildname(.@GID) + "] guild.",bc_all;
 				mes "[Dwarf Grunburti]";
-				mes "Ah, just look at this dazzling beauty. No other piece of jewelry complemented Freya as well as " + mesitemlink(2630) + ".";
+				mes "Ah, just look at this dazzling beauty. No other piece of jewelry complemented Freya as well as " + mesitemlink(2630, false) + ".";
 				close;
 			}
 			else {
@@ -506,7 +506,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "Idiot human!";
 				mes "You didn't bring";
 				mes "everything I need to";
-				mes "recreate " + mesitemlink(2630) + "!";
+				mes "recreate " + mesitemlink(2630, false) + "!";
 				mes "Hurry...!";
 				close;
 			}
@@ -519,22 +519,22 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 		}
 	case 2:
 		mes "[Dwarf Grunburti]";
-		mes "M- " + mesitemlink(2629) + "?!";
+		mes "M- " + mesitemlink(2629, false) + "?!";
 		mes "The girdle of might?!";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "This " + mesitemlink(2627) + " was worn long ago by Thor, the mightest warrior ever. But since these treasures select their owners, we'll see whether or not it recognizes you as worthy!";
+		mes "This " + mesitemlink(2627, false) + " was worn long ago by Thor, the mightest warrior ever. But since these treasures select their owners, we'll see whether or not it recognizes you as worthy!";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "Once again, I need following materials in order to reproduce";
 		mes "this godly treasure...";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "^0000FF1 " + mesitemlink(7058) + "";
-		mes "20 " + mesitemlink(969) + "";
-		mes "10 " + mesitemlink(726) + "";
-		mes "10 " + mesitemlink(984) + "";
-		mes "1 " + mesitemlink(2627) + "^000000...";
+		mes "^0000FF1 " + mesitemlink(7058, false) + "";
+		mes "20 " + mesitemlink(969, false) + "";
+		mes "10 " + mesitemlink(726, false) + "";
+		mes "10 " + mesitemlink(984, false) + "";
+		mes "1 " + mesitemlink(2627, false) + "^000000...";
 		next;
 		switch(select("Make Megingjard.:Cancel.")) {
 		case 1:
@@ -542,7 +542,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "[Dwarf Grunburti]";
 				mes "Twenty years ago,";
 				mes "I'd never believe that";
-				mes "something so powerful and dangerous as " + mesitemlink(2629) + " would end up in the hands of a human...";
+				mes "something so powerful and dangerous as " + mesitemlink(2629, false) + " would end up in the hands of a human...";
 				next;
 				if (($God1 < $@god_check2) || ($God2 < $@god_check2) || ($God3 < $@god_check2) || ($God4 < $@god_check2)){
 					mes "[Dwarf Grunburti]";
@@ -584,7 +584,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "Idiot human!";
 				mes "You didn't bring";
 				mes "everything I need to";
-				mes "recreate " + mesitemlink(2629) + "!";
+				mes "recreate " + mesitemlink(2629, false) + "!";
 				mes "Hurry...!";
 				close;
 			}
@@ -597,7 +597,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 		}
 	case 3:
 		mes "[Dwarf Grunburti]";
-		mes "" + mesitemlink(2410) + "...";
+		mes "" + mesitemlink(2410, false) + "...";
 		mes "Now, understand";
 		mes "that I can't create";
 		mes "the eight-legged stallion";
@@ -605,21 +605,21 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "I can create a pair";
-		mes "of shoes that will possess the power of " + mesitemlink(2410) + ". It's a strange, but feasible process...";
+		mes "of shoes that will possess the power of " + mesitemlink(2410, false) + ". It's a strange, but feasible process...";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "Once again, I need following materials in order to reproduce";
 		mes "this godly treasure...";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "^0000FF3 " + mesitemlink(7076) + "";
-		mes "5 " + mesitemlink(7079) + "";
+		mes "^0000FF3 " + mesitemlink(7076, false) + "";
+		mes "5 " + mesitemlink(7079, false) + "";
 		mes "3 Sprit of Fish";
 		mes "4 Amblem of the Sun God";
-		mes "3 " + mesitemlink(7087) + "";
-		mes "20 " + mesitemlink(969) + "";
-		mes "10 " + mesitemlink(985) + "";
-		mes "1 Slotted " + mesitemlink(2405) + "^000000...";
+		mes "3 " + mesitemlink(7087, false) + "";
+		mes "20 " + mesitemlink(969, false) + "";
+		mes "10 " + mesitemlink(985, false) + "";
+		mes "1 Slotted " + mesitemlink(2405, false) + "^000000...";
 		next;
 		switch(select("Make Sleipnir.:Cancel.")) {
 		case 1:
@@ -627,7 +627,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "[Dwarf Grunburti]";
 				mes "I never believed";
 				mes "that the speed of";
-				mes "" + mesitemlink(2410) + " would be";
+				mes "" + mesitemlink(2410, false) + " would be";
 				mes "used by a human.";
 				mes "Give me a moment...";
 				next;
@@ -665,7 +665,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "There...";
 				mes "Wear these, and";
 				mes "move with the speed of";
-				mes "the legendary " + mesitemlink(2410) + "...";
+				mes "the legendary " + mesitemlink(2410, false) + "...";
 				close;
 			}
 			else {
@@ -673,7 +673,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "Idiot human!";
 				mes "You didn't bring";
 				mes "everything I need to";
-				mes "recreate " + mesitemlink(2410) + "!";
+				mes "recreate " + mesitemlink(2410, false) + "!";
 				mes "Hurry...!";
 				close;
 			}
@@ -686,29 +686,29 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 		}
 	case 4:
 		mes "[Dwarf Grunburti]";
-		mes "M-M-" + mesitemlink(1530) + "!?";
+		mes "M-M-" + mesitemlink(1530, false) + "!?";
 		mes "Even though the";
 		mes "moment is at hand,";
 		mes "I can scarcely believe...";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "^333333*Sigh...*^000000";
-		mes "This is almost a disgrace to gods and the Dwarf race. But perhaps, wielding " + mesitemlink(1530) + " may be your destiny...";
+		mes "This is almost a disgrace to gods and the Dwarf race. But perhaps, wielding " + mesitemlink(1530, false) + " may be your destiny...";
 		next;
 		mes "[Dwarf Grunburti]";
 		mes "Once again, I need following materials in order to reproduce";
 		mes "this godly treasure...";
 		next;
 		mes "[Dwarf Grunburti]";
-		mes "^0000FF2 " + mesitemlink(7074) + "";
-		mes "4 " + mesitemlink(7075) + "";
-		mes "5 " + mesitemlink(7078) + "";
-		mes "5 " + mesitemlink(7089) + "";
-		mes "5 " + mesitemlink(7091) + "";
-		mes "20 " + mesitemlink(984) + "";
-		mes "5 " + mesitemlink(985) + "";
-		mes "40 " + mesitemlink(969) + "";
-		mes "1 " + mesitemlink(1522) + "^000000...";
+		mes "^0000FF2 " + mesitemlink(7074, false) + "";
+		mes "4 " + mesitemlink(7075, false) + "";
+		mes "5 " + mesitemlink(7078, false) + "";
+		mes "5 " + mesitemlink(7089, false) + "";
+		mes "5 " + mesitemlink(7091, false) + "";
+		mes "20 " + mesitemlink(984, false) + "";
+		mes "5 " + mesitemlink(985, false) + "";
+		mes "40 " + mesitemlink(969, false) + "";
+		mes "1 " + mesitemlink(1522, false) + "^000000...";
 		next;
 		switch(select("Make Mjolnir.:Cancel.")) {
 		case 1:
@@ -761,7 +761,7 @@ que_god01,154,112,4	script	Grunburti#god	826,{
 				mes "Idiot human!";
 				mes "You didn't bring";
 				mes "everything I need";
-				mes "to recreate " + mesitemlink(1530) + "!";
+				mes "to recreate " + mesitemlink(1530, false) + "!";
 				mes "Hurry...!";
 				close;
 			}

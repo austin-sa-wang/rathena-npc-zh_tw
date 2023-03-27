@@ -99,7 +99,7 @@ comodo,204,172,5	script	Canell#qsk_dan01	724,{
 			next;
 			mes "[Canell]";
 			mes "...You must bring";
-			mes "me ^FF00001 " + mesitemlink(747) + "^000000!";
+			mes "me ^FF00001 " + mesitemlink(747, false) + "^000000!";
 			mes "This tool is imperative";
 			mes "to the lesson, so fetch it";
 			mes "and bring it to me quickly!";
@@ -158,7 +158,7 @@ comodo,204,172,5	script	Canell#qsk_dan01	724,{
 				mes "[Frustrated Canell]";
 				mes "Did I tell you to come";
 				mes "back here without bringing";
-				mes "^FF00001 " + mesitemlink(747) + "^000000!? Now go";
+				mes "^FF00001 " + mesitemlink(747, false) + "^000000!? Now go";
 				mes "and get it before I find";
 				mes "reason to punish you!";
 				specialeffect EF_CLAYMORE;
@@ -187,7 +187,7 @@ comodo,204,172,5	script	Canell#qsk_dan01	724,{
 			mes "in Prontera Chruch. If you";
 			mes "mention me by name, she";
 			mes "should be willing to teach";
-			mes "you. I'd do it myself, but I need to enjoy my new " + mesitemlink(747) + "~";
+			mes "you. I'd do it myself, but I need to enjoy my new " + mesitemlink(747, false) + "~";
 			next;
 			mes "^3355FFIt figures that she'd";
 			mes "keep your mirror.^000000";
@@ -394,7 +394,7 @@ comodo,204,172,5	script	Canell#qsk_dan01	724,{
 			next;
 			mes "^3355FFStrangely enough,";
 			mes "her wink has made";
-			mes "your " + mesitemlink(7855) + " throb.^000000";
+			mes "your " + mesitemlink(7855, false) + " throb.^000000";
 			close;
 		}
 	}
@@ -475,7 +475,7 @@ prontera,183,333,1	script	Aelle#qsk_dan02	79,{
 			next;
 			mes "[Aelle]";
 			mes "Soooo, I wanna eat";
-			mes "^FF00001 " + mesitemlink(512) + "^000000, ^FF00003 Bananas^000000 and";
+			mes "^FF00001 " + mesitemlink(512, false) + "^000000, ^FF00003 Bananas^000000 and";
 			mes "^FF00005 Well-Baked Cookies^000000. Ah,";
 			mes "make sure you bring ^FF0000China^000000";
 			mes "to serve them on, and don't";
@@ -557,7 +557,7 @@ prontera,183,333,1	script	Aelle#qsk_dan02	79,{
 				mes "It's all spinning!";
 				emotion ET_SMILE;
 				next;
-				mes "^3355FFIn her drunken stupor,";
+				mes "^3355F" + mesitemlink(951, false) + " her drunken stupor,";
 				mes "Aelle pummels you with";
 				mes "her fists and laughs";
 				mes "maniacally to herself.^000000";
@@ -583,7 +583,7 @@ prontera,183,333,1	script	Aelle#qsk_dan02	79,{
 				next;
 				mes "[Aelle]";
 				mes "Soooo, I wanna eat";
-				mes "^FF00001 " + mesitemlink(512) + "^000000, ^FF00003 Bananas^000000 and";
+				mes "^FF00001 " + mesitemlink(512, false) + "^000000, ^FF00003 Bananas^000000 and";
 				mes "^FF00005 Well-Baked Cookies^000000. Ah,";
 				mes "make sure you bring ^FF0000China^000000";
 				mes "to serve them on, and don't";

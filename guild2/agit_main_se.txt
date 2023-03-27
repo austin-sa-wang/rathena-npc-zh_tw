@@ -362,7 +362,7 @@ OnTreasureDied:
 		mes "Investing in our stronghold's";
 		mes "defense will enhance the";
 		mes "durability of our Guardians";
-		mes "and the " + mesitemlink(714) + ". We'll need";
+		mes "and the " + mesitemlink(714, false) + ". We'll need";
 		mes "every advantage to protect";
 		mes "ourselves from our enemies.";
 		next;
@@ -643,7 +643,7 @@ OnStartArena:
 		mes .@n$;
 		mes "Great job. Now, all you";
 		mes "need to do is destroy this";
-		mes "" + mesitemlink(714) + " to gain ownership";
+		mes "" + mesitemlink(714, false) + " to gain ownership";
 		mes "over this stronghold.";
 		close;
 	}
@@ -672,7 +672,7 @@ OnStartArena:
 					switch(select("Guardian Stones:Fortress Gates:Link Flags:Battle Strategy:Cancel")) {
 					case 1:
 						mes .@n$;
-						mes "There is one " + mesitemlink(714) + "";
+						mes "There is one " + mesitemlink(714, false) + "";
 						mes "and two Guardian Stones in";
 						mes "each fortress. These stones";
 						mes "are the first line of defense,";
@@ -683,7 +683,7 @@ OnStartArena:
 						mes "The stones are located in";
 						mes "^4D4DFFGate Houses^000000 which must be";
 						mes "protected to prevent enemies";
-						mes "from reaching the " + mesitemlink(714) + ".";
+						mes "from reaching the " + mesitemlink(714, false) + ".";
 						mes "Guardian Stones can ^4D4DFFrecall";
 						mes "your Guardians^000000 for protection.";
 						next;
@@ -733,7 +733,7 @@ OnStartArena:
 						next;
 						mes .@n$;
 						mes "Many flags link directly to";
-						mes "the flag near the " + mesitemlink(714) + ".";
+						mes "the flag near the " + mesitemlink(714, false) + ".";
 						mes "The final numbered flag is";
 						mes "linked to the Convenience";
 						mes "Facility of the stronghold's";
@@ -959,8 +959,8 @@ OnInit:
 		mes "rebuild a destroyed";
 		mes "Guardian Stone.^000000";
 		next;
-		mes "1 " + mesitemlink(984) + "";
-		mes "1 " + mesitemlink(985) + "";
+		mes "1 " + mesitemlink(984, false) + "";
+		mes "1 " + mesitemlink(985, false) + "";
 		mes "30 Stones";
 		mes "5 Blue Gemstones";
 		mes "5 Yellow Gemstones";
@@ -973,8 +973,8 @@ OnInit:
 			close;
 		}
 		if ((countitem(984) > 0) && (countitem(985) > 0) && (countitem(7049) > 29) && (countitem(717) > 4) && (countitem(715) > 4) && (countitem(716) > 4)) {
-			mes "^3355FFArrange Stones, " + mesitemlink(985) + ", and";
-			mes "" + mesitemlink(984) + ", in that order, in the";
+			mes "^3355FFArrange Stones, " + mesitemlink(985, false) + ", and";
+			mes "" + mesitemlink(984, false) + ", in that order, in the";
 			mes "center. Then you must arrange";
 			mes "the enchanted Gemstones to";
 			mes "rebuild the Guardian Stone.^000000";
@@ -1015,7 +1015,7 @@ OnInit:
 				mes "magic properties and power.^000000";
 				next;
 				set .@j, select("Red Gemstone:Yellow Gemstone:Blue Gemstone")-1;
-				mes "^3355FFYou placed the "+.@color$[.@j]+" " + mesitemlink(7300) + ".^000000";
+				mes "^3355FFYou placed the "+.@color$[.@j]+" " + mesitemlink(7300, false) + ".^000000";
 				if (.@i == .@j) {
 					mes "^3355FFHowever, the Guardian Stone";
 					mes "Repair System failed because";
@@ -1039,7 +1039,7 @@ OnInit:
 						mes "^3355FFIt is impossible to";
 						mes "rebuild the Guardian";
 						mes "Stone because the";
-						mes "" + mesitemlink(714) + " is not present.^000000";
+						mes "" + mesitemlink(714, false) + " is not present.^000000";
 						close;
 					}
 					else {
@@ -1115,18 +1115,18 @@ OnEnable:
 				mes "but you will need to gather";
 				mes "the following materials.^000000";
 				next;
-				mes "^4D4DFF10 " + mesitemlink(999) + "^000000,";
+				mes "^4D4DFF10 " + mesitemlink(999, false) + "^000000,";
 				mes "^4D4DFF30 Trunks^000000,";
-				mes "^4D4DFF5 " + mesitemlink(984) + "^000000, and";
-				mes "^4D4DFF10 " + mesitemlink(1011) + "^000000.";
+				mes "^4D4DFF5 " + mesitemlink(984, false) + "^000000, and";
+				mes "^4D4DFF10 " + mesitemlink(1011, false) + "^000000.";
 				next;
 				select("Continue");
 				if ((countitem(1019) > 29) && (countitem(999) > 9) && (countitem(1011) > 9) && (countitem(984) > 4)) {
 					mes "^3355FFYou will need Trunks to";
 					mes "repair the support frame,";
-					mes "" + mesitemlink(984) + " to enhance the";
+					mes "" + mesitemlink(984, false) + " to enhance the";
 					mes "gate's endurance, and";
-					mes "" + mesitemlink(1011) + " to basically";
+					mes "" + mesitemlink(1011, false) + " to basically";
 					mes "hold everything together.^000000";
 					next;
 					set .@ro_of01,rand(10,15);
@@ -1143,26 +1143,26 @@ OnEnable:
 								switch(select("Trunk:Steel:Emveretarcon:Oridecon")) {
 								case 1:
 									mes "^3355FFThe frame has been";
-									mes "reinforced with " + mesitemlink(6008) + ".^000000";
+									mes "reinforced with " + mesitemlink(6008, false) + ".^000000";
 									set .@rp_temp,.@rp_temp+1;
 									set .@ro_of02,.@ro_of02+1;
 									specialeffect2 EF_REPAIRWEAPON;
 									next;
 									break;
 								case 2:
-									mes "^3355FFYou tried using " + mesitemlink(999) + ",";
+									mes "^3355FFYou tried using " + mesitemlink(999, false) + ",";
 									mes "but it's not working very";
 									mes "well. You'll have to try";
 									mes "something else.^000000";
 									close;
 								case 3:
-									mes "^3355FFYou tried using " + mesitemlink(1011) + "";
+									mes "^3355FFYou tried using " + mesitemlink(1011, false) + "";
 									mes "to reinforce the gate, but it's";
 									mes "not working well at all.";
 									mes "You'll have to start over.^000000";
 									close;
 								case 4:
-									mes "^3355FFYou tried using " + mesitemlink(984) + ",";
+									mes "^3355FFYou tried using " + mesitemlink(984, false) + ",";
 									mes "but it's not working very";
 									mes "well. You'll have to try";
 									mes "something else.^000000";
@@ -1176,26 +1176,26 @@ OnEnable:
 								next;
 								switch(select("Trunk:Steel:Emveretarcon:Oridecon")) {
 								case 1:
-									mes "^3355FFYou tried using " + mesitemlink(6008) + "";
+									mes "^3355FFYou tried using " + mesitemlink(6008, false) + "";
 									mes "to reinforce the gate.^000000";
 									set .@ro_of02,.@ro_of02+1;
 									next;
 									break;
 								case 2:
-									mes "^3355FFYou tried using " + mesitemlink(999) + "";
+									mes "^3355FFYou tried using " + mesitemlink(999, false) + "";
 									mes "to reinforce the gate, but";
 									mes "it's not working well at all.";
 									mes "You'll have to start over.^000000";
 									close;
 								case 3:
-									mes "^3355FFYou tried using " + mesitemlink(1011) + "";
+									mes "^3355FFYou tried using " + mesitemlink(1011, false) + "";
 									mes "to reinforce the gate, but it's";
 									mes "not working well at all.";
 									mes "You'll have to start over.^000000";
 									close;
 								case 4:
 									mes "^3355FFYou hammered the";
-									mes "" + mesitemlink(984) + ": it looks";
+									mes "" + mesitemlink(984, false) + ": it looks";
 									mes "like this will work.^000000";
 									set .@rp_temp,.@rp_temp+1;
 									set .@ro_of02,.@ro_of02+1;
@@ -1212,13 +1212,13 @@ OnEnable:
 								next;
 								switch(select("Trunk:Steel:Emveretarcon:Oridecon")) {
 								case 1:
-									mes "^3355FFYou tried using " + mesitemlink(6008) + " to fix";
+									mes "^3355FFYou tried using " + mesitemlink(6008, false) + " to fix";
 									mes "this problem, but it seems";
 									mes "to have made it worse.";
 									mes "You'll have to start all over.^000000";
 									close;
 								case 2:
-									mes "^3355FFYou used " + mesitemlink(999) + " to weld";
+									mes "^3355FFYou used " + mesitemlink(999, false) + " to weld";
 									mes "all the cracks: the gate is";
 									mes "is starting to look more solid.^000000";
 									set .@rp_temp,.@rp_temp+1;
@@ -1227,13 +1227,13 @@ OnEnable:
 									next;
 									break;
 								case 3:
-									mes "^3355FFYou tried using " + mesitemlink(1011) + "";
+									mes "^3355FFYou tried using " + mesitemlink(1011, false) + "";
 									mes "to reinforce the gate, but it's";
 									mes "not working well at all.";
 									mes "You'll have to start over.^000000";
 									close;
 								case 4:
-									mes "^3355FFYou tried using " + mesitemlink(984) + ",";
+									mes "^3355FFYou tried using " + mesitemlink(984, false) + ",";
 									mes "but it's not working very";
 									mes "well. You'll have to try";
 									mes "something else.^000000";
@@ -1247,20 +1247,20 @@ OnEnable:
 								next;
 								switch(select("Trunk:Steel:Emveretarcon:Oridecon")) {
 								case 1:
-									mes "^3355FFYou tried using " + mesitemlink(6008) + " to fix";
+									mes "^3355FFYou tried using " + mesitemlink(6008, false) + " to fix";
 									mes "this problem, but it seems";
 									mes "to have made it worse.";
 									mes "You'll have to start all over.^000000";
 									close;
 								case 2:
-									mes "^3355FFYou tried using " + mesitemlink(999) + ",";
+									mes "^3355FFYou tried using " + mesitemlink(999, false) + ",";
 									mes "but it's not working very";
 									mes "well. You'll have to try";
 									mes "something else.^000000";
 									close;
 								case 3:
 									mes "^3355FFYou successfully used";
-									mes "the " + mesitemlink(1011) + " to repair";
+									mes "the " + mesitemlink(1011, false) + " to repair";
 									mes "much of the gate's damage.^000000";
 									set .@rp_temp,.@rp_temp+1;
 									set .@ro_of02,.@ro_of02+1;
@@ -1268,7 +1268,7 @@ OnEnable:
 									next;
 									break;
 								case 4:
-									mes "^3355FFYou tried using " + mesitemlink(984) + ",";
+									mes "^3355FFYou tried using " + mesitemlink(984, false) + ",";
 									mes "but it's not working very";
 									mes "well. You'll have to try";
 									mes "something else.^000000";
@@ -1284,7 +1284,7 @@ OnEnable:
 					if (!agitcheck2()) {
 						mes "^3355FFUnfortunately, the Fortress";
 						mes "Gate can't be reconstructed:";
-						mes "the " + mesitemlink(714) + " is no longer here.^000000";
+						mes "the " + mesitemlink(714, false) + " is no longer here.^000000";
 						close;
 					}
 					else {
@@ -1725,7 +1725,7 @@ function	script	LinkFlag	{
 		mes "^3355FFThis is the Stronghold";
 		mes "Teleport Service. Would";
 		mes "you like to teleport to";
-		mes "the " + mesitemlink(714) + " Center?^000000";
+		mes "the " + mesitemlink(714, false) + " Center?^000000";
 		if(select("Teleport:Cancel") == 1)
 			warp strnpcinfo(4),getarg(1),getarg(2);
 		close;
@@ -1755,7 +1755,7 @@ function	script	ReturnFlag	{
 		mes .@str$+" declares that";
 		mes "one has yet to claim lordship";
 		mes "over this stronghold. The one";
-		mes "that breaks the " + mesitemlink(714) + " will";
+		mes "that breaks the " + mesitemlink(714, false) + " will";
 		mes "be recognized as its new owner.";
 		close;
 	}
@@ -1791,7 +1791,7 @@ function	script	ReturnFlag	{
 	mes "Guild Master of ^FF0000"+getguildname(.@GID)+"^000000.";
 	mes "Any that object must claim this";
 	mes "stronghold through strength of";
-	mes "" + mesitemlink(999) + " and magic during the";
+	mes "" + mesitemlink(999, false) + " and magic during the";
 	mes "appointed Guild Siege times.";
 	close;
 }
@@ -1822,7 +1822,7 @@ function	script	ReturnFlag	{
 //============================================================
 -	script	Sunflower#template	-1,{
 	if (getcharid(2) == getcastledata(strnpcinfo(4),CD_GUILD_ID)) {
-		mes "- It's an amazingly huge " + mesitemlink(2253) + "; as big as a human! ... You feel something mysterious emanating from the " + mesitemlink(712) + ". -";
+		mes "- It's an amazingly huge " + mesitemlink(2253, false) + "; as big as a human! ... You feel something mysterious emanating from the " + mesitemlink(712, false) + ". -";
 		next;
 		switch(select("Hold the stem.:Do nothing.")) {
 		case 1:

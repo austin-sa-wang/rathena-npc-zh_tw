@@ -103,13 +103,13 @@ moc_ruins,118,99,5	script	Roberto	88,{
 				mes "I would like to treat my homesickness";
 				mes "with things from there.";
 				mes "Bring me 20 Resins from the trees in the ";
-				mes "Payon forest, and 1 " + mesitemlink(501) + "";
+				mes "Payon forest, and 1 " + mesitemlink(501, false) + "";
 				mes "sold in the store.";
 				next;
 				mes "[Roberto]";
 				mes "Also, 13 Trunks from the Willows that";
 				mes "live near the Payon Forest,";
-				mes "41 " + mesitemlink(906) + ",";
+				mes "41 " + mesitemlink(906, false) + ",";
 				mes "7 Mushroom Spores.";
 				mes "If you bring me all of these,";
 				next;
@@ -199,18 +199,18 @@ payon,103,63,3	script	Jason	88,3,3,{
 				next;
 				mes "[Jason]";
 				mes "First, because you must modify a bow";
-				mes "bring a " + mesitemlink(1710) + " you do not use.";
-				mes "10 Tentacles, 10 " + mesitemlink(925) + ",";
+				mes "bring a " + mesitemlink(1710, false) + " you do not use.";
+				mes "10 Tentacles, 10 " + mesitemlink(925, false) + ",";
 				mes "3 Yoyo Tails.. these are very elastic.";
 				mes "Also, 2 Emeralds. And last but not least...";
-				mes "36 bottles of " + mesitemlink(532) + " that I love!";
+				mes "36 bottles of " + mesitemlink(532, false) + " that I love!";
 				next;
 				mes "[Jason]";
 				mes "......Ehem!";
 				mes "If you bring all of these,";
 				mes "I shall teach you Arrow Repel.";
 				mes "Then, see you again.";
-				mes "(I'm going to be mad if you don't bring the " + mesitemlink(532) + ".)";
+				mes "(I'm going to be mad if you don't bring the " + mesitemlink(532, false) + ".)";
 				close;
 			case 2:
 				if ((countitem(721) > 1) && (countitem(942) > 2) && (countitem(962) > 9) && (countitem(925) > 9) && (countitem(532) > 35)) {
@@ -239,8 +239,8 @@ payon,103,63,3	script	Jason	88,3,3,{
 				mes "You are missing some things.";
 				mes "Once again, you need 2 Emeralds,";
 				mes "3 Yoyo Tails, 10 Tentacles,";
-				mes "10 " + mesitemlink(925) + ", and last but";
-				mes "not least 36 bottles of " + mesitemlink(532) + "!";
+				mes "10 " + mesitemlink(925, false) + ", and last but";
+				mes "not least 36 bottles of " + mesitemlink(532, false) + "!";
 				next;
 				mes "[Jason]";
 				mes "Make sure you have all of them and come again!";

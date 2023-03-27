@@ -34,7 +34,7 @@ quiz_00,49,31,4	script	MVP Arena Guide	778,{
 	switch(select("Information","Heal me!","Return to Prontera","Cancel")) {
 	case 1:
 		mes "[ ^0065DFMVP Arena Guide^000000 ]";
-		mes "There are four Keepers, and each can " + mesitemlink(908) + " four different MVPs.";
+		mes "There are four Keepers, and each can " + mesitemlink(908, false) + " four different MVPs.";
 		mes "There are eight rooms per Keeper, and sixteen MVPs in total.";
 		close;
 	case 2:

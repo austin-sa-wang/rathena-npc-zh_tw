@@ -78,7 +78,7 @@ S_BuyQuiver:
 	if (countitem(.@item_id) >= .@amount) {
 		mes "[Inventor Jaax]";
 		mes "Excellent!";
-		mes "Are you carrying any Arrows with you? I'll provide you with a " + mesitemlink(12004) + " that can carry "+ .@amount +" of your "+ getitemname(.@item_id) +"s for only ^FF3131"+ .@zeny_req +" Zeny^000000.";
+		mes "Are you carrying any Arrows with you? I'll provide you with a " + mesitemlink(12004, false) + " that can carry "+ .@amount +" of your "+ getitemname(.@item_id) +"s for only ^FF3131"+ .@zeny_req +" Zeny^000000.";
 		next;
 		switch(select("Store as many Arrows in quivers as possible:Purchase 1 quiver:Cancel")) {
 		case 1:
@@ -90,7 +90,7 @@ S_BuyQuiver:
 			mes "Arrows: ^3131FF"+.@arrows+" ^000000";
 			mes "Maximum Number";
 			mes "of Purchasable";
-			mes "Quivers: ^3131FF"+.@" + mesitemlink(12004) + "+" ^000000";
+			mes "Quivers: ^3131FF"+.@" + mesitemlink(12004, false) + "+" ^000000";
 			mes "Zeny required: ^3131FF"+.@arrow_zeny01+" Zeny^000000";
 			next;
 			mes "[Inventor Jaax]";
@@ -103,7 +103,7 @@ S_BuyQuiver:
 				if (.@arrow_zeny01 < Zeny) {
 					mes "[Inventor Jaax]";
 					mes "There you go!";
-					mes "Just remember, ^FF0000you won't be able to use the " + mesitemlink(12004) + " when your carried weight is 90% of your maximum weight limit^000000.";
+					mes "Just remember, ^FF0000you won't be able to use the " + mesitemlink(12004, false) + " when your carried weight is 90% of your maximum weight limit^000000.";
 					set Zeny, Zeny-.@arrow_zeny01;
 					delitem .@item_id,.@arrows_used;// Arrow
 					getitem getarg(3),.@quiver; //Quiver
@@ -127,13 +127,13 @@ S_BuyQuiver:
 			mes "[Inventor Jaax]";
 			mes "You changed your mind?";
 			mes "When the glory of owning";
-			mes "a " + mesitemlink(12004) + " is so close?";
+			mes "a " + mesitemlink(12004, false) + " is so close?";
 			close;
 		case 2:
 			if (Zeny > .@zeny_req) {
 				mes "[Inventor Jaax]";
 				mes "There you go!";
-				mes "Just remember, ^FF0000you won't be able to use the " + mesitemlink(12004) + " when your carried weight is 90% of your maximum weight limit^000000.";
+				mes "Just remember, ^FF0000you won't be able to use the " + mesitemlink(12004, false) + " when your carried weight is 90% of your maximum weight limit^000000.";
 				Zeny = Zeny -.@zeny_req;
 				delitem .@item_id,.@amount;// Arrow
 				getitem getarg(3),1; //Quiver
@@ -165,11 +165,11 @@ S_BuyQuiver:
 	}
 	else {
 		mes "[Inventor Jaax]";
-		mes "You can carry a maximum of "+ .@amount +" Arrows within this " + mesitemlink(12004) + ". It was made using my secret method,";
-		mes "so the total weight of the Arrows and " + mesitemlink(12004) + " is less than carrying the Arrows alone.";
+		mes "You can carry a maximum of "+ .@amount +" Arrows within this " + mesitemlink(12004, false) + ". It was made using my secret method,";
+		mes "so the total weight of the Arrows and " + mesitemlink(12004, false) + " is less than carrying the Arrows alone.";
 		next;
 		mes "[Inventor Jaax]";
-		mes "It's a miracle of science! One that you can experience for yourself if you bring me at least "+ .@amount +" Arrows and "+ .@zeny_req +" Zeny for each " + mesitemlink(12004) + ".";
+		mes "It's a miracle of science! One that you can experience for yourself if you bring me at least "+ .@amount +" Arrows and "+ .@zeny_req +" Zeny for each " + mesitemlink(12004, false) + ".";
 		close;
 	}
 }

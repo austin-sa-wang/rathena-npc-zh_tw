@@ -59,7 +59,7 @@ geffen,124,65,5	script	Bulletin Board#2	837,{
 	mes "It is said that the lost city of Gefenia, a place of elven lore and legend, is hidden within the depths of this dungeon.";
 	next;
 	mes "[Geffen: The City of Magic]";
-	mes "From Geffen, the ^828E28Orc Village^000000 is located to the South, ^4C6055Glast Heim^000000 to the West, ^6D6FE0Prontera^000000 to the far East, and ^744B2DMt. " + mesitemlink(1530) + "^000000 to the North. Enjoy your stay here in Geffen.";
+	mes "From Geffen, the ^828E28Orc Village^000000 is located to the South, ^4C6055Glast Heim^000000 to the West, ^6D6FE0Prontera^000000 to the far East, and ^744B2DMt. " + mesitemlink(1530, false) + "^000000 to the North. Enjoy your stay here in Geffen.";
 	close;
 }
 
@@ -103,7 +103,7 @@ pay_arche,79,31,5	script	Bulletin Board#07	837,{
 	mes "Welcome to the Payon Archer Village where Novices can change their jobs to Archer.";
 	next;
 	mes "[Archer Village]";
-	mes "The Archer Village provides Bows and " + mesitemlink(2330) + " that are available for purchase. These are necessities for new Archers and Hunters.";
+	mes "The Archer Village provides Bows and " + mesitemlink(2330, false) + " that are available for purchase. These are necessities for new Archers and Hunters.";
 	next;
 	mes "[Archer Village]";
 	mes "If you wish to become an Archer, it is suggested to become familiar with this village. For aspiring Hunters, the Hunter Guild is located in a field that is East of Payon.";
@@ -176,7 +176,7 @@ comodo,210,148,5	script	Bulletin Board#12	837,{
 	mes "attraction and place to lounge";
 	next;
 	mes "[Comodo: The Beach City]";
-	mes "You can buy " + mesitemlink(1814) + " Potions, a";
+	mes "You can buy " + mesitemlink(1814, false) + " Potions, a";
 	mes "special product of Comodo, from the";
 	mes "Tool Dealers in the area.";
 	next;
@@ -275,7 +275,7 @@ yuno,154,112,5	script	Bulletin Board#17	837,{
 	mes "[The Schwarzwald Republic]";
 	mes "Welcome to Juno, the City of Sages.";
 	mes "Juno is kept aloft in the air by";
-	mes "the power of the Ymir " + mesitemlink(7855) + "";
+	mes "the power of the Ymir " + mesitemlink(7855, false) + "";
 	mes "Pieces";
 	next;
 	mes "[Juno: Capital of]";
@@ -370,7 +370,7 @@ niflheim,200,191,5	script	Bulletin Board#25	837,{
 	mes "[City of the Dead, Niflheim]";
 	mes "As a tourist attraction, The Witch's castle is suggested.";
 	mes "Unlike normal towns, it is prohibited to save respawn point or";
-	mes "warp point inside Niflheim. Also monsters " + mesitemlink(908) + " within the town as well.";
+	mes "warp point inside Niflheim. Also monsters " + mesitemlink(908, false) + " within the town as well.";
 	next;
 	mes "[City of the Dead, Niflheim]";
 	mes "Especially, please be attentive with a boss monster";

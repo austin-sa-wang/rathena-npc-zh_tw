@@ -28,7 +28,7 @@ aldebaran,139,63,4	script	Soldier#alde	105,{
 	mes "that you could find in any other city. I don't think I even have a name...";
 	next;
 	mes "[Al De Baran Guard]";
-	mes "I am in charge of the Service Guides from the Al De Baran " + mesitemlink(13104) + ". Let me guide you";
+	mes "I am in charge of the Service Guides from the Al De Baran " + mesitemlink(13104, false) + ". Let me guide you";
 	mes "through our town!";
 	next;
 	if (select("Get Location Guide.:End conversation.") == 1) {

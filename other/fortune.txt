@@ -57,12 +57,12 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 	}
 	else if (.@input > zeny) {
 		mes "[Lhimetorra]";
-		mes "There's no need to overdo it. Just give with all your " + mesitemlink(7855) + "... *Tsk tsk*";
+		mes "There's no need to overdo it. Just give with all your " + mesitemlink(7855, false) + "... *Tsk tsk*";
 		close;
 	}
 	else {
 		mes "[Lhimetorra]";
-		mes "I accept your " + mesitemlink(7855) + " and your devotion with my gratitude. Thoughts are more important than the amount when paying a fortune teller.";
+		mes "I accept your " + mesitemlink(7855, false) + " and your devotion with my gratitude. Thoughts are more important than the amount when paying a fortune teller.";
 		Zeny = Zeny-.@input;
 	}
 	next;
@@ -125,7 +125,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			next;
 			mes "[Lhimetorra]";
 			mes " Strange that this would come up about love.. bizarre.. You aren't using this shovel to take revenge on someone, are you?? ";
-			mes " Don't get malicious thoughts. Keep a kind " + mesitemlink(7855) + ". ";
+			mes " Don't get malicious thoughts. Keep a kind " + mesitemlink(7855, false) + ". ";
 			next;
 			mes "[Lhimetorra]";
 			mes " How about taking a break from love and giving yourself time to relax.. I agree with this card. ";
@@ -149,7 +149,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " The teeth of dustiness are very strong. This means.. use your teeth for victory?! ";
 			break;
 		case 8:
-			mes " The card is telling me, 'Fly to your loved one as you were a butterfly and " + mesitemlink(711) + " at it as you were a star.' ";
+			mes " The card is telling me, 'Fly to your loved one as you were a butterfly and " + mesitemlink(711, false) + " at it as you were a star.' ";
 			mes "..even though it doesn't sound like something a moth would say. ";
 			next;
 			mes "[Lhimetorra]";
@@ -240,14 +240,14 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Romance is the best part of love~ ";
 			break;
 		case 22:
-			mes " This card is warning you to not treat your loved one like a " + mesitemlink(740) + ". ";
+			mes " This card is warning you to not treat your loved one like a " + mesitemlink(740, false) + ". ";
 			mes " You're not doing this, are you? ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Love is not supposed to be about controlling and restraining~ mm~ ";
 			break;
 		case 23:
-			mes " Dolls understand a human's " + mesitemlink(7855) + " more than a human. Try treating your loved one as they were a doll. ";
+			mes " Dolls understand a human's " + mesitemlink(7855, false) + " more than a human. Try treating your loved one as they were a doll. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Your loved one can't be worse than a doll, can they? ";
@@ -358,7 +358,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Even though you are not satisfied with your love right now, take a look at their attire. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " it is carefully worn, their " + mesitemlink(7855) + " for you can be seen in it as well.. ";
+			mes " it is carefully worn, their " + mesitemlink(7855, false) + " for you can be seen in it as well.. ";
 			break;
 		case 41:
 			mes " There is a person you must not deal with thoughtlessly nearby. Don't say or do anything carelessly. You must be careful when dealing with this person. ";
@@ -367,16 +367,16 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Bear that in mind. ";
 			break;
 		case 42:
-			mes " Even the wind blows and the trail of her clothes flutter, her posture never changes. Loving a person with that type of " + mesitemlink(7855) + " will bring goodwill and happiness. ";
+			mes " Even the wind blows and the trail of her clothes flutter, her posture never changes. Loving a person with that type of " + mesitemlink(7855, false) + " will bring goodwill and happiness. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " Keep a righteous " + mesitemlink(7855) + " and mind. ";
+			mes " Keep a righteous " + mesitemlink(7855, false) + " and mind. ";
 			break;
 		case 43:// Skel Worker Card
 			mes " That lightens and attacks with a pickaxe! You must aggressively move forward. What do you think? Your fortune is a good one. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " Is your " + mesitemlink(7855) + " ready young one? ";
+			mes " Is your " + mesitemlink(7855, false) + " ready young one? ";
 			break;
 		case 44:
 			mes " The card only shows gaunt bones, but notice how it has all the necessary tools?";
@@ -386,7 +386,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Don't get too greedy about things. ";
 			break;
 		case 45:
-			mes " It has a " + mesitemlink(1041) + " on its back and even in its hand.. it believes one light is insufficient. ";
+			mes " It has a " + mesitemlink(1041, false) + " on its back and even in its hand.. it believes one light is insufficient. ";
 			mes " you are only shining one type of light to your loved one, shining another might help. ";
 			next;
 			mes "[Lhimetorra]";
@@ -399,7 +399,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Don't try to gaze straight them. Make an effort to approach them. ";
 			break;
 		case 47:
-			mes " A knight on a horse is a fantasy in every person's " + mesitemlink(7855) + ". Make it so that this fantasy becomes real. ";
+			mes " A knight on a horse is a fantasy in every person's " + mesitemlink(7855, false) + ". Make it so that this fantasy becomes real. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Then there will surely be progress. ";
@@ -495,17 +495,17 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " the lover does something wrong he pokes them with a needle. How scary.. ";
 			break;
 		case 63:// Joker Card
-			mes " A person's " + mesitemlink(7855) + " is like this card. you flip it over nobody can tell what is behind it. Try turning the person's card over. ";
+			mes " A person's " + mesitemlink(7855, false) + " is like this card. you flip it over nobody can tell what is behind it. Try turning the person's card over. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " You must approach their true " + mesitemlink(7855) + ". Understand? ";
+			mes " You must approach their true " + mesitemlink(7855, false) + ". Understand? ";
 			break;
 		case 64:
 			mes " Jokers are sly, but that is just because it is their habit. ";
 			mes " The reason the person may seem capricious or cunning is partially because they are born like that. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " Will you be able to approach them regardless? To do so, you must prepare you " + mesitemlink(7855) + ".. mm.. ";
+			mes " Will you be able to approach them regardless? To do so, you must prepare you " + mesitemlink(7855, false) + ".. mm.. ";
 			break;
 		case 65:
 			mes " The joker can't use any of his strength because he is tied to a card. Perhaps the person is caught in something and can't show their true merit? ";
@@ -556,13 +556,13 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " To attack with love.. you will need a stronger attack.. Mmm.. ";
 			break;
 		case 73:
-			mes " The scariest thing is not the " + mesitemlink(1354) + " nor " + mesitemlink(947) + ". It is the massive legs that support its heavy weight. Nobody can survive a hit by those legs. The person is also probably hiding the most dangerous part. ";
+			mes " The scariest thing is not the " + mesitemlink(1354, false) + " nor " + mesitemlink(947, false) + ". It is the massive legs that support its heavy weight. Nobody can survive a hit by those legs. The person is also probably hiding the most dangerous part. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " You must love but be careful at the same time. You never know when you will be hit by the hind legs. ";
 			break;
 		case 74:
-			mes " No matter how fearful the bull may be, it has a " + mesitemlink(941) + ", it has already been tamed by humans. No matter how astonishing that person may be, taming is your responsibility. ";
+			mes " No matter how fearful the bull may be, it has a " + mesitemlink(941, false) + ", it has already been tamed by humans. No matter how astonishing that person may be, taming is your responsibility. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Approach them with more sincerity and consideration. ";
@@ -611,7 +611,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Then good luck and try your best. ";
 			break;
 		case 2:
-			mes " Something very rare may come your way. A " + mesitemlink(969) + " mine has been the dream of many since ancient times. You have a " + mesitemlink(969) + " mine right in front of you. ";
+			mes " Something very rare may come your way. A " + mesitemlink(969, false) + " mine has been the dream of many since ancient times. You have a " + mesitemlink(969, false) + " mine right in front of you. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " All in all, a big fortune is right in front of your eyes. I'll be looking forward to it. ";
@@ -650,7 +650,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Dustiness teeth are very strong. This means.. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " Your tooth will become a " + mesitemlink(969) + " tooth?! ";
+			mes " Your tooth will become a " + mesitemlink(969, false) + " tooth?! ";
 			break;
 		case 9:
 			mes " When a dustiness flies around, a big expense comes up. You may need to spend some money soon. ";
@@ -710,7 +710,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " The Marina is not interested in money. The card suggests that you will resemble these traits as well. You will enjoy life apart from money. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " That's the fortune from a " + mesitemlink(4055) + ". ";
+			mes " That's the fortune from a " + mesitemlink(4055, false) + ". ";
 			break;
 		case 19:
 			mes " You will gather money swiftly and quietly, then boom~ blow it all at once. ";
@@ -827,7 +827,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Sohee dislikes the wealthy. They try to gather money, but never use it for others. you don't want to be cursed by Sohee, you need to learn how to be generous with money. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " So you have malicious desires, forget them. An ill " + mesitemlink(7855) + " easily gathers misfortune. ";
+			mes " So you have malicious desires, forget them. An ill " + mesitemlink(7855, false) + " easily gathers misfortune. ";
 			break;
 		case 40:
 			mes " Sohee likes foreign money. They are cute and pretty. you have foreign currency, Sohee will love you. ";
@@ -842,7 +842,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Hmm~ a ghost is saying strange things. ";
 			break;
 		case 42:
-			mes " Its youth is gone after a lifetime of chasing after " + mesitemlink(969) + ". It became a monster with only bones left. No matter how much you like money and your work, look after your life as well. ";
+			mes " Its youth is gone after a lifetime of chasing after " + mesitemlink(969, false) + ". It became a monster with only bones left. No matter how much you like money and your work, look after your life as well. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " There is much more to life than wealth. ";
@@ -860,7 +860,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " There must be great fortune in that direction. ";
 			break;
 		case 45:// Khalitzburg Card
-			mes " A knight is a job that requires a lot of money. A hint of a big expense. You might want to tighten your " + mesitemlink(2627) + ". ";
+			mes " A knight is a job that requires a lot of money. A hint of a big expense. You might want to tighten your " + mesitemlink(2627, false) + ". ";
 			next;
 			mes "[Lhimetorra]";
 			mes " That is, you don't want go to bankrupt. ";
@@ -929,16 +929,16 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Same goes for humans. Be wary of those who are avaricious like the Orc Lord. ";
 			break;
 		case 56:
-			mes " There should be great wealth awaiting in the direction the Orc Lord's " + mesitemlink(947) + " is pointing. The card is directing towards.. ";
+			mes " There should be great wealth awaiting in the direction the Orc Lord's " + mesitemlink(947, false) + " is pointing. The card is directing towards.. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " The northwest? Would you like to try your luck in that direction? ";
 			break;
 		case 57:
-			mes " The Orc Lord likes " + mesitemlink(969) + ". Of all the treasures, " + mesitemlink(969) + " is the best. Closely watch " + mesitemlink(969) + ". ";
+			mes " The Orc Lord likes " + mesitemlink(969, false) + ". Of all the treasures, " + mesitemlink(969, false) + " is the best. Closely watch " + mesitemlink(969, false) + ". ";
 			next;
 			mes "[Lhimetorra]";
-			mes " " + mesitemlink(969) + " is rather peculiar compared to other assets. ";
+			mes " " + mesitemlink(969, false) + " is rather peculiar compared to other assets. ";
 			break;
 		case 58: // Jakk Card
 			mes " Jack makes money through jokes. Others' happiness is the key to his wealth. ";
@@ -1027,7 +1027,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Just like a bull. ";
 			break;
 		case 71:
-			mes " Bulls only know how to work, but the bull itself has a lot to offer. " + mesitemlink(517) + ", leather, " + mesitemlink(947) + ".. ";
+			mes " Bulls only know how to work, but the bull itself has a lot to offer. " + mesitemlink(517, false) + ", leather, " + mesitemlink(947, false) + ".. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " You, too, should look after yourself and not just work. You have many hidden values. ";
@@ -1084,7 +1084,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 		switch(.@card_1_future) {
 		case 1:
 			mes " Youth is not eternal. At one point when you wake up, you realize you are already a middle-aged worker. ";
-			mes " Even reminiscing about the past over a cup of " + mesitemlink(11531) + " can't bring back time. ";
+			mes " Even reminiscing about the past over a cup of " + mesitemlink(11531, false) + " can't bring back time. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Treasure the present.. is what the card is saying. ";
@@ -1273,10 +1273,10 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " A sand's future is simply sand. Not a rock, nor mud. Some things just don't change young one. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " What the " + mesitemlink(4101) + " is trying to say is to treasure your present self. ";
+			mes " What the " + mesitemlink(4101, false) + " is trying to say is to treasure your present self. ";
 			break;
 		case 32:
-			mes " A sand dune changes its shape even after a day. The " + mesitemlink(4101) + " is speaking of a future with many changes. ";
+			mes " A sand dune changes its shape even after a day. The " + mesitemlink(4101, false) + " is speaking of a future with many changes. ";
 			next;
 			mes "[Lhimetorra]";
 			mes " It says not to be too caught up with the present, because the future is always changing. ";
@@ -1567,7 +1567,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Look around you. Of course, look for anyone you might have spited.. ";
 			break;
 		case 3:
-			mes " It is saying to be careful not to burn your mustache with a " + mesitemlink(2267) + ". When you do something, something is always at risk.. It is probably warning about that. ";
+			mes " It is saying to be careful not to burn your mustache with a " + mesitemlink(2267, false) + ". When you do something, something is always at risk.. It is probably warning about that. ";
 			break;
 		case 4:
 			mes " 'Be careful of shoveling'.. You might get hit by a shovel. Should you be careful around a construction site? ";
@@ -1649,7 +1649,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " This is all for you young one. Therefore, follow this fortune and rid yourself of falsehood. ";
 			break;
 		case 23:
-			mes " The Marionette is emphasizing a proper diet. Don't rely too much on " + mesitemlink(517) + ". ";
+			mes " The Marionette is emphasizing a proper diet. Don't rely too much on " + mesitemlink(517, false) + ". ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Take the Marionette's advice. She never says anything wrong. Hoho... ";
@@ -1713,7 +1713,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " The Sandman says to watch out before you become like a chicken. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " And don't eat too much spicy and salty food, " + mesitemlink(970) + ", etc. What a thoughtful Sandman. ";
+			mes " And don't eat too much spicy and salty food, " + mesitemlink(970, false) + ", etc. What a thoughtful Sandman. ";
 			break;
 		case 34:
 			mes " The Sandman says over-sleepers will be punished by society! ";
@@ -1745,7 +1745,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " Sohee likes to take care of her appearance. If you don't, Sohee will get mad at you. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " Making yourself look presentable is just as important as keeping a good " + mesitemlink(7855) + ". ";
+			mes " Making yourself look presentable is just as important as keeping a good " + mesitemlink(7855, false) + ". ";
 			mes " Take care of your appearance. And get that pepper out from between your teeth! ";
 			break;
 		case 39:
@@ -1762,7 +1762,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " What the skeleton wants to say is, be aware of 'safety'. Being ignorant about safety is dangerous. ";
 			break;
 		case 41:
-			mes " The " + mesitemlink(4025) + " has a gray tone. If you read the grey, you can see the darkness. ";
+			mes " The " + mesitemlink(4025, false) + " has a gray tone. If you read the grey, you can see the darkness. ";
 			mes " It seems like darkness is on its way. Be careful, this darkness isn't ordinary. ";
 			next;
 			mes "[Lhimetorra]";
@@ -1795,12 +1795,12 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " The misfortune shown in the knight card is hastiness. That is also what takes away a knight's life, too. ";
 			next;
 			mes "[Lhimetorra]";
-			mes " This knight is warning you from the bottom of his " + mesitemlink(7855) + ", ";
+			mes " This knight is warning you from the bottom of his " + mesitemlink(7855, false) + ", ";
 			mes " so that you don't repeat his mistake. Be ware of hastiness. ";
 			break;
 		case 47:
 			mes " This knight is warning you of loneliness. He doesn't have a person to help his horse, ";
-			mes " nor a lover awaiting him, so loneliness hits him in the " + mesitemlink(7855) + ". ";
+			mes " nor a lover awaiting him, so loneliness hits him in the " + mesitemlink(7855, false) + ". ";
 			next;
 			mes "[Lhimetorra]";
 			mes " Loneliness is not simply sadness. It is a formless devil eating your life. Stay away from loneliness. ";
@@ -1951,7 +1951,7 @@ payon_in03,117,128,5	script	Fortune Teller	4_M_BIBI,{
 			mes " It seems like he wants to tell you this. ";
 			break;
 		case 70:
-			mes " The bull is warning about " + mesitemlink(517) + " from watered cows. ";
+			mes " The bull is warning about " + mesitemlink(517, false) + " from watered cows. ";
 			mes " Saying that, that type of behavior will surely bring upon monsters' curses. ";
 			next;
 			mes "[Lhimetorra]";
@@ -1976,11 +1976,11 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 	next;
 	if (select(" I would like a Poring card reading. : What is a Poring card reading? ") == 2) {
 		mes "[Chocarle]";
-		mes " " + mesitemlink(4001) + " readings focus on cards with cute Porings..! ";
+		mes " " + mesitemlink(4001, false) + " readings focus on cards with cute Porings..! ";
 		mes " Poke~poke~ they tell you your fortune! It is not traditional, but the liveliness is the best! ";
 		next;
 		mes "[Chocarle]";
-		mes " The fortunes are simple and refreshing. It is perfect when you would like your fortune told with a light " + mesitemlink(7855) + " and not be burdensome! ";
+		mes " The fortunes are simple and refreshing. It is perfect when you would like your fortune told with a light " + mesitemlink(7855, false) + " and not be burdensome! ";
 		close;
 	}
 	mes "[Chocarle]";
@@ -2025,7 +2025,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Agh! You're about to give your soul to your loved one! Take it down a notch! ";
 			break;
 		case 3:
-			mes " No! Your " + mesitemlink(7855) + " is about to leave your love! Catch it! ";
+			mes " No! Your " + mesitemlink(7855, false) + " is about to leave your love! Catch it! ";
 			break;
 		case 4:// Drops Card
 			mes " Love is like juice in the forest! It is refreshing! Take care of your loved one! ";
@@ -2061,7 +2061,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Love is sweet! Be careful not to get cavities! ";
 			break;
 		case 15:
-			mes " Prepare a present for your love! They might get a " + mesitemlink(7855) + " attack because they will be overwhelmed with happiness! ";
+			mes " Prepare a present for your love! They might get a " + mesitemlink(7855, false) + " attack because they will be overwhelmed with happiness! ";
 			break;
 		case 16:// Soldier Skeleton Card
 			mes " Don't be shy in front of your loved one! Love transcends everything! ";
@@ -2224,7 +2224,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Even when you are sick, don't forget about studying! Where there is effort, there is bound to be good results! ";
 			break;
 		case 30:
-			mes " Newton discovered gravity through a falling " + mesitemlink(512) + "! Be wary of even the little things in your surroundings! ";
+			mes " Newton discovered gravity through a falling " + mesitemlink(512, false) + "! Be wary of even the little things in your surroundings! ";
 			break;
 		case 31:// Poporing Card
 			mes " Green is good for studying! Color your walls green or get a green drink! The lucky color! Green! ";
@@ -2261,7 +2261,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Mmm! You both have gone crazy. You must overcome it through conversations! ";
 			break;
 		case 3:
-			mes " Agh! You are suffering because of your friend! Try opening your " + mesitemlink(7855) + " and be more lenient! ";
+			mes " Agh! You are suffering because of your friend! Try opening your " + mesitemlink(7855, false) + " and be more lenient! ";
 			break;
 		case 4:// Drops Card
 			mes " You even split a pea between friends! Don't be so cruel. Reflect upon yourself and apologize! ";
@@ -2294,7 +2294,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Give your friends a present! Your friendship will become deeper! ";
 			break;
 		case 14:
-			mes " Prepare a hat to cover your friend's large head! They will be moved by your care! ";
+			mes " Prepare a " + mesitemlink(2220, false) + " to cover your friend's large head! They will be moved by your care! ";
 			break;
 		case 15:
 			mes " A friend is waiting for you! Be nice to your friend! ";
@@ -2318,7 +2318,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Share your bone with your friend! Sacrifices in friendship are beautiful! ";
 			break;
 		case 22:// Eddga Card
-			mes " Do anything for your friend! With all your " + mesitemlink(7855) + " and soul! Your friend will be delighted! ";
+			mes " Do anything for your friend! With all your " + mesitemlink(7855, false) + " and soul! Your friend will be delighted! ";
 			break;
 		case 23:
 			mes " No smoking, even with a friend! Stop smoking for your health! ";
@@ -2339,7 +2339,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Help your friend's scar. Your friend would greatly appreciate it! ";
 			break;
 		case 29:
-			mes " You even split a slice of an " + mesitemlink(512) + " among friends! Share more things with your friend! Something good will happen! ";
+			mes " You even split a slice of an " + mesitemlink(512, false) + " among friends! Share more things with your friend! Something good will happen! ";
 			break;
 		case 30:
 			mes " When your friend is sleeping, think of them! Then there will be progress in your friendship! What do you think~ it means~?! ";
@@ -2357,7 +2357,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 		next;
 		mes "[Chocarle]";
 		mes " Poring fortunetelling works very well when it is about friendship! ";
-		mes " It is the " + mesitemlink(7855) + " of the " + mesitemlink(4001) + " that earnestly hopes for good friendships! ";
+		mes " It is the " + mesitemlink(7855, false) + " of the " + mesitemlink(4001, false) + " that earnestly hopes for good friendships! ";
 		next;
 		cutin "",255;
 		mes "[Chocarle]";
@@ -2448,7 +2448,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Choose a job that involves flying! You show potential! ";
 			break;
 		case 26:
-			mes " Scrumptious " + mesitemlink(536) + " that could even be eaten in heaven! Challenge yourself and get involved in a job making things of that sort! ";
+			mes " Scrumptious " + mesitemlink(536, false) + " that could even be eaten in heaven! Challenge yourself and get involved in a job making things of that sort! ";
 			break;
 		case 27:
 			mes " In the future, things that cannot be done right now will be accomplished! You can look forward to it! ";
@@ -2516,7 +2516,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Uh oh! Someone is after your money! Take good care of it! ";
 			break;
 		case 9:
-			mes " It says you might be tempted to do something bad to gather money! Don't forget about a kind " + mesitemlink(7855) + "! ";
+			mes " It says you might be tempted to do something bad to gather money! Don't forget about a kind " + mesitemlink(7855, false) + "! ";
 			break;
 		case 10:// Munak Card
 			mes " You have hidden money in your clothes! Hidden rich one! Be careful not to be caught! ";
@@ -2573,7 +2573,7 @@ payon_in03,75,129,5	script	Poring Fortune Teller	4_M_BIBI,{
 			mes " Even if it may seem pointless, if you persist, you will be able to make lots of money! You can do it! ";
 			break;
 		case 28:// Poring Card
-			mes " Don't neglect the trivial things on the floor! If you keep an open " + mesitemlink(7855) + " like that, you will be able to collect money! ";
+			mes " Don't neglect the trivial things on the floor! If you keep an open " + mesitemlink(7855, false) + " like that, you will be able to collect money! ";
 			break;
 		case 29:
 			mes " If you work with something that is related to mushrooms or apples, a good fortune awaits you! What kind of work would that be? ";

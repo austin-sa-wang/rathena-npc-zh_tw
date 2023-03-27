@@ -36,13 +36,13 @@
 		mes "What's this?";
 		mes "You...! You have";
 		mes "everything I need to";
-		mes "create " + mesitemlink(7058) + "!";
+		mes "create " + mesitemlink(7058, false) + "!";
 		next;
 		switch(select("Make Gleipnir.:Cancel.")) {
 		case 1:
 			mes "[Rebarev Doug]";
 			mes "I'm the only human on earth";
-			mes "blessed with the ability to create " + mesitemlink(7058) + ". Aside from the Dwarves, I'm the only person that can make this item!";
+			mes "blessed with the ability to create " + mesitemlink(7058, false) + ". Aside from the Dwarves, I'm the only person that can make this item!";
 			next;
 			delitem 7080,4;  //Foot_Step_Of_Cat
 			delitem 7081,5;  //Beard_Of_Women
@@ -54,7 +54,7 @@
 			mes "There you go!";
 			next;
 			mes "[Rebarev Doug]";
-			mes "" + mesitemlink(7058) + " is said to be so strong that not even the Fenrir Wolf could break it! I take great pride in being able to create this!";
+			mes "" + mesitemlink(7058, false) + " is said to be so strong that not even the Fenrir Wolf could break it! I take great pride in being able to create this!";
 			break;
 		case 2:
 			break;
@@ -77,7 +77,7 @@
 		switch(select("What is Holy Cross?:What is Grand Cross?:What is Sacrifice?:What is Gleipnir?")) {
 		case 1:
 			mes "[Rebarev Doug]";
-			mes "Holy Cross is the first manifestation of a Crusader's faith. By making " + mesitemlink(2644) + " of the cross, Crusader's can inflict a holy attack on their enemies.";
+			mes "Holy Cross is the first manifestation of a Crusader's faith. By making " + mesitemlink(2644, false) + " of the cross, Crusader's can inflict a holy attack on their enemies.";
 			next;
 			mes "[Rebarev Doug]";
 			mes "Monsters that are weak against holiness, particularly the Undead, will be blinded by the light of the Holy Cross. All they can do is wait for holy judgment.";
@@ -88,7 +88,7 @@
 			break;
 		case 2:
 			mes "[Rebarev Doug]";
-			mes "" + mesitemlink(1528) + "...!";
+			mes "" + mesitemlink(1528, false) + "...!";
 			mes "The righteous fury of God is";
 			mes "given form in this destructive skill.";
 			next;
@@ -100,7 +100,7 @@
 			mes "The power of the crucifix of light can damage the enemy three times. Each strike will have five times the strength of your normal attacks.";
 			next;
 			mes "[Rebarev Doug]";
-			mes "However, when Crusaders use " + mesitemlink(1528) + ", they must exercise extreme caution. The human body is too weak to fully embrace the will of God.";
+			mes "However, when Crusaders use " + mesitemlink(1528, false) + ", they must exercise extreme caution. The human body is too weak to fully embrace the will of God.";
 			next;
 			mes "[Rebarev Doug]";
 			mes "Therefore, using this skill, will cause the Crusader to suffer from damage. However, this damage can";
@@ -129,20 +129,20 @@
 			break;
 		case 4:
 			mes "[Rebarev Doug]";
-			mes "" + mesitemlink(7058) + " is the essence of " + mesitemlink(2629) + " which I have been researching.";
+			mes "" + mesitemlink(7058, false) + " is the essence of " + mesitemlink(2629, false) + " which I have been researching.";
 			next;
 			mes "[Rebarev Doug]";
-			mes "It's the only binding strong enough that will allow a human to wear " + mesitemlink(2629) + " around his waist.";
+			mes "It's the only binding strong enough that will allow a human to wear " + mesitemlink(2629, false) + " around his waist.";
 			next;
 			mes "[Rebarev Doug]";
-			mes "Although I can no longer fight, I've been studying how to create " + mesitemlink(7058) + " for years. I will be more than willing to create it for you if you can bring me...";
+			mes "Although I can no longer fight, I've been studying how to create " + mesitemlink(7058, false) + " for years. I will be more than willing to create it for you if you can bring me...";
 			next;
 			mes "[Rebarev Doug]";
-			mes "^0000FF4 " + mesitemlink(7080) + "^000000,";
-			mes "^0000FF5 " + mesitemlink(7081) + "^000000,";
-			mes "^0000FF4 " + mesitemlink(7082) + "^000000,";
-			mes "^0000FF3 " + mesitemlink(7084) + "^000000 and";
-			mes "^0000FF3 " + mesitemlink(7085) + "^000000.";
+			mes "^0000FF4 " + mesitemlink(7080, false) + "^000000,";
+			mes "^0000FF5 " + mesitemlink(7081, false) + "^000000,";
+			mes "^0000FF4 " + mesitemlink(7082, false) + "^000000,";
+			mes "^0000FF3 " + mesitemlink(7084, false) + "^000000 and";
+			mes "^0000FF3 " + mesitemlink(7085, false) + "^000000.";
 			break;
 		}
 	}
@@ -1042,10 +1042,10 @@ prt_in,172,106,0	script	Librarian#megin	833,{
 			mes "Search Magic on it, so that it'll be just like the original. All right, I need the following things to make a copy...";
 			next;
 			mes "[Librarian Jekan]";
-			mes "2 " + mesitemlink(7111) + ",";
-			mes "1 " + mesitemlink(7151) + ",";
-			mes "3 " + mesitemlink(1024) + ",";
-			mes "3 " + mesitemlink(916) + " and";
+			mes "2 " + mesitemlink(7111, false) + ",";
+			mes "1 " + mesitemlink(7151, false) + ",";
+			mes "3 " + mesitemlink(1024, false) + ",";
+			mes "3 " + mesitemlink(916, false) + " and";
 			mes "20 Blue Gemstones.";
 			next;
 			mes "[Librarian Jekan]";
@@ -1092,10 +1092,10 @@ prt_in,172,106,0	script	Librarian#megin	833,{
 				mes "tell you again...";
 				next;
 				mes "[Librarian Jekan]";
-				mes "2 " + mesitemlink(7111) + ",";
-				mes "1 " + mesitemlink(7151) + ",";
-				mes "3 " + mesitemlink(1024) + ",";
-				mes "3 " + mesitemlink(916) + " and";
+				mes "2 " + mesitemlink(7111, false) + ",";
+				mes "1 " + mesitemlink(7151, false) + ",";
+				mes "3 " + mesitemlink(1024, false) + ",";
+				mes "3 " + mesitemlink(916, false) + " and";
 				mes "20 Blue Gemstones.";
 				next;
 				mes "[Librarian Jekan]";
@@ -1659,7 +1659,7 @@ geffen_in,109,161,3	script	Crusader#God1	751,{
 					mes "Y-yeah that's right! And then three days after we started the mission, we found some kind of...";
 					next;
 					mes "[Zan.Huadoku]";
-					mes "Well, I'm not sure what it was. But we found an ^0000FFunknown " + mesitemlink(7094) + "^000000 that was a sign from God! And then...!";
+					mes "Well, I'm not sure what it was. But we found an ^0000FFunknown " + mesitemlink(7094, false) + "^000000 that was a sign from God! And then...!";
 					next;
 					mes "[Zan.Huadoku]";
 					mes "And then...";
@@ -1699,7 +1699,7 @@ geffen_in,109,161,3	script	Crusader#God1	751,{
 			mes "Y-yeah that's right! And then three days after we started the mission, we found some kind of...";
 			next;
 			mes "[Zan.Huadoku]";
-			mes "Well, I'm not sure what it was. But we found an ^0000FFunknown " + mesitemlink(7094) + "^000000 that was a sign from God! And then...!";
+			mes "Well, I'm not sure what it was. But we found an ^0000FFunknown " + mesitemlink(7094, false) + "^000000 that was a sign from God! And then...!";
 			next;
 			mes "[Zan.Huadoku]";
 			mes "And then...";
@@ -1719,7 +1719,7 @@ geffen_in,109,161,3	script	Crusader#God1	751,{
 			next;
 			mes "[Zan.Huadoku]";
 			mes "3 days later!";
-			mes "We f-found some ^0000FFfragment^000000!";
+			mes "We f-found some ^0000FF" + mesitemlink(7094, false) + "^000000!";
 			mes "It was G-God's sign! But why";
 			mes "can't I remember?! Why?!";
 			close;
@@ -1825,7 +1825,7 @@ morocc_in,146,179,0	script	Employee#megin1	66,{
 					mes "[Scary Inn Employee]";
 					mes "Who the hell are you?";
 					mes "If you try anything funny,";
-					mes "I'll rip your " + mesitemlink(7855) + " out!";
+					mes "I'll rip your " + mesitemlink(7855, false) + " out!";
 					mes "Why are you so curious?!";
 					mes "Are you one of them?!";
 					next;
@@ -2164,7 +2164,7 @@ in_rogue,243,61,0	script	Suspicious Man#megin	748,{
 						next;
 						mes "[Cuaque Donon]";
 						mes "Wait, that's right!";
-						mes "^0000FFMegingjard^000000! Right.";
+						mes "^0000FF" + mesitemlink(2629, false) + "^000000! Right.";
 						mes "We found it, and";
 						mes "we knew what it was";
 						mes "just by looking at it!";
@@ -2227,7 +2227,7 @@ in_rogue,243,61,0	script	Suspicious Man#megin	748,{
 			}
 			else if (god_megin_2 == 4) {
 				mes "[Cuaque Donon]";
-				mes "I remember after we found " + mesitemlink(2629) + ". One of us in the squad had a argument with our old leader. I was keeping night watch and happened to hear it. I think our leader was out of line...";
+				mes "I remember after we found " + mesitemlink(2629, false) + ". One of us in the squad had a argument with our old leader. I was keeping night watch and happened to hear it. I think our leader was out of line...";
 				next;
 				mes "[Cuaque Donon]";
 				mes "Ergh...";
@@ -2556,7 +2556,7 @@ aldebaran,66,213,0	script	Lady#megin	69,{
 					}
 					else {
 						mes "[Emma Searth]";
-						mes "Ah, let's not talk about it. It's too depressing. Maybe if you had some sort of ^0000FFmemory^000000 aid, I might be able to recall my forgotten past. Anything, like a reminder, a scheduler, a bookmark, a " + mesitemlink(7772) + "...";
+						mes "Ah, let's not talk about it. It's too depressing. Maybe if you had some sort of ^0000FFmemory^000000 aid, I might be able to recall my forgotten past. Anything, like a reminder, a scheduler, a bookmark, a " + mesitemlink(7772, false) + "...";
 						close;
 					}
 				case 2:
@@ -2567,10 +2567,10 @@ aldebaran,66,213,0	script	Lady#megin	69,{
 					mes "She carried herself like a professional, no matter what the situation. Even though I knew she was tired from working in the summer heat, she made everything look effortless!";
 					next;
 					mes "[Emma Searth]";
-					mes "When the male customers try to flirt with her, she never loses her poise. She just adjusts her " + mesitemlink(2203) + " and does what she needs to do.";
+					mes "When the male customers try to flirt with her, she never loses her poise. She just adjusts her " + mesitemlink(2203, false) + " and does what she needs to do.";
 					next;
 					mes "[Emma Searth]";
-					mes "To me, she's like a lone, " + mesitemlink(12313) + ". At that moment, it seemed the world existed just to be mocked by Ms. Leila.";
+					mes "To me, she's like a lone, " + mesitemlink(12313, false) + ". At that moment, it seemed the world existed just to be mocked by Ms. Leila.";
 					next;
 					mes "[Emma Searth]";
 					mes "I've also heard that Kafra Ladies are always traveling around the world, which is something I've always dreamed of doing.";
@@ -2584,7 +2584,7 @@ aldebaran,66,213,0	script	Lady#megin	69,{
 					if (countitem(511) > 0 && god_megin_3 > 1) {
 						mes "^3355FFEmma Searth clutches her head and winces as she suffers from another migraine.^000000";
 						next;
-						mes "^3355FFRemembering that a " + mesitemlink(511) + " was able to relieve Jack O, you gave a " + mesitemlink(511) + " to Emma. She takes it, and looks a little more relaxed.^000000";
+						mes "^3355FFRemembering that a " + mesitemlink(511, false) + " was able to relieve Jack O, you gave a " + mesitemlink(511, false) + " to Emma. She takes it, and looks a little more relaxed.^000000";
 						next;
 						mes "[Emma Searth]";
 						mes "I'm not even sure";
@@ -2865,7 +2865,7 @@ cmd_in02,190,94,3	script	Man#megin	828,{
 							mes "Oooh, looks like you've got a tasty beverage I can enjoy. Bwahahaha! Gimmie~!";
 							next;
 							mes "^3355FFBefore you can even think,";
-							mes "Royal Myst dips his hand into your inventory and helps himself to an " + mesitemlink(970) + ".^000000";
+							mes "Royal Myst dips his hand into your inventory and helps himself to an " + mesitemlink(970, false) + ".^000000";
 							delitem 970,1;
 							set god_megin_6,god_megin_6 +2;
 							close;
@@ -3007,68 +3007,68 @@ niflheim,109,254,0	script	Egnigem	796,{
 						next;
 						mes "[Egnigem]";
 						mes "Now, we were secretly assigned";
-						mes "to find ^0000FFgodly artifacts^000000 by royal decree. In only three days, we succeeded and found " + mesitemlink(2629) + "!";
+						mes "to find ^0000FFgodly artifacts^000000 by royal decree. In only three days, we succeeded and found " + mesitemlink(2629, false) + "!";
 						next;
 						mes "[Egnigem]";
 						mes "Now, the records say the mission was unsatisfactory, correct? That would be because of me.";
 						next;
 						mes "[Egnigem]";
-						mes "Are you aware that " + mesitemlink(2629) + "";
-						mes "was a " + mesitemlink(2627) + " worn by gods? It was actually one of the keys to Thor's great strength. Another name for it is the 'Girdle of Might.'";
+						mes "Are you aware that " + mesitemlink(2629, false) + "";
+						mes "was a " + mesitemlink(2627, false) + " worn by gods? It was actually one of the keys to Thor's great strength. Another name for it is the 'Girdle of Might.'";
 						next;
 						mes "[Egnigem]";
 						mes "Now, if a human were to wear";
-						mes "that, there's a possibility that " + mesitemlink(2629) + " would give him strength comparable to a god. Naturally, you'd be afraid of such a thing falling into the wrong hands.";
+						mes "that, there's a possibility that " + mesitemlink(2629, false) + " would give him strength comparable to a god. Naturally, you'd be afraid of such a thing falling into the wrong hands.";
 						next;
 						mes "[Egnigem]";
 						mes "In Rebarev Doug's mind, he";
-						mes "was the only person worthy of the " + mesitemlink(2627) + " since he considered himself the most religious person alive, and thus, closest to the gods.";
+						mes "was the only person worthy of the " + mesitemlink(2627, false) + " since he considered himself the most religious person alive, and thus, closest to the gods.";
 						next;
 						mes "[Egnigem]";
-						mes "He made it clear to us that only he would wear " + mesitemlink(2629) + ". Although he was our leader, some of us felt uneasy about him wearing the " + mesitemlink(2627) + " and not giving it to his superiors, our mission objective.";
+						mes "He made it clear to us that only he would wear " + mesitemlink(2629, false) + ". Although he was our leader, some of us felt uneasy about him wearing the " + mesitemlink(2627, false) + " and not giving it to his superiors, our mission objective.";
 						next;
 						mes "[Egnigem]";
 						mes "Naturally, I opposed him. He was clearly unbalanced, and it would be dangerous to give him control of such power. It led to something of a fist fight between us.";
 						next;
 						mes "[Egnigem]";
 						mes "The rest of the squad couldn't";
-						mes "agree on whether or not we should simply obey our leader and let him have the " + mesitemlink(2627) + ". Some just wanted to complete the mission, while others were afraid of what might happen.";
+						mes "agree on whether or not we should simply obey our leader and let him have the " + mesitemlink(2627, false) + ". Some just wanted to complete the mission, while others were afraid of what might happen.";
 						next;
 						mes "[Egnigem]";
-						mes "But Rebarev didn't wait for us to decide. He destroyed " + mesitemlink(2629) + " into pieces, intending to keep most of it and somehow reconstruct it later, and only bring one piece to the Prontera Military.";
+						mes "But Rebarev didn't wait for us to decide. He destroyed " + mesitemlink(2629, false) + " into pieces, intending to keep most of it and somehow reconstruct it later, and only bring one piece to the Prontera Military.";
 						next;
 						mes "[Egnigem]";
 						mes "He knew that he couldn't get";
-						mes "away with keeping all of " + mesitemlink(2629) + " to himself, as the entire squad could easily discredit him.";
+						mes "away with keeping all of " + mesitemlink(2629, false) + " to himself, as the entire squad could easily discredit him.";
 						next;
 						mes "[Egnigem]";
 						mes "But Rebarev knew";
 						mes "that he could deceive his";
-						mes "superiors by giving them just a " + mesitemlink(7094) + " of the artifact, and say that the rest of it was destroyed.";
+						mes "superiors by giving them just a " + mesitemlink(7094, false) + " of the artifact, and say that the rest of it was destroyed.";
 						next;
 						mes "[Egnigem]";
 						mes "I discovered his intention when";
-						mes "I found him taking " + mesitemlink(2629) + " apart. Before I could stop him,";
+						mes "I found him taking " + mesitemlink(2629, false) + " apart. Before I could stop him,";
 						mes "I was killed. That bastard had";
-						mes "a " + mesitemlink(1065) + " ready for me...";
+						mes "a " + mesitemlink(1065, false) + " ready for me...";
 						next;
 						mes "[Egnigem]";
-						mes "After the mission, Rebarev Doug only gave a piece of the " + mesitemlink(2627) + " back to the higher-ups, and gave them";
+						mes "After the mission, Rebarev Doug only gave a piece of the " + mesitemlink(2627, false) + " back to the higher-ups, and gave them";
 						mes "a different account than what had actually happened...";
 						break;
 					case 2:
 						mes "[Egnigem]";
-						mes "Once the mission was completed, Rebarev Doug reported back to the Prontera Military with the intent of keeping most of " + mesitemlink(2629) + " for himself.";
+						mes "Once the mission was completed, Rebarev Doug reported back to the Prontera Military with the intent of keeping most of " + mesitemlink(2629, false) + " for himself.";
 						next;
 						mes "[Egnigem]";
 						mes "For some reason, he has a very strong influence in the military hierarchy. Now, by this time, I'm sure the squad pretty much figured out that he killed me.";
 						next;
 						mes "[Egnigem]";
-						mes "But Rebarev Doug expected this, and explained to his superiors that the squad was tempted by " + mesitemlink(2629) + "'s power and that I led some of us in a mutiny against him.";
+						mes "But Rebarev Doug expected this, and explained to his superiors that the squad was tempted by " + mesitemlink(2629, false) + "'s power and that I led some of us in a mutiny against him.";
 						next;
 						mes "[Egnigem]";
-						mes "He told his superiors that " + mesitemlink(2629) + " was damaged as we";
-						mes "fought amongst each other, and that the " + mesitemlink(7094) + " he gave them was all that remained.";
+						mes "He told his superiors that " + mesitemlink(2629, false) + " was damaged as we";
+						mes "fought amongst each other, and that the " + mesitemlink(7094, false) + " he gave them was all that remained.";
 						next;
 						mes "[Egnigem]";
 						mes "Because of the confidential nature of our mission, the 1st Squad was disbanded and we weren't given the story Rebarev fed the beaureaucrats until it was too late.";
@@ -3084,7 +3084,7 @@ niflheim,109,254,0	script	Egnigem	796,{
 						mes "However, they still needed an official scapegoat, so they used Royal Myst's name in the records. That's probably why he's been going through hard times right now.";
 						next;
 						mes "[Egnigem]";
-						mes "And now Rebarev Doug has been studying godly artifacts based on the pieces of " + mesitemlink(2629) + " that we found on that mission using kingdom research funds. Someday, he might be able to reconstruct the " + mesitemlink(2627) + ".";
+						mes "And now Rebarev Doug has been studying godly artifacts based on the pieces of " + mesitemlink(2629, false) + " that we found on that mission using kingdom research funds. Someday, he might be able to reconstruct the " + mesitemlink(2627, false) + ".";
 						next;
 						mes "[Egnigem]";
 						mes "There are also";
@@ -3093,7 +3093,7 @@ niflheim,109,254,0	script	Egnigem	796,{
 						mes "to answer.";
 						next;
 						mes "[Egnigem]";
-						mes "I've never known why the King Tristram III ordered the research of godly artifacts. It also bothers me that Rebarev Doug is in charge of " + mesitemlink(2629) + "'s research. There must be some reason.";
+						mes "I've never known why the King Tristram III ordered the research of godly artifacts. It also bothers me that Rebarev Doug is in charge of " + mesitemlink(2629, false) + "'s research. There must be some reason.";
 						next;
 						mes "[Egnigem]";
 						mes "In any case, for the sake of Midgard, it will be your responsibility to find the answers.";

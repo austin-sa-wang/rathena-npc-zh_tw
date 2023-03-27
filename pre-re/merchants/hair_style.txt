@@ -156,7 +156,7 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 					mes "Oh, that's 'Double Attack' style!";
 					mes "The adorable pigtail, paired with";
 					mes "those provacative bangs are sure";
-					mes "to help you steal the " + mesitemlink(7855) + " of";
+					mes "to help you steal the " + mesitemlink(7855, false) + " of";
 					mes "some cute guy.";
 					close2; cutin "",255; end;
 			case 8:
@@ -218,7 +218,7 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 					mes "intellectual types.";
 					close2; cutin "",255; end;
 				}
-					mes "Oh, that's '" + mesitemlink(1528) + "' style!";
+					mes "Oh, that's '" + mesitemlink(1528, false) + "' style!";
 					mes "It's in style among those pious";
 					mes "Crusaders that need hair that";
 					mes "won't muss during fighting, yet";
@@ -268,11 +268,11 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 					mes "Dancers seem to like this style,";
 					mes "although personally, I think";
 					mes "this fashion fits very well";
-					mes "with " + mesitemlink(2203) + ".";
+					mes "with " + mesitemlink(2203, false) + ".";
 					close2; cutin "",255; end;
 			case 15:
 				if(Sex == SEX_MALE) {
-					mes "Oh, that's '" + mesitemlink(1237) + "' style!";
+					mes "Oh, that's '" + mesitemlink(1237, false) + "' style!";
 					mes "Spiky and unkempt, this style";
 					mes "is a popular counterculture";
 					mes "street fashion. You might";
@@ -314,7 +314,7 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 					mes "the science in that??";
 					close2; cutin "",255; end;
 				}
-					mes "Oh, that's '" + mesitemlink(1354) + " Fall' style!";
+					mes "Oh, that's '" + mesitemlink(1354, false) + " Fall' style!";
 					mes "For the woman that doesn't want";
 					mes "her hair to get in the way when";
 					mes "she's savagely swinging heavy";
@@ -340,7 +340,7 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 					close2; cutin "",255; end;
 			case 19:
 				if(Sex == SEX_MALE) {
-					mes "Oh, that's '" + mesitemlink(1369) + " Fist'";
+					mes "Oh, that's '" + mesitemlink(1369, false) + " Fist'";
 					mes "style! The smooth, slicked back";
 					mes "pompadour shows that you're";
 					mes "serious about your passion";
@@ -372,13 +372,13 @@ alberta_in,55,142,7	script	Hair Dresser	91,{
 			mes "you will need.";
 			next;
 			mes "[Veronica]";
-			mes "3 " + mesitemlink(973) + ",";
-			mes "3 " + mesitemlink(974) + ",";
+			mes "3 " + mesitemlink(973, false) + ",";
+			mes "3 " + mesitemlink(974, false) + ",";
 			mes "100 Danggie,";
 			mes "100 Short Danggie,";
-			mes "100 " + mesitemlink(1020) + ",";
-			mes "100 " + mesitemlink(1060) + ",";
-			mes "100 " + mesitemlink(7152) + ", and lastly...";
+			mes "100 " + mesitemlink(1020, false) + ",";
+			mes "100 " + mesitemlink(1060, false) + ",";
+			mes "100 " + mesitemlink(7152, false) + ", and lastly...";
 			next;
 			mes "[Veronica]";
 			mes "You will need 99,800 zeny.";
@@ -559,7 +559,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 				case 2:
 					cutin "hair_m_21",4;
 					mes "[Prince Shammi]";
-					mes "Oh, the ^3131FFExecutioner Style^000000!";
+					mes "Oh, the ^3131FF" + mesitemlink(1169, false) + " Style^000000!";
 					mes "It's a rugged, shaggy style";
 					mes "for that tough guy look that's";
 					mes "becoming popular these days.";
@@ -603,7 +603,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 					cutin "hair_f_20",4;
 					mes "[Prince Shammi]";
 					mes "Oh yes, this is the ";
-					mes "^3131FFSpring Rabbit Style^000000.";
+					mes "^3131FF" + mesitemlink(10035, false) + " Rabbit Style^000000.";
 					mes "The bobbing forelock";
 					mes "adds an aura of chic,";
 					mes "cutsiness and playfulness.";
@@ -703,7 +703,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 					mes "[Prince Shammi]";
 					mes "You must be a man killer no?";
 					mes "The ^3131FFSoul Changer Cut^000000";
-					mes "will make any man open his wall... er " + mesitemlink(7855) + " to you!";
+					mes "will make any man open his wall... er " + mesitemlink(7855, false) + " to you!";
 					break;
 				case 3:
 					cutin "hair_f_26",4;
@@ -755,15 +755,15 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 			mes "service, okay? Please bring...";
 			next;
 			mes "[Prince Shammi]";
-			mes "^3355FF3 " + mesitemlink(973) + "^000000,";
-			mes "^3355FF3 " + mesitemlink(974) + "^000000,";
-			mes "^3355FF100 " + mesitemlink(901) + "^000000,";
-			mes "^3355FF100 " + mesitemlink(1094) + "^000000...";
+			mes "^3355FF3 " + mesitemlink(973, false) + "^000000,";
+			mes "^3355FF3 " + mesitemlink(974, false) + "^000000,";
+			mes "^3355FF100 " + mesitemlink(901, false) + "^000000,";
+			mes "^3355FF100 " + mesitemlink(1094, false) + "^000000...";
 			next;
 			mes "[Prince Shammi]";
-			mes "^3355FF100 " + mesitemlink(1020) + "^000000,";
-			mes "^3355FF100 " + mesitemlink(1060) + "^000000,";
-			mes "^3355FF100 " + mesitemlink(7152) + "^000000";
+			mes "^3355FF100 " + mesitemlink(1020, false) + "^000000,";
+			mes "^3355FF100 " + mesitemlink(1060, false) + "^000000,";
+			mes "^3355FF100 " + mesitemlink(7152, false) + "^000000";
 			mes "and ^3355FF99,800 zeny^000000.";
 			mes "Once you do that, I'll make";
 			mes "a miracle out of your hair!";
@@ -778,7 +778,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 		mes "[Prince Shammi]";
 		if (Sex == SEX_MALE) {
 			mes "No. 20: Petite Style";
-			mes "No. 21: " + mesitemlink(1169) + " Style";
+			mes "No. 21: " + mesitemlink(1169, false) + " Style";
 			mes "No. 22: Prince Style";
 			mes "No. 23: Deviace Style";
 			mes "No. 24: Emergency Heal Perm";
@@ -787,7 +787,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 			mes "No. 27: Renovatio Cut.";
 		}
 		else {
-			mes "No. 20: " + mesitemlink(10035) + " Rabbit Style";
+			mes "No. 20: " + mesitemlink(10035, false) + " Rabbit Style";
 			mes "No. 21: Harpy Style";
 			mes "No. 22: Medusa Style";
 			mes "No. 23: Isis Style";
@@ -882,7 +882,7 @@ lhz_in02,100,143,3	script	Hair Dresser#li	122,{
 				next;
 				mes "^3355FF*Snip snip*";
 				mes "*Rustle rustle*";
-				mes "*" + mesitemlink(2607) + " " + mesitemlink(2607) + " " + mesitemlink(2607) + " " + mesitemlink(2607) + "*";
+				mes "*" + mesitemlink(2607, false) + " " + mesitemlink(2607, false) + " " + mesitemlink(2607, false) + " " + mesitemlink(2607, false) + "*";
 				mes "*Bzzzzzzzzzzzzzzzzzzzz*^000000";
 				next;
 				set Zeny, Zeny-99800;

@@ -57,15 +57,15 @@
 	mes "MacMillan's ^3355FFPost^000000 Workshop.";
 	next;
 	mes "[William]";
-	mes "My family, the MacMillan Clan, has been producing Professional Traffic Signal Posts for more than 250 years. Nowadays, we are booking Special Orders for our unique ornament, ^3355FFStop Post^000000.";
+	mes "My family, the MacMillan Clan, has been producing Professional Traffic Signal Posts for more than 250 years. Nowadays, we are booking Special Orders for our unique ornament, ^3355FF" + mesitemlink(2272, false) + "^000000.";
 	next;
 	switch(select("Could I order one ^3355FFStop Post^000000?:Nah...")) {
 	case 1:
 		mes "[William]";
-		mes "This unique ornament, ^3355FFStop Post^000000, is a traffic signal on the road, and doubles as a hair ornament! This, we solemnly promise on the strength of a 100-year guarantee.";
+		mes "This unique ornament, ^3355FF" + mesitemlink(2272, false) + "^000000, is a traffic signal on the road, and doubles as a hair ornament! This, we solemnly promise on the strength of a 100-year guarantee.";
 		next;
 		mes "[William]";
-		mes "To produce a ^3355FFStop Post^000000, we need ^3355FF91100 Zeny^000000, ^3355FF50 " + mesitemlink(1019) + "^000000 and ^3355FF1 " + mesitemlink(983) + "^000000.";
+		mes "To produce a ^3355FF" + mesitemlink(2272, false) + "^000000, we need ^3355FF91100 Zeny^000000, ^3355FF50 " + mesitemlink(1019, false) + "^000000 and ^3355FF1 " + mesitemlink(983, false) + "^000000.";
 		next;
 		if ((countitem(1019) > 49) && (countitem(983) > 0) && (Zeny > 91099)) {
 			delitem 1019,50;  //Wooden_Block
@@ -73,7 +73,7 @@
 			set Zeny, Zeny-91100;
 			mes "[William]";
 			mes "Here you are~!";
-			mes "This ^3355FFStop Post^000000 has";
+			mes "This ^3355FF" + mesitemlink(2272, false) + "^000000 has";
 			mes "been especially made";
 			mes "just for you!";
 			mes "Thank you for stopping by!";
@@ -84,7 +84,7 @@
 		else {
 			mes "[William]";
 			mes "So...";
-			mes "When you get those items, swing on by and we'll give you a " + mesitemlink(2272) + ".";
+			mes "When you get those items, swing on by and we'll give you a " + mesitemlink(2272, false) + ".";
 			close;
 		}
 	case 2:
@@ -99,13 +99,13 @@
 -	script	Alchemist	64,{
 	mes "[Marius]";
 	mes "Howdy, new customer!!";
-	mes "I know what you're gonna talk about. You want the Magic " + mesitemlink(2203) + " from me, riiiiight?";
+	mes "I know what you're gonna talk about. You want the Magic " + mesitemlink(2203, false) + " from me, riiiiight?";
 	next;
 	switch(select("What is that?:Manufacture:Ignore him")) {
 	case 1:
 		mes "[Marius]";
 		mes "Hmm~!";
-		mes "Well, the official name for them is ^3355FFBinoculars^000000! An optical device that works like a pair of field " + mesitemlink(2203) + ", they're designed for simultaneous use by both eyes!";
+		mes "Well, the official name for them is ^3355FF" + mesitemlink(2296, false) + "^000000! An optical device that works like a pair of field " + mesitemlink(2203, false) + ", they're designed for simultaneous use by both eyes!";
 		next;
 		mes "[Marius]";
 		mes "They're made up of two small telescopes joined with a single focusing device. You can arrange the lenses to produce stereoscopic vision.";
@@ -125,7 +125,7 @@
 		mes "[Marius]";
 		mes "I will let you";
 		mes "know the items I need...";
-		mes "1 ^3355FFGeek " + mesitemlink(2203) + "^000000! 100 ^3355FFSteel^000000!";
+		mes "1 ^3355FF" + mesitemlink(2243, false) + "^000000! 100 ^3355FF" + mesitemlink(999, false) + "^000000!";
 		mes "And ^3355FF50000 Zeny^000000!";
 		close;
 	case 2:
@@ -140,7 +140,7 @@
 			set Zeny, Zeny-50000;
 			mes "[Marius]";
 			mes "Here you are!";
-			mes "" + mesitemlink(2296) + " !";
+			mes "" + mesitemlink(2296, false) + " !";
 			getitem 2296,1; // Binoculars
 			next;
 			mes "[Marius]";
@@ -180,7 +180,7 @@ morocc,43,108,5	script	Sharp-Looking Kid#dan_07	82,{
 	else {
 		if (countitem(7416) > 0) {
 			mes "[Jack]";
-			mes "A " + mesitemlink(7416) + "?";
+			mes "A " + mesitemlink(7416, false) + "?";
 			mes "Oh, boy. Looks like you've brought me a very, very old relic from the past.";
 			mes "Well, guess you should go in and see the master.";
 			close;
@@ -375,8 +375,8 @@ que_job01,82,95,3	script	Bar Master#moc_main01	46,{
 	case 1:
 		mes "[Master]";
 		mes "In this place, I only serve two drinks.";
-		mes "You want a " + mesitemlink(12112) + " or";
-		mes "a " + mesitemlink(12113) + "?";
+		mes "You want a " + mesitemlink(12112, false) + " or";
+		mes "a " + mesitemlink(12113, false) + "?";
 		next;
 		switch(select("Tropical Sograt:Vermilion on the Beach:Do you offer any free drinks?")) {
 		case 1:
@@ -629,7 +629,7 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 		case 1:
 			mes "[Tao]";
 			mes "What are you talking about, meow!";
-			mes "Tao's the greatest " + mesitemlink(13156) + "!";
+			mes "Tao's the greatest " + mesitemlink(13156, false) + "!";
 			mes "Don't ever low estimate, meow!";
 			next;
 			mes "[Tao]";
@@ -639,7 +639,7 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 			close;
 		case 2:
 			mes "[Tao]";
-			mes "Are you looking down on me because I'm a " + mesitemlink(13156) + "?!";
+			mes "Are you looking down on me because I'm a " + mesitemlink(13156, false) + "?!";
 			mes "Grrrr...";
 			next;
 			mes "[Tao]";
@@ -649,7 +649,7 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 			mes "[Tao]";
 			mes "Meow, meow.";
 			mes "It's a long story, meow.";
-			mes "That day, Tao really wanted a " + mesitemlink(2244) + ", meow.";
+			mes "That day, Tao really wanted a " + mesitemlink(2244, false) + ", meow.";
 			next;
 			mes "[Tao]";
 			mes "So I went out looking for Wild Roses, meow...";
@@ -1381,7 +1381,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 							mes "Soldiers need firewood to keep the bonfires burning all night, but we've been suffering a firewood shortage.";
 							next;
 							mes "[Chief Balrog]";
-							mes "I happened to hear that the monsters in the " + mesitemlink(7096) + " Dungeon have everlasting flame which would solve our bonfire problems. I want you to gather those flames for us.";
+							mes "I happened to hear that the monsters in the " + mesitemlink(7096, false) + " Dungeon have everlasting flame which would solve our bonfire problems. I want you to gather those flames for us.";
 							next;
 							switch(select("That's too hard! Let me think about it!:No problem.")) {
 							case 1:
@@ -1435,7 +1435,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 			mes "Now will you let me join the Continental Guard?";
 			next;
 			mes "[Chief Balrog]";
-			mes "No, gathering these flames is a " + mesitemlink(539) + " compared to what we're going to do.";
+			mes "No, gathering these flames is a " + mesitemlink(539, false) + " compared to what we're going to do.";
 			next;
 			mes "[Chief Balrog]";
 			mes "I'm still not convinced that you're good enough to join us. Let me think... Hmm...";
@@ -1450,7 +1450,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 			mes "These mercenaries have never seen the desert, and they're having trouble carrying out operations in the heat, dry air, and sandstorms. It's not their fault, but they could use a little help since they're out of their element.";
 			next;
 			mes "[" + strcharinfo(0) + "]";
-			mes "(This guy seems threatening, but he seems to have a good " + mesitemlink(7855) + ".)";
+			mes "(This guy seems threatening, but he seems to have a good " + mesitemlink(7855, false) + ".)";
 			next;
 			mes "[Chief Balrog]";
 			mes "Now, I remember hearing that the monsters in the Ice Cave to the north have frozen hearts. Those hearts might be able to relieve those soldiers from the heat.";
@@ -1506,7 +1506,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 			mes "What's this?";
 			next;
 			mes "[Chief Balrog]";
-			mes "You'd know if you read it. It's a " + mesitemlink(2713) + " that proves that you're a member of the Continental Guard. I admit that I'm impressed by your skills and gumption.";
+			mes "You'd know if you read it. It's a " + mesitemlink(2713, false) + " that proves that you're a member of the Continental Guard. I admit that I'm impressed by your skills and gumption.";
 			next;
 			mes "[Chief Balrog]";
 			mes "Welcome to the Continental Guard, my friend. Are you ready to risk your life for the sake of peace in the world?";
@@ -1619,18 +1619,18 @@ morocc,159,113,3	script	Chief Balrog	752,{
 			switch(select("1. Seal of Continental Guard:2. Morocc Charm Stone:3. Morocc Ring")) {
 			case 1:
 				mes "[Chief Balrog]";
-				mes "The " + mesitemlink(2730) + " is an extremely valuable reward given directly from the kingdom court. It is a symbol of strength.";
+				mes "The " + mesitemlink(2730, false) + " is an extremely valuable reward given directly from the kingdom court. It is a symbol of strength.";
 				next;
 				mes "[Chief Balrog]";
 				mes "The accessory's options are: ^0000FF MHP+50, +3% Attack Speed^000000.";
 				next;
 				mes "[Chief Balrog]";
-				mes "Do you really want the " + mesitemlink(2730) + "?";
+				mes "Do you really want the " + mesitemlink(2730, false) + "?";
 				next;
 				switch(select("1. Yes.:2. No.")) {
 				case 1:
 					mes "[Chief Balrog]";
-					mes "Great, then I'll reward you with the " + mesitemlink(2730) + ". Congratulations.";
+					mes "Great, then I'll reward you with the " + mesitemlink(2730, false) + ". Congratulations.";
 					next;
 					getitem 2730,1; //Morocc_Seal
 					set rebirth_moc_edq,8;
@@ -1731,18 +1731,18 @@ morocc,159,113,3	script	Chief Balrog	752,{
 		switch(select("1. Seal of Continental Guard:2. Morocc Charm Stone:3. Morocc Ring")) {
 		case 1:
 			mes "[Chief Balrog]";
-			mes "The " + mesitemlink(2730) + " is an extremely valuable reward given directly from the kingdom court. It is a symbol of strength.";
+			mes "The " + mesitemlink(2730, false) + " is an extremely valuable reward given directly from the kingdom court. It is a symbol of strength.";
 			next;
 			mes "[Chief Balrog]";
 			mes "The accessory's options are: ^0000FF MHP+50, +3% Attack Speed^000000.";
 			next;
 			mes "[Chief Balrog]";
-			mes "Do you really want the " + mesitemlink(2730) + "?";
+			mes "Do you really want the " + mesitemlink(2730, false) + "?";
 			next;
 			switch(select("1. Yes.:2. No.")) {
 			case 1:
 				mes "[Chief Balrog]";
-				mes "Great, then I'll reward you with the " + mesitemlink(2730) + ". Congratulations.";
+				mes "Great, then I'll reward you with the " + mesitemlink(2730, false) + ". Congratulations.";
 				next;
 				getitem 2730,1; //Morocc_Seal
 				set rebirth_moc_edq,8;
@@ -1928,7 +1928,7 @@ moc_fild21,177,239,0	script	Time-Space Gap#edq	844,1,1,{
 		next;
 		mes "You can see the fragments floating in the gap, and the radiating lights are now slowing their movement.";
 		next;
-		mes "You stretch your hand and pick up a lusterless " + mesitemlink(7094) + ".";
+		mes "You stretch your hand and pick up a lusterless " + mesitemlink(7094, false) + ".";
 		getitem 7820,1; //Morocc_Skin
 		set rebirth_moc_edq,6;
 		changequest 3053,3055;
@@ -2297,7 +2297,7 @@ moc_ruins,137,70,3	script	Book-Touching Man#garas	48,{
 			next;
 			cutin "mami02",4;
 			mes "["+ strcharinfo(0) +"]";
-			mes "'She looks different than I thought with these " + mesitemlink(2203) + " and pony tails... She really looks like someone who loves literature.";
+			mes "'She looks different than I thought with these " + mesitemlink(2203, false) + " and pony tails... She really looks like someone who loves literature.";
 			mes "Wait, when did people start calling Comodo the City of Lovers? Hmm... This guy really thinks weird things!'";
 			next;
 			mes "[Benjamin]";
@@ -2411,7 +2411,7 @@ moc_ruins,137,70,3	script	Book-Touching Man#garas	48,{
 prt_in,179,92,3	script	Library Curator#garas	57,{
 	if (barmunt_crow == 0) {
 		mes "[Curator Guys]";
-		mes "Our library's Monster " + mesitemlink(1564) + " has every monster in the Rune-Midgarts Kingdom categorized by dungeon, to help our readers find them easily.";
+		mes "Our library's Monster " + mesitemlink(1564, false) + " has every monster in the Rune-Midgarts Kingdom categorized by dungeon, to help our readers find them easily.";
 		mes "We also have many essential books for adventurers. Why don't you take a look?";
 		next;
 		mes "[Curator Guys]";
@@ -2421,7 +2421,7 @@ prt_in,179,92,3	script	Library Curator#garas	57,{
 	}
 	else if (barmunt_crow == 1) {
 		mes "[Curator Guys]";
-		mes "Our library's Monster " + mesitemlink(1564) + " has every monster in the Rune-Midgarts Kingdom categorized by dungeon, to help our readers find them easily.";
+		mes "Our library's Monster " + mesitemlink(1564, false) + " has every monster in the Rune-Midgarts Kingdom categorized by dungeon, to help our readers find them easily.";
 		mes "We also have many essential books for adventurers. Why don't you take a look?";
 		next;
 		switch(select("Search books.:Look around the library.")) {
@@ -2529,7 +2529,7 @@ prt_in,179,92,3	script	Library Curator#garas	57,{
 	}
 	else {
 		mes "[Curator Guys]";
-		mes "Our library's Monster " + mesitemlink(1564) + " has every monster in the Rune-Midgarts Kingdom, categorized by dungeon to help the readers find them easily.";
+		mes "Our library's Monster " + mesitemlink(1564, false) + " has every monster in the Rune-Midgarts Kingdom, categorized by dungeon to help the readers find them easily.";
 		mes "We also have many essential books for adventurers. Why don't you take a look?";
 		next;
 		mes "[Curator Guys]";
@@ -2599,7 +2599,7 @@ yuno,333,210,5	script	Library Master#garas	57,{
 		mes "When I was young, I heard that bird feathers bring Odin's servants to bless their owner, and so many poets used them as bookmarks.";
 		next;
 		mes "[Library Master]";
-		mes "I used to have a small " + mesitemlink(949) + ". I guess it's only natural that I've become a library master. Hahaha!";
+		mes "I used to have a small " + mesitemlink(949, false) + ". I guess it's only natural that I've become a library master. Hahaha!";
 		next;
 		mes "[Library Master]";
 		mes "You know the old saying, 'you can memorize Edda after 3 years of working at a library.'";
@@ -2609,7 +2609,7 @@ yuno,333,210,5	script	Library Master#garas	57,{
 		mes "I guess so.";
 		next;
 		mes "^660000You picked up one of the big dark feathers from the ground.";
-		mes "Looking at the lustrous " + mesitemlink(949) + " somehow made you feel so happy, as if you had obtained treasure.^000000";
+		mes "Looking at the lustrous " + mesitemlink(949, false) + " somehow made you feel so happy, as if you had obtained treasure.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "...Ahchoo!";
@@ -2622,7 +2622,7 @@ yuno,333,210,5	script	Library Master#garas	57,{
 		mes "^660000You started feeling cold and began to shiver.^000000";
 		next;
 		mes "[Library Master]";
-		mes "Try to drink hot " + mesitemlink(909) + " broth mixed with honey. My mother used to make that for me whenever I caught cold.";
+		mes "Try to drink hot " + mesitemlink(909, false) + " broth mixed with " + mesitemlink(518, false) + ". My mother used to make that for me whenever I caught cold.";
 		mes "I gurantee you that you'll get better quickly.";
 		next;
 		mes "^660000He sounded sincere, but it doesn't sound like that kind of broth would even be effective...^000000";
@@ -2698,7 +2698,7 @@ OnTouch:
 		mes "When I was young, I heard that bird feathers bring Odin's servants to bless their owner, and so many poets used them as bookmarks.";
 		next;
 		mes "[Library Master]";
-		mes "I used to have a small " + mesitemlink(949) + ". I guess it's only natural that I've become a library master. Hahaha!";
+		mes "I used to have a small " + mesitemlink(949, false) + ". I guess it's only natural that I've become a library master. Hahaha!";
 		next;
 		mes "[Library Master]";
 		mes "You know the old saying, 'you can memorize Edda after 3 years of working at a library.'";
@@ -2708,7 +2708,7 @@ OnTouch:
 		mes "I guess so.";
 		next;
 		mes "^660000You picked up one of the big dark feathers from the ground.";
-		mes "Looking at the lustrous " + mesitemlink(949) + " somehow made you feel so happy, as if you had obtained treasure.^000000";
+		mes "Looking at the lustrous " + mesitemlink(949, false) + " somehow made you feel so happy, as if you had obtained treasure.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "...Ahchoo!";
@@ -2721,7 +2721,7 @@ OnTouch:
 		mes "^660000You started feeling cold and began to shiver.^000000";
 		next;
 		mes "[Library Master]";
-		mes "Try to drink hot " + mesitemlink(909) + " broth mixed with honey. My mother used to make that for me whenever I caught cold.";
+		mes "Try to drink hot " + mesitemlink(909, false) + " broth mixed with " + mesitemlink(518, false) + ". My mother used to make that for me whenever I caught cold.";
 		mes "I gurantee you that you'll get better quickly.";
 		next;
 		mes "^660000He sounded sincere, but it doesn't sound like that kind of broth would even be effective...^000000";
@@ -2933,7 +2933,7 @@ OnTouch:
 		next;
 		mes "<- Eva, what are you doing? Come over here! Hurry!-";
 		mes "-I can't leave him here!-";
-		mes "Ignoring the collapsing laboratory ceiling, Eva approached a test tube, carefully took out something, and then put it under her " + mesitemlink(2303) + ". >";
+		mes "Ignoring the collapsing laboratory ceiling, Eva approached a test tube, carefully took out something, and then put it under her " + mesitemlink(2303, false) + ". >";
 		next;
 		mes "^660000...................................^000000";
 		next;
@@ -3047,7 +3047,7 @@ yuno_in04,117,102,3	script	Old News Scrapbook	844,{
 				next;
 				mes "What if they have any descendents or successors?";
 				next;
-				mes "You feel your " + mesitemlink(7855) + " beating faster with excitement.";
+				mes "You feel your " + mesitemlink(7855, false) + " beating faster with excitement.";
 				mes "You are now convinced this was not just your dream or illusion. You had a vision of what really happened in the past.";
 				next;
 				mes "["+ strcharinfo(0) +"]";
@@ -3203,20 +3203,20 @@ yuno_in04,169,123,3	script	Suspicious Man#oliver_h	407,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "I think you've dropped this.";
 		next;
-		mes "^660000You rummaged your pocket to find the memo, and then happened to drop the crow " + mesitemlink(949) + " which you picked up outside the library. Then suddenly...^000000";
+		mes "^660000You rummaged your pocket to find the memo, and then happened to drop the crow " + mesitemlink(949, false) + " which you picked up outside the library. Then suddenly...^000000";
 		next;
 		mes "(WHACK)";
 		specialeffect EF_VENOMDUST;
 		specialeffect2 EF_DETOXICATION;
 		next;
-		mes "^660000Oliver picked up the " + mesitemlink(949) + " more quickly than you could, and then tore it into pieces before you could even say anything.^000000";
+		mes "^660000Oliver picked up the " + mesitemlink(949, false) + " more quickly than you could, and then tore it into pieces before you could even say anything.^000000";
 		next;
 		mes "^660000You looked angrily at him, and found out that he turned into a completely different person; he no longer looked stupid or serious but extremely coldhearted.^000000";
 		next;
 		cutin "oliver_hum",2;
 		mes "[Oliver Hilpert]";
 		mes "Errr?!";
-		mes "What's happened to this " + mesitemlink(949) + "?";
+		mes "What's happened to this " + mesitemlink(949, false) + "?";
 		next;
 		mes "[Oliver Hilpert]";
 		emotion ET_KEK;
@@ -3260,7 +3260,7 @@ yuno_in04,169,123,3	script	Suspicious Man#oliver_h	407,{
 		mes "The headache and the heavy feeling in my chest is gone too!";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "What if it was all caused by that crow " + mesitemlink(949) + "? What if...?";
+		mes "What if it was all caused by that crow " + mesitemlink(949, false) + "? What if...?";
 		next;
 		switch(select("It was cursed by the pebble.:The crow has something to do with Oliver.")) {
 		case 1:
@@ -3270,22 +3270,22 @@ yuno_in04,169,123,3	script	Suspicious Man#oliver_h	407,{
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "Argh, that was all because of the library master!";
-			mes "Luckily the " + mesitemlink(949) + " is gone, so hopefuly I won't suffer any more disaster.";
+			mes "Luckily the " + mesitemlink(949, false) + " is gone, so hopefuly I won't suffer any more disaster.";
 			next;
 			break;
 		case 2:
 			mes "["+ strcharinfo(0) +"]";
-			mes "I remember Mr. Zid saying Eva had left a black " + mesitemlink(949) + " behind her.";
+			mes "I remember Mr. Zid saying Eva had left a black " + mesitemlink(949, false) + " behind her.";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Also, the female assistant turned into a crow flying away, and then the crow " + mesitemlink(949) + " made me sneeze and cough.";
+			mes "Also, the female assistant turned into a crow flying away, and then the crow " + mesitemlink(949, false) + " made me sneeze and cough.";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "..................";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "Yes, Mr. Hilpert's soul is cursed by the Crow!";
-			mes "I wonder if he threw " + mesitemlink(2796) + " at crows like the library master...";
+			mes "I wonder if he threw " + mesitemlink(2796, false) + " at crows like the library master...";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "..................";
@@ -3660,7 +3660,7 @@ OnTouch:
 		mes "[Male]";
 		mes "Argh!";
 		next;
-		mes "^660000The only exit was blocked by " + mesitemlink(999) + " bars; no one could get out of the room enveloped in flames. Then, a corner of a wall crumbled by the heat from the fire.^000000";
+		mes "^660000The only exit was blocked by " + mesitemlink(999, false) + " bars; no one could get out of the room enveloped in flames. Then, a corner of a wall crumbled by the heat from the fire.^000000";
 		next;
 		mes "^660000The male silhouette quickly approached the wall, and started to dig at the crumbled corner.^000000";
 		next;
@@ -3747,7 +3747,7 @@ OnTouch:
 	if (barmunt_crow == 11) {
 		mes "^660000You wake up, and look around you. Somehow, you've now ended up in a huge mansion.^000000";
 		next;
-		mes "^660000You suddenly feel a sharp pain in your chest, as if someone were squeezing your " + mesitemlink(7855) + ".^000000";
+		mes "^660000You suddenly feel a sharp pain in your chest, as if someone were squeezing your " + mesitemlink(7855, false) + ".^000000";
 		next;
 		mes "^660000This mansion looks very elegant and expensive, but it is on fire, just like the laboratory in your first dream.^000000";
 		next;
@@ -4168,7 +4168,7 @@ cave,22,186,3	script	Monsterous Man#zid	999,{
 				next;
 				mes "[Zid]";
 				mes "Eva couldn't forget him. She was waiting for his return inside this dark cave. For a while, he was sending letters without his address, but then they stopped coming. That's when Eva disappeared.";
-				mes "I found ^3131FFa giant black " + mesitemlink(949) + "^000000 in her room after she left.";
+				mes "I found ^3131FFa giant black " + mesitemlink(949, false) + "^000000 in her room after she left.";
 				next;
 				mes "[Zid]";
 				mes "I don't know why, but... I believe Eva no longer exists...";
@@ -4252,7 +4252,7 @@ cave,72,71,5	script	Cave Settler#m_cave2	981,{
 	mes "Heh...";
 	mes "You want... This?";
 	next;
-	mes "- She showed you " + mesitemlink(528) + ". -";
+	mes "- She showed you " + mesitemlink(528, false) + ". -";
 	close;
 }
 

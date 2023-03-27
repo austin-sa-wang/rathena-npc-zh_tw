@@ -230,7 +230,7 @@
 			mes "If you ask me to add a Slot to something, make sure that you don't have multiples of it in your inventory.";
 			next;
 			mes "[Seiyablem]";
-			mes "Here's an example: if you have a +7 " + mesitemlink(2505) + " and a normal " + mesitemlink(2505) + " in your inventory, then I will randomly pick one of them for my Slot Addition attempt.";
+			mes "Here's an example: if you have a +7 " + mesitemlink(2505, false) + " and a normal " + mesitemlink(2505, false) + " in your inventory, then I will randomly pick one of them for my Slot Addition attempt.";
 			mes "Just remember to be careful.";
 			next;
 			mes "[Seiyablem]";

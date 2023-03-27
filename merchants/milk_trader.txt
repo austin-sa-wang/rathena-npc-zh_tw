@@ -32,9 +32,9 @@ prontera,73,140,0	script	Milk Vendor	86,{
 	mes "[Milk Vendor]";
 	mes "Hey, hey...";
 	mes "If you bring me";
-	mes "1 " + mesitemlink(713) + " and";
+	mes "1 " + mesitemlink(713, false) + " and";
 	mes "15 Zeny, I'll exchange";
-	mes "them for 1 " + mesitemlink(519) + ". How";
+	mes "them for 1 " + mesitemlink(519, false) + ". How";
 	mes "does that sound?";
 	next;
 	if (select("Exchange all empty bottles.:Cancel") == 1) {
@@ -44,7 +44,7 @@ prontera,73,140,0	script	Milk Vendor	86,{
 			mes "You don't have";
 			mes "any Empty Bottles.";
 			mes "I can't really give you";
-			mes "this " + mesitemlink(519) + " any other";
+			mes "this " + mesitemlink(519, false) + " any other";
 			mes "way, you know...";
 			close;
 		}
@@ -57,7 +57,7 @@ prontera,73,140,0	script	Milk Vendor	86,{
 			mes "You don't have enough";
 			mes "zeny to exchange all";
 			mes "these Empty Bottles for";
-			mes "" + mesitemlink(519) + ". You need to have";
+			mes "" + mesitemlink(519, false) + ". You need to have";
 			mes "at least " + .@total_cost + " zeny.";
 			close;
 		}
@@ -68,7 +68,7 @@ prontera,73,140,0	script	Milk Vendor	86,{
 			mes "a little more room";
 			mes "in your inventory";
 			mes "before I give you";
-			mes "all of this " + mesitemlink(519) + "?";
+			mes "all of this " + mesitemlink(519, false) + "?";
 			close;
 		}
 		set Zeny, Zeny-.@total_cost;

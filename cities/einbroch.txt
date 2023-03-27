@@ -51,10 +51,10 @@ einbroch,218,198,5	script	Mark#ein	855,{
 	mes "["+ .@npc_name$ +"]";
 	mes "Right now, we're offering";
 	mes "a special promotion called";
-	mes "the " + mesitemlink(512) + " Combo Set for only";
+	mes "the " + mesitemlink(512, false) + " Combo Set for only";
 	mes "20 zeny. This set includes";
 	mes "Einbroch Tower admission";
-	mes "and an " + mesitemlink(512) + " to snack on.";
+	mes "and an " + mesitemlink(512, false) + " to snack on.";
 	next;
 	switch(select("Tower Admission Only:Apple Combo Set:Cancel")) {
 	case 1:
@@ -83,7 +83,7 @@ einbroch,218,198,5	script	Mark#ein	855,{
 			mes "["+ .@npc_name$ +"]";
 			mes "I'm sorry, but you don't";
 			mes "have enough zeny. The";
-			mes "" + mesitemlink(512) + " Combo Set is 20 zeny.";
+			mes "" + mesitemlink(512, false) + " Combo Set is 20 zeny.";
 			close;
 		}
 		else {
@@ -92,7 +92,7 @@ einbroch,218,198,5	script	Mark#ein	855,{
 			mes "the tower, let me check";
 			mes "your status to insure";
 			mes "your safety before I give";
-			mes "you the " + mesitemlink(512) + " Combo Set.";
+			mes "you the " + mesitemlink(512, false) + " Combo Set.";
 			next;
 			if (checkweight(512,1)) {
 				mes "["+ .@npc_name$ +"]";
@@ -110,7 +110,7 @@ einbroch,218,198,5	script	Mark#ein	855,{
 				mes "["+ .@npc_name$ +"]";
 				mes "I'm sorry, but you're carrying";
 				mes "too many items with you. Please store some of your things in your Kafra Storage before purchasing";
-				mes "the " + mesitemlink(512) + " Combo Set.";
+				mes "the " + mesitemlink(512, false) + " Combo Set.";
 				close;
 			}
 		}
@@ -272,7 +272,7 @@ einbroch,236,191,3	script	Tan#ein	855,{
 	mes "Still, I try to be careful";
 	mes "when I can. Whenever I go";
 	mes "out into the city's red fog,";
-	mes "I always wear my " + mesitemlink(2218) + ".";
+	mes "I always wear my " + mesitemlink(2218, false) + ".";
 	mes "If you'll be here for a while,";
 	mes "you should carry one with you.";
 	close;
@@ -463,7 +463,7 @@ airport,174,41,6	script	Young Man#air	99,{
 	mes "[Runnan]";
 	mes "There even was a time";
 	mes "when they had me collect";
-	mes "" + mesitemlink(909) + ", though that stuff is";
+	mes "" + mesitemlink(909, false) + ", though that stuff is";
 	mes "pretty common nowadays.";
 	mes "Now that I think about it, why";
 	mes "did they need so much stuff?";
@@ -481,7 +481,7 @@ airport,176,41,4	script	Old Man#air	88,{
 	mes "[Zhen Lan]";
 	mes "These ores are a great";
 	mes "material to use in making";
-	mes "" + mesitemlink(712) + " vases. My friend, who";
+	mes "" + mesitemlink(712, false) + " vases. My friend, who";
 	mes "happens to be a doll maker,";
 	mes "told me that. He makes these dolls using all sorts of materials.";
 	next;
@@ -489,8 +489,8 @@ airport,176,41,4	script	Old Man#air	88,{
 	mes "He fashions them out of";
 	mes "Well-Tanned Leather, stuffs";
 	mes "them with Bird Feathers, and";
-	mes "uses " + mesitemlink(7053) + " or " + mesitemlink(912) + " to make";
-	mes "the eyes. He even uses a " + mesitemlink(909) + " at the bottom to balance the doll.";
+	mes "uses " + mesitemlink(7053, false) + " or " + mesitemlink(912, false) + " to make";
+	mes "the eyes. He even uses a " + mesitemlink(909, false) + " at the bottom to balance the doll.";
 	next;
 	mes "[Zhen Lan]";
 	mes "I guess that goes to show";
@@ -617,7 +617,7 @@ ein_in01,103,239,1	script	Gesin#ein	849,{
 	mes "I've got no problem";
 	mes "with my current way";
 	mes "of life, but the old ball";
-	mes "and " + mesitemlink(1519) + " disagrees.";
+	mes "and " + mesitemlink(1519, false) + " disagrees.";
 	mes "Why is she so obsessed";
 	mes "with riches and power?";
 	next;

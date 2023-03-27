@@ -463,10 +463,10 @@ yuno_in01,103,157,3	script	Bain#juno	98,{
 		mes "Write it down if you need to.";
 		next;
 		mes "[Bain]";
-		mes "^FF00001 " + mesitemlink(974) + "^000000, ^FF00005 Mini-Furnace^000000,";
-		mes "^FF00005 " + mesitemlink(7068) + "^000000 , ^FF00005 " + mesitemlink(1003) + "^000000,";
-		mes "^FF00005 " + mesitemlink(7043) + "^000000, ^FF00003 " + mesitemlink(757) + "^000000,";
-		mes "^FF00003 " + mesitemlink(756) + "^000000^000000.";
+		mes "^FF00001 " + mesitemlink(974, false) + "^000000, ^FF00005 Mini-Furnace^000000,";
+		mes "^FF00005 " + mesitemlink(7068, false) + "^000000 , ^FF00005 " + mesitemlink(1003, false) + "^000000,";
+		mes "^FF00005 " + mesitemlink(7043, false) + "^000000, ^FF00003 " + mesitemlink(757, false) + "^000000,";
+		mes "^FF00003 " + mesitemlink(756, false) + "^000000^000000.";
 		next;
 		mes "[Bain]";
 		mes "In addition to this, you ";
@@ -504,10 +504,10 @@ yuno_in01,103,157,3	script	Bain#juno	98,{
 			mes "needing.";
 			next;
 			mes "[Bain]";
-			mes "^FF00001 " + mesitemlink(974) + "^000000, ^FF00005 Mini-Furnace^000000,";
-			mes "^FF00005 " + mesitemlink(7068) + "^000000 , ^FF00005 " + mesitemlink(1003) + "^000000,";
-			mes "^FF00005 " + mesitemlink(7043) + "^000000, ^FF00003 " + mesitemlink(757) + "^000000,";
-			mes "^FF00003 " + mesitemlink(756) + "^000000^000000.";
+			mes "^FF00001 " + mesitemlink(974, false) + "^000000, ^FF00005 Mini-Furnace^000000,";
+			mes "^FF00005 " + mesitemlink(7068, false) + "^000000 , ^FF00005 " + mesitemlink(1003, false) + "^000000,";
+			mes "^FF00005 " + mesitemlink(7043, false) + "^000000, ^FF00003 " + mesitemlink(757, false) + "^000000,";
+			mes "^FF00003 " + mesitemlink(756, false) + "^000000^000000.";
 			next;
 			mes "[Bain]";
 			mes "We will also need 2,000 Zeny.";
@@ -596,10 +596,10 @@ yuno_in01,100,153,7	script	Bajin	47,0,0,{
 		mes "Write it down if you need to.";
 		next;
 		mes "[Bajin]";
-		mes "^FF00001 " + mesitemlink(974) + "^000000, ^FF00005 Mini-Furnace^000000,";
-		mes "^FF00005 " + mesitemlink(7068) + "^000000 , ^FF00005 " + mesitemlink(1003) + "^000000,";
-		mes "^FF00005 " + mesitemlink(7043) + "^000000, ^FF00003 " + mesitemlink(757) + "^000000,";
-		mes "^FF00003 " + mesitemlink(756) + "^000000^000000.";
+		mes "^FF00001 " + mesitemlink(974, false) + "^000000, ^FF00005 Mini-Furnace^000000,";
+		mes "^FF00005 " + mesitemlink(7068, false) + "^000000 , ^FF00005 " + mesitemlink(1003, false) + "^000000,";
+		mes "^FF00005 " + mesitemlink(7043, false) + "^000000, ^FF00003 " + mesitemlink(757, false) + "^000000,";
+		mes "^FF00003 " + mesitemlink(756, false) + "^000000^000000.";
 		next;
 		mes "[Bajin]";
 		mes "In addition to this, you ";
@@ -636,10 +636,10 @@ yuno_in01,100,153,7	script	Bajin	47,0,0,{
 			mes "needing.";
 			next;
 			mes "[Bajin]";
-			mes "^FF00001 " + mesitemlink(974) + "^000000, ^FF00005 Mini-Furnace^000000,";
-			mes "^FF00005 " + mesitemlink(7068) + "^000000 , ^FF00005 " + mesitemlink(1003) + "^000000,";
-			mes "^FF00005 " + mesitemlink(7043) + "^000000, ^FF00003 " + mesitemlink(757) + "^000000,";
-			mes "^FF00003 " + mesitemlink(756) + "^000000^000000.";
+			mes "^FF00001 " + mesitemlink(974, false) + "^000000, ^FF00005 Mini-Furnace^000000,";
+			mes "^FF00005 " + mesitemlink(7068, false) + "^000000 , ^FF00005 " + mesitemlink(1003, false) + "^000000,";
+			mes "^FF00005 " + mesitemlink(7043, false) + "^000000, ^FF00003 " + mesitemlink(757, false) + "^000000,";
+			mes "^FF00003 " + mesitemlink(756, false) + "^000000^000000.";
 			next;
 			mes "[Bajin]";
 			mes "We will also need 2,000 Zeny.";
@@ -857,7 +857,7 @@ yuno,261,99,4	script	Sage Yklah#juno	735,{
 				mes "[Yklah]";
 				mes "As one of the three, I will serve as one of your guides in this part of your journey for the doomed sword.";
 				next;
-				mes "^3355FFYklah pointed at a pole of the statue with his " + mesitemlink(1811) + ", and you see that there is a strange pattern engraved on the pole.^000000";
+				mes "^3355FFYklah pointed at a pole of the statue with his " + mesitemlink(1811, false) + ", and you see that there is a strange pattern engraved on the pole.^000000";
 				next;
 				mes "[Yklah]";
 				mes "Now, look at this. This statue was erected to pay tribute to one of the first 3 sages. When you look into the bottom of the pole, you will see several small grooves.";
@@ -870,18 +870,18 @@ yuno,261,99,4	script	Sage Yklah#juno	735,{
 				next;
 				mes "[Yklah]";
 				mes "You will need...";
-				mes "^3355FF3 " + mesitemlink(7030) + "^000000";
-				mes "^3355FF10 " + mesitemlink(913) + "^000000";
-				mes "^3355FF1 " + mesitemlink(7032) + "^000000.";
+				mes "^3355FF3 " + mesitemlink(7030, false) + "^000000";
+				mes "^3355FF10 " + mesitemlink(913, false) + "^000000";
+				mes "^3355FF1 " + mesitemlink(7032, false) + "^000000.";
 				next;
 				mes "[Yklah]";
 				mes "Return once you have obtained those items, and we will speak of the doomed sword again.";
 				next;
 				mes "[Yklah]";
-				mes "For your information, you can obtain the " + mesitemlink(7030) + " from the Morocc desert, and the " + mesitemlink(913) + " can be found in most caves around the world.";
+				mes "For your information, you can obtain the " + mesitemlink(7030, false) + " from the Morocc desert, and the " + mesitemlink(913, false) + " can be found in most caves around the world.";
 				next;
 				mes "[Yklah]";
-				mes "Lastly, the " + mesitemlink(7032) + " can be found from solid " + mesitemlink(574) + " monsters in the Payon cave.";
+				mes "Lastly, the " + mesitemlink(7032, false) + " can be found from solid " + mesitemlink(574, false) + " monsters in the Payon cave.";
 				close;
 			}
 		case 25:
@@ -890,18 +890,18 @@ yuno,261,99,4	script	Sage Yklah#juno	735,{
 			next;
 			mes "[Yklah]";
 			mes "You will need...";
-			mes "^3355FF3 " + mesitemlink(7030) + "^000000";
-			mes "^3355FF10 " + mesitemlink(913) + "^000000";
-			mes "^3355FF1 " + mesitemlink(7032) + "^000000.";
+			mes "^3355FF3 " + mesitemlink(7030, false) + "^000000";
+			mes "^3355FF10 " + mesitemlink(913, false) + "^000000";
+			mes "^3355FF1 " + mesitemlink(7032, false) + "^000000.";
 			next;
 			mes "[Yklah]";
 			mes "Return once you have obtained those items, and we will speak of the doomed sword again.";
 			next;
 			mes "[Yklah]";
-			mes "For your information, you can obtain the " + mesitemlink(7030) + " from the Morocc desert, and the " + mesitemlink(913) + " can be found in most caves around the world.";
+			mes "For your information, you can obtain the " + mesitemlink(7030, false) + " from the Morocc desert, and the " + mesitemlink(913, false) + " can be found in most caves around the world.";
 			next;
 			mes "[Yklah]";
-			mes "Lastly, the " + mesitemlink(7032) + " can be found from solid " + mesitemlink(574) + " monsters in the Payon cave.";
+			mes "Lastly, the " + mesitemlink(7032, false) + " can be found from solid " + mesitemlink(574, false) + " monsters in the Payon cave.";
 			close;
 		}
 	}
@@ -911,7 +911,7 @@ yuno,261,99,4	script	Sage Yklah#juno	735,{
 		mes "That was the name of the city that once existed in ancient times.";
 		next;
 		mes "[Yklah]";
-		mes "The most intelligent and talented people of that time lived there, harnessing the pieces of Ymir's " + mesitemlink(7855) + " to power their civilization.";
+		mes "The most intelligent and talented people of that time lived there, harnessing the pieces of Ymir's " + mesitemlink(7855, false) + " to power their civilization.";
 		next;
 		mes "[Yklah]";
 		mes "Unfortunately, they happened to abuse that great power and somehow destroyed themselves.";
@@ -964,10 +964,10 @@ yuno,305,207,4	script	Sage Syklah#juno	735,{
 			mes "Okay, if you're ready, please bring me the following items. I feel like making legendary red ink, so bring me...";
 			next;
 			mes "[Syklah]";
-			mes "^3355FF20 " + mesitemlink(507) + "^000000,";
+			mes "^3355FF20 " + mesitemlink(507, false) + "^000000,";
 			mes "^3355FF5 Stone^000000 and";
-			mes "^3355FF1 " + mesitemlink(953) + "^000000.";
-			mes "The " + mesitemlink(953) + " will be used as a bottle to hold this special ink.";
+			mes "^3355FF1 " + mesitemlink(953, false) + "^000000.";
+			mes "The " + mesitemlink(953, false) + " will be used as a bottle to hold this special ink.";
 			next;
 			mes "[Syklah]";
 			mes "I think that's all I need. Anyway, I believe that gathering these items shouldn't be a difficult task for you. Good luck to you.";
@@ -982,7 +982,7 @@ yuno,305,207,4	script	Sage Syklah#juno	735,{
 				delitem 953,1; //Stone_Heart
 				delitem 507,20; //Red_Herb
 				next;
-				mes "^3355FFSage Syklah grinded the stones and " + mesitemlink(953) + " and molded them into a strange shape.^000000";
+				mes "^3355FFSage Syklah grinded the stones and " + mesitemlink(953, false) + " and molded them into a strange shape.^000000";
 				next;
 				mes "^3355FFHe then ground the red herbs and placed them into the stone mold.^000000";
 				next;
@@ -1015,9 +1015,9 @@ yuno,305,207,4	script	Sage Syklah#juno	735,{
 				next;
 				mes "[Syklah]";
 				mes "I will need...";
-				mes "^3355FF20 " + mesitemlink(507) + "^000000,";
+				mes "^3355FF20 " + mesitemlink(507, false) + "^000000,";
 				mes "^3355FF5 Stone^000000 and";
-				mes "^3355FF1 " + mesitemlink(953) + "^000000.";
+				mes "^3355FF1 " + mesitemlink(953, false) + "^000000.";
 				close;
 			}
 		case 27:
@@ -1091,9 +1091,9 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 			next;
 			mes "[Esklah]";
 			mes "Bring me...";
-			mes "^3355FF2 " + mesitemlink(1002) + "^000000,";
-			mes "^3355FF10 " + mesitemlink(1026) + "^000000 and";
-			mes "^3355FF5 " + mesitemlink(957) + "^000000.";
+			mes "^3355FF2 " + mesitemlink(1002, false) + "^000000,";
+			mes "^3355FF10 " + mesitemlink(1026, false) + "^000000 and";
+			mes "^3355FF5 " + mesitemlink(957, false) + "^000000.";
 			next;
 			mes "[Esklah]";
 			mes "For someone seeking the doomed sword, this should be a relatively simple task. Now go, and bring me what I have asked.";
@@ -1103,9 +1103,9 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 			if (countitem(1002) > 1 && countitem(1026) > 9 && countitem(957) > 4) {
 				mes "[Esklah]";
 				mes "Let's see.";
-				mes "2 " + mesitemlink(1002) + "...";
-				mes "10 " + mesitemlink(1026) + "...";
-				mes "5 " + mesitemlink(957) + "...";
+				mes "2 " + mesitemlink(1002, false) + "...";
+				mes "10 " + mesitemlink(1026, false) + "...";
+				mes "5 " + mesitemlink(957, false) + "...";
 				mes "Good, that's everything!";
 				delitem 1002,2; //Iron_Ore
 				delitem 1026,10; //Acorn
@@ -1120,8 +1120,8 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 				mes "[Esklah]";
 				mes "Now stop whining";
 				mes "and go bring...";
-				mes "^3355FF2 " + mesitemlink(7054) + "^000000 and";
-				mes "^3355FF1 " + mesitemlink(1010) + "^000000.";
+				mes "^3355FF2 " + mesitemlink(7054, false) + "^000000 and";
+				mes "^3355FF1 " + mesitemlink(1010, false) + "^000000.";
 				mes "Now isn't that simple?";
 				mes "Muhahahaha!!";
 				set dmdswrd_Q,29;
@@ -1132,9 +1132,9 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 			next;
 			mes "[Esklah]";
 			mes "Bring me...";
-			mes "^3355FF2 " + mesitemlink(1002) + "^000000,";
-			mes "^3355FF10 " + mesitemlink(1026) + "^000000, and";
-			mes "^3355FF5 " + mesitemlink(957) + "^000000.";
+			mes "^3355FF2 " + mesitemlink(1002, false) + "^000000,";
+			mes "^3355FF10 " + mesitemlink(1026, false) + "^000000, and";
+			mes "^3355FF5 " + mesitemlink(957, false) + "^000000.";
 			close;
 		case 29:
 			if (countitem(7054) > 1 && countitem(1010) > 0) {
@@ -1142,8 +1142,8 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 				mes "Now...";
 				mes "Show me";
 				mes "what you brought.";
-				mes "That's 2 " + mesitemlink(7054) + " and...";
-				mes "1 " + mesitemlink(1010) + ". Hmm. Very good.";
+				mes "That's 2 " + mesitemlink(7054, false) + " and...";
+				mes "1 " + mesitemlink(1010, false) + ". Hmm. Very good.";
 				mes "Now let me get to work.";
 				delitem 7054,2; //Brigan
 				delitem 1010,1; //Phracon
@@ -1155,7 +1155,7 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 				next;
 				mes "^3355FFSage Esklah handed you the ^3355FFCompass of Muriniel^000000.";
 				next;
-				mes "^3355FFIn the direction the compass is pointing, some words are engraved...^000000";
+				mes "^3355F" + mesitemlink(951, false) + " the direction the compass is pointing, some words are engraved...^000000";
 				next;
 				mes "^3355FF- Mountain Mjornir -^000000";
 				mes "^3355FF- mjolnir_02 . 170 193 -^000000";
@@ -1168,8 +1168,8 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 			mes "[Esklah]";
 			mes "Listen carefully!";
 			mes "I want you to bring...";
-			mes "^3355FF2 " + mesitemlink(7054) + "^000000 and";
-			mes "^3355FF1 " + mesitemlink(1010) + "^000000";
+			mes "^3355FF2 " + mesitemlink(7054, false) + "^000000 and";
+			mes "^3355FF1 " + mesitemlink(1010, false) + "^000000";
 			mes "Isn't that simple and easy?";
 			mes "Muhahaha! Now, get a move on!";
 			close;
@@ -1197,7 +1197,7 @@ yuno,213,298,4	script	Sage Esklah#juno	735,{
 		mes "Later, I learned that monster is known as ^3355FFThe Paper^000000.";
 		next;
 		mes "[Esklah]";
-		mes "It used to be a part of an " + mesitemlink(11004) + " that contained a lot of ancient knowledge about Juno, but somehow, became a monster. Isn't that peculiar?";
+		mes "It used to be a part of an " + mesitemlink(11004, false) + " that contained a lot of ancient knowledge about Juno, but somehow, became a monster. Isn't that peculiar?";
 		close;
 	}
 }

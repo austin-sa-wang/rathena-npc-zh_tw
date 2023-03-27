@@ -1206,7 +1206,7 @@ OnTouch_:
 			mes "Kafra Ladies? Exquisite! Oh, and their service is good too~!^000000";
 			mes " ";
 			mes "[Tristram III]";
-			mes "By my " + mesitemlink(2235) + "! Such low prices!";
+			mes "By my " + mesitemlink(2235, false) + "! Such low prices!";
 		} else if (.@w$ == "e16" || .@w$ == "n16") {
 			mes "^4d4dff[Union Staff Kay]";
 			mes "Of course I love 'em, especially their Pushcart Service~";
@@ -3729,7 +3729,7 @@ turbo_room,99,120,4	script	Turbo Track Guide	124,{
 			mes "[Turbo Track Guide]";
 			mes "Races in the Turbo Track";
 			mes "consist of various courses:";
-			mes "^4d4dffLog Bridge, Cube Hills, the";
+			mes "^4d4dff" + mesitemlink(7201, false) + " Bridge, Cube Hills, the";
 			mes "Single Snail, Snake Dice, Small";
 			mes "Cave and the Invisible Maze.";
 			next;
@@ -3744,12 +3744,12 @@ turbo_room,99,120,4	script	Turbo Track Guide	124,{
 				switch(select("Log Bridge and Cube Hills:Cursed Desert and Flasher Maze:Single Snail and Invisible Maze:Snake Dice and Small Cave:No, thanks.")) {
 				case 1:
 					mes "[Turbo Track Guide]";
-					mes "In the " + mesitemlink(7201) + " Bridge";
+					mes "In the " + mesitemlink(7201, false) + " Bridge";
 					mes "course, you must cross";
-					mes "over a single " + mesitemlink(7201) + ". If you";
+					mes "over a single " + mesitemlink(7201, false) + ". If you";
 					mes "fall off, you'll be brought";
 					mes "back to the beginning of";
-					mes "the " + mesitemlink(7201) + " Bridge.";
+					mes "the " + mesitemlink(7201, false) + " Bridge.";
 					next;
 					mes "[Turbo Track Guide]";
 					mes "The Cube Hills is a maze";
@@ -3778,7 +3778,7 @@ turbo_room,99,120,4	script	Turbo Track Guide	124,{
 					mes "[Turbo Track Guide]";
 					mes "The Single Snail is";
 					mes "a narrow, spiral path";
-					mes "shaped like a " + mesitemlink(946) + ".";
+					mes "shaped like a " + mesitemlink(946, false) + ".";
 					mes "There aren't many obstacles,";
 					mes "but it will be tough to race at your top speed in this course.";
 					next;
@@ -3854,14 +3854,14 @@ turbo_room,99,120,4	script	Turbo Track Guide	124,{
 			mes "[Turbo Track Guide]";
 			mes "Now in Turbo Track, the";
 			mes "following items are prohibited";
-			mes "from use: " + mesitemlink(506) + ", " + mesitemlink(525) + "";
-			mes "and " + mesitemlink(601) + ". If you do try to use them, they won't work until after you leave the race track.";
+			mes "from use: " + mesitemlink(506, false) + ", " + mesitemlink(525, false) + "";
+			mes "and " + mesitemlink(601, false) + ". If you do try to use them, they won't work until after you leave the race track.";
 			next;
 			mes "[Turbo Track Guide]";
 			mes "The following skills cannot";
 			mes "be used during Turbo Track";
 			mes "races: Snatch, Teleport, Warp";
-			mes "Portal, Hiding, Cloaking, Stealth, Cure, Ice Wall, " + mesitemlink(1814) + ", Basilica, Sheltering Bless and Spear Dynamo.";
+			mes "Portal, Hiding, Cloaking, Stealth, Cure, Ice Wall, " + mesitemlink(1814, false) + ", Basilica, Sheltering Bless and Spear Dynamo.";
 			next;
 			//this appears supposed to fall through.
 		case 5:
@@ -4068,8 +4068,8 @@ turbo_room,93,117,5	script	Point Exchange Helper	125,{
 			next;
 			mes "[Item Exchange Helper]";
 			mes "^3355FF150 TTP^000000: 1 3 Carat Diamond";
-			mes "^3355FF300 TTP^000000: 1 " + mesitemlink(644) + "";
-			mes "^3355FF400 TTP^000000: 1 " + mesitemlink(12016) + "";
+			mes "^3355FF300 TTP^000000: 1 " + mesitemlink(644, false) + "";
+			mes "^3355FF400 TTP^000000: 1 " + mesitemlink(12016, false) + "";
 			next;
 			mes "[Item Exchange Helper]";
 			mes "You can also convert Turbo Track Points into Arena Points. For more information, please speak to the Arena Point Manager. Thank you.";
@@ -4325,7 +4325,7 @@ turbo_room,93,117,5	script	Point Exchange Helper	125,{
 				mes "[Item Exchange Helper]";
 				mes "You can exchange";
 				mes "300 Turbo Track Points";
-				mes "for ^3131FF1 " + mesitemlink(644) + "^000000. Please enter";
+				mes "for ^3131FF1 " + mesitemlink(644, false) + "^000000. Please enter";
 				mes "the number of Gift Boxes";
 				mes "that you'd like to receive.";
 				mes "To cancel, enter ''^3355FF0^000000.''";
@@ -4372,7 +4372,7 @@ turbo_room,93,117,5	script	Point Exchange Helper	125,{
 				mes "[Item Exchange Helper]";
 				mes "You can exchange";
 				mes "400 Turbo Track Points";
-				mes "for ^3131FF1 " + mesitemlink(12016) + "^000000. Please";
+				mes "for ^3131FF1 " + mesitemlink(12016, false) + "^000000. Please";
 				mes "enter the number of potions";
 				mes "that you'd like to receive.";
 				mes "To cancel, enter ''^3355FF0^000000.''";
@@ -4613,7 +4613,7 @@ OnTouch_:
 				mes "in the Turbo Track Arena.";
 				mes "Please dismount from your";
 				mes .@mount$+" and you will receive";
-				mes "a " + mesitemlink(7310) + "";
+				mes "a " + mesitemlink(7310, false) + "";
 				mes "for retrieving your "+.@mount$+".";
 			} else {
 				set .@mount$,(BaseJob == Job_Knight)?"Dragon":"Gryphon";

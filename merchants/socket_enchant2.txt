@@ -222,11 +222,11 @@
 			next;
 			mes "[Leablem]";
 			mes "This special service has a 90% success chance,";
-			mes "but requires 2 " + mesitemlink(969) + " and 2 hundred million zeny:";
-			mes "I can add slots to the " + mesitemlink(5022) + ".";
+			mes "but requires 2 " + mesitemlink(969, false) + " and 2 hundred million zeny:";
+			mes "I can add slots to the " + mesitemlink(5022, false) + ".";
 			next;
 			mes "[Leablem]";
-			mes "My brother said that, even since ancient times, it's forbidden to modify that hat.";
+			mes "My brother said that, even since ancient times, it's forbidden to modify that " + mesitemlink(2220, false) + ".";
 			mes "But I believe humans are too curious not to";
 			mes "experiment, especially when it's forbidden.";
 			mes "I just don't want my brother to yell at me. That's all.";
@@ -268,8 +268,8 @@
 					next;
 					mes "[Leablem]";
 					mes "Okay then, please bring me";
-					mes "^FF00002 " + mesitemlink(969) + ", 2 hundred million zeny -- the service charge --,";
-					mes "^FF0000and a " + mesitemlink(5022) + ".";
+					mes "^FF00002 " + mesitemlink(969, false) + ", 2 hundred million zeny -- the service charge --,";
+					mes "^FF0000and a " + mesitemlink(5022, false) + ".";
 					mes "^FF0000You know your chance of success is 90% with this, don't you?^000000";
 					mes "We don't have time to waste,";
 					mes "so let's get down to business right away.";

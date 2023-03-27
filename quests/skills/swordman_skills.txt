@@ -256,7 +256,7 @@ prt_in,75,88,5	script	Leon Von Frich	85,3,3,{
 			mes "[Leon]";
 			mes "Ok. I'll tell you the requirements.";
 			mes "First you need to have level 5 Bash.";
-			mes "You will also need to prepare 10 Fire Arrows, 10 Silver Arrows, 1 bottle of " + mesitemlink(532) + ", 30 Tentacles, and 5 bottles of " + mesitemlink(526) + ".";
+			mes "You will also need to prepare 10 Fire Arrows, 10 Silver Arrows, 1 bottle of " + mesitemlink(532, false) + ", 30 Tentacles, and 5 bottles of " + mesitemlink(526, false) + ".";
 			mes "They are.. somewhat like ingredients.";
 			next;
 			mes "[Leon]";
@@ -273,7 +273,7 @@ prt_in,75,88,5	script	Leon Von Frich	85,3,3,{
 			close;
 		case 3:
 			mes "[Sushi King Leon]";
-			mes "The best way to eat " + mesitemlink(551) + " is";
+			mes "The best way to eat " + mesitemlink(551, false) + " is";
 			mes "with your hands.";
 			mes "That is the basic.";
 			mes "And dip the fish, not the rice,";
@@ -283,8 +283,8 @@ prt_in,75,88,5	script	Leon Von Frich	85,3,3,{
 			mes "That way you get a richer flavor.";
 			mes "Also, always eat the kind that is in season.";
 			mes "Eating in the order of white fish then";
-			mes "" + mesitemlink(5065) + " will make it taste better!";
-			mes "Mmm! I like " + mesitemlink(551) + "~~!";
+			mes "" + mesitemlink(5065, false) + " will make it taste better!";
+			mes "Mmm! I like " + mesitemlink(551, false) + "~~!";
 			close;
 		}
 	}
@@ -331,7 +331,7 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 			mes "[Juan]";
 			mes "Ooh. Young swordsman!";
 			mes "You are ready to learn the";
-			mes "newest skill, Auto " + mesitemlink(1814) + "?!";
+			mes "newest skill, Auto " + mesitemlink(1814, false) + "?!";
 			next;
 			switch (select("Hoho, I would like to learn it now.:What is that?")) {
 			case 1:
@@ -345,7 +345,7 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 				skill "SM_AUTOBERSERK",1,SKILL_PERM;
 				mes "[Juan]";
 				mes "You have just become a swordsman";
-				mes "that can use Auto " + mesitemlink(1814) + ".";
+				mes "that can use Auto " + mesitemlink(1814, false) + ".";
 				mes "You can go about ";
 				mes "and achieve great things!";
 				next;
@@ -375,7 +375,7 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 				close;
 			case 2:
 				mes "[Juan]";
-				mes "Auto " + mesitemlink(1814) + "?";
+				mes "Auto " + mesitemlink(1814, false) + "?";
 				mes "It's a skill crucial on the battlefield.";
 				mes "When your health is in red,";
 				mes "your hidden potential provokes yourself";
@@ -389,14 +389,14 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 				mes "Then, I shall tell you the necessary materials.";
 				next;
 				mes "[Juan]";
-				mes "You need 35 " + mesitemlink(924) + ".";
+				mes "You need 35 " + mesitemlink(924, false) + ".";
 				mes "The energy from the magnificent";
 				mes "wings of a butterfly will";
 				mes "help you gather your strength!";
-				mes "And 10 " + mesitemlink(958) + ".";
-				mes "10 " + mesitemlink(957) + ".";
+				mes "And 10 " + mesitemlink(958, false) + ".";
+				mes "10 " + mesitemlink(957, false) + ".";
 				mes "and last but not least...";
-				mes "10 Honey!";
+				mes "10 " + mesitemlink(518, false) + "!";
 				next;
 				mes "[Juan]";
 				mes "Did you get all that down?";
@@ -422,8 +422,8 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 		switch (select("Eh! What are you talking about?:Haha, there can't be such a thing.:Keuuuuuuuh!")) {
 		case 1:
 			mes "[Juan]";
-			mes "The skill is called " + mesitemlink(1814) + ".";
-			mes "It is deemed the " + mesitemlink(712) + " of a battlefield.";
+			mes "The skill is called " + mesitemlink(1814, false) + ".";
+			mes "It is deemed the " + mesitemlink(712, false) + " of a battlefield.";
 			mes "When your health is red,";
 			mes "your hidden potential is provokes yourself";
 			mes "to help you in battle.";
@@ -436,12 +436,12 @@ prt_in,94,57,3	script	Juan	85,4,4,{
 			mes "Then, I shall tell you the necessary materials.";
 			next;
 			mes "[Juan]";
-			mes "You need 35 " + mesitemlink(924) + ".";
+			mes "You need 35 " + mesitemlink(924, false) + ".";
 			mes "The energy from the magnificent";
 			mes "wings of a butterfly will";
 			mes "help you gather your strength!";
-			mes "And 10 " + mesitemlink(958) + ".";
-			mes "10 " + mesitemlink(957) + ".";
+			mes "And 10 " + mesitemlink(958, false) + ".";
+			mes "10 " + mesitemlink(957, false) + ".";
 			mes "and last but not least...";
 			mes "10 Honeys!";
 			next;

@@ -32,7 +32,7 @@ payon_in01,99,72,4	script	Granny	103,{
 		mes "I wish I could make some clothing for my grandchildren for the festival season...";
 		next;
 		mes "[Granny]";
-		mes "Oh! Would you give me your ^3355FFSkirt of Virgin^000000? I'd need four of them. Please, I'm begging you.";
+		mes "Oh! Would you give me your ^3355FF" + mesitemlink(1049, false) + "^000000? I'd need four of them. Please, I'm begging you.";
 		next;
 		switch(select("Alright.:No way!")) {
 		case 1:
@@ -54,7 +54,7 @@ payon_in01,99,72,4	script	Granny	103,{
 			close;
 		case 2:
 			mes "[Granny]";
-			mes "*Sigh* How can I get ^3355FFSkirt of Virgin^000000 by myself? I'm just so weak and feeble, even rolling in my rocking chair exhausts me. *Sniff* All I want is to make my grandchildren happy...";
+			mes "*Sigh* How can I get ^3355FF" + mesitemlink(1049, false) + "^000000 by myself? I'm just so weak and feeble, even rolling in my rocking chair exhausts me. *Sniff* All I want is to make my grandchildren happy...";
 			close;
 		}
 	}
@@ -64,10 +64,10 @@ payon_in01,99,72,4	script	Granny	103,{
 		next;
 		mes "[Granny]";
 		mes "...";
-		mes "But for that, I need ^3355FF4 " + mesitemlink(1049) + "^000000...";
+		mes "But for that, I need ^3355FF4 " + mesitemlink(1049, false) + "^000000...";
 		next;
 		mes "[Granny]";
-		mes "Young traveler, please help me. When you find some ^3355FFSkirt of Virgin^000000, please bring them to me. I'd really appreciate it...";
+		mes "Young traveler, please help me. When you find some ^3355FF" + mesitemlink(1049, false) + "^000000, please bring them to me. I'd really appreciate it...";
 		close;
 	}
 }
@@ -76,14 +76,14 @@ payon_in01,99,72,4	script	Granny	103,{
 //============================================================
 payon_in01,18,10,4	script	Mystic Lady	76,{
 	mes "[Mystic Lady]";
-	mes "My family has produced and sold the special Winter product ^3355FFEar Muffs^000000 for many years. We just moved here, but the weather is always warm so we can hardly make a living.";
+	mes "My family has produced and sold the special Winter product ^3355FF" + mesitemlink(2283, false) + "^000000 for many years. We just moved here, but the weather is always warm so we can hardly make a living.";
 	next;
 	mes "[Mystic Lady]";
-	mes "If you plan to travel to colder regions, I suggest that you bring some ^3355FFEar Muffs^000000...";
+	mes "If you plan to travel to colder regions, I suggest that you bring some ^3355FF" + mesitemlink(2283, false) + "^000000...";
 	emotion ET_THINK;
 	next;
 	mes "[Mystic Lady]";
-	mes "" + mesitemlink(2283) + " are my family's specialty, and we provide it to customers who have ^FF33551 " + mesitemlink(724) + "^000000, ^3311AA1 " + mesitemlink(5001) + ",^000000 ^3355FF 200 Feathers^000000 and ^DDDD005000 Zeny^000000.";
+	mes "" + mesitemlink(2283, false) + " are my family's specialty, and we provide it to customers who have ^FF33551 " + mesitemlink(724, false) + "^000000, ^3311AA1 " + mesitemlink(5001, false) + ",^000000 ^3355FF 200 Feathers^000000 and ^DDDD005000 Zeny^000000.";
 	emotion ET_THINK;
 	next;
 	switch(select("Oh Yeah? That sounds good.:No thank you, Ma'am.")) {
@@ -98,7 +98,7 @@ payon_in01,18,10,4	script	Mystic Lady	76,{
 			getitem 2283,1; //Ear_Mufs
 			next;
 			mes "[Mystic Lady]";
-			mes "Thank you for buying our product. You won't regret purchasing our " + mesitemlink(2283) + ": Satisfaction guaranteed~";
+			mes "Thank you for buying our product. You won't regret purchasing our " + mesitemlink(2283, false) + ": Satisfaction guaranteed~";
 			emotion ET_THINK;
 			close;
 		}
@@ -139,7 +139,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "Is, is this";
 			mes "the one?!";
 			mes "This is...";
-			mes "" + mesitemlink(701) + "!!";
+			mes "" + mesitemlink(701, false) + "!!";
 			next;
 			mes "[Young Man]";
 			mes "I'll make it short! Give it to me, and I will give you my treasure! So how's my idea? Wanna deal?";
@@ -151,7 +151,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "[Young Man]";
 			mes "Muhahahahah!!!";
 			mes "I finally have this!";
-			mes "" + mesitemlink(701) + "!";
+			mes "" + mesitemlink(701, false) + "!";
 			mes "Stupid and Disgusting";
 			mes "Thief Bugs!!";
 			mes "You will pay!!!";
@@ -168,7 +168,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "Kakakakakaka!";
 			mes "I can't wait";
 			mes "to use this";
-			mes "" + mesitemlink(701) + "!";
+			mes "" + mesitemlink(701, false) + "!";
 			close;
 		case 3:
 			mes "[Young Man]";
@@ -202,7 +202,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			mes "I tried to do everything I could do. I coaxed them, killed them, but it only brought peace for a moment! I even tried to burn this house down...!";
 			next;
 			mes "[Young Man]";
-			mes "*Gasp* I mean, really, do I need ^3355FF " + mesitemlink(701) + "^000000 to get rid of them? People say it is very rarely seen in distant countries.";
+			mes "*Gasp* I mean, really, do I need ^3355FF " + mesitemlink(701, false) + "^000000 to get rid of them? People say it is very rarely seen in distant countries.";
 			next;
 			mes "[Young Man]";
 			mes "If I could afford 5 of them, I won't have to be frustrated with these disgusting bugs any more...";
@@ -229,9 +229,9 @@ payon_in02,25,71,4	script	Boy	86,{
 		switch(select("Helm of Angel.:Deviruchi Cap.:I will come next time.")) {
 		case 1:
 			mes "[Young man]";
-			mes "1 " + mesitemlink(2228) + " (with slot).";
-			mes "1 " + mesitemlink(2254) + ".";
-			mes "5 " + mesitemlink(1063) + " of Garm.";
+			mes "1 " + mesitemlink(2228, false) + " (with slot).";
+			mes "1 " + mesitemlink(2254, false) + ".";
+			mes "5 " + mesitemlink(1063, false) + " of Garm.";
 			mes "That's all I require.";
 			next;
 			mes "[Young man]";
@@ -248,7 +248,7 @@ payon_in02,25,71,4	script	Boy	86,{
 				if ((countitem(2229) > 0) && (countitem(2254) > 0) && (countitem(7036) > 4)) {
 					mes "[Young man]";
 					mes ".....Hm.";
-					mes "Fine, here's your " + mesitemlink(5025) + ". Take it.";
+					mes "Fine, here's your " + mesitemlink(5025, false) + ". Take it.";
 					delitem 2229,1; //Helm_
 					delitem 2254,1; //Angelic_Chain
 					delitem 7036,5; //Fang_Of_Garm
@@ -268,8 +268,8 @@ payon_in02,25,71,4	script	Boy	86,{
 			}
 		case 2:
 			mes "[Young man]";
-			mes "600 " + mesitemlink(1038) + ".";
-			mes "40 " + mesitemlink(7048) + ".";
+			mes "600 " + mesitemlink(1038, false) + ".";
+			mes "40 " + mesitemlink(7048, false) + ".";
 			mes "That's all I require.";
 			next;
 			mes "[Young man]";
@@ -285,7 +285,7 @@ payon_in02,25,71,4	script	Boy	86,{
 			case 1:
 				if ((countitem(1038) > 599) && (countitem(7048) > 39)) {
 					mes "[Young man]";
-					mes ".....Hm. Here's your " + mesitemlink(5038) + ". Please take it.";
+					mes ".....Hm. Here's your " + mesitemlink(5038, false) + ". Please take it.";
 					delitem 1038,600; //Petite_DiablOfs_Horn
 					delitem 7048,40; //Talon_Of_Griffin
 					close2;

@@ -116,7 +116,7 @@ M_Failure:
 	// NINJAS BUSY FOR WOE //
 M_Busy:
 	mes "[Shifty Assassin]";
-	mes "Sorry, all my ninjas are busy doing War of " + mesitemlink(714) + ".";
+	mes "Sorry, all my ninjas are busy doing War of " + mesitemlink(714, false) + ".";
 	close;
 
 	// CHECK YOUR NINJAS //

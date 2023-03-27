@@ -246,7 +246,7 @@ lhz_in02,91,155,5	script	Assistant Beautician#li	862,{
 			mes "[Assistant Beautician]";
 			mes "You're really going to";
 			mes "give me a chance to practice?";
-			mes "Oh, " + mesitemlink(6206) + " so much! Okay,";
+			mes "Oh, " + mesitemlink(6206, false) + " so much! Okay,";
 			mes "I'll need 250,000 zeny to make";
 			mes "up for the material expenses.";
 			mes "Is that okay with you?";

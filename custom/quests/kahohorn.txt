@@ -24,7 +24,7 @@ geffen,115,107,5	script	Lord Kaho's Servant	61,{
 	next;
 	mes .@n$;
 	mes "You need the following to get the Kaho horns:";
-	mes "3x ^0055FFEmperium^000000";
+	mes "3x ^0055FF" + mesitemlink(714, false) + "^000000";
 	next;
 	mes .@n$;
 	mes "Oh yeah...";

@@ -36,11 +36,11 @@ que_ng,182,85,3	script	Garrison	109,{
 	else if(BaseLevel < 55)
 	{
 		mes "[Garrison]";
-		mes "My name is " + mesitemlink(13104) + ". I'm a master in crafting guns.";
-		mes "The gun I make is also called the " + mesitemlink(13104) + ". I named it that because I think the " + mesitemlink(13104) + " is as cool and perfect as myself.";
+		mes "My name is " + mesitemlink(13104, false) + ". I'm a master in crafting guns.";
+		mes "The gun I make is also called the " + mesitemlink(13104, false) + ". I named it that because I think the " + mesitemlink(13104, false) + " is as cool and perfect as myself.";
 		next;
 		mes "[Garrison]";
-		mes "Why don't you commission a " + mesitemlink(13104) + " from me?";
+		mes "Why don't you commission a " + mesitemlink(13104, false) + " from me?";
 		next;
 		callsub SubGarrison;
 	}
@@ -50,11 +50,11 @@ que_ng,182,85,3	script	Garrison	109,{
 			if(countitem(13104) < 1)
 			{
 				mes "[Garrison]";
-				mes "My name is " + mesitemlink(13104) + ". I'm a master in crafting guns.";
-				mes "The gun I make is also called the " + mesitemlink(13104) + ". I named it that because I think the " + mesitemlink(13104) + " is as cool and perfect as myself.";
+				mes "My name is " + mesitemlink(13104, false) + ". I'm a master in crafting guns.";
+				mes "The gun I make is also called the " + mesitemlink(13104, false) + ". I named it that because I think the " + mesitemlink(13104, false) + " is as cool and perfect as myself.";
 				next;
 				mes "[Garrison]";
-				mes "Are you here to commission a " + mesitemlink(13104) + " from me?";
+				mes "Are you here to commission a " + mesitemlink(13104, false) + " from me?";
 				next;
 				callsub SubGarrison;
 			}
@@ -68,7 +68,7 @@ que_ng,182,85,3	script	Garrison	109,{
 					mes "[Garrison]";
 					mes "Oh~ Welcome";
 					mes "Everyone needs me~!";
-					mes "It just proves that my gun, the " + mesitemlink(13104) + ", is the best of the best.";
+					mes "It just proves that my gun, the " + mesitemlink(13104, false) + ", is the best of the best.";
 					mes "So, are you going to ask me to make one now?";
 					next;
 					callsub SubGarrison;
@@ -82,7 +82,7 @@ que_ng,182,85,3	script	Garrison	109,{
 					mes "What is it?";
 					next;
 					mes "[Garrison]";
-					mes "Mmm~ Well, I had actually received a letter recently stating that there are many defective makes of a gun I created called the " + mesitemlink(13100) + ".";
+					mes "Mmm~ Well, I had actually received a letter recently stating that there are many defective makes of a gun I created called the " + mesitemlink(13100, false) + ".";
 					next;
 					mes "[Garrison]";
 					mes "I'm a perfectionist, but due to my old age, my eyes are growing dark, and I think I may have sold defective Six Shooters.";
@@ -91,11 +91,11 @@ que_ng,182,85,3	script	Garrison	109,{
 					mes "So what I'm trying to say is, I'm hoping someone will find me spare parts which I can use to replace defective parts in the detective Six Shooters.";
 					next;
 					mes "[Garrison]";
-					mes "If you help me, I'll put a slot in that " + mesitemlink(13104) + " you're holding right now.";
+					mes "If you help me, I'll put a slot in that " + mesitemlink(13104, false) + " you're holding right now.";
 					mes "What do you say?";
 					next;
 					mes "[Garrison]";
-					mes "Just so you know, if I slot your " + mesitemlink(13104) + ", any current refine points or slotted cards will disappear. Decide carefully.";
+					mes "Just so you know, if I slot your " + mesitemlink(13104, false) + ", any current refine points or slotted cards will disappear. Decide carefully.";
 					next;
 					switch( select( "I don't like the sound of this.","Ok, I'll try it out.") )
 					{
@@ -113,7 +113,7 @@ que_ng,182,85,3	script	Garrison	109,{
 							mes "These are the materials I need to make spare parts...";
 							next;
 							mes "[Garrison]";
-							mes "10 " + mesitemlink(999) + ", 1 " + mesitemlink(985) + ", 10 " + mesitemlink(1011) + ", 30 " + mesitemlink(1003) + ", and 10 Rusty Screws.";
+							mes "10 " + mesitemlink(999, false) + ", 1 " + mesitemlink(985, false) + ", 10 " + mesitemlink(1011, false) + ", 30 " + mesitemlink(1003, false) + ", and 10 Rusty Screws.";
 							mes "I need this exact amount. Don't forget.";
 							set gun_gs,1;
 							close;
@@ -129,7 +129,7 @@ que_ng,182,85,3	script	Garrison	109,{
 			if((countitem(999) < 10) || (countitem(7317) < 10) || (countitem(1011) < 10) || (countitem(1003) < 30) || (countitem(985) < 1))
 			{
 				mes "[Garrison]";
-				mes "10 " + mesitemlink(999) + ", 1 " + mesitemlink(985) + ", 10 " + mesitemlink(1011) + ", 30 " + mesitemlink(1003) + ", and 10 Rusty Screws.";
+				mes "10 " + mesitemlink(999, false) + ", 1 " + mesitemlink(985, false) + ", 10 " + mesitemlink(1011, false) + ", 30 " + mesitemlink(1003, false) + ", and 10 Rusty Screws.";
 				mes "Don't forget -- the amount has to be exact.";
 				close;
 			}
@@ -145,7 +145,7 @@ que_ng,182,85,3	script	Garrison	109,{
 			mes "Sorry to ask, but I was hoping you can deliver what I make out of these materials to the next person.";
 			next;
 			mes "[Garrison]";
-			mes "While you are on delivery, I will make preparations to slot your " + mesitemlink(13104) + ", as promised.";
+			mes "While you are on delivery, I will make preparations to slot your " + mesitemlink(13104, false) + ", as promised.";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "-Hmm, I don't want to do it, but I'll do it anyway.-";
@@ -158,7 +158,7 @@ que_ng,182,85,3	script	Garrison	109,{
 			mes "Then deliver this to a person called Ravey. He lives in the slums of Lighthalzen.";
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "You receive the delivery goods from " + mesitemlink(13104) + ".";
+			mes "You receive the delivery goods from " + mesitemlink(13104, false) + ".";
 			mes "Let's deliver them to a person named Ravey, who lives in the slums of Lighthalzen.";
 			delitem 999,10;
 			delitem 1011,10;
@@ -170,7 +170,7 @@ que_ng,182,85,3	script	Garrison	109,{
 
 		case 2:
 			mes "["+strcharinfo(0)+"]";
-			mes "You receive the delivery goods from " + mesitemlink(13104) + ".";
+			mes "You receive the delivery goods from " + mesitemlink(13104, false) + ".";
 			mes "Let's deliver them to a person named Ravey, who lives in the slums of Lighthalzen.";
 			close;
 
@@ -199,7 +199,7 @@ que_ng,182,85,3	script	Garrison	109,{
 			next;
 			mes "[Garrison]";
 			mes "I'm sorry about what happened.";
-			mes "But, as promised, I will slot your " + mesitemlink(13104) + " ...";
+			mes "But, as promised, I will slot your " + mesitemlink(13104, false) + " ...";
 			next;
 			if(countitem(13104) < 1)
 			{
@@ -207,7 +207,7 @@ que_ng,182,85,3	script	Garrison	109,{
 				mes "Huh? Sigh.";
 				mes "Did you sell off your gun while you were gone?";
 				mes "I said I'd slot your gun, but I never said I'd slot a gun that isn't here.";
-				mes "Go and get your " + mesitemlink(13104) + " and then get back to me.";
+				mes "Go and get your " + mesitemlink(13104, false) + " and then get back to me.";
 				set gun_gs,4;
 				close;
 			}
@@ -215,7 +215,7 @@ que_ng,182,85,3	script	Garrison	109,{
 			mes "Let's see~";
 			mes "*tonk* *tonk* *thump* *whump*";
 			mes "Here is your modified";
-			mes "" + mesitemlink(13104) + ".";
+			mes "" + mesitemlink(13104, false) + ".";
 			mes "Please use it well.";
 			delitem 13104,1;
 			getitem 13105,1;
@@ -225,13 +225,13 @@ que_ng,182,85,3	script	Garrison	109,{
 			if(countitem(13104) < 1)
 			{
 				mes "[Garrison]";
-				mes "Go and get your " + mesitemlink(13104) + " and then get back to me.";
+				mes "Go and get your " + mesitemlink(13104, false) + " and then get back to me.";
 				close;
 			}
 			mes "[Garrison]";
 			mes "Ah, there it is.";
 			mes "Here is your modified";
-			mes "" + mesitemlink(13104) + ".";
+			mes "" + mesitemlink(13104, false) + ".";
 			mes "Do use it well.";
 			delitem 13104, 1;
 			getitem 13105, 1;
@@ -259,9 +259,9 @@ que_ng,182,85,3	script	Garrison	109,{
 
 SubGarrison:
 	mes "[Garrison]";
-	mes "To create a " + mesitemlink(13104) + ", I need...";
-	mes "50 " + mesitemlink(999) + ", 3 Eluniums,";
-	mes "1 " + mesitemlink(984) + ", 50 " + mesitemlink(1003) + ",";
+	mes "To create a " + mesitemlink(13104, false) + ", I need...";
+	mes "50 " + mesitemlink(999, false) + ", 3 Eluniums,";
+	mes "1 " + mesitemlink(984, false) + ", 50 " + mesitemlink(1003, false) + ",";
 	mes "20 Rusty Screws, and";
 	mes "there's a fee of 30,000 Zeny.";
 	mes "Well, do you want one?.";
@@ -279,9 +279,9 @@ SubGarrison:
 			{
 				mes "[Garrison]";
 				mes "You didn't bring enough materials";
-				mes "To create a " + mesitemlink(13104) + ", I need...";
-				mes "50 " + mesitemlink(999) + ", 3 Eluniums,";
-				mes "1 " + mesitemlink(984) + ", 50 " + mesitemlink(1003) + ",";
+				mes "To create a " + mesitemlink(13104, false) + ", I need...";
+				mes "50 " + mesitemlink(999, false) + ", 3 Eluniums,";
+				mes "1 " + mesitemlink(984, false) + ", 50 " + mesitemlink(1003, false) + ",";
 				mes "50 Rusty Screws,";
 				mes "and there's a fee of 30,000 Zeny";
 				mes "Don't forget.";
@@ -306,7 +306,7 @@ SubGarrison:
 			}
 			mes "[Garrison]";
 			mes "Hmm, looks like the correct amount of materials and Zeny.";
-			mes "Here's a " + mesitemlink(13104) + "~";
+			mes "Here's a " + mesitemlink(13104, false) + "~";
 			mes "If you need one again, come and see me~";
 			delitem 984,1; //Oridecon
 			delitem 985,3; //Elunium
@@ -325,11 +325,11 @@ SubGarrison:
 
 SubGarrison_:
 	mes "[Garrison]";
-	mes "In order to slot a " + mesitemlink(13104) + ", I need";
-	mes "10 " + mesitemlink(999) + ", 1 " + mesitemlink(985) + ",";
-	mes "10 " + mesitemlink(1011) + ", 30 " + mesitemlink(1003) + ",";
+	mes "In order to slot a " + mesitemlink(13104, false) + ", I need";
+	mes "10 " + mesitemlink(999, false) + ", 1 " + mesitemlink(985, false) + ",";
+	mes "10 " + mesitemlink(1011, false) + ", 30 " + mesitemlink(1003, false) + ",";
 	mes "10 Rusty Screws, and";
-	mes "1 " + mesitemlink(13104) + ".";
+	mes "1 " + mesitemlink(13104, false) + ".";
 	mes "Well, do you want one?.";
 	next;
 	switch( select( "Maybe later.","Yes, make it for me immediately.","Cancel" ))
@@ -345,11 +345,11 @@ SubGarrison_:
 			{
 				mes "[Garrison]";
 				mes "You didn't bring enough materials";
-				mes "In order to slot a " + mesitemlink(13104) + ", I need";
-				mes "10 " + mesitemlink(999) + ", 1 " + mesitemlink(985) + ",";
-				mes "10 " + mesitemlink(1011) + ", 30 " + mesitemlink(1003) + ",";
+				mes "In order to slot a " + mesitemlink(13104, false) + ", I need";
+				mes "10 " + mesitemlink(999, false) + ", 1 " + mesitemlink(985, false) + ",";
+				mes "10 " + mesitemlink(1011, false) + ", 30 " + mesitemlink(1003, false) + ",";
 				mes "10 Rusty Screws, and";
-				mes "1 " + mesitemlink(13104) + ".";
+				mes "1 " + mesitemlink(13104, false) + ".";
 				mes "Don't forget.";
 				close;
 			}
@@ -365,7 +365,7 @@ SubGarrison_:
 			}
 			mes "[Garrison]";
 			mes "Hmm, looks like the correct amount of materials and Zeny.";
-			mes "Here's a modified " + mesitemlink(13104) + " with a slot.";
+			mes "Here's a modified " + mesitemlink(13104, false) + " with a slot.";
 			mes "If you need one again, come and see me~";
 			delitem 999, 10;
 			delitem 1011, 10;
@@ -405,7 +405,7 @@ lighthalzen,322,247,6	script	Ravey	86,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "You run away without looking back.";
-		mes "Let's hurry back to " + mesitemlink(13104) + ".-";
+		mes "Let's hurry back to " + mesitemlink(13104, false) + ".-";
 		close;
 	}
 	if(gun_gs == 3)
@@ -415,7 +415,7 @@ lighthalzen,322,247,6	script	Ravey	86,{
 		mes "You nearly died.-";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Let's hurry back to " + mesitemlink(13104) + ".-";
+		mes "Let's hurry back to " + mesitemlink(13104, false) + ".-";
 		close;
 	}
 	mes "[Ravey]";
@@ -455,10 +455,10 @@ que_ng,187,163,3	script	Ingrid	744,{
 			next;
 			mes "[Ingrid]";
 			mes "Ahh ... I feel so anxious.";
-			mes "As of now, I'm doing the job of creating a weapon called the " + mesitemlink(13162) + " for customers.";
+			mes "As of now, I'm doing the job of creating a weapon called the " + mesitemlink(13162, false) + " for customers.";
 			next;
 			mes "[Ingrid]";
-			mes "The " + mesitemlink(13162) + " is the most advanced weapon made in our Guild laboratory.";
+			mes "The " + mesitemlink(13162, false) + " is the most advanced weapon made in our Guild laboratory.";
 			next;
 			mes "[Ingrid]";
 			mes "It features incredible power and range, and an ergonomic design so that it can be held well and significantly minimize kickback when fired.";
@@ -506,8 +506,8 @@ que_ng,187,163,3	script	Ingrid	744,{
 			mes "I'll try my best.";
 			next;
 			mes "[Ingrid]";
-			mes "To produce an " + mesitemlink(13162) + ",";
-			mes "I need 100 Used " + mesitemlink(998) + " Plates, 10 Oridecons, 50 Old Rusty Screws, 100 Burning Hearts, and 200,000 Zeny.";
+			mes "To produce an " + mesitemlink(13162, false) + ",";
+			mes "I need 100 Used " + mesitemlink(998, false) + " Plates, 10 Oridecons, 50 Old Rusty Screws, 100 Burning Hearts, and 200,000 Zeny.";
 			mes "Would you like to produce it for you?";
 			next;
 			switch( select( "I'll think about it.", "Yes, please." ) )
@@ -526,8 +526,8 @@ que_ng,187,163,3	script	Ingrid	744,{
 					mes "Here are the materials again.";
 					next;
 					mes "[Inferno]";
-					mes "To produce an " + mesitemlink(13162) + ",";
-					mes "I need 100 Used " + mesitemlink(998) + " Plates, 10 Oridecons, 50 Rusty Old Screws, 100 Burning Hearts, and 200,000 Zeny.";
+					mes "To produce an " + mesitemlink(13162, false) + ",";
+					mes "I need 100 Used " + mesitemlink(998, false) + " Plates, 10 Oridecons, 50 Rusty Old Screws, 100 Burning Hearts, and 200,000 Zeny.";
 					mes "You must bring me the correct number of materials.";
 					mes "Please don't forget that.";
 					set gun_inf,1;
@@ -540,7 +540,7 @@ que_ng,187,163,3	script	Ingrid	744,{
 		case 2:
 			mes "[Ingrid]";
 			mes "Hello~ You're back~";
-			mes "Are you back because you need an " + mesitemlink(13162) + "?";
+			mes "Are you back because you need an " + mesitemlink(13162, false) + "?";
 			next;
 			switch( select( "Nah, I'm back just because..","Yes, make me an Inferno." ) )
 			{
@@ -561,7 +561,7 @@ SubInferno:
 	if ((countitem(7319) < 100) || (countitem(7317) < 50) || (countitem(984) < 10) || countitem(7097) < 100)
 	{
 		mes "[Ingrid]";
-		mes "Yeah, the required materials are 100 Used " + mesitemlink(998) + " Plates, 10 Oridecons, 50 Rusty Old Screws, 100 Burning Hearts, and 200,000 Zeny";
+		mes "Yeah, the required materials are 100 Used " + mesitemlink(998, false) + " Plates, 10 Oridecons, 50 Rusty Old Screws, 100 Burning Hearts, and 200,000 Zeny";
 		mes "You must bring me the correct number of materials.";
 		mes "Please don't forget that.";
 		close;
@@ -571,7 +571,7 @@ SubInferno:
 		mes "[Ingrid]";
 		mes "You've brought plenty of material,";
 		mes "but did you bring enough Zeny?";
-		mes "The price of creating an " + mesitemlink(13162) + " is 200,000 Zeny.";
+		mes "The price of creating an " + mesitemlink(13162, false) + " is 200,000 Zeny.";
 		mes "Please don't forget that.";
 		close;
 	}
@@ -586,7 +586,7 @@ SubInferno:
 	{
 		mes "[Ingrid]";
 		mes "I see you have the proper amount of materials and Zeny.";
-		mes "Here is the " + mesitemlink(13162) + " I've created for you.";
+		mes "Here is the " + mesitemlink(13162, false) + " I've created for you.";
 		mes "Use it well.";
 		set Zeny,Zeny-200000;
 		delitem 7319,100;
@@ -708,20 +708,20 @@ que_ng,185,180,3	script	Vanessa	726,{
 			mes "[Vanessa]";
 			mes "Now onto the subject.";
 			mes "The weapon I can create is";
-			mes "called the " + mesitemlink(13160) + ".";
+			mes "called the " + mesitemlink(13160, false) + ".";
 			next;
 			mes "[Vanessa]";
 			mes "I especially named it";
 			mes "after a technique I used in an arena";
 			mes "Hehe~";
-			mes "Take this~!" + mesitemlink(13160) + "~";
+			mes "Take this~!" + mesitemlink(13160, false) + "~";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "*sob*~ Please~Stop~";
 			next;
 			mes "[Vanessa]";
 			mes "Ah uh..Sorry...";
-			mes "First " + mesitemlink(13160) + " needs";
+			mes "First " + mesitemlink(13160, false) + " needs";
 			mes "materials before creating it.";
 			next;
 			mes "[Vanessa]";
@@ -747,8 +747,8 @@ que_ng,185,180,3	script	Vanessa	726,{
 				case 2:
 					mes "[Vanessa]";
 					mes "Mm, Okay.";
-					mes "To make a " + mesitemlink(13160) + ",";
-					mes "You need 50 Used " + mesitemlink(998) + " Plates";
+					mes "To make a " + mesitemlink(13160, false) + ",";
+					mes "You need 50 Used " + mesitemlink(998, false) + " Plates";
 					mes "5 Oridecons, 70 Rusty Old Screws";
 					mes "and a fee of 100,000 zeny.";
 					mes "You must bring me these exact materials. Understood?";
@@ -771,8 +771,8 @@ que_ng,185,180,3	script	Vanessa	726,{
 				case 1:
 					mes "[Vanessa]";
 					mes "Yeah, that's nice";
-					mes "That's a normal " + mesitemlink(13160) + ".";
-					mes "It takes 50 Used " + mesitemlink(998) + " Plates,";
+					mes "That's a normal " + mesitemlink(13160, false) + ".";
+					mes "It takes 50 Used " + mesitemlink(998, false) + " Plates,";
 					mes "5 Oridecons, 70 Rusty Old Screws,";
 					mes "and 100,000 Zeny to make it.";
 					mes "You have to bring me the correct amount of materials.";
@@ -793,16 +793,16 @@ que_ng,185,180,3	script	Vanessa	726,{
 							
 				case 2:
 					mes "[Vanessa]";
-					mes "Oh~ The Slotted " + mesitemlink(13160) + "~";
-					mes "Unlike the normal " + mesitemlink(13160) + ",";
+					mes "Oh~ The Slotted " + mesitemlink(13160, false) + "~";
+					mes "Unlike the normal " + mesitemlink(13160, false) + ",";
 					mes "I want you to find me one of the rare items I'm collecting.";
 					mes "Then I'll give it to you.";
 					next;
 					mes "[Vanessa]";
-					mes "I'm looking for a " + mesitemlink(1811) + "[2].";
+					mes "I'm looking for a " + mesitemlink(1811, false) + "[2].";
 					mes "I want 5 Oridecons too.";
 					mes "You have to bring me the correct amount of materials.";
-					mes "Do you still want a Slotted " + mesitemlink(13160) + "?";
+					mes "Do you still want a Slotted " + mesitemlink(13160, false) + "?";
 					next;
 					switch( select( "I'll think about it.","OK! I do!") )
 					{
@@ -833,7 +833,7 @@ SubDestroyer:
 	if ((countitem(7319) < 50) || (countitem(7317) < 70) || (countitem(984) < 5))
 	{
 		mes "[Vanessa]";
-		mes "Yeah, the required materials are 50 Used " + mesitemlink(998) + " Plates,";
+		mes "Yeah, the required materials are 50 Used " + mesitemlink(998, false) + " Plates,";
 		mes "5 Oridecons, 70 Rusty Old Screws, and 100,000 Zeny.";
 		mes "Keep in mind that you have to bring the correct amount.";
 		close;
@@ -859,7 +859,7 @@ SubDestroyer:
 		mes "Okay~ Very well~";
 		mes "All Checked~";
 		mes "You've got the perfect materials and Zeny~";
-		mes "Here's the " + mesitemlink(13160) + " I made ahead of time for you.";
+		mes "Here's the " + mesitemlink(13160, false) + " I made ahead of time for you.";
 		mes "Use it well.";
 		set Zeny,Zeny-100000;
 		delitem 7319,50;
@@ -880,7 +880,7 @@ SubDestroyer_:
 	if ((countitem(1812) < 1) || (countitem(984) < 5))
 	{
 		mes "[Vanessa]";
-		mes "Yeah, the required materials are 1 " + mesitemlink(1811) + "[2]";
+		mes "Yeah, the required materials are 1 " + mesitemlink(1811, false) + "[2]";
 		mes "and 5 Oridecons.";
 		mes "Keep in mind that the materials need to be exact.";
 		close;
@@ -900,7 +900,7 @@ SubDestroyer_:
 		mes "Okay~ Very well~";
 		mes "All Checked~";
 		mes "You've got the perfect materials and Zeny~";
-		mes "Here's the Slotted " + mesitemlink(13160) + " I made ahead of time for you.";
+		mes "Here's the Slotted " + mesitemlink(13160, false) + " I made ahead of time for you.";
 		mes "Use it well.";
 		delitem 1812,1;
 		delitem 984,5;
@@ -932,17 +932,17 @@ que_ng,149,178,4	script	Lab Director	744,{
 			mes "However, we don't do work for";
 			mes "free, so we need to charge you";
 			mes "for it. Also, you need to obtain";
-			mes "permission to use the " + mesitemlink(13158) + " from";
+			mes "permission to use the " + mesitemlink(13158, false) + " from";
 			mes "Lady Celena.";
 			next;
 			mes "[N. A]";
 			mes "Once you get the permission, I will";
-			mes "give the " + mesitemlink(13158) + " to you, after paying";
+			mes "give the " + mesitemlink(13158, false) + " to you, after paying";
 			mes "the fee of 100000 zeny.";
 			close;
 		}else{
 			mes "[N. A]";
-			mes "Have you found ^ff00001000 " + mesitemlink(1043) + "^000000 and ^ff00001000 Skel Bone^000000 yet?";
+			mes "Have you found ^ff00001000 " + mesitemlink(1043, false) + "^000000 and ^ff00001000 Skel Bone^000000 yet?";
 			mes "If you think it's too difficult,";
 			mes "you can choose to give up.";
 			next;
@@ -969,7 +969,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "[N. A]";
 		mes "I already got Lady Celena's";
 		mes "permission to let you use the";
-		mes "" + mesitemlink(13158) + ". You can use it once";
+		mes "" + mesitemlink(13158, false) + ". You can use it once";
 		mes "you've paid me 100000 zeny.";
 		mes "Do you want to pay now?";
 		next;
@@ -1038,9 +1038,9 @@ que_ng,149,178,4	script	Lab Director	744,{
 			mes "with you yet?";
 			next;
 			mes "[N. A]";
-			mes "To make " + mesitemlink(13157) + ", I will need";
-			mes "70 " + mesitemlink(999) + ", 5 " + mesitemlink(985) + ",";
-			mes "3 " + mesitemlink(984) + ", 70 " + mesitemlink(1003) + ", 50 Rusty";
+			mes "To make " + mesitemlink(13157, false) + ", I will need";
+			mes "70 " + mesitemlink(999, false) + ", 5 " + mesitemlink(985, false) + ",";
+			mes "3 " + mesitemlink(984, false) + ", 70 " + mesitemlink(1003, false) + ", 50 Rusty";
 			mes "Screws, and also a fee of";
 			mes "50000 zeny.";
 			mes "Come back to me once you have";
@@ -1058,7 +1058,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 			}else{
 				mes "[N. A]";
 				mes "Alright, request to make";
-				mes "a " + mesitemlink(13157) + " for you is cancelled.";
+				mes "a " + mesitemlink(13157, false) + " for you is cancelled.";
 				mes "I wish you good luck";
 				mes "in your future.";
 				set gun_na,0;
@@ -1079,7 +1079,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		getitem 13157,1;
 		mes "[N. A]";
 		mes "Ahh, here's the completed";
-		mes "" + mesitemlink(13157) + " for you.";
+		mes "" + mesitemlink(13157, false) + " for you.";
 		next;
 		mes "[N. A]";
 		mes "Please learn to use the";
@@ -1100,8 +1100,8 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "[N. A]";
 		mes "Huh...? Hey, weren't you that guy";
 		mes "who walked out of here with a";
-		mes "" + mesitemlink(13158) + " a while ago? How was the";
-		mes "" + mesitemlink(13158) + "?";
+		mes "" + mesitemlink(13158, false) + " a while ago? How was the";
+		mes "" + mesitemlink(13158, false) + "?";
 		next;
 		mes "[N. A]";
 		mes "...... WHAT!? YOU BROKE IT!?";
@@ -1121,7 +1121,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		next;
 		mes "[N. A]";
 		mes "Lady Celena has the special metal";
-		mes "" + mesitemlink(1601) + " that you want, but the doc is";
+		mes "" + mesitemlink(1601, false) + " that you want, but the doc is";
 		mes "not in right now, and no one else";
 		mes "knows where it is...";
 		next;
@@ -1140,23 +1140,23 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "[N. A]";
 		mes "Hmm... That sounds good.";
 		mes "Well, according to the offer,";
-		mes "I'll look for the " + mesitemlink(1601) + " for you,";
+		mes "I'll look for the " + mesitemlink(1601, false) + " for you,";
 		mes "while you find me those";
 		mes "Elemental Spheres.";
 		next;
 		mes "[N. A]";
-		mes "30 " + mesitemlink(13205) + ", 30 " + mesitemlink(13203) + ",";
-		mes "30 " + mesitemlink(13204) + ", 30 Blind";
-		mes "Sphere, or 30 " + mesitemlink(13207) + ".";
+		mes "30 " + mesitemlink(13205, false) + ", 30 " + mesitemlink(13203, false) + ",";
+		mes "30 " + mesitemlink(13204, false) + ", 30 Blind";
+		mes "Sphere, or 30 " + mesitemlink(13207, false) + ".";
 		mes "Find me 30 of each Element.";
 		set gun_na,102;
 		close;
 	}
 	else if(gun_na == 102){
 		mes "[N. A]";
-		mes "30 " + mesitemlink(13205) + ", 30 " + mesitemlink(13203) + ",";
-		mes "30 " + mesitemlink(13204) + ", 30 Blind";
-		mes "Sphere, or 30 " + mesitemlink(13207) + ".";
+		mes "30 " + mesitemlink(13205, false) + ", 30 " + mesitemlink(13203, false) + ",";
+		mes "30 " + mesitemlink(13204, false) + ", 30 Blind";
+		mes "Sphere, or 30 " + mesitemlink(13207, false) + ".";
 		mes "Find me 30 of each Element.";
 		mes "Did you find them?";
 		next;
@@ -1207,17 +1207,17 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "[N. A]";
 		mes "Wow, you found them all for me!";
 		mes "I had to turn Lady Celena's lab";
-		mes "over to find this " + mesitemlink(1601) + " too.";
+		mes "over to find this " + mesitemlink(1601, false) + " too.";
 		mes "Let's trade then!";
 		next;
 		mes "-You gave the Elemental";
 		mes "Spheres to Research Coordinator and got";
-		mes "the Metal " + mesitemlink(1601) + " in return.-";
+		mes "the Metal " + mesitemlink(1601, false) + " in return.-";
 		next;
 		mes "[N. A]";
 		mes "Mr. F. Harrison is very good.";
 		mes "I'm sure he can fix your";
-		mes "" + mesitemlink(13158) + " for you.";
+		mes "" + mesitemlink(13158, false) + " for you.";
 		mes "Well, see you later!";
 		close;
 	}
@@ -1225,7 +1225,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		mes "[N. A]";
 		mes "Mr. F. Harrison is very good.";
 		mes "I'm sure he can fix your";
-		mes "" + mesitemlink(13158) + " for you.";
+		mes "" + mesitemlink(13158, false) + " for you.";
 		mes "Well, see you later!";
 		close;
 	}
@@ -1276,7 +1276,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 		next;
 		mes "[N. A]";
 		mes "Due to its strong firepower,";
-		mes "the " + mesitemlink(13158) + " was also dubbed";
+		mes "the " + mesitemlink(13158, false) + " was also dubbed";
 		mes "as the 'Murderer'.";
 		next;
 		mes "[N. A]";
@@ -1312,7 +1312,7 @@ que_ng,149,178,4	script	Lab Director	744,{
 			mes "[N. A]";
 			mes "Here, bring me ^ff00001000 Orc Claws^000000 and ^ff00001000 Skel Bone^000000.";
 			mes "If you can bring me these items,";
-			mes "I'll let you use the " + mesitemlink(13158) + ".";
+			mes "I'll let you use the " + mesitemlink(13158, false) + ".";
 			next;
 			mes "[N. A]";
 			mes "Easy, ain't it? Go and prove";
@@ -1364,9 +1364,9 @@ que_ng,149,178,4	script	Lab Director	744,{
 			mes "we'll construct it for you.";
 			next;
 			mes "[N. A]";
-			mes "To make a " + mesitemlink(13157) + ", we need";
-			mes "70 " + mesitemlink(999) + ", 5 Eluniums, 3";
-			mes "Oridecons, 70 " + mesitemlink(1003) + ", 50 Rusty";
+			mes "To make a " + mesitemlink(13157, false) + ", we need";
+			mes "70 " + mesitemlink(999, false) + ", 5 Eluniums, 3";
+			mes "Oridecons, 70 " + mesitemlink(1003, false) + ", 50 Rusty";
 			mes "Screws, and a fee of";
 			mes "50,000 zeny.";
 			mes "Come back after you found";
@@ -1445,10 +1445,10 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 		next;
 		mes "[F. Harrison]";
 		mes "The materials I need are";
-		mes "10 " + mesitemlink(999) + ", 2 Eluniums,";
-		mes "1 " + mesitemlink(984) + ", 20 " + mesitemlink(1003) + "...";
-		mes "And a Special Metal " + mesitemlink(1601) + "";
-		mes "used in the " + mesitemlink(13158) + "...";
+		mes "10 " + mesitemlink(999, false) + ", 2 Eluniums,";
+		mes "1 " + mesitemlink(984, false) + ", 20 " + mesitemlink(1003, false) + "...";
+		mes "And a Special Metal " + mesitemlink(1601, false) + "";
+		mes "used in the " + mesitemlink(13158, false) + "...";
 		mes "I think only Lady Celena can";
 		mes "make those rods......";
 		next;
@@ -1463,7 +1463,7 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 		mes "[F. Harrison]";
 		mes "I'm really sorry... Here, I'll";
 		mes "lend you my prized weapon,";
-		mes "'" + mesitemlink(13102) + "'. But make sure";
+		mes "'" + mesitemlink(13102, false) + "'. But make sure";
 		mes "you bring all those materials";
 		mes "to me once you find them all!";
 		mes "Promise me!!!";
@@ -1474,12 +1474,12 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 	else if(gun_na == 101 || gun_na == 102){
 		mes "[F. Harrison]";
 		mes "The materials I need are";
-		mes "10 " + mesitemlink(999) + ", 2 Eluniums,";
-		mes "1 " + mesitemlink(984) + ", 20 " + mesitemlink(1003) + "...";
-		mes "And a Special Metal " + mesitemlink(1601) + "";
-		mes "used in the " + mesitemlink(13158) + "...";
+		mes "10 " + mesitemlink(999, false) + ", 2 Eluniums,";
+		mes "1 " + mesitemlink(984, false) + ", 20 " + mesitemlink(1003, false) + "...";
+		mes "And a Special Metal " + mesitemlink(1601, false) + "";
+		mes "used in the " + mesitemlink(13158, false) + "...";
 		mes "Talk to the 'Lab Director' for his";
-		mes "assistance on the " + mesitemlink(1601) + ".";
+		mes "assistance on the " + mesitemlink(1601, false) + ".";
 		close;
 	}
 	else if(gun_na == 103){
@@ -1502,8 +1502,8 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 				mes "Aha! You got all the materials";
 				mes "for me!";
 				mes "... But where's my treasured";
-				mes "'" + mesitemlink(13102) + "'!? I will not fix";
-				mes "your " + mesitemlink(13158) + " for you if you don't";
+				mes "'" + mesitemlink(13102, false) + "'!? I will not fix";
+				mes "your " + mesitemlink(13158, false) + " for you if you don't";
 				mes "bring it back to me!!";
 				close;
 			}
@@ -1511,12 +1511,12 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 		else{
 			mes "[F. Harrison]";
 			mes "The materials I need are";
-			mes "10 " + mesitemlink(999) + ", 2 Eluniums,";
-			mes "1 " + mesitemlink(984) + ", 20 " + mesitemlink(1003) + "...";
-			mes "And a Special Metal " + mesitemlink(1601) + "";
-			mes "used in the " + mesitemlink(13158) + "...";
+			mes "10 " + mesitemlink(999, false) + ", 2 Eluniums,";
+			mes "1 " + mesitemlink(984, false) + ", 20 " + mesitemlink(1003, false) + "...";
+			mes "And a Special Metal " + mesitemlink(1601, false) + "";
+			mes "used in the " + mesitemlink(13158, false) + "...";
 			mes "Good thing you found the";
-			mes "Special Metal " + mesitemlink(1601) + " already.";
+			mes "Special Metal " + mesitemlink(1601, false) + " already.";
 			close;
 		}
 	}
@@ -1549,7 +1549,7 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 			next;
 			mes "[F. Harrison]";
 			mes "Oh well... I'll just play with my";
-			mes "beautiful '" + mesitemlink(13102) + "'.";
+			mes "beautiful '" + mesitemlink(13102, false) + "'.";
 			close;
 		}
 		if(BaseLevel > 67 && countitem(13158) > 0){
@@ -1573,7 +1573,7 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 				mes "[F. Harrison]";
 				mes "Hah! You think you're the only";
 				mes "one with a cool weapon!? Well";
-				mes "I got my beautiful " + mesitemlink(13102) + "!";
+				mes "I got my beautiful " + mesitemlink(13102, false) + "!";
 				mes "Hmph!!";
 				close;
 			}
@@ -1581,7 +1581,7 @@ lighthalzen,205,284,6	script	F. Harrison	85,{
 			mes "Heheh... This is the newest";
 			mes "development by Einbroch Firearms";
 			mes "Lab, the so-called uncontrollable";
-			mes "'" + mesitemlink(13160) + " " + mesitemlink(13158) + "', eh?";
+			mes "'" + mesitemlink(13160, false) + " " + mesitemlink(13158, false) + "', eh?";
 			mes "Interesting... VERY interesting...";
 			next;
 			mes "[F. Harrison]";

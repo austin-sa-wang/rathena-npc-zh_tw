@@ -15,7 +15,7 @@
 prontera,146,92,3	script	Cellerb	58,{
 	mes "[Staff Idul Fitri]";
 	if((gettime(DT_MONTH)==OCTOBER && (gettime(DT_DAYOFMONTH)==24 || gettime(DT_DAYOFMONTH)==25))==0) {
-		mes "Congratulation! Celebrate Feast Day Of " + mesitemlink(685) + " Idul Fitri 1427 H.";
+		mes "Congratulation! Celebrate Feast Day Of " + mesitemlink(685, false) + " Idul Fitri 1427 H.";
 		specialeffect EF_SANDMAN;
 		close;
 	}
@@ -36,9 +36,9 @@ prontera,146,92,3	script	Cellerb	58,{
 		mes "I have something that might interest you.";
 		mes "I need all of the following items:";
 		mes "^D5A500Ketupat Sayur Ingredient :^000000";
-		mes "^00B6FF~5 " + mesitemlink(552) + ", 5 " + mesitemlink(515) + "~,^000000";
-		mes "^CC6633~5 " + mesitemlink(633) + ", 10 " + mesitemlink(517) + "~,^000000";
-		mes "^000088~2 " + mesitemlink(511) + ", 5 " + mesitemlink(905) + "~.^000000";
+		mes "^00B6FF~5 " + mesitemlink(552, false) + ", 5 " + mesitemlink(515, false) + "~,^000000";
+		mes "^CC6633~5 " + mesitemlink(633, false) + ", 10 " + mesitemlink(517, false) + "~,^000000";
+		mes "^000088~2 " + mesitemlink(511, false) + ", 5 " + mesitemlink(905, false) + "~.^000000";
 		next;
 		mes "[Staff Idul Fitri]";
 		if ( (countitem(552)<5 || countitem(515)<5 ||countitem(516)<5 || countitem(517)<10 || countitem(511)<2 || countitem(905)<5) ) { 

@@ -40,7 +40,7 @@ mosk_in,21,246,5	script	Pinkamenia	71,{
 			mes "You'll need more Love Flowers if you want that!";
 			close;
 		}
-		mes "Are you sure you want to trade ^00aa00"+.@SweetsCost[.@choice]+"x " + mesitemlink(7864) + " ^000000 for ^0055FF"+getitemname(.@SweetsID[.@choice])+"^000000?";
+		mes "Are you sure you want to trade ^00aa00"+.@SweetsCost[.@choice]+"x " + mesitemlink(7864, false) + " ^000000 for ^0055FF"+getitemname(.@SweetsID[.@choice])+"^000000?";
 		if(select("No, I've changed my mind.:Yes, trade!") == 1) close;
 		set .@new, .@LFlowerID - .@SweetsCost[.@choice];
 		if (.@new < 0) set .@new, 0;
@@ -74,7 +74,7 @@ mosk_in,21,246,5	script	Pinkamenia	71,{
 		close;
 	} else if (#V_QUE12==1) {
 		mes .@n$;
-		mes "Please bring a +8 " + mesitemlink(5024) + "";
+		mes "Please bring a +8 " + mesitemlink(5024, false) + "";
 		mes "to the Baker Extraordinaire";
 		mes "standing next to me!";
 		close;
@@ -90,7 +90,7 @@ mosk_in,21,246,5	script	Pinkamenia	71,{
 		mes "need a strong person";
 		mes "like you who could help";
 		mes "us, but first you'll have";
-		mes "to bring a +8 " + mesitemlink(5024) + "";
+		mes "to bring a +8 " + mesitemlink(5024, false) + "";
 		mes "to the Baker Extraordinaire, who";
 		mes "is standing right next to me!";
 		set #V_QUE12,1;
@@ -121,19 +121,19 @@ mosk_in,21,244,3	script	Baker Extraordinaire	410,{
 		if (getequipid(EQI_HEAD_TOP) == 5024 && getequiprefinerycnt(EQI_HEAD_TOP) >= 8) {
 			mes "Ah, so Pinkamenia told you";
 			mes "to bring me the +8 Cake";
-			mes "Hat. Now I'm going";
+			mes "" + mesitemlink(2220, false) + ". Now I'm going";
 			mes "to exchange your +8 Cake";
-			mes "Hat for another " + mesitemlink(5024) + ".";
+			mes "" + mesitemlink(2220, false) + " for another " + mesitemlink(5024, false) + ".";
 			next;
 			mes .@n$;
 			delitem 5024,1;
 			getitem 5105,1;
 			equip 5105;
 			mes "Now, if you wear the";
-			mes "new " + mesitemlink(5024) + ", there";
+			mes "new " + mesitemlink(5024, false) + ", there";
 			mes "is a chance that";
 			mes "Demi-Human Monsters will";
-			mes "drop a " + mesitemlink(7864) + "!";
+			mes "drop a " + mesitemlink(7864, false) + "!";
 			next;
 			mes .@n$;
 			mes "The mobs stole our Flowers,";
@@ -145,7 +145,7 @@ mosk_in,21,244,3	script	Baker Extraordinaire	410,{
 			close;
 		} else {
 			mes "Sorry, but where is your";
-			mes "+8 " + mesitemlink(5024) + "? Bring";
+			mes "+8 " + mesitemlink(5024, false) + "? Bring";
 			mes "it to me, and remember";
 			mes "to have it equipped!";
 			close;

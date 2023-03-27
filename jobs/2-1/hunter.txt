@@ -155,10 +155,10 @@ hu_in01,386,373,4	script	Hunter Guildsman#hnt	727,{
 	else if (BaseJob == Job_Archer) {
 		if (HNTR_Q == 17 && countitem(1007) == 0) {
 			mes "[Hunter Sherin]";
-			mes "Hmm... I've been informed that you passed the test. But you don't have the necessary '" + mesitemlink(1007) + " (Penetration)' that proves your accomplishment.";
+			mes "Hmm... I've been informed that you passed the test. But you don't have the necessary '" + mesitemlink(1007, false) + " (Penetration)' that proves your accomplishment.";
 			next;
 			mes "[Hunter Sherin]";
-			mes "I'll let you change your job, but you must bring back a '" + mesitemlink(1007) + " (Penetration),' no matter what it takes.";
+			mes "I'll let you change your job, but you must bring back a '" + mesitemlink(1007, false) + " (Penetration),' no matter what it takes.";
 			close;
 		}
 		else if (HNTR_Q == 17 && countitem(1007) > 0) {
@@ -645,7 +645,7 @@ payon_in03,131,7,3	script	Hunter#htnGM	59,{
 			close;
 		case 3:
 			mes "[Hunter Guildmaster]";
-			mes "Hmm. Warnings... Well, if you fall into a " + mesitemlink(1065) + ", you have to start from the beginning. Also, only one person can take the test at a time.";
+			mes "Hmm. Warnings... Well, if you fall into a " + mesitemlink(1065, false) + ", you have to start from the beginning. Also, only one person can take the test at a time.";
 			next;
 			mes "[Hunter Guildmaster]";
 			mes "I will send you to the testing place. There will be a waiting room, but if someone else is taking the test, you must wait in the chatroom.";
@@ -717,7 +717,7 @@ payon_in03,131,7,3	script	Hunter#htnGM	59,{
 			close;
 		case 3:
 			mes "[Hunter Guildmaster]";
-			mes "Hmm. Warnings... Well, if you fall into a " + mesitemlink(1065) + ", you have to start from the beginning. Also, only one person can take the test at a time.";
+			mes "Hmm. Warnings... Well, if you fall into a " + mesitemlink(1065, false) + ", you have to start from the beginning. Also, only one person can take the test at a time.";
 			next;
 			mes "[Hunter Guildmaster]";
 			mes "I'll send you to the testing place. There is a waiting room, but if someone else is taking the test, you must wait in the chatroom.";
@@ -803,7 +803,7 @@ payon_in02,21,31,1	script	Hunter#htnGM2	59,{
 			close3;
 		case 3:
 			mes "[Hunter Guildmaster]";
-			mes "Mmm. Warnings... Well, if you fall into a " + mesitemlink(1065) + ", you have to start the test over from the beginning. And only one person can take the test at a time.";
+			mes "Mmm. Warnings... Well, if you fall into a " + mesitemlink(1065, false) + ", you have to start the test over from the beginning. And only one person can take the test at a time.";
 			next;
 			mes "[Hunter Guildmaster]";
 			mes "I'll send you to the testing place. There is a waiting room, but if someone else is taking the test, you must wait in the chatroom.";
@@ -890,7 +890,7 @@ payon_in02,21,31,1	script	Hunter#htnGM2	59,{
 			close3;
 		case 3:
 			mes "[Hunter Guildmaster]";
-			mes "Mmm. Warnings... Well, if you fall into a " + mesitemlink(1065) + ", you have to start the test over from the beginning. And only one person can take the test at a time.";
+			mes "Mmm. Warnings... Well, if you fall into a " + mesitemlink(1065, false) + ", you have to start the test over from the beginning. And only one person can take the test at a time.";
 			next;
 			mes "[Hunter Guildmaster]";
 			mes "I'll send you to the testing place. There is a waiting room, but if someone else is taking the test, you must wait in the chatroom.";
@@ -976,7 +976,7 @@ OnTouch_:
 		mes "When you destroy the switch, the exit will appear in the 12 o'clock direction of the map. Complete everything within the given time and escape.";
 		next;
 		mes "[Guide]";
-		mes "If you faint in the middle, fall into a " + mesitemlink(1065) + ", or go over the time limit, you'll fail. Then you must then retake the test.";
+		mes "If you faint in the middle, fall into a " + mesitemlink(1065, false) + ", or go over the time limit, you'll fail. Then you must then retake the test.";
 		next;
 		mes "[Guide]";
 		mes "We will provide the arrows, so just make sure that you bring a bow. Well, then. Please enter when you are ready.";

@@ -350,7 +350,7 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 		if (Sex == SEX_MALE)
 			mes "A strong young man. I am pleased of your will to join us.";
 		else
-			mes "Such a delicate " + mesitemlink(712) + ". I am pleased to see your will to join us.";
+			mes "Such a delicate " + mesitemlink(712, false) + ". I am pleased to see your will to join us.";
 		next;
 		mes "[Sensei Moohae]";
 		mes "Oh, you are the new pupil that wishes to join us...";
@@ -436,9 +436,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "How can you think to be done?";
 			mes "You do not have what I asked for!";
-			mes "5 " + mesitemlink(938) + ",";
-			mes "10 " + mesitemlink(1055) + ",";
-			mes "20 " + mesitemlink(511) + ".";
+			mes "5 " + mesitemlink(938, false) + ",";
+			mes "10 " + mesitemlink(1055, false) + ",";
+			mes "20 " + mesitemlink(511, false) + ".";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -467,9 +467,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "Why did you return?";
 			mes "You do not have what I asked for!";
-			mes "20 " + mesitemlink(942) + ",";
-			mes "5 " + mesitemlink(1002) + ",";
-			mes "3 " + mesitemlink(510) + ".";
+			mes "20 " + mesitemlink(942, false) + ",";
+			mes "5 " + mesitemlink(1002, false) + ",";
+			mes "3 " + mesitemlink(510, false) + ".";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -498,8 +498,8 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "How can you think to be done?";
 			mes "You do not have what I asked for!";
-			mes "30 " + mesitemlink(905) + ",";
-			mes "5 " + mesitemlink(909) + "";
+			mes "30 " + mesitemlink(905, false) + ",";
+			mes "5 " + mesitemlink(909, false) + "";
 			mes "10 Worm Peelings";
 			mes "These are the items I require, go find them all.";
 			close;
@@ -529,9 +529,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "How can you think to be done?";
 			mes "You do not have what I asked for!";
-			mes "5 " + mesitemlink(943) + ",";
-			mes "20 " + mesitemlink(935) + ",";
-			mes "5 " + mesitemlink(912) + ".";
+			mes "5 " + mesitemlink(943, false) + ",";
+			mes "20 " + mesitemlink(935, false) + ",";
+			mes "5 " + mesitemlink(912, false) + ".";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -560,9 +560,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "Where are the items...?";
 			mes "You do not have what I asked for!";
-			mes "5 " + mesitemlink(7053) + ",";
-			mes "10 " + mesitemlink(509) + ",";
-			mes "10 " + mesitemlink(508) + ".";
+			mes "5 " + mesitemlink(7053, false) + ",";
+			mes "10 " + mesitemlink(509, false) + ",";
+			mes "10 " + mesitemlink(508, false) + ".";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -591,9 +591,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "How can you think to be done?";
 			mes "You do not have what I asked for!";
-			mes "10 " + mesitemlink(913) + ",";
+			mes "10 " + mesitemlink(913, false) + ",";
 			mes "5 Bear's Foot skin";
-			mes "20 " + mesitemlink(7033) + "";
+			mes "20 " + mesitemlink(7033, false) + "";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -622,9 +622,9 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			mes "[Sensei Moohae]";
 			mes "How can you think to be done?";
 			mes "You do not have what I asked for!";
-			mes "5 " + mesitemlink(1027) + ",";
-			mes "20 " + mesitemlink(1025) + ",";
-			mes "10 " + mesitemlink(1042) + ".";
+			mes "5 " + mesitemlink(1027, false) + ",";
+			mes "20 " + mesitemlink(1025, false) + ",";
+			mes "10 " + mesitemlink(1042, false) + ".";
 			mes "These are the items I require, go find them all.";
 			close;
 		}
@@ -651,14 +651,14 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 	else if (MONK_Q == 27 && BaseJob == Job_Acolyte) {
 		mes "[Sensei Moohae]";
 		mes ".......Hmmm.....";
-		mes "Go to Tomoon, get a special potion from him. It will look like a " + mesitemlink(506) + ", but it isn't. Bring it to me...";
+		mes "Go to Tomoon, get a special potion from him. It will look like a " + mesitemlink(506, false) + ", but it isn't. Bring it to me...";
 		close;
 	}
 	else if (MONK_Q == 28 && BaseJob == Job_Acolyte) {
 		if (countitem(506) > 0) {
 			mes "[Sensei Moohae]";
 			mes "Do you still have the medicine you were supposed to bring?";
-			mes "You must drink that " + mesitemlink(506) + " to strengthen yourself for becoming a monk.";
+			mes "You must drink that " + mesitemlink(506, false) + " to strengthen yourself for becoming a monk.";
 		}
 		else if (countitem(506) == 0) {
 			mes "[Sensei Moohae]";
@@ -676,7 +676,7 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 			if (select("Yes.:No.") == 2) {
 				mes "[Sensei Moohae]";
 				mes "....with that kind of reply...";
-				mes "Have you not enough " + mesitemlink(7855) + " to become a monk?";
+				mes "Have you not enough " + mesitemlink(7855, false) + " to become a monk?";
 				mes "Do you feel you have not suffered enough?";
 				next;
 				mes "[Sensei Moohae]";
@@ -752,12 +752,12 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 				close;
 			}
 			mes "[Sensei Moohae]";
-			mes "Are you willing to die for others on your monk's path of being a holy " + mesitemlink(1169) + "?";
+			mes "Are you willing to die for others on your monk's path of being a holy " + mesitemlink(1169, false) + "?";
 			next;
 			if (select("Yes.:No.") == 2) {
 				mes "[Sensei Moohae]";
 				mes "You cannot become a monk with such an attitude!!!";
-				mes "If we can eliminate at least one more enemy of ours by sacrificing ourselves, that's what is expected of you as a holy " + mesitemlink(1169) + " in whom we are trained to be.";
+				mes "If we can eliminate at least one more enemy of ours by sacrificing ourselves, that's what is expected of you as a holy " + mesitemlink(1169, false) + " in whom we are trained to be.";
 				next;
 				mes "[Sensei Moohae]";
 				mes "If you are unwilling to sacrifice yourself for those you care about,";
@@ -892,7 +892,7 @@ monk_in,99,58,1	script	Sensei Moohae#mk	60,{
 		next;
 		mes "[Sensei Moohae]";
 		mes "Don't forget your vows, stay on your path and";
-		mes "do not let any evil taint your pure " + mesitemlink(7855) + ".";
+		mes "do not let any evil taint your pure " + mesitemlink(7855, false) + ".";
 		close;
 	}
 	else {
@@ -1668,7 +1668,7 @@ prt_monk,251,255,1	script	Touha#mk	79,{
 		mes "Yet the blood of the wicked shall flow like a river.";
 		next;
 		mes "[Touha]";
-		mes "We shall spread our blackened wings and be the vengeful striking " + mesitemlink(1354) + " of god.";
+		mes "We shall spread our blackened wings and be the vengeful striking " + mesitemlink(1354, false) + " of god.";
 		next;
 		mes "[Touha]";
 		mes "We shall flow a river forth to thee, and teeming with souls shall it ever be.";
@@ -2124,7 +2124,7 @@ prt_monk,225,180,1	script	Hyunmoo#mk2	89,{
 		next;
 		mes "[Hyunmoo]";
 		mes "As I see other monks working hard on growing vegetables,";
-		mes "it warms my " + mesitemlink(7855) + " to see others enjoying gardening as I do.";
+		mes "it warms my " + mesitemlink(7855, false) + " to see others enjoying gardening as I do.";
 		next;
 		mes "[Hyunmoo]";
 		mes "To be honest with you, I think gardening is the greatest thing ever...";
@@ -2146,7 +2146,7 @@ prt_monk,225,180,1	script	Hyunmoo#mk2	89,{
 		next;
 		mes "[Hyunmoo]";
 		mes "As I see other monks working hard on growing vegetables,";
-		mes "it warms my " + mesitemlink(7855) + " to see others enjoying gardening as I do.";
+		mes "it warms my " + mesitemlink(7855, false) + " to see others enjoying gardening as I do.";
 		next;
 		mes "[Hyunmoo]";
 		mes "To be honest with you, I think gardening is the greatest thing ever...";
@@ -2236,7 +2236,7 @@ monk_test,82,85,1	script	Proctor#mk	95,{
 	switch(select("Yes!:No.:What do I have to do?")) {
 	case 1:
 		mes "[Proctor]";
-		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201) + " out and " + mesitemlink(7201) + " back in.";
+		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201, false) + " out and " + mesitemlink(7201, false) + " back in.";
 		mes "Then you will return to your save point. What's that mean? Heck if I know, I'm just told to say that. Oh yes and also, please cooperate with your comrades.";
 		close2;
 		set MONK_Q,26;
@@ -2343,7 +2343,7 @@ monk_test,88,91,1	script	Proctor#mk2	52,{
 	switch(select("Yes!:No.:Check the caution for the test.")) {
 	case 1:
 		mes "[Proctor]";
-		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201) + " out and " + mesitemlink(7201) + " back in.";
+		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201, false) + " out and " + mesitemlink(7201, false) + " back in.";
 		mes "Then you will return to your save point. What's that mean? Heck if I know, I'm just told to say that. Oh yes and also, please cooperate with your comrades.";
 		close2;
 		set MONK_Q,26;
@@ -2450,7 +2450,7 @@ monk_test,95,85,1	script	Proctor#btl#3	79,{
 	switch(select("Yes!:No.:Check the caution for the test.")) {
 	case 1:
 		mes "[Proctor]";
-		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201) + " out and " + mesitemlink(7201) + " back in.";
+		mes "Alright! I wish you luck. If you get lost and can't find a way out, simply " + mesitemlink(7201, false) + " out and " + mesitemlink(7201, false) + " back in.";
 		mes "Then you will return to your save point. What's that mean? Heck if I know, I'm just told to say that. Oh yes and also, please cooperate with your comrades.";
 		close2;
 		set MONK_Q,26;

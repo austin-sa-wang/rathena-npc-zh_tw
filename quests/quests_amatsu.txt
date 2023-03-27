@@ -270,7 +270,7 @@ ama_test,52,44,3	script	Assistant#ama	109,{
 			mes "Q-pet is prohibited";
 			mes "inside of the field trip.";
 			mes "If you are with a pet,";
-			mes "please change it to " + mesitemlink(574) + " status.";
+			mes "please change it to " + mesitemlink(574, false) + " status.";
 			next;
 			mes "[Satoshi]";
 			mes "And finally...";
@@ -423,7 +423,7 @@ OnTouch_:
 	mes "Arrrk!!!";
 	next;
 	mes "[Grandma]";
-	mes "Honey!! Someone hacked my account and stole my equipment!! ";
+	mes "" + mesitemlink(518, false) + "!! Someone hacked my account and stole my equipment!! ";
 	next;
 	mes "[Grandpa]";
 	mes "Hmm. The Chief said Dokebi earned 20 million zeny by hacking others' accounts...";
@@ -445,7 +445,7 @@ OnTouch_:
 	mes "[Grandma]";
 	mes "Momotaro...";
 	mes "I really wanted to give you";
-	mes "a handmade ^3163FFYummiest " + mesitemlink(501) + " in the whole world^000000 ...but...";
+	mes "a handmade ^3163FFYummiest " + mesitemlink(501, false) + " in the whole world^000000 ...but...";
 	mes ".....I failed to make them ....";
 	next;
 	mes "[Grandma]";
@@ -582,7 +582,7 @@ ama_test,50,100,3	script	Coach#ama	762,15,15,{
 		mes "Don't be so proud of yourself.";
 		mes "When I was young like you,";
 		mes "I squashed Dokebi with";
-		mes "my little " + mesitemlink(1811) + ". Hohoho~";
+		mes "my little " + mesitemlink(1811, false) + ". Hohoho~";
 		next;
 		mes "[Coach]";
 		mes "..............";
@@ -807,8 +807,8 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 	}
 	else if (ama_sushi == 4) {
 		mes "[Magumagu]";
-		mes "Training to slice " + mesitemlink(544) + "";
-		mes "daily will make you a master " + mesitemlink(551) + " chef.";
+		mes "Training to slice " + mesitemlink(544, false) + "";
+		mes "daily will make you a master " + mesitemlink(551, false) + " chef.";
 		mes "So don't waste your time in here, and learn what you are good at.";
 		mes " ";
 		close;
@@ -840,7 +840,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 		mes "Do not forget what I asked.";
 		next;
 		mes "[Magumagu]";
-		mes "10 ^0000FFCandy^000000";
+		mes "10 ^0000FF" + mesitemlink(529, false) + "^000000";
 		mes "You didn't forget it, right?";
 		mes "Bring me these supplies, please.";
 		close;
@@ -854,7 +854,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 			next;
 			mes "[Magumagu]";
 			mes "Thanks. It is nothing, but";
-			mes "I will give you two sets of " + mesitemlink(551) + " in return.";
+			mes "I will give you two sets of " + mesitemlink(551, false) + " in return.";
 			next;
 			set fish_r,0;
 			erasequest 10037;
@@ -886,7 +886,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 			next;
 			mes "[Magumagu]";
 			mes "Thanks. It is nothing but";
-			mes "I will give you several sets of " + mesitemlink(551) + " in return.";
+			mes "I will give you several sets of " + mesitemlink(551, false) + " in return.";
 			next;
 			set fish_r,0;
 			erasequest 10038;
@@ -951,7 +951,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 			next;
 			mes "[Magumagu]";
 			mes "Thanks. It is nothing but";
-			mes "I will give you two sets of " + mesitemlink(551) + " in return.";
+			mes "I will give you two sets of " + mesitemlink(551, false) + " in return.";
 			next;
 			delitem 736,1; //White_Platter
 			set fish_r,0;
@@ -970,7 +970,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 		next;
 		mes "[Magumagu]";
 		mes "I need a white platter:";
-		mes "1 ^0000FFChina^000000";
+		mes "1 ^0000FF" + mesitemlink(736, false) + "^000000";
 		mes "You didn't forget it, right?";
 		mes "Bring it to me, okay?";
 		close;
@@ -1009,7 +1009,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 				mes "You are the one.";
 				next;
 				mes "[Magumagu]";
-				mes "I'm old now. No one knows how long I can hold this " + mesitemlink(1201) + ". You have been chosen to inherit my culinary art...";
+				mes "I'm old now. No one knows how long I can hold this " + mesitemlink(1201, false) + ". You have been chosen to inherit my culinary art...";
 				mes " ";
 				next;
 				delitem 950,100; //Heart_Of_Mermaid
@@ -1017,15 +1017,15 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 				completequest 10041;
 				getitem 1144,1; //Sasimi
 				mes "[Magumagu]";
-				mes "Here, take my " + mesitemlink(1201) + ".";
-				mes "From now on, make fine cuisine with that " + mesitemlink(1201) + ".";
+				mes "Here, take my " + mesitemlink(1201, false) + ".";
+				mes "From now on, make fine cuisine with that " + mesitemlink(1201, false) + ".";
 				mes "...Learn how to slice a fish.";
 				mes " ";
 				mes " ";
 				next;
 				mes "[Magumagu]";
 				mes "From now on, I will no longer ask you favors and give you fish slices in return....";
-				mes "Practice your skill with that " + mesitemlink(1201) + " and teach mainlanders the pleasure of fine cuisine...";
+				mes "Practice your skill with that " + mesitemlink(1201, false) + " and teach mainlanders the pleasure of fine cuisine...";
 				close;
 			}
 			else {
@@ -1117,8 +1117,8 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 	case 1:
 		mes "[Magumagu]";
 		mes "Alright...! How many?";
-		mes "A set of " + mesitemlink(551) + " is 700z. If you";
-		mes "want just 1 " + mesitemlink(551) + ". It is 74z.";
+		mes "A set of " + mesitemlink(551, false) + " is 700z. If you";
+		mes "want just 1 " + mesitemlink(551, false) + ". It is 74z.";
 		mes "If you want more, tell me.";
 		next;
 		switch(select("700z A set!:74z A piece!:I will try it later")) {
@@ -1138,7 +1138,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 			if (Zeny < 74) {
 				mes "[Magumagu]";
 				mes "Oh man, you don't have enough money.";
-				mes "If you want to eat delicious " + mesitemlink(551) + ",";
+				mes "If you want to eat delicious " + mesitemlink(551, false) + ",";
 				mes "you better bring more money.";
 				close;
 			}
@@ -1149,10 +1149,10 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 			close;
 		case 3:
 			mes "[Magumagu]";
-			mes "Up to you. My " + mesitemlink(551) + " is";
+			mes "Up to you. My " + mesitemlink(551, false) + " is";
 			mes "the best of the best! The taste";
 			mes "and freshness are the best in the";
-			mes "world. If you have time, try my " + mesitemlink(551) + ".";
+			mes "world. If you have time, try my " + mesitemlink(551, false) + ".";
 			close;
 		}
 	case 2:
@@ -1219,7 +1219,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 				mes "[Magumagu]";
 				mes "I need some candies to make";
 				mes "a dessert for the customers.";
-				mes "Bring me ^0000FF10 " + mesitemlink(529) + "^000000.";
+				mes "Bring me ^0000FF10 " + mesitemlink(529, false) + "^000000.";
 				mes "It's not hard, right?";
 				mes " ";
 			}
@@ -1260,7 +1260,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 				mes "We are missing a platter to serve";
 				mes "fish slices to customers.";
 				mes "This is horrible...";
-				mes "Will you buy me some fine porcelain ^0000FFChina^000000?";
+				mes "Will you buy me some fine porcelain ^0000FF" + mesitemlink(736, false) + "^000000?";
 				mes "I can't just put food anywhere...";
 			}
 			else {
@@ -1285,7 +1285,7 @@ ama_in01,162,17,1	script	Sushi Master#ama	765,{
 					mes "We are missing a platter to serve";
 					mes "fish slices to customers.";
 					mes "This is horrible...";
-					mes "Will you buy me some fine porcelain ^0000FFChina^000000? I can't just put food anywhere...";
+					mes "Will you buy me some fine porcelain ^0000FF" + mesitemlink(736, false) + "^000000? I can't just put food anywhere...";
 				}
 			}
 			next;
@@ -1540,7 +1540,7 @@ ama_in02,32,51,6	script	Soldier#ama4	767,{
 	mes "*Cough, Cough*... Oh, my freakin' neck.";
 	next;
 	mes "[Shiro]";
-	mes "That quack's " + mesitemlink(12257) + "";
+	mes "That quack's " + mesitemlink(12257, false) + "";
 	mes "is useless! I should never have trusted people from Midgard!";
 	mes "*Cough, Cough*...";
 	next;

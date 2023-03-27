@@ -34,7 +34,7 @@
 niflheim,224,243,3	script	Alreg#nif	795,{
 	if (nif_piano) set nif_piano,0;
 	mes "[Alreg]";
-	mes "Me like " + mesitemlink(517) + ", muheh.";
+	mes "Me like " + mesitemlink(517, false) + ", muheh.";
 	mes "You! Look tempting.";
 	next;
 	mes "[Alreg]";
@@ -48,7 +48,7 @@ niflheim,224,243,3	script	Alreg#nif	795,{
 		mes "NooOOoOOoOoO~!";
 		next;
 		mes "[Alreg]";
-		mes "It long time since I had " + mesitemlink(517) + "";
+		mes "It long time since I had " + mesitemlink(517, false) + "";
 		mes "so... so good. You taste";
 		mes "good. Alreg give you this";
 		mes "for payback. Present!";
@@ -79,7 +79,7 @@ nif_in,105,81,3	script	Crayu#nif	794,{
 	next;
 	mes "[Crayu]";
 	mes "^FF00001. Mountain sunset to the west";
-	mes "^FF00002. Where the purple " + mesitemlink(13153) + " falls ";
+	mes "^FF00002. Where the purple " + mesitemlink(13153, false) + " falls ";
 	mes "^FF00003. Surrounded by beautiful melody";
 	mes "^FF00004. You become the key that ignores its master^000000";
 	next;
@@ -406,7 +406,7 @@ prt_in,161,20,3	script	Erious#nif	92,{
 				select("Yes. And she gave me...this.");
 				delitem 934,1; //Mementos
 				mes "[Erious]";
-				mes "Ah...In this " + mesitemlink(7948) + " were the gifts";
+				mes "Ah...In this " + mesitemlink(7948, false) + " were the gifts";
 				mes "I gave her when we started";
 				mes "seeing each other. She had a";
 				mes "serious illness even before we";
@@ -662,7 +662,7 @@ niflheim,153,215,3	script	Feylin	794,{
 					mes "sacrifice. Needless to say, there";
 					mes "is a chance that this spell may";
 					mes "fail. I must also have";
-					mes "10 " + mesitemlink(610) + " to cast this";
+					mes "10 " + mesitemlink(610, false) + " to cast this";
 					mes "spell. Do you wish to continue?";
 					next;
 					if (select("Yes:No") == 1) {
@@ -722,7 +722,7 @@ niflheim,153,215,3	script	Feylin	794,{
 								mes "to him...";
 								next;
 								mes "[Elly]";
-								mes "Please give him this " + mesitemlink(7948) + ", and tell";
+								mes "Please give him this " + mesitemlink(7948, false) + ", and tell";
 								mes "him to forget about me. He should";
 								mes "live the rest of his life happily";
 								mes "with someone else. Oh, also let";

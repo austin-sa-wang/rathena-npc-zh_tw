@@ -24,7 +24,7 @@ prt_fild08,159,371,3	script	Poring War Recruiter#wop	909,{
 	mes "!!!!!";
 	mes "Whoa-! Humans, ring~!!";
 	mes "Gotta hide, hide, right~!";
-	mes "They're tempting us with " + mesitemlink(909) + "! Don't be fooled!";
+	mes "They're tempting us with " + mesitemlink(909, false) + "! Don't be fooled!";
 	next;
 	mes "[Poring]";
 	mes "Hwak!!";
@@ -79,7 +79,7 @@ poring_w01,100,97,3	script	Poring Vending Machine#w	909,{
 	if(select("Purchase.:Read the descriptions of goods.") == 1) {
 		mes "You need Poring Coins to purchase items.";
 		mes "You cannot use any zeny.";
-		mes "Item name - Price " + mesitemlink(7539) + "(P.Co)";
+		mes "Item name - Price " + mesitemlink(7539, false) + "(P.Co)";
 		next;
 		switch(select("Marvelous Medal - 4 P.Co:Union of Tribe - 20 P.Co:Poring Box - 30 P.Co:Next")) {
 		case 1:
@@ -90,7 +90,7 @@ poring_w01,100,97,3	script	Poring Vending Machine#w	909,{
 			callsub S_PoringVending,12109,30;
 		case 4:
 			mes "This is a special item.";
-			mes "Item name - " + mesitemlink(7539) + "(P.Co)";
+			mes "Item name - " + mesitemlink(7539, false) + "(P.Co)";
 			next;
 			switch(select("Wild Rose - 15 P.Co:Doppelganger - 20 P.Co:Egnigem Cenia - 20 P.Co:Collection Item")) {
 			case 1:
@@ -103,7 +103,7 @@ poring_w01,100,97,3	script	Poring Vending Machine#w	909,{
 				mes "Figures of 1st Job Class Characters including Novice are finally on sale!";
 				mes "Figures except for Novice are all ^4d4dffCharacter bound items^000000.";
 				mes "Please be aware before you make a purchase~";
-				mes "Item name - " + mesitemlink(7539) + "(P.Co)";
+				mes "Item name - " + mesitemlink(7539, false) + "(P.Co)";
 				next;
 				switch(select("Novice Figure - 50 P.Co:Swordman Figure - 100 P.Co:Thief Figure - 100 P.Co:Merchant Figure - 100 P.Co:Acolyte Figure - 100 P.Co:Mage Figure - 100 P.Co:Archer Figure - 100 P.Co:Random Draw - 50 P.Co:Cancel")) {
 				case 1:
@@ -126,7 +126,7 @@ poring_w01,100,97,3	script	Poring Vending Machine#w	909,{
 					next;
 					if(select("Draw:Cancel") == 1) {
 						if (countitem(7539) >= 50) {
-							mes "Insert the " + mesitemlink(7539) + " and pull the lever.";
+							mes "Insert the " + mesitemlink(7539, false) + " and pull the lever.";
 							mes "Click~ The item came out of the mouth of the Poring with a rumbling sound.";
 							mes "What could it be?";
 							next;
@@ -168,7 +168,7 @@ poring_w01,100,97,3	script	Poring Vending Machine#w	909,{
 	mes " : A statue with the image of a strong union of Tribes. People believe watching this statue actually helps strengthen the relationships between Tribes.";
 	mes " ";
 	mes "[Poring Box]";
-	mes " : A " + mesitemlink(7948) + " wrapped with Poring patterned " + mesitemlink(7175) + ". Something's inside.";
+	mes " : A " + mesitemlink(7948, false) + " wrapped with Poring patterned " + mesitemlink(7175, false) + ". Something's inside.";
 	mes " ";
 	mes "[Wild Rose]";
 	mes " : Your friend Wild Rose will come and help you.";
@@ -1257,7 +1257,7 @@ poring_w02,99,201,3	script	Deviruchi#wop_endmaster	738,{
 			mes "[Devi]";
 			mes "You did the best you could.";
 			mes "I' ts a shame the battle was tied...";
-			mes "Even so, thanks for coming to fight for us. Please, accept this " + mesitemlink(7539) + ".";
+			mes "Even so, thanks for coming to fight for us. Please, accept this " + mesitemlink(7539, false) + ".";
 			next;
 			if (wop_team == 1) {
 				mes "[Devi]";
@@ -1338,7 +1338,7 @@ poring_w02,99,201,3	script	Deviruchi#wop_endmaster	738,{
 			mes "[Devi]";
 			mes "You did the best you could.";
 			mes "It's a shame the battle was tied...";
-			mes "Even so, thanks for coming to fight for us. Please, accept this " + mesitemlink(7539) + ".";
+			mes "Even so, thanks for coming to fight for us. Please, accept this " + mesitemlink(7539, false) + ".";
 			next;
 			if (wop_team == 2) {
 				mes "[Devi]";
